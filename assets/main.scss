@@ -1,0 +1,15 @@
+p {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+
+a {
+  transition: color .2s ease-out;
+
+  color: rgb(var(--v-theme-primary));
+}
