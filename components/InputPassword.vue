@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-type Rule = (value: string) => boolean | string;
+import type { RuleString } from '~/types/rule';
 
 const props = withDefaults(defineProps<{
   label?: string,
   disabled?: boolean,
-  rules?: Rule[],
+  rules?: RuleString[],
   strictRules?: boolean,
   autocomplete?: string,
 }>(), {
@@ -17,14 +17,14 @@ const props = withDefaults(defineProps<{
 const model = defineModel<string>();
 const showPassword = ref<boolean>(false);
 
-const minimalRules: Rule[] = [
+const minimalRules: RuleString[] = [
   (v) => v.length >= 12 || 'Minimal length 12 characters',
   (v) => /[0-9]/.test(v) || 'Use a digit',
   (v) => /[a-z]/.test(v) || 'Use a lowercase character',
   (v) => /[A-Z]/.test(v) || 'Use an uppercase character',
 ];
 
-const allRules = computed<Array<Rule>>(() => ([
+const allRules = computed<Array<RuleString>>(() => ([
   ...props.rules,
   ...(props.strictRules ? minimalRules : []),
 ]));

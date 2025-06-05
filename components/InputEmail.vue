@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-type Rule = (value: string) => boolean | string;
+import type { RuleString } from '~/types/rule';
 
 withDefaults(defineProps<{
   label?: string,
   disabled?: boolean,
-  rules?: Rule[],
+  rules?: RuleString[],
   autocomplete?: string,
 }>(), {
   label: undefined,
