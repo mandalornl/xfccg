@@ -1,0 +1,2906 @@
+[
+  {
+    "id": "XF97-0385x1",
+    "title": "2Shy",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "2Shy",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Evolutionary",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Computer"
+    ],
+    "gameText": "This card may be played in its normal way or on any Team that includes at least one female Agent, ignoring Activator requirements.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0386x1",
+    "title": "Darin Peter Oswald",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "D.P.O.",
+    "type": "Adversary",
+    "cost": "8 CP",
+    "skills": {
+      "Long Range Combat": 8,
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Evolutionary",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Sciences"
+    ],
+    "gameText": "All Agents in a Team attacked by this Adversary must discard all attached Keyword ELECTRICAL Equipment immediately. The LONG RANGE COMBAT attack of this Adversary may be split between two opponents.",
+    "tags": [
+      "Advanced",
+      "Split Damage"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0387x1",
+    "title": "John Mostow",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Grotesque",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "This Card is free if played on a Keyword INSANITY card and Activator requirements are ignored.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0388x1",
+    "title": "Margi Kleinjan",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Syzygy",
+    "type": "Adversary",
+    "cost": "3 CP",
+    "skills": {
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 2
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "This card may be played on a Site at which the \"Terri Roberts\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0389x1",
+    "title": "Puppet",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "Puppet may wait until his opponents declare they have played all of the COMBAT cards that they intend to, then Puppet may play COMBAT cards. No other COMBAT cards may be played after Puppet's. This card is free and Activator requirements are ignored if it is played on a Keyword INSANITY card.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0390x1",
+    "title": "Red-Haired Man",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "731",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 5,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "This Adversary is able to use SUBTERFUGE and MARTIAL ARTS cads. If you opponent has correctly guessed two of your X-File's characteristics, the cost to play this card is 3 [CP].",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0391x1",
+    "title": "Simon Gates A.K.A. Ferreau",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Revelations",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 10,
+      "Health": 7
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent",
+      "Believer"
+    ],
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0392x1",
+    "title": "Terri Roberts",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Syzygy",
+    "type": "Adversary",
+    "cost": "3 CP",
+    "skills": {
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 2
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "This card may be played on a Site at which the \"Margi Kleinjan\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0393x1",
+    "title": "The List",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "The List",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": "N/A",
+      "Health": "N/A"
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Phenomena",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "List one Agent from the Investigating Team on a piece of paper. Place this card in your opponent's Field with the paper underneath. If the Agent listed Investigates a different Site before this card is negated, reveal the paper with the listed Agent. The Agent must go to the Hospital with zero HEALTH and may not contribute to skill checks this turn. Discard this card.",
+    "tags": [
+      "Advanced",
+      "Non-combative"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0394x1",
+    "title": "The Walk",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Walk",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Evolutionary",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "Subtract one from all damage sources applied to this Adversary.",
+    "tags": [
+      "Advanced",
+      "Reduce Damage"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0395x1",
+    "title": "Joseph Patnik",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Wetwired",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "Subtract one from all damage sources applied to this Adversary. The Long Range Combat Round is skipped.",
+    "tags": [
+      "Advanced",
+      "Reduce Damage",
+      "Skip Long Range"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0396x1",
+    "title": "Agent Bill Patterson",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Grotesque",
+    "type": "Agent",
+    "cost": "6 RP",
+    "skills": {
+      "Behavioral": 3,
+      "Criminal Investigation": 3,
+      "Evidence Collection": 3,
+      "Observation": 2,
+      "Occult Investigation": 1,
+      "Subterfuge": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 3,
+      "Health": 5,
+      "Resources": 2
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Believer"
+    ],
+    "gameEffect": "Once per game, Agent Patterson may attack any Team investigating a Site as if he were an Adversary with the appropriate Activators. If a card is played that Negates him he is placed back into his controller's Field. If he is reduced to zero HEALTH, he is removed from the game.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0397x1",
+    "title": "Agent Danny Pendrell",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "731",
+    "type": "Agent",
+    "cost": "6 RP",
+    "skills": {
+      "Computer": 3,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 3,
+      "Medical": 1,
+      "Observation": 2,
+      "Sciences": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Place three tokens on Agent Pendrell. During a skill check, discard one token to add 1 to Agent Pendrell's COMPUTER, SCIENCES, or MEDICAL skill.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0398x1",
+    "title": "Agent Fred Nemhauser",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Grotesque",
+    "type": "Agent",
+    "cost": "2 RP",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "Agent Nemhauser's BEHAVIORAL and CRIMINAL INVESTIGATION skills are increased by one if he and Agent Patterson are on the same Team.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0399x1",
+    "title": "Agent Kreski",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Oubliette",
+    "type": "Agent",
+    "cost": "1 RP",
+    "skills": {
+      "Criminal Investigation": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 0
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "Place one token on this card. Remove one token to negate a Keyword HEALING card played by your opponent.",
+    "tags": [
+      "Advanced",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0400x1",
+    "title": "Clyde Bruckman",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Agent",
+    "cost": "5 RP",
+    "skills": {
+      "Criminal Investigation": 2,
+      "Evidence Collection": 4,
+      "Observation": 3,
+      "Occult Investigation": 3,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "Place one token on this card. Remove one token to examine an opponent's hand and remove one of the cards in his hand from the game.",
+    "tags": [
+      "Advanced",
+      "Examine Hand"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0401x1",
+    "title": "Detective Angela White",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Syzygy",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 2,
+      "Observation": 1,
+      "Occult Investigation": 2,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Law",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "If Detective White is in the same Team as Agent Mulder, they both gain a +1 to their cumulative OCCULT INVESTIGATION and CRIMINAL INVESTIGATION skills, and a -1 to their OBSERVATION and BEHAVIORAL skills.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0402x1",
+    "title": "Detective Manners",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Agent",
+    "cost": "2 RP",
+    "skills": {
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Observation": 2,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 0
+    },
+    "keywords": [
+      "Agent",
+      "Law",
+      "Independent"
+    ],
+    "gameEffect": "Place two tokens on Detective Manners. Discard one token to search through your Bureau deck and add a Witness card to your hand. Show the Witness to your opponent and shuffle the deck.",
+    "tags": [
+      "Advanced",
+      "Search"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0403x1",
+    "title": "Angry Townspeople",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Syzygy",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to increase the cost of all [RP] cards played at this Site by 1.",
+    "tags": [
+      "Basic",
+      "Increase Cost"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0404x1",
+    "title": "Big Blue",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Quagmire",
+    "type": "Bluff",
+    "cost": "3 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to add X [CP] to your [CP] pool. X = the number of [RP] spent at this Site by the Investigating Player.",
+    "tags": [
+      "Basic",
+      "Resource"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0405x1",
+    "title": "Philosophical Question",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Quagmire",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to increase the Cost of all [RP] cards played at this Site by 2.",
+    "tags": [
+      "Basic",
+      "Increase Cost"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0406x1",
+    "title": "Cerulean Blue",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Pusher",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to force your opponent to discard four cards from the top of his Bureau Deck.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0407x1",
+    "title": "Darkened Forest",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Quagmire",
+    "type": "Bluff",
+    "cost": "X CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Pay the listed [CP] cost where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CLOSE RANGE COMBAT, LONG RANGE COMBAT. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "tags": [
+      "Basic",
+      "Decrease Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0408x1",
+    "title": "Dissolving Evidence",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "2Shy",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to force your opponent to discard the top card of his Bureau Deck.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0409x1",
+    "title": "Deceiving The Flock",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Revelations",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Force an opponent to discard one card from their hand at random.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0410x1",
+    "title": "Festival Of The Hungry Ghosts",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Hell Money",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Once this card is played, the Investigating Player may not play any Events while investigating this Site except for Events which would specifically negate this card.",
+    "tags": [
+      "Basic",
+      "Prevent"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0411x1",
+    "title": "Flesh Sculpting",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Grotesque",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to double the [RP] cost of any Keyword ACTIVE card played at this Site.",
+    "tags": [
+      "Basic",
+      "Increase Cost"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0412x1",
+    "title": "Veracity In Question",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Talitha Cumi",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Once this card is played, the investigating player may not play any COMBAT cards while investigating this Site, except for COMBAT cards which would specifically negate this card.",
+    "tags": [
+      "Basic",
+      "Prevent"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0413x1",
+    "title": "Heads Up",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "The List",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to force your opponent to discard two cards from the top of his Bureau Deck.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0414x1",
+    "title": "Mass Grave",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "731",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to immediately add one [CP] to your pool for every two [RP] the Investigating Team uses at this Site.",
+    "tags": [
+      "Basic",
+      "Resource"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0415x1",
+    "title": "Final Repose",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to choose any three cards from you opponents' discard pile and place them in any order on top of his Bureau Deck.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0416x1",
+    "title": "No One Believes You",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Oubliette",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to add one to the Site Prerequisite number for each Agent beyond one in the investigating Team.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0417x1",
+    "title": "Oubliette",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Oubliette",
+    "type": "Bluff",
+    "cost": "8 CP",
+    "keywords": [
+      "Bluff",
+      "Abduction"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card on one Agent in the Investigating Team. Remove the Agent from play and place this card on top of the Agent with four tokens. Remove one token during each of the controlling player's Debriefing Phases. When all tokens are removed, place this card on the owning player's Discard pile and move the Agent to the Bureau immediately.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0418x1",
+    "title": "Stoner, Chick, and Dude",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "War of the Coprophages",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Move up to two Bluffs to a different Site in play. Play this card before any other Bluffs are revealed.",
+    "tags": [
+      "Basic",
+      "Move"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0419x1",
+    "title": "The Mailman",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "The Walk",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to allow you to move one game effect token from any one card to another immediately. This may not take a card above the normal number of tokens allowed.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0420x1",
+    "title": "This Is Not Happening",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Force an opponent to discard three cards from his hand at random.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0421x1",
+    "title": "Visions Of A Madman",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Bluff",
+    "cost": "3 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to allow you to look at your opponent's Hand.",
+    "tags": [
+      "Basic",
+      "Examine Hand"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0422x1",
+    "title": "You're A Dead Man",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "3 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Once this card is played, the investigating player may not play any Witnesses while investigating this Site, except for Witnesses which would specifically negate this card.",
+    "tags": [
+      "Basic",
+      "Prevent"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0423x1",
+    "title": "Two Lux Video Camera",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Pusher",
+    "type": "Equipment",
+    "cost": "5 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Team's SUBTERFUGE skill. This modifier applies even if the Agent to whom this equipment is attached is sent to the Hospital.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0424x1",
+    "title": "Alien Autopsy Video",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Nisei",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government",
+      "Electrical"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Discard this card to add three to the Agent's ALIEN INVESTIGATION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0425x1",
+    "title": "Ambulance",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Apocrypha",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Mechanical",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's MEDICAL skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0426x1",
+    "title": "M.R.I.",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Pusher",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's BEHAVIORAL skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0427x1",
+    "title": "Classified Photos",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Paper Clip",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government",
+      "Special"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's CRIMINAL INVESTIGATION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0428x1",
+    "title": "Dental X-Ray Plate",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Walk",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Special"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's OCCULT INVESTIGATION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0429x1",
+    "title": "Desktop Computer",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "War of the Coprophages",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's COMPUTER skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0430x1",
+    "title": "Dried Frog",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Hell Money",
+    "type": "Equipment",
+    "cost": "2 RP",
+    "keywords": [
+      "Equipment",
+      "Occult",
+      "Healing"
+    ],
+    "activators": [
+      "Field",
+      "Believer"
+    ],
+    "gameText": "Adds one to the Agent's HEALTH.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0431x1",
+    "title": "Decomposing Victim",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Quagmire",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's SCIENCES skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0432x1",
+    "title": "Garrote",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "731",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's CLOSE RANGE COMBAT skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0433x1",
+    "title": "Helicopter Spotter",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Blessing Way",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Mechanical",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's OBSERVATION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0434x1",
+    "title": "Laser Targeter",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "731",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's LONG RANGE COMBAT skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0435x1",
+    "title": "Murder Weapon",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Grotesque",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's EVIDENCE COLLECTION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0436x1",
+    "title": "Stationery",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Piper Maru",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's CRIMINAL INVESTIGATION skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0437x1",
+    "title": "Queequeg",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Quagmire",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Special"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Discard Queequeg to negate any one PRIMORDIAL or EVOLUTIONARY Adversary. Each player may only have one of this card in their decks.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0438x1",
+    "title": "Satellite Photos",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Nisei",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's ALIEN INVESTIGATION skill.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0439x1",
+    "title": "Secret Government Files",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Quagmire",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government",
+      "Special"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add three to the Agent's BUREAUCRACY skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0440x1",
+    "title": "Secret Passage",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Teso dos Bichos",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Special"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Discard this card to add three to the Agent's SUBTERFUGE skill.",
+    "tags": [
+      "Basic",
+      "Discard",
+      "Increase Skill"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0441x1",
+    "title": "Alien Stiletto",
+    "set": "101361",
+    "rarity": "Ultra-Rare",
+    "episode": "Talitha Cumi",
+    "type": "Equipment",
+    "cost": "5 RP",
+    "keywords": [
+      "Alien",
+      "Artifact",
+      "Equipment"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Attach this Equipment to any Agent in the Field. Any ALIEN Adversary damaged by this weapon in CLOSE RANGE COMBAT is discarded prior to dealing damage in the Combat Round. The Alien Stiletto may be voluntarily discarded in the controlling player's Briefing Phase. Add 10 to your [RP] Pool and remove the Alien Stiletto from the game.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0442x1",
+    "title": "Tape Recorder",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Walk",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's OCCULT INVESTIGATION skill.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0443x1",
+    "title": "Classified Ad",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Pusher",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's BEHAVIORAL skill.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0444x1",
+    "title": "Foo Fighter",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Artifact",
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "While in play, you may take a second Conspiracy discard after your first (in the Briefing Phase). Discard when an opponent successfully investigates a site (directed at you) using ALIEN INVESTIGATION Skill.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0445x1",
+    "title": "Amaru Urn",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Teso dos Bichos",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Occult",
+      "Artifact",
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place in an opponent's Field. An OCCULT Adversary may now be played as a Bluff (it is treated as a Bluff for all purposes). When revealed the Adversary may ignore Site Activator restrictions. Discard when a Keyword OCCULT INVESTIGATION Site is directed at you and investigated successfully.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0446x1",
+    "title": "Avatar",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Avatar",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card when Assistant Director Skinner would be forced to go to the Hospital. Skinner may stay where he is with full HEALTH. Any unwanted game effect tokens are removed.",
+    "tags": [
+      "Affect Agent",
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0447x1",
+    "title": "Captive Hybrid",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "731",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Government",
+      "Artifact",
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card in one of your opponents Fields. Your opponent must subtract 2 from the [RP] he generates each turn while this card is in his Field. Your opponent may pay 7 [RP] to force you to discard this card.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0448x1",
+    "title": "Circuit Board Implant",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Government",
+      "Artifact",
+      "Equipment"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Attach this card to any Agent. As long as this card is in play, the controller of the attached Agent must play will all of the [RP] cost cards in his hand face up on the table. Place four counters on this card when it comes into play. Remove one counter each of the attached Agents' Briefing Phases. When the last counter is removed, discard this card.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0449x1",
+    "title": "Disbelief",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "War of the Coprophages",
+    "type": "Event",
+    "cost": "1 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent",
+      "Skeptic"
+    ],
+    "gameText": "Play this card on any Agent with the keyword SKEPTIC to prevent that Agent from contributing their skills at any keyword OCCULT INVESTIGATION or ALIEN INVESTIGATION Site.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0450x1",
+    "title": "Eliminating The Source",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Wetwired",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place in an Opponent's Field with two tokens on the card. Remove a token in this opponent's Debriefing Phase. While in play, opponent may only investigate Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION Sites. Discard this card when the last token is removed.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0451x1",
+    "title": "A Near Death Experience",
+    "set": "101361",
+    "rarity": "Ultra-Rare",
+    "episode": "The Blessing Way",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play when Agent Fox Mulder is in combat. Assign all damage to Mulder first. After the combat, move Mulder to the Hospital with HEALTH zero. When Mulder leaves that Hospital, permanently add the following: +1 OCCULT INVESTIGATION, +1 ALIEN INVESTIGATION, +1 SCIENCES, +1 LONG RANGE COMBAT. Once per game you may ask an X-Files' identity without incurring a penalty question. Only one of this card may be in play.",
+    "tags": [
+      "Affect Agent",
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0452x1",
+    "title": "Hell Money",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Hell Money",
+    "type": "Event",
+    "cost": "4 *P",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Negate any Keyword PHENOMENA card.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0453x1",
+    "title": "Jose Chung's \"From Outer Space\"",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Government",
+      "Artifact",
+      "Event",
+      "Resource",
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place in an Opponent's Field. Every turn, name one X-File Characteristic (AFFILIATION, METHOD, MOTIVE, or RESULT) during this opponent's Briefing Phase. This Opponent may not ask you this Characteristic question this turn. You may not choose the same characteristic in two consecutive turns. Cards that cause bluffs to be discarded affect this card.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0454x1",
+    "title": "Krycek Possessed",
+    "set": "101361",
+    "rarity": "Ultra-Rare",
+    "episode": "Piper Maru",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation",
+      "Site"
+    ],
+    "gameText": "Play on Agent Krycek when his team fails to successfully investigate a Keyword ALIEN INVESTIGATION Site (discard the Site). Place two tokens on this card. Remove a token to emit a blast of energy that causes 6 points of damage to all opponents during the Long Range Combat Round. Apply the following permanent modifiers: +1 ALIEN INVESTIGATION, +2 SUBTERFUGE, and +1 HEALTH.",
+    "tags": [
+      "Affect Agent",
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0455x1",
+    "title": "Mostow's Sketches",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Grotesque",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Occult",
+      "Artifact",
+      "Equipment"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Field"
+    ],
+    "gameText": "Attach this card to an Agent in the Field. The Agent may attack any Team investigating a Site during his opponent's Investigation Phase. If the Agent is Negated, discard this card. If the Agent is reduced to zero HEALTH, remove the Agent from the game.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0456x1",
+    "title": "Ceremony",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "The Blessing Way",
+    "type": "Event",
+    "cost": "5 RP",
+    "keywords": [
+      "Occult",
+      "Artifact",
+      "Event",
+      "Resource",
+      "Healing",
+      "Believer"
+    ],
+    "activators": [
+      "Active",
+      "Believer",
+      "Agent"
+    ],
+    "gameText": "Play this card in the Field and place 2 tokens on it. Any BELIEVER Agent forced to go to the Hospital may be placed under this card instead. During the Healing phase, the owning player may remove a token to heal all damage done to the Agent.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0457x1",
+    "title": "Skinner Intervenes",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "The Blessing Way",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Move"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card when an opponent has played an Adversary card. Immediately move all Agents in that team to your Bureau section and your opponent must discard the Adversary card.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0458x1",
+    "title": "Skinner's Wedding Ring",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Avatar",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to search through your Bureau Deck and put into play any Keyword ACTIVE card that specifically effects Skinner at zero Cost.",
+    "tags": [
+      "Affect Agent",
+      "Basic",
+      "Search"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0459x1",
+    "title": "Men In Black",
+    "set": "101361",
+    "rarity": "Ultra-Rare",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card in the Field during your opponents' Case Assignment Phase. You may place Bluff cards under this card face down at any time. No more than three cards may be under this card at any one time. During his Case Assignment Phase you may play cards stored under this card on any Site in the Field for 2 [CP] less.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0460x1",
+    "title": "The Video Trap",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Wetwired",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Government",
+      "Artifact",
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. You may draw one card for free in each of your opponents' Briefing Phases.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0461x1",
+    "title": "Tong Lottery Jar",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Hell Money",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Artifact",
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. Place up to three cards with a set CP cost from your hand under this card. These three cards can be used to negate any [RP] card with identical cost except Agents and Sites. This function requires zero [CP] cost. Discard both the played card and the card used to negate it. Discard this card when all cards underneath have been played.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0462x1",
+    "title": "Visit From The First Elder",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "731",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Show your opponent this card to retrieve all Conspiracy cards from your Discard Pile and shuffle them back into your Bureau Deck. Discard this card.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0463x1",
+    "title": "War of the Coprophages",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "War of the Coprophages",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to cause your opponent to discard all Witness cards in his hand.",
+    "tags": [
+      "Basic",
+      "Discard"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0464x1",
+    "title": "White Buffalo",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Phenomena",
+      "Healing"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may remove one game effect token or wound token from any cards under your control.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0465x1",
+    "title": "Unexpected Call",
+    "set": "101361",
+    "rarity": "Ultra-Rare",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "0 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to allow you to exchange [RP] Pools with your opponent.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0466x1",
+    "title": "Work A Deal",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Played by itself, this card will negate one GOVERNMENT Adversary, discard both. If played on an Agent with the \"Taped Intelligence\" Equipment card attached, remove the \"Taped Intelligence\" card from the game and place this card in your Bureau section. As long as this card is in play, no GOVERNMENT Adversaries may be played on your Agents.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0467x1",
+    "title": "Mostow's Studio, Washington, D.C.",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Grotesque",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Method",
+      "Behavioral"
+    ],
+    "prerequisite": "BEHAVIORAL 4+",
+    "question": "You may ask one METHOD question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0468x1",
+    "title": "Braddock Heights, Maryland",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Wetwired",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Motive",
+      "Bureaucracy"
+    ],
+    "prerequisite": "BUREAUCRACY 4+",
+    "question": "You may ask one MOTIVE question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0469x1",
+    "title": "Chinatown, San Francisco, CA",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Hell Money",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Result",
+      "Medical"
+    ],
+    "prerequisite": "MEDICAL 4+",
+    "question": "You may ask one RESULT question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0470x1",
+    "title": "Jerusalem, Ohio",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Revelations",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Method",
+      "Occult Investigation"
+    ],
+    "prerequisite": "OCCULT INVESTIGATION 4+",
+    "question": "You may ask one METHOD question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0471x1",
+    "title": "Miller's Grove, Massachusetts",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "War of the Coprophages",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Result",
+      "Alien Investigation"
+    ],
+    "prerequisite": "ALIEN INVESTIGATION 4+",
+    "question": "You may ask one RESULT question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0472x1",
+    "title": "Positron Emission Tomography Lab, Allentown, Pennsylvania",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Nisei",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Result",
+      "Computer",
+      "Medical"
+    ],
+    "prerequisite": "COMPUTER 5+ or MEDICAL 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0473x1",
+    "title": "Strikers Cove, Heuvalman's Lake, Blue Ridge Mountains, Georgia",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Quagmire",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Affiliation",
+      "Evidence Collection"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0474x1",
+    "title": "Strughold Mining Company, Rural West Virginia",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Paper Clip",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Result",
+      "Sciences"
+    ],
+    "prerequisite": "Sciences 4+",
+    "question": "You may ask one RESULT question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0475x1",
+    "title": "Teso dos Bichos Excavation, Ecquadorian Highlands, South America",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "Teso dos Bichos",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Method",
+      "Observation"
+    ],
+    "prerequisite": "OBSERVATION 4+",
+    "question": "You may ask one METHOD question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0476x1",
+    "title": "Virgil Incanto's Apartment, Cleveland, Ohio",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "2Shy",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Affiliation",
+      "Computer"
+    ],
+    "prerequisite": "COMPUTER 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0477x1",
+    "title": "Agent Dan Kazanjian",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "2Shy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Computer"
+    ],
+    "gameText": "Adds 3 to one Team's COMPUTER skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0478x1",
+    "title": "Carina Maywald",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Revelations",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral"
+    ],
+    "activators": [
+      "Active",
+      "Behavioral"
+    ],
+    "gameText": "Adds 3 to one Team's BEHAVIORAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0479x1",
+    "title": "Coast Guard Lieutenant",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Nisei",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION or CRIMINAL INVESTIGATION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0480x1",
+    "title": "Detective Alan Cross",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "2Shy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's EVIDENCE COLLECTION or adds 1 to one Team's SUBTERFUGE skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0481x1",
+    "title": "Detective Cline",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's EVIDENCE COLLECTION or OBSERVATION skill check. While this card is in play, the Witness card \"The Stupendous Yappi\" may be played for free.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0482x1",
+    "title": "Detective Havez",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's BUREAUCRACY or EVIDENCE COLLECTION skill check. May be played for Cost minus 1 RP if Witness \"Detective Cline\" is in play.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0483x1",
+    "title": "Detective Walter Eubanks",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Oubliette",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Observation"
+    ],
+    "gameText": "Adds 3 to one Team's OBSERVATION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0484x1",
+    "title": "Dr. Alexander Ivanov",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Sciences"
+    ],
+    "activators": [
+      "Active",
+      "Sciences"
+    ],
+    "gameText": "Adds 3 to one Team's SCIENCES skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0485x1",
+    "title": "Dr. Bambi Berenbaum",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's SCIENCES or add 1 to one Team's BEHAVIORAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0486x1",
+    "title": "Dr. Bugger",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's SCIENCES or adds 1 to one Team's MEDICAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0487x1",
+    "title": "Dr. Jeff Eckerle",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's COMPUTER or 1 to one Team's SCIENCES skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0488x1",
+    "title": "Dr. Rick Newton",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Medical"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's MEDICAL or EVIDENCE COLLECTION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0489x1",
+    "title": "Ellen Kaminski",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "2Shy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's SUBTERFUGE skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0490x1",
+    "title": "Eric Hosteen",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Blessing Way",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's OBSERVATION or adds 1 to one Team's ALIEN INVESTIGATION skill check.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0491x1",
+    "title": "Escalante",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "731",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Medical"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION or MEDICAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0492x1",
+    "title": "General Thomas Callahan",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "The Walk",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 3 to one Team's BUREAUCRACY or adds 2 to one Team's BEHAVIORAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0493x1",
+    "title": "Jim Ullrich",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "The List",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Medical"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's BEHAVIORAL or MEDICAL skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0494x1",
+    "title": "Lottie Holoway",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Nisei",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation"
+    ],
+    "gameText": "Adds 3 to one Team's ALIEN INVESTIGATION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0495x1",
+    "title": "Lt. Colonel Victor Stans",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "The Walk",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's EVIDENCE COLLECTION or SUBTERFUGE skill check, or play this card to negate the Adversary \"The Walk.\"",
+    "tags": [
+      "Basic",
+      "Negate"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0496x1",
+    "title": "Lucy Householder",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Oubliette",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's OBSERVATION or adds 1 to one Team's EVIDENCE COLLECTION skill check, or play this card when your opponent is about to remove one of your cards from the game. Remove this card instead.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0497x1",
+    "title": "Michael Kryder",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Revelations",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's OCCULT INVESTIGATION or OBSERVATION skill check, or you may play this card to look at all Adversaries in opponent's hand.",
+    "tags": [
+      "Basic",
+      "Examine Hand"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0498x1",
+    "title": "Navajo Elder",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The Blessing Way",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's MEDICAL or adds 1 to one Team's OBSERVATION skill check.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0499x1",
+    "title": "Owen Jarvis",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Revelations",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Occult Investigation"
+    ],
+    "gameText": "Adds 3 to one Team's OCCULT INVESTIGATION skill check, or return one OCCULT Adversary that is played on your team to the bottom of the owning player's Bureau Deck.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0500x1",
+    "title": "Parmelly",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "The List",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's BUREAUCRACY or SUBTERFUGE skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0501x1",
+    "title": "Penny Northern",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "Nisei",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION or SCIENCES skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0502x1",
+    "title": "Sammon Roque",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The List",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's BUREAUCRACY or adds 1 to one Team's OBSERVATION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0503x1",
+    "title": "Sharon Kiveat",
+    "set": "101361",
+    "rarity": "Common",
+    "episode": "D.P.O.",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 1 to one Team's BEHAVIORAL or OCCULT INVESTIGATION skill check, or return one EVOLUTIONARY Adversary that is played on your team to the bottom of the owning player's Bureau Deck.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0504x1",
+    "title": "Sharon Skinner",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Avatar",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "As long as this card is in play, Skinner cannot be affected by any CONSPIRACY card that would specifically affect him.",
+    "tags": [
+      "Affect Agent",
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0505x1",
+    "title": "Sheriff John Teller",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "D.P.O.",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's CRIMINAL INVESTIGATION or adds 1 to one Team's SCIENCES skill check.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0506x1",
+    "title": "Stan Buxton",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "D.P.O.",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's MEDICAL or adds 1 to one Team's SCIENCES skill check.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0507x1",
+    "title": "The Stupendous Yappi",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Witness",
+    "cost": "1 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Flip the top card of your Bureau Deck. Discard the revealed card. If the revealed card has the Keyword CONSPIRACY, subtract 1 from the skill check. If not, add 3 to one CRIMINAL INVESTIGATION or OCCULT INVESTIGATION skill check.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0508x1",
+    "title": "Victor Klemper",
+    "set": "101361",
+    "rarity": "Rare",
+    "episode": "Paper Clip",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 3 to one Team's MEDICAL or adds 2 to one Team's SCIENCES skill check. If your opponent plays a GOVERNMENT Adversary while this card is in play, the Victor Klemper card is negated and removed from the game.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0509x1",
+    "title": "Warden Leo Brodeur",
+    "set": "101361",
+    "rarity": "Uncommon",
+    "episode": "The List",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's CRIMINAL INVESTIGATION skill check. Promo Cards",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  }
+]

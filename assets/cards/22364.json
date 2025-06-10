@@ -1,0 +1,3298 @@
+[
+  {
+    "id": "PR97-0008-BOX",
+    "title": "Interrogations",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place two tokens on this card. Discard one token to double one Witness modifier for the remainder of your turn. This may only be done once per turn. When no tokens remain, move this card to the discard pile.",
+    "dialogue": "Harold Lamb: \"If she says I raped her, then I guess I raped her.\"\nMulder: \"You don't sound so sure of that.\"\nLamb: \"It all seems so crazy and I don't know why Chrissy remembers it that way.\"\nMulder: \"Would you be willing to take a lie detector test to prove that you raped her?\"\nLamb: \"No, I'm not.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "PR97-0013-DIS",
+    "title": "Warrant Served",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Move"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card during the Briefing Phase. Select one opposing Agent who is not already part of your Team and move them to your Bureau. You may use this Agent for the turn. During your Debriefing Phase, return the Agent to the owning player's Bureau section (unless they have been moved to the Hospital during the turn).",
+    "dialogue": "Scully: \"Now he knows where you live.\"\nSkinner: \"And you know where he lives. Go pick him up.\"\nMulder: \"Yeah, for what? About the only thing we got on him now is criminal trespass.\"\nSkinner: \"That's enough for a warrant.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "PR97-0014-CON",
+    "title": "Backbreaker",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Combat",
+    "cost": "X *P",
+    "keywords": [
+      "Combat"
+    ],
+    "activators": [
+      "Combat"
+    ],
+    "gameText": "Play in CLOSE RANGE COMBAT. Discard a card from your hand to deal additional damage in CLOSE RANGE COMBAT equal to the cost of the discarded card. This damage may be assigned to a different Agent than the one just damaged by the Adversary. X = Cost of the discarded card.",
+    "dialogue": "\"Who is it…Hey, you just can't…What do you think you're doing? You have no right to suppress th…Roswell! Roswell!\" - Blaine Faulkner",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0510x2",
+    "title": "Luis Cardinal",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Adversary",
+    "cost": "3 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 2,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Luis Cardinal can attack one Agent (your choice) for one round of LONG RANGE COMBAT and CLOSE RANGE COMBAT. If he attacks Assistant Director Walter Skinner, LRC is skipped and two rounds of CRC take place. If Agent Alex Krycek is attacked, all of his Equipment is removed and discarded.",
+    "dialogue": "Skinner: \"Is there a problem here?\"\nLuis Cardinal: \"Yeah, these is a big problem… Chupa dura amigo…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0511x2",
+    "title": "Liquid Alien",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Adversary",
+    "cost": "10 CP",
+    "skills": {
+      "Long Range Combat": 6,
+      "Close Range Combat": 6,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Alien",
+      "Phenomena",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method",
+      "Site"
+    ],
+    "gameText": "When this card is played on a Team of Agents, they make an ALIEN INVESTIGATION skill check of 4+. If successful, discard this card. If not, place this card on an Agent (your choice). That Agent now attacks the Team with the CLOSE RANGE COMBAT, LONG RANGE COMBAT and HEALTH of the Liquid Alien. When Combat ends, the affected Agent is reduced to zero Health.",
+    "dialogue": "\"Johansen did what he had to. That's war. Some are sacrificed so others can live.\" -  Irradiated Submariner",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0512x2",
+    "title": "Pusher",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 2,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Evolutionary",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Each combat round, the controller of the Team opposing Pusher must choose odd or even. Flip over the top card from the Bureau deck. If the cost matches his guess (odd or even) continue Combat as normal. If the guess is incorrect, Pusher may allocate one Agent's damage to any one target (including other Agents).",
+    "dialogue": "\"But the mechanism of suggestion is the same. It's just a lot more powerful in this case. I mean, this guy calls himself 'Pusher'; can't we take that to mean that he 'pushes' his will onto other people?\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0513x2",
+    "title": "Tong Enforcers",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 8,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "Tong Enforcers may use MARTIAL ARTS cards and split its damage amongst opponents.",
+    "dialogue": "Mulder: \"Ghosts or ancestral spirits have been central to Chinese spiritual life for centuries.\"\nScully: \"So you're saying that the ancestral spirits pushed Johnny Lo into the oven and turned on the gas?\"\nMulder: \"Well that would sure teach him to respect his elders, wouldn't it…?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0514x2",
+    "title": "Lake Beast",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Quagmire",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 8,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "This Adversary may use SUBTERFUGE cards.",
+    "dialogue": "\"Dr Bailey's not the first person to go missing from Heuvelman's Lake recently. Two weeks ago, a Boy Scout Troop was out here fox hunting. Their troop leader wandered off to relieve himself and hasn't been seen or heard from since.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0515x2",
+    "title": "Foreign Operative",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 4,
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Event"
+    ],
+    "gameText": "This Adversary may use MARTIAL ARTS and SUBTERFUGE cards.",
+    "dialogue": "Skinner: \"I'm up here with a Federal Attorney trying to sort out a little international mess. According to him, you made an arrest tonight.\"\nMulder: \"A murder suspect, yeah.\"\nSkinner: \"Yeah, I'm afraid you're gonna have to release him.\"\nMulder: \"What are you talking about?\"\nSkinner: \"According to the Japanese Diplomatic Corps, the man you arrested is a high-ranking diplomat.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0516x2",
+    "title": "Carl Wade",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Oubliette",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 3
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature",
+      "Abduction"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "Carl Wade engages one opposing Agent (your choice) in Combat. If Wade reduces the Agent to zero HEALTH, discard this card and place the Agent in the Hospital with three tokens on it. Remove one token in each of the owning player's Briefing phases. While tokens are on the Agent, they may not heal damage. When the last token is removed, the Agent may heal damage as normal. This card is considered an ABDUCTION card.",
+    "dialogue": "\"You shouldn't have run. I was taking care of you. I thought you understood. Why did you run away?\" -  Carl Wade",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0517x2",
+    "title": "Wall Of Cats",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 8,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Occult"
+    ],
+    "gameText": "Play this card in conjunction with an OCCULT Adversary. Both Adversaries attack simultaneously (treat as one Combat). The CLOSE RANGE COMBAT damage from this Adversary may be split amongst opponents.",
+    "dialogue": "Scully: \"What is it? Oh my God, it's Dr. Lewton. It looks like his eyes were eaten right out of his sockets.\"\nMulder: \"We still don't know by what.\"\nScully: \"What is it?\"\nMulder: \"I think it's a cat…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0518x2",
+    "title": "Artificially Intelligent Dung-Eating Robotic Probes",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "War of the Coprophages",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 5,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Alien",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Sciences",
+      "Site"
+    ],
+    "gameText": "The LONG RANGE COMBAT round is skipped. The Probes make one CLOSE RANGE COMBAT attack and are then discarded.",
+    "bio": "\"Well, think of it this way Mulder…by the time there's another invasion of artificially intelligent, dung-eating robotic probes from outer space, maybe their uber-children will have devised a way to save our planet. -  Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0519x2",
+    "title": "Napoleon \"Neech\" Manley",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The List",
+    "type": "Adversary",
+    "cost": "8 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 6,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "The LONG RANGE COMBAT round is skipped. \"Neech\" Manley engages one opposing Agent (your choice) in Combat.",
+    "bio": "\"The Lord says thou shall be merciful and just. I know no mercy. Allah says the spirit shall rise again and be reborn into this life … -  Napolen \"Neech\" Manley",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0520x2",
+    "title": "Agent Bonnecaze",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Bureaucracy": 2,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Close Range Combat": 1,
+      "Long Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Skeptic"
+    ],
+    "gameEffect": "Place a token on Agent Bonnecaze. At any time during the game, discard a token to force any Agent to return to the Bureau immediately. This effect may not be used to interrupt Combat. An Agent moved in this manner may not contribute to any skill checks this turn.",
+    "bio": "Agent Bonnecaze was in charge of the Office of Professional Conduct's investigation into the death of Carina Sayles and the murder charges against Assistant Director Walter Skinner.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0521x2",
+    "title": "Detective Glen Chao",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Bureaucracy": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Subterfuge": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 0
+    },
+    "keywords": [
+      "Agent",
+      "Law",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "An opposing Conspiracy player may pay two conspiracy points to send Detective Chao back to your Bureau if Detective Chao is investigating a Site with CRIMINAL INVESTIGATION, EVIDENCE COLLECTION, or BUREAUCRACY.",
+    "bio": "Detective Chao worked as an enforcer for one of China Town's Tong gangs. When Agents Fox Mulder and Dana Scully were called in to investigate a series of strange deaths, Chao had a change of heart and helped them to stop the Tong from killing them.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0522x2",
+    "title": "Agent Brian Fuller",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Agent",
+    "cost": "1 RP",
+    "skills": {
+      "Criminal Investigation": 1,
+      "Subterfuge": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 3,
+      "Resources": 0
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "When an Agent in Fuller's Team is forced to go to the Hospital, Agent Fuller may immediately elect to \"escort\" the Agent to the Hospital. Fuller may only do this if he would not normally be required to go to the Hospital himself. No other cards may be played on an Agent that Fuller escorts. This will prevent cards from being played on the escorted Agent.",
+    "bio": "Agent Brian Fuller was assigned to investigate the shooting of Assistant Director Walter Skinner by Luis Cardinal. Later, Fuller acted as a bodyguard for Skinner while he was hospitalized.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0523x2",
+    "title": "Agent Frank Burst",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Behavioral": 2,
+      "Criminal Investigation": 3,
+      "Evidence Collection": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Treat Agent Burst as a RES 2 if he is in the Field.",
+    "bio": "Agent Frank Burst was the first to capture the contract killer known as \"Pusher\". Burst called Agents Fox Mulder and Dana Scully to help apprehend him.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0524x2",
+    "title": "Agent Linda Caleca",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Agent",
+    "cost": "1 RP",
+    "skills": {
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Observation": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 0
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "Place two tokens on this card. Discard a token to draw one card from the top of your Bureau deck for zero [RP] cost any time you are the active player.",
+    "bio": "Agent Linda Caleca was assigned to investigate the shooting of Assistant Director Walter Skinner. She identified the shooter as Luis Cardinal.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0525x2",
+    "title": "Lieutenant Brophy",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Long Range Combat": 4,
+      "Close Range Combat": 3,
+      "Health": 5,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "Agent Brophy may use MARTIAL ARTS cards. He may add 1 to any damage caused by EQUIPMENT card attached to him that have a CLOSE RANGE COMBAT or LONG RANGE COMBAT modifier.",
+    "bio": "Agent Brophy, an FBI SWAT Lieutenant, worked with Agents Fox Mulder and Dana Scully, to apprehend the hit man Robert Modell, a.k.a. \"Pusher\".",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0526x2",
+    "title": "Deforestation",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Darkness Falls",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one keyword PRIMORDIAL Adversary.",
+    "dialogue": "Doug Spinney: \"What about your offense, my friend? What about the offense against nature you perpetrate?\"\nSteve Humphreys: \"We operate completely within the law. We pay for the right to take those trees.\"\nSpinney: \"Yeah, well I got news for you. Your logging crew was taking trees that nobody has the right to. Trees that are marked and protected. So don't talk to me about breaking the law. Sir.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0527x2",
+    "title": "Sewers",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Host",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one keyword OCCULT Adversary.",
+    "dialogue": "Foreman: \"That's the overflow pipe. It leads to another vault like this one, then about three-quarters of a mile to the sea.\"\nMulder: \"Let's see if we can get that gate closed.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0528x2",
+    "title": "Jeraldine Kallenchuk",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Draw the top three cards from your Bureau deck. If any of the drawn cards are playable and contain Keyword CONSPIRACY, you may immediately play one (your choice) for zero [CP] Cost. Discard the remaining cards drawn from your Bureau deck.",
+    "dialogue": "Mulder: \"I'm looking for Mr Kallenchuk.\"\nJeraldine Kallenchuk: \"I'm sorry, Mr Kallenchuk is out of town. Perhaps I can help you with something?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0529x2",
+    "title": "Your Last Warning",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one keyword GOVERNMENT Adversary.",
+    "dialogue": "The Grey-Haired Man: \"You take your orders like those below you Mr Skinner. A case is made inactive, maybe that's because those above you have done the hard work of arriving at that decision.\"\nSkinner: \"I'm gonna go now.\"\nThe Grey-Haired Man: \"It helps to know these things when a man looks forward to his career.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0530x2",
+    "title": "Manipulating The Circumstances",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one Adversary. Additionally, the Adversary's cost is halved (rounded up).",
+    "dialogue": "The Cigarette-Smoking Man: \"There's nothing here but holes in the ground, Mr Mulder.\"\nMulder: \"The UFO's here. That's what Krycek was after, isn't it?\"\nThe Cigarette-Smoking Man: \"Krycek? Alex Krycek disappeared five months ago.\"\nScully: \"We saw bodies back there. Men who had been exposed to high levels of radiation.\"\nThe Cigarette-Smoking Man: \"You saw nothing.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0531x2",
+    "title": "Lightning Strikes",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "D.P.O.",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one keyword EVOLUTIONARY Adversary.",
+    "dialogue": "\"That's as clear as glass. Do you know what we manufacture in Connorville? What one of our little local commodities is? We make lightning. At the Astadourian Lightning Observatory out on Route 4. A hundred ionized rods pointing at the sky, designed to stimulate lightning.\" -  Sheriff Teller",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0532x2",
+    "title": "Callahan Obstructs Initial Investigation",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Walk",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Observation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to change the Site Prerequisite from OBSERVATION to BUREAUCRACY.",
+    "dialogue": "Capt. Janet Draper: \"I've been asked to have you suspend whatever investigation you've begun here.\"\nMulder: Asked by whom, Captain?\"\nDraper: \"General Callahan. Lieutenant Colonel Stans' commanding officer.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0533x2",
+    "title": "Carina Sayles",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Bluff",
+    "cost": "7 CP",
+    "keywords": [
+      "Bluff",
+      "Government"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Force one opposing Agent of your choice to return to the Bureau. Place two tokens on the Agent. Remove one token during the owning player's Debriefing Phase. When no tokens remain, the Agent may leave the Bureau.",
+    "dialogue": "\"There's a man behind me wearing a red tie. For some reason he felt compelled to tell me half his life story. I was afraid if you got up, he might try to get in the other half.\" -  Carina Sayles",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0534x2",
+    "title": "Chaos Theory",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to change the Site Prerequisite from OCCULT INVESTIGATION to EVIDENCE COLLECTION.",
+    "dialogue": "Bob Spitz: \"George Huntacker's little boy got a phone call from someone who said they knew the location of the mass grave.\"\nDetective White: \"You're destroying private property Bob. You're gonna have to stop digging.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0535x2",
+    "title": "Disinformation Campaign",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to change the Site Prerequisite from ALIEN INVESTIGATION to CRIMINAL INVESTIGATION.",
+    "dialogue": "Man in Black: \"Even the former leader of your United States of America, James Earl Carter Jr, thought he saw a UFO once. But it's been proven he only saw the planet Venus.\"\nRoky Crikenson: \"I'm a republican!\"\nMan in Black: \"Venus was at its peak brilliance last night. You probably thought you saw something up in the sky other than Venus, but I assure you… it was Venus.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0536x2",
+    "title": "Falsified Air Force Crash",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Alien Investigation",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from one Team's ALIEN INVESTIGATION or CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "Detective Manners:  \"Apparently, that was the cause of all those UFO sightings three nights ago. They refused our assistance because it's some kind of top secret, experimental plane.\"\nMulder: \"They don't want assistance. They want witnesses to their alibi.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0537x2",
+    "title": "Dr. Stroman",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Wetwired",
+    "type": "Bluff",
+    "cost": "3 CP",
+    "keywords": [
+      "Bluff",
+      "Medical"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play to change a Site Prerequisite to MEDICAL 3+.",
+    "dialogue": "\"It may be some form of organic delusional syndrome, possibly due to chronic methamphetamine abuse, I don't know. But he is prone to outbursts.\" -  Dr. Stroman",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0538x2",
+    "title": "Government Leaves No Loose Ends",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Medical",
+      "Sciences"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from Team's MEDICAL or SCIENCES skill check.",
+    "dialogue": "\"Several weeks ago in Knoxville, Tennessee, four Japanese nationals were murdered. All prominent doctors apparently engaged in a highly classified project.\" -  Senator Matheson",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0539x2",
+    "title": "Incanto Stalks Prey Over Internet",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "2Shy",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Behavioral"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play to change the Site Prerequisite from COMPUTER to BEHAVIORAL.",
+    "dialogue": "\"Our killer may have moved from the personal columns and onto the internet. I'm sending out a localized online warning…\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0540x2",
+    "title": "Greetings From Planet Earth",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "War of the Coprophages",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Sciences"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play to change the Site Prerequisite to from MEDICAL to SCIENCES.",
+    "dialogue": "\"Greetings from planet Earth.\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0541x2",
+    "title": "Secret of the Horned Beast",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Occult Investigation",
+      "Behavioral"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from one Team's OCCULT INVESTIGATION or BEHAVIORAL skill check.",
+    "dialogue": "Detective White: \"What is that?\"\nScully: \"What's what?\"\nWhite: \"That pattern, there, on his chest.\"\nMulder: \"Yeah, I see it. It looks like a… goat, some kinda horned beast.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0542x2",
+    "title": "Sheriff Teller",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "D.P.O.",
+    "type": "Bluff",
+    "cost": "3 CP",
+    "keywords": [
+      "Bluff",
+      "Sciences"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play to change the Site Prerequisite to SCIENCES 3+.",
+    "dialogue": "Sheriff Teller: \"My name's Teller. I'm with Johnston County Sheriff's Department. Just got word there's an FBI investigation.\"\nScully: \"Yes. I'm Agent Scully.\"\nSheriff Teller: \"I know who you are. I just wondered what the hell you're doing here.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0543x2",
+    "title": "Security Breach",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Subterfuge",
+      "Observation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from one Team's SUBTERFUGE or OBSERVATION skill check.",
+    "dialogue": "\"I reviewed the building security tapes. Modell can be seen entering and leaving unnoticed. He had the word \"pass\" on his lapel. Guards who waved him by don't remember seeing him at all.\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0544x2",
+    "title": "Video Signal",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Wetwired",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Government"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Video Signal affects one Agent on the opposing Team (your choice). That Agent must be moved to the Hospital immediately and may not contribute to the Site skill check. The Agent does not receive any damage.",
+    "dialogue": "Mulder: \"Scully, listen to me very carefully. You don't know it, but you're sick with the same thing that drove those other people to murder… and whatever you think may be happening…\"\nScully: \"Just step back.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0545x2",
+    "title": "Skinner Framed For Murder",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Bureaucracy",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from one Team's BUREAUCRACY or CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "\"He claims he met the victim in the bar downstairs. After a few drinks, they decide to take a room together which is all fine, except when he wakes up she's lying next to him with a broken neck.\" -  Detective Waltos",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0546x2",
+    "title": "Virgil Incanto Has No History or Profile",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "2Shy",
+    "type": "Bluff",
+    "cost": "6 CP",
+    "keywords": [
+      "Bluff",
+      "Evidence Collection",
+      "Computer"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 4 from one Team's EVIDENCE COLLECTION or COMPUTER skill check.",
+    "dialogue": "Scully: \"What about employment records?\"\nMulder: \"He's a translator of Italian literature. Freelance. His publisher pays him in cashier's checks.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0547x2-alt",
+    "title": "Alien Experience [alternate version]",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one Keyword ALIEN Adversary.",
+    "dialogue": "Alien #1: \"Jack, what is that thing?\"\nAlien #2: \"How the hell should I know?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0547x2",
+    "title": "Alien Experience",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to provide the keywords necessary to play any one Keyword ALIEN Adversary.",
+    "dialogue": "Jose Chung: \"Have I had my share of mornings like that. Oh, but these have the characteristics of someone who has… uh… do you prefer the term 'abductee' or 'experiencer'?\"\nScully: \"Actually, I prefer neither, but my partner uses 'abductee'.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0548x2",
+    "title": "Hostage Negotiations",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Duane Barry",
+    "type": "Event",
+    "cost": "X RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card on a Team of Agents. Each Combat card discarded from your hand gives the Team a +1 modifier to the Site skill check. X = the number of Combat cards discarded.",
+    "dialogue": "Lucy Kazdin: \"His name's Duane Barry. He's armed with a nine millimeter Smith and Wesson handgun, one nine-round magazine. It is our belief he is prepared to use the gun and not afraid to die.\"\nMulder: \"What does he want?\"\nKazdin: \"Safe passage for himself and his original hostage, a shrink named Hakkie.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0549x2",
+    "title": "Make The Deal",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card on one Site card during the Case Assignment Phase. No Bluffs may be played on this Site except for Bluffs which would negate this card. Discard this card when the Site card is discarded.",
+    "dialogue": "Scully: \" I asked Skinner to make the deal. But not to hand over the tape until you agree to it.\"\nMulder: \"I'm sorry about your sister, Scully.\"\nScully: \" I just need to know if she's going to be alright.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0550x2",
+    "title": "Discovering the Truth",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to reveal any face down card by turning it face up (except your opponent's X-File). If it has the Keyword \"Secret\", it is discarded.",
+    "dialogue": "Victor Klemper: \"Progress demands sacrifice, and I… I have confronted my demons. And soon I will die too.\"\nMulder: \" Like my father. They killed him and I believe you know why.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0551x2",
+    "title": "FBI Internet Alert",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "2Shy",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Evidence Collection",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may place up to 2 [RP] from your Resource Pool on this card when it comes into play. Discard 1 [RP] token to double the [CP] Cost of any one EVOLUTIONARY Adversary played by your opponent. If your opponent cannot or chooses not to pay the additional Cost, the Adversary card is discarded. When no tokens remain on this card, move it to your Discard Pile.",
+    "dialogue": "\"Ellen, this wasn't some public service announcement. It was an on-line warning by the FBI aimed specifically at women in Cleveland.\" -  Joanne Steffen",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0552x2",
+    "title": "He's Gonna Find You",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Revelations",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Occult"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to allow Adversaries to attack one Team of Agents anywhere in the Field, Bureau, or Hospital, ignoring Activator requirements.",
+    "dialogue": "\"Kevin? I know you're here, son.\" -  Simon Gates",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0553x2",
+    "title": "Persistent Conspiracy",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Event",
+    "cost": "2 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play to return one Adversary to your hand that would normally be moved to your Discard pile.",
+    "dialogue": "Scully: \"What am I looking at?\"\nMulder: \"This is the man that stole Skinner's car last night and tried to kill his wife.\"\nScully: \"I don't understand. Why would they orchestrate such an elaborate scheme just to set him up? Why not just kill him?\"\nMulder: \"They already tried that once, and a second attempt would be too obvious, even for these thugs. Anyway, I think Skinner's probably worth more to them alive in disgrace than dead and buried.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0554x2",
+    "title": "Canvassing",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Lazarus",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to gain a +1 modifier to the current Site skill check for each Site card discarded from your hand.",
+    "dialogue": "\"With a hundred law enforcement officials at our disposal at about thirty households per man per hour we should be able to canvass the entire area in about three hours.\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0555x2",
+    "title": "Clean-Up Operation",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Criminal Investigation",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may place up to 2 [RP] from your Resource pool on this card when it comes into play. Discard one [RP] token to double the [CP] Cost of any one Government Adversary played by your opponent. If your opponent cannot or chooses not to pay the additional Cost, the Adversary card is discarded. When no tokens remain on this card, move it to your Discard Pile.",
+    "dialogue": "\"Let's go… outside… move it, move…\" -  Soldier",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0556x2",
+    "title": "Making Sacrifices",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Talitha Cumi",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Move"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to allow one Team of Agents to investigate two Sites this turn. In the Debriefing Phase, each Agent takes 2 damage. If this lowers any Agent's HEALTH to zero, move them to the Hospital.",
+    "dialogue": "Scully: \"Where are you going?\"\nMulder: \"If I told you, you'd never let me go.\"\nScully: \"Mulder you haven't slept in almost 24 hours.\"\nMulder: \"Call me if you find anything.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0557x2",
+    "title": "Sacrificing a Pawn",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card and discard any one Adversary card from your hand. You may add any one Keyword to one opponent's Site.",
+    "dialogue": "Scully: \"Are you Luis Cardinal? Are you the man who shot my sister?\"\nLuis Cardinal: \"Don't kill me, please.\"\nScully: \"You shot my sister.\"\nCardinal: \"Please, I can tell you…\"\nScully: \"Tell me!\"\nCardinal: \"I can tell you what you want… you want… Krycek.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0558x2",
+    "title": "Yaje",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may place up to 2 [RP] from your Resource Pool on this card when it comes into play. Discard 1 [RP] token to double the [CP] Cost of any one OCCULT Adversary played by your opponent. If your opponent cannot or chooses not to pay the additional Cost, the Adversary card is discarded. When no tokens remain on this card, move it to your Discard Pile.",
+    "dialogue": "Mona Wustner: \"What is that?\nDr Bilac: \"Vine of the soul.\"\nWustner: \"Yaje? You're drinking yaje? You're sick Lonnie. You need help.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0559x2",
+    "title": "I'm Not Your Source",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Wetwired",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card in an opponent's Field and place two tokens on it. Discard a token to prevent your opponent from playing any Events or Witnesses while investigating a Site. Does not affect Events or Witnesses currently in play. Discard this card when no tokens remain.",
+    "dialogue": "Mulder: \"I get an anonymous e-mail to come meet you here in the middle of the night, I don't know who you are or what you want.\"\nThe Plain-Clothes Man: \"I don't have any obligation or desire to give you any answers. I'm not one of your sources.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0560x2",
+    "title": "Implant Records and Steals Memory",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Event",
+    "cost": "1 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play after your opponent has completed a successful Site skill check. Remove up to 4 [RP] from your opponent's Resource Pool.",
+    "dialogue": "Agent Pendrell: \"This kind of neural network could be not only collecting information, but artificially replicating a person's mental processes.\"\nScully: \"You could know a person's every thought.\"\nPendrell: \"Frightening…\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0561x2",
+    "title": "Losing Your Tail",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Little Green Men",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card at the end of the Case Assignment Phase, after Bluffs have been played. Return any one Site to your hand. Bluffs attached to this Site are moved to the owning player's Discard pile.",
+    "dialogue": "Agent Morris: \"Relax, we know where she's going… St. Croix. Caribbean Air flight 519. Takes off at five after seven. Gate's in the other terminal..\"\nScully: \"I'd like a ticket on the 6:30 flight to San Juan.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0562x2",
+    "title": "Cultural Barrier",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Event",
+    "cost": "3 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to change the question(s) listed on one Site card to MOTIVE.",
+    "dialogue": "\"You don't even know what the hell you're dealing with here. This isn't some pretty little lacquer box you can just take the lid off and find out what's inside. You might see the face of a Chinese man here but let me tell you something… they don't see the same face. They see the face of a cop… American-born Chinese, ABC. To them, I'm just as white as you are.\" -  Detective Glen Chao",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0563x2",
+    "title": "Record of Atrocities",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to lower a Site Prerequisite by 2.",
+    "dialogue": "Scully: \"And what they can't cover, they apologize for. Apology has become policy.\"\nMulder: \"I don't need an apology for the lies. I don't care about the fictions they create to cover their crimes. I want them held accountable for what did happen. I want an apology for the truth.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0564x2",
+    "title": "Jeopardizing The X-Files",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Deep Throat",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Force one opponent to immediately discard their entire hand. Your opponent, at their option, may opt to pay 3 [RP] for each card they do not want to discard.",
+    "dialogue": "Deep Throat: \"I came here to give you some valuable advice. You are exposing yourself and Agent Scully to unnecessary risk. I advise you to drop the case.\"\nMulder: \"I can't do that.\"\nDeep Throat: \"You have much work to do Agent Mulder. Don't jeopardize the future of your own efforts.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0565x2",
+    "title": "Agents in the Hospital",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card when there are two or more Agents in the Hospital. No Agents in the Hospital may heal any damage this turn.",
+    "dialogue": "Mulder: \"Guess I'm not dead.\"\nScully: \"What happened?\"\nMulder: \"Maybe you can tell me?\"\nScully: \"The State police found you unconscious. You were strapped in the passenger's seat of a rental car that had been driven into a ditch.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0566x2",
+    "title": "I've Got the Tape",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Alien",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may place up to 3 [RP] from your Resource Pool on this card when it comes into play. Discard 1 [RP] token to double the [CP] Cost of any one ALIEN Adversary played by your opponent. If your opponent cannot or chooses not to pay the additional Cost, the Adversary card is discarded. When no tokens remain on this card, move it to your Discard Pile.",
+    "dialogue": "\"I'm sure of this… if I so much as feel your presence, I'm going to make you a very, very famous man.\" -  Krycek",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0567x2",
+    "title": "There's a Bomb on the Train",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Event",
+    "cost": "3 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to change the question(s) listed on one Site card to AFFILIATION.",
+    "dialogue": "\"This car is wired to an explosive device. It armed automatically when I entered the car.\" -  The Red-Haired Man",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0568x2",
+    "title": "Secret Railroad",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent BUREAUCRACY skill level equal to their EVIDENCE COLLECTION skill level for the rest of this turn.",
+    "dialogue": "Scully: \"I'm standing in a train car just like the one in your alien autopsy video. Only I realise that I've been here before.\"\nMulder: \"What are you talking about, Scully?\"\nScully: \"This is where they brought me, Mulder. This is where they put the implant in my neck. In one of these cars.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0569x2",
+    "title": "Heroic Leap",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place damage tokens, up to one less than the Agent's current health, on an Agent. Apply a +1 modifier to the current Site skill check for each token of damage placed.",
+    "dialogue": "\"Mulder, don't get on the train…\" -  Scully",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0570x2",
+    "title": "Alien Body Is A Hoax",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Event",
+    "cost": "3 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to change the question(s) listed on one Site card to METHOD.",
+    "dialogue": "Blaine Faulkner: \"You mean it's… it's just a dead human being?\"\nDetective Manners: \"Well then who is this bleep?\"\nMulder: \"I don't know, but I bet we can find his I.D. from the military database.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0571x2",
+    "title": "Alien Uses Oil as Transportation Medium",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent ALIEN INVESTIGATION skill equal to their CRIMINAL INVESTIGATION skill level for the rest of this turn.",
+    "dialogue": "\"I don't think this is just ordinary diesel oil, Scully. I think it's a…I think it's a medium…a medium being used by some kind of alien creature that uses it to… body jump.\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0572x2",
+    "title": "Latent Image",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Site"
+    ],
+    "gameText": "Make a COMPUTER 4+ skill check. If successful, apply a +1 modifier to the Site skill check.",
+    "dialogue": "Agent Pendrell: \"You know how an airbag works?\"\nMulder: \"Your car hits something, a bag fills with air, you don't die.\"\nPendrell: \"Not air, nitrogen. Now, the latent image… the one we're interested in… is found in the byproduct of that explosion.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0573x2",
+    "title": "Disciplinary Actions",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Blessing Way",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play on an opposing Agent. Place three tokens on this card and move the Agent to the Bureau. Remove a token during the opponent's Debriefing Phase. The Agent may not leave the Bureau until all tokens have been removed. While in the Bureau the Agent may not receive or use any equipment; nor may the Agent contribute to any Skill checks.",
+    "dialogue": "\"It is the recommendation of the Office of Professional Conduct that Special Agent Dana Scully be given a mandatory leave of absence until the full detail of her misconduct can be calculated.\" -  Senior Agent",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0574x2",
+    "title": "Secrets of the Navajo People",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Blessing Way",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Medical"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent MEDICAL skill equal to their EVIDENCE COLLECTION skill level for the rest of this turn.",
+    "dialogue": "\"I watched my father perform the chants as a young boy and saw their healing magic.\" -  Albert Hosteen",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0575x2",
+    "title": "He Won't Let Me Die",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Walk",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card when an Agent in the Field has been reduced to zero Health and is to be moved to the Hospital or removed from the game. Increase the Agent's Health to 3 (no matter how much damage has been dealt) and leave the Agent in the Field.",
+    "dialogue": "Lt. Colonel Victor Stans: \"Your time has come, he said. Then he started taking it all away.\"\nScully: \"What did he start taking away?\"\nStans: \"Everything. My wife… my children…\"\nScully: \"And how did he do that?\"\nStans: \"How did… He burned them alive… Now he makes me suffer. Because he won't let me die.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0576x2",
+    "title": "Widespread Panic",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "War of the Coprophages",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Alien Investigation",
+      "Evidence Collection",
+      "Observation",
+      "Sciences"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Subtract 3 from any one ALIEN INVESTIGATION, EVIDENCE COLLECTION, OBSERVATION or SCIENCES skill check.",
+    "dialogue": "\"All right, listen up! I'm Agent Dana Scully from the Federal Bureau of Investigation. I am assuring you that you are not in any danger. Everything is going to be OK if you just calm down, and start acting rationally. Now where the hell are those road maps?\" -  Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0577x2",
+    "title": "Travel Plans",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card in the Field. Search through your Bureau Deck and draw up to two Site cards. Place the drawn Site cards face down below this card. You may play these Site cards for zero [RP] during your Case Assignment phase. Discard this card when no cards remain underneath. If this card is negated, the Site cards beneath it are moved to your Discard Pile.",
+    "dialogue": "Mulder: \"Why don't you stick around, get a motel room and check it out in the morning?\"\nScully: \"What are you going to do?\"\nMulder: \"I'm going back to D.C. like a good boy. Like Skinner told me to do, and show these to a few friends of ours.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0578x2",
+    "title": "Drag the Lake",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Quagmire",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Sciences",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You may place up to 2 [RP] from your Resource Pool on this card when it comes into play. Discard 1 [RP] token to double the [CP] Cost of any one PRIMORDIAL Adversary played by your opponent. If your opponent cannot or chooses not to pay the additional Cost, the Adversary card is discarded. When no tokens remain on this card, move it to your Discard Pile.",
+    "dialogue": "\"That's three in one day, Sheriff. All this driving from crime scene to crime scene is giving me highway hypnosis. Close down the lake.\" -  Mulder",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0579x2",
+    "title": "Informant on the Intelligence Committee",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent SUBTERFUGE skill equal to their CRIMINAL INVESTIGATION skill level for the rest of this turn.",
+    "dialogue": "\"I understand you're in a difficult position. Don't look so stunned. I'm on the Intelligence Committee. Secrets are the only real currency we deal in.\" -  Senator Matheson",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0580x2",
+    "title": "A Call for Help",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Wetwired",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Search through your Bureau deck for one Event or Witness card with Activator ACTIVE. Show the card to your opponent and add it to your hand. Shuffle your Bureau deck. If the card is immediately playable, you may do so for zero [RP] cost.",
+    "dialogue": "\"Whatever prompted her behavior, the fact remains that Scully is armed and obviously dangerous so I suggest you marshall whatever resources you have to make sure that you find her first.\" -  Skinner",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0581x2",
+    "title": "Obsessed",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Oubliette",
+    "type": "Event",
+    "cost": "0 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card on any Team that includes at least one Agent that has investigated another Site this turn. Apply a +2 modifier to the Site skill check.",
+    "dialogue": "Mulder: \"What don't I see?\"\nScully: \"The extreme rationalization that's going on. Your personal identification with the victim or in this case, the suspect. You're becoming some kind of an empath yourself, Mulder. You are so sympathetic to Lucy as a victim like your sister, that you can't see her as a person who's capable of committing this crime.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0582x2",
+    "title": "Lucy Gives Up Her Life For Amy",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Oubliette",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card and choose one Agent to send to the Hospital immediately with zero Health. All Bluff currently affecting that Agent Team (revealed or unrevealed) are discarded.",
+    "dialogue": "Mulder: \"She drowned, didn't she?\"\nScully: \"They found five liters of water in her lungs.\"\nMulder: \"She saved Amy's life.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0583x2",
+    "title": "The Cigarette-Smoking Man's Solution",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "7 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play on a Team of Agents in the Field after your opponent has identified your X-File's AFFILIATION. Your opponent must immediately move every Agent on the Team to the Hospital. Each Agent receives 4 damage (or maximum damage if their HEALTH is less than 4).",
+    "dialogue": "\"You haven't got any tape. And you haven't got any deal. You can't play poker if you're not holding any cards Mr Skinner. You ever wondered what it would be like to die in a plane crash? Of botulism? Even a heart attack isn't that uncommon for a man of your age. You think I'm bluffing?\" -  The Cigarette-Smoking Man",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0584x2",
+    "title": "Aliens Monitor the Project",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Paper Clip",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Event",
+      "Alien",
+      "Government"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card after playing a Keyword ALIEN Adversary and resolving the Combat. You may play one additional Adversary from your hand with the Keyword ALIEN or GOVERNMENT for zero [CP] ignoring Activator requirements.",
+    "dialogue": "Scully: \"What happened to you?\"\nMulder: \"They got a small army outside. I think they got us trapped.\"\nScully: \" I think there's a way out, down here.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0585x2",
+    "title": "Frog Holocaust",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Quagmire",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Negate one Keyword EVOLUTIONARY card.",
+    "dialogue": "Dr Bailey: \"Regardless, your study remains inconclusive. Speculative at best. You've provided no concrete evidence that frog depopulation is the exclusive result of human encroachment.\"\nDr Farraday: \"A frog holocaust is currently being executed Dr Bailey and man is the executioner.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0586x2",
+    "title": "True Stigmatic",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Revelations",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Negate one Keyword PHENOMENA card.",
+    "dialogue": "Scully: \"Yesterday I saw Kevin's hands. They were bleeding from identical wounds on the top as on the bottom. Just like in the crucifixion.\"\nMulder: \"Scully…\"\nScully: \"There have been other signs. I haven't said anything until now, because I haven't been sure.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0587x2",
+    "title": "Full Circle to Find the Truth",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Revelations",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent OCCULT INVESTIGATION skill equal to their CRIMINAL INVESTIGATION skill level for the rest of this turn.",
+    "dialogue": "Mr Kryder: \"You must come full circle to find the truth.\"\nMulder: \"Excuse me?\"\nScully: \"Full circle to find the truth? I don't know what that means.\"\nKryder: \"You will.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0588x2",
+    "title": "Bad Reputation",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Squeeze",
+    "type": "Event",
+    "cost": "1 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card to force one opponent to discard one Agent card (their choice) from their hand. If they have no Agents, discard one card randomly.",
+    "dialogue": "Tom Colton: \"And how're you doing? Had any close encounters of the third kind?\"\nScully: \"Is that what everybody thinks I do?\"\nColton: \"No, no. Of course not. But you do work with Spooky Mulder.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0589x2",
+    "title": "Try to Remember",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Talitha Cumi",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play once your opponent finishes selling cards. No [CP] are actually generated ([CP] generated by cards sold this turn must be returned). Your opponent may not buy any cards this turn.",
+    "dialogue": "Mrs Mulder: \"I've repressed it all.\"\nThe Cigarette-Smoking Man: \"Well, I find that hard to believe. Particularly since I've come here today to ask you to remember something. Something I'm gonna have to ask you very hard to recollect.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0590x2",
+    "title": "Sleep With the Fishes",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "3 CP",
+    "skills": {},
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card on any card in play. The Keywords on that card cannot be altered. This will also negate any card that has already been played that alters the Keywords of the card in play.",
+    "dialogue": "Skinner: \"Kazuro Sakurai, the diplomat that you detained yesterday.\"\nMulder: \"Our murder suspect?\"\nSkinner: \"He didn't make his flight last night. This morning, his body was found floating face-down in the C and O Canal. I think we can assume he wasn't diving for pearls…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0591x2",
+    "title": "Menial Assignments",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Host",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Bureaucracy",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card on one opposing Agent. Place three tokens on this card. While this card is in play, the affected Agent may only contribute to Site skill checks using EVIDENCE COLLECTION or CRIMINAL INVESTIGATION as a Prerequisite. Remove on token during your opponent's Debriefing Phase. Discard this card when all tokens have been removed.",
+    "dialogue": "Skinner: \"Agent Mulder, would you please inform the room as to why you regard your homicide case in New Jersey as meaningless?\"\nMulder: \"It seemed to me like a simple drugland body dump. Not the type of case the FBI normally wastes its time and manpower on.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0592x2",
+    "title": "Roach Completes The Link",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Walk",
+    "type": "Event",
+    "cost": "2 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Play this card after a Combat has been initiated. Search through your Bureau Deck and add any two Combat cards to your hand. Reshuffle your Bureau deck.",
+    "dialogue": "Scully: \"Then why would he need Quinton Freely?\"\nMulder: \"Maybe he needs a psychic connection to a place, a thing or an object.. a letter…that's why Quinton called himself The Mailman.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0593x2",
+    "title": "Roach Experiments in Your Neighborhood",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "War of the Coprophages",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent SCIENCES skill equal to their EVIDENCE COLLECTION skill level for the rest of this turn.",
+    "dialogue": "Mulder: \"Why all the secrecy about your research? You've got some of the good townspeople suspicious.\"\nDr Berenbaum: \"You expect us to advertise that we've intentionally infested a house in their neighborhood with thousands of cockroaches?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0594x2",
+    "title": "UFO Transferred to Newport News",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to give any one Agent OBSERVATION skill equal to their CRIMINAL INVESTIGATION skill level for the rest of this turn.",
+    "dialogue": "\"I identified what those five photos were tracking. A ship that pulled a UFO off the bottom of the Pacific Ocean. A UFO that's in a warehouse right now being guarded by US military personnel\" -  Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0595x2",
+    "title": "Abandoned Missile Site, Black Crow, North Dakota",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Apocrypha",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Alien Investigation",
+      "Affiliation"
+    ],
+    "prerequisite": "ALIEN INVESTIGATION 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "dialogue": "Scully: \"It's him Mulder, the man who shot my sister. He said he knows where Krycek is. I don't know if this makes any sense to you, he says he's headed towards an abandoned missile site somewhere in North Dakota.\" -  Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0596x2",
+    "title": "Ambassador Hotel, Washington, D.C.",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Criminal Investigation",
+      "Sciences",
+      "Affiliation",
+      "Method"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 5+ or SCIENCES 5+",
+    "question": "You may ask one AFFILIATION question or one METHOD question.",
+    "dialogue": "Mulder: \"I work with Assistant Director Skinner. I'd like to speak with him.\"\nWaltos: \"You can see him after he gives his statement. We're gonna finish up at the station house.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0597x2",
+    "title": "Carl Wade's Cabin, Easton, Washington",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Oubliette",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Behavioral",
+      "Sciences",
+      "Motive",
+      "Method"
+    ],
+    "prerequisite": "BEHAVIORAL 5+ or SCIENCES 5+",
+    "question": "You may ask one MOTIVE question or one METHOD question.",
+    "dialogue": "Mulder: \"Interstate 12…County 15 north … 903…. look at this. Right off the 903.\"\nAgent Eubanks: \"Easton?\"\nMulder: \"That's where Lucy was found 17 years ago.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0598x2",
+    "title": "Comity, Caryl County",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Occult Investigation",
+      "Motive"
+    ],
+    "prerequisite": "OCCULT INVESTIGATION 4+",
+    "question": "You may ask one MOTIVE question.",
+    "dialogue": "Scully: \"The map says to turn right at the intersection.\"\nMulder: \"The detective who contacted me told me to turn left.\"\nScully: \"At the intersection?\"\nMulder: \"Stop light.\"\nScully: \"This isn't a stop light, it's a stop sign.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0599x2",
+    "title": "Connorville, Oklahoma",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "D.P.O.",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Sciences",
+      "Affiliation"
+    ],
+    "prerequisite": "SCIENCES 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "dialogue": "Scully: \"Are you aware that something like sixty people die from lightning strikes across the country each year? And five of those happened right here in Connorville?\"\nStan Buxton: \"I know it's statistically improbable, but…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0600x2",
+    "title": "Eastpoint State Penitentiary, Leon County, Florida",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The List",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Criminal Investigation",
+      "Motive"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 4+",
+    "question": "You may ask one MOTIVE question.",
+    "dialogue": "Mulder: \"A week before his execution, word went through the prison that Neech said he was gonna be reincarnated. He was gonna come back from the dead.\"\nScully: \"Well, reincarnation has always been popular on death row, for obvious reasons.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0601x2",
+    "title": "Hansen's Disease Research Facility, Perkey, West Virginia",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "731",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Alien Investigation",
+      "Motive"
+    ],
+    "prerequisite": "ALIEN INVESTIGATION 4+",
+    "question": "You may ask one MOTIVE question.",
+    "dialogue": "\"I had Fed Ex, U.P.S., the Postal Service… every commercial courier go through their computer records. They turned up one shipment, sent to a Doctor Shiro Zama at a research facility out in Perkey, West Virginia.\" -  Agent Pendrell",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0602x2",
+    "title": "Hong Kong",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Evidence Collection",
+      "Subterfuge",
+      "Method",
+      "Result"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 5+ or SUBTERFUGE 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "Jeraldine Kallenchuk: \"I'm a middle man Mr Mulder, pardon my gender type. I take a cut, then slice off the top. It would be bad business to divulge my sources.\"\nMulder: \"Why did you run off to Hong Kong?\"\nKallenchuk: \"To meet the buyer.\"\nMulder: \"To sell him what?\"\nKallenchuk: \"Pardon your gender type.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0603x2",
+    "title": "Klass County, Washington",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Bureaucracy",
+      "Affiliation"
+    ],
+    "prerequisite": "BUREAUCRACY 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "dialogue": "I spent three months in Klass County and everybody there has a different version of what truly happened…\" -  Jose Chung",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0604x2",
+    "title": "Loudon County, Virginia",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Computer",
+      "Motive"
+    ],
+    "prerequisite": "COMPUTER 4+",
+    "question": "You may ask one MOTIVE question.",
+    "dialogue": "\"I want him in a car with a cage! Loudoun County Unit, whatever. I'll ride shotgun.\" -  Agent Frank Burst",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0605x2",
+    "title": "Mulder Summer House, Quonochontaug, Rhode Island",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Talitha Cumi",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Subterfuge",
+      "Method"
+    ],
+    "prerequisite": "SUBTERFUGE 4+",
+    "question": "You may ask one METHOD question.",
+    "dialogue": "\"So many good times at the Mulder's summer place. Your kids…young and energetic. I remember water-skiing down there with Bill. He was a good water-skier, your husband. Not as good as I was… but then that could be said about so many things.\" -  The Cigarette-Smoking Man",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0606x2",
+    "title": "Museum Of Natural History, Boston, Massachusetts",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Evidence Collection",
+      "Method"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 4+",
+    "question": "You may ask one METHOD question.",
+    "dialogue": "Scully: \"How did you learn about what happened here last night?\"\nDr. Lewton: \"Tim Decker, one of our security guards, called me when he first discovered the blood.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0607x2",
+    "title": "St Paul, Minnesota",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Criminal Investigation",
+      "Result"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 4+",
+    "question": "You may ask one RESULT question.",
+    "dialogue": "Madame Zelma: \"Mister… please, you're hurting me.\"\nPuppet: \"I know, I know… and I'm sorry. But you're a fortune teller. You should've seen this coming…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0608x2",
+    "title": "Two Grey Hills, New Mexico",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "The Blessing Way",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Medical",
+      "Affiliation"
+    ],
+    "prerequisite": "MEDICAL 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "dialogue": "\"The desert does not forgive man his weakness. Weak or strong, it takes no mercy and can kill a man in less than a day. To survive, one must develop skin like leather, know where to find water and when to take shelter.\" -  Albert Hosteen",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0609x2",
+    "title": "U.S. Coast Guard Headquarters, Newport News, Virginia",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Nisei",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Subterfuge",
+      "Affiliation"
+    ],
+    "prerequisite": "SUBTERFUGE 4+",
+    "question": "You may ask one AFFILIATION question.",
+    "bio": "\"The rest of those satellite photos… they track the ship through the Panama canal, all the way to Newport News, Virginia. -  Byers",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0610x2",
+    "title": "U.S. Naval Hospital, San Diego, California",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Evidence Collection",
+      "Medical",
+      "Affiliation",
+      "Result"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 5+ or MEDICAL 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "Scully: \"They know that they could drop you in the middle of the desert, and tell you the truth is out there, and you would ask them for a shovel.\"\nMulder: \"That's what you think of me?\"\nScully: \"Well, maybe not a shovel. Maybe a backhoe.\"\nMulder: \"Well, that's good because there's some garbage in San Diego I want you to help me dig through.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0611x2",
+    "title": "Commander Christopher Johansen",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active",
+      "Bureaucracy"
+    ],
+    "gameText": "Adds 3 to one Team's BUREAUCRACY skill check.",
+    "dialogue": "Scully: \"You know something about that plane, don't you?\"\nCommander Johansen: \"I know because I was sent to find it, as an officer in the submarine, called the 'Zeus Faber'.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0612x2",
+    "title": "Sheriff Frass",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "War of the Coprophages",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Criminal Investigation"
+    ],
+    "gameText": "Adds 3 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "Sheriff Frass: \"Well, excuse me prying, Sir, but…why were you sitting here with your wiper blades on?\"\nMulder: \"I was just knocking off some bugs that landed on my windshield.\"\nFrass: \"Cockroaches?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0613x2",
+    "title": "Ansel Bray",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Quagmire",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active",
+      "Evidence Collection"
+    ],
+    "gameText": "Adds 3 to one Team's EVIDENCE COLLECTION skill check.",
+    "dialogue": "Mulder: \"You think Big Blue is responsible for what's been happening?\"\nAnsel Bray: \"Don't you?\"\nMulder: \"Have you ever actually seen it?\"\nBray: \"Not directly, no. But I aim to. One day I'll be in the right place at the right time, and I will snap a shot of that monster.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0614x2",
+    "title": "Dr. Seizer",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Medical"
+    ],
+    "activators": [
+      "Active",
+      "Medical"
+    ],
+    "gameText": "Adds 3 to one Team's MEDICAL skill check.",
+    "dialogue": "\"They were in pretty bad shape by the time they got to me. Except for one man and this was strange - because he was the only one who seemed to be completely unaffected. I held him for the first day, but I detected none in the symptoms of the others. His leukocytes and erythrocytes were high - actually, he was in very good health.\" -  Dr. Seizer",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0615x2",
+    "title": "Gauthier",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation",
+      "Subterfuge"
+    ],
+    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION or SUBTERFUGE skill check.",
+    "dialogue": "Mulder: \"How did you get here?\"\nGauthier: \"I can't remember. I was on the boat…\"\nMulder: \"The Piper Maru? That's all you remember?\"\nGauthier: \"Yes… I was on a dive\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0616x2",
+    "title": "Roky Crikenson",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation",
+      "Occult Investigation"
+    ],
+    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION or OCCULT INVESTIGATION skill check.",
+    "dialogue": "Mulder: \"What did you see that night?\"\nRoky Crikenson: \"This. It's all here. Immediately after seeing what I saw that night, I rushed right home and wrote it all down…48 hours straight. I didn't want to forget one detail.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0617x2",
+    "title": "Dr. Lewton",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active",
+      "Behavioral",
+      "Bureaucracy"
+    ],
+    "gameText": "Adds 1 to one Team's BEHAVIORAL or BUREAUCRACY skill check.",
+    "dialogue": "\"I think Craig Horning was killed because of the project he was working on.\" -  Dr. Lewton",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0618x2",
+    "title": "Kim Hsin",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Behavioral",
+      "Criminal Investigation"
+    ],
+    "gameText": "Adds 1 to one Team's BEHAVIORAL or CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "Kim Hsin: \"We have no money or insurance and now I fear that my father has done something illegal. That he made a mistake and something bad is coming.\"\nMulder: \"Who are these men that come to visit your father?\"\nHsin: \"I don't know them. I just know my father say he want out. He want out. But of what, I don't know.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0619x2",
+    "title": "Jennifer Workman",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "2Shy",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Bureaucracy",
+      "Computer"
+    ],
+    "gameText": "Adds 1 to one Team's BUREAUCRACY or COMPUTER skill check.",
+    "dialogue": "Jennifer Workman: \"He just seemed nice on the computer.\"\nMulder: \"Lauren met him through an on-line service?\"\nWorkman: \"In one of the chat rooms. You know, where people get together on the internet…to talk about whatever they're into.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0620x2",
+    "title": "Detective Neary",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Bureaucracy",
+      "Criminal Investigation"
+    ],
+    "gameText": "Adds 1 to one Team's BUREAUCRACY or CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "\"We've got a big influx of immigrants from Hong Kong, trying to get out before 1997. And we've seen stepped-up gang activity in the Chinese community. But so far we can't tie these deaths to anyone or anything.\" -  Detective Neary",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0621x2",
+    "title": "Joanne Steffen",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "2Shy",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Computer",
+      "Observation"
+    ],
+    "gameText": "Adds 1 to one Team's COMPUTER or OBSERVATION skill check.",
+    "dialogue": "Joanne Steffen: \"Can I help you?\"\nMulder: \"We're with the FBI. We're looking for Ellen Kaminsky.\"\nJoanne: \"She's in her condo. She just e-mailed me a few minutes ago…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0622x2",
+    "title": "Tim Decker",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Criminal Investigation",
+      "Observation"
+    ],
+    "gameText": "Adds 1 to one Team's CRIMINAL INVESTIGATION or OBSERVATION skill check.",
+    "dialogue": "Tim Decker: \"Agent Mulder…\"\nMulder: \"Yeah?\"\nDecker: \"The police found something outside.\"\nScully: \"Mona Wustner?\"\nDecker: \"No, Sugar - her dog. He's dead.\"\nMulder: \"Finally a body.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0623x2",
+    "title": "Dr. Winters",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Sciences"
+    ],
+    "activators": [
+      "Active",
+      "Medical",
+      "Sciences"
+    ],
+    "gameText": "Adds 1 to one Team's MEDICAL or SCIENCES skill check.",
+    "dialogue": "Dr. Winters: \"I'd have to run a full toxicological to be sure, but it looks like warfarin poisoning.\"\nScully: \"Warfarin?\"\nWinters: \"Rat poison.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0624x2",
+    "title": "Harold Lamb",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation",
+      "Observation"
+    ],
+    "gameText": "Adds 2 to one Team's ALIEN INVESTIGATION or adds 1 to one Team's OBSERVATION skill check.",
+    "dialogue": "Mulder: \"Because the other alien was conducting torturous experiments on you?\"\nHarold Lamb: \"No, no it was like… you know when you were a kid and you tore the legs off a bug for no reason? I guess I was the bug. Anyways, the next thing I remember, I was suddenly outside, like I was flying through the air or something…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0625x2",
+    "title": "Galen Muntz",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Talitha Cumi",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Behavioral",
+      "Alien Investigation"
+    ],
+    "gameText": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's ALIEN INVESTIGATION skill check.",
+    "dialogue": "Mulder: \"Will you talk to me Mr Muntz? Can you tell me what happened?\"\nGalen Muntz: \"God spared my life today. He took pity on my soul and he washed away my sins.\"\nMulder: \"How do you mean?\"\nMuntz: \"He reached down and he healed me with his hand. With the palm of his hand…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0626x2",
+    "title": "Mona Wustner",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Computer",
+      "Occult Investigation"
+    ],
+    "gameText": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's OCCULT INVESTIGATION skill check.",
+    "dialogue": "Mona Wustner: \"They should have left it buried. None of this would have happened.\"\nMulder: \"Do you believe the bones are cursed?\"\nMona: \"Might as well be.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0627x2",
+    "title": "Lobby Guard",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Pusher",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation",
+      "Behavioral"
+    ],
+    "activators": [
+      "Active",
+      "Criminal Investigation",
+      "Behavioral"
+    ],
+    "gameText": "Adds 2 to one Team's CRIMINAL INVESTIGATION or adds 1 to one Team's BEHAVIORAL skill check.",
+    "dialogue": "Robert Modell: \"Excuse me…where might I find the Computer Records Section?\"\nLobby Guard: \"F-Fourth floor…west wing.\"\nModell: \"Thank you.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0628x2",
+    "title": "Bob Spitz",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "gameText": "Adds 2 to one Team's EVIDENCE COLLECTION or adds 1 to one Team's OBSERVATION skill check.",
+    "dialogue": "\"…how long are we going to stand by and watch our children die while Satan's soldiers run free in this city?!!.\" -  Bob Spitz",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0629x2",
+    "title": "Dr. Richard Godfrey",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Observation",
+      "Medical"
+    ],
+    "activators": [
+      "Active",
+      "Observation",
+      "Medical"
+    ],
+    "gameText": "Adds 2 to one Team's OBSERVATION or adds 1 to one Team's MEDICAL skill check.",
+    "dialogue": "Detective White: \"Let me get this straight… for the record: You haven't seen the bag for a year…you sold it in a garage sale.\"\nDr Godfrey: \"…to a young girl. One of the Roberts family. they live a few doors down…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0630x2",
+    "title": "Madam Zirinka",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Syzygy",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Occult Investigation",
+      "Computer"
+    ],
+    "gameText": "Adds 2 to one Team's OCCULT INVESTIGATION or adds 1 to one Team's COMPUTER skill check.",
+    "dialogue": "Madam Zirinka: \"I think the whole town's lost its marbles. I should've been the first to see it coming, but, it's hard being a small business owner. I mean…you should see the paperwork.\"\nMulder: \"What do you mean 'seen it coming'?\"\nZirinka: \"Well we're heading into a rare planetary alignment where Mercury, Mars and Uranus are extreme influences.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0631x2",
+    "title": "Dr. Carl Roosevelt",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Sciences",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Sciences",
+      "Computer"
+    ],
+    "gameText": "Adds 2 to one Team's SCIENCES or adds 1 to one Team's COMPUTER skill check.",
+    "dialogue": "Dr. Carl Roosevelt: \"It's an Amaru.\"\nAlonso Bilac: \"I know…\"\nRoosevelt: \"It's fantastic. It's nearly intact.\"\nBilac: \"We can't take it.\"\nRoosevelt: \"What do you mean?\"\nBilac: \"They're saying the body of a female shaman is sacred to the tribe. They won't allow us to disturb her.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0632x2",
+    "title": "Diner Cook",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Subterfuge",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Subterfuge",
+      "Alien Investigation"
+    ],
+    "gameText": "Adds 2 to one Team's SUBTERFUGE or adds 1 to one Team's ALIEN INVESTIGATION skill check.",
+    "dialogue": "Jose Chung: \"That is odd. Because almost every day I was there, I ate lunch at that diner and became dear friends with the cook. He told me a story about the night you're talking about. A man walked into his place, sat down, ordered sweet potato pie, identified himself as F.B.I. Agent Mulder. He then questioned my friend.\"\nMulder: \"Ever seen a UFO in these parts?\"\nChung: \"He then ordered piece after piece, each time asking another question…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0633x2",
+    "title": "Judy Fairly",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Subterfuge",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active",
+      "Subterfuge",
+      "Evidence Collection"
+    ],
+    "gameText": "Adds 2 to one Team's SUBTERFUGE or adds 1 to one Team's EVIDENCE COLLECTION skill check.",
+    "dialogue": "Judy Fairly: \"Usually, there'd be something set up in the room to get pictures, tape, whatever.\"\nScully: \"Judy, we need you to identify somebody.\"\nMulder: \"Is this the man who hired Carina?\"\nFairly (nodding): \"He said that nobody would get hurt.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0634x2",
+    "title": "Agent Sarah Sheherlis",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Grotesque",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Subterfuge",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Subterfuge",
+      "Computer"
+    ],
+    "gameText": "Adds 2 to one Team's SUBTERFUGE or adds 1 to one Team's COMPUTER skill check.",
+    "dialogue": "Agent Sarah Sheherlis: \" Which is why I thought I had your guy. Except I wasn't as lucky as I thought. So I ran the prints against the NCIC database.\"\nScully: \"Your message said that you identified them.\"\nSheherlis: \"Oh I did. Turns out it's one of our own people.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0635x2",
+    "title": "Lieutenant Jack Sheaffer",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Witness",
+      "Alien Investigation",
+      "Subterfuge"
+    ],
+    "gameText": "Adds 3 to one Team's ALIEN INVESTIGATION or adds 2 to one Team's SUBTERFUGE skill check.",
+    "dialogue": "Lt. Sheaffer: \"The enemy sees an American recon plane, they start shooting; they see a flying saucer from another galaxy… they hesitate. You know what happens to most people after seeing a UFO?\"\nMulder: \"They experience missing time.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0636x2",
+    "title": "Jose Chung",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Evidence Collection",
+      "Criminal Investigation"
+    ],
+    "gameText": "Adds 3 to one Team's EVIDENCE COLLECTION or adds 2 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "\"I spent three months in Klass County and everybody there has a different version of what truly happened. Truth is as subjective as reality. That will help explain why when people talk about their 'UFO experiences,' they always start off with \"well now, I know how crazy this is going to sound, but…\" -  Jose Chung",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0637x2",
+    "title": "OPO Staffer",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Hell Money",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Computer"
+    ],
+    "activators": [
+      "Active",
+      "Medical",
+      "Computer"
+    ],
+    "gameText": "Adds 3 to one Team's MEDICAL or adds 2 to one Team's COMPUTER skill check.",
+    "dialogue": "\"We've seen a number of Asian men come in for typing and antigen work-ups, but when we find a compatible recipient for them their doctor says they've left the area or disappeared.\" -  OPO Staffer",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0638x2",
+    "title": "Blaine Faulkner",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Jose Chung's \"From Outer Space\"",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Observation",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active",
+      "Observation",
+      "Evidence Collection"
+    ],
+    "gameText": "Adds 3 to one Team's OBSERVATION or adds 2 to one Team's EVIDENCE COLLECTION skill check.",
+    "dialogue": "Blaine Faulkner: \"One of them was disguised as a woman, but wasn't pulling it off. Like her hair was red but a little too red, you know? And the other one… the tall, lanky one… his face was so blank and expressionless, he didn't even seem human.  I think he was a 'mandroid'. The only time he reacted was when he saw the dead body, which was probably his brother or something…\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0639x2",
+    "title": "Alonso Bilac",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Teso dos Bichos",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation",
+      "Behavioral"
+    ],
+    "activators": [
+      "Active",
+      "Occult Investigation",
+      "Behavioral"
+    ],
+    "gameText": "Adds 3 to one Team's OCCULT INVESTIGATION or adds 2 to one Team's BEHAVIORAL skill check.",
+    "dialogue": "Alonso Bilac: \"I spent the last six months living with the Secona, learning from them, coming to understand the nature and the depth of their culture.\"\nScully: \"Well, apparently, they've learned something from you too.\"\nBilac: \"Yes. I've been teaching them the joys of American bureaucracy.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0640x2",
+    "title": "Lorraine Kelleher",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Avatar",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Subterfuge",
+      "Observation"
+    ],
+    "activators": [
+      "Active",
+      "Subterfuge",
+      "Observation"
+    ],
+    "gameText": "Adds 3 to one Team's SUBTERFUGE or adds 2 one Team's OBSERVATION skill check.",
+    "dialogue": "Lorraine Kelleher: \"She called me last night. She said that she'd met someone in a bar who was interested in a transaction. I took his credit card.\"\nMulder: \"Then you have his name?\"\nKelleher: \"Yes. Walter Skinner.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0641x2",
+    "title": "Jeremiah Smith",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Talitha Cumi",
+    "type": "Witness",
+    "cost": "5 RP",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Evidence Collection",
+      "Healing"
+    ],
+    "activators": [
+      "Active",
+      "Alien Investigation",
+      "Evidence Collection"
+    ],
+    "gameText": "Adds 3 to one Team's ALIEN INVESTIGATION or adds 3 to one Team's EVIDENCE COLLECTION skill check. Alternately, play Jeremiah Smith to immediately heal all damage done to one Agent in the Field. If used in this way, remove this card from the game.",
+    "dialogue": "Jeremiah Smith: \"I have important information for you, Something your partner has been seeking. It concerns an elaborate plan. A project. And his sister.\"\nScully: \"Why didn't you tell me before?\"\nSmith: \"I've never spoken to you before, the man you spoke with was an impostor. He was sent here to kill me.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0642x2",
+    "title": "Kevin Kryder",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Revelations",
+    "type": "Witness",
+    "cost": "5 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active",
+      "Occult Investigation",
+      "Subterfuge"
+    ],
+    "gameText": "Adds 3 to one Team's OCCULT INVESTIGATION or adds 3 to one Team's SUBTERFUGE skill check. Kevin Kryder may contribute either modifier to any skill check in the field during the turn he is played, even other Agent Team skill checks. At the end of your turn, discard this card.",
+    "dialogue": "Kevin Kryder: \"Why does he want to hurt me?\"\nScully: \"I don't know Kevin. But I won't let him hurt you. That's a promise.\"\nKryder: \"It's because I'm different, isn't it? Why can't I just be like everybody else?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0643x2",
+    "title": "The Plain-Clothes Man",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Wetwired",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to reveal any face down card (except an X-File).",
+    "dialogue": "The Plain-Clothes Man: \"You're wasting time. While you're chasing your partner, they're destroying the evidence.\"\nMulder: \"Who?\"\nThe Plain-Clothes Man: \"Just follow the evidence. If you don't, by tomorrow the responsible parties will be out of your reach.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  },
+  {
+    "id": "XF97-0644x2",
+    "title": "Wayne Morgan, Naval Investigator",
+    "set": "22364",
+    "rarity": "Community",
+    "episode": "Piper Maru",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to EVIDENCE COLLECTION 3+.",
+    "dialogue": "Mulder: \"The crew of this ship is being treated for radiation exposure.\"\nWayne Morgan: \"Yeah, we got all that - had a Haz-mat team poring over the boat - didn't find a trace.\"\nScully: \"Nothing?\"\nMorgan: \"We had divers in the water going over the hull - probes down in the bilge. Couldn't detect even the slightest level.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "NXT Games, USPCC"
+  }
+]

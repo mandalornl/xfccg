@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "XF08-0355x1",
+    "title": "High Frequency Wave",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Founder's Mutation",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Evolutionary",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method",
+      "Site"
+    ],
+    "gameText": "The High Frequency Wave is unaffected by Combat attacks. It will attack once in one LONG RANGE COMBAT round and one CLOSE RANGE COMBAT round, then it is discarded.",
+    "dialogue": "\"It was a high-pitched frequency like - like a steel spike being driven through my head.\" - Mulder",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 3,
+      "Health": 3
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0356x1",
+    "title": "The Band-Aid Nose Man",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "Home Again",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "The LONG RANGE COMBAT round is skipped. This Adversary can only attack Teams that consist of a single Agent, including Teams that originally had more Agents but were reduced to one after a Combat.",
+    "dialogue": "\"And did you smell it? It smells like nothing on this Earth.\" - The Trashman",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 5,
+      "Health": 5
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0357x1",
+    "title": "Mr. Y's Loyal Servant",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "8 CP",
+    "episode": "My Struggle (III)",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "The LONG RANGE COMBAT is skipped. This Adversary may attack a Team of Agents in the Bureau. During the Combat, the Bureau is considered to have a single Characteristic SITE Keyword. You may choose any one (e.g., RESULT SITE) and play this Adversary in the Bureau instead, following the usual Combat rules.",
+    "dialogue": "\"Tha man they just wheeled out on a gurney... I know that man.\" - Mulder",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 3,
+      "Health": 3
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0358x1",
+    "title": "Commander Al's Covert Mission",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "8 CP",
+    "episode": "This",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "Damage caused by this Adversary may be split among all opponents (Directed Player's choice). This Adversary may use MARTIAL ARTS Combat cards.",
+    "dialogue": "\"Ain't you heard FBI, Mulder? You're on our side now.\" - Commander Al",
+    "skills": {
+      "Long Range Combat": 4,
+      "Close Range Combat": 4,
+      "Health": 9
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0359x1",
+    "title": "Double Trouble: Plus One",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "Plus One",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent",
+      "Site"
+    ],
+    "gameText": "This Adversary is an exact copy of any Agent card in the Team investigating this Site (your choice) and will engage in Combat only with that Agent. Follow normal Combat rules until one of the Agents (or both) reaches a HEALTH value of zero.",
+    "dialogue": "\"My rational mind knows that you are only... a manifest psychic ideation borne of latent hostility.\" - Scully",
+    "skills": {
+      "Long Range Combat": "SPECIAL",
+      "Close Range Combat": "SPECIAL",
+      "Health": "SPECIAL"
+    },
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0360x1",
+    "title": "Kitten's Revenge",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Kitten",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "The chosen Agent is the only one who may participate in Combat. The Kitten's Revenge may use SUBTERFUGE cards. If he attacks Assistant Director Walter Skinner, LRC is skipped.",
+    "dialogue": "\"Imagine the power of a government that could literally control the minds... of millions of citizens.\" - Davey James",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 4,
+      "Health": 5
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0361x1",
+    "title": "Autonomous Hunter",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Rm9sbG93ZXJz",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "This Adversary fights only in LONG RANGE COMBAT rounds. Agents must add their COMPUTER skill to their LRC value (e.g. a COMPUTER skill of 2 and an LRC skill of 1 results in an LRC of 3). Continue LONG RANGE COMBAT rounds until all Agents are defeated or the Adversary's HEALTH reaches zero.",
+    "dialogue": "\"Hey, kid. Fly this out of my face, or you'll end up with nothing in your hand but a joystick.\" - Mulder",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": "N/A",
+      "Health": 7
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0362x1",
+    "title": "Mr. Chuckle Teeth",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Familiar",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method",
+      "Site"
+    ],
+    "gameText": "When you play Mr. Chuckleteeth, your opponent must choose two Agents. Send all other Agents are sent to the Hospital with zero HEALTH. Then, discard this Adversary.",
+    "dialogue": "\"Mr. Chuckleteeth, Happy as can be. Mister Chuckleteeth, won't you play with me. When I'm feeling lonely, lonely as can be, Oh, Mister Chuckleteeth, won't you play with me.\" - Mulder",
+    "skills": {
+      "Long Range Combat": "SPECIAL",
+      "Close Range Combat": "SPECIAL",
+      "Health": "SPECIAL"
+    },
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0363x1",
+    "title": "Beaumount's Bloodbound Cult",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "Nothing Lasts Forever",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "The LONG RANGE COMBAT is skipped. When Barbara Beaumont enters play, place one damage token on each Agent in the attacking Team. At the end of each Combat round, after damage has been assigned, Barbara Beaumont heals two damage tokens for each Agent defeated that round, but only if her HEALTH is still above 0.",
+    "dialogue": "\"Whenever eats my flesh and drinks my blood, has eternal life...",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 4,
+      "Health": 4
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0364x1",
+    "title": "Lurking Coywolf",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "Familiar",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "",
+    "dialogue": "\"It's a mix of Canis Latras and Canis Lupus. It's a hybrid coyote-wolf.\" - Mulder",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 7,
+      "Health": 9
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0365x1",
+    "title": "Mr. Green",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Ghouli",
+    "type": "Adversary",
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "Mr. Green may use MARTIAL ARTS and SUBTERFUGE cards. Each Agent wounded by Mr. Green may not contribute to any skill check this turn.",
+    "dialogue": "\"My parents were killed by those men on the street. They're hunting me now.\" - William",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 4,
+      "Health": 5
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0366x1",
+    "title": "Agent Kyd Miller",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Babylon",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Place one token on Miller's card. Discard a token to move Agent Miller from any Section to any other Section immediately, unless an Adversary has forced Combat. In that case, the movement occurs after the Combat is resolved. The Agent may join any Team in the new Section.",
+    "bio": "Agent Kyd Miller, an open-minded FBI Agent, aids Mulder and Scully in decoding mysteries involving terrorists, brainwave communication, and global conspiracies, while opposing the Cigarette Smoking Man.",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Observation": 3,
+      "Subterfuge": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0367x1",
+    "title": "Agent Liz Einstein",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Babylon",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Skeptic"
+    ],
+    "gameEffect": "Place two tokens on Agent Liz Einstein. Discard a token to discard up to two cards. For each card discarded, apply a +1 modifier to one of her skills (your choice) during a Site skill check performed by the Team she belongs to.",
+    "bio": "Agent Kyd Miller, an open-minded FBI Agent, aids Mulder and Scully in decoding mysteries involving terrorists, brainwave communication, and global conspiracies, while opposing the Cigarette Smoking Man.",
+    "skills": {
+      "Computer": 2,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Medical": 3,
+      "Observation": 1,
+      "Sciences": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0368x1",
+    "title": "Agent Colquitt",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "This",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "gameEffect": "FBI Agent Colquitt is responsible for managing prisoner transport and security, ensuring smooth transitions during transfers. He is involved when Scully arranges for Mulder to be escorted into a prison while handcuffed as part of a covert operation to infiltrate the facility.",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 0
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0369x1",
+    "title": "Detectove Costa",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "Ghouli",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Law"
+    ],
+    "gameEffect": "Place three tokens on Detective Costa. You may remove one token per turn to add +1 to his OBSERVATION or EVIDENCE COLLECTION skills during a skill check he participates in.",
+    "bio": "Detective Costa is a police detective who assists Mulder and Scully during the investigation of the Ghouli case. He provides crucial information, including details about the mysterious 911 call and the victim's connection to a figure named Ghouli.",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 2,
+      "Observation": 2,
+      "Occult Investigation": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0370x1",
+    "title": "Agent Murphy",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "2 RP",
+    "episode": "Founder's Mutation",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Skeptic"
+    ],
+    "gameEffect": "Place two tokens on Agent Murphy. Once per turn, you may discard one token to force your opponent to remove one card (their choice) from their hand from the game.",
+    "bio": "Agent Murphy is a Department of Defense official tasked with overseeing classified projects, including genetic experiments like those in Founder's Mutation. Calculating and secretive, he safeguards government agendas at any cost.",
+    "skills": {
+      "Bureaucracy": 2,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 0
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0371x1",
+    "title": "Detective Aaron Dross",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "Home Again",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Law"
+    ],
+    "gameEffect": "Place three tokens on Detective Aaron Dross. Once per turn, as the Active Player, you may remove a token to discard a card and draw two from your Bureau deck.",
+    "bio": "Detective Aaron Dross is a local law enforcement officer who reaches out to FBI for help with an unsettling case. Tasked with investigating eerie, unexplained events, he relies on Mulder and Scully's expertise in the paranormal to uncover the truth.",
+    "skills": {
+      "Behavioral": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Observation": 3,
+      "Subterfuge": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0372x1",
+    "title": "Mr. Y's Manipulation",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "My Struggle (IV)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Question",
+      "Secret"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Multi",
+      "Site"
+    ],
+    "gameText": "Play this card on a MULTI Site card. If the Team successfully investigates the Site after meeting the Site Prerequisite, you may choose the type of question your opponent may ask from the options listed on the Site card.",
+    "dialogue": "\"You can't keep this secret for long.\" - Mr. Y",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0373x1",
+    "title": "Magical Mystery Tour",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "Babylon",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Decrease all of the skills levels on one Agent (your choice) by 2 for this turn only. Then, regardless of whether the Site Prerequisite is met or not, move the Agent to the Hospital with one damage token.",
+    "dialogue": "\"Dude, I was on fire!.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0374x1",
+    "title": "The System is Watching",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "Rm9sbG93ZXJz",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to examine your opponent's hand. Select one Active card. If your opponent plays that card this turn, subtract 4 points from their Team's Site skill check.",
+    "dialogue": "\"The AI would learn from humans. It was constructed to become progressively more intelligent.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0375x1",
+    "title": "Quid Pro Quo",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "My Struggle (II)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Government",
+      "Question",
+      "Secret"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "If the Team investigating this Site successfully meets the Site Prerequisite, you must reveal one of your X-File's characteristics to your opponent (their choice), and your opponent must reveal the same characteristic to you. Remove this card from play. You may only have one of this card in your deck.",
+    "dialogue": "\"I thought that you were dead.\" - Monica Reyes",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0376x1",
+    "title": "This Never Happened",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "My Struggle (III)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to force the investigating player to discard their entire hand.",
+    "dialogue": "\"That's how heroes are made.!\" - Carl Gerhard Busch",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0377x1",
+    "title": "Immunity for Loyalty",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "My Struggle (III)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Alien Manipulation",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent",
+      "Site"
+    ],
+    "gameText": "Attach this card to any Agent in the Team investigating this Site. Each time this Agent contributes to a skill check, you must place a damage token on them. Remove this card when the Agent is sent to the Hospital with zero HEALTH. Only one of this card may be in play at a time.",
+    "dialogue": "\"This faith in technology our new religion... When a simple pathogen would kill billions and billions.\" - Carl Gerhard Busch",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0378x1",
+    "title": "Protector's Charm",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Babylon",
+    "type": "Equipment",
+    "keywords": [
+      "Equipment",
+      "Mystic"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "When this card enters play, choose one Adversary Keyword (i.e.: ALIEN). Adversaries with chosen Keyword may not deal any damage to this Agent. If the Agent is the only eligible target, the damage is halved.",
+    "dialogue": "\"Mom, I'm here. Come back to us. Mom?.\"- Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0379x1",
+    "title": "Smart Phone",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "My Struggle",
+    "type": "Equipment",
+    "keywords": [
+      "Equipment",
+      "Electrical",
+      "Special"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to search through your Bureau deck for a Witness card. Shuffle your deck, and immediately play the Witness card at no cost.",
+    "dialogue": "\"Scully, listen to me. I've been misled. We've been misled.\"- Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0380x1",
+    "title": "Goop-O A-B-C",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "The Lost Art of Forehead Sweat",
+    "type": "Equipment",
+    "keywords": [
+      "Equipment",
+      "Special"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Discard this card to add two to any of the Agent's skills. You can have only one of this card in your deck.",
+    "dialogue": "But every time I look for Goop-O A-B-C, everyone says... No, you must be thinking about Jell-O 1-2-3.\"- Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0381x1",
+    "title": "DNA Vision Goggles",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 RP",
+    "episode": "My Struggle (I)",
+    "type": "Equipment",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Adds 2 to the Agent's MEDICAL and SCIENCES skills. You cannot sell this card during the Briefing phase to gain [CP] points.",
+    "dialogue": "\"I don't believe this. There's nothing. There's no alien DNA. I saw it when I sequenced my genome. It was near the centromere on cromosome 17.\"- Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0382x1",
+    "title": "A war is never over",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "Kitten",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Government",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place this card on Agent Skinner. While Skinner is in the Field, he gains +1 RES and +1 LRC. Each player may have only one of this card in play.",
+    "dialogue": "\"I was following orders, doing what my superiors commanded me to do. I'm not saying it's right. It's not. And I lived with the guilt of that decision every moment since.\" - Skinner",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0383x1",
+    "title": "No Witness Left",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "2 CP",
+    "episode": "My Struggle",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Alien",
+      "Abduction",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place this card on your opponent's Field. If your opponent plays an Agent or Witness card from their hand, that card is abducted and placed under this one. On their next turn, your opponent may play the abducted card as usual at no cost. Then, discard this card.",
+    "dialogue": "\"Please, don't quit! No!\" - Sveta Zatylny",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0384x1",
+    "title": "Roswell Cover Up",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "My Struggle",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Alien"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card during the Briefing phase. Force the Active player to remove one [RP] card already in play with the Keyword SITE, EQUIPMENT or RESOURCE from their side of the game (their choice). Then, search your opponent Discard Pile and remove one card of your choice from the game.",
+    "dialogue": "\"Damn thing could be dangerous.\" - Man in black",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0385x1",
+    "title": "Pillow Talk",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Mulder and Scully Meet the Were-Monster",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active",
+      "Witness"
+    ],
+    "gameText": "Play this card immediately after a Witness card is played. Double the skill value provided by the Witness for the current skill check (i.e.: a Witness with COMPUTER +2 becomes COMPUTER +4).",
+    "dialogue": "Mulder: \"You made that up.\"\nGuy Man:All right, you got me. Ever since I became a human, I can't help but lie about my sex life.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0386x1",
+    "title": "Langly's Afterlife",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "This",
+    "type": "Event",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Bluff"
+    ],
+    "gameText": "Force up to two face-down Bluff cards attached to one or different Sites to be discarded .",
+    "dialogue": "\"Mulder, it's like I designed heaven. I eat hot dogs and donuts all day long. No one here ever dies of cancer or Alzheimer's. And the Ramones are here, and they don't fight.\" - Langly",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0387x1",
+    "title": "The Mandela Effect",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 *P",
+    "episode": "The Lost Art of Forehead Sweat",
+    "type": "Event",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "When a team of Agents contributes to a single skill check this turn, they use the following swapped skills: ALIEN INVESTIGATION ↔ BUREAUCRACY, BEHAVIORAL ↔ OCCULT INVESTIGATION, COMPUTER ↔ SCIENCES, OBSERVATION ↔ MEDICAL. If a skill is missing, its value is 0. Remove this card from play.",
+    "dialogue": "\"No, it's called the Mengele Effect.\" - Reggie Something",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0388x1",
+    "title": "Answers to Everything",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "The Lost Art of Forehead Sweat",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Question"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card immediately after incorrectly guessing the identity of your opponent's X-File. You may ask one additional question about the same Characteristic (e.g., RESULT)'. Each player may have only one of this card in their deck. Remove this card from the game.",
+    "dialogue": "\"They gave us all the answers to everything! Even Sasquatch. No! It's not true!\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0389x1",
+    "title": "You see what I want you to see",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Ghouli",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Discard two cards at random from your hand to negate any [CP] card played by your opponent. Each player may only have one of this card in their deck.",
+    "dialogue": "\"It's a false reality, Scully. Just like everything we've seen so far.'\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0390x1",
+    "title": "Sister in Arms",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "My Struggle (II)",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "You play an Agent card from your hand at no cost (tokens included). The Agent cannot investigate any Site, but you may use their game effect. At the end of your turn, remove this card and the Agent from the game.",
+    "dialogue": "\"I wish this were under better circumstances, but I wish a lot of things were different here today.\" - Monica Reyes",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0391x1",
+    "title": "Classified Experiments",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "My Struggle",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play after one of your Teams successfully investigated a Site with Alien Investigation skill as a prerequisite. Add 7 [RP] to your pool.",
+    "dialogue": "\"Advanced extraterrestrial species visiting us, concerned for mankind and the threat of our self-destruction, forestalling or annihilation through their own self-sacrifice. The crashes at Roswell. \" - Mulder",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0392x1",
+    "title": "No one is safe",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "Plus One",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "For the remainder of this turn, a Site in the Field (your choice) is considered to have a single Characteristic Characteristic SITE Keyword. You may choose any one Characteristic for the Keyword (i.e., RESULT SITE).",
+    "dialogue": "\"Judy! Open the door!\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0393x1",
+    "title": "Where is Walter Skinner?",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Kitten",
+    "type": "Event",
+    "keywords": [
+      "Event",
+      "Move"
+    ],
+    "activators": [
+      "Active",
+      "Agent"
+    ],
+    "gameText": "Play this card to allow Assistant Director Walter Skinner to leave the Bureau and join any Team in the Field, unless an Adversary has already forced combat. During your Debriefing Phase, if Skinner remains in the Field, you may move him back to the Bureau.",
+    "dialogue": "\"I'm gonna ask you once and only once. Where is he?\" - Kersh",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0394x1",
+    "title": "Arlington National Cemetery, Arlington County, Virginia",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "This",
+    "type": "Site",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Result",
+      "Bureaucracy",
+      "Subterfuge"
+    ],
+    "prerequisite": "BUREAUCRACY 5+ or SUBTERFUGE 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "\"I was at Langly's. At the Lone Gunmen's Burial in the Arlington Cemetery.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0395x1",
+    "title": "Saint Elizabeth Hospital, Washington, D.C.",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Founder's Mutation",
+    "type": "Site",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Motive",
+      "Method",
+      "Bureaucracy",
+      "Sciences"
+    ],
+    "prerequisite": "BUREAUCRACY 5+ or SCIENCES 5+",
+    "question": "You may ask one MOTIVE question or one METHOD question.",
+    "dialogue": "\"The government. Augustus worked for them. I couldn't trust anyone. Especially the police. I was so scared. I was going too fast.\" - Mrs. Goldman",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0396x1",
+    "title": "Mud Lick, Kentucky",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Kitten",
+    "type": "Site",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Motive",
+      "Method",
+      "Result",
+      "Bureaucracy",
+      "Subterfuge"
+    ],
+    "prerequisite": "BUREAUCRACY 3+ and SCIENCES 3+",
+    "question": "You may ask one MOTIVE, one METHOD or one RESULT question.",
+    "dialogue": "\"Well, the sheriff here in Mud Lick says he's got a body in the morgue minus an ear.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0397x1",
+    "title": "1213, 37th Place, Bethesda, Maryland",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Rm9sbG93ZXJz",
+    "type": "Site",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Computer",
+      "Sciences"
+    ],
+    "prerequisite": "COMPUTER 5+ or SCIENCES 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "\"Why is your house much nicer than mine?\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0398x1",
+    "title": "Norfolk, VA",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "Ghouli",
+    "type": "Site",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 5+ or OBSERVATION 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "\"Dreams are today's answers to tomorrow's questions. That's a quote form Edgar Cayce. He was called the Sleeping Prophet.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0399x1",
+    "title": "Dr. Augustus Goldman",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "This",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to SCIENCES 3+.",
+    "dialogue": "\"I am searching for the key that was the seed to all of these terrible genetic abnormalities.\" - Dr. Augustus Goldman",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0400x1",
+    "title": "Erika Price",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "2 RP",
+    "episode": "This",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to BUREAUCRACY 3+. Your opponent may pay 3 [CP] to negate this Witness.",
+    "dialogue": "\"Life on this Earth, all human life, most animal life, is about to be crushed.\" - Erika Price",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0401x1",
+    "title": "Sheriff Mac Stenzler",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "Kitten",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to OBSERVATION 3+. Your opponent may pay 3 [CP] to negate this Witness.",
+    "dialogue": "\"The camera is motion activated... so it should take terribly long to find what we're looking for.\" - Sheriff Mac Stenzler",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0402x1",
+    "title": "Dr. Karah Hamby",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "This",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Computer"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to COMPUTER 3+.",
+    "dialogue": "\"They scanned and copied the salient features of our biological brain. They uploaded us into a simulation.\" - Dr. Karah Hamby",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0403x1",
+    "title": "Guy Mann",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "Mulder and Scully Meet the Were-Monster",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play to change the Site Prerequisite to SUBTERFUGE 3+.",
+    "dialogue": "\"I was myself again. And everything was fine... until the next morning.\" - Guy Mann",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0404x1",
+    "title": "Tad O'Malley'",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "My Struggle",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Alien Investigation",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 3 to one Team's ALIEN INVESTIGATION or adds 2 to one Team's BUREAUCRACY skill check.",
+    "dialogue": "\"A government that taps your phone, collects your data and monitors your whereabouts with impunity. A government preparing to use that data against you when it strikes, and the final takeover begins.\" - Tad O'Malley",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0405x1",
+    "title": "Sveta Zatylny",
+    "set": "My Struggle",
+    "rarity": "Community",
+    "cost": "1 RP",
+    "episode": "My Struggle",
+    "type": "Witness",
+    "keywords": [
+      "Witness",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Agent's ALIEN INVESTIGATION skill check. Your opponent may pay 3 [CP] to negate this Witness.",
+    "dialogue": "\"Tad O'Malley tried to put words in my mouth. He paid me to create stories about alien abductions.\" - Sveta Zatylny",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  }
+]

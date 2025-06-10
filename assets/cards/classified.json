@@ -1,0 +1,175 @@
+[
+  {
+    "title": "Military Police",
+    "id": "XFCL-0001",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": "N/A",
+      "Health": "N/A"
+    },
+    "keywords": [
+      "Adversary",
+      "Government",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Play to immediately detain one opposing Agent (your choice) by placing the Agent underneath this card. The Agent may not contribute to any skill checks while detained. When Combat ends, the Agent is moved to the Bureau (undamaged) and may not generate RES on the next turn.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Joost Berns",
+    "id": "XFCL-0002",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Agent",
+    "cost": "4 RP",
+    "skills": {
+      "Alien Investigation": 1,
+      "Computer": 3,
+      "Evidence Collection": 1,
+      "Observation": 2,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "Agent Berns may start the game with the \"Uniden Bearcat UBC-125XLT\" Equipment card attached at 0 cost. Additionally, if Agent Berns is in the Field, Joseph Patnik can not be played.",
+    "bio": "Works at a small software company and is an avid military aircraft enthusiast in his spare time. Joost encountered Agents Mulder and Scully once while investigating an UFO sighting above a military air base of the RNLAF. He likes to think they are out there…somewhere.",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Alpha-Scramble",
+    "id": "XFCL-0003",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Bluff",
+    "cost": "8 CP",
+    "keywords": [
+      "Bluff",
+      "Government"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Force the investigating Team back to the Bureau immediately. The Team may not contribute to any skill checks this turn. If one of the Agents has an \"Uniden Bearcat UBC-125XLT\", this card has no effect.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Human Shield",
+    "id": "XFCL-0004",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Combat",
+    "cost": "4 CP",
+    "keywords": [
+      "Combat",
+      "Government",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Combat"
+    ],
+    "gameText": "Play during CLOSE RANGE COMBAT on any Adversary with the Keyword GOVERNMENT or that is capable of using SUBTERFUGE cards. The Adversary may capture any one Agent from the opposing Team. Any damage done to the Adversary during this CRC round is applied to the captured Agent instead. Any excess damage is applied to the Adversary as normal.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Uniden Bearcat UBC-125XLT",
+    "id": "XFCL-0005",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Equipment",
+    "cost": "3 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical",
+      "Special"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Place two tokens on this card. Remove a token to add 1 to one Team's OBSERVATION skill check once per turn. During your Requisition Phase you may replenish all tokens for 2 [RP] after the last token has been removed.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Lost and Found",
+    "id": "XFCL-0006",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Event",
+    "cost": "X+2 CP",
+    "keywords": [
+      "Event",
+      "Government"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play to force your opponent to discard one card played this turn (your choice), except Sites and Agents. Alternately, you may select one card from your opponent's Discard Pile and play it immediately at no cost. Place it in its owner's Discard Pile after it has been used. In both instances, X = the [RP] cost of the selected card.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Volkel Air Base, RNLAF, The Netherlands",
+    "id": "XFCL-0007",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Motive",
+      "Observation",
+      "Computer"
+    ],
+    "prerequisite": "OBSERVATION 5+ or COMPUTER 5+",
+    "question": "You may ask one AFFILIATION question or one MOTIVE question.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  },
+  {
+    "title": "Air Traffic Controller",
+    "id": "XFCL-0008",
+    "set": "Classified",
+    "rarity": "Community",
+    "episode": "Scramble, Scramble, Scramble",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Resource",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Once during your Briefing Phase look at the top card of your Bureau Deck. You may put that card on the bottom of your Bureau Deck.",
+    "dialogue": "…",
+    "createdBy": "Joost Berns"
+  }
+]

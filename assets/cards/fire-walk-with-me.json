@@ -1,0 +1,727 @@
+[
+  {
+    "id": "XF08-0406x2",
+    "title": "Ike \"The Spike\" Stadtler",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x06)",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 5,
+      "Close Range Combat": 5,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": null,
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0407x2",
+    "title": "Hutch & Chantal",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x16)",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 4,
+      "Close Range Combat": 4,
+      "Health": 7
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "During the LONG RANGE COMBAT round, for every two cards discarded from your hand, increase Hutch & Chantal's LRC by 1.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0408x2",
+    "title": "Leland Palmer",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": "SPECIAL",
+      "Close Range Combat": "SPECIAL",
+      "Health": 3
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Leland Palmer's LRC and CRC values are each equal to the number of Agents in the Team currently investigating this Site.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0409x2",
+    "title": "The Experiment",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x01)",
+    "type": "Adversary",
+    "cost": "10 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 8,
+      "Health": 7
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "The Experiment engages two opposing Agents (your choice) in Combat.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0410x2",
+    "title": "The Woodsmen, Sentinels of the Black Lodge",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x08)",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 4,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method",
+      "Site"
+    ],
+    "gameText": "At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen. The LONG RANGE COMBAT round is skipped.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0411x2",
+    "title": "Mr. C, The Shadow of Cooper",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x17)",
+    "type": "Adversary",
+    "cost": "8 CP",
+    "skills": {
+      "Long Range Combat": "SPECIAL",
+      "Close Range Combat": "SPECIAL",
+      "Health": "SPECIAL"
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation",
+      "Site"
+    ],
+    "gameText": "Mr. C's LRC, CRC and HEALTH values become equal to those of any one Agent in the target Team (your choice), until the end of this Combat. Move that Agent to the Hospital with 0 HEALTH. Mr. C attacks the remaining Agents in a normal Combat sequence that lasts one LRC and one CRC round.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0412x2",
+    "title": "Windom Earle, Seeker of the Black Lodge",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Beyond Life and Death",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 4,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Possession",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "If this Adversary's HEALTH is reduced to 0 during Combat, you may immediately play an Adversary card with a cost less than 5 from your discard pile, ignoring Activator requirements, at its normal cost. That Adversary immediately begins a normal Combat with the Team.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0413x2",
+    "title": "Bob, The Possessing Spirit",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Lonely Souls",
+    "type": "Adversary",
+    "cost": "9 CP",
+    "skills": {
+      "Long Range Combat": "SPECIAL",
+      "Close Range Combat": "SPECIAL",
+      "Health": "SPECIAL"
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Possession",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method",
+      "Site"
+    ],
+    "gameText": "This card does not initiate combat now. Attach Bob to any one Agent in the Team at this Site (your choice). Place both cards next to your X-File. On your next turn as Directed player after your opponent plays their next Site card, that Agent must attack any one of your opponent's Teams in the Field, ignoring Activator requirements. Remove Bob and return the Agent to your opponent's Field after the combat.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0414x2",
+    "title": "Jake & Gene, The Snippers Alliance",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x03)",
+    "type": "Adversary",
+    "cost": "4 CP",
+    "skills": {
+      "Long Range Combat": 4,
+      "Close Range Combat": 5,
+      "Health": 4
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive",
+      "Site"
+    ],
+    "gameText": "The chosen Agent is the only one who may participate in the Combat. Jake & Gene may use MARTIAL ARTS and SUBTERFUGE cards. Your opponent may pay 4 [RP] to force you to discard this card.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0415x2",
+    "title": "Josie Packard",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Condemned Woman",
+    "type": "Adversary",
+    "cost": "2 CP",
+    "skills": {
+      "Long Range Combat": 4,
+      "Close Range Combat": 2,
+      "Health": 2
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Pawn",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Josie Packard may attack only one Agent (your choice) in one round of LONG RANGE and one CLOSE RANGE COMBAT. All other Agents in the Team also participate in the Combat and may assign damage to Josie as normal.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0416x2",
+    "title": "Hank Jennings, The Foreign Outlaw",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Ghouli",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 4,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result",
+      "Site"
+    ],
+    "gameText": "At the end of this Combat, if Hank's HEALTH has not been reduced to zero, you may play him at another Site controlled by the same opponent this turn at no cost and ignoring Activator requirements. If no such Site exists, discard this card.",
+    "dialogue": null,
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0417x2",
+    "title": "Detective Dave Macklay",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "The Return (3x01)",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "Law",
+      "Independent"
+    ],
+    "gameEffect": "Detective Dave Macklay gains +1 OCCULT INVESTIGATION skill if he is in a Team with an Agent who has the BELIEVER Keyword or OCCULT INVESTIGATION skill.",
+    "bio": "Detective Dave Macklay investigated Ruth Davenport's murder, linking fingerprints to Bill Hastings. He coordinated with the FBI uncovering connections to alternate dimensions and Major Garland Briggs. Macklay witnessed bizarre phenomena, including Hastings' death, and confirmed the presence of mysterious, shadowy figures nearby.",
+    "skills": {
+      "Behavioral": 1,
+      "Computer": 1,
+      "Criminal Investigation": 3,
+      "Evidence Collection": 2,
+      "Observation": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 3,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0418x2",
+    "title": "Agent Sam Stanley",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "3 RP",
+    "episode": "Fire Walk With Me",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Skeptic"
+    ],
+    "gameEffect": "If Agent Sam Stanley is in the same Team as Agent Chester Desmond, they both gain a +1 to their cumulative MEDICAL skill, and a -1 to their OBSERVATION skill..",
+    "bio": "Sam Stanley, an FBI forensic pathologist, assisted Agent Chester Desmond in investigating Teresa Banks' murder. He discovered a key clue under her fingernail and transported the body to Portland. After Desmond's disappearance, Stanley suffered a personal breakdown.",
+    "skills": {
+      "Criminal Investigation": 1,
+      "Evidence Collection": 2,
+      "Medical": 2,
+      "Observation": 1,
+      "Sciences": 2,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0419x2",
+    "title": "Agent Chester Desmond",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "Fire Walk With Me",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Place a token on this card. You may discard that token to search your Bureau deck for an Equipment card with the MYSTIC Keyword. Add it to your hand, then reshuffle your Bureau deck.",
+    "bio": "hester Desmond was an FBI Special Agent and founding member of the Blue Rose Task Force. He investigated Teresa Banks' murder and mysteriously disappeared after finding a ring under a trailer, leading Dale Cooper to take over the case.",
+    "skills": {
+      "Bureaucracy": 1,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 2,
+      "Medical": 2,
+      "Observation": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0420x2",
+    "title": "Major Garland Briggs",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Checkmate",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "If a Team including Garland Briggs is attacked by a PRIMORDIAL or an OCCULT Adversary, you may choose to engage only Garland Briggs with that Adversary. After the Combat, discard the Adversary card.",
+    "bio": "Major Garland Briggs was a principled U.S. Air Force officer who oversaw a secret paranormal research site in Twin Peaks. Committed to truth and duty, he aided Agent Cooper against supernatural threats and sacrificed himself battling evil beyond our world.",
+    "skills": {
+      "Alien Investigation": 3,
+      "Bureaucracy": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Occult Investigation": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0421x2",
+    "title": "Forensic Specialist Albert Rosenfield",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Fire Walk With Me",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Skeptic"
+    ],
+    "gameEffect": "Place two tokens on this card. Discard a token to play any Keyword MEDICAL or SCIENCES card for zero cost.",
+    "bio": "Albert Rosenfield, a brilliant yet cynical FBI forensic specialist, assisted Agent Cooper in the Laura Palmer investigation and later in the Blue Rose case. Despite his sharp tongue, he believed in peace, rejecting violence and embracing love as his guiding principle.",
+    "skills": {
+      "Bureaucracy": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Medical": 2,
+      "Observation": 2,
+      "Sciences": 2,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 5,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0422x2",
+    "title": "Deputy Director Gordon Cole",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "6 RP",
+    "episode": "The Return (3x16)",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Place 1 [RP] on this card. This may be used to pay for any Keyword BUREAUCRACY, LIMINAL or OCCULT INVESTIGATION cards. If you use this [RP], replace it during your Briefing Phase.",
+    "bio": "Gordon Cole is a veteran FBI agent and head of the Blue Rose Task Force. Known for his sharp instincts and partial deafness, he leads investigations into paranormal phenomena, including the mystery of Dale Cooper's disappearance and return. Loyal and fearless.",
+    "skills": {
+      "Behavioral": 1,
+      "Bureaucracy": 3,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Occult Investigation": 4,
+      "Long Range Combat": 3,
+      "Close Range Combat": 2,
+      "Health": 5,
+      "Resources": 2
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0423x2",
+    "title": "Agent Dale Cooper",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "7 RP",
+    "episode": "Pilot",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Place three tokens on Agent Dale Cooper. Once per turn, during a skill check, you may remove one token to add +1 to Agent Cooper's OBSERVATION, OCCULT INVESTIGATION, or SUBTERFUGE skill.",
+    "bio": "FBI profiler with uncanny intuition and dream-guided insights. Obsessed with coffee, truth, and inner balance, Cooper relies on sharp observational skills to uncover hidden clues, interpreting them through instinct, symbolism, and dreams. A brilliant mind navigating the unknown with  calm precision..",
+    "skills": {
+      "Behavioral": 2,
+      "Computer": 2,
+      "Criminal Investigation": 3,
+      "Evidence Collection": 2,
+      "Observation": 3,
+      "Occult Investigation": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 5,
+      "Resources": 2
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0424x2",
+    "title": "FBI Chief of Staff Denise Bryson",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "6 RP",
+    "episode": "Masked Ball",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Skeptic"
+    ],
+    "gameEffect": "Place a token on this card. Discard a token to move Agent Dale Cooper from anywhere on the table to the Team Denise Bryson is in. Cooper may assist in any skill check made by the team. In this manner, Cooper may assist on two Sites in one turn.",
+    "bio": "Denise Bryson began her career as an undercover DEA agent, working with Dale Cooper on high-risk missions. After embracing her identity as a woman, she rose through the FBI ranks with distinction, eventually becoming Chief of Staff for the Bureau.",
+    "skills": {
+      "Bureaucracy": 2,
+      "Computer": 2,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Sciences": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0425x2",
+    "title": "Agent Roger Hardy",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "6 RP",
+    "episode": "Dispute Between Brothers",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Skeptic"
+    ],
+    "gameEffect": "Place one token on this card. Discard one token to choose one Agent controlled by an opponent. Add that Agent to Hardy's Team during one Site investigation. Afterward, return the Agent to the Team it belonged or to the Hospital if the Agent was reduced to 0 HEALTH during combat.",
+    "bio": "Roger Hardy was an FBI Internal Affairs agent who temporarily suspended Dale Cooper due to concerns about his actions in Canada. He questioned Cooper's conduct, requested his badge and gun, and informed him that the DEA and Canadian authorities would proceed.",
+    "skills": {
+      "Behavioral": 1,
+      "Bureaucracy": 4,
+      "Computer": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Sciences": 2,
+      "Long Range Combat": 3,
+      "Close Range Combat": 2,
+      "Health": 5,
+      "Resources": 2
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0426x2",
+    "title": "Agent Tammy Preston",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "4 RP",
+    "episode": "The Return (3x16)",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Believer"
+    ],
+    "gameEffect": "Agent Tammy Preston's BUREAUCRACY and OCCULT INVESTIGATION skills are increased by one if he Deputy Director Gordon Cole are on the same Team.",
+    "bio": "Tamara \"Tammy\" Preston is a brilliant FBI agent recruited into the Blue Rose Task Force. She investigated Agent Dale Cooper's return, analyzed paranormal dossiers, and uncovered timeline anomalies. Her sharp insight and loyalty to Gordon Cole defined her pivotal role in Twin Peaks.",
+    "skills": {
+      "Behavioral": 1,
+      "Bureaucracy": 1,
+      "Computer": 2,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 2,
+      "Occult Investigation": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0427x2",
+    "title": "Agent Phillip Jeffries",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "Fire Walk With Me",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Believer"
+    ],
+    "gameEffect": "Place two tokens on Phillip Jeffries. Once per turn, during the Briefing phase, you may discard one token to double the RES value of any Agent in play (not in the Hospital). Add the additional RES to your Resource Pool.",
+    "bio": "FBI agent and Blue Rose director, Jeffries vanished in Buenos Aires. Obsessed with ‘Judy' and dark forces, he reappeared briefly before transforming into a non-corporeal, time-bending entity operating from a hidden location known as the Dutchman's.",
+    "skills": {
+      "Alien Investigation": 2,
+      "Behavioral": 1,
+      "Computer": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Occult Investigation": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0428x2",
+    "title": "Don Harrison",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 RP",
+    "episode": "The Return (3x05)",
+    "type": "Agent",
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Law"
+    ],
+    "gameEffect": "If Detective Don Harrison is in the same Team as Detective Dave Macklay, they both gain a +1 to their cumulative COMPUTER and CRIMINAL INVESTIGATION skills, and a -1 to their OBSERVATION and SCIENCES skills..",
+    "bio": "Detective Don Harrison of the South Dakota State Police investigated the mysterious murder of Ruth Davenport. He questioned William Hastings and, alongside Detective Dave Macklay, uncovered a piece of flesh in Hastings' car and a ring hidden inside a decapitated corpse.",
+    "skills": {
+      "Computer": 1,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 1,
+      "Observation": 1,
+      "Sciences": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  }
+]

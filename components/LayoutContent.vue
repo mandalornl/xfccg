@@ -2,9 +2,11 @@
 const props = withDefaults(defineProps<{
   title?: string,
   size?: 'small' | 'medium' | 'large',
+  fluid?: boolean,
 }>(), {
   title: undefined,
   size: undefined,
+  fluid: false,
 });
 
 const small = computed(() => props.size === 'small' && ({
@@ -23,14 +25,15 @@ const cols = computed(() => small.value || medium.value || undefined);
 </script>
 
 <template>
-  <v-container>
+  <v-container :fluid="fluid">
     <v-row justify="center">
       <v-col v-bind="cols">
         <h1
           v-if="title"
-          v-text="title"
           class="text-h4 mb-4"
-        />
+        >
+          {{ title }}
+        </h1>
         <slot />
       </v-col>
     </v-row>

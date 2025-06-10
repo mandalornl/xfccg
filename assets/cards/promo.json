@@ -1,0 +1,509 @@
+[
+  {
+    "id": "PR96-0001-SCR",
+    "title": "The Dark Angel",
+    "set": "Promo",
+    "foundIn": "Scrye #17",
+    "episode": "Die Hand Die Verletzt",
+    "type": "Adversary",
+    "cost": "10 CP",
+    "skills": {
+      "Long Range Combat": 5,
+      "Close Range Combat": 8,
+      "Health": 10
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Phenomena",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation Site"
+    ],
+    "gameText": "The Dark Angel can play all combat cards for one [CP] less.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR96-0002-INQ",
+    "title": "Fighter Interceptor",
+    "set": "Promo",
+    "foundIn": "InQuest #19",
+    "episode": "E.B.E.",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Negate"
+    ],
+    "activators": [
+      "Active",
+      "Alien",
+      "Adversary"
+    ],
+    "gameText": "Negates an Alien Adversary.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ]
+  },
+  {
+    "id": "PR96-0003-GAM",
+    "title": "Alien Technology",
+    "set": "Promo",
+    "foundIn": "American Entertainment",
+    "episode": "The Erlenmeyer Flask",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Resource",
+      "Alien",
+      "Government"
+    ],
+    "activators": [
+      "Active",
+      "Site"
+    ],
+    "gameText": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION or BUREAUCRACY skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one ALIEN or GOVERNMENT Adversary.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ]
+  },
+  {
+    "id": "PR96-0004-GCON",
+    "title": "No One So Paranoid",
+    "set": "Promo",
+    "foundIn": "Given away at GenCon '96",
+    "episode": "E.B.E.",
+    "type": "Event",
+    "cost": "5 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR96-0005-GMR",
+    "title": "Chester Bonaparte, The Spirit Guide",
+    "set": "Promo",
+    "foundIn": "Gamer Winter '97",
+    "episode": "Fresh Bones",
+    "type": "Event",
+    "cost": "5 RP",
+    "keywords": [
+      "Event",
+      "Negate",
+      "Question",
+      "Occult",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active",
+      "Occult Adversary"
+    ],
+    "gameText": "Negate one OCCULT Adversary. In addition, if the Team makes an OCCULT INVESTIGATION skill check of 6+, they may ask either one METHOD question or one RESULT question.",
+    "tags": [
+      "Basic",
+      "Negate"
+    ]
+  },
+  {
+    "id": "PR96-0006-DUE",
+    "title": "Agent Henderson",
+    "set": "Promo",
+    "foundIn": "Duelist #14",
+    "episode": "Young At Heart",
+    "type": "Agent",
+    "cost": "3 RP",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
+    "skills": {
+      "Criminal Investigation": 1,
+      "Evidence Collection": 3,
+      "Observation": 2,
+      "Sciences": 2,
+      "Close Range Combat": 1,
+      "Long Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "gameEffect": "Place a token on this card. Discard a token and look through your Bureau deck to draw any Site that asks a MOTIVE question. Add it to your hand, reshuffle your Bureau deck.",
+    "tags": [
+      "Basic",
+      "Search"
+    ]
+  },
+  {
+    "id": "PR96-0007-SUR",
+    "title": "Teamwork",
+    "set": "Promo",
+    "foundIn": "Online Survey and boxes of 101361",
+    "episode": "E.B.E.",
+    "type": "Event",
+    "cost": "0 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card on any Team consisting of no more than two Agents during the Investigation Phase when they are sent to investigate a Site. You may add a number of tokens to the [RP] pool equal to the Agents' total RES value.",
+    "tags": [
+      "Advanced",
+      "Resource"
+    ]
+  },
+  {
+    "id": "PR97-0001-BBB",
+    "title": "Believe The Lie",
+    "set": "Promo",
+    "foundIn": "Voyager Promotions",
+    "episode": "Gethsemane",
+    "type": "Event",
+    "cost": "12 CP",
+    "keywords": [
+      "Event",
+      "Government",
+      "Alien Investigation"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Exchange your X-File with ALIEN Affiliation with any X-File with GOVERNMENT Affiliation.",
+    "tags": [
+      "Basic",
+      "Voyager Promotions"
+    ]
+  },
+  {
+    "id": "PR97-0002-BBB",
+    "title": "Infected That You Might Believe",
+    "set": "Promo",
+    "foundIn": "Voyager Promotions",
+    "episode": "Gethsemane",
+    "type": "Event",
+    "cost": "6 CP",
+    "keywords": [
+      "Event",
+      "Government",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card and place it beneath one Agent to lower all of that Agent's skill levels by 1. This cannot result in a skill being negative or permanent Health being less than 1. When played on Agent Dana Scully, the conspiracy player may choose to force Scully to spend every other turn in the Hospital (if this option is chosen, Scully's skills are not reduced). This choice must be made when the card is played and cannot be changed later. Healing cards will negate this card.",
+    "tags": [
+      "Basic",
+      "Voyager Promotions"
+    ]
+  },
+  {
+    "id": "PR97-0003-BBB",
+    "title": "A Final Choice",
+    "set": "Promo",
+    "foundIn": "Voyager Promotions",
+    "episode": "Gethsemane",
+    "type": "Bluff",
+    "cost": "9 CP",
+    "keywords": [
+      "Bluff",
+      "Government",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to immediately move one opposing Agent to the Hospital. Place this card beneath the Agent and place five tokens on the Agent (seven tokens if played on Agent Mulder). Remove a token during the Agent's Healing Phase. When all tokens have been removed, discard this card. The Agent may leave the Hospital when all tokens have been removed.",
+    "tags": [
+      "Basic",
+      "Move",
+      "Voyager Promotions"
+    ]
+  },
+  {
+    "id": "PR97-0004-BOX",
+    "title": "Good Fortune",
+    "set": "Promo",
+    "foundIn": "Voyager Promotions",
+    "episode": "Clyde Bruckman's Final Repose",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Once this card is played, only the Investigating player may play Events while investigating this Site, except for Events which would negate this card. Discard this card when the Site is discarded.",
+    "tags": [
+      "Basic",
+      "Prevent",
+      "Voyager Promotions"
+    ]
+  },
+  {
+    "id": "PR97-0005-INQ",
+    "title": "Mulligan",
+    "set": "Promo",
+    "foundIn": "InQuest #25",
+    "episode": "Pusher",
+    "type": "Event",
+    "cost": "3 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Discard your entire hand and draw seven cards from the top of your Bureau Deck.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0006-SC1",
+    "title": "Smoke & Mirrors",
+    "set": "Promo",
+    "foundIn": "Scrye 4/2",
+    "episode": "Humbug",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Apply a +1 modifier to any skill check.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0006-SC2",
+    "title": "Smoke & Mirrors",
+    "set": "Promo",
+    "foundIn": "Scrye 4/2",
+    "episode": "Humbug",
+    "type": "Event",
+    "cost": "3 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Apply a -1 modifier to any skill check.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0006-SC3",
+    "title": "Smoke & Mirrors",
+    "set": "Promo",
+    "foundIn": "Scrye 4/2",
+    "episode": "Humbug",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Apply a +2 modifier to any one opponent skill check.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0006-SC4",
+    "title": "Smoke & Mirrors",
+    "set": "Promo",
+    "foundIn": "Scrye 4/2",
+    "episode": "Humbug",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Apply a -2 modifier to any one opponent skill check",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0006-SC5",
+    "title": "Smoke & Mirrors",
+    "set": "Promo",
+    "foundIn": "Scrye 4/2",
+    "episode": "Humbug",
+    "type": "Event",
+    "cost": "5 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Apply a +3 or -3 (your choice) modifier to any skill check.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0007-BOX",
+    "title": "Call On Us More Often",
+    "set": "Promo",
+    "foundIn": "Voyager Promotions",
+    "episode": "Apocrypha",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to search through your Bureau Deck and add one of the following cards to your hand: No One So Paranoid, The Lone Gunmen, Langly, Frohike, or Byers. If you play the chosen card immediately, you may do so for half Cost (round up).",
+    "tags": [
+      "Basic",
+      "Search",
+      "Voyager Promotions"
+    ]
+  },
+  {
+    "id": "PR97-0009-GMR",
+    "title": "Blue Plate Special",
+    "set": "Promo",
+    "foundIn": "Gamer Spring '97, Collect May '97",
+    "episode": "Piper Maru",
+    "type": "Event",
+    "cost": "0 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Play this card and flip over the next card on your Bureau Deck. If that card is playable this turn you may do so for zero [RP] or [CP]. If you do not play it this turn, move the card to your discard pile.",
+    "tags": [
+      "Advanced"
+    ]
+  },
+  {
+    "id": "PR97-0010-FRN",
+    "title": "Je Vois Quelque Chose La Au-Dessous",
+    "set": "Promo",
+    "foundIn": "France and some issues of Scrye 4.3",
+    "episode": "Piper Maru",
+    "type": "Event",
+    "cost": "2 *P",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Recherchez dans votre paquet de cartes FBI et choisissez une carte ALIEN Mot-clé ou ALIEN INVESTIGATION. Montrez cette carte à votre adversaire, ajoutez-la à votre jeu et mélangez le paquet de cartes FBI.\n\nEnglish Translation: Search your Bureau deck and choose one keyword ALIEN or ALIEN INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau deck.",
+    "tags": [
+      "Basic",
+      "Search"
+    ]
+  },
+  {
+    "id": "PR97-0011-DEU",
+    "title": "Die Hand Die Verletzt",
+    "set": "Promo",
+    "foundIn": "Germany and some issues of Scrye 4.3",
+    "episode": "Die Hand Die Verletzt",
+    "type": "Event",
+    "cost": "7 CP",
+    "keywords": [
+      "Event",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Spielen Sie diese Karte zum Durchsuchen Ihres Büro Stapels. Dann wählen Sie einen OCCULT Gegner, mit dem Sie automatisch den AgentenTeam zur Ortserkundung angehören. Der OCCULT Gegner kann anstatt der 0 [CP] gespielt werden, unter Mißachtung der Aktivierungs-Anforderungen.\n\nEnglish Translation: You may search your Bureau deck and take any Occult Creature and you may play it on the agents team making the skill check. You may play it at any site. (Meaning you can play an Adversary with Activator Affiliation on a Motive, Method, or Result site as well.) This costs 0 [CP].",
+    "tags": [
+      "Advanced",
+      "Search"
+    ]
+  },
+  {
+    "id": "PR97-0012-COM",
+    "title": "Not On The Menu",
+    "set": "Promo",
+    "foundIn": "Combo #30",
+    "episode": "Piper Maru",
+    "type": "Event",
+    "cost": "2 *P",
+    "keywords": [
+      "Event",
+      "Bureaucracy"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Draw 2 cards from the top of your Bureau deck and add them to your hand.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "PR97-0999-DNY",
+    "title": "Deny Everything",
+    "set": "Promo",
+    "foundIn": "1:65 copies of InQuest #25",
+    "episode": "Anasazi",
+    "type": "Event",
+    "cost": "8 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card immediately after your opponent asks you a question. You may respond with this phrase: \"I can neither confirm nor deny that assumption.\" After playing this card remove it from the game.",
+    "tags": [
+      "Basic"
+    ]
+  },
+  {
+    "id": "-",
+    "title": "…",
+    "set": "Promo",
+    "tags": [
+      "Basic"
+    ]
+  }
+]

@@ -1,0 +1,1049 @@
+[
+  {
+    "id": "XF19-0001x42",
+    "title": "Delaney Arvidson",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Agent",
+    "cost": "4 RP",
+    "skills": {
+      "Behavioral": 1,
+      "Evidence Collection": 3,
+      "Observation": 2,
+      "Occult Investigation": 2,
+      "Subterfuge": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 2,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Cute",
+      "Believer"
+    ],
+    "gameEffect": "Place one token on this card. Remove a token to negate one Keyword CREATURE Adversary.",
+    "bio": "As a toddler, Delaney Arvidson was imbued with psychokinetic abilities, the result of prolonged exposure to mystical runes hidden within her favorite stuffed animal. Agents Mulder and Scully learned of her powers while investigating a string of grisly murders near Delaney's home.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0002x42",
+    "title": "Knuffle Bunny",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Mystic",
+      "Artifact"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Adds 2 to the Agent's EVIDENCE COLLECTION skill. OCCULT Adversaries must assign damage to this Agent. This card is free if the attached Agent has the Keyword CUTE.",
+    "dialogue": "Delaney: \"Will you help us find Knuffle Bunny?\"\nMulder: \"Knuffle Bunny?\"\nKatina Arvidson: \"Her stuffed animal. It went missing two days ago.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0003x42",
+    "title": "Seamus the Cat",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Bluff",
+    "cost": "2 CP",
+    "keywords": [
+      "Bluff",
+      "Occult"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to gently push two cards off the top of your opponent's Bureau deck. The two cards are discarded.",
+    "dialogue": "Mulder: \"What do you think, Scully? Should we ask him what he knows about the missing Knuffle Bunny?\"\nScully: \"I think we've dealt with enough cats, Mulder.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0004x42",
+    "title": "Stephen Arvidson",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Agent",
+    "cost": "4 RP",
+    "skills": {
+      "Computer": 3,
+      "Evidence Collection": 1,
+      "Observation": 1,
+      "Occult Investigation": 2,
+      "Sciences": 1,
+      "Subterfuge": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Information",
+      "Believer"
+    ],
+    "gameEffect": "Place two tokens on this card. Remove a token to search through your Bureau deck and add one Keyword RESOURCE card to your hand. Show the card to your opponent and shuffle your deck.",
+    "bio": "Stephen Arvidson is a reference librarian and the father of Delaney Arvidson. He and his wife sought to conceal their daughter's psychokinetic abilities. His research into Texas folklore uncovered evidence of a monster stalking the outskirts of Houston.",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0005x42",
+    "title": "Unearthing the Monster",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play on a Team in the Field. If the Team makes an OBSERVATION 4+ skill check then you may search through your Bureau Deck and add any keyword CREATURE Adversary to your hand. Show the card to your opponent and shuffle your deck.",
+    "dialogue": "Mulder: \"What is it, Delaney? What do you see?\"\nDelaney: \"The monster. It lives here.\"\nMulder: \"We have to go. We have to leave right now!\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0006x42",
+    "title": "Katina Arvidson",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's OCCULT INVESTIGATION skill check. The Witness's modifier is doubled if played on a Team that includes Delaney Arvidson.",
+    "dialogue": "Katina: \"We couldn't bring ourselves to tell you. I mean, how do you tell someone your child can do things with her mind? How could anyone ever understand?\"\nScully: \"Believe me, Mrs. Arvidson, we do understand.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0007x42",
+    "title": "Living Scarecrow",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 5,
+      "Health": 6
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method Site"
+    ],
+    "gameText": "The cost to play this card is 3 [CP] if the Site Prerequisite is OCCULT INVESTIGATION. LRC and CRC attacks cause only half damage (rounded up) to this Adversary.",
+    "dialogue": "Mulder: \"Like other effigies, the scarecrow is an unintelligent creation, classically used by farmers to protect their crops.\"\nStephen Arvidson: \"Right. Except this thing wasn't just warding off birds. It killed our neighbors.\"",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0008x42",
+    "title": "Psychokinetic Attack",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Fragile",
+    "type": "Combat",
+    "cost": "4 RP",
+    "keywords": [
+      "Combat"
+    ],
+    "activators": [
+      "Combat"
+    ],
+    "gameText": "Play this card on any Agent with OCCULT INVESTIGATION skill of 1+ to make one LONG RANGE COMBAT attack at LRC skill: 7. The opposing side's LRC attack is negated if the damaged combatant's Health is reduced to 0.",
+    "dialogue": "\"I know this won't come as a shock to you, Mr. and Mrs. Arvidson, but your daughter has a unique psychokinetic ability. One that would give Carrie a run for her money.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0009x42",
+    "title": "More Men in Black",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Event",
+    "cost": "2 CP",
+    "keywords": [
+      "Event",
+      "Government",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Force an opponent Team to make a SUBTERFUGE 4+ skill check. If unsuccessful, the Site Prerequisite is increased by 1 for each Agent on the Team that does not have a SUBTERFUGE skill value.",
+    "dialogue": "Mulder: \"Where's the guy who looks like Alex Trebek?\"\nMIB Ray: \"Why does everyone keep saying that? Dude looked nothing like him!\"\nMulder: \"Looked? As in past tense? What happened? Did he retire?\"\nMIB Rei: \"Nah man. Pancreatic cancer, if you can believe that?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0010x42",
+    "title": "Reproduction Movie Props",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Government",
+      "Special"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Adds 2 to the Agent's COMPUTER and SUBTERFUGE skills.",
+    "dialogue": "Mulder: \"I'll bite, boys. What's with the toy guns?\"\nMIB Rei: \"To help us blend in.\"\nMIB Ray: \"There's a cosplay convention in town. Pretty smart, huh?\"\nMIB Rei: \"It was my idea.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0011x42",
+    "title": "Peter Shultz",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Evidence Collection"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's EVIDENCE COLLECTION skill check.",
+    "dialogue": "Mulder: \"Who found the body?\"\nScully: \"Peter Shultz. He works in Tech Support for the college. As it happens, he's the uncle of Delaney Arvidson, the child we met last month in Texas. It's probably just a coincidence.\"\nMulder: \"You know how I feel about coincidences.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0012x42",
+    "title": "Lauren Evans Osborne",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Observation",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place three tokens on this card. Discard a token to add 2 to one Team's OBSERVATION skill check. You may discard a token once per turn. Discard this resource when all tokens have been discarded.",
+    "dialogue": "\"Whenever I see him, my vision goes blurry and this…sickness overtakes me. He's always there, no matter where I go.\" - Lauren, on encountering Slender Man",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0013x42",
+    "title": "Whitman College, Walla Walla, WA",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Result",
+      "Computer",
+      "Sciences"
+    ],
+    "prerequisite": "COMPUTER 5+ or SCIENCES 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "Scully: \"Last night, a faculty member was found dead in the stairwell under suspicious circumstances.\"\nMulder: \"Can we skip to the part where you explain why this is a FBI matter?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0014x42",
+    "title": "Slender Man",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Schooled",
+    "type": "Adversary",
+    "cost": "6 CP",
+    "skills": {
+      "Long Range Combat": 3,
+      "Close Range Combat": 4,
+      "Health": 7
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Witness"
+    ],
+    "gameText": "Play this card on a Team in the Field that plays a Witness. The Witness is discarded and the Team is attacked! Agents must immediately discard all attached \"Camera\" Equipment cards. Slender Man is unaffected by MARTIAL ARTS cards. Damage caused by this Adversary may be split among all opponents (Directed Player's choice).",
+    "dialogue": "I saw a pale figure, tall, in a black suit… He had no face, no eyes\" - Lauren Evans Osborne",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0015x42",
+    "title": "Lurking in Plain Sight",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Halloween",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Primordial",
+      "Observation"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Force an opponent Team to make an OBSERVATION 4+ skill check. If they fail, apply a -3 modifier to the Site skill check and your opponent must discard all Witness cards from their hand.",
+    "dialogue": "Mulder: \"What is it, Scully?\"\nScully: \"I thought I saw someone, watching from over there. Did you see him?\"\nMulder: \"No, but then again my eyesight's not what it used to be.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0016x42",
+    "title": "Michael Myers",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Halloween",
+    "type": "Adversary",
+    "cost": "10 CP",
+    "skills": {
+      "Long Range Combat": 0,
+      "Close Range Combat": 7,
+      "Health": 8
+    },
+    "keywords": [
+      "Adversary",
+      "Primordial",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive Site"
+    ],
+    "gameText": "This Adversary regenerates (Heals) two points of HEALTH at the beginning of each combat round as long as his HEALTH is not at 0. Michael Myers may use SUBTERFUGE cards. If killed in combat, return Myers to your Bureau deck and shuffle.",
+    "dialogue": "Scully: \"You're the Oxford psychologist. What are we up against?\"\nMulder: \"I'm not convinced what we're dealing with is entirely human.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0017x42",
+    "title": "Haddonfield, IL",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Halloween",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Motive",
+      "Criminal Investigation",
+      "Subterfuge"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 5+ or SUBTERFUGE 5+.",
+    "question": "You may ask one AFFILIATION or one MOTIVE question.",
+    "dialogue": "\"Since 1978, Haddonfield has been synonymous with Michael Myers, the notorious serial killer who stalked and killed an untold number of townspeople.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0018x42",
+    "title": "Confronting the Shape",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Halloween",
+    "type": "Event",
+    "cost": "1 RP",
+    "keywords": [
+      "Event",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active",
+      "Adversary"
+    ],
+    "gameText": "Play this card when an Adversary is about to enter Combat with a single Agent. Search through your Bureau Deck and add any one Combat card to your hand. Reshuffle your Bureau Deck.",
+    "dialogue": "\"Federal Agent! Drop your weapon!\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0019x42",
+    "title": "Yumi Sagiuchi Shultz",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Agent",
+    "cost": "3 RP",
+    "skills": {
+      "Computer": 1,
+      "Evidence Collection": 1,
+      "Medical": 1,
+      "Observation": 2,
+      "Occult Investigation": 2,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "Place one token on this card. Discard a token to negate one Bluff or Event that forces an Agent on the Team to go to the Hospital.",
+    "bio": "Yumi Sagiuchi Shultz is violist for the Bergen Philharmonic Orchestra in Norway. She and her husband, Martin, encountered Agents Mulder and Scully during their investigation into several bizarre attacks by troll-like creatures.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0020x42",
+    "title": "Martin Shultz",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Witness",
+    "cost": "3 RP",
+    "keywords": [
+      "Witness",
+      "Observation",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Adds 2 to one Team's OBSERVATION or OCCULT INVESTIGATION skill check. This card is free if played on a Team that includes Yumi Sagiuchi Shultz.",
+    "dialogue": "Martin Shultz: \"Are you the FBI Agents my sister contacted?\"\nScully: \"That's right. I admit we were reluctant to travel all this way, but she insisted that your situation here warranted our attention.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0021x42",
+    "title": "Hanseatic Quarter, Bergen, Norway",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Motive",
+      "Method",
+      "Observation",
+      "Occult Investigation"
+    ],
+    "prerequisite": "OBSERVATION 5+ or OCCULT INVESTIGATION 5+",
+    "question": "You may ask one MOTIVE question or one METHOD question.",
+    "dialogue": "Scully: \"There's a lot of history in these ramshackle warehouses.\"\nMulder: \"This harbor town wears its maritime heritage proudly, but I'm more interested in what dark otherworlds exist beneath its rustic veneer.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0022x42",
+    "title": "Old Leprosy Hospital, Bergen, Norway",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Medical",
+      "Observation"
+    ],
+    "prerequisite": "MEDICAL 5+ or OBSERVATION 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "Scully: \"This place looks a lot like the one I saw in West Virginia.\"\nMartin Shultz: \"This area was once the leprosy capital of the world. The facility was abandoned in the mid-twentieth century.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0023x42",
+    "title": "Funicular",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical",
+      "Move"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Attach this card to an Agent in the Field. Discard this card to search through your Bureau Deck and add any one Keyword MOVE card to your hand. Show the card to your opponent and shuffle your Bureau Deck. If the card is immediately playable, you may do so for zero [RP] cost.",
+    "dialogue": "\"It's safer than riding a tram.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0024x42",
+    "title": "Troll Territory",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Storm-Sun's Bale",
+    "type": "Bluff",
+    "cost": "1 CP",
+    "keywords": [
+      "Bluff",
+      "Subterfuge",
+      "Phenomena"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to reduce the [CP] Cost of all Keyword SUBTERFUGE cards played at this Site by 1. While this card is in play, any OCCULT or EVOLUTIONARY Adversaries played at this Site may use SUBTERFUGE Combat cards.",
+    "dialogue": "Scully: \"The stench is unbearable.\"\nMulder: \"I think we've wandered into troll territory, Scully.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF19-0025x42",
+    "title": "Guillaume Saladin",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Les Naufrageurs",
+    "type": "Agent",
+    "cost": "4 RP",
+    "skills": {
+      "Bureaucracy": 2,
+      "Computer": 2,
+      "Evidence Collection": 1,
+      "Observation": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 4,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Believer"
+    ],
+    "gameEffect": "Place 1 [RP] on this card. This [RP] may be used to pay for any Resource card. If you use this [RP], replace it during your Briefing Phase.",
+    "bio": "As a supply chain manager, Guillaume Saladin ensures that the store he oversees is stocked consistently. Guillaume watches 90's TV shows and collects vinyl records. His beloved cat, Choléra, is never far from his side.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Guillaume Saladin"
+  },
+  {
+    "id": "XF19-0026x42",
+    "title": "Fort Boyard, Coastal West France",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Les Naufrageurs",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 5+ or OBSERVATION 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "Mulder: \"This fort was built under Napoleon, right?\"\nGuillaume Saladin: \"Yes, and Louis-Philippe. It was a military prison before it was abandoned around 1900.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Guillaume Saladin"
+  },
+  {
+    "id": "XF19-0027x42",
+    "title": "Don't Turn Around!",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Les Naufrageurs",
+    "type": "Bluff",
+    "cost": "4 CP",
+    "keywords": [
+      "Bluff",
+      "Evolutionary"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to apply a -2 modifier to the Site skill check. In addition, one Agent on the Team (your choice) may not contribute their Combat skills this turn.",
+    "dialogue": "Mulder: \"Scully? Are you seeing this?\"\nScully: \"Listen to me very carefully, Guillaume. We're gonna get you outta there.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Guillaume Saladin"
+  },
+  {
+    "id": "XF19-0028x42",
+    "title": "Choléra the Cat",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Les Naufrageurs",
+    "type": "Equipment",
+    "cost": "3 RP",
+    "keywords": [
+      "Equipment",
+      "Special",
+      "Weapon"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Adds 1 to the Agent's CLOSE RANGE COMBAT skill. Place a token on this card. Remove a token to search through your Bureau Deck and add any one Keyword HEALING card to your hand. Shuffle your deck.",
+    "dialogue": "\"Pretty fierce feline you got there. We've seen our share of 'em in the States.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Guillaume Saladin"
+  },
+  {
+    "id": "XF19-0029x42",
+    "title": "David Pease",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Agent",
+    "cost": "4 RP",
+    "skills": {
+      "Bureaucracy": 1,
+      "Computer": 2,
+      "Evidence Collection": 1,
+      "Observation": 2,
+      "Occult Investigation": 1,
+      "Long Range Combat": 2,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "keywords": [
+      "Agent",
+      "Independent",
+      "Information",
+      "Believer"
+    ],
+    "gameEffect": "Place a token on this card. Remove a token to search your Bureau Deck to draw any one Equipment card. Show this card to your opponent, add it to your hand, and shuffle your deck.",
+    "bio": "As a self-proclaimed \"data nerd\", David Pease provides information, research and resources. Growing up in a region rife with paranormal activity, he is ready to put his expertise to practical use. David has keen observation skills and firearms training.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0030x42",
+    "title": "Forks High School, Forks, WA",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Computer",
+      "Evidence Collection"
+    ],
+    "prerequisite": "COMPUTER 5+ or EVIDENCE COLLECTION 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "\"Some of the faculty have been working at this school their entire careers. Maybe some of them have seen or heard something other than rumors\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0031x42",
+    "title": "Cape Flattery Trail, Neah Bay, WA",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Motive",
+      "Method",
+      "Occult Investigation",
+      "Behavioral"
+    ],
+    "prerequisite": "OCCULT INVESTIGATION 5+ or BEHAVIORAL 5+",
+    "question": "You may ask one MOTIVE question or one METHOD question.",
+    "dialogue": "Scully: \"The hair found on the victm is canine in origin.\"\nMulder: \"Look at this bite mark on his neck. It's precisely on the jugular.\"\nScully: \"What are you saying, Mulder? That a vampire attacked a werewolf?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0032x42",
+    "title": "Forks Timber Museum, Forks, WA",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Method",
+      "Computer",
+      "Occult Investigation"
+    ],
+    "prerequisite": "COMPUTER 5+ or OCCULT INVESTIGATION 5+",
+    "question": "You may ask one AFFILIATION question or one METHOD question.",
+    "dialogue": "\"The museum's been around since the town was built. Everything about Forks is here. Residents,businesses, photos, newspaper, everything. We just finished putting it in the computer about six months ago.\" - Johnathon Woods",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0033x42",
+    "title": "Silver Bullets",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Combat",
+    "cost": "3 RP",
+    "keywords": [
+      "Combat",
+      "Occult"
+    ],
+    "activators": [
+      "Combat"
+    ],
+    "gameText": "Adds 3 to an Agent's LONG RANGE COMBAT and CLOSE RANGE COMBAT skills when played against an OCCULT Adversary for the duration of this combat.",
+    "dialogue": "\"Silver is softer than lead, so it's not as effective in normal circumstances. But when silver enters the body of one of these abominations... it's payback time.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0034x42",
+    "title": "FN Herstal Five-seveN",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Equipment",
+    "cost": "6 RP",
+    "keywords": [
+      "Equipment",
+      "Weapon",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds 3 to the Agent's CLOSE RANGE COMBAT skill.",
+    "dialogue": "\"5.7x28mm bullets can penetrate up to level 2 body armor and pierce bulletproof glass. Yeah... this'll do.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0035x42",
+    "title": "Shadow - Coastal Northwest Werewolf",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Method Site"
+    ],
+    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0036x42",
+    "title": "Grey Wind - Coastal Northwest Werewolf",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive Site"
+    ],
+    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0037x42",
+    "title": "Sahale - Coastal Northwest Werewolf",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Affiliation Site"
+    ],
+    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0038x42",
+    "title": "Tahoma - Coastal Northwest Werewolf",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Adversary",
+    "cost": "5 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 3,
+      "Health": 5
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Pawn"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Result Site"
+    ],
+    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0039x42",
+    "title": "Maya - Coastal Northwest Vampire",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Adversary",
+    "cost": "10 CP",
+    "skills": {
+      "Long Range Combat": "N/A",
+      "Close Range Combat": 4,
+      "Health": 7
+    },
+    "keywords": [
+      "Adversary",
+      "Occult",
+      "Creature",
+      "Master"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Motive Site"
+    ],
+    "gameText": "LONG RANGE COMBAT will cause no damage to the Vampire. This Adversary gains +1 CLOSE RANGE COMBAT for each subsequent round of CRC that her HEALTH is no at zero.",
+    "dialogue": "Scully: \"There was blood throughout her digestive system, but the blood was from an animal, not a human.\"\nDavid Pease: \"These monsters' only motivation is to drink human blood to survive. If it's been starving itself of human blood, that would explain why it went into a frenzy when I was wounded.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0040x42",
+    "title": "Maggi Forrester",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Witness",
+    "cost": "2 RP",
+    "keywords": [
+      "Witness",
+      "Computer",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card to reduce the Site Prerequisite of any one COMPUTER or OCCULT INVESTIGATION Site by 1. This card is free is played at \"Forks High School\".",
+    "dialogue": "\"Forks has always been connected to a darker side of the world.\" - Maggi Forrester",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  },
+  {
+    "id": "XF19-0041x42",
+    "title": "Johnathon Woods",
+    "set": "100617",
+    "rarity": "Community",
+    "episode": "Real Vampires Don't Sparkle",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Occult Investigation",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Attach this card to an OCCULT INVESTIGATION Site during your Case Assignment Phase together with two tokens. The Site stays in the Field as long as this card is attached. Remove a token every time you send a Team of Agents to investigate the Site. Discard this card when the last token is removed.",
+    "dialogue": "\"The timber museum has been in my family since it was built.\" - Johnathon Woods",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "David Pease"
+  }
+]
