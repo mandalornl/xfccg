@@ -24,7 +24,7 @@
       "Site"
     ],
     "gameText": null,
-    "dialogue": null,
+    "dialogue": "\"Squeeze his hand off!\" - The Arm",
     "tags": [
       "Basic"
     ],
@@ -55,7 +55,7 @@
       "Site"
     ],
     "gameText": "During the LONG RANGE COMBAT round, for every two cards discarded from your hand, increase Hutch & Chantal's LRC by 1.",
-    "dialogue": null,
+    "dialogue": "\"That douchebag is really pissing me off!\" - Chantal",
     "tags": [
       "Basic"
     ],
@@ -85,7 +85,7 @@
       "Agent"
     ],
     "gameText": "Leland Palmer's LRC and CRC values are each equal to the number of Agents in the Team currently investigating this Site.",
-    "dialogue": null,
+    "dialogue": "\"Your hands are filthy... look, there is dirt way under this fingernail.\" - Leland Palmer",
     "tags": [
       "Basic"
     ],
@@ -115,7 +115,7 @@
       "Agent"
     ],
     "gameText": "The Experiment engages two opposing Agents (your choice) in Combat.",
-    "dialogue": null,
+    "dialogue": "\"I'm supposed to watch the box and see if anything appears inside.\" - Sam Colby",
     "tags": [
       "Basic"
     ],
@@ -146,7 +146,7 @@
       "Site"
     ],
     "gameText": "At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen. The LONG RANGE COMBAT round is skipped.",
-    "dialogue": null,
+    "dialogue": "\"Got a Light?\" - Woodman",
     "tags": [
       "Basic"
     ],
@@ -177,7 +177,7 @@
       "Site"
     ],
     "gameText": "Mr. C's LRC, CRC and HEALTH values become equal to those of any one Agent in the target Team (your choice), until the end of this Combat. Move that Agent to the Hospital with 0 HEALTH. Mr. C attacks the remaining Agents in a normal Combat sequence that lasts one LRC and one CRC round.",
-    "dialogue": null,
+    "dialogue": "\"What brings you back to Twin Peaks, Agent Cooper?\" - Sheriff Truman",
     "tags": [
       "Basic"
     ],
@@ -208,7 +208,7 @@
       "Site"
     ],
     "gameText": "If this Adversary's HEALTH is reduced to 0 during Combat, you may immediately play an Adversary card with a cost less than 5 from your discard pile, ignoring Activator requirements, at its normal cost. That Adversary immediately begins a normal Combat with the Team.",
-    "dialogue": null,
+    "dialogue": "\"If you give me your soul, I'll let Annie live.\" - Windom Earle",
     "tags": [
       "Basic"
     ],
@@ -239,7 +239,7 @@
       "Site"
     ],
     "gameText": "This card does not initiate combat now. Attach Bob to any one Agent in the Team at this Site (your choice). Place both cards next to your X-File. On your next turn as Directed player after your opponent plays their next Site card, that Agent must attack any one of your opponent's Teams in the Field, ignoring Activator requirements. Remove Bob and return the Agent to your opponent's Field after the combat.",
-    "dialogue": null,
+    "dialogue": "\"Maybe that's all Bob is. The evil that men do.\" - Albert Rosenfield",
     "tags": [
       "Basic"
     ],
@@ -270,7 +270,7 @@
       "Site"
     ],
     "gameText": "The chosen Agent is the only one who may participate in the Combat. Jake & Gene may use MARTIAL ARTS and SUBTERFUGE cards. Your opponent may pay 4 [RP] to force you to discard this card.",
-    "dialogue": null,
+    "dialogue": "\"Oh my God! Gene, he's not in the car!\" - Jake",
     "tags": [
       "Basic"
     ],
@@ -300,7 +300,7 @@
       "Agent"
     ],
     "gameText": "Josie Packard may attack only one Agent (your choice) in one round of LONG RANGE and one CLOSE RANGE COMBAT. All other Agents in the Team also participate in the Combat and may assign damage to Josie as normal.",
-    "dialogue": null,
+    "dialogue": "\"Why did you shoot me, Josie?\" - Cooper",
     "tags": [
       "Basic"
     ],
@@ -330,7 +330,7 @@
       "Site"
     ],
     "gameText": "At the end of this Combat, if Hank's HEALTH has not been reduced to zero, you may play him at another Site controlled by the same opponent this turn at no cost and ignoring Activator requirements. If no such Site exists, discard this card.",
-    "dialogue": null,
+    "dialogue": "\"Oh, Ed, the things we do for love.\" - Hank Jennings",
     "tags": [
       "Basic"
     ],
@@ -721,6 +721,212 @@
     },
     "tags": [
       "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0429x2",
+    "title": "No Loose Ends",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "3 CP",
+    "episode": "The Return (3x06)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Primordial"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play any Adversary card from your Discard Pile for 2 [CP] less, ignoring Activator requirements.",
+    "dialogue": "\"Ike, you're under arrest for attempted murder. We have your palm print.\" - Detectives Fusco",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0430x2",
+    "title": "The Black Ace",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "3 CP",
+    "episode": "The Return (3x02)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Occult"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play 3 [CP] to move up to 4 [RP] from your opponent's [RP] pool to your [CP] pool immediately.",
+    "dialogue": "\"Did you ever see anything like this? This is what I want.\" - Mr. C",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0431x2",
+    "title": "Dark Ritual",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "Zen, or the Skill to Catch a Killer",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Occult"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play to add 7 [CP] to your [CP] pool immediately.",
+    "dialogue": "\"Catch you with my dead bag. You may think that I've gone insane... but I promise, I will kill again.\" - Bob",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0432x2",
+    "title": "One From the Deck",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "On the Wings of Love",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "You may search your Bureau deck for an Adversary card with a printed cost of six or less, reveal it, and play it immediately at half its cost (rounded up) ignoring Activator requirements. Then shuffle your deck.",
+    "dialogue": "\"Oh! and I know you got to die. A royal execution.\" - Windom Earle",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0433x2",
+    "title": "Out of Her Mind",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "The Return (3x05)",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play on a Team investigating a Site to send an Event RESOURCE controlled by that Team's controller to the Discard pile.",
+    "dialogue": "\"Did you take all of that today?\" - Becky Burnett",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0434x2",
+    "title": "The Ultimate Secret",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "5 CP",
+    "episode": "The Orchid's Curse",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play this card to look at the top six cards of your opponent's Bureau deck. Choose and discard three of them, then return the rest to the top of their deck in any order.",
+    "dialogue": "\"Do you know what the ultimate secret is? Do you want to know... what Laura did?\" - Harold Smith",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0435x2",
+    "title": "One Last Performance",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "4 CP",
+    "episode": "Arbitrary Law",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Criminal Investigation",
+      "Evidence Collection"
+    ],
+    "gameText": "Play to negate one card with the Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION.",
+    "dialogue": "Cooper:\"Did you kill Laura Palmer?\". Leland:\"Whooo!!! Whoo-whoo! Hoo-hoo-hoo!! Whooo!!! Whooo! Hoo-Hoo!\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0436x2",
+    "title": "To Weak to Matter",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "6 CP",
+    "episode": "Beyond Life and Death",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Liminal",
+      "Move"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play on any Team investigating a Site. Only Agents with a base value of 5 or more [RP] may contribute to that Site skill check.",
+    "dialogue": "\"If you know what's good for you, and you do, don't move.\" - Bob",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0437x2",
+    "title": "Psychic Torture",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "cost": "3 CP",
+    "episode": "The Path to the Black Lodge",
+    "type": "Bluff",
+    "keywords": [
+      "Bluff",
+      "Liminal",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Site"
+    ],
+    "gameText": "Play on one Agent to decrease all their skills by two (except for LRC, CRC, HEALTH and RES) for each [RP] card attached to that Agent. No skill may be reduced below zero. This card is removed once that Agent's Team successfully investigates a Site.",
+    "dialogue": "\"Major, I admire your fortitude.\" - Windom Earle",
+    "tags": [
+      "Advanced"
     ],
     "createdBy": "Alfredo Sánchez, Robert Czepiel"
   }
