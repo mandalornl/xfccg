@@ -1,49 +1,59 @@
 <script lang="ts" setup>
-import type {
-  Filter,
-  FilterOperation,
-} from '~/types/filter';
+import type { Filter } from '~/types/filter';
 import type { Card } from '~/types/card';
+import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const props = defineProps<{
   filter: Filter,
-  type: string | number,
-  cards: Array<Card>,
+  cards: Card[],
 }>();
 
 const model = defineModel<string[]>({
   default: () => ([])
 });
 
-const getCount = (value: string): number | string => {
+const getCount = (filterValue: string): number | string => {
   if (
-    props.filter.operation === 'or'
+    props.filter.operation === FilterOperationEnum.OR
     && model.value.length > 0
-    && !model.value.includes(value)
+    && !model.value.includes(filterValue)
   ) {
     return '…';
   }
 
   return props.cards.filter((card: Card) => {
-    const cardValue = card[props.type as keyof Card];
+    const cardValue = card[props.filter.key];
 
     if (Array.isArray(cardValue)) {
-      return cardValue.includes(value);
+      return cardValue.includes(filterValue);
     }
 
-    return cardValue === value;
+    return cardValue === filterValue;
   }).length;
 };
+
+const isDisabled = (filterValue: string, count: number | string): boolean => (
+  count === 0
+  && (
+    props.filter.operation === FilterOperationEnum.AND
+    || (
+      props.filter.operation === FilterOperationEnum.OR
+      && !model.value.includes(filterValue)
+    )
+  )
+);
 
 const mapItems = (value: string): {
   value: string,
   disabled: boolean,
   count: number | string,
 } => {
+  const count = getCount(value);
+
   return {
     value,
-    count: getCount(value),
-    disabled: false,
+    count,
+    disabled: isDisabled(value, count),
   };
 };
 
@@ -61,8 +71,8 @@ const secondaryItems = computed(() => (
 
 const isExpanded = ref(false);
 
-watch(() => props.filter.operation, (value: FilterOperation) => {
-  if (value !== 'and') {
+watch(() => props.filter.operation, (value: FilterOperationEnum) => {
+  if (value !== FilterOperationEnum.AND) {
     return;
   }
 

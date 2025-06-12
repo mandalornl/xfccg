@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
+
 const model = defineModel<string | null>();
 </script>
 
@@ -10,12 +12,12 @@ const model = defineModel<string | null>();
     color="primary"
   >
     <v-btn
-      value="and"
+      :value="FilterOperationEnum.AND"
       size="small"
       text="And"
     />
     <v-btn
-      value="or"
+      :value="FilterOperationEnum.OR"
       size="small"
       text="Or"
     />

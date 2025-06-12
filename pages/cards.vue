@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import type { RouteLocationResolvedGeneric } from 'vue-router';
+
 import sets from '~/assets/cards/sets.json';
 import types from '~/assets/cards/types.json';
 import keywords from '~/assets/cards/keywords.json';
@@ -8,17 +10,22 @@ import costs from '~/assets/cards/costs.json';
 import episodes from '~/assets/cards/episodes.json';
 import tags from '~/assets/cards/tags.json';
 
-import type {
-  Filters,
-  FilterOperation,
-} from '~/types/filter';
+import type { Filter } from '~/types/filter';
 import type { Card } from '~/types/card';
+import type { SortBy } from '~/types/sort';
+import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
+import { sortCompare } from '~/utils/sort-compare';
 import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
+const router = useRouter();
 
-const getFilterValue = (filterType: string): string[] => {
-  const value = (route.query[filterType] ?? '') as string;
+useHead({
+  title: 'Cards'
+});
+
+const getFilterValue = (key: string): string[] => {
+  const value = (route.query[key] ?? '') as string;
   const and = value.includes('+');
 
   return value
@@ -26,10 +33,10 @@ const getFilterValue = (filterType: string): string[] => {
     .filter(Boolean);
 };
 
-const getFilterOperation = (filterType: string, defaultOperation: FilterOperation): FilterOperation => {
-  const value = (route.query[filterType] ?? '') as string;
+const getFilterOperation = (key: string, defaultOperation: FilterOperationEnum = FilterOperationEnum.AND): FilterOperationEnum => {
+  const value = (route.query[key] ?? '') as string;
 
-  return value.includes('+') ? 'and' : defaultOperation;
+  return value.includes('+') ? FilterOperationEnum.AND : defaultOperation;
 };
 
 const expandedFilters = ref<string[]>([
@@ -37,70 +44,195 @@ const expandedFilters = ref<string[]>([
   'type',
 ]);
 
-const filters = ref<Filters>({
-  set: {
+const filters = ref<Filter[]>([
+  {
+    key: 'set',
     title: 'Set',
     value: getFilterValue('set'),
     items: sets,
-    operation: getFilterOperation('set', 'and'),
+    operation: getFilterOperation('set'),
   },
-  type: {
+  {
+    key: 'type',
     title: 'Type',
     value: getFilterValue('type'),
     items: types,
-    operation: getFilterOperation('type', 'and'),
+    operation: getFilterOperation('type'),
   },
-  keywords: {
+  {
+    key: 'keywords',
     title: 'Keywords',
     value: getFilterValue('keywords'),
     items: keywords,
-    operation: getFilterOperation('keywords', 'and'),
+    operation: getFilterOperation('keywords'),
   },
-  activators: {
+  {
+    key: 'activators',
     title: 'Activators',
     value: getFilterValue('activators'),
     items: activators,
-    operation: getFilterOperation('activators', 'and'),
+    operation: getFilterOperation('activators'),
   },
-  rarity: {
+  {
+    key: 'rarity',
     title: 'Rarity',
     value: getFilterValue('rarity'),
     items: rarities,
-    operation: getFilterOperation('rarity', 'and'),
+    operation: getFilterOperation('rarity'),
   },
-  cost: {
+  {
+    key: 'cost',
     title: 'Cost',
     value: getFilterValue('cost'),
     items: costs,
-    operation: getFilterOperation('cost', 'and'),
+    operation: getFilterOperation('cost'),
   },
-  episode: {
+  {
+    key: 'episode',
     title: 'Episodes',
     value: getFilterValue('episode'),
     items: episodes,
-    operation: getFilterOperation('episode', 'and'),
+    operation: getFilterOperation('episode'),
   },
-  tag: {
+  {
+    key: 'tags',
     title: 'Tags',
-    value: getFilterValue('tag'),
+    value: getFilterValue('tags'),
     items: tags,
-    operation: getFilterOperation('tag', 'and'),
+    operation: getFilterOperation('tags'),
   },
-});
+]);
+
+const hasAnyFilters = computed(() => filters.value.some((filter) => filter.value.length > 0));
+
+const clearAllFilters = () => {
+  for (const filter of filters.value) {
+    filter.value = [];
+  }
+};
 
 const headers = [
-  { title: '#', value: 'id', nowrap: true },
-  { title: 'Set', value: 'set', nowrap: true },
-  { title: 'Title', value: 'title', nowrap: true },
-  { title: 'Type', value: 'type', nowrap: true },
-  { title: 'Rarity', value: 'rarity', nowrap: true },
+  { title: '#', key: 'id', nowrap: true },
+  { title: 'Set', key: 'set', nowrap: true },
+  { title: 'Title', key: 'title', nowrap: true },
+  { title: 'Type', key: 'type', nowrap: true },
+  { title: 'Rarity', key: 'rarity', nowrap: true },
 ];
 
-const search = ref<string>((route.query.q ?? '') as string);
+const itemsPerPageOptions = [
+  { value: 60, title: '60' },
+  { value: 120, title: '120' },
+  { value: -1, title: '$vuetify.dataFooter.itemsPerPageAll' },
+];
 
-const cards = computed<Card[]>(() => ([
-  ...pool,
-]));
+const getSortByValue = (): SortBy[] => {
+  try {
+    return JSON.parse((route.query.sortBy ?? '[]') as string);
+  } catch {
+    return [];
+  }
+};
+
+const search = ref<string>((route.query.search || '') as string);
+const page = ref<number>(Number((route.query.page ?? '1') as string));
+const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
+const sortBy = ref<SortBy[]>(getSortByValue());
+const showSelected = ref<boolean>(route.query.showSelected === null);
+const selectedCard = ref<Card>();
+
+const resolvedRoute = computed(() => {
+  const sortByValue = JSON.stringify(sortBy.value);
+
+  return router.resolve({
+    query: {
+      id: selectedCard.value?.id,
+      search: search.value || undefined,
+      page: page.value > 1 ? page.value : undefined,
+      perPage: perPage.value !== 60 ? perPage.value : undefined,
+      sortBy: sortByValue !== '[]' ? sortByValue : undefined,
+      showSelected: showSelected.value ? null : undefined,
+      ...Object.fromEntries(
+        filters.value.map((filter) => ([
+          filter.key,
+          filter.value.length > 0
+            ? filter.value.join(filter.operation === FilterOperationEnum.AND ? '+' : ',')
+            : undefined,
+        ]))
+      ),
+    }
+  });
+});
+
+watch(resolvedRoute, (value: RouteLocationResolvedGeneric) => {
+  if (value.fullPath === route.fullPath) {
+    return;
+  }
+
+  return navigateTo(value, {
+    replace: true
+  });
+});
+
+watch(search, () => {
+  page.value = 1;
+});
+
+const cards = computed<Card[]>(() => {
+  const canonicalSearch = search.value.toLocaleLowerCase();
+
+  const hits = pool.filter((card: Card) => {
+    if (canonicalSearch) {
+      const hit = [
+        card.id,
+        card.title,
+        card.gameText,
+        card.gameEffect,
+      ]
+        .filter(Boolean)
+        .some((value) => value.toLocaleLowerCase().includes(canonicalSearch));
+
+      if (!hit) {
+        return false;
+      }
+    }
+
+    // TODO: showSelected && quantityInDeck[card.id] === 0 then return false.
+
+    return filters.value.every((filter) => {
+      if (filter.value.length === 0) {
+        return true;
+      }
+
+      const cardValue = card[filter.key];
+
+      if (Array.isArray(cardValue)) {
+        if (filter.operation === FilterOperationEnum.AND) {
+          return filter.value.every((value) => cardValue.includes(value));
+        }
+
+        return filter.value.some((value) => cardValue.includes(value));
+      }
+
+      return filter.value.includes(cardValue);
+    });
+  });
+
+  if (sortBy.value.length > 0) {
+    return hits.sort(sortCompare(sortBy.value));
+  }
+
+  return hits;
+});
+
+const items = computed(() => {
+  if (perPage.value > 0) {
+    return cards.value.slice((page.value - 1) * perPage.value, page.value * perPage.value);
+  }
+
+  return cards.value;
+});
+
+const deckSize = ref<number>(0);
 </script>
 
 <template>
@@ -124,19 +256,44 @@ const cards = computed<Card[]>(() => ([
               prepend-inner-icon="mdi-magnify"
               type="search"
               @click:clear="search = ''"
+              @focus="$event.target.select()"
               @keydown.exact.enter="search = $event.target.value"
             />
           </v-card-text>
         </v-card>
-        <v-switch label="Selected" />
+        <v-switch
+          v-model="showSelected"
+          :disabled="deckSize === 0"
+        >
+          <template #label>
+            Selected
+            <v-badge
+              :model-value="deckSize > 0"
+              :content="deckSize"
+              inline
+              color="primary"
+            />
+          </template>
+        </v-switch>
+        <v-expand-transition>
+          <div v-if="hasAnyFilters">
+            <v-btn
+              variant="flat"
+              size="small"
+              text="Clear all filters"
+              class="mb-4"
+              @click="clearAllFilters"
+            />
+          </div>
+        </v-expand-transition>
         <v-expansion-panels
           v-model="expandedFilters"
           multiple
         >
           <v-expansion-panel
-            v-for="(filter, key) of filters"
-            :key="key"
-            :value="key"
+            v-for="filter of filters"
+            :key="filter.key"
+            :value="filter.key"
           >
             <v-expansion-panel-title>
               {{ filter.title }} ({{ filter.value.length }})
@@ -145,7 +302,6 @@ const cards = computed<Card[]>(() => ([
               <filter-operation v-model="filter.operation" />
               <filter-value
                 v-model="filter.value"
-                :type="key"
                 :filter="filter"
                 :cards="cards"
               />
@@ -158,7 +314,14 @@ const cards = computed<Card[]>(() => ([
         sm="8"
         md="9"
       >
-        <v-data-table :headers="headers" />
+        <v-data-table-server
+          v-model:sort-by="sortBy"
+          v-model:items-per-page="perPage"
+          :headers="headers"
+          :items="items"
+          :items-length="cards.length"
+          :items-per-page-options="itemsPerPageOptions"
+        />
       </v-col>
     </v-row>
   </layout-content>
