@@ -14,7 +14,9 @@ const props = withDefaults(defineProps<{
   autocomplete: 'off',
 });
 
-const model = defineModel<string>();
+const model = defineModel<string | null>({
+  set: (value: string | null): string | null => value || null
+});
 const showPassword = ref<boolean>(false);
 
 const minimalRules: RuleString[] = [
@@ -24,7 +26,7 @@ const minimalRules: RuleString[] = [
   (v) => /[A-Z]/.test(v) || 'Use an uppercase character',
 ];
 
-const allRules = computed<Array<RuleString>>(() => ([
+const allRules = computed<RuleString[]>(() => ([
   ...props.rules,
   ...(props.strictRules ? minimalRules : []),
 ]));

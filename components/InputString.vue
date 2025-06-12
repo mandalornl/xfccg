@@ -11,7 +11,9 @@ withDefaults(defineProps<{
   rules: () => ([]),
 });
 
-const model = defineModel<string>();
+const model = defineModel<string | null>({
+  set: (value: string | null): string | null => value || null
+});
 </script>
 
 <template>

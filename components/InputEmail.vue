@@ -13,10 +13,10 @@ withDefaults(defineProps<{
   autocomplete: 'email',
 });
 
-const model = defineModel<string>({
-  set: (value: string) => {
+const model = defineModel<string | null>({
+  set: (value: string | null): string | null => {
     if (!value) {
-      return '';
+      return null;
     }
 
     return value
