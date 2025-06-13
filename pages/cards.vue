@@ -321,7 +321,14 @@ const deckSize = ref<number>(0);
           :items="items"
           :items-length="cards.length"
           :items-per-page-options="itemsPerPageOptions"
-        />
+        >
+          <template #[`item.type`]="{ value }">
+            <card-type
+              v-if="value"
+              :text="value"
+            />
+          </template>
+        </v-data-table-server>
       </v-col>
     </v-row>
   </layout-content>
