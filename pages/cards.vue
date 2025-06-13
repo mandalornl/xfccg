@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { RouteLocationResolvedGeneric } from 'vue-router';
+import { useGoTo } from 'vuetify';
 
 import sets from '~/assets/cards/sets.json';
 import types from '~/assets/cards/types.json';
@@ -19,6 +20,7 @@ import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const router = useRouter();
+const goTo = useGoTo();
 
 useHead({
   title: 'Cards'
@@ -233,6 +235,7 @@ const items = computed(() => {
 });
 
 const deckSize = ref<number>(0);
+const isIntersecting = ref<boolean>(false);
 </script>
 
 <template>
@@ -317,6 +320,12 @@ const deckSize = ref<number>(0);
         <v-data-table-server
           v-model:sort-by="sortBy"
           v-model:items-per-page="perPage"
+          v-intersect="{
+            handler: ($event: boolean) => isIntersecting = $event,
+            options: {
+              rootMargin: '-64px 0px 0px',
+            }
+          }"
           :headers="headers"
           :items="items"
           :items-length="cards.length"
@@ -329,7 +338,31 @@ const deckSize = ref<number>(0);
             />
           </template>
         </v-data-table-server>
+        <v-fade-transition>
+          <div
+            v-if="!isIntersecting"
+            class="position-sticky top-50 left-0 right-0"
+          >
+            <v-btn
+              variant="tonal"
+              class="d-block mx-auto"
+              @click="goTo(0)"
+            >
+              {{ cards.length }} {{ cards.length === 1 ? 'result' : 'results' }} found
+              <v-icon
+                icon="mdi-arrow-up"
+                class="ml-2"
+              />
+            </v-btn>
+          </div>
+        </v-fade-transition>
       </v-col>
     </v-row>
   </layout-content>
 </template>
+
+<style lang="scss" scoped>
+.top-50 {
+  top: 50%;
+}
+</style>
