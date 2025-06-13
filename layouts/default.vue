@@ -14,6 +14,7 @@ const year = computed(() => new Date().getFullYear());
         </nuxt-link>
       </v-toolbar-title>
     </v-app-bar>
+    <app-navigation />
     <v-main style="--v-layout-top: 64px">
       <slot />
     </v-main>
