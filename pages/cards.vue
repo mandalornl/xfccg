@@ -281,7 +281,7 @@ const isIntersecting = ref<boolean>(false);
         <v-expand-transition>
           <div v-if="hasAnyFilters">
             <v-btn
-              variant="flat"
+              variant="tonal"
               size="small"
               text="Clear all filters"
               class="mb-4"
