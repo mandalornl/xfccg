@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div>Decks</div>
+  <div>test</div>
 </template>

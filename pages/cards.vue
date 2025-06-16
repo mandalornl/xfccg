@@ -140,7 +140,7 @@ const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
 const showSelected = ref<boolean>(route.query.showSelected === null);
-const selectedCard = ref<Card>();
+const selectedCard = ref<Card | null>(null);
 
 const resolvedRoute = computed(() => {
   const sortByValue = JSON.stringify(sortBy.value);
@@ -236,6 +236,10 @@ const items = computed(() => {
 
 const deckSize = ref<number>(0);
 const isIntersecting = ref<boolean>(false);
+
+const onClickRow = (event: Event, data: { item: Card }) => {
+  selectedCard.value = data.item;
+};
 </script>
 
 <template>
@@ -330,6 +334,7 @@ const isIntersecting = ref<boolean>(false);
           :items="items"
           :items-length="cards.length"
           :items-per-page-options="itemsPerPageOptions"
+          @click:row="onClickRow"
         >
           <template #[`item.type`]="{ value }">
             <card-type
