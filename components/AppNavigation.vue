@@ -15,17 +15,17 @@ const items = [
     },
   },
   {
-    title: 'Decks',
-    props: {
-      to: '/decks',
-      prependIcon: 'mdi-wrench',
-    },
-  },
-  {
     title: 'Agents',
     props: {
       to: '/agents',
       prependIcon: 'mdi-police-badge',
+    },
+  },
+  {
+    title: 'Decklists',
+    props: {
+      to: '/decklists',
+      prependIcon: 'mdi-card-multiple',
     },
   },
   {
