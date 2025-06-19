@@ -6,6 +6,7 @@ const year = computed(() => new Date().getFullYear());
 
 <template>
   <v-app>
+    <admiral-snackbar />
     <v-app-bar flat>
       <v-toolbar-title>
         <nuxt-link
