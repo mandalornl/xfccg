@@ -8,6 +8,7 @@ import '@/assets/main.scss';
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
+    ssr: true,
     defaults: {
       VField: {
         color: 'primary',
