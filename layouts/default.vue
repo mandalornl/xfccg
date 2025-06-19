@@ -2,7 +2,7 @@
 const user = useSupabaseUser();
 const appNavigationState = useAppNavigationState();
 
-const year = computed(() => new Date().getFullYear());
+const year = computed<number>(() => new Date().getFullYear());
 </script>
 
 <template>
