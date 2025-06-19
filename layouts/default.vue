@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const user = useSupabaseUser();
+const appNavigationState = useAppNavigationState();
 
 const year = computed(() => new Date().getFullYear());
 </script>
@@ -8,6 +9,10 @@ const year = computed(() => new Date().getFullYear());
   <v-app>
     <admiral-snackbar />
     <v-app-bar flat>
+      <v-app-bar-nav-icon
+        class="hidden-sm-and-up"
+        @click="appNavigationState = !appNavigationState"
+      />
       <v-toolbar-title>
         <nuxt-link
           to="/"

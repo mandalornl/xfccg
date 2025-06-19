@@ -1,4 +1,17 @@
 <script lang="ts" setup>
+import { useDisplay } from 'vuetify';
+
+const { smAndUp } = useDisplay();
+const appNavigationState = useAppNavigationState();
+
+watch(smAndUp, (value) => {
+  if (!value) {
+    return;
+  }
+
+  appNavigationState.value = false;
+});
+
 const items = [
   {
     title: 'Home',
@@ -25,7 +38,7 @@ const items = [
     title: 'Decklists',
     props: {
       to: '/decklists',
-      prependIcon: 'mdi-card-multiple',
+      prependIcon: 'mdi-text-box-multiple',
     },
   },
   {
@@ -75,9 +88,10 @@ const items = [
 
 <template>
   <v-navigation-drawer
-    rail
-    permanent
-    expand-on-hover
+    v-model="appNavigationState"
+    :permanent="smAndUp"
+    :rail="smAndUp"
+    :expand-on-hover="smAndUp"
   >
     <v-list
       :items="items"
