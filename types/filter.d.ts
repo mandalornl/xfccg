@@ -7,3 +7,9 @@ export interface Filter {
   items: string[];
   operation: FilterOperation;
 }
+
+export interface FilterValueItem {
+  value: string;
+  disabled: boolean;
+  count: number | string;
+}

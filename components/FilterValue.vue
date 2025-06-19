@@ -1,5 +1,8 @@
 <script lang="ts" setup>
-import type { Filter } from '~/types/filter';
+import type {
+  Filter,
+  FilterValueItem
+} from '~/types/filter';
 import type { Card } from '~/types/card';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
@@ -43,11 +46,7 @@ const isDisabled = (filterValue: string, count: number | string): boolean => (
   )
 );
 
-const mapItems = (value: string): {
-  value: string,
-  disabled: boolean,
-  count: number | string,
-} => {
+const getItem = (value: string): FilterValueItem => {
   const count = getCount(value);
 
   return {
@@ -57,16 +56,16 @@ const mapItems = (value: string): {
   };
 };
 
-const primaryItems = computed(() => (
+const primaryItems = computed<FilterValueItem[]>(() => (
   props.filter.items
     .slice(0, 5)
-    .map(mapItems)
+    .map(getItem)
 ));
 
-const secondaryItems = computed(() => (
+const secondaryItems = computed<FilterValueItem[]>(() => (
   props.filter.items
     .slice(5)
-    .map(mapItems)
+    .map(getItem)
 ));
 
 const isExpanded = ref(false);
