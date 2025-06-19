@@ -17,11 +17,17 @@ const small = computed(() => props.size === 'small' && ({
 }));
 
 const medium = computed(() => props.size === 'medium' && ({
-  lg: 11,
-  xl: 9,
+  md: 11,
+  lg: 9,
+  xl: 7
 }));
 
-const cols = computed(() => small.value || medium.value || undefined);
+const large = computed(() => props.size === 'large' && ({
+  lg: 11,
+  xl: 9
+}));
+
+const cols = computed(() => small.value || medium.value || large.value || undefined);
 </script>
 
 <template>
