@@ -2,6 +2,7 @@
 import type { SubmitEventPromise } from 'vuetify';
 
 const supabase = useSupabaseClient();
+const snackbar = useSnackbarState();
 
 definePageMeta({
   middleware: [
@@ -16,6 +17,8 @@ const email = ref<string>('');
 const password = ref<string>('');
 
 const register = async (event: SubmitEventPromise) => {
+  snackbar.reset();
+
   const { valid } = await event;
 
   if (!valid) {
@@ -36,6 +39,8 @@ const register = async (event: SubmitEventPromise) => {
 
   if (error) {
     useDebug(error);
+
+    snackbar.error('An error occurred during registration.');
   }
 
   setTimeout(() => {
@@ -67,7 +72,7 @@ const register = async (event: SubmitEventPromise) => {
       />
       <input-password
         v-model="password"
-        :rules="[ (v) => !!v || 'Enter your password' ]"
+        :rules="[ (v) => !!v || 'Enter a password' ]"
         strict-rules
         autocomplete="new-password"
         label="Password"
