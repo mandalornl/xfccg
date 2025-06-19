@@ -1,4 +1,4 @@
-export const useDebug = (error: Error) => {
+export const useDebug = (error: unknown) => {
   if (!import.meta.dev) {
     return;
   }
