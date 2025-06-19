@@ -41,6 +41,13 @@ const register = async (event: SubmitEventPromise) => {
     useDebug(error);
 
     snackbar.error('An error occurred during registration.');
+  } else {
+    await navigateTo({
+      name: 'login',
+      query: {
+        email: encodeURIComponent(email.value),
+      },
+    });
   }
 
   setTimeout(() => {
