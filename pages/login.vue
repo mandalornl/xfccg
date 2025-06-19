@@ -1,10 +1,5 @@
 <script lang="ts" setup>
 import type { SubmitEventPromise } from 'vuetify';
-import type {
-  MFAEnrollTOTPParams,
-  MFAChallengeParams,
-  MFAVerifyParams,
-} from '@supabase/auth-js';
 
 const route = useRoute();
 const supabase = useSupabaseClient();
@@ -84,11 +79,14 @@ const getAuthenticatorAssuranceLevel = async () => {
   return data;
 };
 
-const enroll = async (params: MFAEnrollTOTPParams) => {
+const enroll = async () => {
   const {
     data,
     error,
-  } = await supabase.auth.mfa.enroll(params);
+  } = await supabase.auth.mfa.enroll({
+    factorType: 'totp',
+    friendlyName: 'XFCCG',
+  });
 
   if (error) {
     throw error;
@@ -97,11 +95,13 @@ const enroll = async (params: MFAEnrollTOTPParams) => {
   return data;
 };
 
-const getChallenge = async (params: MFAChallengeParams) => {
+const getChallenge = async (factorId: string) => {
   const {
     data,
     error,
-  } = await supabase.auth.mfa.challenge(params);
+  } = await supabase.auth.mfa.challenge({
+    factorId
+  });
 
   if (error) {
     throw error;
@@ -110,11 +110,15 @@ const getChallenge = async (params: MFAChallengeParams) => {
   return data;
 };
 
-const verify = async (params: MFAVerifyParams) => {
+const verify = async (factorId: string, challengeId: string, code: string) => {
   const {
     data,
     error,
-  } = await supabase.auth.mfa.verify(params);
+  } = await supabase.auth.mfa.verify({
+    factorId,
+    challengeId,
+    code,
+  });
 
   if (error) {
     throw error;
@@ -143,10 +147,7 @@ const getFactor = async () => {
     return factors.totp[0];
   }
 
-  return await enroll({
-    factorType: 'totp',
-    friendlyName: 'XFCCG',
-  });
+  return await enroll();
 };
 
 const signIn = async (event: SubmitEventPromise) => {
@@ -168,16 +169,9 @@ const signIn = async (event: SubmitEventPromise) => {
 
     if (nextLevel === 'aal2') {
       const factor = await getFactor();
+      const challenge = await getChallenge(factor.id);
 
-      const challenge = await getChallenge({
-        factorId: factor.id,
-      });
-
-      await verify({
-        factorId: factor.id,
-        challengeId: challenge?.id,
-        code: '',
-      });
+      await verify(factor.id, challenge.id, '');
     }
 
     snackbar.error('An error occurred while signing in.');
