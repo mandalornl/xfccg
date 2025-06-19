@@ -929,5 +929,161 @@
       "Advanced"
     ],
     "createdBy": "Alfredo Sánchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0438x2",
+    "title": "Laura Palmer's Secret Diary",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Pilot",
+    "type": "Equipment",
+    "cost": "6 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's BEHAVIORAL and EVIDENCE COLLECTION skills. You cannot sell this card during the Briefing Phase to gain [CP] points,",
+    "dialogue": "\"What we have taped to the page here is a plastic envelope containing a white residue and what looks to be a key to a safety deposit box.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0439x2",
+    "title": "Laura Palmer's Postmortem Report",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Traces to Nowhere",
+    "type": "Equipment",
+    "cost": "6 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's SCIENCES and CRIMINAL INVESTIGATION skills. You cannot sell this card during the Briefing phase to gain [CP] points,",
+    "dialogue": "\"Time of death estimated to be between midnight and four AM. What killed her was loss of blood. Numerous shallow wounds, no single one serious enough to have caused death.\" - Dr. Hayward",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0440x2",
+    "title": "Owl Cave Ring",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Equipment",
+    "cost": "6 RP",
+    "keywords": [
+      "Equipment",
+      "Mystic"
+    ],
+    "activators": [
+      "Field"
+    ],
+    "gameText": "Attach this card to an Agent and immediately remove that Agent from play. At the start of the Briefing Phase on your next turn, return the Agent to the Field with this card still attached. That Agent gains +2 to their OCCULT INVESTIGATION skill",
+    "dialogue": "\"Don't take the ring, Laura... Don't take the ring.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0441x2",
+    "title": "Green Rubber Glove",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x14)",
+    "type": "Equipment",
+    "cost": "5 RP",
+    "keywords": [
+      "Equipment",
+      "Mystic"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds three to the Agent's CLOSE RANGE COMBAT skill.",
+    "dialogue": "\"Your right hand will then possess the power of an enormous pile driver.\" - Freddie Sykes",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0442x2",
+    "title": "Bureau's Radio Console",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x04)",
+    "type": "Equipment",
+    "cost": "4 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Once per turn, during the Case Assignment Phase, if the Agent equipped with this card is in the Bureau, you may pay 2 [RP] tokens to draw the top two cards of your Bureau deck and add them to your hand.",
+    "dialogue": "\"What's your emergency?\" - Maggie Brown",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0443x2",
+    "title": "Cave Exploration Kit",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "On the Wings of Love",
+    "type": "Equipment",
+    "cost": "6 RP",
+    "keywords": [
+      "Equipment",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds two to the Agent's OBSERVATION and SUBTERFUGE skills. You cannot sell this card during the Briefing phase to gain [CP] points",
+    "dialogue": "\"Then a descent to a cool, subterranean cave may be just what the doctor ordered.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0444x2",
+    "title": "Panasonic RN-105 Tape Recorder",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Realization Time",
+    "type": "Equipment",
+    "cost": "5 RP",
+    "keywords": [
+      "Equipment",
+      "Electrical",
+      "Standard"
+    ],
+    "activators": [
+      "Bureau"
+    ],
+    "gameText": "Adds 1 to the Agent's CRIMINAL INVESTIGATION and EVIDENCE COLLECTION skills",
+    "dialogue": "\"Voice activated, Harry. When the bird talks maybe we'll get some answers.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
   }
 ]
