@@ -64,7 +64,10 @@ const year = computed(() => new Date().getFullYear());
     <v-main style="--v-layout-top: 64px">
       <slot />
     </v-main>
-    <v-footer app>
+    <v-footer
+      app
+      style="z-index: 1004"
+    >
       &copy; {{ year }}
     </v-footer>
   </v-app>
