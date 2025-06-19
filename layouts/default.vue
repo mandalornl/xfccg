@@ -25,10 +25,8 @@ const year = computed<number>(() => new Date().getFullYear());
         <template #fallback>
           <v-btn
             :active="false"
-            to="/login"
             icon="mdi-login"
             color="primary"
-            title="Sign in"
           />
         </template>
         <v-menu v-if="user">
