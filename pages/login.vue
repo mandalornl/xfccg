@@ -1,12 +1,29 @@
 <script lang="ts" setup>
 import type { SubmitEventPromise } from 'vuetify';
+import type {
+  MFAEnrollTOTPParams,
+  MFAChallengeParams,
+  MFAVerifyParams,
+} from '@supabase/auth-js';
 
+const route = useRoute();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const runtimeConfig = useRuntimeConfig();
+const snackbar = useSnackbarState();
+
+const getEmail = () => {
+  if (route.query.email) {
+    return decodeURIComponent(route.query.email as string);
+  }
+
+  return runtimeConfig.public.login.email || '';
+};
+
 const isValidForm = ref<boolean>(true);
 const isSigningIn = ref<boolean>(false);
-const email = ref<string>(runtimeConfig.public.login.email || '');
+const isSigningInWithDiscord = ref<boolean>(false);
+const email = ref<string>(getEmail());
 const password = ref<string>(runtimeConfig.public.login.password || '');
 
 definePageMeta({
@@ -16,6 +33,10 @@ definePageMeta({
 });
 
 const signInWithDiscord = async () => {
+  snackbar.reset();
+
+  isSigningInWithDiscord.value = true;
+
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'discord',
     options: {
@@ -25,7 +46,107 @@ const signInWithDiscord = async () => {
 
   if (error) {
     useDebug(error);
+
+    snackbar.error('An error occurred while signing in with Discord.');
   }
+
+  setTimeout(() => {
+    isSigningInWithDiscord.value = true;
+  }, 200);
+};
+
+const signInWithPassword = async () => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.signInWithPassword({
+    email: email.value,
+    password: password.value,
+  });
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const getAuthenticatorAssuranceLevel = async () => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const enroll = async (params: MFAEnrollTOTPParams) => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.mfa.enroll(params);
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const getChallenge = async (params: MFAChallengeParams) => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.mfa.challenge(params);
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const verify = async (params: MFAVerifyParams) => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.mfa.verify(params);
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const listFactors = async () => {
+  const {
+    data,
+    error,
+  } = await supabase.auth.mfa.listFactors();
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};
+
+const getFactor = async () => {
+  const factors = await listFactors();
+
+  if (factors.totp.length > 0) {
+    return factors.totp[0];
+  }
+
+  return await enroll({
+    factorType: 'totp',
+    friendlyName: 'XFCCG',
+  });
 };
 
 const signIn = async (event: SubmitEventPromise) => {
@@ -35,14 +156,36 @@ const signIn = async (event: SubmitEventPromise) => {
     return;
   }
 
-  const { error } = await supabase.auth.signInWithPassword({
-    email: email.value,
-    password: password.value,
-  });
+  isSigningIn.value = true;
 
-  if (error) {
+  try {
+    await signInWithPassword();
+  } catch (error) {
     useDebug(error);
+
+    // TODO: Enroll or challenge and verify totp.
+    const { nextLevel } = await getAuthenticatorAssuranceLevel();
+
+    if (nextLevel === 'aal2') {
+      const factor = await getFactor();
+
+      const challenge = await getChallenge({
+        factorId: factor.id,
+      });
+
+      await verify({
+        factorId: factor.id,
+        challengeId: challenge?.id,
+        code: '',
+      });
+    }
+
+    snackbar.error('An error occurred while signing in.');
   }
+
+  setTimeout(() => {
+    isSigningIn.value = false;
+  }, 200);
 };
 
 watch(user, async (value) => {
@@ -81,7 +224,9 @@ watch(user, async (value) => {
     </v-btn>
     <div class="d-flex align-center my-4">
       <v-divider />
-      <span class="mx-2">or</span>
+      <span class="mx-2">
+        or
+      </span>
       <v-divider />
     </div>
     <v-form
