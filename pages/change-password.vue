@@ -2,10 +2,11 @@
 import type { SubmitEventPromise } from 'vuetify';
 
 const supabase = useSupabaseClient();
+const snackbar = useSnackbarState();
 
 definePageMeta({
   middleware: [
-    'anonymous',
+    'authenticated',
   ],
 });
 
@@ -14,6 +15,8 @@ const isUpdating = ref<boolean>(false);
 const password = ref<string>('');
 
 const updatePassword = async (event: SubmitEventPromise) => {
+  snackbar.reset();
+
   const { valid } = await event;
 
   if (!valid) {
@@ -28,6 +31,14 @@ const updatePassword = async (event: SubmitEventPromise) => {
 
   if (error) {
     useDebug(error);
+
+    snackbar.error('An error occurred updating password.');
+  } else {
+    snackbar.success('Your password has been updated.');
+
+    await navigateTo('/account', {
+      replace: true
+    });
   }
 
   setTimeout(() => {

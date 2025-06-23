@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import type { SubmitEventPromise } from 'vuetify';
 
-const runtimeConfig = useRuntimeConfig();
 const supabase = useSupabaseClient();
 const snackbar = useSnackbarState();
 
@@ -13,7 +12,7 @@ definePageMeta({
 
 const isValidForm = ref<boolean>(true);
 const isRegistering = ref<boolean>(false);
-const displayName = ref<string>('');
+const name = ref<string>('');
 const email = ref<string>('');
 const password = ref<string>('');
 
@@ -32,9 +31,8 @@ const register = async (event: SubmitEventPromise) => {
     email: email.value,
     password: password.value,
     options: {
-      emailRedirectTo: `${runtimeConfig.public.baseUrl}/confirm`,
       data: {
-        display_name: displayName.value,
+        full_name: name.value,
       },
     },
   });
@@ -44,6 +42,8 @@ const register = async (event: SubmitEventPromise) => {
 
     snackbar.error('An error occurred during registration.');
   } else {
+    snackbar.success('Your account has been created.');
+
     await navigateTo({
       name: 'login',
       query: {
@@ -70,7 +70,7 @@ const register = async (event: SubmitEventPromise) => {
       @submit.prevent="register"
     >
       <input-string
-        v-model="displayName"
+        v-model="name"
         :rules="[ (v) => !!v || 'Enter your name' ]"
         label="Name"
       />

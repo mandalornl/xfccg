@@ -14,7 +14,7 @@ definePageMeta({
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 
-const displayName = ref<string>(user.value?.user_metadata.display_name);
+const name = ref<string>(user.value?.user_metadata.full_name);
 const email = ref<string>(user.value?.email || '');
 
 const updateUser = async (event: SubmitEventPromise) => {
@@ -30,7 +30,7 @@ const updateUser = async (event: SubmitEventPromise) => {
 
   const { error } = await supabase.auth.updateUser({
     data: {
-      display_name: displayName.value,
+      full_name: name.value,
     },
   });
 
@@ -46,10 +46,6 @@ const updateUser = async (event: SubmitEventPromise) => {
     isSaving.value = false;
   }, 200);
 };
-
-const hasEnabledAuthenticatorApp = computed(() => (
-  user.value?.factors?.some((factor) => factor.factor_type === 'totp' && factor.status === 'verified')
-));
 </script>
 
 <template>
@@ -60,7 +56,7 @@ const hasEnabledAuthenticatorApp = computed(() => (
       @submit.prevent="updateUser"
     >
       <input-string
-        v-model="displayName"
+        v-model="name"
         :rules="[ (v) => !!v || 'Enter your name' ]"
         label="Name"
       />
@@ -80,15 +76,6 @@ const hasEnabledAuthenticatorApp = computed(() => (
       />
     </v-form>
     <v-divider class="my-6" />
-    <h3 class="mb-3">
-      Password and Authentication
-    </h3>
     <change-password />
-    <h4 class="mb-3 mt-6">
-      Authenticator App
-    </h4>
-    <p>Configuring an authenticator app is a good way to add an extra layer of security to your account to make sure that only you have the ability to log in.</p>
-    <remove-authenticator-app v-if="hasEnabledAuthenticatorApp" />
-    <enable-authenticator-app v-else />
   </layout-content>
 </template>

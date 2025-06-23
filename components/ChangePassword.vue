@@ -5,15 +5,15 @@ import type { VForm } from 'vuetify/components';
 const supabase = useSupabaseClient();
 const snackbar = useSnackbarState();
 
-const formRef = useTemplateRef('form');
+const formRef = useTemplateRef<VForm>('form');
 const isValidForm = ref<boolean>(true);
 const isUpdating = ref<boolean>(false);
 
-const open = ref<boolean>(false);
+const isOpen = ref<boolean>(false);
 const currentPassword = ref<string>('');
 const newPassword = ref<string>('');
 
-watch(open, (value) => {
+watch(isOpen, (value) => {
   if (value) {
     return;
   }
@@ -21,7 +21,7 @@ watch(open, (value) => {
   formRef.value?.reset();
 });
 
-const updatePassword = async (event: SubmitEventPromise) => {
+const updateUser = async (event: SubmitEventPromise) => {
   snackbar.reset();
 
   const { valid } = await event;
@@ -31,8 +31,6 @@ const updatePassword = async (event: SubmitEventPromise) => {
   }
 
   isUpdating.value = true;
-
-  // TODO: Challenge and verify totp.
 
   const { error } = await supabase.auth.updateUser({
     password: newPassword.value,
@@ -44,6 +42,8 @@ const updatePassword = async (event: SubmitEventPromise) => {
     snackbar.error('An error occurred updating your password.');
   } else {
     snackbar.success('Your password has been updated.');
+
+    isOpen.value = false;
   }
 
   setTimeout(() => {
@@ -54,7 +54,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
 
 <template>
   <v-dialog
-    v-model="open"
+    v-model="isOpen"
     persistent
     width="500"
   >
@@ -70,7 +70,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
       ref="form"
       v-model="isValidForm"
       validate-on="lazy"
-      @submit.prevent="updatePassword"
+      @submit.prevent="updateUser"
     >
       <v-card>
         <v-card-title class="d-flex align-center justify-space-between">
@@ -81,7 +81,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
             size="small"
             icon="mdi-close"
             title="Close"
-            @click="open = false"
+            @click="isOpen = false"
           />
         </v-card-title>
         <v-card-text class="text-body-1">
@@ -89,7 +89,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
           <input-password
             v-model="currentPassword"
             :rules="[ (v) => !!v || 'Enter your current password' ]"
-            autocomplete="off"
+            autocomplete="current-password"
             label="Current Password"
           />
           <input-password
@@ -105,7 +105,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
             :disabled="isUpdating"
             variant="text"
             text="Cancel"
-            @click="open = false"
+            @click="isOpen = false"
           />
           <v-btn
             :disabled="isValidForm === false"
@@ -118,5 +118,6 @@ const updatePassword = async (event: SubmitEventPromise) => {
         </v-card-actions>
       </v-card>
     </v-form>
-  </v-dialog>
+  </v-dialog
+    v-model="isOpen">
 </template>
