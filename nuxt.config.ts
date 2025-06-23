@@ -48,6 +48,8 @@ export default defineNuxtConfig({
       callback: '/confirm',
       include: [
         '/account',
+        '/change-password',
+        '/my-decks',
       ],
     },
   },

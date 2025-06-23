@@ -46,6 +46,10 @@ const updateUser = async (event: SubmitEventPromise) => {
     isSaving.value = false;
   }, 200);
 };
+
+const hasEnabledAuthenticatorApp = computed(() => (
+  user.value?.factors?.some((factor) => factor.factor_type === 'totp' && factor.status === 'verified')
+));
 </script>
 
 <template>
@@ -63,6 +67,7 @@ const updateUser = async (event: SubmitEventPromise) => {
       <input-email
         v-model="email"
         :rules="[ (v) => !!v || 'Enter your email' ]"
+        disabled
         label="Email"
       />
       <v-btn
@@ -75,9 +80,15 @@ const updateUser = async (event: SubmitEventPromise) => {
       />
     </v-form>
     <v-divider class="my-6" />
-    <h3 class="text-h6 mb-3">
+    <h3 class="mb-3">
       Password and Authentication
     </h3>
-    <update-password-dialog />
+    <change-password />
+    <h4 class="mb-3 mt-6">
+      Authenticator App
+    </h4>
+    <p>Configuring an authenticator app is a good way to add an extra layer of security to your account to make sure that only you have the ability to log in.</p>
+    <remove-authenticator-app v-if="hasEnabledAuthenticatorApp" />
+    <enable-authenticator-app v-else />
   </layout-content>
 </template>

@@ -5,8 +5,7 @@ import type { VForm } from 'vuetify/components';
 const supabase = useSupabaseClient();
 const snackbar = useSnackbarState();
 
-// TODO: Fix typing.
-const formRef = useTemplateRef<VForm>('form');
+const formRef = useTemplateRef('form');
 const isValidForm = ref<boolean>(true);
 const isUpdating = ref<boolean>(false);
 
@@ -55,7 +54,6 @@ const updatePassword = async (event: SubmitEventPromise) => {
 
 <template>
   <v-dialog
-    ref="form"
     v-model="open"
     persistent
     width="500"
@@ -69,6 +67,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
       />
     </template>
     <v-form
+      ref="form"
       v-model="isValidForm"
       validate-on="lazy"
       @submit.prevent="updatePassword"

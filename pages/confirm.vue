@@ -11,5 +11,7 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <div>Waiting for login...</div>
+  <layout-content size="small">
+    <p>Waiting for login...</p>
+  </layout-content>
 </template>
