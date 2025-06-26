@@ -26,47 +26,38 @@ const year = computed<number>(() => new Date().getFullYear());
           />
         </nuxt-link>
       </v-toolbar-title>
-      <client-only>
-        <template #fallback>
+      <v-menu v-if="user">
+        <template #activator="{ props }">
           <v-btn
-            :active="false"
-            icon="mdi-login"
+            variant="text"
             color="primary"
+            icon="mdi-alien"
+            v-bind="props"
           />
         </template>
-        <v-menu v-if="user">
-          <template #activator="{ props }">
-            <v-btn
-              variant="text"
-              color="primary"
-              icon="mdi-alien"
-              v-bind="props"
-            />
-          </template>
-          <v-list>
-            <v-list-item
-              to="/account"
-              title="Account"
-            />
-            <v-list-item
-              to="/my-decks"
-              title="My decks"
-            />
-            <v-list-item
-              to="/logout"
-              title="Log out"
-            />
-          </v-list>
-        </v-menu>
-        <v-btn
-          v-else
-          :active="false"
-          to="/login"
-          icon="mdi-login"
-          color="primary"
-          title="Sign in"
-        />
-      </client-only>
+        <v-list>
+          <v-list-item
+            to="/account"
+            title="Account"
+          />
+          <v-list-item
+            to="/my-decks"
+            title="My decks"
+          />
+          <v-list-item
+            to="/logout"
+            title="Log out"
+          />
+        </v-list>
+      </v-menu>
+      <v-btn
+        v-else
+        :active="false"
+        to="/login"
+        icon="mdi-login"
+        color="primary"
+        title="Sign in"
+      />
     </v-app-bar>
     <app-navigation />
     <v-main style="--v-layout-top: 64px">
