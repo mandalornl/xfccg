@@ -13,12 +13,17 @@ const year = computed<number>(() => new Date().getFullYear());
         class="hidden-sm-and-up"
         @click="appNavigationState = !appNavigationState"
       />
-      <v-toolbar-title>
+      <v-toolbar-title class="d-flex">
         <nuxt-link
           to="/"
-          class="d-inline-block text-decoration-none"
+          class="d-block text-decoration-none"
         >
-          <app-logo />
+          <v-img
+            src="/logo.svg"
+            alt="The X-Files CCG"
+            width="200"
+            height="40"
+          />
         </nuxt-link>
       </v-toolbar-title>
       <client-only>
