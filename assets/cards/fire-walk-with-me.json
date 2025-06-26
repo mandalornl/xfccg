@@ -876,7 +876,7 @@
       "Evidence Collection"
     ],
     "gameText": "Play to negate one card with the Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION.",
-    "dialogue": "Cooper:\"Did you kill Laura Palmer?\". Leland:\"Whooo!!! Whoo-whoo! Hoo-hoo-hoo!! Whooo!!! Whooo! Hoo-Hoo!\"",
+    "dialogue": "Cooper:\"Did you kill Laura Palmer?\".\nLeland:\"Whooo!!! Whoo-whoo! Hoo-hoo-hoo!! Whooo!!! Whooo! Hoo-Hoo!\"",
     "tags": [
       "Basic"
     ],
@@ -945,7 +945,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds two to the Agent's BEHAVIORAL and EVIDENCE COLLECTION skills. You cannot sell this card during the Briefing Phase to gain [CP] points,",
+    "gameText": "Adds two to the Agent's BEHAVIORAL and EVIDENCE COLLECTION skills. You cannot sell this card during the Briefing Phase to gain [CP] points.",
     "dialogue": "\"What we have taped to the page here is a plastic envelope containing a white residue and what looks to be a key to a safety deposit box.\" - Cooper",
     "tags": [
       "Basic"
@@ -967,7 +967,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds two to the Agent's SCIENCES and CRIMINAL INVESTIGATION skills. You cannot sell this card during the Briefing phase to gain [CP] points,",
+    "gameText": "Adds two to the Agent's SCIENCES and CRIMINAL INVESTIGATION skills. You cannot sell this card during the Briefing phase to gain [CP] points.",
     "dialogue": "\"Time of death estimated to be between midnight and four AM. What killed her was loss of blood. Numerous shallow wounds, no single one serious enough to have caused death.\" - Dr. Hayward",
     "tags": [
       "Basic"
@@ -1083,6 +1083,503 @@
     "dialogue": "\"Voice activated, Harry. When the bird talks maybe we'll get some answers.\" - Cooper",
     "tags": [
       "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0445x2",
+    "title": "Diner Confidential",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Lonely Souls",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card during a skill check. You may discard two cards from your hand to gain +1 to that skill check, or discard four cards to gain +2 instead. You cannot discard more than four cards this way.",
+    "dialogue": "\"Shelly, you've got your own life to worry about right now. I'll be fine here.\" - Norma",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0446x2",
+    "title": "Opening Gambit",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Variations on Relations",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Behavioral",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Force an opponent Team investigating a Site to make a BEHAVIORAL 4+ skill check or the current player's turn ends immediately.",
+    "dialogue": "\"He's taken another pawn, Harry but he didn't tell us his move. Windom Earle's playing off the board.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0447x2",
+    "title": "Audrey's Dance",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Zen, or the Skill to Catch a Killer",
+    "type": "Event",
+    "cost": "2 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Choose any one Agent in play. That Agent cannot be targeted by Event nor Bluff cards this turn.",
+    "dialogue": "\"Agent Cooper loves coffee. But agent Cooper loves his coffee black.\" - Norma",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0448x2",
+    "title": "Between Two Worlds",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x02)",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Liminal",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your opponents' Fields. That opponent must pay one additional [RP] for each Site card they play.",
+    "dialogue": "\"Something's wrong'.\" - Mike",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0449x2",
+    "title": "The Log Knows",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Cooper's Dreams",
+    "type": "Event",
+    "cost": "5 RP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card next to your X-File with three tokens on it. Discard a token to apply a +1 modifier to any one Agent's Skill check. You may do this once per turn.",
+    "dialogue": "\"Come on then. My log does not judge.\" - Log Lady",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0450x2",
+    "title": "She is Not Herself",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x06)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File with two tokens on it. Discard a token to apply a -2 modifier to any Agent's Skill Check. You may do this once per turn.",
+    "dialogue": "\"I'm in the sheriff's station... because... because... I'm not me.\" - Diane's Tulpa",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0451x2",
+    "title": "Humiliation Ritual",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Demons",
+    "type": "Event",
+    "cost": "4 CP",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. Once per turn, during your opponent's Healing Phase, you may force them to discard one card from their hand (their choice)",
+    "dialogue": "\"He moved! I saw him move! No. It's too creepy. It's wrong, Bobby.\" - Shelly Johnson",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0452x2",
+    "title": "Invitation to the Other Side",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Event",
+    "cost": "X+1 *P",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active",
+      "Liminal"
+    ],
+    "gameText": "Play this card during a skill check. You may discard two cards from your hand to gain +1 to that skill check, or discard four cards to gain +2 instead. You cannot discard more than four cards this way.",
+    "dialogue": "\"Shelly, you've got your own life to worry about right now. I'll be fine here.\" - Norma",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0453x2",
+    "title": "Composite Sketch",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Man Behind the Glass",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play on a Team in the Field during the Investigation Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check, reveal all face-down Bluff cards at one Site.",
+    "dialogue": "\"This man, I know him.\" - Leland",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0454x2",
+    "title": "Security Override",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x05)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Computer"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Force an opponent Team investigating a Site to make a COMPUTER 4+ skill check or the current player's turn ends immediately.",
+    "dialogue": "\"The cow jumped over the moon.\" - Mr. C",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0455x2",
+    "title": "The Jupiter-Saturn Conjunction",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Path to the Black Lodge",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Force an opponent Team investigating a Site to make a OCCULT INVESTIGATION 4+ skill check or the current player's turn ends immediately.",
+    "dialogue": "\"When Jupiter and Saturn meet, Oh, what a crop of mummy wheat.\" - Windom Earle",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0456x2",
+    "title": "The Evil Within",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x12)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Liminal",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "You may play Keyword BLUFF cards for 1 [CP] less. If placed face down under a Site (as usual), the cost is reduced by 1 more [CP] for a total of 2 [CP] less. A Bluff could be played this way for free, but you can never gain tokens by playing a Bluff card. Your opponent may pay 6 [RP] to force you to discard this card.",
+    "dialogue": "\"It's a goddamn bad story, isn't it, Hawk?.\" - Sarah Palmer",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0457x2",
+    "title": "May the Giant Be With You",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Lonely Souls",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Question"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card immediately after asking a Characteristic question about your opponent's X-File and receiving a \"No\" response. Your opponent must then revel an additional Characteristic that also does not apply to their X-File (e.g., \"The Result is not Death\". The revealed information must be true. Remove this card from the game.",
+    "dialogue": "\"A path is formed by laying one stone at a time.\" - The Giant",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0458x2",
+    "title": "The Man From Another Place",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Beyond Life and Death",
+    "type": "Event",
+    "cost": "2 RP",
+    "keywords": [
+      "Event",
+      "Liminal"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card during the Briefing Phase. Discard a Keyword CONSPIRACY card from your hand with a cost of 7 [CP] or less to gain a number of [RP] tokens equal to that card's cost.",
+    "dialogue": "\"When you see me again it won't be me.\" - The Arm",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0459x2",
+    "title": "The Man in the Mirror",
+    "set": "Beyond Life and Death",
+    "rarity": "Community",
+    "episode": "The Return (3x12)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Conspiracy",
+      "Agent"
+    ],
+    "gameText": "Play this card on an Agent controlled by the Active Player during a Site skill check. Until end of turn, that Agent cannot use their base skills for the check. Instead, use the base skills of any one of your Agents (your choice). If none of your Agents have that skill, the skill value is zero.",
+    "dialogue": "\"How's Annie? How's Annie? How's Annie?\" - Mr. C",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0460x2",
+    "title": "Mr. Jackpots",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x03)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card during the Briefing Phase on a Team of Agents in the Field to double the RES produced by each Agent in that Team for this turn. Discard this card afterward. You cannot sell this card during the Briefing Phase to gain [CP] points.",
+    "dialogue": "\"HELLO-O-O-O-O\" - Doogie",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0461x2",
+    "title": "Señorita Dido, A light in the Darkness",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x12)",
+    "type": "Event",
+    "cost": "3 RP",
+    "keywords": [
+      "Event",
+      "Liminal",
+      "Occult",
+      "Healing"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Play this card only if all Agents in one of your Teams at a Site have been sent to the Hospital. Return the Site card to your hand. Each Agent in that Team heals 1 point of damage immediately.",
+    "dialogue": "\"Remember 430. Richard and Linda. Two birds with one stone.\" - The Giant",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0462x2",
+    "title": "In the Ashes, Silence",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x08)",
+    "type": "Event",
+    "cost": "5 *P",
+    "keywords": [
+      "Event",
+      "Resource"
+    ],
+    "activators": [
+      "Active",
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. Remove this card from play at any time to discard all Keyword RESOURCE cards in play.",
+    "dialogue": "\"This is the water, and this is the well. Drink full and descend. The horse is the white of the eyes and dark within.\" - The Woodsman",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0463x2",
+    "title": "Meaning Emerges",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Miss Twin Peaks",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Play this card immediately after your opponent has finished drawing cards in the Briefing Phase. Place this card next to your X-File with two tokens on it. Discard one token to examine your opponent's hand. When there are no tokens left, discard this card.",
+    "dialogue": "\"It's not a puzzle at all. It's a map.\" - Andy Brennan",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0464x2",
+    "title": "Glass Prison",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x02)",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Occult",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. You may force your opponent to discard one card from their hand (opponent's choice) once per turn during their Healing Phase. You may only have one of this card in your Bureau Deck.",
+    "dialogue": "\"I'm supposed to watch the box and see if anything appears inside.\" - Sam Colby",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0465x2",
+    "title": "The Plan Must Be Carried Out",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x14)",
+    "type": "Event",
+    "cost": "4 RP",
+    "keywords":
+    [
+      "Artifact",
+      "Event",
+      "Liminal",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameText": "Place this card next to your X-File. You may play [RP] Events for one [RP] less. You may only have one of this card in play.",
+    "dialogue": "\"This is it, Jackrabbit's Palace!\" - Bobby Briggs",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0466x2",
+    "title": "Evil in A Suit and Tie",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Arbitrary Law",
+    "type": "Event",
+    "cost": "5 CP",
+    "keywords": [
+      "Event",
+      "Liminal",
+      "Resource"
+    ],
+    "activators": [
+      "Conspiracy"
+    ],
+    "gameText": "Place this card next to your X-File. You may play [CP] Events for one [CP] less. You may only have one of this card in play.",
+    "dialogue": "\"I've got the cure for what ails you. It's simple, really. But it always improves my mood.\" - Leland Palmer",
+    "tags": [
+      "Advanced"
     ],
     "createdBy": "Alfredo Sanchez, Robert Czepiel"
   }

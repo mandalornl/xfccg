@@ -2,14 +2,14 @@
 import type { RouteLocationResolvedGeneric } from 'vue-router';
 import { useGoTo } from 'vuetify';
 
-import sets from '~/assets/cards/sets.json';
-import types from '~/assets/cards/types.json';
-import keywords from '~/assets/cards/keywords.json';
-import activators from '~/assets/cards/activators.json';
-import rarities from '~/assets/cards/rarities.json';
-import costs from '~/assets/cards/costs.json';
-import episodes from '~/assets/cards/episodes.json';
-import tags from '~/assets/cards/tags.json';
+import sets from '~/assets/filters/sets.json';
+import types from '~/assets/filters/types.json';
+import keywords from '~/assets/filters/keywords.json';
+import activators from '~/assets/filters/activators.json';
+import rarities from '~/assets/filters/rarities.json';
+import costs from '~/assets/filters/costs.json';
+import episodes from '~/assets/filters/episodes.json';
+import tags from '~/assets/filters/tags.json';
 
 import type { Filter } from '~/types/filter';
 import type { Card } from '~/types/card';
@@ -23,7 +23,7 @@ const router = useRouter();
 const goTo = useGoTo();
 
 useHead({
-  title: 'Cards'
+  title: 'Cards',
 });
 
 const getFilterValue = (key: string): string[] => {
@@ -115,8 +115,8 @@ const clearAllFilters = () => {
 
 const headers = [
   { title: '#', key: 'id', nowrap: true },
-  { title: 'Set', key: 'set', nowrap: true },
   { title: 'Title', key: 'title', nowrap: true },
+  { title: 'Set', key: 'set', nowrap: true },
   { title: 'Type', key: 'type', nowrap: true },
   { title: 'Rarity', key: 'rarity', nowrap: true },
 ];
@@ -124,7 +124,7 @@ const headers = [
 const itemsPerPageOptions = [
   { value: 60, title: '60' },
   { value: 120, title: '120' },
-  { value: -1, title: '$vuetify.dataFooter.itemsPerPageAll' },
+  { value: -1, title: 'All' },
 ];
 
 const getSortByValue = (): SortBy[] => {
@@ -140,7 +140,7 @@ const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
 const showSelected = ref<boolean>(route.query.showSelected === null);
-const selectedCard = ref<Card | null>(null);
+const selectedCard = ref<Card>();
 
 const resolvedRoute = computed(() => {
   const sortByValue = JSON.stringify(sortBy.value);
@@ -161,7 +161,7 @@ const resolvedRoute = computed(() => {
             : undefined,
         ]))
       ),
-    }
+    },
   });
 });
 
@@ -180,10 +180,8 @@ watch(search, () => {
 });
 
 const cards = computed<Card[]>(() => {
-  const canonicalSearch = search.value.toLocaleLowerCase();
-
-  const hits = pool.filter((card: Card) => {
-    if (canonicalSearch) {
+  const hits = pool.filter((card) => {
+    if (search.value) {
       const hit = [
         card.id,
         card.title,
@@ -191,7 +189,7 @@ const cards = computed<Card[]>(() => {
         card.gameEffect,
       ]
         .filter(Boolean)
-        .some((value) => value.toLocaleLowerCase().includes(canonicalSearch));
+        .some((value) => value.toLowerCase().includes(search.value.toLowerCase()));
 
       if (!hit) {
         return false;
@@ -226,9 +224,12 @@ const cards = computed<Card[]>(() => {
   return hits;
 });
 
-const items = computed(() => {
+const items = computed<Card[]>(() => {
   if (perPage.value > 0) {
-    return cards.value.slice((page.value - 1) * perPage.value, page.value * perPage.value);
+    const start = (page.value - 1) * perPage.value;
+    const end = page.value * perPage.value;
+
+    return cards.value.slice(start, end);
   }
 
   return cards.value;
@@ -287,7 +288,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
             <v-btn
               variant="tonal"
               size="small"
-              text="Clear all filters"
+              text="Clear Filters"
               class="mb-4"
               @click="clearAllFilters"
             />
@@ -363,6 +364,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
         </v-fade-transition>
       </v-col>
     </v-row>
+    <card-info v-model="selectedCard" />
   </layout-content>
 </template>
 
