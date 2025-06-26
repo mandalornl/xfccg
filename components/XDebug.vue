@@ -1,13 +1,12 @@
-<script setup>
-/* eslint-disable vue/require-prop-types */
-const props = defineProps([
-  'value'
-]);
+<script lang="ts" setup>
+const props = defineProps<{
+  value: unknown,
+}>();
 
 const getCircularReplacer = () => {
   const seen = new WeakSet();
 
-  return (_, value) => {
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return;
@@ -23,8 +22,12 @@ const getCircularReplacer = () => {
 const debug = computed(() => {
   try {
     return JSON.parse(JSON.stringify(toValue(props.value), getCircularReplacer()));
-  } catch (error) {
-    return error.message;
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return error.message;
+    }
+
+    return 'Unknown error';
   }
 });
 </script>
