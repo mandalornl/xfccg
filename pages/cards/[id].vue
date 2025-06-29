@@ -14,11 +14,36 @@ const card = computed<Card | undefined>(() => {
 
   return pool.find((card) => card.id === route.params.id);
 });
+
+const isOpen = ref<boolean>(false);
+
+watchEffect(() => {
+  isOpen.value = !!card.value;
+});
+
+watch(isOpen, (value) => {
+  if (value) {
+    return;
+  }
+
+  return navigateTo('/cards');
+});
+
+const emit = defineEmits([
+  'click:filter',
+]);
+
+const onClick = (key: string) => (value: string) => {
+  emit('click:filter', {
+    key,
+    value,
+  });
+};
 </script>
 
 <template>
   <v-dialog
-    :model-value="!!card"
+    v-model="isOpen"
     :fullscreen="smAndDown"
     scrollable
     width="768"
@@ -29,12 +54,11 @@ const card = computed<Card | undefined>(() => {
         <v-card-title class="d-flex align-center justify-space-between">
           {{ card?.title }}
           <v-btn
-            exact
-            to="/cards"
             variant="text"
             icon="mdi-close"
             size="small"
             title="Close"
+            @click="isOpen = false"
           />
         </v-card-title>
         <v-card-subtitle>
@@ -54,6 +78,12 @@ const card = computed<Card | undefined>(() => {
             cols="12"
             sm="6"
           >
+            <card-text
+              v-if="card?.set"
+              :text="card.set"
+              title="Set"
+              class="mb-3"
+            />
             <div
               v-if="card?.type"
               class="mb-3"
@@ -63,6 +93,12 @@ const card = computed<Card | undefined>(() => {
               </div>
               <card-type :text="card.type" />
             </div>
+            <card-text
+              v-if="card?.rarity"
+              :text="card.rarity"
+              title="Rarity"
+              class="mb-3"
+            />
             <card-text
               v-if="card?.cost"
               :text="card.cost"
@@ -106,18 +142,18 @@ const card = computed<Card | undefined>(() => {
               class="mb-3"
             />
             <card-chips
-              v-if="!!card?.keywords?.length"
+              v-if="card?.keywords?.length"
               :value="card.keywords"
               title="Keywords"
-              query-key="keywords"
               class="mb-3"
+              @click="onClick('keywords')($event)"
             />
             <card-chips
-              v-if="!!card?.activators?.length"
+              v-if="card?.activators?.length"
               :value="card.activators"
               title="Activators"
-              query-key="activators"
               class="mb-3"
+              @click="onClick('activators')($event)"
             />
             <card-text
               v-if="card?.bio"
@@ -129,18 +165,6 @@ const card = computed<Card | undefined>(() => {
               v-if="card?.dialogue"
               :text="card.dialogue"
               title="Dialogue"
-              class="mb-3"
-            />
-            <card-text
-              v-if="card?.set"
-              :text="card.set"
-              title="Set"
-              class="mb-3"
-            />
-            <card-text
-              v-if="card?.rarity"
-              :text="card.rarity"
-              title="Rarity"
               class="mb-3"
             />
             <card-text
@@ -156,11 +180,11 @@ const card = computed<Card | undefined>(() => {
               class="mb-3"
             />
             <card-chips
-              v-if="!!card?.tags?.length"
+              v-if="card?.tags?.length"
               :value="card.tags"
               title="Tags"
-              query-key="tags"
               class="mb-3"
+              @click="onClick('tags')($event)"
             />
             <card-text
               v-if="card?.createdBy"
@@ -171,6 +195,28 @@ const card = computed<Card | undefined>(() => {
           </v-col>
         </v-row>
       </v-card-text>
+      <v-card-actions>
+        <v-btn
+          icon="mdi-chevron-left"
+          variant="text"
+        />
+        <v-spacer />
+        <v-number-input
+          :model-value="0"
+          :min="0"
+          :max="2"
+          inset
+          hide-details
+          color="primary"
+          variant="outlined"
+          control-variant="split"
+        />
+        <v-spacer />
+        <v-btn
+          icon="mdi-chevron-right"
+          variant="text"
+        />
+      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>

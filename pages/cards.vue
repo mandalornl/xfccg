@@ -112,14 +112,13 @@ const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
 const showSelected = ref<boolean>(route.query.showSelected === null);
-const selectedCard = ref<Card>();
 
 const resolvedRoute = computed(() => {
   const sortByValue = JSON.stringify(sortBy.value);
 
   return router.resolve({
+    name: 'cards',
     query: {
-      id: selectedCard.value?.id,
       search: search.value || undefined,
       page: page.value > 1 ? page.value : undefined,
       perPage: perPage.value !== 60 ? perPage.value : undefined,
@@ -138,6 +137,10 @@ const resolvedRoute = computed(() => {
 });
 
 watch(resolvedRoute, (value: RouteLocationResolvedGeneric) => {
+  if (route.name === 'cards-id') {
+    return;
+  }
+
   if (value.fullPath === route.fullPath) {
     return;
   }
@@ -210,9 +213,14 @@ const items = computed<Card[]>(() => {
 const deckSize = ref<number>(0);
 const isIntersecting = ref<boolean>(false);
 
-const onClickRow = (event: Event, data: { item: Card }) => {
-  selectedCard.value = data.item;
-};
+const onClickRow = (event: Event, data: { item: Card }) => (
+  navigateTo({
+    name: 'cards-id',
+    params: {
+      id: data.item?.id,
+    },
+  })
+);
 
 const updateFilter = ({
   key,
@@ -324,7 +332,7 @@ const updateFilter = ({
         </v-fade-transition>
       </v-col>
     </v-row>
-    <card-info v-model="selectedCard" />
+    <nuxt-page @click:filter="updateFilter" />
   </layout-content>
 </template>
 
