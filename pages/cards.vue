@@ -26,92 +26,64 @@ useHead({
   title: 'Cards',
 });
 
-const getFilterValue = (key: string): string[] => {
-  const value = (route.query[key] ?? '') as string;
-  const and = value.includes('+');
-
-  return value
-    .split(and ? '+' : ',')
-    .filter(Boolean);
-};
-
-const getFilterOperation = (key: string, defaultOperation: FilterOperationEnum = FilterOperationEnum.AND): FilterOperationEnum => {
-  const value = (route.query[key] ?? '') as string;
-
-  return value.includes('+') ? FilterOperationEnum.AND : defaultOperation;
-};
-
-const expandedFilters = ref<string[]>([
-  'set',
-  'type',
-]);
-
 const filters = ref<Filter[]>([
   {
     key: 'set',
     title: 'Set',
-    value: getFilterValue('set'),
+    value: [],
     items: sets,
-    operation: getFilterOperation('set'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'type',
     title: 'Type',
-    value: getFilterValue('type'),
+    value: [],
     items: types,
-    operation: getFilterOperation('type'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'keywords',
     title: 'Keywords',
-    value: getFilterValue('keywords'),
+    value: [],
     items: keywords,
-    operation: getFilterOperation('keywords'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'activators',
     title: 'Activators',
-    value: getFilterValue('activators'),
+    value: [],
     items: activators,
-    operation: getFilterOperation('activators'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'rarity',
     title: 'Rarity',
-    value: getFilterValue('rarity'),
+    value: [],
     items: rarities,
-    operation: getFilterOperation('rarity'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'cost',
     title: 'Cost',
-    value: getFilterValue('cost'),
+    value: [],
     items: costs,
-    operation: getFilterOperation('cost'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'episode',
     title: 'Episodes',
-    value: getFilterValue('episode'),
+    value: [],
     items: episodes,
-    operation: getFilterOperation('episode'),
+    operation: FilterOperationEnum.AND,
   },
   {
     key: 'tags',
     title: 'Tags',
-    value: getFilterValue('tags'),
+    value: [],
     items: tags,
-    operation: getFilterOperation('tags'),
+    operation: FilterOperationEnum.AND,
   },
 ]);
-
-const hasAnyFilters = computed(() => filters.value.some((filter) => filter.value.length > 0));
-
-const clearAllFilters = () => {
-  for (const filter of filters.value) {
-    filter.value = [];
-  }
-};
 
 const headers = [
   { title: '#', key: 'id', nowrap: true },
@@ -241,6 +213,22 @@ const isIntersecting = ref<boolean>(false);
 const onClickRow = (event: Event, data: { item: Card }) => {
   selectedCard.value = data.item;
 };
+
+const updateFilter = ({
+  key,
+  value,
+}: {
+  key: string;
+  value: string;
+}) => {
+  search.value = '';
+
+  for (const filter of filters.value) {
+    filter.value = filter.key === key ? [ value ] : [];
+  }
+
+  return navigateTo('/cards');
+};
 </script>
 
 <template>
@@ -283,39 +271,11 @@ const onClickRow = (event: Event, data: { item: Card }) => {
             />
           </template>
         </v-switch>
-        <v-expand-transition>
-          <div v-if="hasAnyFilters">
-            <v-btn
-              variant="tonal"
-              size="small"
-              text="Clear Filters"
-              class="mb-4"
-              @click="clearAllFilters"
-            />
-          </div>
-        </v-expand-transition>
-        <v-expansion-panels
-          v-model="expandedFilters"
-          multiple
-        >
-          <v-expansion-panel
-            v-for="filter of filters"
-            :key="filter.key"
-            :value="filter.key"
-          >
-            <v-expansion-panel-title>
-              {{ filter.title }} ({{ filter.value.length }})
-            </v-expansion-panel-title>
-            <v-expansion-panel-text>
-              <filter-operation v-model="filter.operation" />
-              <filter-value
-                v-model="filter.value"
-                :filter="filter"
-                :cards="cards"
-              />
-            </v-expansion-panel-text>
-          </v-expansion-panel>
-        </v-expansion-panels>
+        <filter-panels
+          v-model="filters"
+          :expanded="[ 'set', 'type' ]"
+          :pool="cards"
+        />
       </v-col>
       <v-col
         cols="12"

@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import type {
   Filter,
-  FilterValueItem
+  FilterValueItem,
 } from '~/types/filter';
 import type { Card } from '~/types/card';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const props = defineProps<{
   filter: Filter,
-  cards: Card[],
+  pool: Card[],
 }>();
 
 const model = defineModel<string[]>({
@@ -24,7 +24,7 @@ const getCount = (filterValue: string): number | string => {
     return '…';
   }
 
-  return props.cards.filter((card: Card) => {
+  return props.pool.filter((card: Card) => {
     const cardValue = card[props.filter.key];
 
     if (Array.isArray(cardValue)) {

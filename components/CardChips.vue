@@ -2,8 +2,11 @@
 defineProps<{
   title?: string,
   value?: string[],
-  queryKey?: string,
 }>();
+
+const emit = defineEmits([
+  'click',
+]);
 </script>
 
 <template>
@@ -19,14 +22,11 @@ defineProps<{
         <v-chip
           v-for="text of value"
           :key="text"
-          :to="queryKey ? {
-            name: 'cards',
-            query: {
-              [queryKey]: text,
-            },
-          } : undefined"
           :text="text"
+          label
+          color="primary"
           class="ma-1"
+          @click="emit('click', text)"
         />
       </div>
     </div>
