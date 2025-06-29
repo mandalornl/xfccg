@@ -42,7 +42,11 @@ const year = computed<number>(() => new Date().getFullYear());
           />
           <v-list-item
             to="/my-decks"
-            title="My decks"
+            title="My Decks"
+          />
+          <v-list-item
+            to="/my-agents"
+            title="My Agents"
           />
           <v-list-item
             to="/logout"
