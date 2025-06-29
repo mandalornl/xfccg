@@ -23,7 +23,7 @@ const src = computed(() => {
     :alt="card?.title"
     :aspect-ratio="5/7"
     :max-width="maxWidth"
-    rounded
+    rounded="xl"
     lazy-src="/cards/back.jpg"
   />
 </template>
