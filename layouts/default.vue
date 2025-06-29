@@ -50,7 +50,7 @@ const year = computed<number>(() => new Date().getFullYear());
           />
           <v-list-item
             to="/logout"
-            title="Log out"
+            title="Log Out"
           />
         </v-list>
       </v-menu>
