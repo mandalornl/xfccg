@@ -1223,7 +1223,7 @@
   },
   {
     "id": "XF08-0451x2",
-    "title": "Humiliation Ritual",
+    "title": "Shared Agony",
     "set": "Fire Walk With Me",
     "rarity": "Community",
     "episode": "Demons",
@@ -1236,10 +1236,10 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File. Once per turn, during your opponent's Healing Phase, you may force them to discard one card from their hand (their choice)",
+    "gameText": "Place this card next to your X-File with three damage tokens on it. Once per turn, during the Healing Phase, you may move one damage token to any one of your opponent’s Agents (your choice). The same Agent may not be damaged on consecutive turns.",
     "dialogue": "\"He moved! I saw him move! No. It's too creepy. It's wrong, Bobby.\" - Shelly Johnson",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "Alfredo Sanchez, Robert Czepiel"
   },
@@ -1258,8 +1258,8 @@
       "Active",
       "Liminal"
     ],
-    "gameText": "Play this card during a skill check. You may discard two cards from your hand to gain +1 to that skill check, or discard four cards to gain +2 instead. You cannot discard more than four cards this way.",
-    "dialogue": "\"Shelly, you've got your own life to worry about right now. I'll be fine here.\" - Norma",
+    "gameText": "Play this card to remove one Agent from play until the end of the turn. This card may be played at any time, except during Combat, but it can be used in response to an opponent playing an Adversary card. X is the [CP] cost of that Agent.",
+    "dialogue": "\"This would look nice on your wall.\" - Mrs. Tremond",
     "tags": [
       "Advanced"
     ],
@@ -1369,7 +1369,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card immediately after asking a Characteristic question about your opponent's X-File and receiving a \"No\" response. Your opponent must then revel an additional Characteristic that also does not apply to their X-File (e.g., \"The Result is not Death\". The revealed information must be true. Remove this card from the game.",
+    "gameText": "Play this card immediately after asking a Characteristic question about your opponent's X-File and receiving a \"No\" response. Your opponent must then revel an additional Characteristic from the same category that also does not apply to their X-File (e.g., \"The Result is not Death\". Remove this card from the game.",
     "dialogue": "\"A path is formed by laying one stone at a time.\" - The Giant",
     "tags": [
       "Basic"
@@ -1428,14 +1428,14 @@
     "rarity": "Community",
     "episode": "The Return (3x03)",
     "type": "Event",
-    "cost": "5 CP",
+    "cost": "1 RP",
     "keywords": [
       "Event"
     ],
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card during the Briefing Phase on a Team of Agents in the Field to double the RES produced by each Agent in that Team for this turn. Discard this card afterward. You cannot sell this card during the Briefing Phase to gain [CP] points.",
+    "gameText": "Play this card during the Briefing Phase on a Team of Agents in the Field to double the RES produced by each Agent in that Team for this turn. Discard this card afterward.",
     "dialogue": "\"HELLO-O-O-O-O\" - Doogie",
     "tags": [
       "Advanced"
@@ -1567,7 +1567,7 @@
     "rarity": "Community",
     "episode": "Arbitrary Law",
     "type": "Event",
-    "cost": "5 CP",
+    "cost": "4 CP",
     "keywords": [
       "Event",
       "Liminal",
@@ -1580,6 +1580,292 @@
     "dialogue": "\"I've got the cure for what ails you. It's simple, really. But it always improves my mood.\" - Leland Palmer",
     "tags": [
       "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0467x2",
+    "title": "Yankton Federal Prison, SD",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x05)",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Computer",
+      "Occult Investigation"
+    ],
+    "prerequisite": "COMPUTER 5+ or OCCULT INVESTIGATION 5+",
+    "question": "You may ask one METHOD question or one RESULT question. Add 2 [RP] to your [RP] pool if you successfully investigate this Site.",
+    "dialogue": "\"Now that everyone is here, I will make my phone call. Now, who should I call? Should I call Mr. Strawberry?\" - Mr. C",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0468x2",
+    "title": "One Eyed Jacks, Canada",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Realization Time",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Criminal Investigation",
+      "Subterfuge"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 5+ or SUBTERFUGE 5+",
+    "question": "You may ask one METHOD question or one RESULT question. You may draw one card from your Bureau deck if you successfully investigate this Site.",
+    "dialogue": "Blackie: \"You look like a cop.\"\nCooper: \"I'm the cop.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0469x2",
+    "title": "Twin Peaks, WA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Pilot",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Result",
+      "Criminal Investigation",
+      "Occult Investigation"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 5+ or OCCULT INVESTIGATION 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "\"Diane, 11:30 a.m., February 24th. Entering the town of Twin Peaks. It's five miles south of the Canadian border, twelve miles west of the state line.\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0470x2",
+    "title": "Glastonbury Grove, Twin Peaks, WA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x18)",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Affiliation",
+      "Liminal",
+      "Observation"
+    ],
+    "prerequisite": "OBSERVATION 5+",
+    "question": "You may ask one AFFILIATION question.",
+    "Game Effect": "When playing this Site, the Active player may draw one card.",
+    "dialogue": "Diane: \"Is it you? Is it really you?\"\nCooper: \"Yes. It's really me, Diane\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0471x2",
+    "title": "The Dutchman's, MT",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x15)",
+    "type": "Site",
+    "cost": "2 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Motive",
+      "Liminal",
+      "Subterfuge"
+    ],
+    "prerequisite": "SUBTERFUGE 5+",
+    "question": "You may ask one MOTIVE question.",
+    "Game Effect": "If you successfully investigate this Site, you may force an opponent to discard one card from the top of their Bureau Deck.",
+    "dialogue": "\"I'm not gonna talk about Judy.\" - Agent Phillip Jeffries",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0472x2",
+    "title": "Deer Meadow Sheriff's Department Morgue, OR",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Method",
+      "Medical",
+      "Sciences"
+    ],
+    "prerequisite": "MEDICAL 5+ or SCIENCES 5+",
+    "question": "You may ask one AFFILIATION question or one METHOD question. If you ask if the METHOD is \"Violence\", the skill check prerequisite is 4+.",
+    "dialogue": "\"Teresa Banks lived at the Canyon Trailer Park or a month. We'll check that. And worked as a waitress at the Hap's Truck Stop. Worked the Night Shift. Good place for dinner when we were thru here, Sam.\" - Agent Desmond",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0473x2",
+    "title": "Las Vegas, NV",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x02)",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Motive",
+      "Result",
+      "Computer",
+      "Subterfuge"
+    ],
+    "prerequisite": "COMPUTER 5+ or SUBTERFUGE 5+",
+    "question": "You may ask one MOTIVE question or one RESULT question. If you ask if the MOTIVE is \"Control\", the skill check prerequisite is 4+.",
+    "dialogue": "\"You better hope that you never get involved with someone like him.\" - Duncan Todd",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0474x2",
+    "title": "Buckhorn Police Dept., Buckhorn, South Dakota",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x01)",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Method",
+      "Computer",
+      "Criminal Investigation"
+    ],
+    "prerequisite": "COMPUTER 5+ or CRIMINAL INVESTIGATION 5+",
+    "question": "You may ask one AFFILIATION question or one METHOD question.",
+    "dialogue": "\"We don't know whose body that is. Nothing's come back on those prints. But there's another set of prints all over the apartment.\" - Constance Talbot",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0475x2",
+    "title": "Calhoun Memorial Hospital, Twin Peaks, WA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Pilot",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Motive",
+      "Criminal Investigation",
+      "Medical"
+    ],
+    "prerequisite": "CRIMINAL INVESTIGATION 5+ or MEDICAL 5+",
+    "question": "You may ask one AFFILIATION question or one MOTIVE question.",
+    "dialogue": "\"Ring finger, under the nail. Let's see what he left us. It's an 'R.'\" - Cooper",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0476x2",
+    "title": "Jack Rabbit's Palace, Twin Peaks, WA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x14)",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Affiliation",
+      "Result",
+      "Evidence Collection",
+      "Observation"
+    ],
+    "prerequisite": "EVIDENCE COLLECTION 5+ or OBSERVATION 5+",
+    "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "\"Two hundred and fifty-three yards due east. And we have to put some soil in our pockets.\" - Hawk",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0477x2",
+    "title": "FBI Headquarters, Philadelphia, PA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Multi",
+      "Method",
+      "Result",
+      "Bureaucracy",
+      "Occult Investigation"
+    ],
+    "prerequisite": "BUREAUCRACY 5+ or OCCULT INVESTIGATION 5+",
+    "question": "You may ask one METHOD question or one RESULT question.",
+    "dialogue": "\"Who do you think that is there?\" - Phillip Jeffries",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0478x2",
+    "title": "Palmer's House, Twin Peaks, WA",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x18)",
+    "type": "Site",
+    "cost": "1 RP",
+    "keywords": [
+      "Site",
+      "Mono",
+      "Liminal",
+      "Occult Investigation"
+    ],
+    "prerequisite": "OCCULT INVESTIGATION 5+",
+    "question": "You may ask one AFFILIATION question. If the answer is 'no', you may return this card to your hand instead of discarding it.",
+    "dialogue": "\"What year is this?\" - Cooper",
+    "tags": [
+      "Basic"
     ],
     "createdBy": "Alfredo Sanchez, Robert Czepiel"
   }
