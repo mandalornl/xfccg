@@ -1,20 +1,20 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
-const production = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   ssr: false,
   devtools: {
-    enabled: !production,
+    enabled: !isProduction,
   },
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL,
       login: {
-        email: !production && process.env.LOGIN_EMAIL || '',
-        password: !production && process.env.LOGIN_PASSWORD || '',
+        email: !isProduction && process.env.LOGIN_EMAIL || '',
+        password: !isProduction && process.env.LOGIN_PASSWORD || '',
       },
     },
   },
