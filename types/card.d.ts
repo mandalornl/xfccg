@@ -1,6 +1,7 @@
 import type { Sortable } from '~/types/sort';
+import type { Filterable } from '~/types/filter';
 
-export interface Card extends Sortable {
+export interface Card extends Sortable, Filterable {
   id: string;
   title: string;
   set: string;

@@ -282,7 +282,7 @@ const updateFilter = ({
         <filter-panels
           v-model="filters"
           :expanded="[ 'set', 'type' ]"
-          :pool="cards"
+          :items="cards"
         />
       </v-col>
       <v-col

@@ -8,8 +8,12 @@ export interface Filter {
   operation: FilterOperation;
 }
 
-export interface FilterValueItem {
+export interface FilterItem {
   value: string;
   disabled: boolean;
   count: number | string;
+}
+
+export interface Filterable {
+  [filterKey: string]: string | string[];
 }

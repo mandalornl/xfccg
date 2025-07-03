@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import type {
   Filter,
-  FilterValueItem,
+  FilterItem,
+  Filterable,
 } from '~/types/filter';
-import type { Card } from '~/types/card';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const props = defineProps<{
   filter: Filter,
-  pool: Card[],
+  items: Filterable[],
 }>();
 
 const model = defineModel<string[]>({
@@ -24,14 +24,14 @@ const getCount = (filterValue: string): number | string => {
     return '…';
   }
 
-  return props.pool.filter((card: Card) => {
-    const cardValue = card[props.filter.key];
+  return props.items.filter((item: Filterable) => {
+    const itemValue = item[props.filter.key];
 
-    if (Array.isArray(cardValue)) {
-      return cardValue.includes(filterValue);
+    if (Array.isArray(itemValue)) {
+      return itemValue.includes(filterValue);
     }
 
-    return cardValue === filterValue;
+    return itemValue === filterValue;
   }).length;
 };
 
@@ -46,7 +46,7 @@ const isDisabled = (filterValue: string, count: number | string): boolean => (
   )
 );
 
-const getItem = (value: string): FilterValueItem => {
+const getItem = (value: string): FilterItem => {
   const count = getCount(value);
 
   return {
@@ -56,13 +56,13 @@ const getItem = (value: string): FilterValueItem => {
   };
 };
 
-const primaryItems = computed<FilterValueItem[]>(() => (
+const primaryItems = computed<FilterItem[]>(() => (
   props.filter.items
     .slice(0, 5)
     .map(getItem)
 ));
 
-const secondaryItems = computed<FilterValueItem[]>(() => (
+const secondaryItems = computed<FilterItem[]>(() => (
   props.filter.items
     .slice(5)
     .map(getItem)

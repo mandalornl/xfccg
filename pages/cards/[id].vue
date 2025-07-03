@@ -15,20 +15,6 @@ const card = computed<Card | undefined>(() => {
   return pool.find((card) => card.id === route.params.id);
 });
 
-const isOpen = ref<boolean>(false);
-
-watchEffect(() => {
-  isOpen.value = !!card.value;
-});
-
-watch(isOpen, (value) => {
-  if (value) {
-    return;
-  }
-
-  return navigateTo('/cards');
-});
-
 const emit = defineEmits([
   'click:filter',
 ]);
@@ -43,22 +29,24 @@ const onClick = (key: string) => (value: string) => {
 
 <template>
   <v-dialog
-    v-model="isOpen"
+    :model-value="route.name === 'cards-id'"
     :fullscreen="smAndDown"
     scrollable
     width="768"
     scrim="black"
+    @update:model-value="(value) => !value && navigateTo('/cards')"
   >
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
           {{ card?.title }}
           <v-btn
+            exact
+            to="/cards"
             variant="text"
             icon="mdi-close"
             size="small"
             title="Close"
-            @click="isOpen = false"
           />
         </v-card-title>
         <v-card-subtitle>
@@ -72,7 +60,20 @@ const onClick = (key: string) => (value: string) => {
             sm="6"
             class="order-sm-1"
           >
-            <card-image :card="card" />
+            <card-image
+              :card="card"
+              class="mb-4"
+            />
+            <v-number-input
+              :model-value="0"
+              :min="0"
+              :max="2"
+              inset
+              hide-details
+              color="primary"
+              variant="outlined"
+              control-variant="split"
+            />
           </v-col>
           <v-col
             cols="12"
@@ -196,25 +197,12 @@ const onClick = (key: string) => (value: string) => {
         </v-row>
       </v-card-text>
       <v-card-actions>
-        <v-btn
-          icon="mdi-chevron-left"
-          variant="text"
-        />
-        <v-spacer />
-        <v-number-input
-          :model-value="0"
-          :min="0"
-          :max="2"
-          inset
-          hide-details
-          color="primary"
-          variant="outlined"
-          control-variant="split"
-        />
         <v-spacer />
         <v-btn
-          icon="mdi-chevron-right"
+          exact
+          to="/cards"
           variant="text"
+          text="Close"
         />
       </v-card-actions>
     </v-card>

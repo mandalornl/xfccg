@@ -1,13 +1,15 @@
 <script lang="ts" setup>
-import type { Filter } from '~/types/filter';
-import type { Card } from '~/types/card';
+import type {
+  Filter,
+  Filterable,
+} from '~/types/filter';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const route = useRoute();
 
 const props = withDefaults(defineProps<{
   expanded?: string[],
-  pool: Card[],
+  items: Filterable[],
 }>(), {
   expanded: () => ([]),
 });
@@ -18,7 +20,7 @@ const filters = defineModel<Filter[]>({
 
 const expandedFilters = ref<string[]>(props.expanded);
 
-const hasAnyFilters = computed(() => filters.value.some((filter) => filter.value.length > 0));
+const canClearFilters = computed(() => filters.value.some((filter) => filter.value.length > 0));
 
 const clearAllFilters = () => {
   for (const filter of filters.value) {
@@ -59,7 +61,7 @@ onMounted(() => {
 
 <template>
   <v-expand-transition>
-    <div v-if="hasAnyFilters">
+    <div v-if="canClearFilters">
       <v-btn
         variant="tonal"
         size="small"
@@ -86,7 +88,7 @@ onMounted(() => {
         <filter-value
           v-model="filter.value"
           :filter="filter"
-          :pool="pool"
+          :items="items"
         />
       </v-expansion-panel-text>
     </v-expansion-panel>
