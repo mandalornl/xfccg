@@ -222,7 +222,7 @@
       "Skeptic"
     ],
     "gameEffect": "During your Investigation Phase, add 1 [RP] to your pool if a Team including Detective Hudak is assigned to a Keyword MONO Site. The cost of any Witness card played at this Site is increased by 1 [RP].",
-    "bio": "Hudak is a hard-boiled Washington D.C. detective who investigated the murder of Penny Timmons. Unlike Agent Mulder, Hudak firmly believed that Harold Spuller was the prime suspect.",
+    "bio": "Detective Hudak is a hard-boiled Washington D.C. detective who investigated the murder of Penny Timmons. Unlike Agent Mulder, Hudak firmly believed that Harold Spuller was the prime suspect.",
     "tags": [
       "Basic"
     ],
@@ -746,8 +746,8 @@
     "cost": "6 CP",
     "skills": {
       "Long Range Combat": "N/A",
-      "Close Range Combat": 3,
-      "Health": 4
+      "Close Range Combat": 4,
+      "Health": 3
     },
     "keywords": [
       "Adversary",
