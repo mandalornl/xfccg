@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import type { Card } from '~/types/card';
 
+const runtimeConfig = useRuntimeConfig();
+
 const props = defineProps<{
   card?: Card,
   maxWidth?: number | string,
@@ -11,7 +13,7 @@ const src = computed(() => {
     return undefined;
   }
 
-  return `/cards/${props.card?.set}/${props.card?.id}.jpg`
+  return `${runtimeConfig.app.baseURL}cards/${props.card?.set}/${props.card?.id}.jpg`
     .replaceAll(' ', '-')
     .toLowerCase();
 });
