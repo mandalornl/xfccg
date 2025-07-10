@@ -18,7 +18,7 @@ jobs:
       - run: pnpm install
       - run: npx nuxt build --preset github_pages
         env:
-#          NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
+          NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL }}
           BASE_URL: ${{ vars.BASE_URL }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_KEY: ${{ vars.SUPABASE_KEY }}
