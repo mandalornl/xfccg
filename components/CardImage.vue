@@ -23,7 +23,12 @@ const src = computed(() => {
     :alt="card?.title"
     :aspect-ratio="5/7"
     :max-width="maxWidth"
-    rounded="xl"
     lazy-src="/cards/back.jpg"
   />
 </template>
+
+<style lang="scss" scoped>
+.v-img {
+  border-radius: 16px;
+}
+</style>
