@@ -13,6 +13,7 @@ const color = computed(() => ({
   'Site': 'blue-darken-4',
   'Witness': 'purple-darken-1',
   'X-File': 'yellow',
+  'Credits': 'orange-darken-2',
 }[props.text]));
 </script>
 
