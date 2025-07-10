@@ -119,12 +119,6 @@ const onClick = (key: string) => (value: string) => {
               class="mb-3"
             />
             <card-text
-              v-if="card?.gameText"
-              :text="card.gameText"
-              title="Game Text"
-              class="mb-3"
-            />
-            <card-text
               v-if="card?.gameEffect"
               :text="card.gameEffect"
               title="Game Effect"

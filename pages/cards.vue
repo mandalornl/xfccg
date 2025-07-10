@@ -160,7 +160,6 @@ const cards = computed<Card[]>(() => {
       const hit = [
         card.id,
         card.title,
-        card.gameText,
         card.gameEffect,
       ]
         .filter(Boolean)

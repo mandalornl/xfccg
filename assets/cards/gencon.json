@@ -292,7 +292,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change a Site prerequisite to Bureaucracy 3+.",
+    "gameEffect": "Play to change a Site prerequisite to Bureaucracy 3+.",
     "dialogue": "\"I don't work for you sir, and unless you hear differently from the Attorney General, this case is a local matter.\" - Detective Thompson",
     "createdBy": "NXT Games, USPCC"
   },
@@ -310,7 +310,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force the Team investigating a Site to discard one Equipment card of your choice.",
+    "gameEffect": "Force the Team investigating a Site to discard one Equipment card of your choice.",
     "dialogue": "\"My name is Trondheim, Henry Trondheim. The ship you want is the Za'Ahr. It's a fifty ton trawler with a double hull, it's my ship.\" - Henry Trondheim",
     "createdBy": "NXT Games, USPCC"
   },
@@ -329,7 +329,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to prevent one Agent assigned to a Site from contributing the Agent's skills to the one skill check (your choice) that the Team makes this turn.",
+    "gameEffect": "Play to prevent one Agent assigned to a Site from contributing the Agent's skills to the one skill check (your choice) that the Team makes this turn.",
     "dialogue": "Colonel Henderson: \"We're trying to contain an ecological disaster.\nMulder: \"That's a lot of firepower just to protect Mother Nature.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -348,7 +348,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Decrease all of the skill levels on one Agent (your choice) by one for this turn only.",
+    "gameEffect": "Decrease all of the skill levels on one Agent (your choice) by one for this turn only.",
     "dialogue": "Scully: \"Mulder, you know that proper surveillance requires two pairs of agents, one pair relieving the other after twelve hours.\"\nMulder: \"Article thirty, paragraph eight point seven.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -631,7 +631,7 @@
       "Alien",
       "Creature"
     ],
-    "gameText": "Negates one Alien Creature.",
+    "gameEffect": "Negates one Alien Creature.",
     "dialogue": "\"I think that whatever it was, he took it with him, and that was the only way he knew how to stop it.\" - Mulder describing Colonel Belts' heroic sacrifice.",
     "createdBy": "NXT Games, USPCC"
   },
@@ -653,7 +653,7 @@
       "Primordial",
       "Creature"
     ],
-    "gameText": "Negates one Primordial Creature.",
+    "gameEffect": "Negates one Primordial Creature.",
     "dialogue": "\"I say the Earth holds some truths best left buried.\" - Dr. Daniel Trepkos",
     "createdBy": "NXT Games, USPCC"
   },
@@ -673,7 +673,7 @@
       "Active",
       "Medical"
     ],
-    "gameText": "Adds +2 to one Team's Medical skill check.",
+    "gameEffect": "Adds +2 to one Team's Medical skill check.",
     "dialogue": "\"It's been 36 hours since your rescue. I've got you on dialysis with a high flux filter. You're obviously responding well. Your electrolytes are almost back to normal and your fluid status has been corrected.\" - Dr. Laskos",
     "createdBy": "NXT Games, USPCC"
   },
@@ -695,7 +695,7 @@
       "Occult",
       "Creature"
     ],
-    "gameText": "Negates one Occult Creature.",
+    "gameEffect": "Negates one Occult Creature.",
     "dialogue": "\"They are the Calusari. In Romania they are responsible for the correct observance of sacred rites.\" - Maggie Holvey",
     "createdBy": "NXT Games, USPCC"
   },
@@ -716,7 +716,7 @@
       "Conspiracy",
       "Event"
     ],
-    "gameText": "Negate any one Keyword Event card.",
+    "gameEffect": "Negate any one Keyword Event card.",
     "dialogue": "Mulder: \"They take you aboard the ship to perform the tests.\"\nDuane Barry: \"They drill holes in my teeth. They drill holes in my damn teeth!\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -738,7 +738,7 @@
       "Active",
       "Site"
     ],
-    "gameText": "Play after one of your Teams successfully investigates a Site with Alien Investigation or Bureaucracy skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one Alien or Government Adversary.",
+    "gameEffect": "Play after one of your Teams successfully investigates a Site with Alien Investigation or Bureaucracy skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one Alien or Government Adversary.",
     "dialogue": "\"There were tanks here, and five bodies suspended in solution. There were computers monitoring them. They were alive Scully, underwater!\" - Mulder",
     "createdBy": "NXT Games, USPCC"
   },
@@ -757,7 +757,7 @@
     "activators": [
       "Event"
     ],
-    "gameText": "Force an opponent Team to make a Computer 4+ skill check or they will be unable to complete the skill check.",
+    "gameEffect": "Force an opponent Team to make a Computer 4+ skill check or they will be unable to complete the skill check.",
     "dialogue": "\"Come on, come on, let me in damn it.\" - Brad Wilczek",
     "createdBy": "NXT Games, USPCC"
   },
@@ -779,7 +779,7 @@
       "Site",
       "Alien Investigation"
     ],
-    "gameText": "Play after one of your Teams successfully investigates a Site with Alien Investigation skill as a prerequisite. Place this card in your Bureau. Discard this card to add +1 to an Alien Investigation skill check.",
+    "gameEffect": "Play after one of your Teams successfully investigates a Site with Alien Investigation skill as a prerequisite. Place this card in your Bureau. Discard this card to add +1 to an Alien Investigation skill check.",
     "dialogue": "Scully: \"I don't understand, how can they just disappear? They have no means of transportation.\"\nMulder: \"No earthly means of transportation.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -798,7 +798,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Ask any one Characteristic question regarding one opponent's X‐File. Remove this card from the game. The effects of this card may not be negated.",
+    "gameEffect": "Ask any one Characteristic question regarding one opponent's X‐File. Remove this card from the game. The effects of this card may not be negated.",
     "dialogue": "\"Mr. Mulder, they've been here for a very, very long time.\" - Deep Throat",
     "createdBy": "NXT Games, USPCC"
   },
@@ -819,7 +819,7 @@
       "Alien",
       "Adversary"
     ],
-    "gameText": "Negates an Alien Adversary.",
+    "gameEffect": "Negates an Alien Adversary.",
     "dialogue": "Iraqi Air Command (translated): \"You're under attack!\"\nIraqi Pilot (translated): \"I'm locked in. It's a hit! I got him!\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -839,7 +839,7 @@
       "Active",
       "Event"
     ],
-    "gameText": "This card will negate one Event card played on your Team.",
+    "gameEffect": "This card will negate one Event card played on your Team.",
     "dialogue": "Mulder's phone rings. \"If that's the lovely Agent Scully, let her know I've been working out. I'm buff!\" - Frohike",
     "createdBy": "NXT Games, USPCC"
   },
@@ -858,7 +858,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Select one card from your Discard Pile and place it in your hand.",
+    "gameEffect": "Select one card from your Discard Pile and place it in your hand.",
     "dialogue": "\"That gives us an area of just over 3 square miles to cover, roughly a thousand households.\" - Mulder searching for Scully.",
     "createdBy": "NXT Games, USPCC"
   },
@@ -877,7 +877,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a Criminal Investigation 5+ skill check or they will be unable to add their skills to a Site skill check this turn.",
+    "gameEffect": "Force an opponent Team to make a Criminal Investigation 5+ skill check or they will be unable to add their skills to a Site skill check this turn.",
     "dialogue": "\"It came up through channels. From Mulder's ASAC to the district G-14 and onto my desk.\" - Section Chief Scott Blevins",
     "createdBy": "NXT Games, USPCC"
   },
@@ -896,7 +896,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Search through your Bureau Deck and place any one Witness card in your hand. Show the Witness to your opponents. Shuffle the Bureau Deck.",
+    "gameEffect": "Search through your Bureau Deck and place any one Witness card in your hand. Show the Witness to your opponents. Shuffle the Bureau Deck.",
     "dialogue": "\"You want to see what it takes to find the truth Agent Mulder? You want to know the things I know?\" - X",
     "createdBy": "NXT Games, USPCC"
   },
@@ -914,7 +914,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Change any Keyword to any other Keyword on a card played by your opponent. This effect lasts until the end of the turn.",
+    "gameEffect": "Change any Keyword to any other Keyword on a card played by your opponent. This effect lasts until the end of the turn.",
     "dialogue": "\"Nothing vanishes without a trace, burn it!\" - Cigarette Smoking Man",
     "createdBy": "NXT Games, USPCC"
   },
@@ -934,7 +934,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "You may move one of your Agents to any Section immediately. This card may not be played once an Adversary has forced combat until after the combat is resolved. The Agent may join any Team that occupies the new Section.",
+    "gameEffect": "You may move one of your Agents to any Section immediately. This card may not be played once an Adversary has forced combat until after the combat is resolved. The Agent may join any Team that occupies the new Section.",
     "dialogue": "\"We've got a charter flight waiting to take us to Seattle. From there a helicopter will fly us to Mount Avalon.\" - Dr. Adma Pierce",
     "createdBy": "NXT Games, USPCC"
   },
@@ -954,7 +954,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play when an Agent is forced to go to the Hospital. He must still go to the Hospital by the end of this turn but he may add his skills to one skill check before going.",
+    "gameEffect": "Play when an Agent is forced to go to the Hospital. He must still go to the Hospital by the end of this turn but he may add his skills to one skill check before going.",
     "dialogue": "Crew Cut Man: \"Your cellular phone has been ringing of the hook.\" Mulder: \"I'm a popular guy, why don't you answer it for me.\" Crew Cut Man: \"I don't like talking on the phone. I have this thing about unsecured lines.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -974,7 +974,7 @@
       "Active",
       "Adversary"
     ],
-    "gameText": "Negate any one Keyword Adversary card.",
+    "gameEffect": "Negate any one Keyword Adversary card.",
     "dialogue": "\"You still don't get it do you? The truth is still out there, but it's never been more dangerous. The man we both knew paid for that information with his life; a sacrifice I'm not willing to make.\" - X",
     "createdBy": "NXT Games, USPCC"
   },
@@ -994,7 +994,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds +1 to the Agent's Alien Investigation skill.",
+    "gameEffect": "Adds +1 to the Agent's Alien Investigation skill.",
     "dialogue": "\"The radiation level is five times the norm.\" - Mulder on the radiation levels at a U.F.O. site.",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1014,7 +1014,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds +1 to the Agent's Occult Investigation skill.",
+    "gameEffect": "Adds +1 to the Agent's Occult Investigation skill.",
     "dialogue": "\"So your saying a ghost killed Teddy Holvey. Has anyone checked the camera that took this photo? The lens and the pressure plate?\" - Scully",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1033,7 +1033,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "The Agent may add his skills to a skill check that is occuring in another Section of the table. The Agent's skill is reduced by 1 (i.e., Skill: 3 becomes Skill: 2). LRC and CRC may not be added.",
+    "gameEffect": "The Agent may add his skills to a skill check that is occuring in another Section of the table. The Agent's skill is reduced by 1 (i.e., Skill: 3 becomes Skill: 2). LRC and CRC may not be added.",
     "dialogue": "\"The single connecting trace evidence in the killing is the destruction of an electrical device at the crime scene. A pager, a fax, a cellular phone, a gas pump digital display.\" - Mulder, on the murders in Franklin PA.",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1053,7 +1053,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds +1 to the Agent's Subterfuge skill.",
+    "gameEffect": "Adds +1 to the Agent's Subterfuge skill.",
     "dialogue": "\"I had enough on that surveillance to arrest those suspects after 3 days, I could have nailed them on 40 counts of bank fraud. But you left me there. I'm surprised you even noticed I was gone.\" - Mulder",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1079,7 +1079,7 @@
       "Conspiracy",
       "Alien Investigation"
     ],
-    "gameText": "Pick one Agent in the Team. That Agent is placed 10 cards down, face up, in the owning player's Bureau deck. Any equipment the Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate combat.",
+    "gameEffect": "Pick one Agent in the Team. That Agent is placed 10 cards down, face up, in the owning player's Bureau deck. Any equipment the Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate combat.",
     "dialogue": "\"The government knows about it you know. They're even in on it sometimes. Right there in the room when they come. They work together with a secret corporation.\" - Duane Barry",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1106,7 +1106,7 @@
       "Result",
       "Site"
     ],
-    "gameText": "Unless a Healing card is played immediately and the card results in 1 point being healed, move the Agent to the Hospital. The Agent must stay in hospital for the next turn.",
+    "gameEffect": "Unless a Healing card is played immediately and the card results in 1 point being healed, move the Agent to the Hospital. The Agent must stay in hospital for the next turn.",
     "dialogue": "Scully: \"Mulder, get them off me!\"\nMulder: \"They're not just on you, they're everywhere.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1133,7 +1133,7 @@
       "Motive",
       "Site"
     ],
-    "gameText": "Any Agent damaged by the Deadly Blur is placed in the hospital for the next two turns regardless of how much Health they have. Each opponent's LRC and CRC is reduced one point. The Deadly Blur may use Subterfuge Combat cards.",
+    "gameEffect": "Any Agent damaged by the Deadly Blur is placed in the hospital for the next two turns regardless of how much Health they have. Each opponent's LRC and CRC is reduced one point. The Deadly Blur may use Subterfuge Combat cards.",
     "dialogue": "Mulder: \"No human pilot walked away from the wreckage I saw.\"\nScully: \"Well, maybe he ejected.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1160,7 +1160,7 @@
       "Conspiracy",
       "Occult Investigation"
     ],
-    "gameText": "The Poltergeist is unaffected by Combat attacks. It will attack for only one Long Range and one Close Range Combat round and then leave.",
+    "gameEffect": "The Poltergeist is unaffected by Combat attacks. It will attack for only one Long Range and one Close Range Combat round and then leave.",
     "dialogue": "\"Lauren, how will you be able to rest if he never can?\" - Scully questioning Lauren Kyte concerning the poltergeist Howard Graves",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1188,7 +1188,7 @@
       "Motive",
       "Site"
     ],
-    "gameText": "Long Range Combat attacks cause only half damage (round up) to the Zombie.",
+    "gameEffect": "Long Range Combat attacks cause only half damage (round up) to the Zombie.",
     "dialogue": "Scully: \"He's non-verbal, non-responsive to voice, touch or pain. The neurologist suspects he's suffered a severe concussion in the crash resulting in amnesia.\" Mulder: \"That's a plausible diagnosis only I'm more interested in how he came back to life.\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1216,7 +1216,7 @@
       "Affiliation",
       "Site"
     ],
-    "gameText": "Pick one Agent in the Team. That Agent is placed 10 cards down, face up, in the owning player's Bureau Deck. Any equipment the Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate Combat.",
+    "gameEffect": "Pick one Agent in the Team. That Agent is placed 10 cards down, face up, in the owning player's Bureau Deck. Any equipment the Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate Combat.",
     "dialogue": "Mulder: \"Scully, snake skin!\"\nScully: \"There's a python in Paddock's room!\"",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1243,7 +1243,7 @@
       "Result",
       "Site"
     ],
-    "gameText": "Regardless of how much damage is done to this creature in the Long Range Combat round, it will attack in the Close Range Combat round. If its Health has been exceeded it is removed at the end of the Close Combat round.",
+    "gameEffect": "Regardless of how much damage is done to this creature in the Long Range Combat round, it will attack in the Close Range Combat round. If its Health has been exceeded it is removed at the end of the Close Combat round.",
     "dialogue": "\"Nngh, gaah! - Lucas Henry.",
     "createdBy": "NXT Games, USPCC"
   },
@@ -1271,7 +1271,7 @@
       "Affiliation",
       "Site"
     ],
-    "gameText": "The Mechanic may use Martial Arts and Subterfuge Combat cards.",
+    "gameEffect": "The Mechanic may use Martial Arts and Subterfuge Combat cards.",
     "dialogue": "Mulder: \"There were three men last night, I was chased!\" Deep Throat: \"If you were chased you would have been killed. Those men are trained for that sort of business, and they are trained very well.\"",
     "createdBy": "NXT Games, USPCC"
   }

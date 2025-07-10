@@ -47,7 +47,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Adds 2 to the Agent's EVIDENCE COLLECTION skill. OCCULT Adversaries must assign damage to this Agent. This card is free if the attached Agent has the Keyword CUTE.",
+    "gameEffect": "Adds 2 to the Agent's EVIDENCE COLLECTION skill. OCCULT Adversaries must assign damage to this Agent. This card is free if the attached Agent has the Keyword CUTE.",
     "dialogue": "Delaney: \"Will you help us find Knuffle Bunny?\"\nMulder: \"Knuffle Bunny?\"\nKatina Arvidson: \"Her stuffed animal. It went missing two days ago.\"",
     "tags": [
       "Advanced"
@@ -70,7 +70,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card to gently push two cards off the top of your opponent's Bureau deck. The two cards are discarded.",
+    "gameEffect": "Play this card to gently push two cards off the top of your opponent's Bureau deck. The two cards are discarded.",
     "dialogue": "Mulder: \"What do you think, Scully? Should we ask him what he knows about the missing Knuffle Bunny?\"\nScully: \"I think we've dealt with enough cats, Mulder.\"",
     "tags": [
       "Advanced"
@@ -125,7 +125,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Field. If the Team makes an OBSERVATION 4+ skill check then you may search through your Bureau Deck and add any keyword CREATURE Adversary to your hand. Show the card to your opponent and shuffle your deck.",
+    "gameEffect": "Play on a Team in the Field. If the Team makes an OBSERVATION 4+ skill check then you may search through your Bureau Deck and add any keyword CREATURE Adversary to your hand. Show the card to your opponent and shuffle your deck.",
     "dialogue": "Mulder: \"What is it, Delaney? What do you see?\"\nDelaney: \"The monster. It lives here.\"\nMulder: \"We have to go. We have to leave right now!\"",
     "tags": [
       "Advanced"
@@ -148,7 +148,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's OCCULT INVESTIGATION skill check. The Witness's modifier is doubled if played on a Team that includes Delaney Arvidson.",
+    "gameEffect": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's OCCULT INVESTIGATION skill check. The Witness's modifier is doubled if played on a Team that includes Delaney Arvidson.",
     "dialogue": "Katina: \"We couldn't bring ourselves to tell you. I mean, how do you tell someone your child can do things with her mind? How could anyone ever understand?\"\nScully: \"Believe me, Mrs. Arvidson, we do understand.\"",
     "tags": [
       "Advanced"
@@ -178,7 +178,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "The cost to play this card is 3 [CP] if the Site Prerequisite is OCCULT INVESTIGATION. LRC and CRC attacks cause only half damage (rounded up) to this Adversary.",
+    "gameEffect": "The cost to play this card is 3 [CP] if the Site Prerequisite is OCCULT INVESTIGATION. LRC and CRC attacks cause only half damage (rounded up) to this Adversary.",
     "dialogue": "Mulder: \"Like other effigies, the scarecrow is an unintelligent creation, classically used by farmers to protect their crops.\"\nStephen Arvidson: \"Right. Except this thing wasn't just warding off birds. It killed our neighbors.\"",
     "tags": [
       "Advanced"
@@ -199,7 +199,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any Agent with OCCULT INVESTIGATION skill of 1+ to make one LONG RANGE COMBAT attack at LRC skill: 7. The opposing side's LRC attack is negated if the damaged combatant's Health is reduced to 0.",
+    "gameEffect": "Play this card on any Agent with OCCULT INVESTIGATION skill of 1+ to make one LONG RANGE COMBAT attack at LRC skill: 7. The opposing side's LRC attack is negated if the damaged combatant's Health is reduced to 0.",
     "dialogue": "\"I know this won't come as a shock to you, Mr. and Mrs. Arvidson, but your daughter has a unique psychokinetic ability. One that would give Carrie a run for her money.\" - Mulder",
     "tags": [
       "Basic"
@@ -222,7 +222,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a SUBTERFUGE 4+ skill check. If unsuccessful, the Site Prerequisite is increased by 1 for each Agent on the Team that does not have a SUBTERFUGE skill value.",
+    "gameEffect": "Force an opponent Team to make a SUBTERFUGE 4+ skill check. If unsuccessful, the Site Prerequisite is increased by 1 for each Agent on the Team that does not have a SUBTERFUGE skill value.",
     "dialogue": "Mulder: \"Where's the guy who looks like Alex Trebek?\"\nMIB Ray: \"Why does everyone keep saying that? Dude looked nothing like him!\"\nMulder: \"Looked? As in past tense? What happened? Did he retire?\"\nMIB Rei: \"Nah man. Pancreatic cancer, if you can believe that?\"",
     "tags": [
       "Basic"
@@ -245,7 +245,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Adds 2 to the Agent's COMPUTER and SUBTERFUGE skills.",
+    "gameEffect": "Adds 2 to the Agent's COMPUTER and SUBTERFUGE skills.",
     "dialogue": "Mulder: \"I'll bite, boys. What's with the toy guns?\"\nMIB Rei: \"To help us blend in.\"\nMIB Ray: \"There's a cosplay convention in town. Pretty smart, huh?\"\nMIB Rei: \"It was my idea.\"",
     "tags": [
       "Basic"
@@ -268,7 +268,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's EVIDENCE COLLECTION skill check.",
+    "gameEffect": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's EVIDENCE COLLECTION skill check.",
     "dialogue": "Mulder: \"Who found the body?\"\nScully: \"Peter Shultz. He works in Tech Support for the college. As it happens, he's the uncle of Delaney Arvidson, the child we met last month in Texas. It's probably just a coincidence.\"\nMulder: \"You know how I feel about coincidences.\"",
     "tags": [
       "Basic"
@@ -291,7 +291,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Place three tokens on this card. Discard a token to add 2 to one Team's OBSERVATION skill check. You may discard a token once per turn. Discard this resource when all tokens have been discarded.",
+    "gameEffect": "Place three tokens on this card. Discard a token to add 2 to one Team's OBSERVATION skill check. You may discard a token once per turn. Discard this resource when all tokens have been discarded.",
     "dialogue": "\"Whenever I see him, my vision goes blurry and this…sickness overtakes me. He's always there, no matter where I go.\" - Lauren, on encountering Slender Man",
     "tags": [
       "Basic"
@@ -345,7 +345,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "Play this card on a Team in the Field that plays a Witness. The Witness is discarded and the Team is attacked! Agents must immediately discard all attached \"Camera\" Equipment cards. Slender Man is unaffected by MARTIAL ARTS cards. Damage caused by this Adversary may be split among all opponents (Directed Player's choice).",
+    "gameEffect": "Play this card on a Team in the Field that plays a Witness. The Witness is discarded and the Team is attacked! Agents must immediately discard all attached \"Camera\" Equipment cards. Slender Man is unaffected by MARTIAL ARTS cards. Damage caused by this Adversary may be split among all opponents (Directed Player's choice).",
     "dialogue": "I saw a pale figure, tall, in a black suit… He had no face, no eyes\" - Lauren Evans Osborne",
     "tags": [
       "Basic"
@@ -368,7 +368,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make an OBSERVATION 4+ skill check. If they fail, apply a -3 modifier to the Site skill check and your opponent must discard all Witness cards from their hand.",
+    "gameEffect": "Force an opponent Team to make an OBSERVATION 4+ skill check. If they fail, apply a -3 modifier to the Site skill check and your opponent must discard all Witness cards from their hand.",
     "dialogue": "Mulder: \"What is it, Scully?\"\nScully: \"I thought I saw someone, watching from over there. Did you see him?\"\nMulder: \"No, but then again my eyesight's not what it used to be.\"",
     "tags": [
       "Basic"
@@ -398,7 +398,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "This Adversary regenerates (Heals) two points of HEALTH at the beginning of each combat round as long as his HEALTH is not at 0. Michael Myers may use SUBTERFUGE cards. If killed in combat, return Myers to your Bureau deck and shuffle.",
+    "gameEffect": "This Adversary regenerates (Heals) two points of HEALTH at the beginning of each combat round as long as his HEALTH is not at 0. Michael Myers may use SUBTERFUGE cards. If killed in combat, return Myers to your Bureau deck and shuffle.",
     "dialogue": "Scully: \"You're the Oxford psychologist. What are we up against?\"\nMulder: \"I'm not convinced what we're dealing with is entirely human.\"",
     "tags": [
       "Basic"
@@ -445,7 +445,7 @@
       "Active",
       "Adversary"
     ],
-    "gameText": "Play this card when an Adversary is about to enter Combat with a single Agent. Search through your Bureau Deck and add any one Combat card to your hand. Reshuffle your Bureau Deck.",
+    "gameEffect": "Play this card when an Adversary is about to enter Combat with a single Agent. Search through your Bureau Deck and add any one Combat card to your hand. Reshuffle your Bureau Deck.",
     "dialogue": "\"Federal Agent! Drop your weapon!\" - Mulder",
     "tags": [
       "Basic"
@@ -499,7 +499,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 2 to one Team's OBSERVATION or OCCULT INVESTIGATION skill check. This card is free if played on a Team that includes Yumi Sagiuchi Shultz.",
+    "gameEffect": "Adds 2 to one Team's OBSERVATION or OCCULT INVESTIGATION skill check. This card is free if played on a Team that includes Yumi Sagiuchi Shultz.",
     "dialogue": "Martin Shultz: \"Are you the FBI Agents my sister contacted?\"\nScully: \"That's right. I admit we were reluctant to travel all this way, but she insisted that your situation here warranted our attention.\"",
     "tags": [
       "Basic"
@@ -570,7 +570,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Attach this card to an Agent in the Field. Discard this card to search through your Bureau Deck and add any one Keyword MOVE card to your hand. Show the card to your opponent and shuffle your Bureau Deck. If the card is immediately playable, you may do so for zero [RP] cost.",
+    "gameEffect": "Attach this card to an Agent in the Field. Discard this card to search through your Bureau Deck and add any one Keyword MOVE card to your hand. Show the card to your opponent and shuffle your Bureau Deck. If the card is immediately playable, you may do so for zero [RP] cost.",
     "dialogue": "\"It's safer than riding a tram.\" - Mulder",
     "tags": [
       "Basic"
@@ -594,7 +594,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card to reduce the [CP] Cost of all Keyword SUBTERFUGE cards played at this Site by 1. While this card is in play, any OCCULT or EVOLUTIONARY Adversaries played at this Site may use SUBTERFUGE Combat cards.",
+    "gameEffect": "Play this card to reduce the [CP] Cost of all Keyword SUBTERFUGE cards played at this Site by 1. While this card is in play, any OCCULT or EVOLUTIONARY Adversaries played at this Site may use SUBTERFUGE Combat cards.",
     "dialogue": "Scully: \"The stench is unbearable.\"\nMulder: \"I think we've wandered into troll territory, Scully.\"",
     "tags": [
       "Basic"
@@ -671,7 +671,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card to apply a -2 modifier to the Site skill check. In addition, one Agent on the Team (your choice) may not contribute their Combat skills this turn.",
+    "gameEffect": "Play this card to apply a -2 modifier to the Site skill check. In addition, one Agent on the Team (your choice) may not contribute their Combat skills this turn.",
     "dialogue": "Mulder: \"Scully? Are you seeing this?\"\nScully: \"Listen to me very carefully, Guillaume. We're gonna get you outta there.\"",
     "tags": [
       "Basic"
@@ -694,7 +694,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Adds 1 to the Agent's CLOSE RANGE COMBAT skill. Place a token on this card. Remove a token to search through your Bureau Deck and add any one Keyword HEALING card to your hand. Shuffle your deck.",
+    "gameEffect": "Adds 1 to the Agent's CLOSE RANGE COMBAT skill. Place a token on this card. Remove a token to search through your Bureau Deck and add any one Keyword HEALING card to your hand. Shuffle your deck.",
     "dialogue": "\"Pretty fierce feline you got there. We've seen our share of 'em in the States.\" - Mulder",
     "tags": [
       "Basic"
@@ -820,7 +820,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Adds 3 to an Agent's LONG RANGE COMBAT and CLOSE RANGE COMBAT skills when played against an OCCULT Adversary for the duration of this combat.",
+    "gameEffect": "Adds 3 to an Agent's LONG RANGE COMBAT and CLOSE RANGE COMBAT skills when played against an OCCULT Adversary for the duration of this combat.",
     "dialogue": "\"Silver is softer than lead, so it's not as effective in normal circumstances. But when silver enters the body of one of these abominations... it's payback time.\" - David Pease",
     "tags": [
       "Basic"
@@ -843,7 +843,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 3 to the Agent's CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Adds 3 to the Agent's CLOSE RANGE COMBAT skill.",
     "dialogue": "\"5.7x28mm bullets can penetrate up to level 2 body armor and pierce bulletproof glass. Yeah... this'll do.\" - David Pease",
     "tags": [
       "Basic"
@@ -873,7 +873,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
     "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
     "tags": [
       "Basic"
@@ -903,7 +903,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
     "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
     "tags": [
       "Basic"
@@ -933,7 +933,7 @@
       "Conspiracy",
       "Affiliation Site"
     ],
-    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
     "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
     "tags": [
       "Basic"
@@ -963,7 +963,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "This card may be played at a Site where another Coastal Northwest Werewolf has been played, ignoring Activator requirements. The LONG RANGE COMBAT round is skipped.",
     "dialogue": "\"Be careful, these things travel in packs. If you see one, it's likely there are more stalking us, ready to pounce.\" - David Pease",
     "tags": [
       "Basic"
@@ -993,7 +993,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "LONG RANGE COMBAT will cause no damage to the Vampire. This Adversary gains +1 CLOSE RANGE COMBAT for each subsequent round of CRC that her HEALTH is no at zero.",
+    "gameEffect": "LONG RANGE COMBAT will cause no damage to the Vampire. This Adversary gains +1 CLOSE RANGE COMBAT for each subsequent round of CRC that her HEALTH is no at zero.",
     "dialogue": "Scully: \"There was blood throughout her digestive system, but the blood was from an animal, not a human.\"\nDavid Pease: \"These monsters' only motivation is to drink human blood to survive. If it's been starving itself of human blood, that would explain why it went into a frenzy when I was wounded.\"",
     "tags": [
       "Basic"
@@ -1016,7 +1016,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card to reduce the Site Prerequisite of any one COMPUTER or OCCULT INVESTIGATION Site by 1. This card is free is played at \"Forks High School\".",
+    "gameEffect": "Play this card to reduce the Site Prerequisite of any one COMPUTER or OCCULT INVESTIGATION Site by 1. This card is free is played at \"Forks High School\".",
     "dialogue": "\"Forks has always been connected to a darker side of the world.\" - Maggi Forrester",
     "tags": [
       "Basic"
@@ -1039,7 +1039,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Attach this card to an OCCULT INVESTIGATION Site during your Case Assignment Phase together with two tokens. The Site stays in the Field as long as this card is attached. Remove a token every time you send a Team of Agents to investigate the Site. Discard this card when the last token is removed.",
+    "gameEffect": "Attach this card to an OCCULT INVESTIGATION Site during your Case Assignment Phase together with two tokens. The Site stays in the Field as long as this card is attached. Remove a token every time you send a Team of Agents to investigate the Site. Discard this card when the last token is removed.",
     "dialogue": "\"The timber museum has been in my family since it was built.\" - Johnathon Woods",
     "tags": [
       "Basic"

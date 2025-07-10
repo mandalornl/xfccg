@@ -21,7 +21,7 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameText": "Play to immediately detain one opposing Agent (your choice) by placing the Agent underneath this card. The Agent may not contribute to any skill checks while detained. When Combat ends, the Agent is moved to the Bureau (undamaged) and may not generate RES on the next turn.",
+    "gameEffect": "Play to immediately detain one opposing Agent (your choice) by placing the Agent underneath this card. The Agent may not contribute to any skill checks while detained. When Combat ends, the Agent is moved to the Bureau (undamaged) and may not generate RES on the next turn.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   },
@@ -68,7 +68,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Force the investigating Team back to the Bureau immediately. The Team may not contribute to any skill checks this turn. If one of the Agents has an \"Uniden Bearcat UBC-125XLT\", this card has no effect.",
+    "gameEffect": "Force the investigating Team back to the Bureau immediately. The Team may not contribute to any skill checks this turn. If one of the Agents has an \"Uniden Bearcat UBC-125XLT\", this card has no effect.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   },
@@ -88,7 +88,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play during CLOSE RANGE COMBAT on any Adversary with the Keyword GOVERNMENT or that is capable of using SUBTERFUGE cards. The Adversary may capture any one Agent from the opposing Team. Any damage done to the Adversary during this CRC round is applied to the captured Agent instead. Any excess damage is applied to the Adversary as normal.",
+    "gameEffect": "Play during CLOSE RANGE COMBAT on any Adversary with the Keyword GOVERNMENT or that is capable of using SUBTERFUGE cards. The Adversary may capture any one Agent from the opposing Team. Any damage done to the Adversary during this CRC round is applied to the captured Agent instead. Any excess damage is applied to the Adversary as normal.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   },
@@ -108,7 +108,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Place two tokens on this card. Remove a token to add 1 to one Team's OBSERVATION skill check once per turn. During your Requisition Phase you may replenish all tokens for 2 [RP] after the last token has been removed.",
+    "gameEffect": "Place two tokens on this card. Remove a token to add 1 to one Team's OBSERVATION skill check once per turn. During your Requisition Phase you may replenish all tokens for 2 [RP] after the last token has been removed.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   },
@@ -127,7 +127,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to force your opponent to discard one card played this turn (your choice), except Sites and Agents. Alternately, you may select one card from your opponent's Discard Pile and play it immediately at no cost. Place it in its owner's Discard Pile after it has been used. In both instances, X = the [RP] cost of the selected card.",
+    "gameEffect": "Play to force your opponent to discard one card played this turn (your choice), except Sites and Agents. Alternately, you may select one card from your opponent's Discard Pile and play it immediately at no cost. Place it in its owner's Discard Pile after it has been used. In both instances, X = the [RP] cost of the selected card.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   },
@@ -168,7 +168,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Once during your Briefing Phase look at the top card of your Bureau Deck. You may put that card on the bottom of your Bureau Deck.",
+    "gameEffect": "Once during your Briefing Phase look at the top card of your Bureau Deck. You may put that card on the bottom of your Bureau Deck.",
     "dialogue": "…",
     "createdBy": "Joost Berns"
   }

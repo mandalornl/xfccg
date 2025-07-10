@@ -14,7 +14,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any OCCULT Adversary to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by 1 this round.",
+    "gameEffect": "Play on any OCCULT Adversary to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by 1 this round.",
     "tags": [
       "Advanced"
     ],
@@ -35,7 +35,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Agent in the Field to immediately Heal one point of damage.",
+    "gameEffect": "Play on any Agent in the Field to immediately Heal one point of damage.",
     "tags": [
       "Advanced"
     ],
@@ -55,7 +55,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card during a LONG RANGE COMBAT round on a combatant you control with an LRC skill. That combatant and one other combatant of the owning player's choice will deal no damage in this LRC round.",
+    "gameEffect": "Play this card during a LONG RANGE COMBAT round on a combatant you control with an LRC skill. That combatant and one other combatant of the owning player's choice will deal no damage in this LRC round.",
     "tags": [
       "Advanced"
     ],
@@ -77,7 +77,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any PRIMORDIAL or OCCULT Adversary to add 1 to their CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Play on any PRIMORDIAL or OCCULT Adversary to add 1 to their CLOSE RANGE COMBAT skill.",
     "tags": [
       "Advanced"
     ],
@@ -97,7 +97,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant with a CLOSE RANGE COMBAT skill of three or more to allow that combatant to attack twice in a CRC round.",
+    "gameEffect": "Play this card on any combatant with a CLOSE RANGE COMBAT skill of three or more to allow that combatant to attack twice in a CRC round.",
     "tags": [
       "Advanced"
     ],
@@ -118,7 +118,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any EVOLUTIONARY Adversary to allow it to deal all of its damage in the round before its opponents. Any opponents sent to the Hospital as a result of this damage do not cause damage this round.",
+    "gameEffect": "Play on any EVOLUTIONARY Adversary to allow it to deal all of its damage in the round before its opponents. Any opponents sent to the Hospital as a result of this damage do not cause damage this round.",
     "tags": [
       "Advanced"
     ],
@@ -139,7 +139,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant with a SUBTERFUGE skill of 1+ or that is capable of using SUBTERFUGE cards. The opposing side's LONG RANGE COMBAT attack is negated this round.",
+    "gameEffect": "Play this card on any combatant with a SUBTERFUGE skill of 1+ or that is capable of using SUBTERFUGE cards. The opposing side's LONG RANGE COMBAT attack is negated this round.",
     "tags": [
       "Advanced"
     ],
@@ -160,7 +160,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Combatant that can use MARTIAL ARTS or any combatant opposing a stunned opponent. Add 2 to the combatant's CLOSE RANGE COMBAT damage result this round.",
+    "gameEffect": "Play on any Combatant that can use MARTIAL ARTS or any combatant opposing a stunned opponent. Add 2 to the combatant's CLOSE RANGE COMBAT damage result this round.",
     "tags": [
       "Advanced"
     ],
@@ -180,7 +180,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Negates the effects of any one Equipment card that adds to LONG RANGE COMBAT Skill for the duration of this combat.",
+    "gameEffect": "Negates the effects of any one Equipment card that adds to LONG RANGE COMBAT Skill for the duration of this combat.",
     "tags": [
       "Advanced",
       "Negate"
@@ -202,7 +202,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this on one combatant with a SUBTERFUGE skill of 1+ or that is capable of using SUBTERFUGE cards. No damage may be dealt to that combatant in this round and the combatant deals no damage.",
+    "gameEffect": "Play this on one combatant with a SUBTERFUGE skill of 1+ or that is capable of using SUBTERFUGE cards. No damage may be dealt to that combatant in this round and the combatant deals no damage.",
     "tags": [
       "Advanced"
     ],
@@ -222,7 +222,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant in a LONG RANGE COMBAT round to reduce the damage from any one source by four points. The combatant using this card does not deal damage in this LRC round.",
+    "gameEffect": "Play this card on any combatant in a LONG RANGE COMBAT round to reduce the damage from any one source by four points. The combatant using this card does not deal damage in this LRC round.",
     "tags": [
       "Advanced"
     ],
@@ -243,7 +243,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any combatant that can use MARTIAL ARTS to add 2 to their CLOSE RANGE COMBAT skill in this round. In addition, the opponent is considered \"stunned\" for the next round of combat. The opponent will deal no damage in the next round of combat.",
+    "gameEffect": "Play on any combatant that can use MARTIAL ARTS to add 2 to their CLOSE RANGE COMBAT skill in this round. In addition, the opponent is considered \"stunned\" for the next round of combat. The opponent will deal no damage in the next round of combat.",
     "tags": [
       "Advanced"
     ],
@@ -264,7 +264,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any PRIMORDIAL Adversary to add 1 to their CLOSE RANGE COMBAT skill and prevent all damage from one opponent this round.",
+    "gameEffect": "Play on any PRIMORDIAL Adversary to add 1 to their CLOSE RANGE COMBAT skill and prevent all damage from one opponent this round.",
     "tags": [
       "Advanced"
     ],
@@ -286,7 +286,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any PRIMORDIAL or OCCULT Adversary to add 2 to their CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Play on any PRIMORDIAL or OCCULT Adversary to add 2 to their CLOSE RANGE COMBAT skill.",
     "tags": [
       "Advanced"
     ],
@@ -307,7 +307,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Combatants that can use MARTIAL ARTS may play this card to add 3 to their CLOSE RANGE COMBAT skill this round.",
+    "gameEffect": "Combatants that can use MARTIAL ARTS may play this card to add 3 to their CLOSE RANGE COMBAT skill this round.",
     "tags": [
       "Advanced"
     ],
@@ -329,7 +329,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any OCCULT or EVOLUTIONARY Adversary to cause one Agent to allocate all damage to a target of the Adversary's choice this round (including other Agents).",
+    "gameEffect": "Play on any OCCULT or EVOLUTIONARY Adversary to cause one Agent to allocate all damage to a target of the Adversary's choice this round (including other Agents).",
     "tags": [
       "Advanced"
     ],
@@ -350,7 +350,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any ALIEN combatant to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by 1 this round.",
+    "gameEffect": "Play on any ALIEN combatant to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by 1 this round.",
     "tags": [
       "Advanced"
     ],
@@ -371,7 +371,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Combatants that can use MARTIAL ARTS may use this card to negate two points of damage and still deal their normal damage in a CLOSE RANGE COMBAT round.",
+    "gameEffect": "Combatants that can use MARTIAL ARTS may use this card to negate two points of damage and still deal their normal damage in a CLOSE RANGE COMBAT round.",
     "tags": [
       "Advanced",
       "Negate"
@@ -392,7 +392,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant in a CLOSE RANGE COMBAT round to reduce the damage from any one source by four points. The combatant using this card does not deal damage in this CRC round.",
+    "gameEffect": "Play this card on any combatant in a CLOSE RANGE COMBAT round to reduce the damage from any one source by four points. The combatant using this card does not deal damage in this CRC round.",
     "tags": [
       "Advanced"
     ],
@@ -413,7 +413,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any GOVERNMENT Adversary to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by one this round.",
+    "gameEffect": "Play on any GOVERNMENT Adversary to reduce damage from all opponent LONG RANGE COMBAT or CLOSE RANGE COMBAT sources by one this round.",
     "tags": [
       "Advanced"
     ],
@@ -434,7 +434,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Adversaries that can use MARTIAL ARTS may play this card in a CLOSE RANGE COMBAT round to cause one Equipment card from the opposing side to be discarded. If the Equipment normally adds to CRC skill check, then it is discarded before it may do so.",
+    "gameEffect": "Adversaries that can use MARTIAL ARTS may play this card in a CLOSE RANGE COMBAT round to cause one Equipment card from the opposing side to be discarded. If the Equipment normally adds to CRC skill check, then it is discarded before it may do so.",
     "tags": [
       "Advanced"
     ],
@@ -454,7 +454,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Combatants with a LONG RANGE COMBAT skill of 3+ may use this card to fight one additional round of LRC immediately.",
+    "gameEffect": "Combatants with a LONG RANGE COMBAT skill of 3+ may use this card to fight one additional round of LRC immediately.",
     "tags": [
       "Advanced"
     ],
@@ -475,7 +475,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Adversary to add 1 to its CLOSE RANGE COMBAT skill check. In addition, if the Adversary is OCCULT, play on the chosen Agent in combat to negate his combat skills this round.",
+    "gameEffect": "Play on any Adversary to add 1 to its CLOSE RANGE COMBAT skill check. In addition, if the Adversary is OCCULT, play on the chosen Agent in combat to negate his combat skills this round.",
     "tags": [
       "Advanced",
       "Negate"
@@ -496,7 +496,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Agent that has taken two or more points of damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent may not leave the Hospital until he is fully healed.",
+    "gameEffect": "Play on any Agent that has taken two or more points of damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent may not leave the Hospital until he is fully healed.",
     "tags": [
       "Advanced"
     ],
@@ -517,7 +517,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any GOVERNMENT Adversary to allow it to split the LONG RANGE COMBAT damage it causes amongst its opponents this round.",
+    "gameEffect": "Play on any GOVERNMENT Adversary to allow it to split the LONG RANGE COMBAT damage it causes amongst its opponents this round.",
     "tags": [
       "Advanced",
       "Split Damage"
@@ -538,7 +538,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card to negate the effects of any combat card that ends combat. The Cost of this card is equal to the Cost of the opponent's card that ended the combat or 2 *P, whichever is greater.",
+    "gameEffect": "Play this card to negate the effects of any combat card that ends combat. The Cost of this card is equal to the Cost of the opponent's card that ended the combat or 2 *P, whichever is greater.",
     "tags": [
       "Advanced",
       "Negate"
@@ -559,7 +559,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any combatant in a CLOSE RANGE COMBAT round. Add one to the combatant's damage result.",
+    "gameEffect": "Play on any combatant in a CLOSE RANGE COMBAT round. Add one to the combatant's damage result.",
     "tags": [
       "Advanced"
     ],
@@ -580,7 +580,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant that can use MARTIAL ARTS. The combatant applies a choke hold. If the combatant causes damage in CLOSE RANGE COMBAT then the damaged Adversary/Agent takes no further part in the combat.",
+    "gameEffect": "Play this card on any combatant that can use MARTIAL ARTS. The combatant applies a choke hold. If the combatant causes damage in CLOSE RANGE COMBAT then the damaged Adversary/Agent takes no further part in the combat.",
     "tags": [
       "Advanced"
     ],
@@ -600,7 +600,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any one combatant who would not normally be allowed to fight a round of LONG RANGE COMBAT. The combatant must still have LRC skill. The combatant may fight one round of LRC as normal.",
+    "gameEffect": "Play on any one combatant who would not normally be allowed to fight a round of LONG RANGE COMBAT. The combatant must still have LRC skill. The combatant may fight one round of LRC as normal.",
     "tags": [
       "Advanced"
     ],
@@ -620,7 +620,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card when your opponent is about to assign damage. You now choose which of the Agents or Adversaries under your control take the damage. The damage may not be split unless you play a card that allows you to do so.",
+    "gameEffect": "Play this card when your opponent is about to assign damage. You now choose which of the Agents or Adversaries under your control take the damage. The damage may not be split unless you play a card that allows you to do so.",
     "tags": [
       "Advanced"
     ],
@@ -640,7 +640,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "One Agent equipped with a \"Government Car\" may use this card to make one CLOSE RANGE COMBAT attack at CRC skill: 6. Any damage allocated to the Agent is taken by the car first. The car is destroyed after taking six hits. Hits in excess of those needed to destroy the car are applied to the Agent. Discard the \"Government Car\" card after this combat round is resolved.",
+    "gameEffect": "One Agent equipped with a \"Government Car\" may use this card to make one CLOSE RANGE COMBAT attack at CRC skill: 6. Any damage allocated to the Agent is taken by the car first. The car is destroyed after taking six hits. Hits in excess of those needed to destroy the car are applied to the Agent. Discard the \"Government Car\" card after this combat round is resolved.",
     "tags": [
       "Advanced"
     ],
@@ -660,7 +660,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card in a CLOSE RANGE COMBAT round after damage has been dealt. If the Agents dealt two or more points more damage than their opponent, combat ends immediately. In addition, place the opposing Adversary in the Agents' Bureau section. The player may discard this card at any time to add two points of damage to any future combat involving an Adversary with the same Keywords.",
+    "gameEffect": "Play this card in a CLOSE RANGE COMBAT round after damage has been dealt. If the Agents dealt two or more points more damage than their opponent, combat ends immediately. In addition, place the opposing Adversary in the Agents' Bureau section. The player may discard this card at any time to add two points of damage to any future combat involving an Adversary with the same Keywords.",
     "tags": [
       "Advanced"
     ],
@@ -682,7 +682,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any OCCULT or EVOLUTIONARY Adversary to negate all damage allocated to that Adversary this round.",
+    "gameEffect": "Play on any OCCULT or EVOLUTIONARY Adversary to negate all damage allocated to that Adversary this round.",
     "tags": [
       "Advanced",
       "Negate"
@@ -703,7 +703,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any Agent to immediately end combat for that Agent. Finish the combat without the Agent. The Agent takes no damage from the combat and may still contribute his skills to other skill checks.",
+    "gameEffect": "Play this card on any Agent to immediately end combat for that Agent. Finish the combat without the Agent. The Agent takes no damage from the combat and may still contribute his skills to other skill checks.",
     "tags": [
       "Advanced"
     ],
@@ -724,7 +724,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Agent that has taken 5 or more damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent cannot leave the Hospital until fully healed. Subtract 5 from the Agent's Cost. If the Cost is zero or less, the Agent is removed from the game. (Agents Lamana, Willis, Purdue and Weiss are immune to this effect.)",
+    "gameEffect": "Play on any Agent that has taken 5 or more damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent cannot leave the Hospital until fully healed. Subtract 5 from the Agent's Cost. If the Cost is zero or less, the Agent is removed from the game. (Agents Lamana, Willis, Purdue and Weiss are immune to this effect.)",
     "tags": [
       "Advanced"
     ],
@@ -745,7 +745,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any EVOLUTIONARY Adversary to cause one point of damage to each opponent in a LONG RANGE COMBAT round. This is in addition to any other damage caused by the Adversary in this round.",
+    "gameEffect": "Play on any EVOLUTIONARY Adversary to cause one point of damage to each opponent in a LONG RANGE COMBAT round. This is in addition to any other damage caused by the Adversary in this round.",
     "tags": [
       "Advanced"
     ],
@@ -766,7 +766,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any Agent that has taken four or more points of damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent may not leave the Hospital until fully healed. Subtract 4 from the Agent's Cost. If the result is zero or less, the Agent is removed from the game. (Agents Lamana, Willis, Purdue, and Weiss are immune to this effect).",
+    "gameEffect": "Play on any Agent that has taken four or more points of damage from a single damage source. That Agent must go to the Hospital immediately and may no longer participate in the combat. The Agent may not leave the Hospital until fully healed. Subtract 4 from the Agent's Cost. If the result is zero or less, the Agent is removed from the game. (Agents Lamana, Willis, Purdue, and Weiss are immune to this effect).",
     "tags": [
       "Advanced"
     ],
@@ -786,7 +786,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant in a LONG RANGE COMBAT round to add 2 points to that combatant's LRC skill.",
+    "gameEffect": "Play this card on any combatant in a LONG RANGE COMBAT round to add 2 points to that combatant's LRC skill.",
     "tags": [
       "Advanced"
     ],
@@ -806,7 +806,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this on any opponent who has just taken damage. The opponent is considered \"stunned\" for the next round of combat. This opponent will deal no damage in the next round of combat.",
+    "gameEffect": "Play this on any opponent who has just taken damage. The opponent is considered \"stunned\" for the next round of combat. This opponent will deal no damage in the next round of combat.",
     "tags": [
       "Advanced"
     ],
@@ -826,7 +826,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play this card on any combatant to decrease damage from one LONG RANGE COMBAT source by two points this round.",
+    "gameEffect": "Play this card on any combatant to decrease damage from one LONG RANGE COMBAT source by two points this round.",
     "tags": [
       "Advanced"
     ],
@@ -848,7 +848,7 @@
     "activators": [
       "Combat"
     ],
-    "gameText": "Play on any ALIEN or EVOLUTIONARY Adversary to add 3 to any LONG RANGE COMBAT skill check. If the Adversary does not have LRC skill, this card gives it a 3 for this round only.",
+    "gameEffect": "Play on any ALIEN or EVOLUTIONARY Adversary to add 3 to any LONG RANGE COMBAT skill check. If the Adversary does not have LRC skill, this card gives it a 3 for this round only.",
     "tags": [
       "Advanced"
     ],
@@ -1858,7 +1858,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change one Keyword EVIDENCE COLLECTION, BEHAVIORAL, or CRIMINAL INVESTIGATION card to Keyword MOTIVE.",
+    "gameEffect": "Play to change one Keyword EVIDENCE COLLECTION, BEHAVIORAL, or CRIMINAL INVESTIGATION card to Keyword MOTIVE.",
     "tags": [
       "Basic",
       "Change Keyword"
@@ -1882,7 +1882,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on one Agent to decrease the Agent's RES value by one. This card is removed when a Healing card is played on the Agent.",
+    "gameEffect": "Play on one Agent to decrease the Agent's RES value by one. This card is removed when a Healing card is played on the Agent.",
     "tags": [
       "Advanced"
     ],
@@ -1903,7 +1903,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change the Site Prerequisite to OBSERVATION 3+.",
+    "gameEffect": "Play to change the Site Prerequisite to OBSERVATION 3+.",
     "tags": [
       "Basic",
       "Change Prerequisite"
@@ -1927,7 +1927,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force one Agent (your choice) back to the Bureau immediately. The Agent may not contribute to any skill checks this turn.",
+    "gameEffect": "Force one Agent (your choice) back to the Bureau immediately. The Agent may not contribute to any skill checks this turn.",
     "tags": [
       "Basic",
       "Move",
@@ -1952,7 +1952,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: OCCULT INVESTIGATION, BEHAVIORAL, BUREAUCRACY.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: OCCULT INVESTIGATION, BEHAVIORAL, BUREAUCRACY. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: OCCULT INVESTIGATION, BEHAVIORAL, BUREAUCRACY.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: OCCULT INVESTIGATION, BEHAVIORAL, BUREAUCRACY. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -1975,7 +1975,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change a Site Prerequisite to SUBTERFUGE 3+.",
+    "gameEffect": "Play to change a Site Prerequisite to SUBTERFUGE 3+.",
     "tags": [
       "Basic",
       "Change Prerequisite"
@@ -1997,7 +1997,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: ALIEN INVESTIGATION, MEDICAL, SCIENCES.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: ALIEN INVESTIGATION, MEDICAL, SCIENCES. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: ALIEN INVESTIGATION, MEDICAL, SCIENCES.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: ALIEN INVESTIGATION, MEDICAL, SCIENCES. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2019,7 +2019,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: MEDICAL, OBSERVATION, BEHAVIORAL.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: MEDICAL, OBSERVATION, BEHAVIORAL. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: MEDICAL, OBSERVATION, BEHAVIORAL.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: MEDICAL, OBSERVATION, BEHAVIORAL. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2041,7 +2041,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play after a Team investigates a Site to destroy one Event RESOURCE.",
+    "gameEffect": "Play after a Team investigates a Site to destroy one Event RESOURCE.",
     "tags": [
       "Basic"
     ],
@@ -2063,7 +2063,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to force your opponent to discard one Witness RESOURCE immediately.",
+    "gameEffect": "Play to force your opponent to discard one Witness RESOURCE immediately.",
     "tags": [
       "Basic",
       "Discard"
@@ -2085,7 +2085,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: CRIMINAL INVESTIGATION, EVIDENCE COLLECTION, COMPUTER.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CRIMINAL INVESTIGATION, EVIDENCE COLLECTION, COMPUTER. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: CRIMINAL INVESTIGATION, EVIDENCE COLLECTION, COMPUTER.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CRIMINAL INVESTIGATION, EVIDENCE COLLECTION, COMPUTER. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2107,7 +2107,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: CRIMINAL INVESTIGATION, SUBTERFUGE, COMPUTER.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CRIMINAL INVESTIGATION, SUBTERFUGE, COMPUTER. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: CRIMINAL INVESTIGATION, SUBTERFUGE, COMPUTER.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CRIMINAL INVESTIGATION, SUBTERFUGE, COMPUTER. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2131,7 +2131,7 @@
       "Conspiracy",
       "Evidence Collection"
     ],
-    "gameText": "Play to negate one Keyword EVIDENCE COLLECTION card.",
+    "gameEffect": "Play to negate one Keyword EVIDENCE COLLECTION card.",
     "tags": [
       "Basic",
       "Negate"
@@ -2153,7 +2153,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: ALIEN INVESTIGATION, OBSERVATION, SUBTERFUGE.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: ALIEN INVESTIGATION, OBSERVATION, SUBTERFUGE. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: ALIEN INVESTIGATION, OBSERVATION, SUBTERFUGE.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: ALIEN INVESTIGATION, OBSERVATION, SUBTERFUGE. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2175,7 +2175,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to add 2 [CP] to your pool immediately.",
+    "gameEffect": "Play to add 2 [CP] to your pool immediately.",
     "tags": [
       "Advanced",
       "Resource"
@@ -2197,7 +2197,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change one Keyword EVIDENCE COLLECTION, MEDICAL, or CRIMINAL INVESTIGATION card to Keyword MOTIVE.",
+    "gameEffect": "Play to change one Keyword EVIDENCE COLLECTION, MEDICAL, or CRIMINAL INVESTIGATION card to Keyword MOTIVE.",
     "tags": [
       "Basic",
       "Change Keyword"
@@ -2220,7 +2220,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opposing Team to make a SCIENCES 4+ skill check. If they fail, each Agent takes one point of damage. If one of the Agents has a \"Gas Chromatograph\", then this card has no effect.",
+    "gameEffect": "Force an opposing Team to make a SCIENCES 4+ skill check. If they fail, each Agent takes one point of damage. If one of the Agents has a \"Gas Chromatograph\", then this card has no effect.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -2242,7 +2242,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to prevent one Agent assigned to a Site from contributing the Agent's skills to one skill check (your choice) that the Team makes this turn.",
+    "gameEffect": "Play to prevent one Agent assigned to a Site from contributing the Agent's skills to one skill check (your choice) that the Team makes this turn.",
     "tags": [
       "Basic"
     ],
@@ -2263,7 +2263,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to add five tokens to your [CP] pool.",
+    "gameEffect": "Play to add five tokens to your [CP] pool.",
     "tags": [
       "Advanced",
       "Resource"
@@ -2285,7 +2285,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Decrease all of the skill levels on one Agent (your choice) by 1 for this turn only.",
+    "gameEffect": "Decrease all of the skill levels on one Agent (your choice) by 1 for this turn only.",
     "tags": [
       "Basic",
       "Unique"
@@ -2307,7 +2307,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Increase a Site Prerequisite by one point (i.e., Prerequisite: Skill 5+ becomes Skill 6+). In addition, if the Team fails the skill check, each Agent on the Team takes one point of damage. If one of the Agents has a \"Geiger Counter\", this card has no effect.",
+    "gameEffect": "Increase a Site Prerequisite by one point (i.e., Prerequisite: Skill 5+ becomes Skill 6+). In addition, if the Team fails the skill check, each Agent on the Team takes one point of damage. If one of the Agents has a \"Geiger Counter\", this card has no effect.",
     "tags": [
       "Advanced"
     ],
@@ -2329,7 +2329,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change one Keyword COMPUTER, SCIENCES, or SUBTERFUGE card to Keyword RESULT.",
+    "gameEffect": "Play to change one Keyword COMPUTER, SCIENCES, or SUBTERFUGE card to Keyword RESULT.",
     "tags": [
       "Basic",
       "Change Keyword"
@@ -2352,7 +2352,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force the Team to make a SCIENCES 4+ skill check. If they fail, choose one Agent to go to the Hospital. The chosen Agent permanently loses one HEALTH. An Agent's permanent HEALTH can never be reduced below 1.",
+    "gameEffect": "Force the Team to make a SCIENCES 4+ skill check. If they fail, choose one Agent to go to the Hospital. The chosen Agent permanently loses one HEALTH. An Agent's permanent HEALTH can never be reduced below 1.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -2375,7 +2375,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on a Team of three or more Agents moving to the same Site. The Team may only send two Agents to that Site (owning player's choice). Any extra Agents remain in the Team but may not contribute their skills to any checks this turn. In addition, playing this card will prevent the use of the \"Evasive Maneuver\" card by this Team this turn.",
+    "gameEffect": "Play on a Team of three or more Agents moving to the same Site. The Team may only send two Agents to that Site (owning player's choice). Any extra Agents remain in the Team but may not contribute their skills to any checks this turn. In addition, playing this card will prevent the use of the \"Evasive Maneuver\" card by this Team this turn.",
     "tags": [
       "Basic"
     ],
@@ -2396,7 +2396,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to negate one Keyword CRIMINAL INVESTIGATION card.",
+    "gameEffect": "Play to negate one Keyword CRIMINAL INVESTIGATION card.",
     "tags": [
       "Basic",
       "Negate"
@@ -2420,7 +2420,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: SCIENCES, EVIDENCE COLLECTION, BUREAUCRACY.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: SCIENCES, EVIDENCE COLLECTION, BUREAUCRACY. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "gameEffect": "Basic Game Only: Apply a -2 modifier to any one skill check involving one of the following skills: SCIENCES, EVIDENCE COLLECTION, BUREAUCRACY.\n\nAdvanced Game: Pay the listed [CP] Cost, where X = the number of [CP] paid to gain the desired modifier to one of the following skills: SCIENCES, EVIDENCE COLLECTION, BUREAUCRACY. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
       "Basic",
       "Decrease Skill"
@@ -2442,7 +2442,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to force the Investigating player to discard all Keyword EVIDENCE COLLECTION cards in his hand.",
+    "gameEffect": "Play to force the Investigating player to discard all Keyword EVIDENCE COLLECTION cards in his hand.",
     "tags": [
       "Basic",
       "Discard"
@@ -2463,7 +2463,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force the Team investigation a Site to discard one Equipment card of your choice.",
+    "gameEffect": "Force the Team investigation a Site to discard one Equipment card of your choice.",
     "tags": [
       "Basic",
       "Discard"
@@ -2485,7 +2485,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Pay 1 [CP] to move up to 2 [RP] from your opponent's [RP] pool to your [CP] pool immediately.",
+    "gameEffect": "Pay 1 [CP] to move up to 2 [RP] from your opponent's [RP] pool to your [CP] pool immediately.",
     "tags": [
       "Advanced",
       "Resource"
@@ -2507,7 +2507,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change a Site Prerequisite to BUREAUCRACY 3+.",
+    "gameEffect": "Play to change a Site Prerequisite to BUREAUCRACY 3+.",
     "tags": [
       "Basic",
       "Change Prerequisite"
@@ -2529,7 +2529,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to change one Keyword OCCULT INVESTIGATION, BEHAVIORAL, or OBSERVATION card to Keyword METHOD.",
+    "gameEffect": "Play to change one Keyword OCCULT INVESTIGATION, BEHAVIORAL, or OBSERVATION card to Keyword METHOD.",
     "tags": [
       "Basic",
       "Change Keyword"
@@ -2551,7 +2551,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play to cause your opponent to discard two cards at random from his hand immediately.",
+    "gameEffect": "Play to cause your opponent to discard two cards at random from his hand immediately.",
     "tags": [
       "Basic",
       "Discard"
@@ -4076,7 +4076,7 @@
       "Active",
       "Criminal Investigation"
     ],
-    "gameText": "Adds 1 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "gameEffect": "Adds 1 to one Team's CRIMINAL INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4100,7 +4100,7 @@
       "Evolutionary",
       "Negate"
     ],
-    "gameText": "Negates one EVOLUTIONARY CREATURE.",
+    "gameEffect": "Negates one EVOLUTIONARY CREATURE.",
     "tags": [
       "Basic"
     ],
@@ -4120,7 +4120,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Change one Keyword to any other one Keyword on a card played by your opponent.",
+    "gameEffect": "Change one Keyword to any other one Keyword on a card played by your opponent.",
     "tags": [
       "Basic"
     ],
@@ -4142,7 +4142,7 @@
       "Active",
       "Computer"
     ],
-    "gameText": "Adds 1 to one Team's COMPUTER skill check.",
+    "gameEffect": "Adds 1 to one Team's COMPUTER skill check.",
     "tags": [
       "Basic"
     ],
@@ -4164,7 +4164,7 @@
       "Active",
       "Observation"
     ],
-    "gameText": "Adds 2 to one Team's OBSERVATION skill check.",
+    "gameEffect": "Adds 2 to one Team's OBSERVATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4186,7 +4186,7 @@
       "Active",
       "Sciences"
     ],
-    "gameText": "Adds 2 to one Team's SCIENCES skill check.",
+    "gameEffect": "Adds 2 to one Team's SCIENCES skill check.",
     "tags": [
       "Basic"
     ],
@@ -4208,7 +4208,7 @@
       "Active",
       "Alien Investigation"
     ],
-    "gameText": "Adds 1 to one Team's ALIEN INVESTIGATION skill check.",
+    "gameEffect": "Adds 1 to one Team's ALIEN INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4230,7 +4230,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 to one Team's BEHAVIORAL skill check once during your turn.",
+    "gameEffect": "Adds 1 to one Team's BEHAVIORAL skill check once during your turn.",
     "tags": [
       "Basic"
     ],
@@ -4252,7 +4252,7 @@
       "Active",
       "Criminal Investigation"
     ],
-    "gameText": "Adds 2 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "gameEffect": "Adds 2 to one Team's CRIMINAL INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4275,7 +4275,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword EVOLUTIONARY or BEHAVIORAL card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword EVOLUTIONARY or BEHAVIORAL card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4300,7 +4300,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword ALIEN INVESTIGATION or EVIDENCE COLLECTION card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword ALIEN INVESTIGATION or EVIDENCE COLLECTION card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4324,7 +4324,7 @@
       "Active",
       "Evidence Collection"
     ],
-    "gameText": "Adds 2 to one Team's EVIDENCE COLLECTION skill check.",
+    "gameEffect": "Adds 2 to one Team's EVIDENCE COLLECTION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4346,7 +4346,7 @@
       "Active",
       "Medical"
     ],
-    "gameText": "Adds 2 to one Team's MEDICAL skill check.",
+    "gameEffect": "Adds 2 to one Team's MEDICAL skill check.",
     "tags": [
       "Basic"
     ],
@@ -4370,7 +4370,7 @@
       "Occult",
       "Creature"
     ],
-    "gameText": "Negates one OCCULT CREATURE.",
+    "gameEffect": "Negates one OCCULT CREATURE.",
     "tags": [
       "Basic"
     ],
@@ -4393,7 +4393,7 @@
       "Active",
       "Subterfuge"
     ],
-    "gameText": "Adds 2 to one Agent's SUBTERFUGE skill check. Alternately, any card that would send Fox Mulder to the Hospital may be negated by playing the Bill Mulder card. If played in this way, remove Bill Mulder from the game.",
+    "gameEffect": "Adds 2 to one Agent's SUBTERFUGE skill check. Alternately, any card that would send Fox Mulder to the Hospital may be negated by playing the Bill Mulder card. If played in this way, remove Bill Mulder from the game.",
     "tags": [
       "Basic"
     ],
@@ -4414,7 +4414,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Attach this Witness to a Team. This Witness will add his skills to the appropriate skill check like an Agent, CRC: 2, LRC: 2, and HEALTH: 3. If he is sent to the Hospital, or at any time there are no Agents in the Team, remove the card from the game.",
+    "gameEffect": "Attach this Witness to a Team. This Witness will add his skills to the appropriate skill check like an Agent, CRC: 2, LRC: 2, and HEALTH: 3. If he is sent to the Hospital, or at any time there are no Agents in the Team, remove the card from the game.",
     "tags": [
       "Advanced",
       "Unique"
@@ -4438,7 +4438,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword GOVERNMENT or MEDICAL card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword GOVERNMENT or MEDICAL card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4463,7 +4463,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword COMPUTER or BUREAUCRACY card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword COMPUTER or BUREAUCRACY card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4487,7 +4487,7 @@
       "Active",
       "Bureaucracy"
     ],
-    "gameText": "Adds 1 to one Team's BUREAUCRACY skill check.",
+    "gameEffect": "Adds 1 to one Team's BUREAUCRACY skill check.",
     "tags": [
       "Basic"
     ],
@@ -4509,7 +4509,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 to one Team's SUBTERFUGE skill check once per turn. You may have any number of Samantha Mulder cards in play.",
+    "gameEffect": "Adds 1 to one Team's SUBTERFUGE skill check once per turn. You may have any number of Samantha Mulder cards in play.",
     "tags": [
       "Basic"
     ],
@@ -4531,7 +4531,7 @@
       "Active",
       "Alien Investigation"
     ],
-    "gameText": "Adds 2 to one Team's ALIEN INVESTIGATION skill check. Alternately, you may play this card when one of your Agents is the target of an abduction. Max Fenig is abducted instead. Discard Max Fenig. The abduction is negated.",
+    "gameEffect": "Adds 2 to one Team's ALIEN INVESTIGATION skill check. Alternately, you may play this card when one of your Agents is the target of an abduction. Max Fenig is abducted instead. Discard Max Fenig. The abduction is negated.",
     "tags": [
       "Basic"
     ],
@@ -4553,7 +4553,7 @@
       "Active",
       "Medical"
     ],
-    "gameText": "Adds 1 to one Team's MEDICAL skill check.",
+    "gameEffect": "Adds 1 to one Team's MEDICAL skill check.",
     "tags": [
       "Basic"
     ],
@@ -4575,7 +4575,7 @@
       "Active",
       "Sciences"
     ],
-    "gameText": "Adds 1 to one Team's SCIENCES skill check.",
+    "gameEffect": "Adds 1 to one Team's SCIENCES skill check.",
     "tags": [
       "Basic"
     ],
@@ -4597,7 +4597,7 @@
       "Active",
       "Behavioral"
     ],
-    "gameText": "Adds 2 to one Team's BEHAVIORAL skill check.",
+    "gameEffect": "Adds 2 to one Team's BEHAVIORAL skill check.",
     "tags": [
       "Basic"
     ],
@@ -4619,7 +4619,7 @@
       "Active",
       "Evidence Collection"
     ],
-    "gameText": "Adds 1 to one Team's EVIDENCE COLLECTION skill check.",
+    "gameEffect": "Adds 1 to one Team's EVIDENCE COLLECTION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4641,7 +4641,7 @@
       "Active",
       "Computer"
     ],
-    "gameText": "Adds 2 to one Team's COMPUTER skill check.",
+    "gameEffect": "Adds 2 to one Team's COMPUTER skill check.",
     "tags": [
       "Basic"
     ],
@@ -4664,7 +4664,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword SCIENCES or OBSERVATION card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword SCIENCES or OBSERVATION card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4688,7 +4688,7 @@
       "Active",
       "Occult Investigation"
     ],
-    "gameText": "Adds 2 to one Team's OCCULT INVESTIGATION skill check.",
+    "gameEffect": "Adds 2 to one Team's OCCULT INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4712,7 +4712,7 @@
       "Government",
       "Pawn"
     ],
-    "gameText": "Negates one GOVERNMENT PAWN",
+    "gameEffect": "Negates one GOVERNMENT PAWN",
     "tags": [
       "Basic"
     ],
@@ -4736,7 +4736,7 @@
       "Alien",
       "Creature"
     ],
-    "gameText": "Negates one ALIEN CREATURE.",
+    "gameEffect": "Negates one ALIEN CREATURE.",
     "tags": [
       "Basic"
     ],
@@ -4758,7 +4758,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Attach this Witness to a Team. Enables your Agents to deal damage to OCCULT CREATUREs as normal. For example, you may use LRC against POLTERGEISTs and VAMPIREs. If at any time there are no Agents in the Team to which this card is attached, discard this card.",
+    "gameEffect": "Attach this Witness to a Team. Enables your Agents to deal damage to OCCULT CREATUREs as normal. For example, you may use LRC against POLTERGEISTs and VAMPIREs. If at any time there are no Agents in the Team to which this card is attached, discard this card.",
     "tags": [
       "Advanced"
     ],
@@ -4781,7 +4781,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Adds 1 [RP] to your pool every time a Keyword OCCULT INVESTIGATION or CRIMINAL INVESTIGATION card is played.",
+    "gameEffect": "Adds 1 [RP] to your pool every time a Keyword OCCULT INVESTIGATION or CRIMINAL INVESTIGATION card is played.",
     "tags": [
       "Advanced",
       "Recurring Resource",
@@ -4805,7 +4805,7 @@
       "Active",
       "Observation"
     ],
-    "gameText": "Adds 1 to one Team's OBSERVATION skill check.",
+    "gameEffect": "Adds 1 to one Team's OBSERVATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4829,7 +4829,7 @@
       "Primordial",
       "Creature"
     ],
-    "gameText": "Negates one PRIMORDIAL CREATURE.",
+    "gameEffect": "Negates one PRIMORDIAL CREATURE.",
     "tags": [
       "Basic"
     ],
@@ -4851,7 +4851,7 @@
       "Active",
       "Occult Investigation"
     ],
-    "gameText": "Adds 1 to one Team's OCCULT INVESTIGATION skill check.",
+    "gameEffect": "Adds 1 to one Team's OCCULT INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -4872,7 +4872,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card at anytime during your turn to examine your opponent's hand.",
+    "gameEffect": "Play this card at anytime during your turn to examine your opponent's hand.",
     "tags": [
       "Basic",
       "Examine Hand"
@@ -4895,7 +4895,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Place three tokens on this card. Discard a token to add 2 to one Team's BUREAUCRACY skill check. You may discard a token once per turn. Discard this resource when all tokens have been discarded.",
+    "gameEffect": "Place three tokens on this card. Discard a token to add 2 to one Team's BUREAUCRACY skill check. You may discard a token once per turn. Discard this resource when all tokens have been discarded.",
     "tags": [
       "Basic"
     ],
@@ -4916,7 +4916,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Place on a Team in the Hospital containing an injured Agent. The Agent heals 2 damage immediately.",
+    "gameEffect": "Place on a Team in the Hospital containing an injured Agent. The Agent heals 2 damage immediately.",
     "tags": [
       "Advanced"
     ],
@@ -4937,7 +4937,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Ask any one Characteristic question regarding one opponent's X-File. Remove this card from the game. The effects of this card may not be negated.",
+    "gameEffect": "Ask any one Characteristic question regarding one opponent's X-File. Remove this card from the game. The effects of this card may not be negated.",
     "tags": [
       "Basic",
       "Unique"
@@ -4960,7 +4960,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on any Team containing Agent Fox Mulder and/or Agent Dana Scully. Mulder must immediately be moved to the Bureau. Scully must immediately be moved to the Hospital (undamaged). Neither my contribute their skills to skill checks this turn.",
+    "gameEffect": "Play on any Team containing Agent Fox Mulder and/or Agent Dana Scully. Mulder must immediately be moved to the Bureau. Scully must immediately be moved to the Hospital (undamaged). Neither my contribute their skills to skill checks this turn.",
     "tags": [
       "Basic"
     ],
@@ -4982,7 +4982,7 @@
       "Multiplayer",
       "Conspiracy"
     ],
-    "gameText": "Play when one player has just asked a Characteristic question and you were not the Directed player. If the player achieved the prerequisite skill number exactly, then he must tell all opponents the answer to the Characteristic question.",
+    "gameEffect": "Play when one player has just asked a Characteristic question and you were not the Directed player. If the player achieved the prerequisite skill number exactly, then he must tell all opponents the answer to the Characteristic question.",
     "tags": [
       "Advanced"
     ],
@@ -5004,7 +5004,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on one Agent to allow that Agent to use their EVIDENCE COLLECTION skill number for any one ALIEN INVESTIGATION or OCCULT INVESTIGATION skill check.",
+    "gameEffect": "Play on one Agent to allow that Agent to use their EVIDENCE COLLECTION skill number for any one ALIEN INVESTIGATION or OCCULT INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -5026,7 +5026,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Field during the Deployment Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check they may investigate two Sites this turn. Resolve each Site individually.",
+    "gameEffect": "Play on a Team in the Field during the Deployment Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check they may investigate two Sites this turn. Resolve each Site individually.",
     "tags": [
       "Advanced"
     ],
@@ -5050,7 +5050,7 @@
       "Conspiracy",
       "Multiplayer"
     ],
-    "gameText": "Play after an opponent Team successfully asks a Characteristic question. Force that opponent Team to make a SUBTERFUGE 4+ skill check. If they fail they must tell you the question and answer they obtained.",
+    "gameEffect": "Play after an opponent Team successfully asks a Characteristic question. Force that opponent Team to make a SUBTERFUGE 4+ skill check. If they fail they must tell you the question and answer they obtained.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -5072,7 +5072,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on an Agent in the Hospital. The Agent heals one token of damage immediately.",
+    "gameEffect": "Play on an Agent in the Hospital. The Agent heals one token of damage immediately.",
     "tags": [
       "Basic"
     ],
@@ -5094,7 +5094,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "If your opponent includes Agent Weiss in any skill check in the Field, Agent Weiss is instantly killed and removed from the game.",
+    "gameEffect": "If your opponent includes Agent Weiss in any skill check in the Field, Agent Weiss is instantly killed and removed from the game.",
     "tags": [
       "Advanced",
       "Unique"
@@ -5115,7 +5115,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Change any Keyword to any other Keyword on a card played by your opponent. This effect lasts until the end of the turn.",
+    "gameEffect": "Change any Keyword to any other Keyword on a card played by your opponent. This effect lasts until the end of the turn.",
     "tags": [
       "Basic",
       "Change Keyword"
@@ -5138,7 +5138,7 @@
       "Conspiracy",
       "Bluff"
     ],
-    "gameText": "Move any Bluff cards from one Site to another Site or back into the owner's hand. If at the end of an Investigation Phase a Site is left with no Bluffs attached, discard it. X = 1 [CP] per Bluff removed.",
+    "gameEffect": "Move any Bluff cards from one Site to another Site or back into the owner's hand. If at the end of an Investigation Phase a Site is left with no Bluffs attached, discard it. X = 1 [CP] per Bluff removed.",
     "tags": [
       "Advanced"
     ],
@@ -5159,7 +5159,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Search through your Bureau Deck and place any one Witness card in your hand. Show the Witness to your opponents. Shuffle the Bureau Deck.",
+    "gameEffect": "Search through your Bureau Deck and place any one Witness card in your hand. Show the Witness to your opponents. Shuffle the Bureau Deck.",
     "tags": [
       "Basic",
       "Search"
@@ -5183,7 +5183,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "Negate one Witness that modifies ALIEN INVESTIGATION or BUREAUCRACY skill.",
+    "gameEffect": "Negate one Witness that modifies ALIEN INVESTIGATION or BUREAUCRACY skill.",
     "tags": [
       "Basic"
     ],
@@ -5204,7 +5204,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play during the Briefing Phase to prevent one opponent from drawing any cards during the remainder of this turn.",
+    "gameEffect": "Play during the Briefing Phase to prevent one opponent from drawing any cards during the remainder of this turn.",
     "tags": [
       "Basic"
     ],
@@ -5226,7 +5226,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal and in addition has a +1 in one of the following skills: LRC, CRC or the ability to use MARTIAL ARTS Combat cards. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal and in addition has a +1 in one of the following skills: LRC, CRC or the ability to use MARTIAL ARTS Combat cards. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Advanced"
     ],
@@ -5248,7 +5248,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on one Team in the Field. If the Team makes an EVIDENCE COLLECTION skill check 5+, then they may add 2 to any Site skill check. Discard this card after you've used the modifier.",
+    "gameEffect": "Play on one Team in the Field. If the Team makes an EVIDENCE COLLECTION skill check 5+, then they may add 2 to any Site skill check. Discard this card after you've used the modifier.",
     "tags": [
       "Basic"
     ],
@@ -5270,7 +5270,7 @@
       "Conspiracy",
       "Computer"
     ],
-    "gameText": "Play this card to negate any Keyword COMPUTER card.",
+    "gameEffect": "Play this card to negate any Keyword COMPUTER card.",
     "tags": [
       "Basic",
       "Negate"
@@ -5292,7 +5292,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "If your opponent includes Agent Lamana in any skill check in the Field, Agent Lamana is instantly killed and removed from the game.",
+    "gameEffect": "If your opponent includes Agent Lamana in any skill check in the Field, Agent Lamana is instantly killed and removed from the game.",
     "tags": [
       "Advanced",
       "Unique"
@@ -5316,7 +5316,7 @@
       "Conspiracy",
       "Evidence Collection"
     ],
-    "gameText": "Negate one Keyword EVIDENCE COLLECTION card.",
+    "gameEffect": "Negate one Keyword EVIDENCE COLLECTION card.",
     "tags": [
       "Basic"
     ],
@@ -5337,7 +5337,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Have a Team make a COMPUTER 4+ skill check. If successful, draw three cards from your chosen opponent's Bureau deck and choose one to place in your Bureau Section face down. Place the other two cards back on top of your opponent's Bureau Deck in any order. You may use the chosen card when appropriate but you must pay the cost. Return the card to its owner's Discard Pile after it has been used. Leave this card on top of the card you've taken from your opponent to remind you that the card you took is considered an EVENT, RESOURCE.",
+    "gameEffect": "Have a Team make a COMPUTER 4+ skill check. If successful, draw three cards from your chosen opponent's Bureau deck and choose one to place in your Bureau Section face down. Place the other two cards back on top of your opponent's Bureau Deck in any order. You may use the chosen card when appropriate but you must pay the cost. Return the card to its owner's Discard Pile after it has been used. Leave this card on top of the card you've taken from your opponent to remind you that the card you took is considered an EVENT, RESOURCE.",
     "tags": [
       "Basic"
     ],
@@ -5358,7 +5358,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a SCIENCES 4+ skill check. If the Team fails, you may choose an opposing Agent on the Team to enter combat with any other Agent on the Team. Combat will only last one round.",
+    "gameEffect": "Force an opponent Team to make a SCIENCES 4+ skill check. If the Team fails, you may choose an opposing Agent on the Team to enter combat with any other Agent on the Team. Combat will only last one round.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -5381,7 +5381,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play prior to a Site skill check. If the Site skill check is successful, place this card in your Bureau Section. You may discard this card in any of your investigation phases to add 2 to a Site skill check. Discard this card after you've used the modifier.",
+    "gameEffect": "Play prior to a Site skill check. If the Site skill check is successful, place this card in your Bureau Section. You may discard this card in any of your investigation phases to add 2 to a Site skill check. Discard this card after you've used the modifier.",
     "tags": [
       "Basic"
     ],
@@ -5401,7 +5401,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play when Assistant Director Walter Skinner is in the Bureau Section of the table and the AFFILIATION of your opponent's X-File is known. Add the following modifiers to Skinner's skills: +1 BUREAUCRACY, +1 SUBTERFUGE. Skinner is now immune to the \"Skinner Adopts The Company Line\" card. Place two tokens on this card. Discard a token to negate one Event card. Place this card below Skinner to remind you of the increased skills.",
+    "gameEffect": "Play when Assistant Director Walter Skinner is in the Bureau Section of the table and the AFFILIATION of your opponent's X-File is known. Add the following modifiers to Skinner's skills: +1 BUREAUCRACY, +1 SUBTERFUGE. Skinner is now immune to the \"Skinner Adopts The Company Line\" card. Place two tokens on this card. Discard a token to negate one Event card. Place this card below Skinner to remind you of the increased skills.",
     "tags": [
       "Advanced",
       "Affect Agent",
@@ -5424,7 +5424,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "You may now play up to three Adversary cards simultaneously. All cards played using this card count as one Adversary card for game purposes (e.g., the \"Overwhelming Force\" card and all Adversaries can be negated as one card). The Adversaries all deal damage and take damage separately.",
+    "gameEffect": "You may now play up to three Adversary cards simultaneously. All cards played using this card count as one Adversary card for game purposes (e.g., the \"Overwhelming Force\" card and all Adversaries can be negated as one card). The Adversaries all deal damage and take damage separately.",
     "tags": [
       "Advanced",
       "Unique"
@@ -5446,7 +5446,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Force an opponent player to reveal any Adversary cards in his hand. If your opponent has one or more, discard one at random.",
+    "gameEffect": "Force an opponent player to reveal any Adversary cards in his hand. If your opponent has one or more, discard one at random.",
     "tags": [
       "Basic",
       "Discard",
@@ -5471,7 +5471,7 @@
       "Active",
       "Site"
     ],
-    "gameText": "If the Team makes an OBSERVATION 4+ skill check, they gain a +1 to the Site skill check. Discard this card after you've used the modifier.",
+    "gameEffect": "If the Team makes an OBSERVATION 4+ skill check, they gain a +1 to the Site skill check. Discard this card after you've used the modifier.",
     "tags": [
       "Basic"
     ],
@@ -5496,7 +5496,7 @@
       "Alien",
       "Adversary"
     ],
-    "gameText": "Negate one ALIEN Adversary. In addition, if the Team makes an ALIEN INVESTIGATION skill check 6+, they may ask either one AFFILIATION question or one MOTIVE question.",
+    "gameEffect": "Negate one ALIEN Adversary. In addition, if the Team makes an ALIEN INVESTIGATION skill check 6+, they may ask either one AFFILIATION question or one MOTIVE question.",
     "tags": [
       "Basic",
       "Unique"
@@ -5518,7 +5518,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "If an Abduction card is played on a Team of Agents that includes Scully, Scully must be the Agent abducted instead. When Agent Scully returns to play she has the following modifiers added to her skills: +1 ALIEN INVESTIGATION, +1 OCCULT INVESTIGATION, +1 OBSERVATION, Keyword BELIEVER. Place this card below Scully to remind you of the increased skills. Place two tokens on this card. Discard a token to search through your Bureau deck and add any Healing card to your hand. Show it to your opponent and shuffle your deck.",
+    "gameEffect": "If an Abduction card is played on a Team of Agents that includes Scully, Scully must be the Agent abducted instead. When Agent Scully returns to play she has the following modifiers added to her skills: +1 ALIEN INVESTIGATION, +1 OCCULT INVESTIGATION, +1 OBSERVATION, Keyword BELIEVER. Place this card below Scully to remind you of the increased skills. Place two tokens on this card. Discard a token to search through your Bureau deck and add any Healing card to your hand. Show it to your opponent and shuffle your deck.",
     "tags": [
       "Advanced",
       "Affect Agent",
@@ -5541,7 +5541,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on any Team in the Field. If the Team makes an OCCULT INVESTIGATION 4+ skill check, they may take 2 [CP] from their opponent's Conspiracy Pool and add them to their Resource Pool.",
+    "gameEffect": "Play on any Team in the Field. If the Team makes an OCCULT INVESTIGATION 4+ skill check, they may take 2 [CP] from their opponent's Conspiracy Pool and add them to their Resource Pool.",
     "tags": [
       "Advanced"
     ],
@@ -5563,7 +5563,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "If your opponent includes Agent Willis in any skill check in the Field, Agent Willis is instantly killed and removed from the game.",
+    "gameEffect": "If your opponent includes Agent Willis in any skill check in the Field, Agent Willis is instantly killed and removed from the game.",
     "tags": [
       "Advanced",
       "Unique"
@@ -5586,7 +5586,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play whenever Assistant Director Walter Skinner is involved in a skill check. Skinner must go back to the Bureau (if he is not already there) and may not contribute his skills to any skill check this turn.",
+    "gameEffect": "Play whenever Assistant Director Walter Skinner is involved in a skill check. Skinner must go back to the Bureau (if he is not already there) and may not contribute his skills to any skill check this turn.",
     "tags": [
       "Affect Agent",
       "Basic"
@@ -5608,7 +5608,7 @@
       "Active",
       "Witness"
     ],
-    "gameText": "Play on any Witness with a skill modifier to permanently add the Keywords EVENT and RESOURCE to the Witness. Thus, the Witness acts as an EVENT, RESOURCE card and remains in play. Place this card below the Witness to remind you of the effect.",
+    "gameEffect": "Play on any Witness with a skill modifier to permanently add the Keywords EVENT and RESOURCE to the Witness. Thus, the Witness acts as an EVENT, RESOURCE card and remains in play. Place this card below the Witness to remind you of the effect.",
     "tags": [
       "Basic",
       "Modify Witness"
@@ -5633,7 +5633,7 @@
       "Site",
       "Alien Investigation"
     ],
-    "gameText": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION skill as a prerequisite. Place this card in your Bureau. Discard this card to add 1 to an ALIEN INVESTIGATION skill check.",
+    "gameEffect": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION skill as a prerequisite. Place this card in your Bureau. Discard this card to add 1 to an ALIEN INVESTIGATION skill check.",
     "tags": [
       "Basic"
     ],
@@ -5654,7 +5654,7 @@
       "Active",
       "Bluff"
     ],
-    "gameText": "Force one Bluff card attached to a Site to be discarded. If there are several Bluffs at the Site, the Bluff to be discarded must be chosen randomly.",
+    "gameEffect": "Force one Bluff card attached to a Site to be discarded. If there are several Bluffs at the Site, the Bluff to be discarded must be chosen randomly.",
     "tags": [
       "Advanced",
       "Discard"
@@ -5676,7 +5676,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Bureau. If the Team makes a BUREAUCRACY 4+ skill check then you may search through your Bureau Deck and draw one Equipment card to add to your hand. Show the card to your opponents and then shuffle your deck.",
+    "gameEffect": "Play on a Team in the Bureau. If the Team makes a BUREAUCRACY 4+ skill check then you may search through your Bureau Deck and draw one Equipment card to add to your hand. Show the card to your opponents and then shuffle your deck.",
     "tags": [
       "Basic"
     ],
@@ -5697,7 +5697,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a CRIMINAL INVESTIGATION 5+ skill check or they will be unable to add their skills to a Site skill check this turn.",
+    "gameEffect": "Force an opponent Team to make a CRIMINAL INVESTIGATION 5+ skill check or they will be unable to add their skills to a Site skill check this turn.",
     "tags": [
       "Basic",
       "Force Skill Check"
@@ -5720,7 +5720,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a SCIENCES 4+ skill check or the current player's turn ends immediately",
+    "gameEffect": "Force an opponent Team to make a SCIENCES 4+ skill check or the current player's turn ends immediately",
     "tags": [
       "Basic",
       "Force Skill Check"
@@ -5742,7 +5742,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card on any Witness that has just been played. The owning player must shuffle the Witness back into their Bureau deck immediately and does not benefit from the Witness.",
+    "gameEffect": "Play this card on any Witness that has just been played. The owning player must shuffle the Witness back into their Bureau deck immediately and does not benefit from the Witness.",
     "tags": [
       "Basic"
     ],
@@ -5763,7 +5763,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team that fails a Site skill check when combat was involved. If the Team makes a CRIMINAL INVESTIGATION 3+ skill check, place the Site in the Bureau. At the start of your Briefing Phase, you may place the Site into your hand.",
+    "gameEffect": "Play on a Team that fails a Site skill check when combat was involved. If the Team makes a CRIMINAL INVESTIGATION 3+ skill check, place the Site in the Bureau. At the start of your Briefing Phase, you may place the Site into your hand.",
     "tags": [
       "Basic"
     ],
@@ -5785,7 +5785,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Bureau. If the Team makes a BUREAUCRACY 4+ skill check then designate a Team in the Field. As long as no new members are added to that Team, GOVERNMENT Adversaries may not attack that Team. This card remains in effect until a new Agent is added to the Team.",
+    "gameEffect": "Play on a Team in the Bureau. If the Team makes a BUREAUCRACY 4+ skill check then designate a Team in the Field. As long as no new members are added to that Team, GOVERNMENT Adversaries may not attack that Team. This card remains in effect until a new Agent is added to the Team.",
     "tags": [
       "Basic"
     ],
@@ -5806,7 +5806,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on an opponent Team in any Section. For the rest of the turn, that Team is considered to have a single Characteristic SITE Keyword (i.e., RESULT SITE). You may choose any one Characteristic for the Keyword.",
+    "gameEffect": "Play on an opponent Team in any Section. For the rest of the turn, that Team is considered to have a single Characteristic SITE Keyword (i.e., RESULT SITE). You may choose any one Characteristic for the Keyword.",
     "tags": [
       "Basic"
     ],
@@ -5827,7 +5827,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team to make a COMPUTER 4+ skill check or they will be unable to complete the skill check.",
+    "gameEffect": "Force an opponent Team to make a COMPUTER 4+ skill check or they will be unable to complete the skill check.",
     "tags": [
       "Basic",
       "Force Skill Check"
@@ -5849,7 +5849,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "The Team must make a BUREAUCRACY 4+ skill check. If successful, you may now have up to ten cards in hand at the end of your turn. This condition stays in effect until you are forced to discard this card. Discard this card if one of your Agents is moved from or to the Bureau Section of the table for any reason.",
+    "gameEffect": "The Team must make a BUREAUCRACY 4+ skill check. If successful, you may now have up to ten cards in hand at the end of your turn. This condition stays in effect until you are forced to discard this card. Discard this card if one of your Agents is moved from or to the Bureau Section of the table for any reason.",
     "tags": [
       "Advanced"
     ],
@@ -5872,7 +5872,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Negates any one card played against your Team during a BUREAUCRACY or ALIEN INVESTIGATION skill check.",
+    "gameEffect": "Negates any one card played against your Team during a BUREAUCRACY or ALIEN INVESTIGATION skill check.",
     "tags": [
       "Basic",
       "Unique"
@@ -5895,7 +5895,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on Agent Krycek when he is in the Field and is involved in a skill check. Krycek engages one of the Team's Agents (opponent's choice) in Combat. No other Agents may contribute skills to the combat. If Krycek sends the chosen Agent to the Hospital within two rounds of combat, then Krycek stays on the team, otherwise he is removed from play. While Krycek is affected by this card he is considered a GOVERNMENT, MASTER Adversary. Cards that would cause Krycek to be discard simply negate the combat.",
+    "gameEffect": "Play on Agent Krycek when he is in the Field and is involved in a skill check. Krycek engages one of the Team's Agents (opponent's choice) in Combat. No other Agents may contribute skills to the combat. If Krycek sends the chosen Agent to the Hospital within two rounds of combat, then Krycek stays on the team, otherwise he is removed from play. While Krycek is affected by this card he is considered a GOVERNMENT, MASTER Adversary. Cards that would cause Krycek to be discard simply negate the combat.",
     "tags": [
       "Advanced",
       "Affect Agent"
@@ -5918,7 +5918,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on any Team. If the Team makes a SUBTERFUGE 4+ skill check, it may use this card to immediately negate any one card that requires them to make a non-combat skill check.",
+    "gameEffect": "Play on any Team. If the Team makes a SUBTERFUGE 4+ skill check, it may use this card to immediately negate any one card that requires them to make a non-combat skill check.",
     "tags": [
       "Basic"
     ],
@@ -5941,7 +5941,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Force an opponent Team to make a SUBTERFUGE 4+ skill check. If they are not successful, they automatically fail the skill check for the Site.",
+    "gameEffect": "Force an opponent Team to make a SUBTERFUGE 4+ skill check. If they are not successful, they automatically fail the skill check for the Site.",
     "tags": [
       "Basic",
       "Force Skill Check"
@@ -5963,7 +5963,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force one opponent to discard one piece of equipment (your choice) that does not specifically modify LONG or CLOSE RANGE COMBAT.",
+    "gameEffect": "Force one opponent to discard one piece of equipment (your choice) that does not specifically modify LONG or CLOSE RANGE COMBAT.",
     "tags": [
       "Basic",
       "Discard"
@@ -5987,7 +5987,7 @@
       "Conspiracy",
       "Criminal Investigation"
     ],
-    "gameText": "Negate one Keyword CRIMINAL INVESTIGATION card.",
+    "gameEffect": "Negate one Keyword CRIMINAL INVESTIGATION card.",
     "tags": [
       "Basic"
     ],
@@ -6009,7 +6009,7 @@
       "Active",
       "Site"
     ],
-    "gameText": "Play \"The Lone Gunmen\" card on a Site. While played on a Site, The Lone Gunmen are considered a Keyword WITNESS card. A Site with The Lone Gunmen played on it stays in the Field until they are removed. During your Briefing Phase, pay 1 RP to place a token on the Site. When a Team investigates the Site, each token adds 1 to the skill check. Discard The Lone Gunmen after the skill check is resolved.",
+    "gameEffect": "Play \"The Lone Gunmen\" card on a Site. While played on a Site, The Lone Gunmen are considered a Keyword WITNESS card. A Site with The Lone Gunmen played on it stays in the Field until they are removed. During your Briefing Phase, pay 1 RP to place a token on the Site. When a Team investigates the Site, each token adds 1 to the skill check. Discard The Lone Gunmen after the skill check is resolved.",
     "tags": [
       "Advanced",
       "Unique"
@@ -6033,7 +6033,7 @@
       "Active",
       "Site"
     ],
-    "gameText": "Play on a Team about to investigate a Site with ALIEN INVESTIGATION as a prerequisite. Discard all cards assigned as Bluff cards at that Site. X = the number of Bluffs at the Site.",
+    "gameEffect": "Play on a Team about to investigate a Site with ALIEN INVESTIGATION as a prerequisite. Discard all cards assigned as Bluff cards at that Site. X = the number of Bluffs at the Site.",
     "tags": [
       "Advanced"
     ],
@@ -6055,7 +6055,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "If the Team makes an EVIDENCE COLLECTION 4+ skill check, they gain a +1 to a Site skill check. Discard this card after you've used the modifier.",
+    "gameEffect": "If the Team makes an EVIDENCE COLLECTION 4+ skill check, they gain a +1 to a Site skill check. Discard this card after you've used the modifier.",
     "tags": [
       "Basic"
     ],
@@ -6077,7 +6077,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "The Witness's modifier is now changed to a negative (e.g., a +1 becomes a -1). If the Witness has an ability separate from the modifier, this card cancels that ability for this turn.",
+    "gameEffect": "The Witness's modifier is now changed to a negative (e.g., a +1 becomes a -1). If the Witness has an ability separate from the modifier, this card cancels that ability for this turn.",
     "tags": [
       "Basic",
       "Modify Witness"
@@ -6098,7 +6098,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card after an Adversary sends any Agent to the Hospital or removes an Agent from the game. Place five tokens in your [CP] pool.",
+    "gameEffect": "Play this card after an Adversary sends any Agent to the Hospital or removes an Agent from the game. Place five tokens in your [CP] pool.",
     "tags": [
       "Advanced",
       "Resource"
@@ -6119,7 +6119,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "For the remainder of this turn, the Bureau is considered to have a single Characteristic SITE Keyword. You may choose any one Characteristic for the Keyword (i.e., RESULT SITE).",
+    "gameEffect": "For the remainder of this turn, the Bureau is considered to have a single Characteristic SITE Keyword. You may choose any one Characteristic for the Keyword (i.e., RESULT SITE).",
     "tags": [
       "Basic"
     ],
@@ -6141,7 +6141,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play when you have just guessed incorrectly the identity of an X-File. Select a Team in your Bureau. If that Team successfully completes a BUREAUCRACY 4+ skill check, your opponent does not get to ask you a penalty question.",
+    "gameEffect": "Play when you have just guessed incorrectly the identity of an X-File. Select a Team in your Bureau. If that Team successfully completes a BUREAUCRACY 4+ skill check, your opponent does not get to ask you a penalty question.",
     "tags": [
       "Basic"
     ],
@@ -6161,7 +6161,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card after a Team of Agents damages an Adversary in combat by dealing enough wounds to kill it. Place five tokens in the [RP] pool.",
+    "gameEffect": "Play this card after a Team of Agents damages an Adversary in combat by dealing enough wounds to kill it. Place five tokens in the [RP] pool.",
     "tags": [
       "Advanced",
       "Resource"
@@ -6183,7 +6183,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team to make a COMPUTER 4+ skill check. If successful, you may select any card in your collection and add it to your hand. The card need not be part of your Bureau deck. Nor may it exceed the limit of two cards per deck.",
+    "gameEffect": "Play on a Team to make a COMPUTER 4+ skill check. If successful, you may select any card in your collection and add it to your hand. The card need not be part of your Bureau deck. Nor may it exceed the limit of two cards per deck.",
     "tags": [
       "Basic",
       "Unique"
@@ -6206,7 +6206,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "If the Team makes a BUREAUCRACY 4+ skill check, you may borrow any one of your opponent's Agents. It may not be an Agent you already control. Add the Agent to the Team for the remainder of the turn. Afterward, the Agent returns to the original owner's control. The Agent must be returned to the Team it belonged to or sent to the Hospital if the Agent was reduced to 0 HEALTH during a combat.",
+    "gameEffect": "If the Team makes a BUREAUCRACY 4+ skill check, you may borrow any one of your opponent's Agents. It may not be an Agent you already control. Add the Agent to the Team for the remainder of the turn. Afterward, the Agent returns to the original owner's control. The Agent must be returned to the Team it belonged to or sent to the Hospital if the Agent was reduced to 0 HEALTH during a combat.",
     "tags": [
       "Basic"
     ],
@@ -6228,7 +6228,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn the Agent may be deployed as normal and in addition has a +1 in one of the following skills: OBSERVATION, BEHAVIORAL or SUBTERFUGE. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn the Agent may be deployed as normal and in addition has a +1 in one of the following skills: OBSERVATION, BEHAVIORAL or SUBTERFUGE. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Basic"
     ],
@@ -6251,7 +6251,7 @@
       "Conspiracy",
       "Multiplayer"
     ],
-    "gameText": "Force an opponent Team to make a COMPUTER 4+ skill check. If they fail, that opponent must tell you the next answer that they obtain regarding the X-File of your choice. The answer need not be a \"yes\" answer. Discard this card after you've obtained the answer.",
+    "gameEffect": "Force an opponent Team to make a COMPUTER 4+ skill check. If they fail, that opponent must tell you the next answer that they obtain regarding the X-File of your choice. The answer need not be a \"yes\" answer. Discard this card after you've obtained the answer.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -6273,7 +6273,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Add five tokens to your [RP] pool.",
+    "gameEffect": "Add five tokens to your [RP] pool.",
     "tags": [
       "Advanced",
       "Resource"
@@ -6294,7 +6294,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play to prevent the opposing player from drawing cards after the player has paid, but before the cards are drawn. X = The number of cards that the opposing player has paid to draw.",
+    "gameEffect": "Play to prevent the opposing player from drawing cards after the player has paid, but before the cards are drawn. X = The number of cards that the opposing player has paid to draw.",
     "tags": [
       "Advanced"
     ],
@@ -6315,7 +6315,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card after your opponent has asked a Characteristic Question regarding your X-File. After you answer the question, your opponent must answer the question as well. Your opponent may still guess your X-File identity if normally allowed to do so, but you may not.",
+    "gameEffect": "Play this card after your opponent has asked a Characteristic Question regarding your X-File. After you answer the question, your opponent must answer the question as well. Your opponent may still guess your X-File identity if normally allowed to do so, but you may not.",
     "tags": [
       "Basic",
       "Unique"
@@ -6338,7 +6338,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team that has just completed a combat. If the Team makes a CRIMINAL INVESTIGATION 5+ skill check, then they may ask whether or not the Adversary has a Keyword that is the same as the AFFILIATION of the controller's X-File.",
+    "gameEffect": "Play on a Team that has just completed a combat. If the Team makes a CRIMINAL INVESTIGATION 5+ skill check, then they may ask whether or not the Adversary has a Keyword that is the same as the AFFILIATION of the controller's X-File.",
     "tags": [
       "Advanced"
     ],
@@ -6359,7 +6359,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Select one card from your Discard Pile and place it in your hand.",
+    "gameEffect": "Select one card from your Discard Pile and place it in your hand.",
     "tags": [
       "Basic",
       "Search"
@@ -6382,7 +6382,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Field during the Deployment Phase. If the Team makes a CRIMINAL INVESTIGATION 5+ skill check, they may investigate two Sites in the same state this turn.",
+    "gameEffect": "Play on a Team in the Field during the Deployment Phase. If the Team makes a CRIMINAL INVESTIGATION 5+ skill check, they may investigate two Sites in the same state this turn.",
     "tags": [
       "Advanced"
     ],
@@ -6404,7 +6404,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: COMPUTER, MEDICAL, or SCIENCES. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: COMPUTER, MEDICAL, or SCIENCES. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Basic"
     ],
@@ -6425,7 +6425,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card next to the X-File you have chosen. Place ten tokens on this card. Beginning on your opponent's next turn you may take up to two tokens from this card and place them in your [CP] pool. The tokens become [CP] tokens. When all counters have been removed, discard this card.",
+    "gameEffect": "Play this card next to the X-File you have chosen. Place ten tokens on this card. Beginning on your opponent's next turn you may take up to two tokens from this card and place them in your [CP] pool. The tokens become [CP] tokens. When all counters have been removed, discard this card.",
     "tags": [
       "Advanced",
       "Resource"
@@ -6449,7 +6449,7 @@
       "Conspiracy",
       "Event"
     ],
-    "gameText": "Negate any one Keyword EVENT card.",
+    "gameEffect": "Negate any one Keyword EVENT card.",
     "tags": [
       "Basic"
     ],
@@ -6470,7 +6470,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Take any Witness from your opponent's Discard Pile and use it for one skill check immediately at no cost.",
+    "gameEffect": "Take any Witness from your opponent's Discard Pile and use it for one skill check immediately at no cost.",
     "tags": [
       "Basic"
     ],
@@ -6491,7 +6491,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play on a Team in the Field at the start of combat. Force the opponent Team to make an OBSERVATION 4+ skill check. If they fail, the following combat will be fought between the Adversary and one Agent of your choice. No other Agents may participate in the combat.",
+    "gameEffect": "Play on a Team in the Field at the start of combat. Force the opponent Team to make an OBSERVATION 4+ skill check. If they fail, the following combat will be fought between the Adversary and one Agent of your choice. No other Agents may participate in the combat.",
     "tags": [
       "Advanced",
       "Force Skill Check"
@@ -6514,7 +6514,7 @@
       "Active",
       "Adversary"
     ],
-    "gameText": "Negate any one Keyword ADVERSARY card.",
+    "gameEffect": "Negate any one Keyword ADVERSARY card.",
     "tags": [
       "Basic"
     ],
@@ -6536,7 +6536,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play to permanently add any one Agent from your hand to a Team. The normal rules for selecting an Agent still apply. In addition, the Agent may not be one that was removed from the game prior to playing this card. X = Agent's Cost.",
+    "gameEffect": "Play to permanently add any one Agent from your hand to a Team. The normal rules for selecting an Agent still apply. In addition, the Agent may not be one that was removed from the game prior to playing this card. X = Agent's Cost.",
     "tags": [
       "Advanced",
       "Unique"
@@ -6559,7 +6559,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "Force an opponent Team to make an OCCULT INVESTIGATION 4+ skill check. If they fail, negate all Witnesses that are modifying the Team's skill check.",
+    "gameEffect": "Force an opponent Team to make an OCCULT INVESTIGATION 4+ skill check. If they fail, negate all Witnesses that are modifying the Team's skill check.",
     "tags": [
       "Basic",
       "Force Skill Check",
@@ -6583,7 +6583,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: ALIEN INVESTIGATION, OCCULT INVESTIGATION, or SCIENCES. This card may not be played on Agents Mulder or Scully. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: ALIEN INVESTIGATION, OCCULT INVESTIGATION, or SCIENCES. This card may not be played on Agents Mulder or Scully. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Basic"
     ],
@@ -6604,7 +6604,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card in the Bureau. Place ten tokens on this card. During your Briefing Phase you may take up to two tokens from this card and place them in your [RP] pool. The tokens become [RP] tokens. When all counters have been removed, discard this card.",
+    "gameEffect": "Play this card in the Bureau. Place ten tokens on this card. During your Briefing Phase you may take up to two tokens from this card and place them in your [RP] pool. The tokens become [RP] tokens. When all counters have been removed, discard this card.",
     "tags": [
       "Advanced",
       "Resource"
@@ -6627,7 +6627,7 @@
       "Active",
       "Move"
     ],
-    "gameText": "Play when an Agent is forced to return to the Bureau. Prior to moving, the Team may make a CRIMINAL INVESTIGATION 5+ skill check. If successful, the Agent does not have to return to the Bureau.",
+    "gameEffect": "Play when an Agent is forced to return to the Bureau. Prior to moving, the Team may make a CRIMINAL INVESTIGATION 5+ skill check. If successful, the Agent does not have to return to the Bureau.",
     "tags": [
       "Basic"
     ],
@@ -6648,7 +6648,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force one opponent to discard all cards in their hand that contain the Keyword ALIEN INVESTIGATION or BUREAUCRACY.",
+    "gameEffect": "Force one opponent to discard all cards in their hand that contain the Keyword ALIEN INVESTIGATION or BUREAUCRACY.",
     "tags": [
       "Basic",
       "Discard"
@@ -6671,7 +6671,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "You may move one of your Agents to any Section immediately. This card may not be played once an Adversary has forced combat until after the combat is resolved. The Agent may join any Team that occupies the new Section.",
+    "gameEffect": "You may move one of your Agents to any Section immediately. This card may not be played once an Adversary has forced combat until after the combat is resolved. The Agent may join any Team that occupies the new Section.",
     "tags": [
       "Basic"
     ],
@@ -6694,7 +6694,7 @@
       "Active",
       "Adversary"
     ],
-    "gameText": "Play when an Adversary is allowed to enter combat with a single Agent. If the Team to which the Agent is attached makes a SUBTERFUGE 4+ skill check, the Adversary is negated.",
+    "gameEffect": "Play when an Adversary is allowed to enter combat with a single Agent. If the Team to which the Agent is attached makes a SUBTERFUGE 4+ skill check, the Adversary is negated.",
     "tags": [
       "Advanced"
     ],
@@ -6715,7 +6715,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Take a Witness from your Discard Pile and place it in your hand. In addition, if the Team makes a MEDICAL 4+ skill check, the Witness's modifier is doubled if played this turn.",
+    "gameEffect": "Take a Witness from your Discard Pile and place it in your hand. In addition, if the Team makes a MEDICAL 4+ skill check, the Witness's modifier is doubled if played this turn.",
     "tags": [
       "Basic",
       "Modify Witness"
@@ -6738,7 +6738,7 @@
       "Active",
       "Adversary"
     ],
-    "gameText": "Negate one non-PHENOMENA Adversary.",
+    "gameEffect": "Negate one non-PHENOMENA Adversary.",
     "tags": [
       "Basic"
     ],
@@ -6760,7 +6760,7 @@
       "Active",
       "Event"
     ],
-    "gameText": "This card will negate one Event card played on your Team.",
+    "gameEffect": "This card will negate one Event card played on your Team.",
     "tags": [
       "Basic",
       "Negate"
@@ -6783,7 +6783,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "If your opponent includes Agent Purdue in any skill check in the Field, Agent Purdue is instantly killed and removed from the game.",
+    "gameEffect": "If your opponent includes Agent Purdue in any skill check in the Field, Agent Purdue is instantly killed and removed from the game.",
     "tags": [
       "Advanced",
       "Unique"
@@ -6806,7 +6806,7 @@
       "Conspiracy",
       "Move"
     ],
-    "gameText": "Negate one card with the Keyword MOVE.",
+    "gameEffect": "Negate one card with the Keyword MOVE.",
     "tags": [
       "Basic"
     ],
@@ -6827,7 +6827,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: CRIMINAL INVESTIGATION or EVIDENCE COLLECTION. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: CRIMINAL INVESTIGATION or EVIDENCE COLLECTION. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Basic"
     ],
@@ -6849,7 +6849,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Field that has just had an Agent removed from the game this turn. Make an OCCULT INVESTIGATION skill check of 4+. If successful, the Agent remains in play.",
+    "gameEffect": "Play on a Team in the Field that has just had an Agent removed from the game this turn. Make an OCCULT INVESTIGATION skill check of 4+. If successful, the Agent remains in play.",
     "tags": [
       "Advanced"
     ],
@@ -6871,7 +6871,7 @@
       "Active",
       "Agent"
     ],
-    "gameText": "Play when an Agent is forced to go to the Hospital. He must still go to the Hospital by the end of this turn but he may add his skills to one skill check before going.",
+    "gameEffect": "Play when an Agent is forced to go to the Hospital. He must still go to the Hospital by the end of this turn but he may add his skills to one skill check before going.",
     "tags": [
       "Basic"
     ],
@@ -6893,7 +6893,7 @@
       "Active",
       "Briefing"
     ],
-    "gameText": "Play during the Briefing Phase. One Team in the Bureau may make a BUREAUCRACY 4+ skill check. If successful, choose one Agent. The Agent now has a RES number equal to the Agent's CRIMINAL INVESTIGATION skill during the next Briefing Phase. Place this card below the Agent to remind you of the increased skill.",
+    "gameEffect": "Play during the Briefing Phase. One Team in the Bureau may make a BUREAUCRACY 4+ skill check. If successful, choose one Agent. The Agent now has a RES number equal to the Agent's CRIMINAL INVESTIGATION skill during the next Briefing Phase. Place this card below the Agent to remind you of the increased skill.",
     "tags": [
       "Advanced"
     ],
@@ -6915,7 +6915,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's COMPUTER skill.",
+    "gameEffect": "Adds 2 to the Agent's COMPUTER skill.",
     "tags": [
       "Basic"
     ],
@@ -6937,7 +6937,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Agents equipped with a Gas Chromatograph have access to the field office crime lab. Adds 1 to the Agent's SCIENCES skill.",
+    "gameEffect": "Agents equipped with a Gas Chromatograph have access to the field office crime lab. Adds 1 to the Agent's SCIENCES skill.",
     "tags": [
       "Basic"
     ],
@@ -6959,7 +6959,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's SUBTERFUGE skill.",
+    "gameEffect": "Adds 1 to the Agent's SUBTERFUGE skill.",
     "tags": [
       "Basic"
     ],
@@ -6980,7 +6980,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's OBSERVATION skill.",
+    "gameEffect": "Adds 1 to the Agent's OBSERVATION skill.",
     "tags": [
       "Basic"
     ],
@@ -7002,7 +7002,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "An agent with MEDICAL skill may use the Medi-Kit to heal one wound on any agent in the Team once per turn. The may prevent an Agent from going to the Hospital.",
+    "gameEffect": "An agent with MEDICAL skill may use the Medi-Kit to heal one wound on any agent in the Team once per turn. The may prevent an Agent from going to the Hospital.",
     "tags": [
       "Advanced"
     ],
@@ -7024,7 +7024,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "The Kevlar Vest will absorb three points of damage. Place three tokens on this card. Discard a token to prevent one point of damage. Discard the Vest when all the tokens have been discarded. Excess damage is applied to the Agent as normal.",
+    "gameEffect": "The Kevlar Vest will absorb three points of damage. Place three tokens on this card. Discard a token to prevent one point of damage. Discard the Vest when all the tokens have been discarded. Excess damage is applied to the Agent as normal.",
     "tags": [
       "Advanced"
     ],
@@ -7046,7 +7046,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's LONG RANGE COMBAT skill.",
+    "gameEffect": "Adds 2 to the Agent's LONG RANGE COMBAT skill.",
     "tags": [
       "Advanced"
     ],
@@ -7068,7 +7068,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's OCCULT INVESTIGATION skill.",
+    "gameEffect": "Adds 1 to the Agent's OCCULT INVESTIGATION skill.",
     "tags": [
       "Basic"
     ],
@@ -7090,7 +7090,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's OBSERVATION skill.",
+    "gameEffect": "Adds 2 to the Agent's OBSERVATION skill.",
     "tags": [
       "Basic"
     ],
@@ -7112,7 +7112,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's CRIMINAL INVESTIGATION skill.",
+    "gameEffect": "Adds 1 to the Agent's CRIMINAL INVESTIGATION skill.",
     "tags": [
       "Basic"
     ],
@@ -7134,7 +7134,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Adds 1 to the Agent's CLOSE RANGE COMBAT skill.",
     "tags": [
       "Advanced"
     ],
@@ -7156,7 +7156,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's BUREAUCRACY skill. GOVERNMENT Adversaries may now attack the Agent's Team when investigating a Site, even when they would otherwise be barred from doing so.",
+    "gameEffect": "Adds 2 to the Agent's BUREAUCRACY skill. GOVERNMENT Adversaries may now attack the Agent's Team when investigating a Site, even when they would otherwise be barred from doing so.",
     "tags": [
       "Basic"
     ],
@@ -7178,7 +7178,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Adds 2 to the Agent's CLOSE RANGE COMBAT skill.",
     "tags": [
       "Advanced"
     ],
@@ -7200,7 +7200,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's ALIEN INVESTIGATION skill.",
+    "gameEffect": "Adds 1 to the Agent's ALIEN INVESTIGATION skill.",
     "tags": [
       "Basic"
     ],
@@ -7222,7 +7222,7 @@
     "activators": [
       "Hospital"
     ],
-    "gameText": "This piece of Equipment does not need to be attached to any Agent. Place three tokens on the Hospital Crash Cart. Discard one token to heal one point of damage to an Agent in the Hospital. Discard when all three tokens have been expended.",
+    "gameEffect": "This piece of Equipment does not need to be attached to any Agent. Place three tokens on the Hospital Crash Cart. Discard one token to heal one point of damage to an Agent in the Hospital. Discard when all three tokens have been expended.",
     "tags": [
       "Advanced"
     ],
@@ -7243,7 +7243,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "The Agent may add his skills to a skill check that is occurring in another Section of the table. The Agent's skill is reduced by one (i.e.; Skill: 3 becomes Skill: 2). LONG RANGE COMBAT and CLOSE RANGE COMBAT may not be added.",
+    "gameEffect": "The Agent may add his skills to a skill check that is occurring in another Section of the table. The Agent's skill is reduced by one (i.e.; Skill: 3 becomes Skill: 2). LONG RANGE COMBAT and CLOSE RANGE COMBAT may not be added.",
     "tags": [
       "Basic"
     ],
@@ -7265,7 +7265,7 @@
       "Field",
       "Believer"
     ],
-    "gameText": "OCCULT Adversaries may not assign damage to this Agent unless there are no other eligible targets. If the Agent is the only eligible target then the damage from OCCULT Adversaries is halved.",
+    "gameEffect": "OCCULT Adversaries may not assign damage to this Agent unless there are no other eligible targets. If the Agent is the only eligible target then the damage from OCCULT Adversaries is halved.",
     "tags": [
       "Advanced"
     ],
@@ -7287,7 +7287,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Agents equipped with an Electron Emission Microscope have access to the field office crime lab. Adds 1 to the Agent's MEDICAL skill.",
+    "gameEffect": "Agents equipped with an Electron Emission Microscope have access to the field office crime lab. Adds 1 to the Agent's MEDICAL skill.",
     "tags": [
       "Basic"
     ],
@@ -7309,7 +7309,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 3 to the Agent's LONG RANGE COMBAT skill once per combat. Damage may be split if there are multiple opponents (your choice).",
+    "gameEffect": "Adds 3 to the Agent's LONG RANGE COMBAT skill once per combat. Damage may be split if there are multiple opponents (your choice).",
     "tags": [
       "Advanced",
       "Split Damage"
@@ -7332,7 +7332,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 2 to the Agent's LONG RANGE COMBAT skill. Damage may be split if there are multiple opponents (your choice).",
+    "gameEffect": "Adds 2 to the Agent's LONG RANGE COMBAT skill. Damage may be split if there are multiple opponents (your choice).",
     "tags": [
       "Advanced",
       "Split Damage"
@@ -7355,7 +7355,7 @@
       "Field",
       "Believer"
     ],
-    "gameText": "Subtract one point from each damaging hit caused by an OCCULT CREATURE. In addition, OCCULT Adversaries may not play combat cards on Agents equipped with a Mojo Bag.",
+    "gameEffect": "Subtract one point from each damaging hit caused by an OCCULT CREATURE. In addition, OCCULT Adversaries may not play combat cards on Agents equipped with a Mojo Bag.",
     "tags": [
       "Advanced"
     ],
@@ -7377,7 +7377,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's BEHAVIORAL skill.",
+    "gameEffect": "Adds 1 to the Agent's BEHAVIORAL skill.",
     "tags": [
       "Basic"
     ],
@@ -7406,7 +7406,7 @@
       "Conspiracy",
       "Affiliation Site"
     ],
-    "gameText": null,
+    "gameEffect": null,
     "tags": [
       "Basic"
     ],
@@ -7434,7 +7434,7 @@
       "Conspiracy",
       "Alien Investigation"
     ],
-    "gameText": "Your opponent may not spread out Agents until this card is resolved. Hold this card twelve inches up and twelve inches away from the opponent's Team. Flip the card so that it spins through the air. All of the Agents in the Investigating Team that are being touched by the Alien Harvester are abducted! Discard any Equipment attached to the abducted Agents. The Agents are placed ten cards down, face up, in the Bureau deck. When the Agent cards reach the top of the deck, the Agents are immediately moved to the Hospital (though they are not damaged).",
+    "gameEffect": "Your opponent may not spread out Agents until this card is resolved. Hold this card twelve inches up and twelve inches away from the opponent's Team. Flip the card so that it spins through the air. All of the Agents in the Investigating Team that are being touched by the Alien Harvester are abducted! Discard any Equipment attached to the abducted Agents. The Agents are placed ten cards down, face up, in the Bureau deck. When the Agent cards reach the top of the deck, the Agents are immediately moved to the Hospital (though they are not damaged).",
     "tags": [
       "Basic",
       "Non-combative",
@@ -7464,7 +7464,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "The LONG RANGE COMBAT round is skipped.",
     "tags": [
       "Basic",
       "Skip Long Range"
@@ -7494,7 +7494,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "The chosen Agent is the only one who may participate in the Combat. The Crew-Cut Man may use MARTIAL ARTS and SUBTERFUGE cards.",
+    "gameEffect": "The chosen Agent is the only one who may participate in the Combat. The Crew-Cut Man may use MARTIAL ARTS and SUBTERFUGE cards.",
     "tags": [
       "Basic"
     ],
@@ -7523,7 +7523,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "Each source of damage affecting the Alien Bounty Hunter in CLOSE RANGE COMBAT also causes 1 damage to each opposing Team member involved in the Combat (because he has poisonous blood). The Hunter may use MARTIAL ARTS and SUBTERFUGE Combat cards. If killed in Combat, place the Hunter back in your deck and shuffle.",
+    "gameEffect": "Each source of damage affecting the Alien Bounty Hunter in CLOSE RANGE COMBAT also causes 1 damage to each opposing Team member involved in the Combat (because he has poisonous blood). The Hunter may use MARTIAL ARTS and SUBTERFUGE Combat cards. If killed in Combat, place the Hunter back in your deck and shuffle.",
     "tags": [
       "Basic"
     ],
@@ -7552,7 +7552,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "Place five tokens on any Agent that loses HEALTH as a result of this creature's attack. Remove a token in each of that Agent's Briefing Phases. At the end of the turn in which the last token is removed, the Agent is removed from the game. This card can be negated by the Team containing the afflicted Agent making a MEDICAL 3+ skill check or by playing a HEALING card on the afflicted player prior to the Agent being removed.",
+    "gameEffect": "Place five tokens on any Agent that loses HEALTH as a result of this creature's attack. Remove a token in each of that Agent's Briefing Phases. At the end of the turn in which the last token is removed, the Agent is removed from the game. This card can be negated by the Team containing the afflicted Agent making a MEDICAL 3+ skill check or by playing a HEALING card on the afflicted player prior to the Agent being removed.",
     "tags": [
       "Basic"
     ],
@@ -7581,7 +7581,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "LONG RANGE COMBAT attacks cause only half damage (round up) to the Zombie.",
+    "gameEffect": "LONG RANGE COMBAT attacks cause only half damage (round up) to the Zombie.",
     "tags": [
       "Basic",
       "Reduce Damage"
@@ -7610,7 +7610,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "Damage caused by this creature may be split among all opponents (Directed Player's choice).",
+    "gameEffect": "Damage caused by this creature may be split among all opponents (Directed Player's choice).",
     "tags": [
       "Basic",
       "Split Damage"
@@ -7639,7 +7639,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "The Creature has LONG RANGE COMBAT and CLOSE RANGE COMBAT equal to the highest Combat rating on the opposing team (including modifiers) +1. The Sandman may use SUBTERFUGE Combat cards.",
+    "gameEffect": "The Creature has LONG RANGE COMBAT and CLOSE RANGE COMBAT equal to the highest Combat rating on the opposing team (including modifiers) +1. The Sandman may use SUBTERFUGE Combat cards.",
     "tags": [
       "Basic"
     ],
@@ -7667,7 +7667,7 @@
       "Conspiracy",
       "Alien Investigation"
     ],
-    "gameText": "Pick one Agent in the Team. That Agent is placed ten cards down, face up, in the owning player's Bureau deck. Any equipment that Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate Combat.",
+    "gameEffect": "Pick one Agent in the Team. That Agent is placed ten cards down, face up, in the owning player's Bureau deck. Any equipment that Agent had is discarded. When the Agent's card reaches the top of the deck, the Agent is immediately moved to the Hospital (undamaged). This card does not initiate Combat.",
     "tags": [
       "Basic",
       "Non-combative"
@@ -7696,7 +7696,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "The LONG RANGE COMBAT round is skipped.",
     "tags": [
       "Basic",
       "Skip Long Range"
@@ -7725,7 +7725,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "Damage from LONG RANGE COMBAT may be split among all opponents (Directed Player's choice).",
+    "gameEffect": "Damage from LONG RANGE COMBAT may be split among all opponents (Directed Player's choice).",
     "tags": [
       "Basic",
       "Split Damage"
@@ -7755,7 +7755,7 @@
       "Conspiracy",
       "Affiliation Site"
     ],
-    "gameText": "The Mechanic may use MARTIAL ARTS and SUBTERFUGE Combat cards.",
+    "gameEffect": "The Mechanic may use MARTIAL ARTS and SUBTERFUGE Combat cards.",
     "tags": [
       "Basic"
     ],
@@ -7783,7 +7783,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "Unless a HEALING card is played immediately and the card results in one point being healed, move the Agent to the Hospital. The Agent must stay in the Hospital for the next turn.",
+    "gameEffect": "Unless a HEALING card is played immediately and the card results in one point being healed, move the Agent to the Hospital. The Agent must stay in the Hospital for the next turn.",
     "tags": [
       "Basic",
       "Non-combative"
@@ -7812,7 +7812,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameText": "Regardless of how much damage is done to this creature in the LONG RANGE COMBAT round, it will attack in the CLOSE RANGE COMBAT round. If its HEALTH has been exceeded, it is removed at the end of the CRC round.",
+    "gameEffect": "Regardless of how much damage is done to this creature in the LONG RANGE COMBAT round, it will attack in the CLOSE RANGE COMBAT round. If its HEALTH has been exceeded, it is removed at the end of the CRC round.",
     "tags": [
       "Basic"
     ],
@@ -7840,7 +7840,7 @@
       "Conspiracy",
       "Computer"
     ],
-    "gameText": "Fight Combat as normal except skip LONG RANGE COMBAT and go straight to CLOSE RANGE COMBAT. Agents must use their COMPUTER skill as their value in CRC. If an Agent has no COMPUTER skill, his value is 1.",
+    "gameEffect": "Fight Combat as normal except skip LONG RANGE COMBAT and go straight to CLOSE RANGE COMBAT. Agents must use their COMPUTER skill as their value in CRC. If an Agent has no COMPUTER skill, his value is 1.",
     "tags": [
       "Basic",
       "Skip Long Range"
@@ -7870,7 +7870,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameText": "Damage caused by this creature may be split among all opponents (Directed Player's choice). The Blue Berets may use MARTIAL ARTS Combat cards.",
+    "gameEffect": "Damage caused by this creature may be split among all opponents (Directed Player's choice). The Blue Berets may use MARTIAL ARTS Combat cards.",
     "tags": [
       "Basic",
       "Split Damage"
@@ -7899,7 +7899,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "Play this card on a Team in the Field that plays a Witness. The Witness card is discarded and the Team is attacked! The Creature's LONG RANGE COMBAT and CLOSE RANGE COMBAT are equal to the Witness's modifier. If the Witness has no modifier, treat the Witness as a +3.",
+    "gameEffect": "Play this card on a Team in the Field that plays a Witness. The Witness card is discarded and the Team is attacked! The Creature's LONG RANGE COMBAT and CLOSE RANGE COMBAT are equal to the Witness's modifier. If the Witness has no modifier, treat the Witness as a +3.",
     "tags": [
       "Basic"
     ],
@@ -7927,7 +7927,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "Any Agent damaged by the Deadly Blur is placed in the Hospital for the next two turns regardless of how much HEALTH they have. Each opponent's LONG RANGE COMBAT and CLOSE RANGE COMBAT is reduced by one point. The Deadly Blur may use SUBTERFUGE Combat cards.",
+    "gameEffect": "Any Agent damaged by the Deadly Blur is placed in the Hospital for the next two turns regardless of how much HEALTH they have. Each opponent's LONG RANGE COMBAT and CLOSE RANGE COMBAT is reduced by one point. The Deadly Blur may use SUBTERFUGE Combat cards.",
     "tags": [
       "Basic",
       "Reduce Damage"
@@ -7956,7 +7956,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameText": "Any Agent wounded by the Manitou may not heal wounds until a Healing card is successfully played on him.",
+    "gameEffect": "Any Agent wounded by the Manitou may not heal wounds until a Healing card is successfully played on him.",
     "tags": [
       "Basic"
     ],
@@ -7985,7 +7985,7 @@
       "Conspiracy",
       "Occult Investigation"
     ],
-    "gameText": "The Poltergeist is unaffected by Combat attacks. It will attack for only one LONG RANGE COMBAT and one CLOSE RANGE COMBAT round and then is discarded.",
+    "gameEffect": "The Poltergeist is unaffected by Combat attacks. It will attack for only one LONG RANGE COMBAT and one CLOSE RANGE COMBAT round and then is discarded.",
     "tags": [
       "Basic"
     ],
@@ -8014,7 +8014,7 @@
       "Conspiracy",
       "Witness"
     ],
-    "gameText": "Play this card on a Team in the Field that plays a Witness. Discard the Witness card. The Witness actually becomes a lesser vampire that attacks the Team in conjunction with the master vampire, with a CLOSE RANGE COMBAT rating of 3 and a HEALTH rating of 3. LONG RANGE COMBAT will cause no damage to eiter vampire.",
+    "gameEffect": "Play this card on a Team in the Field that plays a Witness. Discard the Witness card. The Witness actually becomes a lesser vampire that attacks the Team in conjunction with the master vampire, with a CLOSE RANGE COMBAT rating of 3 and a HEALTH rating of 3. LONG RANGE COMBAT will cause no damage to eiter vampire.",
     "tags": [
       "Basic"
     ],

@@ -15,7 +15,6 @@ export interface Card extends Sortable, Filterable {
   skills: { [skillName: string]: number };
   characteristics: { [characteristicName: string]: string };
   activators: string[];
-  gameText: string;
   gameEffect: string;
   bio: string;
   dialogue: string;

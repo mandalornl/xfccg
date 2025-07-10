@@ -23,7 +23,7 @@
       "Conspiracy",
       "Affiliation Site"
     ],
-    "gameText": "The Dark Angel can play all combat cards for one [CP] less.",
+    "gameEffect": "The Dark Angel can play all combat cards for one [CP] less.",
     "tags": [
       "Basic"
     ]
@@ -45,7 +45,7 @@
       "Alien",
       "Adversary"
     ],
-    "gameText": "Negates an Alien Adversary.",
+    "gameEffect": "Negates an Alien Adversary.",
     "tags": [
       "Basic",
       "Negate"
@@ -69,7 +69,7 @@
       "Active",
       "Site"
     ],
-    "gameText": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION or BUREAUCRACY skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one ALIEN or GOVERNMENT Adversary.",
+    "gameEffect": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION or BUREAUCRACY skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one ALIEN or GOVERNMENT Adversary.",
     "tags": [
       "Basic",
       "Negate"
@@ -89,7 +89,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site.",
+    "gameEffect": "Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site.",
     "tags": [
       "Basic"
     ]
@@ -113,7 +113,7 @@
       "Active",
       "Occult Adversary"
     ],
-    "gameText": "Negate one OCCULT Adversary. In addition, if the Team makes an OCCULT INVESTIGATION skill check of 6+, they may ask either one METHOD question or one RESULT question.",
+    "gameEffect": "Negate one OCCULT Adversary. In addition, if the Team makes an OCCULT INVESTIGATION skill check of 6+, they may ask either one METHOD question or one RESULT question.",
     "tags": [
       "Basic",
       "Negate"
@@ -162,7 +162,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card on any Team consisting of no more than two Agents during the Investigation Phase when they are sent to investigate a Site. You may add a number of tokens to the [RP] pool equal to the Agents' total RES value.",
+    "gameEffect": "Play this card on any Team consisting of no more than two Agents during the Investigation Phase when they are sent to investigate a Site. You may add a number of tokens to the [RP] pool equal to the Agents' total RES value.",
     "tags": [
       "Advanced",
       "Resource"
@@ -184,7 +184,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Exchange your X-File with ALIEN Affiliation with any X-File with GOVERNMENT Affiliation.",
+    "gameEffect": "Exchange your X-File with ALIEN Affiliation with any X-File with GOVERNMENT Affiliation.",
     "tags": [
       "Basic",
       "Voyager Promotions"
@@ -207,7 +207,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card and place it beneath one Agent to lower all of that Agent's skill levels by 1. This cannot result in a skill being negative or permanent Health being less than 1. When played on Agent Dana Scully, the conspiracy player may choose to force Scully to spend every other turn in the Hospital (if this option is chosen, Scully's skills are not reduced). This choice must be made when the card is played and cannot be changed later. Healing cards will negate this card.",
+    "gameEffect": "Play this card and place it beneath one Agent to lower all of that Agent's skill levels by 1. This cannot result in a skill being negative or permanent Health being less than 1. When played on Agent Dana Scully, the conspiracy player may choose to force Scully to spend every other turn in the Hospital (if this option is chosen, Scully's skills are not reduced). This choice must be made when the card is played and cannot be changed later. Healing cards will negate this card.",
     "tags": [
       "Basic",
       "Voyager Promotions"
@@ -230,7 +230,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card to immediately move one opposing Agent to the Hospital. Place this card beneath the Agent and place five tokens on the Agent (seven tokens if played on Agent Mulder). Remove a token during the Agent's Healing Phase. When all tokens have been removed, discard this card. The Agent may leave the Hospital when all tokens have been removed.",
+    "gameEffect": "Play this card to immediately move one opposing Agent to the Hospital. Place this card beneath the Agent and place five tokens on the Agent (seven tokens if played on Agent Mulder). Remove a token during the Agent's Healing Phase. When all tokens have been removed, discard this card. The Agent may leave the Hospital when all tokens have been removed.",
     "tags": [
       "Basic",
       "Move",
@@ -251,7 +251,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Once this card is played, only the Investigating player may play Events while investigating this Site, except for Events which would negate this card. Discard this card when the Site is discarded.",
+    "gameEffect": "Once this card is played, only the Investigating player may play Events while investigating this Site, except for Events which would negate this card. Discard this card when the Site is discarded.",
     "tags": [
       "Basic",
       "Prevent",
@@ -273,7 +273,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Discard your entire hand and draw seven cards from the top of your Bureau Deck.",
+    "gameEffect": "Discard your entire hand and draw seven cards from the top of your Bureau Deck.",
     "tags": [
       "Basic"
     ]
@@ -292,7 +292,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Apply a +1 modifier to any skill check.",
+    "gameEffect": "Apply a +1 modifier to any skill check.",
     "tags": [
       "Basic"
     ]
@@ -311,7 +311,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Apply a -1 modifier to any skill check.",
+    "gameEffect": "Apply a -1 modifier to any skill check.",
     "tags": [
       "Basic"
     ]
@@ -330,7 +330,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Apply a +2 modifier to any one opponent skill check.",
+    "gameEffect": "Apply a +2 modifier to any one opponent skill check.",
     "tags": [
       "Basic"
     ]
@@ -349,7 +349,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Apply a -2 modifier to any one opponent skill check",
+    "gameEffect": "Apply a -2 modifier to any one opponent skill check",
     "tags": [
       "Basic"
     ]
@@ -369,7 +369,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Apply a +3 or -3 (your choice) modifier to any skill check.",
+    "gameEffect": "Apply a +3 or -3 (your choice) modifier to any skill check.",
     "tags": [
       "Basic"
     ]
@@ -388,7 +388,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card to search through your Bureau Deck and add one of the following cards to your hand: No One So Paranoid, The Lone Gunmen, Langly, Frohike, or Byers. If you play the chosen card immediately, you may do so for half Cost (round up).",
+    "gameEffect": "Play this card to search through your Bureau Deck and add one of the following cards to your hand: No One So Paranoid, The Lone Gunmen, Langly, Frohike, or Byers. If you play the chosen card immediately, you may do so for half Cost (round up).",
     "tags": [
       "Basic",
       "Search",
@@ -410,7 +410,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Play this card and flip over the next card on your Bureau Deck. If that card is playable this turn you may do so for zero [RP] or [CP]. If you do not play it this turn, move the card to your discard pile.",
+    "gameEffect": "Play this card and flip over the next card on your Bureau Deck. If that card is playable this turn you may do so for zero [RP] or [CP]. If you do not play it this turn, move the card to your discard pile.",
     "tags": [
       "Advanced"
     ]
@@ -431,7 +431,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Recherchez dans votre paquet de cartes FBI et choisissez une carte ALIEN Mot-clé ou ALIEN INVESTIGATION. Montrez cette carte à votre adversaire, ajoutez-la à votre jeu et mélangez le paquet de cartes FBI.\n\nEnglish Translation: Search your Bureau deck and choose one keyword ALIEN or ALIEN INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau deck.",
+    "gameEffect": "Recherchez dans votre paquet de cartes FBI et choisissez une carte ALIEN Mot-clé ou ALIEN INVESTIGATION. Montrez cette carte à votre adversaire, ajoutez-la à votre jeu et mélangez le paquet de cartes FBI.\n\nEnglish Translation: Search your Bureau deck and choose one keyword ALIEN or ALIEN INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau deck.",
     "tags": [
       "Basic",
       "Search"
@@ -452,7 +452,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Spielen Sie diese Karte zum Durchsuchen Ihres Büro Stapels. Dann wählen Sie einen OCCULT Gegner, mit dem Sie automatisch den AgentenTeam zur Ortserkundung angehören. Der OCCULT Gegner kann anstatt der 0 [CP] gespielt werden, unter Mißachtung der Aktivierungs-Anforderungen.\n\nEnglish Translation: You may search your Bureau deck and take any Occult Creature and you may play it on the agents team making the skill check. You may play it at any site. (Meaning you can play an Adversary with Activator Affiliation on a Motive, Method, or Result site as well.) This costs 0 [CP].",
+    "gameEffect": "Spielen Sie diese Karte zum Durchsuchen Ihres Büro Stapels. Dann wählen Sie einen OCCULT Gegner, mit dem Sie automatisch den AgentenTeam zur Ortserkundung angehören. Der OCCULT Gegner kann anstatt der 0 [CP] gespielt werden, unter Mißachtung der Aktivierungs-Anforderungen.\n\nEnglish Translation: You may search your Bureau deck and take any Occult Creature and you may play it on the agents team making the skill check. You may play it at any site. (Meaning you can play an Adversary with Activator Affiliation on a Motive, Method, or Result site as well.) This costs 0 [CP].",
     "tags": [
       "Advanced",
       "Search"
@@ -474,7 +474,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Draw 2 cards from the top of your Bureau deck and add them to your hand.",
+    "gameEffect": "Draw 2 cards from the top of your Bureau deck and add them to your hand.",
     "tags": [
       "Basic"
     ]
@@ -493,7 +493,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card immediately after your opponent asks you a question. You may respond with this phrase: \"I can neither confirm nor deny that assumption.\" After playing this card remove it from the game.",
+    "gameEffect": "Play this card immediately after your opponent asks you a question. You may respond with this phrase: \"I can neither confirm nor deny that assumption.\" After playing this card remove it from the game.",
     "tags": [
       "Basic"
     ]

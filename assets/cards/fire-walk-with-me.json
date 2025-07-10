@@ -23,7 +23,7 @@
       "Affiliation",
       "Site"
     ],
-    "gameText": null,
+    "gameEffect": null,
     "dialogue": "\"Squeeze his hand off!\" - The Arm",
     "tags": [
       "Basic"
@@ -54,7 +54,7 @@
       "Motive",
       "Site"
     ],
-    "gameText": "During the LONG RANGE COMBAT round, for every two cards discarded from your hand, increase Hutch & Chantal's LRC by 1.",
+    "gameEffect": "During the LONG RANGE COMBAT round, for every two cards discarded from your hand, increase Hutch & Chantal's LRC by 1.",
     "dialogue": "\"That douchebag is really pissing me off!\" - Chantal",
     "tags": [
       "Basic"
@@ -84,7 +84,7 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameText": "Leland Palmer's LRC and CRC values are each equal to the number of Agents in the Team currently investigating this Site.",
+    "gameEffect": "Leland Palmer's LRC and CRC values are each equal to the number of Agents in the Team currently investigating this Site.",
     "dialogue": "\"Your hands are filthy... look, there is dirt way under this fingernail.\" - Leland Palmer",
     "tags": [
       "Basic"
@@ -114,7 +114,7 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameText": "The Experiment engages two opposing Agents (your choice) in Combat.",
+    "gameEffect": "The Experiment engages two opposing Agents (your choice) in Combat.",
     "dialogue": "\"I'm supposed to watch the box and see if anything appears inside.\" - Sam Colby",
     "tags": [
       "Basic"
@@ -145,7 +145,7 @@
       "Method",
       "Site"
     ],
-    "gameText": "At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen. The LONG RANGE COMBAT round is skipped.",
     "dialogue": "\"Got a Light?\" - Woodman",
     "tags": [
       "Basic"
@@ -176,7 +176,7 @@
       "Affiliation",
       "Site"
     ],
-    "gameText": "Mr. C's LRC, CRC and HEALTH values become equal to those of any one Agent in the target Team (your choice), until the end of this Combat. Move that Agent to the Hospital with 0 HEALTH. Mr. C attacks the remaining Agents in a normal Combat sequence that lasts one LRC and one CRC round.",
+    "gameEffect": "Mr. C's LRC, CRC and HEALTH values become equal to those of any one Agent in the target Team (your choice), until the end of this Combat. Move that Agent to the Hospital with 0 HEALTH. Mr. C attacks the remaining Agents in a normal Combat sequence that lasts one LRC and one CRC round.",
     "dialogue": "\"What brings you back to Twin Peaks, Agent Cooper?\" - Sheriff Truman",
     "tags": [
       "Basic"
@@ -207,7 +207,7 @@
       "Result",
       "Site"
     ],
-    "gameText": "If this Adversary's HEALTH is reduced to 0 during Combat, you may immediately play an Adversary card with a cost less than 5 from your discard pile, ignoring Activator requirements, at its normal cost. That Adversary immediately begins a normal Combat with the Team.",
+    "gameEffect": "If this Adversary's HEALTH is reduced to 0 during Combat, you may immediately play an Adversary card with a cost less than 5 from your discard pile, ignoring Activator requirements, at its normal cost. That Adversary immediately begins a normal Combat with the Team.",
     "dialogue": "\"If you give me your soul, I'll let Annie live.\" - Windom Earle",
     "tags": [
       "Basic"
@@ -238,7 +238,7 @@
       "Method",
       "Site"
     ],
-    "gameText": "This card does not initiate combat now. Attach Bob to any one Agent in the Team at this Site (your choice). Place both cards next to your X-File. On your next turn as Directed player after your opponent plays their next Site card, that Agent must attack any one of your opponent's Teams in the Field, ignoring Activator requirements. Remove Bob and return the Agent to your opponent's Field after the combat.",
+    "gameEffect": "This card does not initiate combat now. Attach Bob to any one Agent in the Team at this Site (your choice). Place both cards next to your X-File. On your next turn as Directed player after your opponent plays their next Site card, that Agent must attack any one of your opponent's Teams in the Field, ignoring Activator requirements. Remove Bob and return the Agent to your opponent's Field after the combat.",
     "dialogue": "\"Maybe that's all Bob is. The evil that men do.\" - Albert Rosenfield",
     "tags": [
       "Basic"
@@ -269,7 +269,7 @@
       "Motive",
       "Site"
     ],
-    "gameText": "The chosen Agent is the only one who may participate in the Combat. Jake & Gene may use MARTIAL ARTS and SUBTERFUGE cards. Your opponent may pay 4 [RP] to force you to discard this card.",
+    "gameEffect": "The chosen Agent is the only one who may participate in the Combat. Jake & Gene may use MARTIAL ARTS and SUBTERFUGE cards. Your opponent may pay 4 [RP] to force you to discard this card.",
     "dialogue": "\"Oh my God! Gene, he's not in the car!\" - Jake",
     "tags": [
       "Basic"
@@ -299,7 +299,7 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameText": "Josie Packard may attack only one Agent (your choice) in one round of LONG RANGE and one CLOSE RANGE COMBAT. All other Agents in the Team also participate in the Combat and may assign damage to Josie as normal.",
+    "gameEffect": "Josie Packard may attack only one Agent (your choice) in one round of LONG RANGE and one CLOSE RANGE COMBAT. All other Agents in the Team also participate in the Combat and may assign damage to Josie as normal.",
     "dialogue": "\"Why did you shoot me, Josie?\" - Cooper",
     "tags": [
       "Basic"
@@ -329,7 +329,7 @@
       "Result",
       "Site"
     ],
-    "gameText": "At the end of this Combat, if Hank's HEALTH has not been reduced to zero, you may play him at another Site controlled by the same opponent this turn at no cost and ignoring Activator requirements. If no such Site exists, discard this card.",
+    "gameEffect": "At the end of this Combat, if Hank's HEALTH has not been reduced to zero, you may play him at another Site controlled by the same opponent this turn at no cost and ignoring Activator requirements. If no such Site exists, discard this card.",
     "dialogue": "\"Oh, Ed, the things we do for love.\" - Hank Jennings",
     "tags": [
       "Basic"
@@ -740,7 +740,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play any Adversary card from your Discard Pile for 2 [CP] less, ignoring Activator requirements.",
+    "gameEffect": "Play any Adversary card from your Discard Pile for 2 [CP] less, ignoring Activator requirements.",
     "dialogue": "\"Ike, you're under arrest for attempted murder. We have your palm print.\" - Detectives Fusco",
     "tags": [
       "Advanced"
@@ -763,7 +763,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play 3 [CP] to move up to 4 [RP] from your opponent's [RP] pool to your [CP] pool immediately.",
+    "gameEffect": "Play 3 [CP] to move up to 4 [RP] from your opponent's [RP] pool to your [CP] pool immediately.",
     "dialogue": "\"Did you ever see anything like this? This is what I want.\" - Mr. C",
     "tags": [
       "Advanced"
@@ -786,7 +786,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play to add 7 [CP] to your [CP] pool immediately.",
+    "gameEffect": "Play to add 7 [CP] to your [CP] pool immediately.",
     "dialogue": "\"Catch you with my dead bag. You may think that I've gone insane... but I promise, I will kill again.\" - Bob",
     "tags": [
       "Advanced"
@@ -808,7 +808,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "You may search your Bureau deck for an Adversary card with a printed cost of six or less, reveal it, and play it immediately at half its cost (rounded up) ignoring Activator requirements. Then shuffle your deck.",
+    "gameEffect": "You may search your Bureau deck for an Adversary card with a printed cost of six or less, reveal it, and play it immediately at half its cost (rounded up) ignoring Activator requirements. Then shuffle your deck.",
     "dialogue": "\"Oh! and I know you got to die. A royal execution.\" - Windom Earle",
     "tags": [
       "Basic"
@@ -830,7 +830,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play on a Team investigating a Site to send an Event RESOURCE controlled by that Team's controller to the Discard pile.",
+    "gameEffect": "Play on a Team investigating a Site to send an Event RESOURCE controlled by that Team's controller to the Discard pile.",
     "dialogue": "\"Did you take all of that today?\" - Becky Burnett",
     "tags": [
       "Basic"
@@ -852,7 +852,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play this card to look at the top six cards of your opponent's Bureau deck. Choose and discard three of them, then return the rest to the top of their deck in any order.",
+    "gameEffect": "Play this card to look at the top six cards of your opponent's Bureau deck. Choose and discard three of them, then return the rest to the top of their deck in any order.",
     "dialogue": "\"Do you know what the ultimate secret is? Do you want to know... what Laura did?\" - Harold Smith",
     "tags": [
       "Basic"
@@ -875,7 +875,7 @@
       "Criminal Investigation",
       "Evidence Collection"
     ],
-    "gameText": "Play to negate one card with the Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION.",
+    "gameEffect": "Play to negate one card with the Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION.",
     "dialogue": "Cooper:\"Did you kill Laura Palmer?\".\nLeland:\"Whooo!!! Whoo-whoo! Hoo-hoo-hoo!! Whooo!!! Whooo! Hoo-Hoo!\"",
     "tags": [
       "Basic"
@@ -899,7 +899,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play on any Team investigating a Site. Only Agents with a base value of 5 or more [RP] may contribute to that Site skill check.",
+    "gameEffect": "Play on any Team investigating a Site. Only Agents with a base value of 5 or more [RP] may contribute to that Site skill check.",
     "dialogue": "\"If you know what's good for you, and you do, don't move.\" - Bob",
     "tags": [
       "Basic"
@@ -923,7 +923,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameText": "Play on one Agent to decrease all their skills by two (except for LRC, CRC, HEALTH and RES) for each [RP] card attached to that Agent. No skill may be reduced below zero. This card is removed once that Agent's Team successfully investigates a Site.",
+    "gameEffect": "Play on one Agent to decrease all their skills by two (except for LRC, CRC, HEALTH and RES) for each [RP] card attached to that Agent. No skill may be reduced below zero. This card is removed once that Agent's Team successfully investigates a Site.",
     "dialogue": "\"Major, I admire your fortitude.\" - Windom Earle",
     "tags": [
       "Advanced"
@@ -945,7 +945,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds two to the Agent's BEHAVIORAL and EVIDENCE COLLECTION skills. You cannot sell this card during the Briefing Phase to gain [CP] points.",
+    "gameEffect": "Adds two to the Agent's BEHAVIORAL and EVIDENCE COLLECTION skills. You cannot sell this card during the Briefing Phase to gain [CP] points.",
     "dialogue": "\"What we have taped to the page here is a plastic envelope containing a white residue and what looks to be a key to a safety deposit box.\" - Cooper",
     "tags": [
       "Basic"
@@ -967,7 +967,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds two to the Agent's SCIENCES and CRIMINAL INVESTIGATION skills. You cannot sell this card during the Briefing phase to gain [CP] points.",
+    "gameEffect": "Adds two to the Agent's SCIENCES and CRIMINAL INVESTIGATION skills. You cannot sell this card during the Briefing phase to gain [CP] points.",
     "dialogue": "\"Time of death estimated to be between midnight and four AM. What killed her was loss of blood. Numerous shallow wounds, no single one serious enough to have caused death.\" - Dr. Hayward",
     "tags": [
       "Basic"
@@ -989,7 +989,7 @@
     "activators": [
       "Field"
     ],
-    "gameText": "Attach this card to an Agent and immediately remove that Agent from play. At the start of the Briefing Phase on your next turn, return the Agent to the Field with this card still attached. That Agent gains +2 to their OCCULT INVESTIGATION skill",
+    "gameEffect": "Attach this card to an Agent and immediately remove that Agent from play. At the start of the Briefing Phase on your next turn, return the Agent to the Field with this card still attached. That Agent gains +2 to their OCCULT INVESTIGATION skill",
     "dialogue": "\"Don't take the ring, Laura... Don't take the ring.\" - Cooper",
     "tags": [
       "Basic"
@@ -1011,7 +1011,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds three to the Agent's CLOSE RANGE COMBAT skill.",
+    "gameEffect": "Adds three to the Agent's CLOSE RANGE COMBAT skill.",
     "dialogue": "\"Your right hand will then possess the power of an enormous pile driver.\" - Freddie Sykes",
     "tags": [
       "Basic"
@@ -1034,7 +1034,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Once per turn, during the Case Assignment Phase, if the Agent equipped with this card is in the Bureau, you may pay 2 [RP] tokens to draw the top two cards of your Bureau deck and add them to your hand.",
+    "gameEffect": "Once per turn, during the Case Assignment Phase, if the Agent equipped with this card is in the Bureau, you may pay 2 [RP] tokens to draw the top two cards of your Bureau deck and add them to your hand.",
     "dialogue": "\"What's your emergency?\" - Maggie Brown",
     "tags": [
       "Advanced"
@@ -1056,7 +1056,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds two to the Agent's OBSERVATION and SUBTERFUGE skills. You cannot sell this card during the Briefing phase to gain [CP] points",
+    "gameEffect": "Adds two to the Agent's OBSERVATION and SUBTERFUGE skills. You cannot sell this card during the Briefing phase to gain [CP] points",
     "dialogue": "\"Then a descent to a cool, subterranean cave may be just what the doctor ordered.\" - Cooper",
     "tags": [
       "Basic"
@@ -1079,7 +1079,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameText": "Adds 1 to the Agent's CRIMINAL INVESTIGATION and EVIDENCE COLLECTION skills",
+    "gameEffect": "Adds 1 to the Agent's CRIMINAL INVESTIGATION and EVIDENCE COLLECTION skills",
     "dialogue": "\"Voice activated, Harry. When the bird talks maybe we'll get some answers.\" - Cooper",
     "tags": [
       "Basic"
@@ -1100,7 +1100,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card during a skill check. You may discard two cards from your hand to gain +1 to that skill check, or discard four cards to gain +2 instead. You cannot discard more than four cards this way.",
+    "gameEffect": "Play this card during a skill check. You may discard two cards from your hand to gain +1 to that skill check, or discard four cards to gain +2 instead. You cannot discard more than four cards this way.",
     "dialogue": "\"Shelly, you've got your own life to worry about right now. I'll be fine here.\" - Norma",
     "tags": [
       "Basic"
@@ -1123,7 +1123,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Force an opponent Team investigating a Site to make a BEHAVIORAL 4+ skill check or the current player's turn ends immediately.",
+    "gameEffect": "Force an opponent Team investigating a Site to make a BEHAVIORAL 4+ skill check or the current player's turn ends immediately.",
     "dialogue": "\"He's taken another pawn, Harry but he didn't tell us his move. Windom Earle's playing off the board.\" - Cooper",
     "tags": [
       "Basic"
@@ -1145,7 +1145,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Choose any one Agent in play. That Agent cannot be targeted by Event nor Bluff cards this turn.",
+    "gameEffect": "Choose any one Agent in play. That Agent cannot be targeted by Event nor Bluff cards this turn.",
     "dialogue": "\"Agent Cooper loves coffee. But agent Cooper loves his coffee black.\" - Norma",
     "tags": [
       "Basic"
@@ -1169,7 +1169,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your opponents' Fields. That opponent must pay one additional [RP] for each Site card they play.",
+    "gameEffect": "Place this card next to your opponents' Fields. That opponent must pay one additional [RP] for each Site card they play.",
     "dialogue": "\"Something's wrong'.\" - Mike",
     "tags": [
       "Advanced"
@@ -1191,7 +1191,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card next to your X-File with three tokens on it. Discard a token to apply a +1 modifier to any one Agent's Skill check. You may do this once per turn.",
+    "gameEffect": "Play this card next to your X-File with three tokens on it. Discard a token to apply a +1 modifier to any one Agent's Skill check. You may do this once per turn.",
     "dialogue": "\"Come on then. My log does not judge.\" - Log Lady",
     "tags": [
       "Basic"
@@ -1214,7 +1214,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File with two tokens on it. Discard a token to apply a -2 modifier to any Agent's Skill Check. You may do this once per turn.",
+    "gameEffect": "Place this card next to your X-File with two tokens on it. Discard a token to apply a -2 modifier to any Agent's Skill Check. You may do this once per turn.",
     "dialogue": "\"I'm in the sheriff's station... because... because... I'm not me.\" - Diane's Tulpa",
     "tags": [
       "Basic"
@@ -1236,7 +1236,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File with three damage tokens on it. Once per turn, during the Healing Phase, you may move one damage token to any one of your opponent’s Agents (your choice). The same Agent may not be damaged on consecutive turns.",
+    "gameEffect": "Place this card next to your X-File with three damage tokens on it. Once per turn, during the Healing Phase, you may move one damage token to any one of your opponent’s Agents (your choice). The same Agent may not be damaged on consecutive turns.",
     "dialogue": "\"He moved! I saw him move! No. It's too creepy. It's wrong, Bobby.\" - Shelly Johnson",
     "tags": [
       "Advanced"
@@ -1258,7 +1258,7 @@
       "Active",
       "Liminal"
     ],
-    "gameText": "Play this card to remove one Agent from play until the end of the turn. This card may be played at any time, except during Combat, but it can be used in response to an opponent playing an Adversary card. X is the [CP] cost of that Agent.",
+    "gameEffect": "Play this card to remove one Agent from play until the end of the turn. This card may be played at any time, except during Combat, but it can be used in response to an opponent playing an Adversary card. X is the [CP] cost of that Agent.",
     "dialogue": "\"This would look nice on your wall.\" - Mrs. Tremond",
     "tags": [
       "Advanced"
@@ -1280,7 +1280,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play on a Team in the Field during the Investigation Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check, reveal all face-down Bluff cards at one Site.",
+    "gameEffect": "Play on a Team in the Field during the Investigation Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check, reveal all face-down Bluff cards at one Site.",
     "dialogue": "\"This man, I know him.\" - Leland",
     "tags": [
       "Basic"
@@ -1302,7 +1302,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team investigating a Site to make a COMPUTER 4+ skill check or the current player's turn ends immediately.",
+    "gameEffect": "Force an opponent Team investigating a Site to make a COMPUTER 4+ skill check or the current player's turn ends immediately.",
     "dialogue": "\"The cow jumped over the moon.\" - Mr. C",
     "tags": [
       "Basic"
@@ -1324,7 +1324,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Force an opponent Team investigating a Site to make a OCCULT INVESTIGATION 4+ skill check or the current player's turn ends immediately.",
+    "gameEffect": "Force an opponent Team investigating a Site to make a OCCULT INVESTIGATION 4+ skill check or the current player's turn ends immediately.",
     "dialogue": "\"When Jupiter and Saturn meet, Oh, what a crop of mummy wheat.\" - Windom Earle",
     "tags": [
       "Basic"
@@ -1347,7 +1347,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "You may play Keyword BLUFF cards for 1 [CP] less. If placed face down under a Site (as usual), the cost is reduced by 1 more [CP] for a total of 2 [CP] less. A Bluff could be played this way for free, but you can never gain tokens by playing a Bluff card. Your opponent may pay 6 [RP] to force you to discard this card.",
+    "gameEffect": "You may play Keyword BLUFF cards for 1 [CP] less. If placed face down under a Site (as usual), the cost is reduced by 1 more [CP] for a total of 2 [CP] less. A Bluff could be played this way for free, but you can never gain tokens by playing a Bluff card. Your opponent may pay 6 [RP] to force you to discard this card.",
     "dialogue": "\"It's a goddamn bad story, isn't it, Hawk?.\" - Sarah Palmer",
     "tags": [
       "Advanced"
@@ -1369,7 +1369,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card immediately after asking a Characteristic question about your opponent's X-File and receiving a \"No\" response. Your opponent must then revel an additional Characteristic from the same category that also does not apply to their X-File (e.g., \"The Result is not Death\". Remove this card from the game.",
+    "gameEffect": "Play this card immediately after asking a Characteristic question about your opponent's X-File and receiving a \"No\" response. Your opponent must then revel an additional Characteristic from the same category that also does not apply to their X-File (e.g., \"The Result is not Death\". Remove this card from the game.",
     "dialogue": "\"A path is formed by laying one stone at a time.\" - The Giant",
     "tags": [
       "Basic"
@@ -1391,7 +1391,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card during the Briefing Phase. Discard a Keyword CONSPIRACY card from your hand with a cost of 7 [CP] or less to gain a number of [RP] tokens equal to that card's cost.",
+    "gameEffect": "Play this card during the Briefing Phase. Discard a Keyword CONSPIRACY card from your hand with a cost of 7 [CP] or less to gain a number of [RP] tokens equal to that card's cost.",
     "dialogue": "\"When you see me again it won't be me.\" - The Arm",
     "tags": [
       "Advanced"
@@ -1414,7 +1414,7 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameText": "Play this card on an Agent controlled by the Active Player during a Site skill check. Until end of turn, that Agent cannot use their base skills for the check. Instead, use the base skills of any one of your Agents (your choice). If none of your Agents have that skill, the skill value is zero.",
+    "gameEffect": "Play this card on an Agent controlled by the Active Player during a Site skill check. Until end of turn, that Agent cannot use their base skills for the check. Instead, use the base skills of any one of your Agents (your choice). If none of your Agents have that skill, the skill value is zero.",
     "dialogue": "\"How's Annie? How's Annie? How's Annie?\" - Mr. C",
     "tags": [
       "Basic"
@@ -1435,7 +1435,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card during the Briefing Phase on a Team of Agents in the Field to double the RES produced by each Agent in that Team for this turn. Discard this card afterward.",
+    "gameEffect": "Play this card during the Briefing Phase on a Team of Agents in the Field to double the RES produced by each Agent in that Team for this turn. Discard this card afterward.",
     "dialogue": "\"HELLO-O-O-O-O\" - Doogie",
     "tags": [
       "Advanced"
@@ -1459,7 +1459,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Play this card only if all Agents in one of your Teams at a Site have been sent to the Hospital. Return the Site card to your hand. Each Agent in that Team heals 1 point of damage immediately.",
+    "gameEffect": "Play this card only if all Agents in one of your Teams at a Site have been sent to the Hospital. Return the Site card to your hand. Each Agent in that Team heals 1 point of damage immediately.",
     "dialogue": "\"Remember 430. Richard and Linda. Two birds with one stone.\" - The Giant",
     "tags": [
       "Basic"
@@ -1482,7 +1482,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File. Remove this card from play at any time to discard all Keyword RESOURCE cards in play.",
+    "gameEffect": "Place this card next to your X-File. Remove this card from play at any time to discard all Keyword RESOURCE cards in play.",
     "dialogue": "\"This is the water, and this is the well. Drink full and descend. The horse is the white of the eyes and dark within.\" - The Woodsman",
     "tags": [
       "Advanced"
@@ -1505,7 +1505,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Play this card immediately after your opponent has finished drawing cards in the Briefing Phase. Place this card next to your X-File with two tokens on it. Discard one token to examine your opponent's hand. When there are no tokens left, discard this card.",
+    "gameEffect": "Play this card immediately after your opponent has finished drawing cards in the Briefing Phase. Place this card next to your X-File with two tokens on it. Discard one token to examine your opponent's hand. When there are no tokens left, discard this card.",
     "dialogue": "\"It's not a puzzle at all. It's a map.\" - Andy Brennan",
     "tags": [
       "Basic"
@@ -1528,7 +1528,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File. You may force your opponent to discard one card from their hand (opponent's choice) once per turn during their Healing Phase. You may only have one of this card in your Bureau Deck.",
+    "gameEffect": "Place this card next to your X-File. You may force your opponent to discard one card from their hand (opponent's choice) once per turn during their Healing Phase. You may only have one of this card in your Bureau Deck.",
     "dialogue": "\"I'm supposed to watch the box and see if anything appears inside.\" - Sam Colby",
     "tags": [
       "Basic"
@@ -1553,7 +1553,7 @@
     "activators": [
       "Active"
     ],
-    "gameText": "Place this card next to your X-File. You may play [RP] Events for one [RP] less. You may only have one of this card in play.",
+    "gameEffect": "Place this card next to your X-File. You may play [RP] Events for one [RP] less. You may only have one of this card in play.",
     "dialogue": "\"This is it, Jackrabbit's Palace!\" - Bobby Briggs",
     "tags": [
       "Advanced"
@@ -1576,7 +1576,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameText": "Place this card next to your X-File. You may play [CP] Events for one [CP] less. You may only have one of this card in play.",
+    "gameEffect": "Place this card next to your X-File. You may play [CP] Events for one [CP] less. You may only have one of this card in play.",
     "dialogue": "\"I've got the cure for what ails you. It's simple, really. But it always improves my mood.\" - Leland Palmer",
     "tags": [
       "Advanced"
