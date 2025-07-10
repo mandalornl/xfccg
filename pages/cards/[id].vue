@@ -190,15 +190,6 @@ const onClick = (key: string) => (value: string) => {
           </v-col>
         </v-row>
       </v-card-text>
-      <v-card-actions>
-        <v-spacer />
-        <v-btn
-          exact
-          to="/cards"
-          variant="text"
-          text="Close"
-        />
-      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
