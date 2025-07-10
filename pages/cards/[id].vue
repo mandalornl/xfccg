@@ -71,6 +71,7 @@ const onClick = (key: string) => (value: string) => {
               inset
               hide-details
               color="primary"
+              base-color="primary"
               variant="outlined"
               control-variant="split"
             />
