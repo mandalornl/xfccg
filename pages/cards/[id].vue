@@ -95,12 +95,6 @@ const onClick = (key: string) => (value: string) => {
               <card-type :text="card.type" />
             </div>
             <card-text
-              v-if="card?.rarity"
-              :text="card.rarity"
-              title="Rarity"
-              class="mb-3"
-            />
-            <card-text
               v-if="card?.cost"
               :text="card.cost"
               title="Cost"
@@ -160,6 +154,12 @@ const onClick = (key: string) => (value: string) => {
               v-if="card?.dialogue"
               :text="card.dialogue"
               title="Dialogue"
+              class="mb-3"
+            />
+            <card-text
+              v-if="card?.rarity"
+              :text="card.rarity"
+              title="Rarity"
               class="mb-3"
             />
             <card-text
