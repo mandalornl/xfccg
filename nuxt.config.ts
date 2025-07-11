@@ -9,6 +9,13 @@ export default defineNuxtConfig({
   devtools: {
     enabled: !isProduction,
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
+  },
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL,
