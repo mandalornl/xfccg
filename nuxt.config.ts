@@ -1,6 +1,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 const isProduction = process.env.NODE_ENV === 'production';
+const baseURL = isProduction ? '/xfccg/' : '/';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,9 +11,10 @@ export default defineNuxtConfig({
     enabled: !isProduction,
   },
   app: {
+    baseURL,
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: `${baseURL}favicon.ico` },
       ],
     },
   },
