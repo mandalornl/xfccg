@@ -64,17 +64,6 @@ const onClick = (key: string) => (value: string) => {
               :card="card"
               class="mb-4"
             />
-            <v-number-input
-              :model-value="0"
-              :min="0"
-              :max="2"
-              inset
-              hide-details
-              color="primary"
-              base-color="primary"
-              variant="outlined"
-              control-variant="split"
-            />
           </v-col>
           <v-col
             cols="12"

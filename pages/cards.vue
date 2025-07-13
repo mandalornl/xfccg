@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import type { RouteLocationResolvedGeneric } from 'vue-router';
-import { useGoTo } from 'vuetify';
+import {
+  useGoTo,
+  useDisplay,
+} from 'vuetify';
 
 import sets from '~/assets/filters/sets.json';
 import types from '~/assets/filters/types.json';
@@ -21,6 +24,7 @@ import { pool } from '~/assets/cards/pool';
 const route = useRoute();
 const router = useRouter();
 const goTo = useGoTo();
+const { smAndUp } = useDisplay();
 
 useHead({
   title: 'Cards',
@@ -91,6 +95,7 @@ const headers = [
   { title: 'Set', key: 'set', nowrap: true },
   { title: 'Type', key: 'type', nowrap: true },
   { title: 'Rarity', key: 'rarity', nowrap: true },
+  { title: '# In deck', key: 'inDeck', nowrap: true, sortable: false },
 ];
 
 const itemsPerPageOptions = [
@@ -111,7 +116,7 @@ const search = ref<string>((route.query.search || '') as string);
 const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
-const showSelected = ref<boolean>(route.query.showSelected === null);
+const inDeck = ref<boolean>(route.query.inDeck === null);
 
 const resolvedRoute = computed(() => {
   const sortByValue = JSON.stringify(sortBy.value);
@@ -123,7 +128,7 @@ const resolvedRoute = computed(() => {
       page: page.value > 1 ? page.value : undefined,
       perPage: perPage.value !== 60 ? perPage.value : undefined,
       sortBy: sortByValue !== '[]' ? sortByValue : undefined,
-      showSelected: showSelected.value ? null : undefined,
+      inDeck: inDeck.value ? null : undefined,
       ...Object.fromEntries(
         filters.value.map((filter) => ([
           filter.key,
@@ -170,7 +175,7 @@ const cards = computed<Card[]>(() => {
       }
     }
 
-    // TODO: showSelected && quantityInDeck[card.id] === 0 then return false.
+    // TODO: query.inDeck && inDeck[card.id] === 0 then return false.
 
     return filters.value.every((filter) => {
       if (filter.value.length === 0) {
@@ -246,9 +251,20 @@ const updateFilter = ({
         sm="4"
         md="3"
       >
+        <filter-panels
+          v-model="filters"
+          :expanded="smAndUp ? [ 'set', 'type' ] : []"
+          :items="cards"
+        />
+      </v-col>
+      <v-col
+        cols="12"
+        sm="8"
+        md="9"
+      >
         <v-card
           flat
-          class="mb-3"
+          class="mb-4"
         >
           <v-card-text>
             <v-text-field
@@ -263,32 +279,57 @@ const updateFilter = ({
               @keydown.exact.enter="search = $event.target.value"
             />
           </v-card-text>
-        </v-card>
-        <v-switch
-          v-model="showSelected"
-          :disabled="deckSize === 0"
-        >
-          <template #label>
-            Selected
-            <v-badge
-              :model-value="deckSize > 0"
-              :content="deckSize"
-              inline
-              color="primary"
+          <v-card-actions class="flex-wrap">
+            <v-btn
+              variant="text"
+              size="small"
+              icon="mdi-floppy"
+              title="Save deck"
             />
-          </template>
-        </v-switch>
-        <filter-panels
-          v-model="filters"
-          :expanded="[ 'set', 'type' ]"
-          :items="cards"
-        />
-      </v-col>
-      <v-col
-        cols="12"
-        sm="8"
-        md="9"
-      >
+            <v-btn
+              variant="text"
+              size="small"
+              icon="mdi-chart-line"
+              title="Show stats"
+            />
+            <v-btn
+              variant="text"
+              size="small"
+              icon="mdi-cards"
+              title="Draw opening hand"
+            />
+            <v-btn
+              variant="text"
+              size="small"
+              icon="mdi-link-variant"
+              title="Copy deck URL to clipboard"
+            />
+            <v-btn
+              variant="text"
+              size="small"
+              icon="mdi-sync"
+              title="Reset deck"
+            />
+            <v-spacer />
+            <v-switch
+              v-model="inDeck"
+              :disabled="deckSize === 0"
+              hide-details
+              density="compact"
+              class="ml-3"
+            >
+              <template #label>
+                In deck
+                <v-badge
+                  :model-value="deckSize > 0"
+                  :content="deckSize"
+                  inline
+                  color="primary"
+                />
+              </template>
+            </v-switch>
+          </v-card-actions>
+        </v-card>
         <v-data-table-server
           v-model:sort-by="sortBy"
           v-model:items-per-page="perPage"
@@ -308,6 +349,22 @@ const updateFilter = ({
             <card-type
               v-if="value"
               :text="value"
+            />
+          </template>
+          <template #[`item.inDeck`]>
+            <v-number-input
+              :model-value="0"
+              :min="0"
+              :max="2"
+              inset
+              min-width="78"
+              hide-details
+              color="primary"
+              base-color="primary"
+              variant="outlined"
+              density="compact"
+              control-variant="stacked"
+              @click.stop
             />
           </template>
         </v-data-table-server>
