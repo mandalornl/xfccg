@@ -1868,5 +1868,188 @@
       "Basic"
     ],
     "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0479x2",
+    "title": "Deputy Chief Tommy 'Hawk' Hill",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Last Evening",
+    "type": "Witness",
+    "cost": "5 RP",
+    "keywords": [
+      "Witness",
+      "Resource"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Attach this Witness to a Team. This Witness will add his skills to the appropriate skill check like an Agent, CRC: 3, LRC: 3, and HEALTH: 3. If he is sent to the Hospital, or at any time there are no Agents in the Team, remove the card from the game.",
+    "dialogue": "\"Harry, Hawk here. The trout’s heading upstream towards the net.\" - Hawk",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0480x2",
+    "title": "Phillip Michael Gerard",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Demons",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Criminal Investigation",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's OCCULT INVESTIGATION or adds 2 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "\"Through the darkness of future past, the magician longs to see, one chants out between two worlds, fire walk with me.\" - Phillip Gerard",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0481x2",
+    "title": "Waldo",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Realization Time",
+    "type": "Witness",
+    "cost": "5 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's CRIMINAL INVESTIGATION or adds 2 to one Team's BEHAVIORAL skill check. If played after Adversary card 'Leland Palmer' attacked a Team, the cost of this card is halved.",
+    "dialogue": "\"...hurting me, stop it, Leo, no...\" - Waldo",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0482x2",
+    "title": "Lawrence Jacoby",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The One-Armed Man",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Medical",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's MEDICAL or adds 2 to one Team's OBSERVATION skill check.",
+    "dialogue": "\"I'd like to help you, Agent Cooper. Maybe there is some sort of hula we can do around my doctor-patient confidentiality.\" - Lawrence Jacoby",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0483x2",
+    "title": "William Hastings",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Return (3x09)",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Subterfuge",
+      "Occult Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's SUBTERFUGE or adds 2 to one Team's OCCULT INVESTIGATION skill check.",
+    "dialogue": "\"We gave him the numbers. And he started to float up... and he said some words. 'Cooper, Cooper.' Right before his head disappeared.\" - William Hastings",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0484x2",
+    "title": "Lil the Dancer",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Fire Walk With Me",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Bureaucracy",
+      "Criminal Investigation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's BUREAUCRACY or adds 2 to one Team's CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "\"Right, which is probably why Lil was wearing a red wig meaning we are headed into a dangerous situation.\" - Agent Desmond",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0485x2",
+    "title": "James Hurley",
+    "set": "Traces to Nowhere",
+    "rarity": "Community",
+    "episode": "Traces to Nowhere",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Behavioral",
+      "Observation"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's BEHAVIORAL or adds 2 to one Team's OBSERVATION skill check.",
+    "dialogue": "\"I think something scared her, because she wouldn't see me. She wouldn't even talked to me.\" - James Hurley",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0486x2",
+    "title": "Jacques Renault",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "The Last Evening",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Evidence Collection",
+      "Subterfuge"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Adds 3 to one Team's EVIDENCE COLLECTION or adds 2 to one Team's SUBTERFUGE skill check. If played on 'One eyed Jacks, Canada' Site, this card costs 1 [RP] less.",
+    "dialogue": "\"Laura, she is all tied up. Oh, she liked that. The bird, he starts pecking on her shoulder.\" - Jacques Renault",
+    "tags": [
+      "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
   }
 ]
