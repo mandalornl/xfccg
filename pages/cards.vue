@@ -357,8 +357,8 @@ const updateFilter = ({
               :min="0"
               :max="2"
               inset
-              min-width="78"
               hide-details
+              width="80"
               color="primary"
               base-color="primary"
               variant="outlined"
