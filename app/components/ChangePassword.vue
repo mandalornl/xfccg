@@ -118,6 +118,5 @@ const updateUser = async (event: SubmitEventPromise) => {
         </v-card-actions>
       </v-card>
     </v-form>
-  </v-dialog
-    v-model="isOpen">
+  </v-dialog>
 </template>

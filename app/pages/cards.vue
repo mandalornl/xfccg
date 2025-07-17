@@ -182,7 +182,7 @@ const cards = computed<Card[]>(() => {
         return true;
       }
 
-      const cardValue = card[filter.key];
+      const cardValue = card[filter.key] as string;
 
       if (Array.isArray(cardValue)) {
         if (filter.operation === FilterOperationEnum.AND) {
