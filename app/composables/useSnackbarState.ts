@@ -2,7 +2,7 @@ import type { SnackbarState } from '~/types/snackbar';
 import { SnackbarColor } from '~/utils/snackbar';
 
 export const useSnackbarState = () => {
-  const state = useState('snackbarState', (): SnackbarState => ({
+  const state = useState('snackbar', (): SnackbarState => ({
     visible: false,
     text: '',
     color: SnackbarColor.INFO,

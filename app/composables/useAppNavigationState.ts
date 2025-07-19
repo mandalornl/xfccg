@@ -1,3 +1,3 @@
 export const useAppNavigationState = () => (
-  useState('appNavigationState', () => true)
+  useState('appNavigation', () => true)
 );
