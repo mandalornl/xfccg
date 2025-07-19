@@ -13,8 +13,9 @@ defineProps<{
     >
       {{ title }}
     </div>
-    <div class="text-medium-emphasis text-pre-wrap">
-      {{ text }}
-    </div>
+    <game-effect
+      :text="text"
+      class="text-medium-emphasis"
+    />
   </div>
 </template>
