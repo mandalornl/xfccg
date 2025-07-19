@@ -205,17 +205,6 @@ const cards = computed<Card[]>(() => {
   return hits;
 });
 
-const items = computed<Card[]>(() => {
-  if (perPage.value > 0) {
-    const start = (page.value - 1) * perPage.value;
-    const end = page.value * perPage.value;
-
-    return cards.value.slice(start, end);
-  }
-
-  return cards.value;
-});
-
 const deckSize = ref<number>(0);
 
 const onClickRow = (event: Event, data: { item: Card }) => (
@@ -242,8 +231,6 @@ const updateFilter = ({
 
   return navigateTo('/cards');
 };
-
-const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.value));
 </script>
 
 <template>
@@ -334,13 +321,13 @@ const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.
     </v-card>
     <v-data-iterator
       v-if="view === 'grid'"
-      :items="items"
+      :items="cards"
       :items-per-page="perPage"
     >
-      <template #default="{ items:gridItems }">
+      <template #default="{ items }">
         <v-row>
           <v-col
-            v-for="item of gridItems"
+            v-for="item of items"
             :key="item.raw.id"
             cols="12"
             sm="4"
@@ -383,44 +370,20 @@ const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.
           </v-col>
         </v-row>
       </template>
-      <template #footer>
-        <v-divider class="mt-4" />
-        <div class="d-flex align-center justify-end text-body-2 py-2 px-1">
-          <div class="d-flex align-center">
-            <span class="pr-2">
-              Items per page:
-            </span>
-            <v-select
-              v-model="perPage"
-              :items="itemsPerPageOptions"
-              hide-details
-              density="compact"
-              variant="outlined"
-            />
-          </div>
-          <span class="px-4">
-            {{ ((page - 1) * perPage) + 1 }}-{{ page * perPage }} of {{ cards.length }}
-          </span>
-          <v-pagination
-            v-model="page"
-            :length="paginationLength"
-            rounded
-            show-first-last-page
-            total-visible="0"
-            density="comfortable"
-            variant="plain"
-          />
-        </div>
+      <template #footer="footerProps">
+        <v-data-table-footer
+          v-bind="footerProps"
+          :items-per-page-options="itemsPerPageOptions"
+        />
       </template>
     </v-data-iterator>
-    <v-data-table-server
+    <v-data-table
       v-else
       v-model:page="page"
       v-model:items-per-page="perPage"
       v-model:sort-by="sortBy"
       :headers="headers"
-      :items="items"
-      :items-length="cards.length"
+      :items="cards"
       :items-per-page-options="itemsPerPageOptions"
       @click:row="onClickRow"
     >
@@ -446,7 +409,7 @@ const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.
           @click.stop
         />
       </template>
-    </v-data-table-server>
+    </v-data-table>
     <nuxt-page @click:filter="updateFilter" />
   </layout-content>
 </template>
