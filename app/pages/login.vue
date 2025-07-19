@@ -5,7 +5,7 @@ const route = useRoute();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const runtimeConfig = useRuntimeConfig();
-const snackbar = useSnackbarState();
+const snackbarState = useSnackbarState();
 
 const getEmail = () => {
   if (route.query.email) {
@@ -28,7 +28,7 @@ definePageMeta({
 });
 
 const signInWithDiscord = async () => {
-  snackbar.reset();
+  snackbarState.reset();
 
   isSigningInWithDiscord.value = true;
 
@@ -42,7 +42,7 @@ const signInWithDiscord = async () => {
   if (error) {
     useDebug(error);
 
-    snackbar.error('An error occurred signing in with Discord.');
+    snackbarState.error('An error occurred signing in with Discord.');
   }
 
   setTimeout(() => {
@@ -65,7 +65,7 @@ const signIn = async (event: SubmitEventPromise) => {
   });
 
   if (error) {
-    snackbar.error('An error occurred signing in.');
+    snackbarState.error('An error occurred signing in.');
   }
 
   setTimeout(() => {

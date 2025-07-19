@@ -2,7 +2,7 @@
 import type { SubmitEventPromise } from 'vuetify';
 
 const supabase = useSupabaseClient();
-const snackbar = useSnackbarState();
+const snackbarState = useSnackbarState();
 
 definePageMeta({
   middleware: [
@@ -17,7 +17,7 @@ const email = ref<string>('');
 const password = ref<string>('');
 
 const register = async (event: SubmitEventPromise) => {
-  snackbar.reset();
+  snackbarState.reset();
 
   const { valid } = await event;
 
@@ -40,9 +40,9 @@ const register = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbar.error('An error occurred during registration.');
+    snackbarState.error('An error occurred during registration.');
   } else {
-    snackbar.success('Your account has been created.');
+    snackbarState.success('Your account has been created.');
 
     await navigateTo({
       name: 'login',

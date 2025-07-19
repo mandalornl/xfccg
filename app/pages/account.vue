@@ -3,7 +3,7 @@ import type { SubmitEventPromise } from 'vuetify';
 
 const user = useSupabaseUser();
 const supabase = useSupabaseClient();
-const snackbar = useSnackbarState();
+const snackbarState = useSnackbarState();
 
 definePageMeta({
   middleware: [
@@ -18,7 +18,7 @@ const name = ref<string>(user.value?.user_metadata.full_name);
 const email = ref<string>(user.value?.email || '');
 
 const updateUser = async (event: SubmitEventPromise) => {
-  snackbar.reset();
+  snackbarState.reset();
 
   const { valid } = await event;
 
@@ -37,9 +37,9 @@ const updateUser = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbar.error('An error occurred saving your account.');
+    snackbarState.error('An error occurred saving your account.');
   } else {
-    snackbar.success('Your account has been saved.');
+    snackbarState.success('Your account has been saved.');
   }
 
   setTimeout(() => {

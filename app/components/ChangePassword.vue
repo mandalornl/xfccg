@@ -3,7 +3,7 @@ import type { SubmitEventPromise } from 'vuetify';
 import type { VForm } from 'vuetify/components';
 
 const supabase = useSupabaseClient();
-const snackbar = useSnackbarState();
+const snackbarState = useSnackbarState();
 
 const formRef = useTemplateRef<VForm>('form');
 const isValidForm = ref<boolean>(true);
@@ -22,7 +22,7 @@ watch(isOpen, (value) => {
 });
 
 const updateUser = async (event: SubmitEventPromise) => {
-  snackbar.reset();
+  snackbarState.reset();
 
   const { valid } = await event;
 
@@ -39,9 +39,9 @@ const updateUser = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbar.error('An error occurred updating your password.');
+    snackbarState.error('An error occurred updating your password.');
   } else {
-    snackbar.success('Your password has been updated.');
+    snackbarState.success('Your password has been updated.');
 
     isOpen.value = false;
   }
