@@ -268,6 +268,7 @@ const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.
       <v-card-actions class="flex-wrap">
         <v-btn-toggle
           v-model="view"
+          mandatory
           variant="tonal"
           color="primary"
         >
