@@ -2,24 +2,19 @@
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const model = defineModel<string | null>();
+
+const items = [
+  { title: 'And', value: FilterOperationEnum.AND },
+  { title: 'Or', value: FilterOperationEnum.OR },
+];
 </script>
 
 <template>
-  <v-btn-toggle
+  <v-select
     v-model="model"
-    mandatory
-    density="compact"
-    color="primary"
-  >
-    <v-btn
-      :value="FilterOperationEnum.AND"
-      size="small"
-      text="And"
-    />
-    <v-btn
-      :value="FilterOperationEnum.OR"
-      size="small"
-      text="Or"
-    />
-  </v-btn-toggle>
+    :items="items"
+    hide-details
+    min-width="100"
+    variant="outlined"
+  />
 </template>

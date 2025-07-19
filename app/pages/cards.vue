@@ -1,9 +1,5 @@
 <script lang="ts" setup>
 import type { RouteLocationResolvedGeneric } from 'vue-router';
-import {
-  useGoTo,
-  useDisplay,
-} from 'vuetify';
 
 import sets from '~/assets/filters/sets.json';
 import types from '~/assets/filters/types.json';
@@ -23,8 +19,6 @@ import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const router = useRouter();
-const goTo = useGoTo();
-const { smAndUp } = useDisplay();
 
 useHead({
   title: 'Cards',
@@ -157,8 +151,14 @@ watch(resolvedRoute, (value: RouteLocationResolvedGeneric) => {
   });
 });
 
-watch(search, () => {
+watch([
+  search,
+  filters,
+  view,
+], () => {
   page.value = 1;
+}, {
+  deep: true,
 });
 
 const cards = computed<Card[]>(() => {
@@ -248,218 +248,204 @@ const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.
 
 <template>
   <layout-content fluid>
-    <v-row>
-      <v-col
-        cols="12"
-        sm="4"
-        md="3"
-      >
-        <filter-panels
+    <v-card
+      flat
+      class="mb-4"
+    >
+      <v-card-text>
+        <v-text-field
+          :model-value="search"
+          clearable
+          hide-details
+          placeholder="Search"
+          prepend-inner-icon="mdi-magnify"
+          type="search"
+          @click:clear="search = ''"
+          @focus="$event.target.select()"
+          @keydown.exact.enter="search = $event.target.value"
+        />
+      </v-card-text>
+      <v-card-actions class="flex-wrap">
+        <v-btn-toggle
+          v-model="view"
+          variant="tonal"
+          color="primary"
+        >
+          <v-btn
+            value="list"
+            icon="mdi-view-list"
+          />
+          <v-btn
+            value="grid"
+            icon="mdi-view-grid"
+          />
+        </v-btn-toggle>
+        <filter-dialog
           v-model="filters"
-          :expanded="smAndUp ? [ 'set', 'type' ] : []"
           :items="cards"
         />
-      </v-col>
-      <v-col
-        cols="12"
-        sm="8"
-        md="9"
-      >
-        <v-card
-          flat
-          class="mb-4"
+        <!--<v-btn-group variant="tonal">
+          <v-btn
+            size="small"
+            icon="mdi-floppy"
+            title="Save deck"
+          />
+          <v-btn
+            size="small"
+            icon="mdi-chart-line"
+            title="Show stats"
+          />
+          <v-btn
+            size="small"
+            icon="mdi-cards"
+            title="Draw opening hand"
+          />
+          <v-btn
+            size="small"
+            icon="mdi-link-variant"
+            title="Copy deck URL to clipboard"
+          />
+          <v-btn
+            size="small"
+            icon="mdi-sync"
+            title="Reset deck"
+          />
+        </v-btn-group>-->
+        <v-spacer />
+        <v-switch
+          v-model="inDeck"
+          :disabled="deckSize === 0"
+          hide-details
+          density="compact"
+          class="ml-3"
         >
-          <v-card-text>
-            <v-text-field
-              :model-value="search"
-              clearable
-              hide-details
-              placeholder="Search"
-              prepend-inner-icon="mdi-magnify"
-              type="search"
-              @click:clear="search = ''"
-              @focus="$event.target.select()"
-              @keydown.exact.enter="search = $event.target.value"
-            />
-          </v-card-text>
-          <v-card-actions class="flex-wrap">
-            <v-btn-toggle
-              v-model="view"
-              variant="tonal"
+          <template #label>
+            In deck
+            <v-badge
+              :model-value="deckSize > 0"
+              :content="deckSize"
+              inline
               color="primary"
-            >
-              <v-btn
-                value="list"
-                icon="mdi-view-list"
-              />
-              <v-btn
-                value="grid"
-                icon="mdi-view-grid"
-              />
-            </v-btn-toggle>
-            <!--<v-btn-group variant="tonal">
-              <v-btn
-                size="small"
-                icon="mdi-floppy"
-                title="Save deck"
-              />
-              <v-btn
-                size="small"
-                icon="mdi-chart-line"
-                title="Show stats"
-              />
-              <v-btn
-                size="small"
-                icon="mdi-cards"
-                title="Draw opening hand"
-              />
-              <v-btn
-                size="small"
-                icon="mdi-link-variant"
-                title="Copy deck URL to clipboard"
-              />
-              <v-btn
-                size="small"
-                icon="mdi-sync"
-                title="Reset deck"
-              />
-            </v-btn-group>-->
-            <v-spacer />
-            <v-switch
-              v-model="inDeck"
-              :disabled="deckSize === 0"
-              hide-details
-              density="compact"
-              class="ml-3"
-            >
-              <template #label>
-                In deck
-                <v-badge
-                  :model-value="deckSize > 0"
-                  :content="deckSize"
-                  inline
-                  color="primary"
-                />
-              </template>
-            </v-switch>
-          </v-card-actions>
-        </v-card>
-        <v-data-iterator
-          v-if="view === 'grid'"
-          :items="items"
-          :items-per-page="perPage"
-        >
-          <template #default="{ items:gridItems }">
-            <v-row>
-              <v-col
-                v-for="item of gridItems"
-                :key="item.raw.id"
-                cols="12"
-                sm="4"
-                md="3"
-                lg="2"
-              >
-                <v-card :to="{ name: 'cards-id', params: { id: item.raw.id } }">
-                  <v-card-item>
-                    <v-card-title>
-                      {{ item.raw.title }}
-                    </v-card-title>
-                    <v-card-subtitle>
-                      {{ item.raw.id }}
-                    </v-card-subtitle>
-                  </v-card-item>
-                  <v-card-text>
-                    <card-image :card="item.raw" />
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-spacer />
-                    <span class="pr-2">
-                      # In deck:
-                    </span>
-                    <v-number-input
-                      :model-value="0"
-                      :min="0"
-                      :max="2"
-                      inset
-                      hide-details
-                      max-width="80"
-                      color="primary"
-                      base-color="primary"
-                      variant="outlined"
-                      density="compact"
-                      control-variant="stacked"
-                      @click.stop
-                    />
-                  </v-card-actions>
-                </v-card>
-              </v-col>
-            </v-row>
+            />
           </template>
-          <template #footer>
-            <v-divider class="mt-4" />
-            <div class="d-flex align-center justify-end text-body-2 py-2 px-1">
-              <div class="d-flex align-center">
+        </v-switch>
+      </v-card-actions>
+    </v-card>
+    <v-data-iterator
+      v-if="view === 'grid'"
+      :items="items"
+      :items-per-page="perPage"
+    >
+      <template #default="{ items:gridItems }">
+        <v-row>
+          <v-col
+            v-for="item of gridItems"
+            :key="item.raw.id"
+            cols="12"
+            sm="4"
+            md="3"
+            lg="2"
+          >
+            <v-card :to="{ name: 'cards-id', params: { id: item.raw.id } }">
+              <v-card-item>
+                <v-card-title>
+                  {{ item.raw.title }}
+                </v-card-title>
+                <v-card-subtitle>
+                  {{ item.raw.id }}
+                </v-card-subtitle>
+              </v-card-item>
+              <v-card-text>
+                <card-image :card="item.raw" />
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer />
                 <span class="pr-2">
-                  Items per page:
+                  # In deck:
                 </span>
-                <v-select
-                  v-model="perPage"
-                  :items="itemsPerPageOptions"
+                <v-number-input
+                  :model-value="0"
+                  :min="0"
+                  :max="2"
+                  inset
                   hide-details
-                  density="compact"
+                  max-width="80"
+                  color="primary"
+                  base-color="primary"
                   variant="outlined"
+                  density="compact"
+                  control-variant="stacked"
+                  @click.stop
                 />
-              </div>
-              <span class="px-4">
-                {{ ((page - 1) * perPage) + 1 }}-{{ page * perPage }} of {{ pool.length }}
-              </span>
-              <v-pagination
-                v-model="page"
-                :length="paginationLength"
-                rounded
-                show-first-last-page
-                total-visible="0"
-                density="comfortable"
-                variant="plain"
-              />
-            </div>
-          </template>
-        </v-data-iterator>
-        <v-data-table-server
-          v-else
-          v-model:sort-by="sortBy"
-          v-model:items-per-page="perPage"
-          :headers="headers"
-          :items="items"
-          :items-length="cards.length"
-          :items-per-page-options="itemsPerPageOptions"
-          @click:row="onClickRow"
-        >
-          <template #[`item.type`]="{ value }">
-            <card-type
-              v-if="value"
-              :text="value"
-            />
-          </template>
-          <template #[`item.inDeck`]>
-            <v-number-input
-              :model-value="0"
-              :min="0"
-              :max="2"
-              inset
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </template>
+      <template #footer>
+        <v-divider class="mt-4" />
+        <div class="d-flex align-center justify-end text-body-2 py-2 px-1">
+          <div class="d-flex align-center">
+            <span class="pr-2">
+              Items per page:
+            </span>
+            <v-select
+              v-model="perPage"
+              :items="itemsPerPageOptions"
               hide-details
-              width="80"
-              color="primary"
-              base-color="primary"
-              variant="outlined"
               density="compact"
-              control-variant="stacked"
-              @click.stop
+              variant="outlined"
             />
-          </template>
-        </v-data-table-server>
-      </v-col>
-    </v-row>
+          </div>
+          <span class="px-4">
+            {{ ((page - 1) * perPage) + 1 }}-{{ page * perPage }} of {{ cards.length }}
+          </span>
+          <v-pagination
+            v-model="page"
+            :length="paginationLength"
+            rounded
+            show-first-last-page
+            total-visible="0"
+            density="comfortable"
+            variant="plain"
+          />
+        </div>
+      </template>
+    </v-data-iterator>
+    <v-data-table-server
+      v-else
+      v-model:page="page"
+      v-model:items-per-page="perPage"
+      v-model:sort-by="sortBy"
+      :headers="headers"
+      :items="items"
+      :items-length="cards.length"
+      :items-per-page-options="itemsPerPageOptions"
+      @click:row="onClickRow"
+    >
+      <template #[`item.type`]="{ value }">
+        <card-type
+          v-if="value"
+          :text="value"
+        />
+      </template>
+      <template #[`item.inDeck`]>
+        <v-number-input
+          :model-value="0"
+          :min="0"
+          :max="2"
+          inset
+          hide-details
+          width="80"
+          color="primary"
+          base-color="primary"
+          variant="outlined"
+          density="compact"
+          control-variant="stacked"
+          @click.stop
+        />
+      </template>
+    </v-data-table-server>
     <nuxt-page @click:filter="updateFilter" />
   </layout-content>
 </template>

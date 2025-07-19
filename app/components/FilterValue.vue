@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import type {
   Filter,
-  FilterItem,
   Filterable,
 } from '~/types/filter';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
@@ -46,29 +45,25 @@ const isDisabled = (filterValue: string, count: number | string): boolean => (
   )
 );
 
-const getItem = (value: string): FilterItem => {
-  const count = getCount(value);
+const items = computed<{
+  value: string,
+  title: string,
+  props: {
+    disabled: boolean,
+  },
+}[]>(() => (
+  props.filter.items.map((value) => {
+    const count = getCount(value);
 
-  return {
-    value,
-    count,
-    disabled: isDisabled(value, count),
-  };
-};
-
-const primaryItems = computed<FilterItem[]>(() => (
-  props.filter.items
-    .slice(0, 5)
-    .map(getItem)
-));
-
-const secondaryItems = computed<FilterItem[]>(() => (
-  props.filter.items
-    .slice(5)
-    .map(getItem)
-));
-
-const isExpanded = ref(false);
+    return {
+      value,
+      title: `${value} (${count})`,
+      props: {
+        disabled: isDisabled(value, count),
+      },
+    };
+  }))
+);
 
 watch(() => props.filter.operation, (value: FilterOperationEnum) => {
   if (value !== FilterOperationEnum.AND) {
@@ -80,40 +75,18 @@ watch(() => props.filter.operation, (value: FilterOperationEnum) => {
 </script>
 
 <template>
-  <v-checkbox
-    v-for="item of primaryItems"
-    :key="item.value"
+  <v-autocomplete
     v-model="model"
-    :disabled="item.disabled"
-    :value="item.value"
-    :label="`${item.value} (${item.count})`"
+    :items="items"
+    :label="filter.title"
+    chips
+    multiple
+    clearable
+    closable-chips
+    auto-select-first
+    hide-selected
     hide-details
-  />
-  <template v-if="secondaryItems.length > 0">
-    <v-expand-transition>
-      <div v-if="isExpanded">
-        <v-checkbox
-          v-for="item of secondaryItems"
-          :key="item.value"
-          v-model="model"
-          :disabled="item.disabled"
-          :value="item.value"
-          :label="`${item.value} (${item.count})`"
-          hide-details
-        />
-      </div>
-    </v-expand-transition>
-    <v-switch
-      v-model="isExpanded"
-      :label="isExpanded ? 'Show less' : `Show ${secondaryItems.length} more`"
-      hide-details
-    />
-  </template>
-  <v-btn
-    :disabled="model.length === 0"
-    variant="tonal"
-    size="small"
-    text="Clear"
-    @click="model = []"
+    variant="outlined"
+    placeholder="Type to search"
   />
 </template>
