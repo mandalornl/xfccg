@@ -101,7 +101,7 @@ const headers = [
 const itemsPerPageOptions = [
   { value: 60, title: '60' },
   { value: 120, title: '120' },
-  { value: -1, title: 'All' },
+  { value: 240, title: '240' },
 ];
 
 const getSortByValue = (): SortBy[] => {
@@ -113,6 +113,7 @@ const getSortByValue = (): SortBy[] => {
 };
 
 const search = ref<string>((route.query.search || '') as string);
+const view = ref<string>((route.query.view ?? 'list') as string);
 const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
@@ -125,6 +126,7 @@ const resolvedRoute = computed(() => {
     name: 'cards',
     query: {
       search: search.value || undefined,
+      view: view.value !== 'list' ? view.value : undefined,
       page: page.value > 1 ? page.value : undefined,
       perPage: perPage.value !== 60 ? perPage.value : undefined,
       sortBy: sortByValue !== '[]' ? sortByValue : undefined,
@@ -215,7 +217,6 @@ const items = computed<Card[]>(() => {
 });
 
 const deckSize = ref<number>(0);
-const isIntersecting = ref<boolean>(false);
 
 const onClickRow = (event: Event, data: { item: Card }) => (
   navigateTo({
@@ -241,6 +242,8 @@ const updateFilter = ({
 
   return navigateTo('/cards');
 };
+
+const paginationLength = computed<number>(() => Math.ceil(pool.length / perPage.value));
 </script>
 
 <template>
@@ -280,36 +283,47 @@ const updateFilter = ({
             />
           </v-card-text>
           <v-card-actions class="flex-wrap">
-            <v-btn
-              variant="text"
-              size="small"
-              icon="mdi-floppy"
-              title="Save deck"
-            />
-            <v-btn
-              variant="text"
-              size="small"
-              icon="mdi-chart-line"
-              title="Show stats"
-            />
-            <v-btn
-              variant="text"
-              size="small"
-              icon="mdi-cards"
-              title="Draw opening hand"
-            />
-            <v-btn
-              variant="text"
-              size="small"
-              icon="mdi-link-variant"
-              title="Copy deck URL to clipboard"
-            />
-            <v-btn
-              variant="text"
-              size="small"
-              icon="mdi-sync"
-              title="Reset deck"
-            />
+            <v-btn-toggle
+              v-model="view"
+              variant="tonal"
+              color="primary"
+            >
+              <v-btn
+                value="list"
+                icon="mdi-view-list"
+              />
+              <v-btn
+                value="grid"
+                icon="mdi-view-grid"
+              />
+            </v-btn-toggle>
+            <!--<v-btn-group variant="tonal">
+              <v-btn
+                size="small"
+                icon="mdi-floppy"
+                title="Save deck"
+              />
+              <v-btn
+                size="small"
+                icon="mdi-chart-line"
+                title="Show stats"
+              />
+              <v-btn
+                size="small"
+                icon="mdi-cards"
+                title="Draw opening hand"
+              />
+              <v-btn
+                size="small"
+                icon="mdi-link-variant"
+                title="Copy deck URL to clipboard"
+              />
+              <v-btn
+                size="small"
+                icon="mdi-sync"
+                title="Reset deck"
+              />
+            </v-btn-group>-->
             <v-spacer />
             <v-switch
               v-model="inDeck"
@@ -330,15 +344,91 @@ const updateFilter = ({
             </v-switch>
           </v-card-actions>
         </v-card>
+        <v-data-iterator
+          v-if="view === 'grid'"
+          :items="items"
+          :items-per-page="perPage"
+        >
+          <template #default="{ items:gridItems }">
+            <v-row>
+              <v-col
+                v-for="item of gridItems"
+                :key="item.raw.id"
+                cols="12"
+                sm="4"
+                md="3"
+                lg="2"
+              >
+                <v-card :to="{ name: 'cards-id', params: { id: item.raw.id } }">
+                  <v-card-item>
+                    <v-card-title>
+                      {{ item.raw.title }}
+                    </v-card-title>
+                    <v-card-subtitle>
+                      {{ item.raw.id }}
+                    </v-card-subtitle>
+                  </v-card-item>
+                  <v-card-text>
+                    <card-image :card="item.raw" />
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-spacer />
+                    <span class="pr-2">
+                      # In deck:
+                    </span>
+                    <v-number-input
+                      :model-value="0"
+                      :min="0"
+                      :max="2"
+                      inset
+                      hide-details
+                      max-width="80"
+                      color="primary"
+                      base-color="primary"
+                      variant="outlined"
+                      density="compact"
+                      control-variant="stacked"
+                      @click.stop
+                    />
+                  </v-card-actions>
+                </v-card>
+              </v-col>
+            </v-row>
+          </template>
+          <template #footer>
+            <v-divider class="mt-4" />
+            <div class="d-flex align-center justify-end text-body-2 py-2 px-1">
+              <div class="d-flex align-center">
+                <span class="pr-2">
+                  Items per page:
+                </span>
+                <v-select
+                  v-model="perPage"
+                  :items="itemsPerPageOptions"
+                  hide-details
+                  density="compact"
+                  variant="outlined"
+                />
+              </div>
+              <span class="px-4">
+                {{ ((page - 1) * perPage) + 1 }}-{{ page * perPage }} of {{ pool.length }}
+              </span>
+              <v-pagination
+                v-model="page"
+                :length="paginationLength"
+                rounded
+                show-first-last-page
+                total-visible="0"
+                density="comfortable"
+                variant="plain"
+              />
+            </div>
+          </template>
+        </v-data-iterator>
         <v-data-table-server
+          v-else
           v-model:sort-by="sortBy"
           v-model:items-per-page="perPage"
-          v-intersect="{
-            handler: ($event: boolean) => isIntersecting = $event,
-            options: {
-              rootMargin: '-64px 0px 0px',
-            }
-          }"
           :headers="headers"
           :items="items"
           :items-length="cards.length"
@@ -368,24 +458,6 @@ const updateFilter = ({
             />
           </template>
         </v-data-table-server>
-        <v-fade-transition>
-          <div
-            v-if="!isIntersecting"
-            class="position-sticky top-50 left-0 right-0"
-          >
-            <v-btn
-              variant="tonal"
-              class="d-block mx-auto"
-              @click="goTo(0)"
-            >
-              {{ cards.length }} {{ cards.length === 1 ? 'result' : 'results' }} found
-              <v-icon
-                icon="mdi-arrow-up"
-                class="ml-2"
-              />
-            </v-btn>
-          </div>
-        </v-fade-transition>
       </v-col>
     </v-row>
     <nuxt-page @click:filter="updateFilter" />
