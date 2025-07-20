@@ -191,17 +191,14 @@ const onClickRow = (event: Event, data: { item: Card }) => (
   })
 );
 
-const updateFilter = ({
-  key,
-  value,
-}: {
+const updateFilter = (event: {
   key: string;
   value: string;
 }) => {
   search.value = '';
 
   for (const filter of filters.value) {
-    filter.value = filter.key === key ? [ value ] : [];
+    filter.value = filter.key === event.key ? [ event.value ] : [];
   }
 
   return navigateTo('/cards');
