@@ -321,8 +321,9 @@ const updateFilter = ({
     </v-card>
     <v-data-iterator
       v-if="view === 'grid'"
+      v-model:page="page"
+      v-model:items-per-page="perPage"
       :items="cards"
-      :items-per-page="perPage"
     >
       <template #default="{ items }">
         <v-row>
