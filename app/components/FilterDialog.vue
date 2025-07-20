@@ -6,7 +6,6 @@ import type {
 } from '~/types/filter';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
-const route = useRoute();
 const { smAndDown } = useDisplay();
 
 defineProps<{
@@ -27,36 +26,6 @@ const clearFilters = () => {
     filter.operation = FilterOperationEnum.AND;
   }
 };
-
-const getValue = (key: string, defaultValue: string[]): string[] => {
-  if (!route.query[key]) {
-    return defaultValue;
-  }
-
-  const value = route.query[key] as string;
-  const or = value.includes(',');
-
-  return value
-    .split(or ? ',' : '+')
-    .filter(Boolean);
-};
-
-const getOperation = (key: string, defaultOperation: FilterOperationEnum): FilterOperationEnum => {
-  if (!route.query[key]) {
-    return defaultOperation;
-  }
-
-  const value = route.query[key] as string;
-
-  return value.includes(',') ? FilterOperationEnum.OR : FilterOperationEnum.AND;
-};
-
-onMounted(() => {
-  for (const filter of filters.value) {
-    filter.value = getValue(filter.key, filter.value);
-    filter.operation = getOperation(filter.key, filter.operation);
-  }
-});
 </script>
 
 <template>

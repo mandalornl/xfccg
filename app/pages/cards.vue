@@ -10,7 +10,6 @@ import costs from '~/assets/filters/costs.json';
 import episodes from '~/assets/filters/episodes.json';
 import tags from '~/assets/filters/tags.json';
 
-import type { Filter } from '~/types/filter';
 import type { Card } from '~/types/card';
 import type { SortBy } from '~/types/sort';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
@@ -24,64 +23,40 @@ useHead({
   title: 'Cards',
 });
 
-const filters = ref<Filter[]>([
-  {
-    key: 'set',
+const filters = useFilters({
+  set: {
     title: 'Set',
-    value: [],
     items: sets,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'type',
+  type: {
     title: 'Type',
-    value: [],
     items: types,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'keywords',
+  keywords: {
     title: 'Keywords',
-    value: [],
     items: keywords,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'activators',
+  activators: {
     title: 'Activators',
-    value: [],
     items: activators,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'rarity',
+  rarity: {
     title: 'Rarity',
-    value: [],
     items: rarities,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'cost',
+  cost: {
     title: 'Cost',
-    value: [],
     items: costs,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'episode',
+  episode: {
     title: 'Episodes',
-    value: [],
     items: episodes,
-    operation: FilterOperationEnum.AND,
   },
-  {
-    key: 'tags',
+  tags: {
     title: 'Tags',
-    value: [],
     items: tags,
-    operation: FilterOperationEnum.AND,
   },
-]);
+});
 
 const headers = [
   { title: '#', key: 'id', nowrap: true },
