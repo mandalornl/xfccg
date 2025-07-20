@@ -6,6 +6,7 @@ import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const { smAndDown } = useDisplay();
+const routeFromState = useRouteFromState();
 
 const card = computed<Card | undefined>(() => {
   if (!route.params.id) {
@@ -25,6 +26,14 @@ const onClick = (key: string) => (value: string) => {
     value,
   });
 };
+
+const backTo = computed(() => {
+  if (routeFromState.value?.name === 'cards') {
+    return routeFromState.value;
+  }
+
+  return '/cards';
+});
 </script>
 
 <template>
@@ -34,15 +43,15 @@ const onClick = (key: string) => (value: string) => {
     scrollable
     width="768"
     scrim="black"
-    @update:model-value="(value) => !value && navigateTo('/cards')"
+    @update:model-value="(value) => !value && navigateTo(backTo)"
   >
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
           {{ card?.title }}
           <v-btn
+            :to="backTo"
             exact
-            to="/cards"
             variant="text"
             icon="mdi-close"
             size="small"
