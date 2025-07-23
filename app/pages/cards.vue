@@ -81,47 +81,59 @@ const getSortByValue = (): SortBy[] => {
   }
 };
 
+const getSelectedCard = (): Card | undefined => {
+  if (!route.query.id) {
+    return undefined;
+  }
+
+  return pool.find((card) => card.id === route.query.id);
+};
+
 const search = ref<string>((route.query.search || '') as string);
 const view = ref<string>((route.query.view ?? 'list') as string);
 const page = ref<number>(Number((route.query.page ?? '1') as string));
 const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
 const sortBy = ref<SortBy[]>(getSortByValue());
 const inDeck = ref<boolean>(route.query.inDeck === null);
+const selectedCard = ref<Card | undefined>(getSelectedCard());
 
-const resolvedRoute = computed(() => {
+const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
+  if (selectedCard.value) {
+    return {
+      id: selectedCard.value.id,
+    };
+  }
+
   const sortByValue = JSON.stringify(sortBy.value);
 
-  return router.resolve({
-    name: 'cards',
-    query: {
-      search: search.value || undefined,
-      view: view.value !== 'list' ? view.value : undefined,
-      page: page.value > 1 ? page.value : undefined,
-      perPage: perPage.value !== 60 ? perPage.value : undefined,
-      sortBy: sortByValue !== '[]' ? sortByValue : undefined,
-      inDeck: inDeck.value ? null : undefined,
-      ...Object.fromEntries(
-        filters.value.map((filter) => ([
-          filter.key,
-          filter.value.length > 0
-            ? filter.value.join(filter.operation === FilterOperationEnum.AND ? '+' : ',')
-            : undefined,
-        ]))
-      ),
-    },
-  });
+  return {
+    search: search.value || undefined,
+    view: view.value !== 'list' ? view.value : undefined,
+    page: page.value > 1 ? page.value : undefined,
+    perPage: perPage.value !== 60 ? perPage.value : undefined,
+    sortBy: sortByValue !== '[]' ? sortByValue : undefined,
+    inDeck: inDeck.value ? null : undefined,
+    ...Object.fromEntries(
+      filters.value.map((filter) => ([
+        filter.key,
+        filter.value.length > 0
+          ? filter.value.join(filter.operation === FilterOperationEnum.AND ? '+' : ',')
+          : undefined,
+      ]))
+    ),
+  };
 });
 
-watch(resolvedRoute, (value: RouteLocationResolvedGeneric) => {
-  if (route.name === 'cards-id') {
+watch(routeQuery, (query) => {
+  const resolvedRoute = router.resolve({
+    query,
+  });
+
+  if (resolvedRoute.fullPath === route.fullPath) {
     return;
   }
 
-  if (value.fullPath === route.fullPath) {
-    return;
-  }
-
-  return navigateTo(value, {
+  return navigateTo(resolvedRoute, {
     replace: true
   });
 });
@@ -182,26 +194,20 @@ const cards = computed<Card[]>(() => {
 
 const deckSize = ref<number>(0);
 
-const onClickRow = (event: Event, data: { item: Card }) => (
-  navigateTo({
-    name: 'cards-id',
-    params: {
-      id: data.item?.id,
-    },
-  })
-);
+const onClickRow = (event: Event, data: { item: Card }) => {
+  selectedCard.value = { ...data.item };
+};
 
 const updateFilter = (event: {
   key: string;
   value: string;
 }) => {
+  selectedCard.value = undefined;
   search.value = '';
 
   for (const filter of filters.value) {
     filter.value = filter.key === event.key ? [ event.value ] : [];
   }
-
-  return navigateTo('/cards');
 };
 </script>
 
@@ -307,7 +313,7 @@ const updateFilter = (event: {
             md="3"
             lg="2"
           >
-            <v-card :to="{ name: 'cards-id', params: { id: item.raw.id } }">
+            <v-card @click="selectedCard = { ...item.raw }">
               <v-card-item>
                 <v-card-title>
                   {{ item.raw.title }}
@@ -383,7 +389,10 @@ const updateFilter = (event: {
         />
       </template>
     </v-data-table>
-    <nuxt-page @click:filter="updateFilter" />
+    <card-info
+      v-model="selectedCard"
+      @click:filter="updateFilter"
+    />
   </layout-content>
 </template>
 
