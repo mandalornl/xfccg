@@ -64,7 +64,7 @@ const onClickFilter = (key: string) => (value: string) => {
               v-if="card?.set"
               title="Set"
             >
-              <card-text :text="card.set" />
+              <card-text :text="card?.set" />
             </card-item>
             <card-item
               v-if="card?.type"
