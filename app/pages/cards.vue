@@ -141,7 +141,6 @@ watch(routeQuery, (query) => {
 watch([
   search,
   filters,
-  view,
 ], () => {
   page.value = 1;
 }, {
