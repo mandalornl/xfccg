@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import type { RouteLocationResolvedGeneric } from 'vue-router';
-
-import sets from '~/assets/filters/sets.json';
-import types from '~/assets/filters/types.json';
 import keywords from '~/assets/filters/keywords.json';
 import activators from '~/assets/filters/activators.json';
-import rarities from '~/assets/filters/rarities.json';
 import costs from '~/assets/filters/costs.json';
 import episodes from '~/assets/filters/episodes.json';
 import tags from '~/assets/filters/tags.json';
 
 import type { Card } from '~/types/card';
+import {
+  CardSet as CardSetEnum,
+  CardType as CardTypeEnum,
+  CardRarity as CardRarityEnum,
+} from '~/utils/card';
 import type { SortBy } from '~/types/sort';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 import { sortCompare } from '~/utils/sort-compare';
@@ -26,11 +26,11 @@ useHead({
 const filters = useFilters({
   set: {
     title: 'Set',
-    items: sets,
+    items: Object.values(CardSetEnum),
   },
   type: {
     title: 'Type',
-    items: types,
+    items: Object.values(CardTypeEnum),
   },
   keywords: {
     title: 'Keywords',
@@ -42,7 +42,7 @@ const filters = useFilters({
   },
   rarity: {
     title: 'Rarity',
-    items: rarities,
+    items: Object.values(CardRarityEnum),
   },
   cost: {
     title: 'Cost',
