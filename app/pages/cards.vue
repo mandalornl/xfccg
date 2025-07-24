@@ -74,9 +74,13 @@ const itemsPerPageOptions = [
   { value: 240, title: '240' },
 ];
 
+const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
+  (route.query[key] as string) || defaultValue
+);
+
 const getSortByValue = (): SortBy[] => {
   try {
-    return JSON.parse((route.query.sortBy ?? '[]') as string);
+    return JSON.parse(getRouteQueryValue('sortBy', '[]'));
   } catch {
     return [];
   }
@@ -90,10 +94,10 @@ const getSelectedCard = (): Card | undefined => {
   return pool.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>((route.query.search || '') as string);
-const view = ref<string>((route.query.view ?? 'list') as string);
-const page = ref<number>(Number((route.query.page ?? '1') as string));
-const perPage = ref<number>(Number((route.query.perPage ?? '60') as string));
+const search = ref<string>(getRouteQueryValue('search'));
+const view = ref<string>(getRouteQueryValue('view', 'list'));
+const page = ref<number>(Number(getRouteQueryValue('page', '1')));
+const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
 const sortBy = ref<SortBy[]>(getSortByValue());
 const inDeck = ref<boolean>(route.query.inDeck === null);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
