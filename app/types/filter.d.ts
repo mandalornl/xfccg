@@ -11,3 +11,10 @@ export interface Filter {
 export interface Filterable {
   [filterKey: string]: string | string[];
 }
+
+export type FilterSetup = Record<string, {
+  title: string,
+  items: string[],
+  value?: string[],
+  operation?: FilterOperation,
+}>;

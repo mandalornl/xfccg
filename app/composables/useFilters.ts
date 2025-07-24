@@ -1,14 +1,12 @@
 import type { Ref } from 'vue';
 
-import type { Filter } from '~/types/filter';
-import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
+import type {
+  Filter,
+  FilterSetup,
+} from '~/types/filter';
+import { FilterOperation } from '~/utils/filter-operation';
 
-export const useFilters = (fields: Record<string, {
-  title: string,
-  items: string[],
-  value?: string[],
-  operation?: FilterOperationEnum,
-}>): Ref<Filter[]> => {
+export const useFilters = (setup: FilterSetup): Ref<Filter[]> => {
   const route = useRoute();
 
   const getValue = (key: string, defaultValue?: string[]): string[] => {
@@ -24,17 +22,17 @@ export const useFilters = (fields: Record<string, {
       .filter(Boolean);
   };
 
-  const getOperation = (key: string, defaultOperation?: FilterOperationEnum): FilterOperationEnum => {
+  const getOperation = (key: string, defaultOperation?: FilterOperation): FilterOperation => {
     if (!route.query[key]) {
-      return defaultOperation ?? FilterOperationEnum.AND;
+      return defaultOperation ?? FilterOperation.AND;
     }
 
     const value = route.query[key] as string;
 
-    return value.includes(',') ? FilterOperationEnum.OR : FilterOperationEnum.AND;
+    return value.includes(',') ? FilterOperation.OR : FilterOperation.AND;
   };
 
-  const filters = Object.entries(fields).map(([
+  const filters = Object.entries(setup).map(([
     key,
     field,
   ]) => ({
