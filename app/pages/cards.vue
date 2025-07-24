@@ -18,6 +18,7 @@ import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const router = useRouter();
+const inDeckState = useInDeckState();
 
 useHead({
   title: 'Cards',
@@ -163,7 +164,9 @@ const cards = computed<Card[]>(() => {
       }
     }
 
-    // TODO: query.inDeck && inDeck[card.id] === 0 then return false.
+    if (inDeck.value && !inDeckState.value[card.id]) {
+      return false;
+    }
 
     return filters.value.every((filter) => {
       if (filter.value.length === 0) {
@@ -195,7 +198,17 @@ const cards = computed<Card[]>(() => {
   return hits;
 });
 
-const deckSize = ref<number>(0);
+const deckSize = computed<number>(() => (
+  Object.values(inDeckState.value).reduce((total, quantity) => total + quantity, 0)
+));
+
+watch(deckSize, (value) => {
+  if (value > 0) {
+    return;
+  }
+
+  inDeck.value = false;
+});
 
 const onClickRow = (event: Event, data: { item: Card }) => {
   selectedCard.value = { ...data.item };
@@ -333,20 +346,7 @@ const updateFilter = (event: {
                 <span class="pr-2">
                   # In deck:
                 </span>
-                <v-number-input
-                  :model-value="0"
-                  :min="0"
-                  :max="2"
-                  inset
-                  hide-details
-                  max-width="80"
-                  color="primary"
-                  base-color="primary"
-                  variant="outlined"
-                  density="compact"
-                  control-variant="stacked"
-                  @click.stop
-                />
+                <input-in-deck :card="item.raw" />
               </v-card-actions>
             </v-card>
           </v-col>
@@ -375,21 +375,8 @@ const updateFilter = (event: {
           :text="value"
         />
       </template>
-      <template #[`item.inDeck`]>
-        <v-number-input
-          :model-value="0"
-          :min="0"
-          :max="2"
-          inset
-          hide-details
-          width="80"
-          color="primary"
-          base-color="primary"
-          variant="outlined"
-          density="compact"
-          control-variant="stacked"
-          @click.stop
-        />
+      <template #[`item.inDeck`]="{ item }">
+        <input-in-deck :card="item" />
       </template>
     </v-data-table>
     <card-info
