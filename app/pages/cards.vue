@@ -217,18 +217,6 @@ watch(deckSize, (value) => {
 const onClickRow = (event: Event, data: { item: Card }) => {
   selectedCard.value = { ...data.item };
 };
-
-const updateFilter = (event: {
-  key: string;
-  value: string;
-}) => {
-  selectedCard.value = undefined;
-  search.value = '';
-
-  for (const filter of filters.value) {
-    filter.value = filter.key === event.key ? [ event.value ] : [];
-  }
-};
 </script>
 
 <template>
@@ -383,10 +371,7 @@ const updateFilter = (event: {
         <input-in-deck :card="item" />
       </template>
     </v-data-table>
-    <card-info
-      v-model="selectedCard"
-      @click:filter="updateFilter"
-    />
+    <card-info v-model="selectedCard" />
   </layout-content>
 </template>
 

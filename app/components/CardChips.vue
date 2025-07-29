@@ -3,10 +3,6 @@ defineProps<{
   title?: string,
   value?: string[],
 }>();
-
-const emit = defineEmits([
-  'click',
-]);
 </script>
 
 <template>
@@ -18,7 +14,6 @@ const emit = defineEmits([
       label
       color="primary"
       class="ma-1"
-      @click="emit('click', text)"
     />
   </div>
 </template>

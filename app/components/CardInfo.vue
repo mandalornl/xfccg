@@ -6,17 +6,6 @@ import type { Card } from '~/types/card';
 const { smAndDown } = useDisplay();
 
 const card = defineModel<Card>();
-
-const emit = defineEmits([
-  'click:filter',
-]);
-
-const onClickFilter = (key: string) => (value: string) => {
-  emit('click:filter', {
-    key,
-    value,
-  });
-};
 </script>
 
 <template>
@@ -112,19 +101,13 @@ const onClickFilter = (key: string) => (value: string) => {
               v-if="card?.keywords?.length"
               title="Keywords"
             >
-              <card-chips
-                :value="card?.keywords"
-                @click="onClickFilter('keywords')($event)"
-              />
+              <card-chips :value="card?.keywords" />
             </card-item>
             <card-item
               v-if="card?.activators?.length"
               title="Activators"
             >
-              <card-chips
-                :value="card?.activators"
-                @click="onClickFilter('activators')($event)"
-              />
+              <card-chips :value="card?.activators" />
             </card-item>
             <card-item
               v-if="card?.bio"
@@ -160,10 +143,7 @@ const onClickFilter = (key: string) => (value: string) => {
               v-if="card?.tags?.length"
               title="Tags"
             >
-              <card-chips
-                :value="card?.tags"
-                @click="onClickFilter('tags')($event)"
-              />
+              <card-chips :value="card?.tags" />
             </card-item>
             <card-item
               v-if="card?.createdBy"
