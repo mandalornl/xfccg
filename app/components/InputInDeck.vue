@@ -32,11 +32,10 @@ const max = computed(() => {
     :model-value="inDeckState[card.id] ?? 0"
     :min="0"
     :max="max"
-    inset
+    :bg-color="inDeckState[card.id] ? 'primary' : undefined"
     hide-details
     width="80"
     max-width="80"
-    color="primary"
     base-color="primary"
     variant="outlined"
     density="compact"
