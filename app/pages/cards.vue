@@ -290,8 +290,6 @@ const onClickRow = (event: Event, data: { item: Card }) => {
           v-model="inDeck"
           :disabled="deckSize === 0"
           hide-details
-          density="compact"
-          class="ml-3"
         >
           <template #label>
             In deck
