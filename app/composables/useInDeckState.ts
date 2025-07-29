@@ -1,5 +1,5 @@
-import type { InDeck } from '~/types/deck';
+import type { CardId } from '~/types/card';
 
 export const useInDeckState = () => (
-  useState<InDeck>('inDeck', () => ({}))
+  useState<Record<CardId, number>>('inDeck', () => ({}))
 );
