@@ -5,7 +5,7 @@ import scully from '~/assets/cards/22364.json';
 import believeTheLie from '~/assets/cards/believe-the-lie.json';
 import promo from '~/assets/cards/promo.json';
 import gencon from '~/assets/cards/gencon.json';
-import delaney from '~/assets/cards/100617.json';
+import hereThereBeMonsters from '~/assets/cards/here-there-be-monsters.json';
 import classified from '~/assets/cards/classified.json';
 import iWantToBelieve from '~/assets/cards/i-want-to-believe.json';
 import myStruggle from '~/assets/cards/my-struggle.json';
@@ -21,7 +21,7 @@ export const pool: Card[] = [
   ...believeTheLie as unknown as Card[],
   ...promo as unknown as Card[],
   ...gencon as unknown as Card[],
-  ...delaney as unknown as Card[],
+  ...hereThereBeMonsters as unknown as Card[],
   ...classified as unknown as Card[],
   ...iWantToBelieve as unknown as Card[],
   ...myStruggle as unknown as Card[],

@@ -6,7 +6,7 @@ export enum CardSet {
   BELIEVE_THE_LIE = 'Believe the Lie',
   PROMO = 'Promo',
   GEN_CON = 'Gen Con',
-  DELANEY = '100617',
+  HERE_THERE_BE_MONSTERS = 'Here There Be Monsters',
   I_WANT_TO_BELIEVE = 'I Want to Believe',
   MY_STRUGGLE = 'My Struggle',
   FIRE_WALK_WITH_ME = 'Fire Walk With Me',
