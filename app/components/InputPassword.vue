@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import type { RuleString } from '~/types/rule';
 
 const props = withDefaults(defineProps<{

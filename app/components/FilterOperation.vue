@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const model = defineModel<string | null>();

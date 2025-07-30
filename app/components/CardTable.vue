@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 defineProps<{
   value?: Record<string, string | number>,
 }>();

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import type { Card } from '~/types/card';
 import { CardSet as CardSetEnum } from '~/utils/card';
 

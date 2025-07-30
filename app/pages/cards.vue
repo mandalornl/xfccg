@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import keywords from '~/assets/filters/keywords.json';
 import activators from '~/assets/filters/activators.json';
 import costs from '~/assets/filters/costs.json';

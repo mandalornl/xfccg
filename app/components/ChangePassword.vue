@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import type { SubmitEventPromise } from 'vuetify';
 import type { VForm } from 'vuetify/components';
 

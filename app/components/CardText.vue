@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { h  } from 'vue';
 import type {Component} from 'vue';
 

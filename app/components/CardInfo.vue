@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { useDisplay } from 'vuetify';
 
 import type { Card } from '~/types/card';
