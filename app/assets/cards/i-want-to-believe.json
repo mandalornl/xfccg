@@ -178,7 +178,8 @@
     "episode": "Apocrypha",
     "type": "Combat",
     "keywords": [
-      "Combat"
+      "Combat",
+      "Healing"
     ],
     "activators": [
       "Combat"
@@ -1362,7 +1363,7 @@
     "title": "FBI King County Crime Lab, Seattle",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "2 RP",
+    "cost": "1 RP",
     "episode": "The X-Files Game",
     "type": "Site",
     "keywords": [
@@ -1383,7 +1384,7 @@
     "title": "Field Office Crime Lab (FBI)",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "2 RP",
+    "cost": "1 RP",
     "episode": "End Game",
     "type": "Site",
     "keywords": [
@@ -1404,7 +1405,7 @@
     "title": "Field Office Crime Lab (FBI)",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "2 RP",
+    "cost": "1 RP",
     "episode": "The End",
     "type": "Site",
     "keywords": [
@@ -1738,7 +1739,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Play this card on a Site only when your opponent is about to ask a new question about your X-File characteristic. If the question is answered with \"yes\" you may immediately replace your current X-File card with a different X-File card.",
+    "gameEffect": "If your opponent asks a question about your X-File at this Site and the answer is 'yes', you may immediately replace your current X-File card with a different one. Each player may only have one copy of this card in their deck.",
     "dialogue": "\"This was all strategized - every move. I just couldn't see it. It was all of a plan.\" - Mulder",
     "tags": [
       "Basic"
@@ -2028,7 +2029,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Pick the top 5 cards from your Bureau deck and show them to your opponent. You may play one revealed Bluff card at half cost (rounded up). Shuffle the rest back into your Bureau deck.",
+    "gameEffect": "Pick the top 5 cards from your Bureau deck and show them to your opponent. You may play one revealed Bluff card at half cost (rounded up), if any. Shuffle the rest back into your Bureau deck.",
     "dialogue": "\"According to Skinner's psychiatrist, he's been experiencing a recurring dream in which he's confronted by an old woman.\" - Scully",
     "tags": [
       "Basic"
@@ -2213,7 +2214,7 @@
       "Agent",
       "Site"
     ],
-    "gameEffect": "You may attach this card to any Agent with cost of 5 [RP] or less. Each time this Agent is investigating a Site you may pay that cost to force that Agent to go to the Hospital (undamaged). This card is removed when a Healing card is played on the Agent.",
+    "gameEffect": "Attach this card to any Agent with cost of 5 [RP] or less who is investigating this Site. Each time this Agent investigates any Site, you may pay that cost to force that Agent to go to the Hospital (undamaged). This card is removed when a Healing card is played on the Agent.",
     "dialogue": "\"He said I was the only one who'd believe him\" – Diana Fowley",
     "tags": [
       "Basic"
@@ -2260,7 +2261,8 @@
     ],
     "activators": [
       "Conspiracy",
-      "Agent"
+      "Agent",
+      "Site"
     ],
     "gameEffect": "Attach this card to any Agent in the Field to lower the Agent's skill levels by one for each additional Agent in their Team. This change includes LRC, CRC, RES, and HEALTH. The final values cannot be negative. Discard this card if the Agent visits the Hospital.",
     "dialogue": "\"Mulder, this is not reality. This is a hallucination. It has to be. And either I am having it, or you are having it or we are having it together.\" - Scully",
@@ -2274,7 +2276,7 @@
     "title": "Persuasive Push",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "4 CP",
+    "cost": "5 CP",
     "episode": "Pusher",
     "type": "Bluff",
     "keywords": [
@@ -2284,7 +2286,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Choose an Agent on a Team already assigned to a Site. The chosen Agent contributes a skill value of zero for the Site Prerequisites.",
+    "gameEffect": "Play to prevent two Agents assigned to a Site from contributing their skills to one skill check (your choice) made by the Team this turn.",
     "dialogue": "\"All right, where's my next bread crumb?\" - Mulder",
     "tags": [
       "Basic"
@@ -2352,7 +2354,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Select one Agent from the Team investigating this Site. That Agent, along with any attached cards, is placed face-up, twelve cards down, in the owning player's Bureau deck. When the Agent's card reaches the top of the deck, the Agent (and any attached cards) are immediately moved to the Field, undamaged.",
+    "gameEffect": "Select one Agent from the Team investigating this Site. That Agent, along with any cards attached beneath it, is placed face up twelve cards down into the owning player's Bureau deck. When the Agent card reaches the top of the deck, the Agent and all cards attached to it are immediately deployed to the Field (undamaged).",
     "dialogue": "\"Why? Why me, Gerry? Do I remind you of your sister? Why did your sister kill herself, Gerry?\" - Scully",
     "tags": [
       "Basic"
@@ -2755,7 +2757,7 @@
       "Behavioral": 1,
       "Criminal Investigation": 2,
       "Evidence Collection": 1,
-      "Sciences": 2,
+      "Sciences": 1,
       "Subterfuge": 2,
       "Long Range Combat": 3,
       "Close Range Combat": 2,
@@ -2788,7 +2790,7 @@
       "Occult Investigation": 1,
       "Long Range Combat": 1,
       "Close Range Combat": 2,
-      "Health": 3,
+      "Health": 4,
       "Resources": 1
     },
     "tags": [
@@ -2992,7 +2994,7 @@
       "Law"
     ],
     "gameEffect": "ASAC Dakota Whitney's OBSERVATION and CRIMINAL INVESTIGATION skills are increased by one if she and Agent Mosley Drummy are on the same Team.",
-    "bio": "Dakota Whitney is an ASAC and a Special Agent in Charge at the FBI. While investigating the deaths of multiple abductees, she was instrumental in arranging the involvement of Agents Mulder and Scully.",
+    "bio": "FBI Agent Mosley Drummy led investigations, assisting in major cases with Mulder and Scully. Known for his skepticism, key role in arrests, and crisis leadership. Helped capture dangerous criminals, including the manipulative killer Dr. Josef Kobold.",
     "skills": {
       "Bureaucracy": 1,
       "Criminal Investigation": 2,
@@ -3456,7 +3458,7 @@
     "title": "Agent Diana Fowley",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "4 RP",
+    "cost": "5 RP",
     "episode": "One Son",
     "type": "Agent",
     "keywords": [
@@ -3473,7 +3475,7 @@
       "Computer": 1,
       "Criminal Investigation": 2,
       "Evidence Collection": 1,
-      "Subterfuge": 3,
+      "Subterfuge": 2,
       "Long Range Combat": 2,
       "Close Range Combat": 2,
       "Health": 4,
@@ -3652,7 +3654,7 @@
       "Law",
       "Believer"
     ],
-    "gameEffect": "If Agent Craig Willmore is in the same Team as Agent Pendrell, Willmore gains a +1 to his COMPUTER and SCIENCES skills, and a -1 to his ALIEN INVESTIGATION skill.",
+    "gameEffect": "If Agent Craig Willmore is in the same Team as Agent Pendrell, Willmore gains a +1 to his SCIENCES skill, and a -1 to his ALIEN INVESTIGATION skill.",
     "bio": "Craig Willmore is a Special Agent for the FBI field office in Seattle, Washington. On April 2, 1996, he was assigned to investigate the disappearance of Agents Fox Mulder and Dana Scully.",
     "skills": {
       "Alien Investigation": 3,
@@ -3711,7 +3713,7 @@
       "Law",
       "Skeptic"
     ],
-    "gameEffect": "Place one token on Detective Waltos. Discard one token to search through your Bureau deck and add an Equipment card of cost not higher than 2 [RP]. Add it to your hand, reshuffle your Bureau deck. If the card drawn is the \"Lie Detector\" you may attach it to Waltos immediately for zero cost.",
+    "gameEffect": "Place one token on this card. Discard a token to search your Bureau deck for an Equipment card with a cost of 2 [RP] or less and add it to your hand. Reveal the card to your opponent and shuffle your deck. If the card is \"Lie Detector\", you may attach it to Waltos immediately for zero cost, during the Requisition Phase.",
     "bio": "Detective Waltos was in charge of the investigation into the murder of Carina Sayles, of which Assistant Director Walter Skinner was accused. Skinner, a suspect in the murder case, was uncooperative, refusing to take a lie-detector test.",
     "skills": {
       "Behavioral": 1,
@@ -3945,7 +3947,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Place this Witness card in the Bureau. You may attach it anytime to any Team of Agents in that section. If that Team successfully investigates a Site, you may ask \"Is your X-File's Result Abduction?\" in addition to the Site question for zero cost. Discard this card afterwards.",
+    "gameEffect": "Place this Witness card in the Bureau. You may attach it at any time to an Agent in that section. If any Team including that Agent successfully investigates a Site, you may ask 'Is your X-File's Result Abduction?' in addition to the Site question at no cost. Discard this card afterward.",
     "dialogue": "\"If they find me, they'll take me. I know it.\" - Gibson Praise",
     "tags": [
       "Basic"
@@ -4581,7 +4583,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Place this card on your opponent's Field. As long as this card is in play, your opponent must play with all of the [CP] cost cards in his hand face up on the table. Place three counters on this card when it comes into play. Remove one counter each of the attached Agents' Briefing Phases. When the last counter is removed, discard this card.",
+    "gameEffect": "Play this card to your opponent's Field with three tokens on it. While in play, your opponent must keep all [CP] cost cards in their hand face up on the table. Remove one token during each Briefing phase of any attached Agent. When the last token is removed, discard this card.",
     "dialogue": "\"Names of people the federal government is tracking using the US census.\" - Skinner",
     "tags": [
       "Advanced"
@@ -4602,7 +4604,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Play this card to search though your Bureau deck for any one Keyword BLUFF card. Add the card to your hand and reveal it to your opponent. Shuffle your deck.",
+    "gameEffect": "Play this card to search your Bureau deck for a card with the BLUFF keyword. Reveal it to your opponent, then add it to your hand. Shuffle your deck.",
     "dialogue": "\"Oh, crap!\" - Mulder",
     "tags": [
       "Basic"
@@ -4623,7 +4625,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Apply a +2 modifier to any skill check made by a Team of Agents in the Field during the Investigation phase.",
+    "gameEffect": "Apply a +2 modifier to any one skill check made by a Team of Agents in the Field during the Investigation phase.",
     "dialogue": "\"I am scared for you, Mulder. And for William. The forces against us are unrelenting.\" - Scully",
     "tags": [
       "Basic"
@@ -4644,7 +4646,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Apply a +1 modifier to any skill check made by a Team of Agents in the Field during the Investigation phase.",
+    "gameEffect": "Apply a +1 modifier to any one skill check made by a Team of Agents in the Field during the Investigation phase.",
     "dialogue": "\"Have you ever seen Mr. Potato head?\" - Mulder",
     "tags": [
       "Basic"
@@ -4665,7 +4667,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Apply a +3 modifier to any skill check made by a Team of Agents in the Field during the Investigation phase.",
+    "gameEffect": "Apply a +3 modifier to any one skill check made by a Team of Agents in the Field during the Investigation phase.",
     "dialogue": "\"What if he got really, really lucky? That's your big scientific explanation, Scully?\" - Mulder",
     "tags": [
       "Basic"
@@ -4674,7 +4676,7 @@
   },
   {
     "id": "XF08-0193v1",
-    "title": "Secret Protection",
+    "title": "First Move",
     "set": "I Want to Believe",
     "rarity": "Community",
     "cost": "2 *P",
@@ -4687,7 +4689,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameEffect": "Play this card during the Investigation phase (before any Combat has taken place) to search your Bureau Deck for any one card with the keyword COMBAT. Add the card to your hand and reveal it to your opponent. Shuffle your Bureau deck. If the card is playable this turn, you can do it for zero cost.",
+    "gameEffect": "Play this card during the Investigation phase (before any Combat has taken place) to search your Bureau deck for any one card with the keyword COMBAT. Reveal the card to your opponent, then add it to your hand. Shuffle your Bureau deck. If the card is playable this turn, you may play it at zero cost.",
     "dialogue": "\"You're free to go, of course. The choice is still yours.\" - The Cigarette-Smoking Man",
     "tags": [
       "Advanced"
@@ -4729,9 +4731,10 @@
       "Resource"
     ],
     "activators": [
-      "Active"
+      "Active",
+      "Agent"
     ],
-    "gameEffect": "Search through your Bureau Deck and select an Agent with a Cost of 3 or less (X) and place it in the Bureau section. If this card is negated, remove it as well as the selected Agent from the game. During the Briefing Phase, pay X upkeep or discard this card and the selected Agent. Ignore Agent's Game Effect.",
+    "gameEffect": "Search through your Bureau Deck and select an Agent with a Cost of 3 or less [RP] (X), and place it in the Bureau section with this card attached. If this card is negated, remove it as well as the selected Agent from the game. During the Briefing Phase, pay X [RP] upkeep or discard this card and the selected Agent. Ignore the Agent's Game Effect.",
     "dialogue": "\"Craig, it looks like we got some invited guests…\" - Mulder",
     "tags": [
       "Advanced"
@@ -4795,7 +4798,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Play this card during the Briefing Phase to double the cost of one [RP] card you had discarded this turn in order to gain an equal number of [CP]'s to your conspiracy pool.",
+    "gameEffect": "Play this card during the Briefing Phase. The next [RP] card you discard this turn will generate twice as many [CP] tokens as its [RP] cost.",
     "dialogue": "\"It's not the cards. It's playing the hand you were dealt. Well, you guys get a bad deal, it's all in what you do with it. You know what I'm saying, pardner?\" - Mr. Burt",
     "tags": [
       "Basic"
@@ -4890,7 +4893,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Play this card to force Agent Dana Scully's Team to make a BUREAUCRACY 4+ skill check. If they fail, move Scully to the Hospital immediately with zero HEALTH. Scully's recovery rate will be 1 damage token per turn. Attach this card to Scully as a reminder until she is fully healed. You can negate this card by using the Alien Pathogen Treatment card.",
+    "gameEffect": "Play this card to force Agent Dana Scully's Team to make a BUREAUCRACY 4+ skill check. If they fail, move Scully to the Hospital immediately with zero HEALTH. Scully's recovery rate will be 1 damage token per turn. Attach this card to Scully as a reminder until she is fully healed.",
     "dialogue": "\"… matching the DNA from this virus with that which I believe has caused my cancer.\" - Scully",
     "tags": [
       "Basic"
@@ -5044,7 +5047,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play this card to search through your Bureau Deck and add any one Event card with activator ACTIVE to your hand. Show the card to your opponents. Shuffle your deck.",
+    "gameEffect": "Play this card to search your Bureau Deck for any one Event card with the ACTIVE activator. Show the chosen card to your opponents, then add it to your hand. Shuffle your deck.",
     "dialogue": "\"Mulder: Gee! Very nice. How'd you do that?\nScully: \"Well… magic.\"",
     "tags": [
       "Basic"
@@ -5091,7 +5094,7 @@
       "Active",
       "Bluff"
     ],
-    "gameEffect": "Negate one Bluff card attached to a Site (before the Bluff cost has been paid). If there are several Bluffs, choose one to be discarded randomly. The Bluff's owner may choose not to play any of the remaining Bluffs attached and discard them.",
+    "gameEffect": "Negate any one Bluff card.",
     "dialogue": "Langly: \"Check it out, Mulder. I had breakfast with the guy that shot John F. Kennedy\".\nMulder: \"Is that so?\"\nLangly: \"Old dude, but yeah, said that he was dressed as a cop on the grassy knoll.\"",
     "tags": [
       "Advanced"
@@ -5137,7 +5140,7 @@
       "Active"
     ],
     "gameEffect": "You may use this card to place up to six cards under it (face down) at any time. These cards cannot contain the Activator CONSPIRACY. You can play cards from here as if they were in your hand, with their cost increased by 1. Discard all cards if this card is negated. Each player may only have one of this card in their deck.",
-    "dialogue": "\"You know, Byers, growing old with us ain't so bad.\" - Byers",
+    "dialogue": "\"You know, Byers, growing old with us ain't so bad.\" - Langly",
     "tags": [
       "Advanced"
     ],
@@ -5158,7 +5161,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play this card during the Case Assignment phase and place it in the Field. Discard this card to negate one ADVERSARY card played by your opponent this turn (or discard it in any case at the end of the Debriefing Phase).",
+    "gameEffect": "Play this card during the Case Assignment phase and place it in the Field. Discard this card to negate one ADVERSARY card played by your opponent this turn (or discard it in any case at the end of the Investigation Phase).",
     "dialogue": "\"The experiments he attempted were too advanced for his understanding. The results of his experiments – unsatisfactory.\" - The Great Mutato",
     "tags": [
       "Basic"
@@ -5180,7 +5183,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Select one card from your Discard Pile with the Keyword CONSPIRACY and place it in your hand. You cannot use the card this turn.",
+    "gameEffect": "Select one card with the Keyword CONSPIRACY from your Discard Pile and reveal it to your opponent. Place it in your hand. You cannot use the card this turn.",
     "dialogue": "\"If I see, or suspect that you're not working alone I will terminate our communication.\" - Shadow Man",
     "tags": [
       "Basic"
@@ -5204,7 +5207,7 @@
     "gameEffect": "Place this card in your field. The cost of all [RP] cards you play this turn is halved (rounded up). Discard this card at the end of this turn. Each player may only have one of this card in their deck.",
     "dialogue": "Scully: \"She found me.\"\nMulder: \"So you could save her.\"",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "Alfredo Sánchez, Robert Czepiel"
   },
@@ -5679,7 +5682,7 @@
     "title": "Witch Hunter",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "2 RP",
+    "cost": "2 *P",
     "episode": "Die Hand Die Verletzt",
     "type": "Event",
     "keywords": [
@@ -5689,7 +5692,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Search through your Bureau deck and play any one Witness card with the Keyword OCCULT INVESTIGATION at half cost (rounded up). If you successfully investigate a Site with this Witness this turn, you may search for an Equipment card from your Bureau deck and add it to your hand. Shuffle your Bureau deck afterwards.",
+    "gameEffect": "Search your Bureau deck and choose any one keyword OCCULT or OCCULT INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau Deck.",
     "dialogue": "\"Last checked out to a Dave Duran.\" - Scully",
     "tags": [
       "Basic"
@@ -5754,7 +5757,7 @@
       "Active",
       "Bluff"
     ],
-    "gameEffect": "Play this card to remove one token, for each 3 spent on it, from any Bluff card that forces any Agent to remain in any section of the game (or removed from the game).",
+    "gameEffect": "Play this card to remove one token from any Bluff card that forces an Agent to remain in any section (or be removed from the game) for each 3 [RP] spent. (i.e.: if 6 [RP] are paid, you may remove 2 tokens).",
     "dialogue": "\"Who are you? What do you want? Why are you doing this? Please… I want to go home.\" - Amy",
     "tags": [
       "Basic"
@@ -5801,7 +5804,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameEffect": "Attach this card to any Agent when a Game Effect token is being removed. The token is removed from that Agent without effect. Remove all remaining tokens from that Agent. This Agent may not have any Game Effect tokens as long as this card is in play. This card may not be negated. Each player may only have one of this card in their deck.",
+    "gameEffect": "Attach this card to any Agent at the moment a Game Effect token is about to be removed from that Agent. That token is removed without applying its effect. Remove all remaining Game Effect tokens from that Agent. While this card is in play, that Agent cannot receive any Game Effect tokens. Each player may only have one of this card in their deck.",
     "dialogue": "White: \"Maybe we solve the mystery of the horny beast.\"",
     "tags": [
       "Advanced"
@@ -5969,7 +5972,7 @@
   },
   {
     "id": "XF08-0251v1",
-    "title": "X's Demise Struggle",
+    "title": "X's Final Struggle",
     "set": "I Want to Believe",
     "rarity": "Community",
     "cost": "4 CP",
@@ -5980,8 +5983,7 @@
       "Resource"
     ],
     "activators": [
-      "Conspiracy",
-      "Resource"
+      "Conspiracy"
     ],
     "gameEffect": "Place this card on your opponent's side. While this card is in play, your opponent cannot use cards nor Agent's Game Effects that allow them to draw cards (or search for cards) from the Bureau deck or from the Discard Pile. During your Briefing Phase pay 1 [CP] or discard this card.",
     "dialogue": "\"I was warned by a man we both know… who I believe knows the truth…\" - Scully",
@@ -6067,9 +6069,10 @@
       "Alien Investigation"
     ],
     "activators": [
-      "Active"
+      "Active",
+      "Agent"
     ],
-    "gameEffect": "Play this card at the beginning of the Briefing Phase. You may exchange one of your Agents with any Agent controlled by your opponent, with the same or lower [RP] cost and in the same section of the table (including tokens and attached cards). Both players may use their new Agents as usual, except for their Game Effect. At the end of this turn exchange the Agents again in their final locations (sections).",
+    "gameEffect": "Play this card at the beginning of the Briefing Phase. Swap one of your Agents with an opponent's Agent of equal or lower cost in the same section (include tokens and attached cards). Players may not control duplicate Agents, and the Game Effect of the swapped Agents cannot be used. At the end of the turn, return both Agents to their final locations (sections).",
     "dialogue": "Mulder: \"Scully! He's not me!\"",
     "tags": [
       "Basic"
@@ -6091,7 +6094,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play this card at the beginning of the Case Assignment or the Investigation phases to get an additional Healing phase this turn. After that extra phase, go directly to the Debriefing phase. Remove this card from the game.",
+    "gameEffect": "Play this card at the beginning of the Case Assignment or the Investigation Phases to get an additional Healing phase this turn. After that extra phase, go directly to the Debriefing phase. Remove this card from the game.",
     "dialogue": "\"I'm taking a bubble bath.\" - Skinner",
     "tags": [
       "Basic"
@@ -6156,7 +6159,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameEffect": "Discard the top card from both players' Bureau decks. If your card has higher cost than your opponent's, you may add 8 tokens to your [RP] pool (if you are the active player) or to the [CP] pool (if you are the Directed player). If lower, only empty your [RP] and [CP] pools, your opponent's pools remain unaffected.",
+    "gameEffect": "Discard the top card from both players' Bureau decks. If your card has higher cost than your opponent's, you may add 8 tokens to your [RP] pool (if you are the active player) or to the [CP] pool (if you are the Directed player). If lower, only empty your [RP] and [CP] pools, your opponent's pools remain unaffected. Then, shuffle both Bureau Decks.",
     "dialogue": "\"Is this what you saw? It's a Seraphim. An angel, with four faces. Those of a man, a lion, an eagle, and a bull.\" - Father McCue",
     "tags": [
       "Advanced"
@@ -6645,7 +6648,7 @@
       "Active"
     ],
     "gameEffect": "Play this card to lower a CRIMINAL INVESTIGATION or EVIDENCE COLLECTION Site Prerequisite by 2.",
-    "dialogue": "\"Grab them Monica, we've got less than minute to get out of here.\" - Agent Doggett",
+    "dialogue": "\"Grab them Monica, we've got less than a minute to get out of here.\" - Agent Doggett",
     "tags": [
       "Basic"
     ],
@@ -6871,7 +6874,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameEffect": "Discard this card during the Investigation phase to search through your Discard Pile and add one Keyword RESOURCE card to your hand. Show the card to your opponents and shuffle your Discard Pile.",
+    "gameEffect": "Discard this card during the Investigation phase to search through your Discard Pile and add one Keyword RESOURCE card to your hand. Show the card to your opponents.",
     "dialogue": "\"I'd like to interview your son Charlie, Mr. Holvey, but with a professional counsellor.\" - Scully",
     "tags": [
       "Basic"
@@ -7769,7 +7772,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameEffect": "This card does not initiate Combat. The Kill Switch creates a distorted reality on the Team of Agents and deals a total of 5 points of damage that may be split among all opponents (Directed Player's choice). Subtract the COMPUTER skill of each chosen Agent from the damage delivered by the Kill Switch to that Agent.",
+    "gameEffect": "The Kill Switch creates a distorted reality on the Team of Agents, dealing a total of 5 damage points, split among any number of opposing Agents (Directed Player's choice). For each chosen Agent, subtract their COMPUTER skill from the assigned damage - damage cannot be reduced below 0.",
     "dialogue": "\"What's that smell? Oh, jeez!\" - Mulder",
     "skills": {
       "Long Range Combat": "N/A",
@@ -7974,7 +7977,7 @@
       "Conspiracy",
       "Result Site"
     ],
-    "gameEffect": "This card does not initiate combat. The Team must make an OBSERVATION 5+ skill check. If unsuccessful, choose one Agent in the Team. That Agent receives 4 points of damage but can still contribute with his skills if HEALTH rating has not been reduced to 0. Healing cards can be played to avoid the damage.",
+    "gameEffect": "This card does not initiate combat. The Team must make an OBSERVATION 5+ skill check. If unsuccessful, choose one Agent in the Team. That Agent receives 4 points of damage but can still contribute with his skills if HEALTH rating has not been reduced to 0. Healing cards can be played to avoid the damage, as usual.",
     "dialogue": "\"We didn't drink enough to make us sick.\" - Scully",
     "skills": {
       "Long Range Combat": "N/A",
@@ -8003,11 +8006,11 @@
       "Conspiracy",
       "Agent"
     ],
-    "gameEffect": "This card can only be played on a female Agent in a Team investigating a Site.",
+    "gameEffect": "Fetishist Women Hunter can engage in Combat with only one female Agent on a Team investigating a Site (your choice).",
     "dialogue": "\"Some people collect salt and pepper shakers. The fetishist collects dead things. Hair, fingernails... no one quite knows why, though I've never quite understood salt and pepper shakers myself.\" - Mulder",
     "skills": {
       "Long Range Combat": 0,
-      "Close Range Combat": 5,
+      "Close Range Combat": 4,
       "Health": 5
     },
     "tags": [
@@ -8078,7 +8081,7 @@
     "title": "Visions of a Shaman",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "6 CP",
+    "cost": "5 CP",
     "episode": "Teso dos Bichos",
     "type": "Adversary",
     "keywords": [
@@ -8178,7 +8181,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameEffect": "If any Agent on target Team has an Equipment card attached that increases LRC skill you can attach that card to Peacock's brothers instead (only during the LONG RANGE COMBAT round and only one Equipment card, your choice). Discard that Equipment card if the chosen Agent is sent to the Hospital.",
+    "gameEffect": "If any Agent on target Team has an Equipment card attached that increases LRC skill you can attach that card to Peacock's brothers instead (only during the LONG RANGE COMBAT round and only one Equipment card, your choice). Discard that Equipment card if the controlling Agent is sent to the Hospital.",
     "dialogue": "\"Where's the other brother... Edmund? \" - Mulder",
     "skills": {
       "Long Range Combat": 0,
@@ -8254,7 +8257,7 @@
     "title": "The Siddhi Mystic's Curse",
     "set": "I Want to Believe",
     "rarity": "Community",
-    "cost": "5 CP",
+    "cost": "6 CP",
     "episode": "Badlaa",
     "type": "Adversary",
     "keywords": [
@@ -8324,7 +8327,7 @@
       "Conspiracy",
       "Motive Site"
     ],
-    "gameEffect": "Once the Combat had ended, you can pay 2 [CP] to return Van Allen's Revenge to your hand. Your opponent may pay 3 [RP] to interrupt this effect.",
+    "gameEffect": "Once the Combat ends, you may pay 2 [CP] to return Van Allen's Revenge to your hand. It may be played again at the same Site. Your opponent may pay 3 [RP] to cancel this effect.",
     "dialogue": "\"Don't feel sorry. You going to hell just like I am, brother.\" - Ed Kelso",
     "skills": {
       "Long Range Combat": 0,
@@ -8332,7 +8335,7 @@
       "Health": 7
     },
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "Alfredo Sánchez, Robert Czepiel"
   },
@@ -8353,7 +8356,7 @@
       "Conspiracy",
       "Method Site"
     ],
-    "gameEffect": "At the beginning of each Combat round you may choose one Agent and reduce that Agent's HEALTH by 2. If the Agent's HEALTH is reduced to 0 by the end of that round, Rob Roberts also heals 2 points of HEALTH during that round.",
+    "gameEffect": "At the start of each Combat round, choose one Agent and reduce their HEALTH by 2. If that Agent is reduced to zero HEALTH during this round, Rob Roberts recovers 2 HEALTH, as long as his own HEALTH is greater than zero at the end of the round. ",
     "dialogue": "\"What look like tool marks to you look to me like something more organic. Like it was made by a... a tongue or a proboscis.\" - Scully",
     "skills": {
       "Long Range Combat": 2,
@@ -8631,7 +8634,7 @@
     "activators": [
       "Field"
     ],
-    "gameEffect": "Discard Samantha's Diary to return one card from your hand to the Bureau deck, then shuffle the deck. At the beginning of your next Briefing Phase, you may draw two additional cards.",
+    "gameEffect": "Discard Samantha's Diary to return one card from your hand to the Bureau deck, then shuffle the deck. At the beginning of your next Briefing Phase, you may draw two additional cards. This draw effect cannot be negated.",
     "dialogue": "Scully: \"It's a diary. It's your sister's.\"",
     "tags": [
       "Basic"
@@ -8879,7 +8882,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Play this card to negate search through your Bureau Deck and add one of the following cards to your hand: The End, Second's Elder Deliberation, Covering Up Evidence, or the Toothpick Man. If you play the chosen card immediately, you may do so at half cost (rounded up). Alternatively, you can use this card to negate the effect of William.",
+    "gameEffect": "Play this card to negate search through your Bureau Deck and add one of the following cards to your hand: 'The End', 'Second's Elder Deliberation', 'Covering Up Evidence', or 'The Toothpick Man'. If you play the chosen card immediately, you may do so at half cost (rounded up). Alternatively, you can use this card to negate the effect of William.",
     "dialogue": "\"Your son has to die.\" - Robert Comer",
     "tags": [
       "Basic"
