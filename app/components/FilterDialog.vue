@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts" generic="T">
 import { useDisplay } from 'vuetify';
 import {
   type Filter,
@@ -8,10 +8,10 @@ import {
 const { smAndDown } = useDisplay();
 
 defineProps<{
-  items: Filterable[],
+  items: T[],
 }>();
 
-const filters = defineModel<Filter[]>({
+const filters = defineModel<Filter<T>[]>({
   default: () => ([]),
 });
 

@@ -23,7 +23,7 @@ useHead({
   title: 'Cards',
 });
 
-const filters = useFilters({
+const filters = useFilters<Card>({
   set: {
     title: 'Set',
     items: Object.values(CardSetEnum),
@@ -77,7 +77,7 @@ const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
   (route.query[key] as string) || defaultValue
 );
 
-const getSortByValue = (): SortBy[] => {
+const getSortByValue = (): SortBy<Card>[] => {
   try {
     return JSON.parse(getRouteQueryValue('sortBy', '[]'));
   } catch {
@@ -97,7 +97,7 @@ const search = ref<string>(getRouteQueryValue('search'));
 const view = ref<string>(getRouteQueryValue('view', 'list'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
-const sortBy = ref<SortBy[]>(getSortByValue());
+const sortBy = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(route.query.inDeck === null);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
 
@@ -160,7 +160,7 @@ const cards = computed<Card[]>(() => {
         card.gameEffect,
       ]
         .filter(Boolean)
-        .some((value) => value.toLowerCase().includes(search.value.toLowerCase()));
+        .some((value) => value?.toLowerCase().includes(search.value.toLowerCase()));
 
       if (!hit) {
         return false;
@@ -171,30 +171,7 @@ const cards = computed<Card[]>(() => {
       return false;
     }
 
-    return filters.value.every((filter) => {
-      if (filter.value.length === 0) {
-        return true;
-      }
-
-      const cardValue = card[filter.key];
-
-      if (!cardValue) {
-        return false;
-      }
-
-      if (Array.isArray(cardValue)) {
-        if (filter.operation === FilterOperationEnum.Or) {
-          return filter.value.some((value) => cardValue.includes(value));
-        }
-
-        return filter.value.every((value) => cardValue.includes(value));
-      }
-
-        return filter.value.some((value) => cardValue.includes(value));
-      }
-
-      return filter.value.includes(cardValue);
-    });
+    return useHasFilters<Card>(filters, card);
   });
 
   if (sortBy.value.length > 0) {

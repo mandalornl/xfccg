@@ -1,20 +1,22 @@
-import type { Ref } from 'vue';
-
-import type {
-  Filter,
-  FilterSetup,
+import {
+  type Filter,
+  type FilterSetup,
+  type FilterConfig,
+  FilterOperation,
 } from '~/types/filter';
-import { FilterOperation } from '~/utils/filter-operation';
 
-export const useFilters = (setup: FilterSetup): Ref<Filter[]> => {
+export function useFilters<T>(setup: FilterSetup<T>) {
   const route = useRoute();
 
+  const getRouteQueryValue = (key: string): string => route.query[key] as string || '';
+
   const getValue = (key: string, defaultValue?: string[]): string[] => {
-    if (!route.query[key]) {
+    const value = getRouteQueryValue(key);
+
+    if (!value) {
       return defaultValue ?? [];
     }
 
-    const value = route.query[key] as string;
     const or = value.includes(',');
 
     return value
@@ -23,24 +25,28 @@ export const useFilters = (setup: FilterSetup): Ref<Filter[]> => {
   };
 
   const getOperation = (key: string, defaultOperation?: FilterOperation): FilterOperation => {
-    if (!route.query[key]) {
-      return defaultOperation ?? FilterOperation.AND;
+    const value = getRouteQueryValue(key);
+
+    if (!value) {
+      return defaultOperation ?? FilterOperation.And;
     }
 
-    const value = route.query[key] as string;
-
-    return value.includes(',') ? FilterOperation.OR : FilterOperation.AND;
+    return value.includes(',') ? FilterOperation.Or : FilterOperation.And;
   };
 
-  const filters = Object.entries(setup).map(([
-    key,
-    field,
-  ]) => ({
-    ...field,
-    key,
-    value: getValue(key, field.value),
-    operation: getOperation(key, field.operation),
-  }));
+  return ref<Filter<T>[]>(
+    Object.entries(setup).map(([
+      key,
+      value,
+    ]) => {
+      const config = value as FilterConfig;
 
-  return ref(filters);
-};
+      return {
+        ...config,
+        key: key as keyof T,
+        value: getValue(key, config.value),
+        operation: getOperation(key, config.operation),
+      };
+    })
+  );
+}

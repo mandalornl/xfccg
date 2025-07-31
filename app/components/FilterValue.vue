@@ -1,14 +1,14 @@
-<!--<script setup lang="ts" generic="T">-->
-<script lang="ts" setup>
+<script setup lang="ts" generic="T">
 import {
   type Filter,
-  FilterOperation as FilterOperationEnum,
+  type FilterableValue,
+  FilterOperation as FilterOperationEnum
 } from '~/types/filter';
-import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
+import { isObject } from '~/utils/object';
 
 const props = defineProps<{
-  filter: Filter,
-  items: Filterable[],
+  filter: Filter<T>,
+  items: T[],
 }>();
 
 const model = defineModel<string[]>({
@@ -24,8 +24,16 @@ const getCount = (filterValue: string): number | string => {
     return '…';
   }
 
-  return props.items.filter((item: Filterable) => {
-    const itemValue = item[props.filter.key];
+  return props.items.filter((item) => {
+    const itemValue = item[props.filter.key as keyof T] as FilterableValue;
+
+    if (!itemValue) {
+      return false;
+    }
+
+    if (isObject(itemValue)) {
+      return Object.keys(itemValue).includes(filterValue);
+    }
 
     if (Array.isArray(itemValue)) {
       return itemValue.includes(filterValue);

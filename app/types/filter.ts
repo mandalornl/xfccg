@@ -21,3 +21,5 @@ export interface FilterConfig {
 export type FilterSetup<T> = {
   [K in keyof T]?: FilterConfig
 };
+
+export type FilterableValue = string | string[] | Record<string, unknown>;
