@@ -1,4 +1,9 @@
-import type { SnackbarColor } from '~/utils/snackbar';
+export enum SnackbarColor {
+  Success = 'success',
+  Info = 'info',
+  Warning = 'warning',
+  Error = 'error'
+}
 
 export interface SnackbarState {
   visible: boolean;

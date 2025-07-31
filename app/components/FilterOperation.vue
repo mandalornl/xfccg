@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
+import { FilterOperation as FilterOperationEnum } from '~/types/filter';
 
 const model = defineModel<string | null>();
 
 const items = [
-  { title: 'And', value: FilterOperationEnum.AND },
-  { title: 'Or', value: FilterOperationEnum.OR },
+  { title: 'And', value: FilterOperationEnum.And },
+  { title: 'Or', value: FilterOperationEnum.Or },
 ];
 </script>
 

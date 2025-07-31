@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import { useDisplay } from 'vuetify';
-import type {
-  Filter,
-  Filterable,
+import {
+  type Filter,
+  FilterOperation as FilterOperationEnum,
 } from '~/types/filter';
-import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
 const { smAndDown } = useDisplay();
 
@@ -23,7 +22,7 @@ const activeFilters = computed<number>(() => filters.value.filter((filter) => fi
 const clearFilters = () => {
   for (const filter of filters.value) {
     filter.value = [];
-    filter.operation = FilterOperationEnum.AND;
+    filter.operation = FilterOperationEnum.And;
   }
 };
 </script>

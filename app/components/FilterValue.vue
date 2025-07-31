@@ -1,7 +1,8 @@
+<!--<script setup lang="ts" generic="T">-->
 <script lang="ts" setup>
-import type {
-  Filter,
-  Filterable,
+import {
+  type Filter,
+  FilterOperation as FilterOperationEnum,
 } from '~/types/filter';
 import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
 
@@ -16,7 +17,7 @@ const model = defineModel<string[]>({
 
 const getCount = (filterValue: string): number | string => {
   if (
-    props.filter.operation === FilterOperationEnum.OR
+    props.filter.operation === FilterOperationEnum.Or
     && model.value.length > 0
     && !model.value.includes(filterValue)
   ) {
@@ -37,9 +38,9 @@ const getCount = (filterValue: string): number | string => {
 const isDisabled = (filterValue: string, count: number | string): boolean => (
   count === 0
   && (
-    props.filter.operation === FilterOperationEnum.AND
+    props.filter.operation === FilterOperationEnum.And
     || (
-      props.filter.operation === FilterOperationEnum.OR
+      props.filter.operation === FilterOperationEnum.Or
       && !model.value.includes(filterValue)
     )
   )
@@ -66,7 +67,7 @@ const items = computed<{
 );
 
 watch(() => props.filter.operation, (value: FilterOperationEnum) => {
-  if (value !== FilterOperationEnum.AND) {
+  if (value !== FilterOperationEnum.And) {
     return;
   }
 

@@ -5,15 +5,14 @@ import costs from '~/assets/filters/costs.json';
 import episodes from '~/assets/filters/episodes.json';
 import tags from '~/assets/filters/tags.json';
 
-import type { Card } from '~/types/card';
 import {
+  type Card,
   CardSet as CardSetEnum,
   CardType as CardTypeEnum,
   CardRarity as CardRarityEnum,
-} from '~/utils/card';
+} from '~/types/card';
 import type { SortBy } from '~/types/sort';
-import { FilterOperation as FilterOperationEnum } from '~/utils/filter-operation';
-import { sortCompare } from '~/utils/sort-compare';
+import { FilterOperation as FilterOperationEnum } from '~/types/filter';
 import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
@@ -122,7 +121,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
       filters.value.map((filter) => ([
         filter.key,
         filter.value.length > 0
-          ? filter.value.join(filter.operation === FilterOperationEnum.AND ? '+' : ',')
+          ? filter.value.join(filter.operation === FilterOperationEnum.And ? '+' : ',')
           : undefined,
       ]))
     ),
@@ -184,9 +183,12 @@ const cards = computed<Card[]>(() => {
       }
 
       if (Array.isArray(cardValue)) {
-        if (filter.operation === FilterOperationEnum.AND) {
-          return filter.value.every((value) => cardValue.includes(value));
+        if (filter.operation === FilterOperationEnum.Or) {
+          return filter.value.some((value) => cardValue.includes(value));
         }
+
+        return filter.value.every((value) => cardValue.includes(value));
+      }
 
         return filter.value.some((value) => cardValue.includes(value));
       }

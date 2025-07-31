@@ -1,11 +1,13 @@
-import type { SnackbarState } from '~/types/snackbar';
-import { SnackbarColor } from '~/utils/snackbar';
+import {
+  type SnackbarState,
+  SnackbarColor,
+} from '~/types/snackbar';
 
 export const useSnackbarState = () => {
   const state = useState('snackbar', (): SnackbarState => ({
     visible: false,
     text: '',
-    color: SnackbarColor.INFO,
+    color: SnackbarColor.Info,
     timeout: -1,
   }));
 
@@ -26,9 +28,9 @@ export const useSnackbarState = () => {
   return {
     state,
     reset,
-    success: setter(SnackbarColor.SUCCESS),
-    info: setter(SnackbarColor.INFO),
-    warning: setter(SnackbarColor.WARNING),
-    error: setter(SnackbarColor.ERROR),
+    success: setter(SnackbarColor.Success),
+    info: setter(SnackbarColor.Info),
+    warning: setter(SnackbarColor.Warning),
+    error: setter(SnackbarColor.Error),
   };
 };
