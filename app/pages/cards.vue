@@ -175,7 +175,9 @@ const cards = computed<Card[]>(() => {
   });
 
   if (sortBy.value.length > 0) {
-    return hits.sort(sortCompare(sortBy.value));
+    const compare = useSort<Card>(sortBy.value);
+
+    return hits.sort(compare);
   }
 
   return hits;

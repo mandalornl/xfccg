@@ -1,21 +1,18 @@
-import type {
-  SortBy,
-  Sortable,
-} from '~/types/sort';
+import type { SortBy } from '~/types/sort';
 
-export const sortCompare = (sortBy: SortBy[]) => {
+export function useSort<T>(sortBy: SortBy<T>[]): (a: T, b: T) => number {
   const collator = new Intl.Collator('en', {
     sensitivity: 'base',
     numeric: true,
   });
 
-  return (sortableA: Sortable, sortableB: Sortable) => {
+  return (a: T, b: T) => {
     for (const {
       key,
       order,
     } of sortBy) {
-      const valueA = sortableA?.[key] ?? Number.MIN_SAFE_INTEGER;
-      const valueB = sortableB?.[key] ?? Number.MIN_SAFE_INTEGER;
+      const valueA = String(a?.[key] ?? Number.MIN_SAFE_INTEGER);
+      const valueB = String(b?.[key] ?? Number.MIN_SAFE_INTEGER);
 
       if (valueA === valueB) {
         continue;
@@ -30,4 +27,4 @@ export const sortCompare = (sortBy: SortBy[]) => {
 
     return 0;
   };
-};
+}
