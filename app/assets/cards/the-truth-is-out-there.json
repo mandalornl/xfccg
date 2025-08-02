@@ -2415,7 +2415,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Force the Team investigation a Site to discard one Equipment card of your choice.",
+    "gameEffect": "Force the Team investigating a Site to discard one Equipment card of your choice.",
     "tags": [
       "Basic",
       "Discard"
