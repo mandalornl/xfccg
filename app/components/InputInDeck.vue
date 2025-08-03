@@ -2,6 +2,7 @@
 import {
   type Card,
   CardSet as CardSetEnum,
+  CardType as CardTypeEnum,
 } from '~/types/card';
 
 const inDeckState = useInDeckState();
@@ -11,6 +12,13 @@ const props = defineProps<{
 }>();
 
 const max = computed(() => {
+  if (
+    props.card.id === 'XF97-0437x1'
+    || props.card.type === CardTypeEnum.Agent
+  ) {
+    return 1;
+  }
+
   if (
     props.card.set === CardSetEnum.Premiere
     || props.card.set === CardSetEnum.TheTruthIsOutThere
