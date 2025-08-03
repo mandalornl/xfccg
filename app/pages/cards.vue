@@ -314,9 +314,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
               </v-card-text>
               <v-card-actions>
                 <v-spacer />
-                <span class="pr-2">
-                  # In deck:
-                </span>
+                # In deck
                 <input-in-deck :card="item.raw" />
               </v-card-actions>
             </v-card>
@@ -353,9 +351,3 @@ const onClickRow = (event: Event, data: { item: Card }) => {
     <card-info v-model="selectedCard" />
   </layout-content>
 </template>
-
-<style lang="scss" scoped>
-.top-50 {
-  top: 50%;
-}
-</style>
