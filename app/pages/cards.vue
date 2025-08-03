@@ -94,7 +94,7 @@ const getSelectedCard = (): Card | undefined => {
 };
 
 const search = ref<string>(getRouteQueryValue('search'));
-const view = ref<string>(getRouteQueryValue('view', 'list'));
+const view = ref<string>(getRouteQueryValue('view', 'grid'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
 const sortBy = ref<SortBy<Card>[]>(getSortByValue());
@@ -112,7 +112,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
 
   return {
     search: search.value || undefined,
-    view: view.value !== 'list' ? view.value : undefined,
+    view: view.value !== 'grid' ? view.value : undefined,
     page: page.value > 1 ? page.value : undefined,
     perPage: perPage.value !== 60 ? perPage.value : undefined,
     sortBy: sortByValue !== '[]' ? sortByValue : undefined,
