@@ -6,10 +6,7 @@ import {
 } from '~/types/card';
 import type { Agent } from '~/types/agent';
 import { FilterOperation as FilterOperationEnum } from '~/types/filter';
-import {
-  // BasicSkill as BasicSkillEnum,
-  InvestigationSkill as InvestigationSkillEnum,
-} from '~/types/skill';
+import { InvestigationSkill as InvestigationSkillEnum } from '~/types/skill';
 import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
