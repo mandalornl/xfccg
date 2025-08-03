@@ -5,7 +5,7 @@ import {
   FilterOperation as FilterOperationEnum,
 } from '~/types/filter';
 
-const { smAndDown } = useDisplay();
+const { xs } = useDisplay();
 
 defineProps<{
   items: T[],
@@ -30,7 +30,7 @@ const clearFilters = () => {
 <template>
   <v-dialog
     v-model="dialog"
-    :fullscreen="smAndDown"
+    :fullscreen="xs"
     scrollable
     width="600"
   >
