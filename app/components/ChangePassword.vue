@@ -110,7 +110,7 @@ const updateUser = async (event: SubmitEventPromise) => {
           <v-btn
             :disabled="isValidForm === false"
             :loading="isUpdating"
-            variant="flat"
+            variant="text"
             color="primary"
             text="Save"
             type="submit"

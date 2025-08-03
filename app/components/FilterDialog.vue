@@ -86,7 +86,7 @@ const clearFilters = () => {
           @click="clearFilters"
         />
         <v-btn
-          variant="flat"
+          variant="text"
           color="primary"
           text="Close"
           @click="dialog = false"
