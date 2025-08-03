@@ -179,68 +179,37 @@ watch(remainingCost, (value) => {
 
 <template>
   <layout-content fluid>
-    <v-card
-      flat
-      class="mb-4"
-    >
-      <v-card-text>
-        <v-text-field
-          :model-value="search"
-          clearable
-          hide-details
-          placeholder="Search"
-          prepend-inner-icon="mdi-magnify"
-          type="search"
-          @click:clear="search = ''"
-          @focus="$event.target.select()"
-          @keydown.exact.enter="search = $event.target.value"
-        />
-      </v-card-text>
-      <v-card-actions class="flex-wrap">
-        <filter-dialog
-          v-model="filters"
-          :items="cards"
-        />
-        <v-btn
-          tile
-          title="Stats"
-          icon="mdi-chart-line"
-        />
-        <v-spacer />
-        <v-switch
-          v-model="inTeam"
-          :disabled="totalCost === 0"
-          hide-details
-        >
-          <template #label>
-            In team
-            <v-badge
-              :model-value="totalCost > 0"
-              :content="totalCost"
-              inline
-              color="primary"
-            />
-          </template>
-        </v-switch>
-        <!--<v-spacer />
-        <v-btn-group variant="tonal">
-          <v-tooltip
-            v-for="stat of stats"
-            :key="stat.label"
-            location="top"
-          >
-            <template #activator="{ props:tooltipProps }">
-              <v-btn
-                :icon="stat.icon"
-                :color="stat.color"
-                v-bind="tooltipProps"
-              />
-            </template>
-            {{ stat.label }} ({{ stat.total }})
-          </v-tooltip>
-        </v-btn-group>-->
-      </v-card-actions>
-    </v-card>
+    <list-toolbar v-model:search="search">
+      <filter-dialog
+        v-model="filters"
+        :items="cards"
+      />
+      <agents-statistics-dialog />
+      <v-btn
+        :disabled="totalCost === 0"
+        rounded
+        variant="text"
+        icon="mdi-broom"
+        title="Clear team"
+        @click="inTeamState = {}"
+      />
+      <v-spacer />
+      <v-switch
+        v-model="inTeam"
+        :disabled="totalCost === 0"
+        hide-details
+      >
+        <template #label>
+          In team
+          <v-badge
+            :model-value="totalCost > 0"
+            :content="totalCost"
+            inline
+            color="primary"
+          />
+        </template>
+      </v-switch>
+    </list-toolbar>
     <v-data-iterator
       v-model:page="page"
       v-model:items-per-page="perPage"

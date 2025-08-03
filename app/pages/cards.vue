@@ -202,88 +202,78 @@ const onClickRow = (event: Event, data: { item: Card }) => {
 
 <template>
   <layout-content fluid>
-    <v-card
-      flat
-      class="mb-4"
-    >
-      <v-card-text>
-        <v-text-field
-          :model-value="search"
-          clearable
-          hide-details
-          placeholder="Search"
-          prepend-inner-icon="mdi-magnify"
-          type="search"
-          @click:clear="search = ''"
-          @focus="$event.target.select()"
-          @keydown.exact.enter="search = $event.target.value"
+    <list-toolbar v-model:search="search">
+      <v-btn-toggle
+        v-model="view"
+        mandatory
+        variant="tonal"
+        color="primary"
+      >
+        <v-btn
+          value="grid"
+          icon="mdi-view-grid"
         />
-      </v-card-text>
-      <v-card-actions class="flex-wrap">
-        <v-btn-toggle
-          v-model="view"
-          mandatory
-          variant="tonal"
-          color="primary"
-        >
-          <v-btn
-            value="list"
-            icon="mdi-view-list"
-          />
-          <v-btn
-            value="grid"
-            icon="mdi-view-grid"
-          />
-        </v-btn-toggle>
-        <filter-dialog
-          v-model="filters"
-          :items="cards"
+        <v-btn
+          value="list"
+          icon="mdi-view-list"
         />
-        <!--<v-btn-group variant="tonal">
-          <v-btn
-            size="small"
-            icon="mdi-floppy"
-            title="Save deck"
+      </v-btn-toggle>
+      <filter-dialog
+        v-model="filters"
+        :items="cards"
+      />
+      <v-btn
+        :disabled="deckSize === 0"
+        rounded
+        variant="text"
+        icon="mdi-broom"
+        title="Clear deck"
+        @click="inDeckState = {}"
+      />
+      <!--<v-btn-group variant="tonal">
+        <v-btn
+          size="small"
+          icon="mdi-floppy"
+          title="Save deck"
+        />
+        <v-btn
+          size="small"
+          icon="mdi-chart-line"
+          title="Show stats"
+        />
+        <v-btn
+          size="small"
+          icon="mdi-cards"
+          title="Draw opening hand"
+        />
+        <v-btn
+          size="small"
+          icon="mdi-link-variant"
+          title="Copy deck URL to clipboard"
+        />
+        <v-btn
+          size="small"
+          icon="mdi-sync"
+          title="Reset deck"
+        />
+      </v-btn-group>-->
+      <v-spacer />
+      <v-switch
+        v-model="inDeck"
+        :disabled="deckSize === 0"
+        hide-details
+      >
+        <template #label>
+          In deck
+          <v-badge
+            :model-value="deckSize > 0"
+            :content="deckSize"
+            inline
+            color="primary"
           />
-          <v-btn
-            size="small"
-            icon="mdi-chart-line"
-            title="Show stats"
-          />
-          <v-btn
-            size="small"
-            icon="mdi-cards"
-            title="Draw opening hand"
-          />
-          <v-btn
-            size="small"
-            icon="mdi-link-variant"
-            title="Copy deck URL to clipboard"
-          />
-          <v-btn
-            size="small"
-            icon="mdi-sync"
-            title="Reset deck"
-          />
-        </v-btn-group>-->
-        <v-spacer />
-        <v-switch
-          v-model="inDeck"
-          :disabled="deckSize === 0"
-          hide-details
-        >
-          <template #label>
-            In deck
-            <v-badge
-              :model-value="deckSize > 0"
-              :content="deckSize"
-              inline
-              color="primary"
-            />
-          </template>
-        </v-switch>
-      </v-card-actions>
-    </v-card>
+        </template>
+      </v-switch>
+    </list-toolbar>
     <v-data-iterator
       v-if="view === 'grid'"
       v-model:page="page"
