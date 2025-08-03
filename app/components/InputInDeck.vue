@@ -35,11 +35,12 @@ const max = computed(() => {
     :min="0"
     :max="max"
     :bg-color="inDeckState[card.id] ? 'primary' : undefined"
+    flat
     hide-details
     width="80"
     max-width="80"
     base-color="primary"
-    variant="outlined"
+    variant="solo-filled"
     density="compact"
     control-variant="stacked"
     @click.stop

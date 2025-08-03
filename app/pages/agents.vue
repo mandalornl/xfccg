@@ -353,10 +353,11 @@ watch(remainingCost, (value) => {
                   :min="0"
                   :max="1"
                   :bg-color="inTeamState[item.raw.id] ? 'primary' : undefined"
+                  flat
                   hide-details
                   max-width="80"
                   base-color="primary"
-                  variant="outlined"
+                  variant="solo-filled"
                   density="compact"
                   control-variant="stacked"
                   @click.stop
