@@ -44,7 +44,7 @@
     ],
     "activators": [
       "Conspiracy",
-      "Site"
+      "Agent"
     ],
     "gameEffect": "The LONG RANGE COMBAT round is skipped. This Adversary can only attack Teams that consist of a single Agent, including Teams that originally had more Agents but were reduced to one after a Combat.",
     "dialogue": "\"And did you smell it? It smells like nothing on this Earth.\" - The Trashman",
@@ -344,7 +344,7 @@
       "Law",
       "Believer"
     ],
-    "gameEffect": "Place one token on Miller's card. Discard a token to move Agent Miller from any Section to any other Section immediately, unless an Adversary has forced Combat. In that case, the movement occurs after the Combat is resolved. The Agent may join any Team in the new Section.",
+    "gameEffect": "Place one token on Miller's card. Discard a token to move Agent Miller from any Section to another immediately, unless a Combat starts. If so, move him after it resolves (unless he is sent to the Hospital). Miller may join any Team in the new Section and contribute to a Site skill check if in the Field.",
     "bio": "Agent Kyd Miller, an open-minded FBI Agent, aids Mulder and Scully in decoding mysteries involving terrorists, brainwave communication, and global conspiracies, while opposing the Cigarette Smoking Man.",
     "skills": {
       "Behavioral": 1,
@@ -376,7 +376,7 @@
       "Law",
       "Skeptic"
     ],
-    "gameEffect": "Place two tokens on Agent Liz Einstein. Discard a token to discard up to two cards. For each card discarded, apply a +1 modifier to one of her skills (your choice) during a Site skill check performed by the Team she belongs to.",
+    "gameEffect": "Place two tokens on Agent Liz Einstein. Once per turn, you may discard a token to discard up to two cards from your hand. For each card discarded, apply a +1 modifier to one of her skills (your choice) during a Site skill check performed by the Team she is part of.",
     "bio": "Agent Kyd Miller, an open-minded FBI Agent, aids Mulder and Scully in decoding mysteries involving terrorists, brainwave communication, and global conspiracies, while opposing the Cigarette Smoking Man.",
     "skills": {
       "Computer": 2,
@@ -408,7 +408,8 @@
       "FBI",
       "Law"
     ],
-    "gameEffect": "FBI Agent Colquitt is responsible for managing prisoner transport and security, ensuring smooth transitions during transfers. He is involved when Scully arranges for Mulder to be escorted into a prison while handcuffed as part of a covert operation to infiltrate the facility.",
+    "gameEffect": "Place a token on Agent Conquitt. During a skill check, discard a token to add +1 to Agent Colquitt's BEHAVIORAL skill. You may discard a token once per turn.",
+    "bio": "FBI Agent Colquitt is responsible for managing prisoner transport and security, ensuring smooth transitions during transfers. He is involved when Scully arranges for Mulder to be escorted into a prison while handcuffed as part of a covert operation to infiltrate the facility.",
     "skills": {
       "Behavioral": 1,
       "Criminal Investigation": 1,
@@ -469,7 +470,7 @@
       "Neutral",
       "Skeptic"
     ],
-    "gameEffect": "Place two tokens on Agent Murphy. Once per turn, you may discard one token to force your opponent to remove one card (their choice) from their hand from the game.",
+    "gameEffect": "Place two tokens on Agent Murphy. Once per turn, you may discard one token to force your opponent to discard one card from their hand (their choice).",
     "bio": "Agent Murphy is a Department of Defense official tasked with overseeing classified projects, including genetic experiments like those in Founder's Mutation. Calculating and secretive, he safeguards government agendas at any cost.",
     "skills": {
       "Bureaucracy": 2,
@@ -556,7 +557,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Decrease all of the skills levels on one Agent (your choice) by 2 for this turn only. Then, regardless of whether the Site Prerequisite is met or not, move the Agent to the Hospital with one damage token.",
+    "gameEffect": "Decrease all of the skills levels on one Agent (your choice) by 2 for this turn only. No skill may be reduced below 0 At the end of the Investigation Phase, regardless of whether the Site Prerequisite is met or not, move the Agent to the Hospital with one damage token.",
     "dialogue": "\"Dude, I was on fire!.\" - Mulder",
     "tags": [
       "Basic"
@@ -578,7 +579,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Play this card to examine your opponent's hand. Select one Active card. If your opponent plays that card this turn, subtract 4 points from their Team's Site skill check.",
+    "gameEffect": "Play this card to examine your opponent's hand. Select one Keyword ACTIVE card. If your opponent plays that card this turn, subtract 4 points from their Team's Site skill check.",
     "dialogue": "\"The AI would learn from humans. It was constructed to become progressively more intelligent.\"",
     "tags": [
       "Basic"
@@ -695,7 +696,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameEffect": "Discard this card to search through your Bureau deck for a Witness card. Shuffle your deck, and immediately play the Witness card at no cost.",
+    "gameEffect": "Place two tokens on this card. Discard one token to search through your Bureau deck and add a Witness card to your hand. Show the Witness to your opponent and and shuffle the deck. Discard this card when all the tokens have been discarded.",
     "dialogue": "\"Scully, listen to me. I've been misled. We've been misled.\"- Mulder",
     "tags": [
       "Basic"
@@ -875,7 +876,7 @@
       "Active",
       "Conspiracy"
     ],
-    "gameEffect": "When a team of Agents contributes to a single skill check this turn, they use the following swapped skills: ALIEN INVESTIGATION ↔ BUREAUCRACY, BEHAVIORAL ↔ OCCULT INVESTIGATION, COMPUTER ↔ SCIENCES, OBSERVATION ↔ MEDICAL. If a skill is missing, its value is 0. Remove this card from play.",
+    "gameEffect": "When a team of Agents contributes to a single skill check this turn, they use the following swapped skills: ALIEN INVESTIGATION ↔ BUREAUCRACY, BEHAVIORAL ↔ OCCULT INVESTIGATION, COMPUTER ↔ SCIENCES, OBSERVATION ↔ MEDICAL. Skills not listed above work as usual. If an Agent lacks a listed skill, treat it as 0. Remove this card from play.",
     "dialogue": "\"No, it's called the Mengele Effect.\" - Reggie Something",
     "tags": [
       "Basic"
@@ -1141,20 +1142,21 @@
     "title": "Dr. Augustus Goldman",
     "set": "My Struggle",
     "rarity": "Community",
-    "cost": "3 RP",
-    "episode": "This",
+    "cost": "4 RP",
+    "episode": "Founder's Mutation",
     "type": "Witness",
     "keywords": [
       "Witness",
-      "Sciences"
+      "Evolutionary",
+      "Resource"
     ],
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play to change the Site Prerequisite to SCIENCES 3+.",
+    "gameEffect": "Attach this Witness to a Team. Enables your Agents to deal damage to EVOLUTIONARY creatures as normal. For example, you may use LRC against 'High Frequency Wave' or 'Squeeze'. If at any time there are no Agents in the Team to which this card .",
     "dialogue": "\"I am searching for the key that was the seed to all of these terrible genetic abnormalities.\" - Dr. Augustus Goldman",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "Alfredo Sánchez, Robert Czepiel"
   },
