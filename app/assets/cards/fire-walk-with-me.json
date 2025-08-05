@@ -23,7 +23,6 @@
       "Affiliation",
       "Site"
     ],
-    "gameEffect": null,
     "dialogue": "\"Squeeze his hand off!\" - The Arm",
     "tags": [
       "Basic"
@@ -145,7 +144,7 @@
       "Method",
       "Site"
     ],
-    "gameEffect": "At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen. The LONG RANGE COMBAT round is skipped.",
+    "gameEffect": "The LONG RANGE COMBAT round is skipped. At the beginning of each combat round you may discard 2 [CP] from your [CP] pool to heal 1 point of damage to the Woodsmen (only 1 damage token can be removed this way each round).",
     "dialogue": "\"Got a Light?\" - Woodman",
     "tags": [
       "Basic"
@@ -176,7 +175,7 @@
       "Affiliation",
       "Site"
     ],
-    "gameEffect": "Mr. C's LRC, CRC and HEALTH values become equal to those of any one Agent in the target Team (your choice), until the end of this Combat. Move that Agent to the Hospital with 0 HEALTH. Mr. C attacks the remaining Agents in a normal Combat sequence that lasts one LRC and one CRC round.",
+    "gameEffect": "Select one Agent on target Team and move the Agent to the Hospital with 0 HEALTH. Mr. C's LRC, CRC, and HEALTH values become equal to those of the selected Agent. Mr. C then attacks the remaining Agents on that Team in a normal Combat sequence that lasts one LRC round and one CRC round.",
     "dialogue": "\"What brings you back to Twin Peaks, Agent Cooper?\" - Sheriff Truman",
     "tags": [
       "Basic"
@@ -444,7 +443,7 @@
       "Law",
       "Believer"
     ],
-    "gameEffect": "If a Team including Garland Briggs is attacked by a PRIMORDIAL or an OCCULT Adversary, you may choose to engage only Garland Briggs with that Adversary. After the Combat, discard the Adversary card.",
+    "gameEffect": "Place a token on Garland Briggs. If a Team including Briggs is attacked by an Adversary with the OCCULT or PRIMORDIAL Keyword, you may discard one token to have only Briggs engage that Adversary in Combat. After Combat, discard the Adversary card.",
     "bio": "Major Garland Briggs was a principled U.S. Air Force officer who oversaw a secret paranormal research site in Twin Peaks. Committed to truth and duty, he aided Agent Cooper against supernatural threats and sacrificed himself battling evil beyond our world.",
     "skills": {
       "Alien Investigation": 3,
@@ -640,7 +639,7 @@
       "Law",
       "Believer"
     ],
-    "gameEffect": "Agent Tammy Preston's BUREAUCRACY and OCCULT INVESTIGATION skills are increased by one if he Deputy Director Gordon Cole are on the same Team.",
+    "gameEffect": "Agent Tammy Preston's BUREAUCRACY and OCCULT INVESTIGATION skills are increased by one if she and Deputy Director Gordon Cole are on the same Team.",
     "bio": "Tamara \"Tammy\" Preston is a brilliant FBI agent recruited into the Blue Rose Task Force. She investigated Agent Dale Cooper's return, analyzed paranormal dossiers, and uncovered timeline anomalies. Her sharp insight and loyalty to Gordon Cole defined her pivotal role in Twin Peaks.",
     "skills": {
       "Behavioral": 1,
@@ -752,7 +751,7 @@
     "title": "The Black Ace",
     "set": "Fire Walk With Me",
     "rarity": "Community",
-    "cost": "3 CP",
+    "cost": "2 CP",
     "episode": "The Return (3x02)",
     "type": "Bluff",
     "keywords": [
@@ -820,7 +819,7 @@
     "title": "Out of Her Mind",
     "set": "Fire Walk With Me",
     "rarity": "Community",
-    "cost": "5 CP",
+    "cost": "3 CP",
     "episode": "The Return (3x05)",
     "type": "Bluff",
     "keywords": [
@@ -830,7 +829,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Play on a Team investigating a Site to send an Event RESOURCE controlled by that Team's controller to the Discard pile.",
+    "gameEffect": "Play on a Team investigating a Site to discard any one [RP] Keyword RESOURCE card controlled by your opponent.",
     "dialogue": "\"Did you take all of that today?\" - Becky Burnett",
     "tags": [
       "Basic"
@@ -989,7 +988,7 @@
     "activators": [
       "Field"
     ],
-    "gameEffect": "Attach this card to an Agent and immediately remove that Agent from play. At the start of the Briefing Phase on your next turn, return the Agent to the Field with this card still attached. That Agent gains +2 to their OCCULT INVESTIGATION skill",
+    "gameEffect": "Attach this card to an Agent and immediately remove that Agent from play. At the start of your next Briefing Phase, return the Agent to the Field with this card still attached. While attached, the Agent gains +2 to their OCCULT INVESTIGATION skill.",
     "dialogue": "\"Don't take the ring, Laura... Don't take the ring.\" - Cooper",
     "tags": [
       "Basic"
@@ -1169,7 +1168,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Place this card next to your opponents' Fields. That opponent must pay one additional [RP] for each Site card they play.",
+    "gameEffect": "Place this card in your opponent's Field. Your opponent must pay one additional [RP] for each Site card they play.",
     "dialogue": "\"Something's wrong'.\" - Mike",
     "tags": [
       "Advanced"
@@ -1280,7 +1279,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play on a Team in the Field during the Investigation Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check, reveal all face-down Bluff cards at one Site.",
+    "gameEffect": "Play on a Team in the Field during the Investigation Phase. If the Team makes a CRIMINAL INVESTIGATION 6+ skill check, reveal all face-down Bluff cards attached to any one Site in the Field.",
     "dialogue": "\"This man, I know him.\" - Leland",
     "tags": [
       "Basic"
@@ -1403,7 +1402,7 @@
     "title": "The Man in the Mirror",
     "set": "Fire Walk With Me",
     "rarity": "Community",
-    "episode": "The Return (3x12)",
+    "episode": "Beyond Life and Death",
     "type": "Event",
     "cost": "5 CP",
     "keywords": [
@@ -1459,7 +1458,7 @@
     "activators": [
       "Active"
     ],
-    "gameEffect": "Play this card only if all Agents in one of your Teams at a Site have been sent to the Hospital. Return the Site card to your hand. Each Agent in that Team heals 1 point of damage immediately.",
+    "gameEffect": "Play this card immediately after all Agents in one of your Teams at a Site have been sent to the Hospital. Return the Site card to your hand. Each Agent in that Team immediately heals 1 point of damage.",
     "dialogue": "\"Remember 430. Richard and Linda. Two birds with one stone.\" - The Giant",
     "tags": [
       "Basic"
@@ -2049,6 +2048,28 @@
     "dialogue": "\"Laura, she is all tied up. Oh, she liked that. The bird, he starts pecking on her shoulder.\" - Jacques Renault",
     "tags": [
       "Advanced"
+    ],
+    "createdBy": "Alfredo Sanchez, Robert Czepiel"
+  },
+  {
+    "id": "XF08-0487x2",
+    "title": "William Hayward",
+    "set": "Fire Walk With Me",
+    "rarity": "Community",
+    "episode": "Variations on Relations",
+    "type": "Witness",
+    "cost": "4 RP",
+    "keywords": [
+      "Witness",
+      "Sciences"
+    ],
+    "activators": [
+      "Active"
+    ],
+    "gameEffect": "Play to change the Site Prerequisite to Sciences 3+.",
+    "dialogue": "\"Lesions on wrists, ankles and upper arms, where she was bound. We're waiting on toxological tests for drug use.\" - Dr. William Hayward",
+    "tags": [
+      "Basic"
     ],
     "createdBy": "Alfredo Sanchez, Robert Czepiel"
   }
