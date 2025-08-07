@@ -3,6 +3,7 @@ import type {
   InvestigationSkill,
   SkillValue,
 } from '~/types/skill';
+import type { XFileCharacteristic } from '~/types/x-file';
 
 export enum CardSet {
   Premiere = 'Premiere',
@@ -45,8 +46,6 @@ export enum CardType {
 
 export type CardId = string;
 
-type CharacteristicName = 'Affiliation' | 'Motive' | 'Method' | 'Result';
-
 export interface Card {
   id: CardId;
   title: string;
@@ -59,7 +58,7 @@ export interface Card {
   question?: string;
   keywords?: string[];
   skills?: Record<BasicSkill | InvestigationSkill, SkillValue>;
-  characteristics?: Record<CharacteristicName, string>;
+  characteristics?: Record<XFileCharacteristic, string>;
   activators?: string[];
   gameEffect?: string;
   bio?: string;
