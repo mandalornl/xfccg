@@ -1,8 +1,24 @@
 <script setup lang="ts">
+import { useGoTo } from 'vuetify';
+
 const user = useSupabaseUser();
 const appNavigationState = useAppNavigationState();
+const goTo = useGoTo();
 
 const year = computed<number>(() => new Date().getFullYear());
+const showScrollToTop = ref<boolean>(false);
+
+const scroll = () => {
+  showScrollToTop.value = window.scrollY > 64;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', scroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', scroll);
+});
 </script>
 
 <template>
@@ -68,6 +84,18 @@ const year = computed<number>(() => new Date().getFullYear());
       style="z-index: 1004"
     >
       &copy; {{ year }}
+      <v-fab-transition>
+        <v-fab
+          :active="showScrollToTop"
+          absolute
+          offset
+          location="top right"
+          color="primary"
+          icon="mdi-chevron-up"
+          class="mr-4"
+          @click="goTo(0)"
+        />
+      </v-fab-transition>
     </v-footer>
   </v-app>
 </template>
