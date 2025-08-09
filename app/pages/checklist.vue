@@ -135,6 +135,7 @@ const reset = () => {
                 :value="card.id"
                 hide-details
                 multiple
+                width="max-content"
               >
                 <template #label>
                   <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
@@ -153,6 +154,7 @@ const reset = () => {
                 :value="characteristic"
                 hide-details
                 multiple
+                width="max-content"
                 @change="toggleCards(characteristic)"
               >
                 <template #label>
