@@ -52,6 +52,42 @@ const toggleCards = (characteristic: string) => {
     }
   }
 };
+
+const history = ref<string[][]>([]);
+const undoing = ref<boolean>(false);
+
+watch(identifiedCards, (newValue, oldValue) => {
+  if (undoing.value || newValue.length === 0) {
+    return;
+  }
+
+  history.value.push([ ...oldValue ]);
+});
+
+const undo = async () => {
+  if (history.value.length === 0) {
+    return;
+  }
+
+  const [ snapshot ] = history.value.splice(-1, 1);
+
+  if (!snapshot) {
+    return;
+  }
+
+  undoing.value = true;
+
+  identifiedCards.value = [ ...snapshot ];
+
+  await nextTick();
+
+  undoing.value = false;
+};
+
+const reset = () => {
+  history.value = [];
+  identifiedCards.value = [];
+};
 </script>
 
 <template>
@@ -59,6 +95,20 @@ const toggleCards = (characteristic: string) => {
     fluid
     size="large"
   >
+    <div class="d-flex justify-end ga-2 mb-3">
+      <v-btn
+        :disabled="history.length === 0"
+        text="Undo"
+        variant="flat"
+        @click="undo"
+      />
+      <v-btn
+        :disabled="history.length === 0"
+        text="Reset"
+        variant="flat"
+        @click="reset"
+      />
+    </div>
     <v-table>
       <template
         v-for="(cards, checklistIndex) of checklist"
