@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import type { Card } from '~/types/card';
+import {
+  type Card,
+  CardSet as CardSetEnum,
+} from '~/types/card';
 
 const runtimeConfig = useRuntimeConfig();
 
@@ -13,7 +16,16 @@ const src = computed(() => {
     return undefined;
   }
 
-  return `${runtimeConfig.app.baseURL}cards/${props.card?.set}/${props.card?.id}.jpg`
+  const root = `${runtimeConfig.app.baseURL}cards`;
+
+  if (
+    props.card.set === CardSetEnum.Classified
+    || props.card.set === CardSetEnum.FightTheFuture
+  ) {
+    return `${root}/back.jpg`;
+  }
+
+  return `${root}/${props.card?.set}/${props.card?.id}.jpg`
     .replaceAll(' ', '-')
     .toLowerCase();
 });
