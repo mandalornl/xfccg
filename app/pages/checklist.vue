@@ -128,7 +128,7 @@ const reset = () => {
             v-for="card of cards"
             :key="card.id"
           >
-            <td>
+            <td class="px-2">
               <v-checkbox
                 v-model="identifiedCards"
                 :disabled="identifiedCards.includes(card.id)"
@@ -147,6 +147,7 @@ const reset = () => {
             <td
               v-for="characteristic of card.characteristics"
               :key="card.id + characteristic"
+              class="px-2"
             >
               <v-checkbox
                 v-model="identifiedCards"
