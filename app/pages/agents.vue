@@ -63,6 +63,9 @@ const agents = computed<Agent[]>(() => (
       && card.set !== CardSetEnum.TheTruthIsOutThere
       && card.set !== CardSetEnum.GenCon
     ))
+    .filter((cardA, index, self) => (
+      self.findIndex((cardB) => cardB.title === cardA.title) === index
+    ))
     .map((card) => ({
       ...card,
       costInt: card.cost ? parseInt(card.cost, 10) : 0,
