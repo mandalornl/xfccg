@@ -33,7 +33,7 @@ const getIcon = (value: string): string | undefined => ({
   [BasicSkill.Resources]: 'mdi-piggy-bank',
 }[value]);
 
-const getColor = (value: number): string | undefined=> {
+const getColor = (value: number): string => {
   if (value >= 7) {
     return 'light-blue-accent-2';
   } else if (value >= 4) {
