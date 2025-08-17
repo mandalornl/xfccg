@@ -1,11 +1,20 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   value: string | number,
 }>();
+
+const onClick = () => navigateTo({
+  hash: `#${props.value}`,
+}, {
+  replace: true,
+});
 </script>
 
 <template>
-  <nuxt-link :to="`#${value}`">
+  <a
+    :href="`#${value}`"
+    @click.prevent="onClick"
+  >
     <slot>{{ value }}</slot>
-  </nuxt-link>
+  </a>
 </template>
