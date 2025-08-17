@@ -1466,7 +1466,7 @@
     ],
     "gameEffect": "While in play, you may take a second Conspiracy discard after your first (in the Briefing Phase). Discard when an opponent successfully investigates a site (directed at you) using ALIEN INVESTIGATION Skill.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1488,7 +1488,7 @@
     ],
     "gameEffect": "Place in an opponent's Field. An OCCULT Adversary may now be played as a Bluff (it is treated as a Bluff for all purposes). When revealed the Adversary may ignore Site Activator restrictions. Discard when a Keyword OCCULT INVESTIGATION Site is directed at you and investigated successfully.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1533,7 +1533,7 @@
     ],
     "gameEffect": "Place this card in one of your opponents Fields. Your opponent must subtract 2 from the [RP] he generates each turn while this card is in his Field. Your opponent may pay 7 [RP] to force you to discard this card.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1555,7 +1555,7 @@
     ],
     "gameEffect": "Attach this card to any Agent. As long as this card is in play, the controller of the attached Agent must play will all of the [RP] cost cards in his hand face up on the table. Place four counters on this card when it comes into play. Remove one counter each of the attached Agents' Briefing Phases. When the last counter is removed, discard this card.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1715,7 +1715,7 @@
     ],
     "gameEffect": "Attach this card to an Agent in the Field. The Agent may attack any Team investigating a Site during his opponent's Investigation Phase. If the Agent is Negated, discard this card. If the Agent is reduced to zero HEALTH, remove the Agent from the game.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1784,8 +1784,8 @@
     ],
     "gameEffect": "Play this card to search through your Bureau Deck and put into play any Keyword ACTIVE card that specifically effects Skinner at zero Cost.",
     "tags": [
+      "Advanced",
       "Affect Agent",
-      "Basic",
       "Search"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -1830,7 +1830,7 @@
     ],
     "gameEffect": "Place this card next to your X-File. You may draw one card for free in each of your opponents' Briefing Phases.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1852,7 +1852,7 @@
     ],
     "gameEffect": "Place this card next to your X-File. Place up to three cards with a set CP cost from your hand under this card. These three cards can be used to negate any [RP] card with identical cost except Agents and Sites. This function requires zero [CP] cost. Discard both the played card and the card used to negate it. Discard this card when all cards underneath have been played.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Negate"
     ],
     "createdBy": "NXT Games, USPCC"
