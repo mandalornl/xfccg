@@ -549,7 +549,7 @@
     ],
     "gameEffect": "Play this card to increase the cost of all [RP] cards played at this Site by 1.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Increase Cost"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -571,7 +571,7 @@
     ],
     "gameEffect": "Play this card to add X [CP] to your [CP] pool. X = the number of [RP] spent at this Site by the Investigating Player.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Resource"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -593,7 +593,7 @@
     ],
     "gameEffect": "Play this card to increase the Cost of all [RP] cards played at this Site by 2.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Increase Cost"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -637,7 +637,7 @@
     ],
     "gameEffect": "Pay the listed [CP] cost where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CLOSE RANGE COMBAT, LONG RANGE COMBAT. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Decrease Skill"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -725,7 +725,7 @@
     ],
     "gameEffect": "Play this card to double the [RP] cost of any Keyword ACTIVE card played at this Site.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Increase Cost"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -747,7 +747,7 @@
     ],
     "gameEffect": "Once this card is played, the investigating player may not play any COMBAT cards while investigating this Site, except for COMBAT cards which would specifically negate this card.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Prevent"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -791,7 +791,7 @@
     ],
     "gameEffect": "Play this card to immediately add one [CP] to your pool for every two [RP] the Investigating Team uses at this Site.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Resource"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -877,7 +877,7 @@
     ],
     "gameEffect": "Move up to two Bluffs to a different Site in play. Play this card before any other Bluffs are revealed.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Move"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -899,7 +899,7 @@
     ],
     "gameEffect": "Play this card to allow you to move one game effect token from any one card to another immediately. This may not take a card above the normal number of tokens allowed.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1150,7 +1150,7 @@
     ],
     "gameEffect": "Adds one to the Agent's HEALTH.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1194,7 +1194,7 @@
     ],
     "gameEffect": "Discard this card to add three to the Agent's CLOSE RANGE COMBAT skill.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Discard",
       "Increase Skill"
     ],
@@ -1242,7 +1242,7 @@
     ],
     "gameEffect": "Discard this card to add three to the Agent's LONG RANGE COMBAT skill.",
     "tags": [
-      "Basic",
+      "Advanced",
       "Discard",
       "Increase Skill"
     ],
@@ -1402,7 +1402,7 @@
     ],
     "gameEffect": "Attach this Equipment to any Agent in the Field. Any ALIEN Adversary damaged by this weapon in CLOSE RANGE COMBAT is discarded prior to dealing damage in the Combat Round. The Alien Stiletto may be voluntarily discarded in the controlling player's Briefing Phase. Add 10 to your [RP] Pool and remove the Alien Stiletto from the game.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1620,8 +1620,8 @@
     ],
     "gameEffect": "Play when Agent Fox Mulder is in combat. Assign all damage to Mulder first. After the combat, move Mulder to the Hospital with HEALTH zero. When Mulder leaves that Hospital, permanently add the following: +1 OCCULT INVESTIGATION, +1 ALIEN INVESTIGATION, +1 SCIENCES, +1 LONG RANGE COMBAT. Once per game you may ask an X-Files' identity without incurring a penalty question. Only one of this card may be in play.",
     "tags": [
-      "Affect Agent",
-      "Basic"
+      "Advanced",
+      "Affect Agent"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1691,8 +1691,8 @@
     ],
     "gameEffect": "Play on Agent Krycek when his team fails to successfully investigate a Keyword ALIEN INVESTIGATION Site (discard the Site). Place two tokens on this card. Remove a token to emit a blast of energy that causes 6 points of damage to all opponents during the Long Range Combat Round. Apply the following permanent modifiers: +1 ALIEN INVESTIGATION, +2 SUBTERFUGE, and +1 HEALTH.",
     "tags": [
-      "Affect Agent",
-      "Basic"
+      "Advanced",
+      "Affect Agent"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1807,7 +1807,7 @@
     ],
     "gameEffect": "Play this card in the Field during your opponents' Case Assignment Phase. You may place Bluff cards under this card face down at any time. No more than three cards may be under this card at any one time. During his Case Assignment Phase you may play cards stored under this card on any Site in the Field for 2 [CP] less.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1937,7 +1937,7 @@
     ],
     "gameEffect": "Play this card to allow you to exchange [RP] Pools with your opponent.",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },

@@ -60,7 +60,7 @@
     "gameEffect": "Play in CLOSE RANGE COMBAT. Discard a card from your hand to deal additional damage in CLOSE RANGE COMBAT equal to the cost of the discarded card. This damage may be assigned to a different Agent than the one just damaged by the Adversary. X = Cost of the discarded card.",
     "dialogue": "\"Who is it…Hey, you just can't…What do you think you're doing? You have no right to suppress th…Roswell! Roswell!\" - Blaine Faulkner",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -602,7 +602,7 @@
     "gameEffect": "Draw the top three cards from your Bureau deck. If any of the drawn cards are playable and contain Keyword CONSPIRACY, you may immediately play one (your choice) for zero [CP] Cost. Discard the remaining cards drawn from your Bureau deck.",
     "dialogue": "Mulder: \"I'm looking for Mr Kallenchuk.\"\nJeraldine Kallenchuk: \"I'm sorry, Mr Kallenchuk is out of town. Perhaps I can help you with something?\"",
     "tags": [
-      "Basic"
+      "Advanced"
     ],
     "createdBy": "NXT Games, USPCC"
   },
