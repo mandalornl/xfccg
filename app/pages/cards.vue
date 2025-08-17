@@ -19,6 +19,8 @@ const route = useRoute();
 const router = useRouter();
 const inDeckState = useInDeckState();
 
+useScrollPosition();
+
 useHead({
   title: 'Cards',
 });

@@ -13,6 +13,8 @@ const route = useRoute();
 const router = useRouter();
 const inTeamState = useInTeamState();
 
+useScrollPosition();
+
 useHead({
   title: 'Agents',
 });
