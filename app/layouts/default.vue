@@ -1,12 +1,26 @@
 <script setup lang="ts">
 import { useGoTo } from 'vuetify';
 
+const route = useRoute();
 const user = useSupabaseUser();
 const appNavigationState = useAppNavigationState();
 const goTo = useGoTo();
 
 const year = computed<number>(() => new Date().getFullYear());
 const showScrollToTop = ref<boolean>(false);
+
+const onClickScrollToTop = async () => {
+  if (route.hash) {
+    await navigateTo({
+      ...route,
+      hash: undefined
+    }, {
+      replace: true,
+    });
+  }
+
+  await goTo(0);
+};
 
 const scroll = () => {
   showScrollToTop.value = window.scrollY > 64;
@@ -93,7 +107,7 @@ onUnmounted(() => {
           color="primary"
           icon="mdi-chevron-up"
           class="mr-4"
-          @click="goTo(0)"
+          @click="onClickScrollToTop"
         />
       </v-fab-transition>
     </v-footer>
