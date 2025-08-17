@@ -208,7 +208,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
       <v-btn-toggle
         v-model="view"
         mandatory
-        variant="tonal"
+        variant="text"
         color="primary"
       >
         <v-btn
