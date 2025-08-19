@@ -24,24 +24,16 @@ const copyToClipboard = async (event: Event) => {
 <template>
   <div class="d-flex align-center ga-2">
     <slot />
-    <v-tooltip
-      location="top"
-      content-class="bg-primary"
+    <a
+      v-tooltip:top="'Copy link to section'"
+      :href="`#${value}`"
+      @click.prevent="copyToClipboard"
     >
-      <template #activator="{ props: tooltipProps }">
-        <a
-          :href="`#${value}`"
-          v-bind="tooltipProps"
-          @click.prevent="copyToClipboard"
-        >
-          <v-icon
-            :color="iconColor"
-            icon="mdi-content-copy"
-            size="small"
-          />
-        </a>
-      </template>
-      Copy link to this section
-    </v-tooltip>
+      <v-icon
+        :color="iconColor"
+        icon="mdi-content-copy"
+        size="small"
+      />
+    </a>
   </div>
 </template>

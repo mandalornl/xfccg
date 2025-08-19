@@ -8,10 +8,10 @@ withDefaults(defineProps<{
 
 <template>
   <v-avatar
+    v-tooltip:top="'Resource Pool'"
     :size="small ? 16 : 20"
     rounded
     color="blue"
-    title="Resource Pool"
   >
     <v-icon
       :size="small ? 12 : 16"

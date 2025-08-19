@@ -7,9 +7,9 @@ defineProps<{
 
 <template>
   <a
+    v-tooltip:top="'Opens in a new window'"
     :href="href"
     target="_blank"
-    title="Opens in a new window"
     class="d-inline-flex align-baseline"
   >
     <slot>{{ text }}</slot>&nbsp;

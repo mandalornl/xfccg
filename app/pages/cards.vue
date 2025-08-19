@@ -212,10 +212,12 @@ const onClickRow = (event: Event, data: { item: Card }) => {
         color="primary"
       >
         <v-btn
+          v-tooltip:top="'Grid view'"
           value="grid"
           icon="mdi-view-grid"
         />
         <v-btn
+          v-tooltip:top="'List view'"
           value="list"
           icon="mdi-view-list"
         />

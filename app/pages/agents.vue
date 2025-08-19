@@ -191,11 +191,11 @@ watch(remainingCost, (value) => {
       />
       <agents-statistics-dialog />
       <v-btn
+        v-tooltip:top="'Clear team'"
         :disabled="totalCost === 0"
         rounded
         variant="text"
         icon="mdi-broom"
-        title="Clear team"
         @click="inTeamState = {}"
       />
       <v-spacer />

@@ -41,11 +41,11 @@ const clearFilters = () => {
         color="primary"
       >
         <v-btn
+          v-tooltip:top="'Filters'"
           :active="activeFilters > 0"
           rounded
           active-color="primary"
           icon="mdi-filter-variant"
-          title="Filters"
           v-bind="dialogProps"
         />
       </v-badge>
