@@ -86,15 +86,15 @@ const threeCardWidth = computed<number>(() => {
       <h2>Table of Contents</h2>
       <table-of-contents class="mb-4" />
     </section>
-    <rules-page page="4">
+    <rule-page page="4">
       <copy-link value="4">
         <h2>The X-Files<sup>TM</sup> Collectible Card Game</h2>
       </copy-link>
       <p>Welcome to <b>The X-Files Collectible Card Game</b> Advanced Game. The Advanced Game incorporates many of the nuances of <b>The X-Files</b> television series and is designed for the more serious gamer and <b>The X-Files</b> fan.</p>
       <p>If you have not previously read the <b>Basic Game</b> rule book, we recommend that you read pages <hash-link value="4" /> through <hash-link value="7" />; these pages will give you an introduction to <b>The X-Files Collectible Card Game</b> and the game's objective. If you are proceeding to the Advanced Game after learning the Basic Game, go on to the <b>Game Setup</b> section on the following page.</p>
       <p>In the Advanced Game, you will construct your deck of cards for game play. This gives each player greater control over the outcome of the game than in the Basic Game, where players use Starter Decks.The Advanced Game will allow each player to cater their Agents and cards to the Skills and strategy desired. It will be up to you to help Mulder and Scully solve their current X-File.</p>
-    </rules-page>
-    <rules-page page="5">
+    </rule-page>
+    <rule-page page="5">
       <copy-link value="5">
         <h2>Advanced Game Set-up</h2>
       </copy-link>
@@ -103,8 +103,8 @@ const threeCardWidth = computed<number>(() => {
       <p>In the Advanced Game, you will be <u>constructing</u> your <b>Bureau Deck</b>. Your deck must have a minimum of sixty cards but may have more if you like. Your starting Agents and the X-File do not count toward this minimum. You may choose any cards, provided no more than two of the same card are used. You may include Agents in your deck. An Agent from your hand can be used to help out for one turn.</p>
       <p>Pay attention to the <b>Cost</b> to play each card. Having many cards that you cannot afford to play can de detrimental (see the <b>Playing Cards</b> section on page <hash-link value="41" />). Note that you will probably want to create the Bureau Deck in conjunction with selecting Agents and an X-File. For additional Deck Construction suggestions, see page <hash-link value="46" /> of these rules.</p>
       <p>As in the Basic Game, select an X-File card.Place your X-File face down in a prominent place, as you may need to refer to it when your opponent asks questions.</p>
-    </rules-page>
-    <rules-page page="6">
+    </rule-page>
+    <rule-page page="6">
       <copy-link value="6">
         <h3>Advanced Game Set-up continued…</h3>
       </copy-link>
@@ -123,8 +123,8 @@ const threeCardWidth = computed<number>(() => {
         <li>Shuffle and cut your cards. Deal out 7 to begin the game.</li>
         <li>Randomly decide who goes first.</li>
       </ol>
-    </rules-page>
-    <rules-page page="7">
+    </rule-page>
+    <rule-page page="7">
       <copy-link value="7">
         <h2>Advanced Game Table Diagram</h2>
       </copy-link>
@@ -140,8 +140,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="8">
+    </rule-page>
+    <rule-page page="8">
       <copy-link value="8">
         <h2>The X-Files Advanced Game Turn Sequence</h2>
       </copy-link>
@@ -170,8 +170,8 @@ const threeCardWidth = computed<number>(() => {
           </ol>
         </li>
       </ol>
-    </rules-page>
-    <rules-page page="9">
+    </rule-page>
+    <rule-page page="9">
       <ol start="5">
         <li>
           <b>Case Assignment Phase</b>
@@ -205,8 +205,8 @@ const threeCardWidth = computed<number>(() => {
           <b>Debriefing Phase</b><br>All players may discard cards.
         </li>
       </ol>
-    </rules-page>
-    <rules-page page="10">
+    </rule-page>
+    <rule-page page="10">
       <copy-link value="10">
         <h2>Pools</h2>
       </copy-link>
@@ -259,8 +259,8 @@ const threeCardWidth = computed<number>(() => {
         </p>
         <p>Examples of <icon-resource-pool /> (RP), <icon-conspiracy-pool /> (CP) and <icon-star-pool /> (*P) cost icons as seen on cards.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="11">
+    </rule-page>
+    <rule-page page="11">
       <copy-link value="11">
         <h2>Resource Pool</h2>
       </copy-link>
@@ -280,8 +280,8 @@ const threeCardWidth = computed<number>(() => {
       </v-alert>
       <p>Add up all Agent's RES numbers. This is the number of tokens that may be added to the Resource Pool at the beginning of your turn. Agents in the Hospital during the Briefing Phase do not contribute their RES number to create <icon-resource-pool />s. After adding the <icon-resource-pool />s to your pool, you may then purchase cards. Each card costs <b>1</b> <icon-resource-pool />. Purchased cards are always taken from the top of the Bureau Deck. All cards must be purchased at once. A player may not purchase cards and then decide to purchase more after looking at the cards purchased. Regardless of how many cards are bought, no player's hand may exceed seven cards (but can be less) at the end of a turn.</p>
       <p>To keep the Resource Pool and Conspiracy Pool separate, we suggest putting the Resource Pool in the Bureau and the Conspiracy Pool by your X-File card.</p>
-    </rules-page>
-    <rules-page page="12">
+    </rule-page>
+    <rule-page page="12">
       <copy-link value="12">
         <h2>Conspiracy Pool</h2>
       </copy-link>
@@ -299,8 +299,8 @@ const threeCardWidth = computed<number>(() => {
       <v-alert type="info">
         Agent cards included in your Bureau Deck may be sold for their RES (Resource) number of <icon-conspiracy-pool />, not their Cost number.
       </v-alert>
-    </rules-page>
-    <rules-page page="13">
+    </rule-page>
+    <rule-page page="13">
       <copy-link value="13">
         <h3>Turn Example: Game Setup</h3>
       </copy-link>
@@ -312,8 +312,8 @@ const threeCardWidth = computed<number>(() => {
         <p>{{ playerOne }} and {{ playerTwo }} each create Bureau, Field and Hospital Sections on their playing surface. Each player places his Agents in the Bureau to start the game. Both player shuffle their cards and have the opponent cut them. These cards are placed face down in their Bureau Sections and become the Bureau decks. {{ playerOne }} and {{ playerTwo }} draw seven cards each to begin play.</p>
         <p>Each player now creates a Resource Pool (<icon-resource-pool />) and a Conspiracy Pool (<icon-conspiracy-pool />). {{ playerOne }} uses pennies as <icon-resource-pool /> tokens and places five by his Bureau Deck to create this pool. He uses nickels for <icon-resource-pool /> tokens and places five by his X-File card. {{ playerTwo }} does the same. {{ playerOne }} wins a coin toss and elects to go first. {{ playerOne }} and {{ playerTwo }} are now ready to begin the Advanced Game.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="14">
+    </rule-page>
+    <rule-page page="14">
       <copy-link value="14">
         <h2>Playing Cards</h2>
       </copy-link>
@@ -324,8 +324,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Cards with a <icon-star-pool /> may be used by either force -- however, whichever force uses it must pay for it. See the <b>Pools</b> section on page <hash-link value="10" /> for further information.</p>
       <p>If a card has multiple effects, indicated by the phrase "Alternately" appearing on the card, the owning player must specify which effect is being used upon playing the card. They may not change to the other effect later.</p>
       <p>In addition, all cards contain <b>Keywords</b> and <b>Activators</b>. These often serve as codes indicating when cards may be played. See the <b>Keywords</b> section on page <hash-link value="17" /> and the <b>Activators</b> section on page <hash-link value="16" /> for further information.</p>
-    </rules-page>
-    <rules-page page="15">
+    </rule-page>
+    <rule-page page="15">
       <copy-link value="15">
         <h2>Agent Cards</h2>
       </copy-link>
@@ -344,8 +344,8 @@ const threeCardWidth = computed<number>(() => {
         />
         A typical Agent Card
       </v-alert>
-    </rules-page>
-    <rules-page page="16">
+    </rule-page>
+    <rule-page page="16">
       <copy-link value="16">
         <h2>Activators</h2>
       </copy-link>
@@ -377,8 +377,8 @@ const threeCardWidth = computed<number>(() => {
         </v-item-group>
         An example of a card's Activators (click to rotate).
       </v-alert>
-    </rules-page>
-    <rules-page page="17">
+    </rule-page>
+    <rule-page page="17">
       <copy-link value="17">
         <h2>Keywords</h2>
       </copy-link>
@@ -407,8 +407,8 @@ const threeCardWidth = computed<number>(() => {
       <p>There are several cards which change another card's Keywords. When this occurs, only the Keyword is changed. The rest of the card remains unchanged.</p>
       <h2>Resources</h2>
       <p>One particular Keyword worth special mentions is "<b>RESOURCE</b>". The Keyword RESOURCE will appear on certain cards. A card with the Keyword "RESOURCE" remains in play in the table section stated by the Keyword on the card. If no table section is indicated on the card, place the card face up in your Bureau section. These cards remain in play until they are negated or the criteria for their removal (if listed on the Resource card) is met. When this occurs, the card is moved to your Discard Pile.</p>
-    </rules-page>
-    <rules-page page="18">
+    </rule-page>
+    <rule-page page="18">
       <h3>Detailed Advanced Game Phase Descriptions</h3>
       <copy-link
         value="18"
@@ -422,8 +422,8 @@ const threeCardWidth = computed<number>(() => {
       <p>The Investigating Player may then use his Agents to create <b>Resource Points</b> (RPs or <icon-resource-pool />). Then they may purchase cards. Cards are purchased from the top of the Bureau Deck at the cost of <b>1</b> <icon-resource-pool /> each. The Investigating Player must announce how many cards they are purchasing and do so at one time. They may not purchase some and choose to purchase more later. See the <b>Resource Pool</b> section on page <hash-link value="11" />.</p>
       <p>Any of the Investigating Player's opponents may now discard cards from their hand with an <icon-resource-pool /> or <icon-star-pool /> Cost and gain an equal number of <icon-conspiracy-pool />s. This is optional. Cards that are exchanged are placed face up on the Discard Pile.</p>
       <p>Each opponent of the Investigating Player may purchase cards from the top of the Bureau Deck at the cost of <b>1</b> <icon-conspiracy-pool /> each. Purchasing cards is done after <icon-resource-pool /> cards have been sold. Each player must announce how many cards they are purchasing and do so at one time. They may not purchase some and choose to purchase more later. See the <b>Conspiracy Pool</b> section on page <hash-link value="12" />.</p>
-    </rules-page>
-    <rules-page page="19">
+    </rule-page>
+    <rule-page page="19">
       <copy-link value="19">
         <h3>Turn Example: Briefing Phase</h3>
       </copy-link>
@@ -434,8 +434,8 @@ const threeCardWidth = computed<number>(() => {
         <p>{{ playerOne }} begins his turn with the Briefing Phase. He draws one card as a "free" draw. He uses his Agents' Resource (RES) numbers to create <icon-resource-pool />s. Scully and Mulder both have a RES number of 2 and Kosseff and Lamana both have the RES number 1. {{ playerOne }} would add all six tokens to his Resource Pool, however Mulder's Game Effect is that the <icon-resource-pool />s he generates must be used to purchase cards. Therefore, {{ playerOne }} spends <b>2</b> <icon-resource-pool />s and draws two cards. He could have chose to purchase more if desired. {{ playerOne }} has ten cards in his hand and nine tokens in his Resource Pool.</p>
         <p>{{ playerTwo }} now has the chance to gain <icon-conspiracy-pool />s. {{ playerTwo }} may exchange cards with an <icon-resource-pool /> or <icon-star-pool /> value for an equal number of <icon-conspiracy-pool />s. {{ playerTwo }} trades in a Shotgun Equipment card, a Deep Throat Event card, and an Ambush Combat card. The Shotgun card has a <icon-resource-pool /> Cost of <b>6</b>, the Deep Throat card <b>5</b> and the Ambush card <b>2</b>. {{ playerTwo }} adds <b>13</b> <icon-conspiracy-pool /> to his Conspiracy Pool. {{ playerTwo }} now has <b>18</b> <icon-conspiracy-pool /> in his Conspiracy Pool. {{ playerTwo }} purchases 2 cards from the top of his Bureau Deck for <b>1</b> <icon-conspiracy-pool /> each. {{ playerTwo }} has <b>16</b> <icon-conspiracy-pool /> in his Conspiracy Pool after purchasing cards.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="20">
+    </rule-page>
+    <rule-page page="20">
       <h3>Detailed Advanced Game Phase Descriptions continued…</h3>
       <copy-link
         value="20"
@@ -471,8 +471,8 @@ const threeCardWidth = computed<number>(() => {
         />
         A typical Agent HEALTH Rating.
       </v-alert>
-    </rules-page>
-    <rules-page page="21">
+    </rule-page>
+    <rule-page page="21">
       <copy-link
         value="21"
         color="red"
@@ -510,8 +510,8 @@ const threeCardWidth = computed<number>(() => {
           />
         </div>
       </v-alert>
-    </rules-page>
-    <rules-page page="22">
+    </rule-page>
+    <rule-page page="22">
       <copy-link value="22">
         <h3>Turn Example: Healing and Requisition Phases</h3>
       </copy-link>
@@ -524,8 +524,8 @@ const threeCardWidth = computed<number>(() => {
         <p>Remember in our turn example, no one is actually hurt or in the Hospital yet.</p>
         <p>{{ playerOne }} now begins his Requisition Phase. {{ playerOne }} has a "Knife" card in his hand. The "Knife" adds 1 to the Agent's CRC skill. This Equipment card has the Activator word "<b>BUREAU</b>". Since all of {{ playerOne }}'s Agents began the game in the Bureau, he may pay for and assign the Equipment card to any of his Agents. {{ playerOne }} removes the <b>2</b> <icon-resource-pool /> Cost from his Resource Pool and places the Equipment card with Agent Mulder. {{ playerOne }} now has <b>7</b> <icon-resource-pool />s left in his Resource Pool. {{ playerOne }} does not want to Requisition any more Equipment and has completed the Requisition Phase.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="23">
+    </rule-page>
+    <rule-page page="23">
       <copy-link
         value="23"
         color="red"
@@ -538,8 +538,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Agents must be in the Field in order to participate in a Site Investigation during the <b>Investigation Phase</b>.</p>
       <h2>Teams</h2>
       <p>During this phase, you may designate new <b>Agent Teams</b>. An Agent Team is simply a group of one or more Agents. This group may be any number. You may designate more than one Team in the same Section if you choose. One instance where you would designate more than one Team in the same Section would be if you wanted to investigate two Sites in one turn. In this instance, you would create two Teams in the Field section. You will also have the opportunity to designate new Teams in the Field Section at the beginning of the Investigation Phase. Any single Agent may not be part of more than one Team at a time. If new Teams are not designated, it is assumed that the most recent Team designations still apply.</p>
-    </rules-page>
-    <rules-page page="24">
+    </rule-page>
+    <rule-page page="24">
       <h3>Advanced Game Phase Descriptions continued…</h3>
       <copy-link
         value="24"
@@ -554,8 +554,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Sites played by the Investigating Player but not investigated during the Investigation Phase are moved to the Discard Pile at the end of the turn unless a Bluff is placed under the Site.</p>
       <p>Some Site cards give you a choice between two Prerequisite skills you may use. You must announce which Skill you will be using prior to investigating the Site. Once you announce which Skill you are using, you may not change to the other.</p>
       <p>If you have two identical Sites in your hand, you may not use them both in the same turn.</p>
-    </rules-page>
-    <rules-page page="25">
+    </rule-page>
+    <rule-page page="25">
       <copy-link value="25">
         <h2>The Bluff</h2>
       </copy-link>
@@ -567,8 +567,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Bluffs are designed to make the Investigating Player think twice about the chance of successful investigation. Any card may be placed face down underneath the Site. These cards do not actually have to be Keyword "BLUFF" cards (non-Bluffs played as a Bluff are revealed and discarded upon Site investigation). They may in effect be "bluff" Bluffs. Cards placed under a Site as a Bluff remain there until the Site is investigated.</p>
       <p>When a Site with a Bluff is investigated, the card is revealed immediately. All cards placed as Bluffs are revealed, regardless of whether or not they contain the Keyword "BLUFF". If a card placed beneath a Site does not contain the Keyword "BLUFF", the owning player cannot afford to pay for the Bluff, or the owning player does not want to use the Bluff, the card is discarded.</p>
       <p>If the Site is not investigated this turn, the Site will remain in play with the Bluff underneath it until an investigation is attempted or the game ends. An Agent Team that investigates a Site with Bluffs beneath it "activates" these Bluffs. They are referred to as the <b>Activating Team</b>.</p>
-    </rules-page>
-    <rules-page page="26">
+    </rule-page>
+    <rule-page page="26">
       <copy-link value="26">
         <h3>Turn Example: Deployment and Case Assignment Phases</h3>
       </copy-link>
@@ -579,8 +579,8 @@ const threeCardWidth = computed<number>(() => {
         <p>{{ playerOne }} has now reached the Deployment Phase. All of {{ playerOne }}'s Agents are currently in the Bureau. {{ playerOne }} moves Agents Mulder, Scully, and Kosseff from the Bureau to the Field. {{ playerOne }} leaves Jerry Lamana in the Bureau. The Deployment Phase is now completed.</p>
         <p>The Case Assignment Phase is next. {{ playerOne }} places the Site "Aubrey, MO" in the Field section of the table and pays the <b>2</b> <icon-resource-pool /> Cost indicated on the Site card. {{ playerOne }} now has <b>5</b> <icon-resource-pool />s left in his Resource Pool. The "Aubrey, MO" card has a Prerequisite of BEHAVIORAL 4+. This means that {{ playerOne }}'s Agents investigating the Site must have 4 of more BEHAVIORAL skill in order to ask a question about {{ playerTwo }}'s X-File. Since {{ playerOne }} and {{ playerTwo }} are playing a two-player game, {{ playerTwo }} is the Directed Player by default. In a multi-player game, {{ playerOne }} would have to announce which player the Site is directed toward. {{ playerTwo }} places two Bluffs beneath the Site. The Bluffs will not be revealed or paid for until the Site is actually investigated. The Case Assignment Phase is completed.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="27">
+    </rule-page>
+    <rule-page page="27">
       <copy-link
         value="27"
         color="red"
@@ -601,8 +601,8 @@ const threeCardWidth = computed<number>(() => {
         type="info"
         text="In order to successfully investigate a Site, at least one Agent must be there."
       />
-    </rules-page>
-    <rules-page page="28">
+    </rule-page>
+    <rule-page page="28">
       <copy-link value="28">
         <h2>Advanced Phase Descriptions continued…</h2>
       </copy-link>
@@ -618,8 +618,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Multiple cards may be played prior to one card being resolved. In these instances, the last card played is resolved first. Cards are played until all players decide to play no more. One type of card which can be played is an Adversary card. These cards result in Combat. See the <b>Combat</b> section on page <hash-link value="31" /> for further information.</p>
       <p>After a card is used, place it face up on your Discard Pile. Playing a card may initiate a new Skill Check Subroutine. If this occurs, resolve this new Skill Check before resolving the original Skill Check.</p>
       <p>Certain cards may have lasting effects. This will be noted on the individual card.</p>
-    </rules-page>
-    <rules-page page="29">
+    </rule-page>
+    <rule-page page="29">
       <ol
         start="3"
         class="list-style-type--lower-alpha"
@@ -638,8 +638,8 @@ const threeCardWidth = computed<number>(() => {
         type="info"
         text="Cards may be played during a Skill Check Subroutine initiating an additional Skill Check. When this occurs, the current Skill Check Subroutine is put on hold and another Skill Check Subroutine is initiated for the new Skill Check. Also, two of the same card can't be used for the same Skill Check Subroutine; i.e., two of the same Witness on the same Skill Check."
       />
-    </rules-page>
-    <rules-page page="30">
+    </rule-page>
+    <rule-page page="30">
       <copy-link value="30">
         <h3>Turn Example: Investigation Phase</h3>
       </copy-link>
@@ -651,15 +651,15 @@ const threeCardWidth = computed<number>(() => {
         <p>{{ playerOne }} now has a BEHAVIORAL skill level of 6 (Mulder 3, Kosseff 3). {{ playerTwo }} does not want {{ playerOne }} to ask a question, so he plays the Adversary card "The Manitou Stalks His Prey". The Manitou card contains the Activators "<b>CONSPIRACY</b>" and "<b>MOTIVE SITE</b>". Since it is not {{ playerTwo }}'s turn, the "<b>CONSPIRACY</b>" condition is satisfied. The "<b>MOTIVE SITE</b>" condition is also satisfied because the "Aubrey, MO" Site contains this Keyword. {{ playerTwo }} may play the Adversary card. {{ playerTwo }} pays the <b>6</b> <icon-conspiracy-pool /> Cost and now has <b>8</b> <icon-conspiracy-pool /> left in his Conspiracy Pool. {{ playerOne }} immediately plays his Event card "X" which negates one Adversary. {{ playerOne }} pays the <b>3</b> <icon-resource-pool /> Cost and now has <b>2</b> <icon-resource-pool /> left in his Resource Pool.</p>
         <p>With {{ playerOne }} still meeting the Site Prerequisite, {{ playerTwo }} decides to play another Adversary. {{ playerTwo }} plays his "Good People, Good Food" card for <b>8</b> <icon-conspiracy-pool />. {{ playerTwo }} now has <b>0</b> <icon-conspiracy-pool /> in his Conspiracy Pool. {{ playerOne }} cannot negate this card and Combat is initiated.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="31">
+    </rule-page>
+    <rule-page page="31">
       <copy-link value="31">
         <h2>Combat</h2>
       </copy-link>
       <p>When you encounter an Adversary which is not negated, Combat will follow. Unless an opponent plays a card which specifically allows him to do so, only one Adversary may be encountered at a time. Therefore, if opponents want to play more than one Adversary, each is resolved during a separate Combat.</p>
       <p>Combat typically occurs in two rounds. The first round is <b>Long Range Combat (LRC)</b> and the second is <b>Close Range Combat (CRC)</b>. Only one round of Long Range Combat occurs. After Long Range Combat, Close Range Combat rounds are repeated until the Adversary is killed or all Agents are sent to the Hospital. All damage inflicted during each round occurs simultaneously. Thus, it is possible for an Agent or Adversary to be removed by Combat and still inflict damage for that round.</p>
-    </rules-page>
-    <rules-page page="32">
+    </rule-page>
+    <rule-page page="32">
       <copy-link value="32">
         <h2>Long Range Combat</h2>
       </copy-link>
@@ -668,8 +668,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Damage inflicted by Agents may be applied separately if there are multiple targets, however, each particular Agent's damage cannot be split. Damage inflicted by a single Adversary on an Agent Team is allocated to one Agent. Each player decides which opponent will receive the inflicted damage.</p>
       <p>An Agent is moved to the Hospital when his HEALTH rating has been reduced to 0. Any reduction that results in a negative HEALTH rating for an Agent is considered to be HEALTH rating 0. No negative HEALTH ratings occur. An Adversary is killed (and discarded) when its HEALTH rating has been reduced to 0. Some Adversaries will not have Long Range Combat ability, noted by an <b>N/A</b> listed as its LRC.</p>
       <p>If the Adversary has been killed or if all Agents have been sent to the Hospital, Combat ends. If not, Combat continues with <b>Close Range Combat</b> rounds.</p>
-    </rules-page>
-    <rules-page page="33">
+    </rule-page>
+    <rule-page page="33">
       <copy-link value="33">
         <h2>Close Range Combat</h2>
       </copy-link>
@@ -682,8 +682,8 @@ const threeCardWidth = computed<number>(() => {
         type="info"
         text="Witness with HEALTH are treated as Agents in Combat rounds. Thus, Combat cards may be used on a Witness with HEALTH. If a Witness's HEALTH is reduced to 0, move the Witness card to the owning player's Discard Pile."
       />
-    </rules-page>
-    <rules-page page="34">
+    </rule-page>
+    <rule-page page="34">
       <copy-link value="34">
         <h2>Tracking Damage</h2>
       </copy-link>
@@ -691,8 +691,8 @@ const threeCardWidth = computed<number>(() => {
       <p>One method is the use of six-sided dice. For example, Agent Mulder (HEALTH rating 5) received 3 damage in Combat. Place a six-sided die on his card with the 3 facing upward. This symbolizes that he has taken 3 damage and has 2 HEALTH left. Now, assume he takes another three points damage. Mulder has taken a total of 6 points of damage. Since an Agent's HEALTH cannot drop below 0, Mulder now has 0 HEALTH.</p>
       <p>Mulder is immediately moved to the Hospital and may not contribute his skills to any Skill Checks. Place the 5 facing upward. This symbolizes that he needs to recover 5 HEALTH to be at full strength. During the next turn, the die is changed to show 3 facing upward symbolizing the healing of two points, a current HEALTH rating of 2, but three points needed to be healed to Mulder to have full HEALTH. If Mulder leaves prior to having full HEALTH (remember that he must have a minimum of 3 HEALTH to leave), the die indicating his current damage sustained remains on the Agent card.</p>
       <p>Another effective method is the use of tokens, for example, pennies. Place a penny on the Agent's card for each point of damage they have received. These pennies are similarly removed as an Agent heals in the Hospital. Experiment and use whichever method you find most convenient.</p>
-    </rules-page>
-    <rules-page page="35">
+    </rule-page>
+    <rule-page page="35">
       <copy-link value="35">
         <h2>Combat Cards</h2>
       </copy-link>
@@ -713,8 +713,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="36">
+    </rule-page>
+    <rule-page page="36">
       <copy-link value="36">
         <h3>Turn Example: Combat</h3>
       </copy-link>
@@ -726,8 +726,8 @@ const threeCardWidth = computed<number>(() => {
         <p>Combat proceeds to the Close Range Combat round. Close Range rounds will be repeated until all Agents are sent to the Hospital or the Adversary has been killed. In Close Range Combat Mulder has 2 CRC and Kosseff has 1 CRC. Mulder also has the "Knife" he Requisitioned earlier which adds +1 to CRC. The Agents have done an additional 4 damage for a cumulative total of 7. The Adversary does 3 Damage. {{ playerTwo }} assigns the 3 damage to Kosseff, resulting in her having 0 HEALTH. {{ playerOne }} immediately plays a Combat card. It is the "First Aid" card which immediately heals 1 point damage at the Cost of 0 <icon-resource-pool />. {{ playerOne }} uses this to add 1 HEALTH to Agent Kosseff and prevent her from having to go to the Hospital. The Adversary now has 3 HEALTH left and Kosseff has 1 HEALTH remaining.</p>
         <p>Another round of Close Range Combat occurs. {{ playerOne }}'s Agents do an additional 4 damage and the Adversary's HEALTH is exceeded. The Adversary card is moved to {{ playerTwo }}'s Discard Pile. The Adversary still does its 3 damage. {{ playerTwo }} assign the damage to Kosseff, who now has HEALTH 0 and is immediately moved to the Hospital with three tokens placed on her card.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="37">
+    </rule-page>
+    <rule-page page="37">
       <copy-link
         value="37"
         color="red"
@@ -740,8 +740,8 @@ const threeCardWidth = computed<number>(() => {
       <p>Examples of appropriate questions are: <i>"Is your X-File's AFFILIATION Alien?"</i>, <i>"Is your X-File's METHOD Violence?"</i> or <i>"Is your X-File's RESULT Death?"</i> You may not ask questions like <i>"What is your AFFILIATION?"</i> or <i>"Is your AFFILIATION six letters or less?"</i></p>
       <p>If the Site Prerequisite has not been met, the Site card is placed on the Discard Pile. After all investigated Sites have been resolved, any remaining Sites with no Bluffs under them are moved to the Discard Pile. Any remaining Sites with Bluffs under them remain in the Field section until they are investigated during a later turn or the game ends. Sites may only be investigated by the player who played the Site.</p>
       <p>If a player chooses not to investigate any Sites for a particular turn, all players may still pay for and play any applicable cards.</p>
-    </rules-page>
-    <rules-page page="38">
+    </rule-page>
+    <rule-page page="38">
       <copy-link
         value="38"
         color="red"
@@ -752,8 +752,8 @@ const threeCardWidth = computed<number>(() => {
       </copy-link>
       <p>The Debriefing Phase is the final phase in each player's turn. All players may now discard cards. After discarding cards, your hand size must be seven cards or less. If you have more than seven cards, you must discard until no more than seven remain.</p>
       <p>After the Debriefing Phase, the turn is completed. The next player to the left now begins their turn and turn and the turn sequence is repeated.</p>
-    </rules-page>
-    <rules-page page="39">
+    </rule-page>
+    <rule-page page="39">
       <copy-link value="39">
         <h3>Turn Example: Investigation Phase Conclusion and Debriefing Phase</h3>
       </copy-link>
@@ -764,8 +764,8 @@ const threeCardWidth = computed<number>(() => {
         <p>{{ playerOne }} now only has Agent Mulder left with BEHAVIORAL skill 3. The "Aubrey, MO" Site card has a Prerequisite of BEHAVIORAL 4+. {{ playerOne }} now pays 2 <icon-resource-pool /> for the Witness card "Dr. Sheila Braun" which adds 2 to one Behavioral Skill Check. {{ playerOne }} now has 0 <icon-resource-pool /> in his Resource Pool. {{ playerOne }} is out of <icon-resource-pool /> and {{ playerTwo }} is out of <icon-conspiracy-pool /> so both players may not play any more cards. {{ playerOne }}'s Agents have a BEHAVIORAL Skill Level of 5 (Mulder 3, Witness cards 2) and successfully meet the Site Prerequisite of BEHAVIORAL 4+. The "Aubrey, MO" card allows {{ playerOne }} to ask one MOTIVE question. {{ playerOne }} asks {{ playerTwo }} if his X-File's MOTIVE is SURVIVAL. The answer is NO and game play continues. {{ playerOne }} chooses not to guess {{ playerTwo }}'s X-File identity at this time.</p>
         <p>It is now time for the Debriefing Phase. Since {{ playerOne }} and {{ playerTwo }} both have five cards left, neither player needs to discard any cards. {{ playerOne }}'s turn is completed and it is now {{ playerTwo }}'s turn.</p>
       </v-alert>
-    </rules-page>
-    <rules-page page="40">
+    </rule-page>
+    <rule-page page="40">
       <copy-link value="40">
         <h2>Multi-Player Changes</h2>
       </copy-link>
@@ -778,8 +778,8 @@ const threeCardWidth = computed<number>(() => {
         Case Assignment Phase Multi-Player Changes:
       </h3>
       <p>In a multi-player game, the Investigating player must now announce the specific opponent to which each Site question is directed. This is done by default in a two-player game as there is only one opponent. The Investigating Player may only ask the Site question of one opponent. Once a Site has been directed at a particular opponent, it may not be changed.</p>
-    </rules-page>
-    <rules-page page="41">
+    </rule-page>
+    <rule-page page="41">
       <h3 class="text-decoration-underline">
         Skill Check Subroutine Multi-Player Changes:
       </h3>
@@ -792,8 +792,8 @@ const threeCardWidth = computed<number>(() => {
       <p>In a multi-player game, cards must be paid for by the owning player. Players may not give <icon-conspiracy-pool /> or <icon-resource-pool /> to other players or combine funds to pay for a card.</p>
       <p>&nbsp;</p>
       <p>All other rules apply as in a two-player game.</p>
-    </rules-page>
-    <rules-page page="42">
+    </rule-page>
+    <rule-page page="42">
       <copy-link
         value="42"
         color="red"
@@ -812,8 +812,8 @@ const threeCardWidth = computed<number>(() => {
       <h2>Killer Cards</h2>
       <p>Some cards will have the Keyword "<b>KILLER</b>". These cards can permanently remove Agents from play. For game play, these cards are optional. Both players must agree to use these cards in game play. If either player objects, these cards may not be used. Killer cards can be fun to use, but they can also create serious game play imbalances.</p>
       <p>If you play an X-Files Advanced Game using Killer cards, another way to win the game is added. You can now win the game by permanently removing all opposing Agents from game play. This is still a rare occurrence while using these cards.</p>
-    </rules-page>
-    <rules-page page="43">
+    </rule-page>
+    <rule-page page="43">
       <copy-link value="43">
         <h2>X-File Powers</h2>
       </copy-link>
@@ -879,8 +879,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="44">
+    </rule-page>
+    <rule-page page="44">
       <h3 class="text-purple-darken-2">
         Method
       </h3>
@@ -979,8 +979,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="45">
+    </rule-page>
+    <rule-page page="45">
       <v-list class="mb-4">
         <v-list-item title="Security">
           <template #prepend>
@@ -1068,8 +1068,8 @@ const threeCardWidth = computed<number>(() => {
           </v-list-item-subtitle>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="46">
+    </rule-page>
+    <rule-page page="46">
       <copy-link value="46">
         <h2>Deck Construction</h2>
       </copy-link>
@@ -1077,8 +1077,8 @@ const threeCardWidth = computed<number>(() => {
       <p>The first card to include, and possibly most important, is the Site card. These cards are important, as Agents need to ask questions about the opposing X-File in order to win the game. In a deck of sixty cards, you will probably want to include at least fifteen Site cards. Site cards should be about one quarter of your deck. They should also be coordinated around your Agents' strengths. Your Agent Team will have some skills with a total much larger than others. The Bureau Deck should have a proportionally large number of Site cards that utilize these skills.</p>
       <p>All other cards fit into two basic categories: (1) Cards that help you. (2) Cards that hinder your opponents. The mix should center around your personal strategy or play style.</p>
       <p><b>Cards that help you</b>: These cards include Witnesses, Events, Combat Cards and Agents. Events have varied effects. Your will probably want more of these than any other card type. Witnesses usually add to a Skill Check. Combat Cards aid in Combat situations. You will probably want about an even number of these two cards but less of these than Event cards. In the Advanced Game, Agents can also be included in your deck to aid during one turn. While helpful, they tend to be expensive and you will probably only be able to utilize a few.</p>
-    </rules-page>
-    <rules-page page="47">
+    </rule-page>
+    <rule-page page="47">
       <p><b>Cards that hinder your opponent</b>: These cards include Events, Adversaries, Bluffs and Combat Cards. Again, you will probably want to include more Events than any other card type. Adversaries affect opponents by inflicting damage during Combat and sending them to the Hospital where they cannot contribute to a Skill Check. Bluffs normally subtract from a Skill Check outright. At this point, you will likely need to decide the main way that you want to hinder your opponent. This can be through Adversary of Bluff cards. Whichever you choose, you will likely want more of these than the other. Combat cards can be used to increase the power of Adversaries.</p>
       <p>The final consideration is the Cost to play your cards. It is not wise to have many powerful cards if you cannot afford to play them. The proper combination of more expansive cards and less expansive cards will prove to be the most effective.</p>
       <h3>Sample Deck Quantities, by Suit (60 total):</h3>
@@ -1110,8 +1110,8 @@ const threeCardWidth = computed<number>(() => {
           </tr>
         </tbody>
       </v-table>
-    </rules-page>
-    <rules-page page="48">
+    </rule-page>
+    <rule-page page="48">
       <copy-link value="48">
         <h2>The Nine Different Suits</h2>
       </copy-link>
@@ -1128,8 +1128,8 @@ const threeCardWidth = computed<number>(() => {
         <li>The <b>Card Cost</b>: Indicates the amount it will cost in Resource Points (<icon-resource-pool />), Conspiracy Points (<icon-conspiracy-pool />) or either (<icon-star-pool />) to play the card from a hand in an Advanced Game.</li>
         <li>The <b>Story Line</b>: Consists of a brief quote or phrase relating to the subject of the card, taken from <b>The X-Files</b> television series.</li>
       </ol>
-    </rules-page>
-    <rules-page page="49">
+    </rule-page>
+    <rule-page page="49">
       <v-alert
         variant="tonal"
         color="info"
@@ -1142,8 +1142,8 @@ const threeCardWidth = computed<number>(() => {
         />
         A typical game card
       </v-alert>
-    </rules-page>
-    <rules-page page="50">
+    </rule-page>
+    <rule-page page="50">
       <copy-link value="50">
         <h2>Event Cards</h2>
       </copy-link>
@@ -1158,8 +1158,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="51">
+    </rule-page>
+    <rule-page page="51">
       <copy-link value="51">
         <h2>Witness Cards</h2>
       </copy-link>
@@ -1174,8 +1174,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="52">
+    </rule-page>
+    <rule-page page="52">
       <copy-link value="52">
         <h2>Bluff Cards</h2>
       </copy-link>
@@ -1190,8 +1190,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="53">
+    </rule-page>
+    <rule-page page="53">
       <copy-link value="53">
         <h2>Equipment Cards</h2>
       </copy-link>
@@ -1206,8 +1206,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="54">
+    </rule-page>
+    <rule-page page="54">
       <copy-link value="54">
         <h2>Combat Cards</h2>
       </copy-link>
@@ -1222,8 +1222,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="55">
+    </rule-page>
+    <rule-page page="55">
       <copy-link value="55">
         <h2>Adversary Cards</h2>
       </copy-link>
@@ -1241,8 +1241,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="56">
+    </rule-page>
+    <rule-page page="56">
       <copy-link value="56">
         <h2>Site Cards</h2>
       </copy-link>
@@ -1261,8 +1261,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="57">
+    </rule-page>
+    <rule-page page="57">
       <copy-link value="57">
         <h2>Agent Cards</h2>
       </copy-link>
@@ -1282,8 +1282,8 @@ const threeCardWidth = computed<number>(() => {
           class="mx-auto"
         />
       </v-alert>
-    </rules-page>
-    <rules-page page="58">
+    </rule-page>
+    <rule-page page="58">
       <copy-link value="58">
         <h2>X-File Cards</h2>
       </copy-link>
@@ -1298,8 +1298,8 @@ const threeCardWidth = computed<number>(() => {
         <li>The <b>Type</b> of card: This helps to remind you of the function of the card.</li>
         <li>The <b>Story Line</b>: A brief quote or phrase explaining the relationship between the X-File and <b>The X-Files</b> television series.</li>
       </ol>
-    </rules-page>
-    <rules-page page="59">
+    </rule-page>
+    <rule-page page="59">
       <v-alert
         variant="tonal"
         color="info"
@@ -1312,8 +1312,8 @@ const threeCardWidth = computed<number>(() => {
         />
         A typical X-File card
       </v-alert>
-    </rules-page>
-    <rules-page page="60">
+    </rule-page>
+    <rule-page page="60">
       <copy-link
         value="60"
         color="blue-darken-2"
@@ -1380,8 +1380,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="61">
+    </rule-page>
+    <rule-page page="61">
       <copy-link
         value="61"
         color="orange-darken-2"
@@ -1447,8 +1447,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="62">
+    </rule-page>
+    <rule-page page="62">
       <copy-link
         value="62"
         color="purple-darken-2"
@@ -1514,8 +1514,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="63">
+    </rule-page>
+    <rule-page page="63">
       <copy-link
         value="63"
         color="light-green-darken-2"
@@ -1581,8 +1581,8 @@ const threeCardWidth = computed<number>(() => {
           </template>
         </v-list-item>
       </v-list>
-    </rules-page>
-    <rules-page page="64">
+    </rule-page>
+    <rule-page page="64">
       <copy-link value="64">
         <h2>Glossary</h2>
       </copy-link>
@@ -1597,8 +1597,8 @@ const threeCardWidth = computed<number>(() => {
       <p><b>Negate</b>: Cancels the effect or influence of a target card; the target card is then placed in its owner's Discard pile.</p>
       <p><b>Non-Active Players</b>: Refers to a player when it is not their turn and they are not the target of a Site. Also known as a Conspiracy player.</p>
       <p><b>Skills</b>: Unique abilities that a particular Agent possesses, which aid him/her in various situations throughout the game.</p>
-    </rules-page>
-    <rules-page page="65">
+    </rule-page>
+    <rule-page page="65">
       <copy-link value="65">
         <h2>Glossary: Skills</h2>
       </copy-link>
@@ -1615,8 +1615,8 @@ const threeCardWidth = computed<number>(() => {
       <p><b>Occult Investigation</b>: Pursuit of evidence that leads to the existence of paranormal phenomena.</p>
       <p><b>Sciences</b>: Understanding of the natural laws of the physical world.</p>
       <p><b>Subterfuge</b>: Deftness in covert operations and situations that involve hiding, sneaking and espionage.</p>
-    </rules-page>
-    <rules-page page="66">
+    </rule-page>
+    <rule-page page="66">
       <v-table class="mb-4">
         <tbody>
         <tr>
@@ -1841,8 +1841,8 @@ const threeCardWidth = computed<number>(() => {
         </tr>
         </tbody>
       </v-table>
-    </rules-page>
-    <rules-page page="67">
+    </rule-page>
+    <rule-page page="67">
       <table class="w-100 mb-3">
         <tbody>
           <tr>
@@ -1897,8 +1897,8 @@ const threeCardWidth = computed<number>(() => {
       </table>
       <p><b>Special Thanks to</b>: Game Empire in San Diego, Terry Stasch of Print World in Santee, Les Kollegian, Joanne White, Jack Everitt, David Spangler, Mara Kent, and Joy Macdonell.</p>
       <p><b>Playtesters</b>: Mike Durnell, David Spangler, Patrick McKee, Robert Lear, Ralph Anderson, Mike Yang, Brian Woodward, Corey Lopardi, Vinnie Verrinoldi, <b>David May</b>, Roxanne Barbour, Dmitri Salcedo, Robert Mair, Scott Parker, Eric Whitten, Richard Pontius, Brian Schutt, Geoffrey Colman, Bill Pollock, Jeff Odum, Tony Chin, Tim Cropley, David Thiel, Michael Mykita, Adrian McCanna, Tomas Espino Jr., Micah Davenport, Rebeca Richardson, Kris Richardson, Robin Horsley, Donald Richardson, Angela Mykita, Jeffrey Sweeney, Kimberly Rogalski, Terran McCanna, Tony St. Clair, Floris van Velden, Ronald Nusteling, Jonathan Yu, Jason Linette, James Lee, Patrick McDonough, Donald Bowles, Tiffany LaRue, Liza Rivera, Victoria Pingarron, Greg Marshall, Joseph Carco, David Bowder, Chuck May, Cathy Mayo, John Gee, Colleen Nechuolodoff, Aidan Spangler, John-Michael Spangler, Travis Illig, Holly Pettit, Ken Grey, Desmond White, Denis Roy, Mike Meaney, Matt Pontius, Vasanth Bala, Jeffrey Alexander, Steve Jay, Brian Cohen, Scott Colman, Victor Nolasco, Lance Olson, John Wilkes, Derek Lofthouse, William Barrett, Shakira Khan, Alonzo Sanchez, Brent Griffith, Kok Ping Liew, Catherine Cropley, Michael Wise, Sheridan Green, Barbara Sylvis, Edmund Sylvis, Sandra Boggs, Ray Wisneski, Gordon Jefferson, Fabian Melero, Nick Henderson, Kamar Bratko, Ronnie Parks, Joshua Pasto, Tim Washington, John Maure, William Kendall, Tony Story, Omar Ghannoum, David Linch, Dave Kufner, Geoffrey Brizzolara, Robert Diaz, John Mack, Thomas Alnwick, Marc Alnwick, James Dieter, David Obrien, Brett Blankenship, Alberto Gois, Joe Gois, Mical Bernabe, Frankie Sandburg, Mike Walker, Joshua Rigrod, Kyle Smith, Caroline Braun, Michael DeBoard, Scott King, Randy Vorachack, Paddy Heiliger, Cheryl Kallenbach, Brian Kallenbach, Chuck Kallenbach II, Richard Engler, Claude Mona, Cynthia Quo, Jeffrey Hembroff, Thomas Skalski, Scott Willems, Frederic Gingras, Frederic Genest, Jean-Francois Laplante, Jean-Philippe Thibault, Omar Ghannoum, David Mogilner, Jon Ciesielski, and everyone else who helped in the game testing process.</p>
-    </rules-page>
-    <rules-page page="68">
+    </rule-page>
+    <rule-page page="68">
       <copy-link
         value="68"
         color="red"
@@ -2025,7 +2025,7 @@ const threeCardWidth = computed<number>(() => {
           </ul>
         </li>
       </ul>
-    </rules-page>
+    </rule-page>
   </layout-content>
 </template>
 
