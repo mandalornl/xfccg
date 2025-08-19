@@ -1,15 +1,19 @@
 <script setup lang="ts">
 import xFiles from '~/assets/checklist/x-files.json';
-import premiere from '~/assets/cards/premiere.json';
 
-import type { Card } from '~/types/card';
+import {
+  type Card,
+  CardSet as CardSetEnum,
+} from '~/types/card';
 import { XFileCharacteristic as XFileCharacteristicEnum } from '~/types/x-file';
 
 useHead({
   title: 'Checklist',
 });
 
-const pool = premiere as unknown as Card[];
+const pool = await usePool([
+  CardSetEnum.Premiere,
+]);
 
 const checklist = computed<Card[][]>(() => (
   xFiles.map((ids) => (

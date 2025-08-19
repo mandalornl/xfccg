@@ -7,11 +7,11 @@ import {
 import type { Agent } from '~/types/agent';
 import { FilterOperation as FilterOperationEnum } from '~/types/filter';
 import { InvestigationSkill as InvestigationSkillEnum } from '~/types/skill';
-import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const router = useRouter();
 const inTeamState = useInTeamState();
+const pool = await usePool();
 
 useScrollPosition();
 

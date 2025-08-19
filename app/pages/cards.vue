@@ -13,11 +13,11 @@ import {
 } from '~/types/card';
 import type { SortBy } from '~/types/sort';
 import { FilterOperation as FilterOperationEnum } from '~/types/filter';
-import { pool } from '~/assets/cards/pool';
 
 const route = useRoute();
 const router = useRouter();
 const inDeckState = useInDeckState();
+const pool = await usePool();
 
 useScrollPosition();
 
