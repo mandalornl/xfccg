@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const route = useRoute();
 
+useHead({
+  titleTemplate: (title) => {
+    const siteName = 'The X-Files CCG';
+
+    return title ? `${title} | ${siteName}` : siteName;
+  }
+});
+
 onMounted(() => {
   if (!route.hash) {
     return;
