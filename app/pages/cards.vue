@@ -203,7 +203,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
 
 <template>
   <layout-content fluid>
-    <list-toolbar v-model:search="search">
+    <card-toolbar v-model:search="search">
       <v-btn-toggle
         v-model="view"
         mandatory
@@ -224,14 +224,6 @@ const onClickRow = (event: Event, data: { item: Card }) => {
       <filter-dialog
         v-model="filters"
         :items="cards"
-      />
-      <v-btn
-        :disabled="deckSize === 0"
-        rounded
-        variant="text"
-        icon="mdi-broom"
-        title="Clear deck"
-        @click="inDeckState = {}"
       />
       <!--<v-btn-group variant="tonal">
         <v-btn
@@ -260,28 +252,36 @@ const onClickRow = (event: Event, data: { item: Card }) => {
           title="Reset deck"
         />
       </v-btn-group>-->
-      <v-spacer />
-      <v-switch
-        v-model="inDeck"
-        :disabled="deckSize === 0"
-        hide-details
+      <v-badge
+        :model-value="deckSize > 0"
+        :content="deckSize"
+        color="primary"
       >
-        <template #label>
-          In deck
-          <v-badge
-            :model-value="deckSize > 0"
-            :content="deckSize"
-            inline
-            color="primary"
-          />
-        </template>
-      </v-switch>
-    </list-toolbar>
+        <v-btn
+          v-tooltip:top="inDeck ? 'Hide in deck' : 'Show in deck'"
+          :disabled="deckSize === 0"
+          :active="inDeck"
+          :icon="inDeck ? 'mdi-cards' : 'mdi-cards-outline'"
+          rounded
+          active-color="primary"
+          @click="inDeck = !inDeck"
+        />
+      </v-badge>
+      <v-btn
+        v-tooltip:top="'Clear deck'"
+        :disabled="deckSize === 0"
+        rounded
+        variant="text"
+        icon="mdi-broom"
+        @click="inDeckState = {}"
+      />
+    </card-toolbar>
     <v-data-iterator
       v-if="view === 'grid'"
       v-model:page="page"
       v-model:items-per-page="perPage"
       :items="cards"
+      class="bg-grey-darken-4"
     >
       <template #default="{ items }">
         <v-row>
@@ -293,7 +293,10 @@ const onClickRow = (event: Event, data: { item: Card }) => {
             md="3"
             lg="2"
           >
-            <v-card @click="selectedCard = { ...item.raw }">
+            <v-card
+              variant="flat"
+              @click="selectedCard = { ...item.raw }"
+            >
               <v-card-item>
                 <v-card-title>
                   {{ item.raw.title }}

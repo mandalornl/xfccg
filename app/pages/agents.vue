@@ -184,12 +184,27 @@ watch(remainingCost, (value) => {
 
 <template>
   <layout-content fluid>
-    <list-toolbar v-model:search="search">
+    <card-toolbar v-model:search="search">
       <filter-dialog
         v-model="filters"
         :items="cards"
       />
       <agents-statistics-dialog />
+      <v-badge
+        :model-value="totalCost > 0"
+        :content="totalCost"
+        color="primary"
+      >
+        <v-btn
+          v-tooltip:top="inTeam ? 'Hide in team' : 'Show in team'"
+          :disabled="totalCost === 0"
+          :active="inTeam"
+          :icon="inTeam ? 'mdi-cards' : 'mdi-cards-outline'"
+          rounded
+          active-color="primary"
+          @click="inTeam = !inTeam"
+        />
+      </v-badge>
       <v-btn
         v-tooltip:top="'Clear team'"
         :disabled="totalCost === 0"
@@ -198,27 +213,12 @@ watch(remainingCost, (value) => {
         icon="mdi-broom"
         @click="inTeamState = {}"
       />
-      <v-spacer />
-      <v-switch
-        v-model="inTeam"
-        :disabled="totalCost === 0"
-        hide-details
-      >
-        <template #label>
-          In team
-          <v-badge
-            :model-value="totalCost > 0"
-            :content="totalCost"
-            inline
-            color="primary"
-          />
-        </template>
-      </v-switch>
-    </list-toolbar>
+    </card-toolbar>
     <v-data-iterator
       v-model:page="page"
       v-model:items-per-page="perPage"
       :items="cards"
+      class="bg-grey-darken-4"
     >
       <template #default="{ items }">
         <v-row>
@@ -232,6 +232,7 @@ watch(remainingCost, (value) => {
           >
             <v-card
               :disabled="item.raw.costInt > remainingCost && !inTeamState[item.raw.id]"
+              variant="flat"
               @click="selectedCard = { ...item.raw }"
             >
               <v-card-item>
