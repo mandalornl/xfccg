@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
 
-import premiere from '~/assets/cards/premiere.json';
-
 import {
   type Card,
+  CardSet as CardSetEnum,
   CardType as CardTypeEnum,
 } from '~/types/card';
 import { sample } from '~/utils/sample';
@@ -14,8 +13,9 @@ useHead({
 });
 
 const display = useDisplay();
-
-const pool = premiere as unknown as Card[];
+const pool = await usePool([
+  CardSetEnum.Premiere,
+]);
 
 const drawCardByCostType = (costType: string): Card => (
   sample<Card>(pool.filter((card) => card.cost?.endsWith(costType)))!
