@@ -47,7 +47,6 @@ const max = computed(() => {
     hide-details
     width="80"
     max-width="80"
-    base-color="primary"
     variant="solo-filled"
     density="compact"
     control-variant="stacked"
