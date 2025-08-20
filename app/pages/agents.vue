@@ -256,7 +256,6 @@ watch(remainingCost, (value) => {
                   flat
                   hide-details
                   max-width="80"
-                  base-color="primary"
                   variant="solo-filled"
                   density="compact"
                   control-variant="stacked"
