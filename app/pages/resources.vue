@@ -4,6 +4,10 @@ const conspiracy = ref<number>(5);
 const wakeLock = ref<WakeLockSentinel>();
 const dialog = ref<boolean>(false);
 
+useHead({
+  title: 'Resources',
+});
+
 watch(dialog, async (value) => {
   try {
     if (value) {
@@ -32,7 +36,7 @@ const reset = () => {
 </script>
 
 <template>
-  <layout-content title="Resources">
+  <layout-content>
     <div class="d-flex justify-end ga-2 mb-3">
       <v-btn
         text="Fullscreen"
