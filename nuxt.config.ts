@@ -59,7 +59,6 @@ export default defineNuxtConfig({
         '/account',
         '/change-password',
         '/my-decks',
-        '/my-agents',
       ],
     },
   },
