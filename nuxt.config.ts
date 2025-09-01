@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error
+        // @ts-expect-error Ignore undefined warning
         config.plugins.push(vuetify({
           autoImport: true,
         }));
