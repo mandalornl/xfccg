@@ -1,5 +1,3 @@
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
-
 const isProduction = process.env.NODE_ENV === 'production';
 const baseURL = isProduction ? '/xfccg/' : '/';
 
@@ -27,32 +25,12 @@ export default defineNuxtConfig({
       },
     },
   },
-  build: {
-    transpile: [
-      'vuetify',
-    ],
-  },
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/supabase',
-    (_options, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error Ignore undefined warning
-        config.plugins.push(vuetify({
-          autoImport: true,
-        }));
-      });
-    },
+    'vuetify-nuxt-module',
   ],
-  vite: {
-    vue: {
-      template: {
-        transformAssetUrls,
-      },
-    },
-  },
   supabase: {
-    types: './app/types/database.ts',
     redirectOptions: {
       login: '/login',
       callback: '/confirm',
@@ -63,4 +41,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vuetify: {
+    vuetifyOptions: './app/vuetify.options.ts'
+  }
 });

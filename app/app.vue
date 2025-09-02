@@ -32,3 +32,27 @@ onMounted(() => {
     </v-app>
   </nuxt-layout>
 </template>
+
+<style lang="scss">
+p {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  &:not(.v-pagination__list) {
+    padding-left: 1.5rem;
+
+    margin-bottom: 1rem;
+  }
+
+  ul, ol {
+    margin-bottom: 0 !important;
+  }
+}
+
+a {
+  transition: color .2s ease-out;
+
+  color: rgb(var(--v-theme-primary));
+}
+</style>
