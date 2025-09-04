@@ -99,7 +99,7 @@ const search = ref<string>(getRouteQueryValue('search'));
 const view = ref<string>(getRouteQueryValue('view', 'grid'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
-const sortBy = ref<SortBy<Card>[]>(getSortByValue());
+const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
 
@@ -110,7 +110,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
     };
   }
 
-  const sortByValue = JSON.stringify(sortBy.value);
+  const sortByValue = JSON.stringify(sortBys.value);
 
   return {
     search: search.value || undefined,
@@ -175,8 +175,8 @@ const cards = computed<Card[]>(() => {
     return useHasFilters<Card>(filters, card);
   });
 
-  if (sortBy.value.length > 0) {
-    const compare = useSort<Card>(sortBy.value);
+  if (sortBys.value.length > 0) {
+    const compare = useSort<Card>(sortBys.value);
 
     return hits.sort(compare);
   }
@@ -328,7 +328,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
       v-else
       v-model:page="page"
       v-model:items-per-page="perPage"
-      v-model:sort-by="sortBy"
+      v-model:sort-by="sortBys"
       :headers="headers"
       :items="cards"
       :items-per-page-options="itemsPerPageOptions"
