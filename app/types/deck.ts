@@ -7,9 +7,7 @@ export interface Deck {
   name: string;
   card_ids: InDeck;
   created_at: string;
+  created_by: string;
   likes: number;
   public: boolean;
-  profile: {
-    full_name: string;
-  };
 }

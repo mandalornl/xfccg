@@ -19,7 +19,6 @@ export type Database = {
           card_ids: Json
           created_at: string
           id: string
-          likes: number
           name: string
           profile_id: string
           public: boolean
@@ -28,7 +27,6 @@ export type Database = {
           card_ids?: Json
           created_at?: string
           id?: string
-          likes?: number
           name: string
           profile_id?: string
           public?: boolean
@@ -37,7 +35,6 @@ export type Database = {
           card_ids?: Json
           created_at?: string
           id?: string
-          likes?: number
           name?: string
           profile_id?: string
           public?: boolean
@@ -45,6 +42,46 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: "decks_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      likes: {
+        Row: {
+          created_at: string
+          deck_id: string
+          profile_id: string
+        }
+        Insert: {
+          created_at?: string
+          deck_id?: string
+          profile_id?: string
+        }
+        Update: {
+          created_at?: string
+          deck_id?: string
+          profile_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "likes_deck_id_fkey"
+            columns: ["deck_id"]
+            isOneToOne: false
+            referencedRelation: "decklists"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "likes_deck_id_fkey"
+            columns: ["deck_id"]
+            isOneToOne: false
+            referencedRelation: "decks"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "likes_profile_id_fkey"
             columns: ["profile_id"]
             isOneToOne: false
             referencedRelation: "profiles"
@@ -72,7 +109,18 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      decklists: {
+        Row: {
+          card_ids: Json | null
+          created_at: string | null
+          created_by: string | null
+          id: string | null
+          likes: number | null
+          name: string | null
+          public: boolean | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never

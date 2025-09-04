@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { useDate } from 'vuetify';
 
-const date = useDate();
+const dateAdapter = useDate();
 
 const props = withDefaults(defineProps<{
-  value: number | string,
+  date: number | string,
   format?: string,
 }>(), {
   format: 'fullDateTime24h',
 });
 
-const formatted = computed<string>(() => date.format(new Date(props.value), props.format));
+const formatted = computed<string>(() => dateAdapter.format(new Date(props.date), props.format));
 </script>
 
 <template>

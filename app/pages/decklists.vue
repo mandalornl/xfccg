@@ -67,8 +67,7 @@ const {
   let query = supabase
     .from('decklists')
     .select('*', { count: 'exact' })
-    .eq('public', true)
-    .range(page.value - 1, (page.value * perPage.value) - 1);
+    .range((page.value - 1) * perPage.value, (page.value * perPage.value) - 1);
 
   for (const sortBy of sortBys.value) {
     query = query.order(sortBy.key, {
@@ -127,7 +126,7 @@ const {
           <v-icon
             :disabled="value === 0"
             icon="mdi-heart"
-            color="red"
+            color="primary"
           />
         </v-badge>
       </template>
