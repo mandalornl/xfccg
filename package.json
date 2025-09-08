@@ -13,6 +13,7 @@
   "engines": {
     "node": "22"
   },
+  "packageManager": "pnpm@10.15.1",
   "dependencies": {
     "@mdi/font": "~7.4.47",
     "@nuxt/eslint": "~1.9.0",
@@ -22,7 +23,6 @@
     "vue-router": "~4.5.1",
     "vuetify-nuxt-module": "0.18.7"
   },
-  "packageManager": "pnpm@10.12.3",
   "devDependencies": {
     "@nuxtjs/supabase": "~1.6.1",
     "sass-embedded": "~1.92.0",
