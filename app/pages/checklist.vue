@@ -16,11 +16,7 @@ const pool = await usePool([
 ]);
 
 const checklist = computed<Card[][]>(() => (
-  xFiles.map((ids) => (
-    ids
-      .map((id) => pool.find((card) => card.id === id))
-      .filter((card) => card !== undefined)
-  ))
+  xFiles.map((ids) => ids.map((id) => pool.find((card) => card.id === id)!))
 ));
 
 const identifiedCards = ref<string[]>([]);
