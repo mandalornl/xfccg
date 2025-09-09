@@ -43,6 +43,7 @@ export enum CardType {
   Site = 'Site',
   Witness = 'Witness',
   XFile = 'X-File',
+  Credits = 'Credits',
 }
 
 export type CardId = string;

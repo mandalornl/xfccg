@@ -308,7 +308,7 @@ const onClickRow = (event: Event, data: { item: Card }) => {
               <v-card-text>
                 <card-image :card="item.raw" />
               </v-card-text>
-              <v-card-actions>
+              <v-card-actions v-if="item.raw.type !== CardTypeEnum.Credits">
                 <v-spacer />
                 # In deck
                 <input-in-deck :card="item.raw" />
@@ -341,7 +341,10 @@ const onClickRow = (event: Event, data: { item: Card }) => {
         />
       </template>
       <template #[`item.inDeck`]="{ item }">
-        <input-in-deck :card="item" />
+        <input-in-deck
+          v-if="item.type !== CardTypeEnum.Credits"
+          :card="item"
+        />
       </template>
     </v-data-table>
     <card-dialog v-model="selectedCard" />
