@@ -1,22 +1,11 @@
 <script setup lang="ts">
-import { CardType as CardTypeEnum } from '~/types/card';
+import type { CardType as CardTypeEnum } from '~/types/card';
 
 const props = defineProps<{
-  text: string,
+  text: CardTypeEnum,
 }>();
 
-const color = computed(() => ({
-  [CardTypeEnum.Adversary]: 'green-darken-2',
-  [CardTypeEnum.Agent]: 'white',
-  [CardTypeEnum.Bluff]: 'grey-darken-1',
-  [CardTypeEnum.Combat]: 'red-darken-4',
-  [CardTypeEnum.Equipment]: 'light-blue-darken-3',
-  [CardTypeEnum.Event]: 'pink-darken-2',
-  [CardTypeEnum.Site]: 'blue-darken-4',
-  [CardTypeEnum.Witness]: 'purple-darken-1',
-  [CardTypeEnum.XFile]: 'yellow',
-  'Credits': 'orange-darken-2',
-}[props.text]));
+const color = computed(() => getColorByType(props.text));
 </script>
 
 <template>
