@@ -1,4 +1,7 @@
-import type { CardId } from '~/types/card';
+import type {
+  Card,
+  CardId,
+} from '~/types/card';
 
 export type InDeck = Record<CardId, number>;
 
@@ -11,3 +14,5 @@ export interface Deck {
   likes: number;
   public: boolean;
 }
+
+export type CardInDeck = Card & { quantity: number };

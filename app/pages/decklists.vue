@@ -34,8 +34,15 @@ const search = ref<string>(getRouteQueryValue('search'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
+const selectedDeck = ref<Deck | undefined>();
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
+  if (selectedDeck.value) {
+    return {
+      id: selectedDeck.value.id,
+    };
+  }
+
   const sortByValue = JSON.stringify(sortBys.value);
 
   return {
@@ -99,6 +106,10 @@ const {
     count: 0,
   })
 });
+
+const onClickRow = (event: Event, data: { item: Deck }) => {
+  selectedDeck.value = { ...data.item };
+};
 </script>
 
 <template>
@@ -112,9 +123,13 @@ const {
       :items="data.rows"
       :items-per-page-options="itemsPerPageOptions"
       :items-length="data.count"
+      @click:row="onClickRow"
     >
       <template #[`item.created_at`]="{ value }">
-        <date-time :date="value" />
+        <date-time
+          :date="value"
+          format="fullDate"
+        />
       </template>
       <template #[`item.likes`]="{ value }">
         <v-badge
@@ -131,7 +146,6 @@ const {
         </v-badge>
       </template>
     </v-data-table-server>
-    <x-debug :value="sortBys" />
-    <x-debug :value="data" />
+    <deck-dialog v-model="selectedDeck" />
   </layout-content>
 </template>
