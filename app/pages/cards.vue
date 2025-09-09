@@ -344,6 +344,6 @@ const onClickRow = (event: Event, data: { item: Card }) => {
         <input-in-deck :card="item" />
       </template>
     </v-data-table>
-    <card-info v-model="selectedCard" />
+    <card-dialog v-model="selectedCard" />
   </layout-content>
 </template>

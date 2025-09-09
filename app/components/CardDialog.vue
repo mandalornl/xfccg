@@ -14,7 +14,6 @@ const card = defineModel<Card>();
     :fullscreen="smAndDown"
     scrollable
     width="768"
-    scrim="black"
     @update:model-value="(value) => !value && (card = undefined)"
   >
     <v-card>

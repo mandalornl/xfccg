@@ -275,6 +275,6 @@ watch(remainingCost, (value) => {
         />
       </template>
     </v-data-iterator>
-    <card-info v-model="selectedCard" />
+    <card-dialog v-model="selectedCard" />
   </layout-content>
 </template>
