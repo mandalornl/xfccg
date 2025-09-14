@@ -9,45 +9,13 @@ import type {
   Agent,
   AgentStat,
 } from '~/types/agent';
+import { getIconBySkill } from '~/utils/icon';
+import { getColorBySkillTotal } from '~/utils/color';
 
 const inTeamState = useInTeamState();
 const { xs } = useDisplay();
 
 const dialog = ref<boolean>(false);
-
-const getIcon = (value: string): string | undefined => ({
-  [InvestigationSkill.AlienInvestigation]: 'mdi-alien-outline',
-  [InvestigationSkill.Behavioral]: 'mdi-head-cog-outline',
-  [InvestigationSkill.Bureaucracy]: 'mdi-bank',
-  [InvestigationSkill.Computer]: 'mdi-desktop-classic',
-  [InvestigationSkill.CriminalInvestigation]: 'mdi-account-search',
-  [InvestigationSkill.EvidenceCollection]: 'mdi-archive-search-outline',
-  [InvestigationSkill.Medical]: 'mdi-hospital-box-outline',
-  [InvestigationSkill.Observation]: 'mdi-cctv',
-  [InvestigationSkill.OccultInvestigation]: 'mdi-pentagram',
-  [InvestigationSkill.Sciences]: 'mdi-flask-outline',
-  [InvestigationSkill.Subterfuge]: 'mdi-incognito',
-  [BasicSkill.LongRangeCombat]: 'mdi-pistol',
-  [BasicSkill.CloseRangeCombat]: 'mdi-knife-military',
-  [BasicSkill.Health]: 'mdi-heart-pulse',
-  [BasicSkill.Resources]: 'mdi-piggy-bank',
-}[value]);
-
-const getColor = (value: number): string => {
-  if (value >= 7) {
-    return 'light-blue-accent-2';
-  } else if (value >= 4) {
-    return 'green-accent-2';
-  } else if (value === 3) {
-    return 'orange-accent-2';
-  } else if (value === 2) {
-    return 'red-accent-2';
-  } else if (value === 1) {
-    return 'grey-lighten-1';
-  } else {
-    return 'grey-darken-2';
-  }
-};
 
 const team = computed<Agent[]>(() => Object.values(inTeamState.value).filter((agent) => agent !== null));
 
@@ -68,8 +36,8 @@ const stats = computed<AgentStat[]>(() => ([
   return {
     total,
     title,
-    icon: getIcon(title),
-    color: getColor(total),
+    icon: getIconBySkill(title),
+    color: getColorBySkillTotal(total),
   };
 })));
 </script>
@@ -83,7 +51,7 @@ const stats = computed<AgentStat[]>(() => ([
   >
     <template #activator="{ props:dialogProps }">
       <v-btn
-        v-tooltip:top="'Team statistics'"
+        v-tooltip:top="'Team stats'"
         :disabled="team.length === 0"
         rounded
         icon="mdi-chart-line"
@@ -112,27 +80,17 @@ const stats = computed<AgentStat[]>(() => ([
               :key="stat.title"
               :class="`text-${stat.color}`"
             >
+              <td class="w-0 text-no-wrap">
+                <v-icon
+                  :icon="stat.icon"
+                  :color="stat.color"
+                />
+              </td>
               <td>{{ stat.title }}</td>
               <td>{{ stat.total }}</td>
             </tr>
           </tbody>
         </v-table>
-        <!--<v-btn-group variant="tonal">
-          <v-tooltip
-            v-for="stat of stats"
-            :key="stat.title"
-            location="top"
-          >
-            <template #activator="{ props:tooltipProps }">
-              <v-btn
-                :icon="stat.icon"
-                :color="stat.color"
-                v-bind="tooltipProps"
-              />
-            </template>
-            {{ stat.title }} ({{ stat.total }})
-          </v-tooltip>
-        </v-btn-group>-->
       </v-card-text>
       <v-card-actions>
         <v-btn

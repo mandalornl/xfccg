@@ -189,7 +189,7 @@ watch(remainingCost, (value) => {
         v-model="filters"
         :items="cards"
       />
-      <agents-statistics-dialog />
+      <team-stats-dialog />
       <v-badge
         :model-value="totalCost > 0"
         :content="totalCost"
