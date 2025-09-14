@@ -107,13 +107,10 @@ watch(user, (value) => {
         />
       </template>
     </v-btn>
-    <div class="d-flex align-center my-4">
-      <v-divider />
-      <span class="mx-2">
-        or
-      </span>
-      <v-divider />
-    </div>
+    <x-divider
+      text="or"
+      class="my-4"
+    />
     <v-form
       v-model="isValidForm"
       validate-on="lazy"
