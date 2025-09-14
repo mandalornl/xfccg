@@ -11,8 +11,7 @@ const props = withDefaults(defineProps<{
 });
 
 const items = computed<{
-  type: string,
-  count: number,
+  total: number,
   title: string,
   color: string | undefined,
   height: number,
@@ -26,24 +25,28 @@ const items = computed<{
     CardTypeEnum.Event,
     CardTypeEnum.Site,
     CardTypeEnum.Witness,
-  ].map((type) => {
-    const count = props.cards
-      .filter((card) => card.type === type)
-      .reduce((total, card) => total + card.quantity, 0);
+  ]
+    .map((type) => {
+      const total = props.cards
+        .filter((card) => card.type === type)
+        .reduce((total, card) => total + card.quantity, 0);
 
-    return {
-      type,
-      count,
-      title: `${type} (${count})`,
-      color: getColorByType(type),
-    };
-  });
+      return {
+        total,
+        title: type,
+        color: getColorByType(type),
+      };
+    })
+    .sort(useSort([
+      { key: 'total', order: 'desc' },
+      { key: 'title', order: 'asc' },
+    ]));
 
-  const max = Math.max(...items.map((item) => item.count));
+  const max = Math.max(...items.map((item) => item.total));
 
   return items.map((item) => ({
     ...item,
-    height: props.height * item.count / max,
+    height: props.height * item.total / max,
   }));
 });
 </script>
@@ -53,14 +56,14 @@ const items = computed<{
     <v-card
       v-for="item of items"
       :key="item.title"
-      v-tooltip:top="item.title"
+      v-tooltip:top="`${item.title} (${item.total})`"
       :color="item.color"
       :height="item.height"
       width="12.5%"
       class="flex-fill"
     >
       <v-card-subtitle class="d-flex justify-center">
-        {{ item.count }}
+        {{ item.total }}
       </v-card-subtitle>
     </v-card>
   </div>

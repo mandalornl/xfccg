@@ -5,6 +5,7 @@ import type {
   Deck,
   CardInDeck,
 } from '~/types/deck';
+import { getColorByCost } from '~/utils/color';
 
 const { smAndDown } = useDisplay();
 const pool = await usePool();
@@ -28,6 +29,14 @@ const cards = computed<CardInDeck[]>(() => {
     };
   });
 });
+
+const total = computed<number>(() => cards.value.reduce((total, card) => total + card.quantity, 0));
+
+const costs = [
+  { title: 'Resource', value: 'RP', color: getColorByCost('resource') },
+  { title: 'Conspiracy', value: 'CP', color: getColorByCost('conspiracy') },
+  { title: 'Resource or Conspiracy', value: '*P', color: getColorByCost('star') },
+];
 </script>
 
 <template>
@@ -60,45 +69,52 @@ const cards = computed<CardInDeck[]>(() => {
         </v-card-subtitle>
       </v-card-item>
       <v-card-text class="text-body-1">
+        <deck-card-types :cards="cards" />
+        <x-divider
+          :text="`Cards (${total})`"
+          class="my-4"
+        />
+        <deck-card-list :cards="cards" />
+        <x-divider
+          text="Team statistics"
+          class="my-4"
+        />
+        <deck-team-stats :cards="cards" />
+        <x-divider
+          text="Sites"
+          class="my-4"
+        />
         <v-row>
           <v-col
             cols="12"
-            lg="6"
+            sm="6"
           >
-            <stats-list :cards="cards" />
+            <deck-site-questions :cards="cards" />
           </v-col>
           <v-col
             cols="12"
-            lg="6"
+            sm="6"
           >
-            <v-row>
-              <v-col cols="12">
-                <stats-type :cards="cards" />
-              </v-col>
-              <v-col
-                v-for="type of [ 'RP', 'CP', '*P' ]"
-                :key="type"
-                cols="12"
-                sm="4"
-              >
-                <stats-cost
-                  :type="type"
-                  :cards="cards"
-                />
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <stats-site-question :cards="cards" />
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <stats-site-prerequisite :cards="cards" />
-              </v-col>
-            </v-row>
+            <deck-site-prerequisites :cards="cards" />
+          </v-col>
+        </v-row>
+        <x-divider
+          text="Cost"
+          class="my-4"
+        />
+        <v-row>
+          <v-col
+            v-for="cost of costs"
+            :key="cost.title"
+            cols="12"
+            sm="4"
+          >
+            <deck-card-costs
+              :title="cost.title"
+              :value="cost.value"
+              :cards="cards"
+              :color="cost.color"
+            />
           </v-col>
         </v-row>
       </v-card-text>

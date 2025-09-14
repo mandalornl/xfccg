@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <stats-site
+  <deck-site
     :cards="cards"
     :keywords="[
       InvestigationSkillEnum.AlienInvestigation,
@@ -23,6 +23,6 @@ defineProps<{
       InvestigationSkillEnum.Sciences,
       InvestigationSkillEnum.Subterfuge,
     ]"
-    title="Site prerequisite"
+    title="Prerequisite"
   />
 </template>

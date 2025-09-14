@@ -15,4 +15,6 @@ export interface Deck {
   public: boolean;
 }
 
-export type CardInDeck = Card & { quantity: number };
+export interface CardInDeck extends Card {
+  quantity: number;
+}

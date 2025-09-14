@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <stats-site
+  <deck-site
     :cards="cards"
     :keywords="[
       XFileCharacteristicEnum.Affiliation,
@@ -16,6 +16,6 @@ defineProps<{
       XFileCharacteristicEnum.Method,
       XFileCharacteristicEnum.Result,
     ]"
-    title="Site question"
+    title="Question"
   />
 </template>
