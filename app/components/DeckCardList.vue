@@ -33,8 +33,13 @@ const groups = computed<{
       const total = cards.reduce((total, card) => total + card.quantity, 0);
 
       return {
-        cards,
         total,
+        cards: cards.sort(useSort([
+          {
+            key: 'id',
+            order: 'asc',
+          },
+        ])),
         title: type,
         color: getColorByType(type),
       };
