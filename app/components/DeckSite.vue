@@ -51,9 +51,11 @@ const color = getColorByType('Site');
   >
     <thead>
       <tr :class="`bg-${color}`">
-        <th>{{ title }}</th>
-        <th class="w-0 text-no-wrap text-right">
-          Total
+        <th
+          colspan="2"
+          class="text-no-wrap"
+        >
+          {{ title }}
         </th>
       </tr>
     </thead>
@@ -64,7 +66,7 @@ const color = getColorByType('Site');
       >
         <td>{{ item.title }}</td>
         <td class="w-0 text-no-wrap text-right">
-          {{ item.total }}
+          {{ item.total }}x
         </td>
       </tr>
     </tbody>
