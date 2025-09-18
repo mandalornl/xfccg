@@ -49,11 +49,11 @@ const total = computed<number>(() => (
   >
     <thead>
       <tr :class="`bg-${color}`">
-        <th class="text-no-wrap">
+        <th
+          colspan="2"
+          class="text-no-wrap"
+        >
           {{ title }}
-        </th>
-        <th class="w-0 text-no-wrap text-right">
-          Total
         </th>
       </tr>
     </thead>
@@ -66,7 +66,7 @@ const total = computed<number>(() => (
           {{ item.cost }}
         </td>
         <td class="w-0 text-no-wrap text-right">
-          {{ item.total }}
+          {{ item.total }}x
         </td>
       </tr>
     </tbody>
@@ -74,7 +74,7 @@ const total = computed<number>(() => (
       <tr class="font-weight-bold">
         <td>Total</td>
         <td class="w-0 text-no-wrap text-right">
-          {{ total }}
+          {{ total }}x
         </td>
       </tr>
     </tfoot>
