@@ -2,7 +2,7 @@
 import type { CardInDeck } from '~/types/deck';
 import type {
   Card,
-  CardType as CardTypeEnum,
+  CardType,
 } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
@@ -24,7 +24,7 @@ const groups = computed<{
       ];
 
       return result;
-    }, {} as Record<CardTypeEnum, CardInDeck[]>)
+    }, {} as Record<CardType, CardInDeck[]>)
   )
     .map(([
       type,

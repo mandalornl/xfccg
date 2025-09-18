@@ -3,16 +3,16 @@ import xFiles from '~/assets/checklist/x-files.json';
 
 import {
   type Card,
-  CardSet as CardSetEnum,
+  CardSet,
 } from '~/types/card';
-import { XFileCharacteristic as XFileCharacteristicEnum } from '~/types/x-file';
+import { XFileCharacteristic } from '~/types/x-file';
 
 useHead({
   title: 'Checklist',
 });
 
 const pool = await usePool([
-  CardSetEnum.Premiere,
+  CardSet.Premiere,
 ]);
 
 const checklist = computed<Card[][]>(() => (
@@ -117,10 +117,10 @@ const reset = () => {
         <tbody>
           <tr class="text-h6">
             <th>X-File ({{ totalUnidentified }} unidentified)</th>
-            <th>{{ XFileCharacteristicEnum.Affiliation }}</th>
-            <th>{{ XFileCharacteristicEnum.Motive }}</th>
-            <th>{{ XFileCharacteristicEnum.Method }}</th>
-            <th>{{ XFileCharacteristicEnum.Result }}</th>
+            <th>{{ XFileCharacteristic.Affiliation }}</th>
+            <th>{{ XFileCharacteristic.Motive }}</th>
+            <th>{{ XFileCharacteristic.Method }}</th>
+            <th>{{ XFileCharacteristic.Result }}</th>
           </tr>
         </tbody>
         <tbody>

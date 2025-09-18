@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CardInDeck } from '~/types/deck';
-import { CardType as CardTypeEnum } from '~/types/card';
+import { CardType } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
 const props = withDefaults(defineProps<{
@@ -17,14 +17,14 @@ const items = computed<{
   height: number,
 }[]>(() => {
   const items = [
-    CardTypeEnum.Adversary,
-    CardTypeEnum.Agent,
-    CardTypeEnum.Bluff,
-    CardTypeEnum.Combat,
-    CardTypeEnum.Equipment,
-    CardTypeEnum.Event,
-    CardTypeEnum.Site,
-    CardTypeEnum.Witness,
+    CardType.Adversary,
+    CardType.Agent,
+    CardType.Bluff,
+    CardType.Combat,
+    CardType.Equipment,
+    CardType.Event,
+    CardType.Site,
+    CardType.Witness,
   ]
     .map((type) => {
       const total = props.cards

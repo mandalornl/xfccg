@@ -7,12 +7,12 @@ import tags from '~/assets/filters/tags.json';
 
 import {
   type Card,
-  CardSet as CardSetEnum,
+  CardSet,
   CardType as CardTypeEnum,
-  CardRarity as CardRarityEnum,
+  CardRarity,
 } from '~/types/card';
 import type { SortBy } from '~/types/sort';
-import { FilterOperation as FilterOperationEnum } from '~/types/filter';
+import { FilterOperation } from '~/types/filter';
 
 const route = useRoute();
 const router = useRouter();
@@ -28,7 +28,7 @@ useHead({
 const filters = useFilters<Card>({
   set: {
     title: 'Set',
-    items: Object.values(CardSetEnum),
+    items: Object.values(CardSet),
   },
   type: {
     title: 'Type',
@@ -44,7 +44,7 @@ const filters = useFilters<Card>({
   },
   rarity: {
     title: 'Rarity',
-    items: Object.values(CardRarityEnum),
+    items: Object.values(CardRarity),
   },
   cost: {
     title: 'Cost',
@@ -122,7 +122,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
       filters.value.map((filter) => ([
         filter.key,
         filter.value.length > 0
-          ? filter.value.join(filter.operation === FilterOperationEnum.And ? '+' : ',')
+          ? filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
           : undefined,
       ]))
     ),

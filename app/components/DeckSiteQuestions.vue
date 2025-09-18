@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CardInDeck } from '~/types/deck';
-import { XFileCharacteristic as XFileCharacteristicEnum } from '~/types/x-file';
+import { XFileCharacteristic } from '~/types/x-file';
 
 defineProps<{
   cards: CardInDeck[];
@@ -11,10 +11,10 @@ defineProps<{
   <deck-site
     :cards="cards"
     :keywords="[
-      XFileCharacteristicEnum.Affiliation,
-      XFileCharacteristicEnum.Motive,
-      XFileCharacteristicEnum.Method,
-      XFileCharacteristicEnum.Result,
+      XFileCharacteristic.Affiliation,
+      XFileCharacteristic.Motive,
+      XFileCharacteristic.Method,
+      XFileCharacteristic.Result,
     ]"
     title="Question"
   />

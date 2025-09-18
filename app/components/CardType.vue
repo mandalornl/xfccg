@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { CardType as CardTypeEnum } from '~/types/card';
+import type { CardType } from '~/types/card';
 
 const props = defineProps<{
-  text: CardTypeEnum,
+  text: CardType,
 }>();
 
 const color = computed(() => getColorByType(props.text));

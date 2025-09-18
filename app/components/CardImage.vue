@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
   type Card,
-  CardSet as CardSetEnum,
+  CardSet,
 } from '~/types/card';
 
 const runtimeConfig = useRuntimeConfig();
@@ -19,8 +19,8 @@ const src = computed(() => {
   const root = `${runtimeConfig.app.baseURL}cards`;
 
   if (
-    props.card.set === CardSetEnum.Classified
-    || props.card.set === CardSetEnum.FightTheFuture
+    props.card.set === CardSet.Classified
+    || props.card.set === CardSet.FightTheFuture
   ) {
     return `${root}/back.jpg`;
   }

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
   type Card,
-  CardSet as CardSetEnum,
-  CardType as CardTypeEnum,
+  CardSet,
+  CardType,
 } from '~/types/card';
 
 const inDeckState = useInDeckState();
@@ -14,14 +14,14 @@ const props = defineProps<{
 const max = computed(() => {
   if (
     props.card.id === 'XF97-0437x1'
-    || props.card.type === CardTypeEnum.Agent
+    || props.card.type === CardType.Agent
   ) {
     return 1;
   }
 
   if (
-    props.card.set === CardSetEnum.Premiere
-    || props.card.set === CardSetEnum.TheTruthIsOutThere
+    props.card.set === CardSet.Premiere
+    || props.card.set === CardSet.TheTruthIsOutThere
   ) {
     const id = props.card.id.replace(/^XF9\d-(\d{4})v\d$/, '$1');
     const alternateId = props.card.id.endsWith('v1') ? `XF97-${id}v2` : `XF96-${id}v1`;

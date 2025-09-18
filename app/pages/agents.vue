@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import {
   type Card,
-  CardSet as CardSetEnum,
-  CardType as CardTypeEnum,
+  CardSet,
+  CardType,
 } from '~/types/card';
 import type { Agent } from '~/types/agent';
-import { FilterOperation as FilterOperationEnum } from '~/types/filter';
-import { InvestigationSkill as InvestigationSkillEnum } from '~/types/skill';
+import { FilterOperation } from '~/types/filter';
+import { InvestigationSkill } from '~/types/skill';
 
 const route = useRoute();
 const router = useRouter();
@@ -22,7 +22,7 @@ useHead({
 const filters = useFilters<Agent>({
   skills: {
     title: 'Skills',
-    items: Object.values(InvestigationSkillEnum),
+    items: Object.values(InvestigationSkill),
   },
   cost: {
     title: 'Cost',
@@ -30,9 +30,9 @@ const filters = useFilters<Agent>({
   },
   set: {
     title: 'Set',
-    items: Object.values(CardSetEnum).filter((value) => (
-      value !== CardSetEnum.TheTruthIsOutThere
-      && value !== CardSetEnum.GenCon
+    items: Object.values(CardSet).filter((value) => (
+      value !== CardSet.TheTruthIsOutThere
+      && value !== CardSet.GenCon
     )),
   },
   keywords: {
@@ -61,9 +61,9 @@ const itemsPerPageOptions = [
 const agents = computed<Agent[]>(() => (
   pool
     .filter((card) => (
-      card.type === CardTypeEnum.Agent
-      && card.set !== CardSetEnum.TheTruthIsOutThere
-      && card.set !== CardSetEnum.GenCon
+      card.type === CardType.Agent
+      && card.set !== CardSet.TheTruthIsOutThere
+      && card.set !== CardSet.GenCon
     ))
     .filter((cardA, index, self) => (
       self.findIndex((cardB) => cardB.title === cardA.title) === index
@@ -107,7 +107,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
       filters.value.map((filter) => ([
         filter.key,
         filter.value.length > 0
-          ? filter.value.join(filter.operation === FilterOperationEnum.And ? '+' : ',')
+          ? filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
           : undefined,
       ]))
     ),

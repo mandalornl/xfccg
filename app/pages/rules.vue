@@ -3,8 +3,8 @@ import { useDisplay } from 'vuetify';
 
 import {
   type Card,
-  CardSet as CardSetEnum,
-  CardType as CardTypeEnum,
+  CardSet,
+  CardType,
 } from '~/types/card';
 import { sample } from '~/utils/sample';
 
@@ -14,7 +14,7 @@ useHead({
 
 const display = useDisplay();
 const pool = await usePool([
-  CardSetEnum.Premiere,
+  CardSet.Premiere,
 ]);
 
 const drawCardByCostType = (costType: string): Card => (
@@ -25,19 +25,19 @@ const resourceCard = computed<Card>(() => drawCardByCostType('RP'));
 const conspiracyCard = computed<Card>(() => drawCardByCostType('CP'));
 const starCard = computed<Card>(() => drawCardByCostType('*P'));
 
-const drawCardByType = (cardType: CardTypeEnum): Card => (
+const drawCardByType = (cardType: CardType): Card => (
   sample<Card>(pool.filter((card) => card.type === cardType))!
 );
 
-const adversaryCard = computed<Card>(() => drawCardByType(CardTypeEnum.Adversary));
-const agentCard = computed<Card>(() => drawCardByType(CardTypeEnum.Agent));
-const bluffCard = computed<Card>(() => drawCardByType(CardTypeEnum.Bluff));
-const combatCard = computed<Card>(() => drawCardByType(CardTypeEnum.Combat));
-const equipmentCard = computed<Card>(() => drawCardByType(CardTypeEnum.Equipment));
-const eventCard = computed<Card>(() => drawCardByType(CardTypeEnum.Event));
-const siteCard = computed<Card>(() => drawCardByType(CardTypeEnum.Site));
-const witnessCard = computed<Card>(() => drawCardByType(CardTypeEnum.Witness));
-const xFileCard = computed<Card>(() => drawCardByType(CardTypeEnum.XFile));
+const adversaryCard = computed<Card>(() => drawCardByType(CardType.Adversary));
+const agentCard = computed<Card>(() => drawCardByType(CardType.Agent));
+const bluffCard = computed<Card>(() => drawCardByType(CardType.Bluff));
+const combatCard = computed<Card>(() => drawCardByType(CardType.Combat));
+const equipmentCard = computed<Card>(() => drawCardByType(CardType.Equipment));
+const eventCard = computed<Card>(() => drawCardByType(CardType.Event));
+const siteCard = computed<Card>(() => drawCardByType(CardType.Site));
+const witnessCard = computed<Card>(() => drawCardByType(CardType.Witness));
+const xFileCard = computed<Card>(() => drawCardByType(CardType.XFile));
 
 const typicalCard = computed<Card>(() => (sample(pool)!));
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CardInDeck } from '~/types/deck';
-import { InvestigationSkill as InvestigationSkillEnum } from '~/types/skill';
+import { InvestigationSkill } from '~/types/skill';
 
 defineProps<{
   cards: CardInDeck[];
@@ -11,17 +11,17 @@ defineProps<{
   <deck-site
     :cards="cards"
     :keywords="[
-      InvestigationSkillEnum.AlienInvestigation,
-      InvestigationSkillEnum.Behavioral,
-      InvestigationSkillEnum.Bureaucracy,
-      InvestigationSkillEnum.Computer,
-      InvestigationSkillEnum.CriminalInvestigation,
-      InvestigationSkillEnum.EvidenceCollection,
-      InvestigationSkillEnum.Medical,
-      InvestigationSkillEnum.Observation,
-      InvestigationSkillEnum.OccultInvestigation,
-      InvestigationSkillEnum.Sciences,
-      InvestigationSkillEnum.Subterfuge,
+      InvestigationSkill.AlienInvestigation,
+      InvestigationSkill.Behavioral,
+      InvestigationSkill.Bureaucracy,
+      InvestigationSkill.Computer,
+      InvestigationSkill.CriminalInvestigation,
+      InvestigationSkill.EvidenceCollection,
+      InvestigationSkill.Medical,
+      InvestigationSkill.Observation,
+      InvestigationSkill.OccultInvestigation,
+      InvestigationSkill.Sciences,
+      InvestigationSkill.Subterfuge,
     ]"
     title="Prerequisite"
   />
