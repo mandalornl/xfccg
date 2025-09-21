@@ -6,7 +6,7 @@ import type {
 export type InDeck = Record<CardId, number>;
 
 export interface Deck {
-  id: number;
+  id: string;
   name: string;
   card_ids: InDeck;
   created_at: string;
