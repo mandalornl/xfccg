@@ -91,7 +91,7 @@ const {
 
   return {
     rows,
-    count: count as number,
+    count: count ?? 0,
   };
 }, {
   deep: false,
