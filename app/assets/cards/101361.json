@@ -23,7 +23,7 @@
     ],
     "gameEffect": "This card may be played in its normal way or on any Team that includes at least one female Agent, ignoring Activator requirements.",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -51,7 +51,7 @@
     ],
     "gameEffect": "All Agents in a Team attacked by this Adversary must discard all attached Keyword ELECTRICAL Equipment immediately. The LONG RANGE COMBAT attack of this Adversary may be split between two opponents.",
     "tags": [
-      "Advanced",
+      "Basic",
       "Split Damage"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -82,7 +82,7 @@
     ],
     "gameEffect": "This Card is free if played on a Keyword INSANITY card and Activator requirements are ignored.",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -111,7 +111,7 @@
     ],
     "gameEffect": "This card may be played on a Site at which the \"Terri Roberts\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -140,7 +140,7 @@
     ],
     "gameEffect": "Puppet may wait until his opponents declare they have played all of the COMBAT cards that they intend to, then Puppet may play COMBAT cards. No other COMBAT cards may be played after Puppet's. This card is free and Activator requirements are ignored if it is played on a Keyword INSANITY card.",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -170,7 +170,7 @@
     ],
     "gameEffect": "This Adversary is able to use SUBTERFUGE and MARTIAL ARTS cads. If you opponent has correctly guessed two of your X-File's characteristics, the cost to play this card is 3 [CP].",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -198,7 +198,7 @@
       "Believer"
     ],
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -227,7 +227,7 @@
     ],
     "gameEffect": "This card may be played on a Site at which the \"Margi Kleinjan\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
     "tags": [
-      "Advanced"
+      "Basic"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -256,7 +256,7 @@
     ],
     "gameEffect": "List one Agent from the Investigating Team on a piece of paper. Place this card in your opponent's Field with the paper underneath. If the Agent listed Investigates a different Site before this card is negated, reveal the paper with the listed Agent. The Agent must go to the Hospital with zero HEALTH and may not contribute to skill checks this turn. Discard this card.",
     "tags": [
-      "Advanced",
+      "Basic",
       "Non-combative"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -286,7 +286,7 @@
     ],
     "gameEffect": "Subtract one from all damage sources applied to this Adversary.",
     "tags": [
-      "Advanced",
+      "Basic",
       "Reduce Damage"
     ],
     "createdBy": "NXT Games, USPCC"
@@ -316,7 +316,7 @@
     ],
     "gameEffect": "Subtract one from all damage sources applied to this Adversary. The Long Range Combat Round is skipped.",
     "tags": [
-      "Advanced",
+      "Basic",
       "Reduce Damage",
       "Skip Long Range"
     ],
