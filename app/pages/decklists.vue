@@ -67,10 +67,7 @@ watch(routeQuery, (query) => {
   });
 });
 
-const {
-  data,
-  status
-} = useAsyncData('decklists', async () => {
+const fetchDecks = async (): Promise<{ decks: deck[], count: number }> => {
   let query = supabase
     .from('decklists')
     .select('*', { count: 'exact' })
@@ -83,15 +80,58 @@ const {
   }
 
   const {
-    data: rows,
+    data:decks,
     count,
   } = await query
     .overrideTypes<Deck[], { merge: false }>()
     .throwOnError();
 
   return {
-    rows,
+    decks,
     count: count ?? 0,
+  };
+};
+
+const fetchDeck = async (id: string): Promise<null | Deck> => {
+  const { data } = await supabase
+    .from('decklists')
+    .select()
+    .eq('id', id)
+    .maybeSingle()
+    .overrideTypes<Deck, { merge: false }>();
+
+  return data;
+};
+
+const getDeckByRouteId = async (decks: Deck[]): Promise<null | Deck> => {
+  if (!route.query.id) {
+    return null;
+  }
+
+  const deck = decks.find((deck) => deck.id === route.query.id);
+
+  if (!deck) {
+    return fetchDeck(route.query.id);
+  }
+
+  return deck;
+};
+
+const {
+  data,
+  status
+} = useAsyncData('decklists', async () => {
+  const {
+    decks,
+    count,
+  } = await fetchDecks();
+
+  const deck = await getDeckByRouteId(decks);
+
+  return {
+    deck,
+    decks,
+    count,
   };
 }, {
   deep: false,
@@ -102,9 +142,18 @@ const {
     sortBys,
   ],
   default: () => ({
-    rows: [],
+    deck: null,
+    decks: [],
     count: 0,
   })
+});
+
+watchEffect(() => {
+  if (!data.value.deck) {
+    return;
+  }
+
+  selectedDeck.value = { ...data.value.deck };
 });
 
 const onClickRow = (event: Event, data: { item: Deck }) => {
@@ -120,7 +169,7 @@ const onClickRow = (event: Event, data: { item: Deck }) => {
       v-model:sort-by="sortBys"
       :loading="status === 'pending'"
       :headers="headers"
-      :items="data.rows"
+      :items="data.decks"
       :items-per-page-options="itemsPerPageOptions"
       :items-length="data.count"
       @click:row="onClickRow"
