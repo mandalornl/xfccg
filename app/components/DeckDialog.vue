@@ -76,7 +76,7 @@ const costs = [
         />
         <deck-card-list :cards="cards" />
         <x-divider
-          text="Team statistics"
+          text="Team"
           class="my-4"
         />
         <deck-team-stats :cards="cards" />
