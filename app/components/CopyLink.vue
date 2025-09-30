@@ -25,7 +25,7 @@ const copyToClipboard = async (event: Event) => {
   <div class="d-flex align-center ga-2">
     <slot />
     <a
-      v-tooltip:top="'Copy link to section'"
+      v-tooltip:top="'Copy link to clipboard'"
       :href="`#${value}`"
       @click.prevent="copyToClipboard"
     >
