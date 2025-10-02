@@ -408,7 +408,7 @@
       "FBI",
       "Law"
     ],
-    "gameEffect": "Place a token on Agent Conquitt. During a skill check, discard a token to add +1 to Agent Colquitt's BEHAVIORAL skill. You may discard a token once per turn.",
+    "gameEffect": "Place two tokens on Agent Colquitt. During a skill check, discard a token to add +1 to Agent Colquitt's BEHAVIORAL skill. You may discard a token once per turn.",
     "bio": "FBI Agent Colquitt is responsible for managing prisoner transport and security, ensuring smooth transitions during transfers. He is involved when Scully arranges for Mulder to be escorted into a prison while handcuffed as part of a covert operation to infiltrate the facility.",
     "skills": {
       "Behavioral": 1,
