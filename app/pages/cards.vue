@@ -199,6 +199,38 @@ watch(deckSize, (value) => {
 const onClickRow = (event: Event, data: { item: Card }) => {
   selectedCard.value = { ...data.item };
 };
+
+const selectedIndex = computed<number>(() => {
+  if (!selectedCard.value) {
+    return -1;
+  }
+
+  return cards.value.findIndex((card) => card.id === selectedCard.value?.id);
+});
+
+const onKeyup = (event: KeyboardEvent) => {
+  event.preventDefault();
+
+  if (selectedIndex.value === -1) {
+    return;
+  }
+
+  // if (event.key === 'ArrowLeft') {
+  //   selectedCard.value = { ...cards.value[selectedIndex.value + 1] };
+  // } else {
+  //   if (event.key === 'ArrowRight') {
+  //     selectedCard.value = { ...cards.value[selectedIndex.value - 1] };
+  //   }
+  // }
+};
+
+onMounted(() => {
+  window.addEventListener('keyup', onKeyup);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keyup', onKeyup);
+});
 </script>
 
 <template>
