@@ -111,7 +111,7 @@ const getDeckByRouteId = async (decks: Deck[]): Promise<null | Deck> => {
   const deck = decks.find((deck) => deck.id === route.query.id);
 
   if (!deck) {
-    return fetchDeck(route.query.id);
+    return fetchDeck(route.query.id as string);
   }
 
   return deck;
