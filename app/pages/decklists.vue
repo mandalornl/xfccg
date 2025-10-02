@@ -67,7 +67,7 @@ watch(routeQuery, (query) => {
   });
 });
 
-const fetchDecks = async (): Promise<{ decks: deck[], count: number }> => {
+const fetchDecks = async (): Promise<{ decks: Deck[], count: number }> => {
   let query = supabase
     .from('decklists')
     .select('*', { count: 'exact' })
