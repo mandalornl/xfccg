@@ -208,20 +208,37 @@ const selectedIndex = computed<number>(() => {
   return cards.value.findIndex((card) => card.id === selectedCard.value?.id);
 });
 
-const onKeyup = (event: KeyboardEvent) => {
-  event.preventDefault();
-
-  if (selectedIndex.value === -1) {
+watch(selectedIndex, (value) => {
+  if (value === -1) {
     return;
   }
 
-  // if (event.key === 'ArrowLeft') {
-  //   selectedCard.value = { ...cards.value[selectedIndex.value + 1] };
-  // } else {
-  //   if (event.key === 'ArrowRight') {
-  //     selectedCard.value = { ...cards.value[selectedIndex.value - 1] };
-  //   }
-  // }
+  page.value = Math.floor(value / perPage.value) + 1;
+});
+
+const onKeyup = (event: KeyboardEvent) => {
+  if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
+    return;
+  }
+
+  if (
+    selectedIndex.value === -1
+    || selectedIndex.value === cards.value.length - 1
+  ) {
+    return;
+  }
+
+  event.preventDefault();
+
+  const delta = event.key === 'ArrowLeft' ? -1 : 1;
+  const index = selectedIndex.value + delta;
+  const card = cards.value[index];
+
+  if (!card) {
+    return;
+  }
+
+  selectedCard.value = { ...card };
 };
 
 onMounted(() => {
