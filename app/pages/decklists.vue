@@ -7,7 +7,7 @@ const router = useRouter();
 const supabase = useSupabaseClient();
 
 const headers = [
-  { title: 'Name', key: 'name', nowrap: true },
+  { title: 'Title', key: 'title', nowrap: true },
   { title: 'Created By', key: 'created_by', nowrap: true },
   { title: 'Created At', key: 'created_at', nowrap: true },
   { title: '', key: 'likes', nowrap: true },

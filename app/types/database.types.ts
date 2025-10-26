@@ -19,7 +19,7 @@ export type Database = {
           card_ids: Json
           created_at: string
           id: string
-          name: string
+          title: string
           profile_id: string
           public: boolean
         }
@@ -27,7 +27,7 @@ export type Database = {
           card_ids?: Json
           created_at?: string
           id?: string
-          name: string
+          title: string
           profile_id?: string
           public?: boolean
         }
@@ -35,7 +35,7 @@ export type Database = {
           card_ids?: Json
           created_at?: string
           id?: string
-          name?: string
+          title?: string
           profile_id?: string
           public?: boolean
         }
@@ -116,7 +116,7 @@ export type Database = {
           created_by: string | null
           id: string | null
           likes: number | null
-          name: string | null
+          title: string | null
           public: boolean | null
         }
         Relationships: []

@@ -50,7 +50,7 @@ const costs = [
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
-          {{ deck?.name }}
+          {{ deck?.title }}
           <v-btn
             variant="text"
             icon="mdi-close"
