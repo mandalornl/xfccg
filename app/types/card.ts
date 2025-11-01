@@ -11,6 +11,7 @@ export enum CardSet {
   BirthdayMulder = '101361',
   BirthdayScully = '22364',
   BelieveTheLie = 'Believe the Lie',
+  ResistOrServe = 'Resist or Serve',
   Promo = 'Promo',
   GenCon = 'Gen Con',
   FightTheFuture = 'Fight the Future',
