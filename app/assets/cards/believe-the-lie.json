@@ -2280,8 +2280,7 @@
       "Method",
       "Result",
       "Behavioral",
-      "Criminal",
-      "Investigation"
+      "Criminal Investigation"
     ],
     "prerequisite": "BEHAVIORAL 5+ or CRIMINAL INVESTIGATION 5+",
     "question": "You may ask one METHOD question or one RESULT question.",
