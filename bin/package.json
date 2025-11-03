@@ -1,0 +1,14 @@
+{
+  "name": "bin",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "engines": {
+    "node": "22"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "devDependencies": {
+    "sharp": "~0.34.4",
+    "xlsx": "~0.18.5"
+  }
+}
