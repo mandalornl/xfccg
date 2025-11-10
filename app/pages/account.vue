@@ -14,7 +14,7 @@ definePageMeta({
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 
-const name = ref<string>(user.value?.user_metadata.full_name);
+const name = ref<string>(user.value?.user_metadata?.full_name);
 const email = ref<string>(user.value?.email || '');
 
 const updateUser = async (event: SubmitEventPromise) => {
