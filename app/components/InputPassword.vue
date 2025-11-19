@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { RuleString } from '~/types/rule';
+import type { ValidationRule } from 'vuetify/framework';
 
 const props = withDefaults(defineProps<{
   label?: string,
   disabled?: boolean,
-  rules?: RuleString[],
+  rules?: ValidationRule[],
   strictRules?: boolean,
   autocomplete?: string,
 }>(), {
@@ -19,14 +19,14 @@ const model = defineModel<string | null>({
 });
 const showPassword = ref<boolean>(false);
 
-const minimalRules: RuleString[] = [
-  (v) => v.length >= 12 || 'Minimal length 12 characters',
-  (v) => /[0-9]/.test(v) || 'Use a digit',
-  (v) => /[a-z]/.test(v) || 'Use a lowercase character',
-  (v) => /[A-Z]/.test(v) || 'Use an uppercase character',
+const minimalRules: ValidationRule[] = [
+  (v: string) => v.length >= 12 || 'Minimal length 12 characters',
+  (v: string) => /[0-9]/.test(v) || 'Use a digit',
+  (v: string) => /[a-z]/.test(v) || 'Use a lowercase character',
+  (v: string) => /[A-Z]/.test(v) || 'Use an uppercase character',
 ];
 
-const allRules = computed<RuleString[]>(() => ([
+const allRules = computed<ValidationRule[]>(() => ([
   ...props.rules,
   ...(props.strictRules ? minimalRules : []),
 ]));

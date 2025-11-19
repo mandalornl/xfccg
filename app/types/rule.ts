@@ -1,1 +1,0 @@
-export type RuleString = (value: string) => boolean | string;

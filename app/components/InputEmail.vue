@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { RuleString } from '~/types/rule';
+import type { ValidationRule } from 'vuetify/framework';
 
 withDefaults(defineProps<{
   label?: string,
   disabled?: boolean,
-  rules?: RuleString[],
+  rules?: ValidationRule[],
   autocomplete?: string,
 }>(), {
   label: undefined,
