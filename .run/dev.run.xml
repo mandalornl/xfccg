@@ -5,7 +5,7 @@
     <scripts>
       <script value="dev" />
     </scripts>
-    <arguments value="--host --dotenv .env.local" />
+    <arguments value="--host 0.0.0.0 --dotenv .env.local" />
     <node-interpreter value="project" />
     <envs />
     <method v="2" />
