@@ -13,7 +13,7 @@ const onClickScrollToTop = async () => {
   if (route.hash) {
     await navigateTo({
       ...route,
-      hash: undefined
+      hash: undefined,
     }, {
       replace: true,
     });

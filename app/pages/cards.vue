@@ -139,7 +139,7 @@ watch(routeQuery, (query) => {
   }
 
   return navigateTo(resolvedRoute, {
-    replace: true
+    replace: true,
   });
 });
 

@@ -38,7 +38,7 @@ const resetPasswordForEmail = async (event: SubmitEventPromise) => {
     snackbarState.success('The email to reset your password has been sent.');
 
     await navigateTo('/', {
-      replace: true
+      replace: true,
     });
   }
 

@@ -6,7 +6,9 @@ watchEffect(async () => {
     return;
   }
 
-  await navigateTo('/');
+  await navigateTo('/', {
+    replace: true,
+  });
 });
 </script>
 

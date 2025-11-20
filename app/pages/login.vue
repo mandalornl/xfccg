@@ -79,7 +79,7 @@ watch(user, (value) => {
   }
 
   return navigateTo('/account', {
-    replace: true
+    replace: true,
   });
 });
 </script>

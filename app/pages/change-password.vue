@@ -37,7 +37,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
     snackbarState.success('Your password has been updated.');
 
     await navigateTo('/account', {
-      replace: true
+      replace: true,
     });
   }
 
