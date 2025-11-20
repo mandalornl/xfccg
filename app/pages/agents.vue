@@ -208,9 +208,9 @@ watch(remainingCost, (value) => {
       <v-btn
         v-tooltip:top="'Clear Team'"
         :disabled="totalCost === 0"
+        :icon="totalCost > 0 ? 'mdi-delete' : 'mdi-delete-empty'"
         rounded
         variant="text"
-        icon="mdi-broom"
         @click="inTeamState = {}"
       />
     </card-toolbar>
