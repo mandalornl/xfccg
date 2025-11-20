@@ -57,12 +57,12 @@ onUnmounted(() => {
         </nuxt-link>
       </v-toolbar-title>
       <v-menu v-if="user">
-        <template #activator="{ props }">
+        <template #activator="{ props:menuProps }">
           <v-btn
             variant="text"
             color="primary"
             icon="mdi-alien"
-            v-bind="props"
+            v-bind="menuProps"
           />
         </template>
         <v-list>
