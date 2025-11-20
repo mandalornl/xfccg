@@ -274,56 +274,47 @@ onUnmounted(() => {
         v-model="filters"
         :items="cards"
       />
-      <!--<v-btn-group variant="tonal">
-        <v-btn
-          size="small"
-          icon="mdi-floppy"
-          title="Save deck"
-        />
-        <v-btn
-          size="small"
-          icon="mdi-chart-line"
-          title="Show stats"
-        />
-        <v-btn
-          size="small"
-          icon="mdi-cards"
-          title="Draw opening hand"
-        />
-        <v-btn
-          size="small"
-          icon="mdi-link-variant"
-          title="Copy deck URL to clipboard"
-        />
-        <v-btn
-          size="small"
-          icon="mdi-sync"
-          title="Reset deck"
-        />
-      </v-btn-group>-->
       <v-badge
         :model-value="deckSize > 0"
         :content="deckSize"
         color="primary"
       >
-        <v-btn
-          v-tooltip:top="inDeck ? 'Hide in deck' : 'Show in deck'"
-          :disabled="deckSize === 0"
-          :active="inDeck"
-          :icon="inDeck ? 'mdi-cards' : 'mdi-cards-outline'"
-          rounded
-          active-color="primary"
-          @click="inDeck = !inDeck"
-        />
+        <v-menu>
+          <template #activator="{ props:menuProps }">
+            <v-btn
+              v-tooltip:top="'Actions'"
+              :disabled="deckSize === 0"
+              rounded
+              icon="mdi-dots-vertical"
+              v-bind="menuProps"
+            />
+          </template>
+          <v-list>
+            <v-list-item
+              title="In Deck"
+              @click="inDeck = !inDeck"
+            >
+              <template #prepend>
+                <v-switch
+                  :model-value="inDeck"
+                  hide-details
+                  class="mr-2"
+                />
+              </template>
+            </v-list-item>
+            <v-divider />
+            <v-list-item title="Save" />
+            <v-list-item title="Statistics" />
+            <v-divider />
+            <v-list-item
+              :disabled="deckSize === 0"
+              title="Clear"
+              base-color="error"
+              @click="inDeckState = {}"
+            />
+          </v-list>
+        </v-menu>
       </v-badge>
-      <v-btn
-        v-tooltip:top="'Clear deck'"
-        :disabled="deckSize === 0"
-        rounded
-        variant="text"
-        icon="mdi-broom"
-        @click="inDeckState = {}"
-      />
     </card-toolbar>
     <v-data-iterator
       v-if="view === 'grid'"

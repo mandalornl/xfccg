@@ -7,6 +7,7 @@ const router = useRouter();
 const supabase = useSupabaseClient();
 
 const headers = [
+  { title: '', key: 'actions', nowrap: true, width: 0 },
   { title: 'Title', key: 'title', nowrap: true },
   { title: 'Created By', key: 'created_by', nowrap: true },
   { title: 'Created At', key: 'created_at', nowrap: true },
@@ -174,6 +175,29 @@ const onClickRow = (event: Event, data: { item: Deck }) => {
       :items-length="data.count"
       @click:row="onClickRow"
     >
+      <template #[`item.actions`]>
+        <v-menu>
+          <template #activator="{ props:menuProps }">
+            <v-btn
+              v-tooltip:top="'Actions'"
+              size="small"
+              variant="text"
+              icon="mdi-dots-vertical"
+              v-bind="menuProps"
+            />
+          </template>
+          <v-list>
+            <v-list-item title="Open" />
+            <v-list-item title="Opening Hand" />
+            <v-list-item title="Share" />
+            <v-divider />
+            <v-list-item
+              title="Delete"
+              base-color="error"
+            />
+          </v-list>
+        </v-menu>
+      </template>
       <template #[`item.created_at`]="{ value }">
         <date-time
           :date="value"
