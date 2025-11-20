@@ -196,7 +196,7 @@ watch(remainingCost, (value) => {
         color="primary"
       >
         <v-btn
-          v-tooltip:top="inTeam ? 'Hide in team' : 'Show in team'"
+          v-tooltip:top="inTeam ? 'Hide in team' : 'Show in Team'"
           :disabled="totalCost === 0"
           :active="inTeam"
           :icon="inTeam ? 'mdi-cards' : 'mdi-cards-outline'"
@@ -206,7 +206,7 @@ watch(remainingCost, (value) => {
         />
       </v-badge>
       <v-btn
-        v-tooltip:top="'Clear team'"
+        v-tooltip:top="'Clear Team'"
         :disabled="totalCost === 0"
         rounded
         variant="text"

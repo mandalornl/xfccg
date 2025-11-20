@@ -260,12 +260,12 @@ onUnmounted(() => {
         color="primary"
       >
         <v-btn
-          v-tooltip:top="'Grid view'"
+          v-tooltip:top="'Grid View'"
           value="grid"
           icon="mdi-view-grid"
         />
         <v-btn
-          v-tooltip:top="'List view'"
+          v-tooltip:top="'List View'"
           value="list"
           icon="mdi-view-list"
         />
