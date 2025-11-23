@@ -116,10 +116,19 @@ export type Database = {
           created_by: string | null
           id: string | null
           likes: number | null
+          profile_id: string | null
           public: boolean | null
           title: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "decks_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Functions: {
