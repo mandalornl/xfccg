@@ -9,6 +9,7 @@ import { getColorByCost } from '~/utils/color';
 
 const { smAndDown } = useDisplay();
 const pool = await usePool();
+const user = useSupabaseUser();
 
 const deck = defineModel<Deck>();
 
@@ -37,6 +38,10 @@ const costs = [
   { title: 'Conspiracy', value: 'CP', color: getColorByCost('conspiracy') },
   { title: 'Resource or Conspiracy', value: '*P', color: getColorByCost('star') },
 ];
+
+const onClickEditName = () => {
+  alert('TODO');
+};
 </script>
 
 <template>
@@ -50,12 +55,22 @@ const costs = [
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
-          {{ deck?.title }}
+          <div class="d-flex align-center">
+            {{ deck?.title }}
+            <v-btn
+              v-if="user?.sub === deck?.profile_id"
+              v-tooltip:top="'Edit name'"
+              variant="text"
+              icon="mdi-pencil"
+              size="small"
+              @click="onClickEditName"
+            />
+          </div>
           <v-btn
+            v-tooltip:top="'Close'"
             variant="text"
             icon="mdi-close"
             size="small"
-            title="Close"
             @click="deck = undefined"
           />
         </v-card-title>

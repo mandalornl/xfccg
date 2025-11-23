@@ -132,7 +132,7 @@ export type Database = {
       }
     }
     Functions: {
-      [_ in never]: never
+      delete_deck_by_id: { Args: { deck_id: string }; Returns: undefined }
     }
     Enums: {
       [_ in never]: never

@@ -5,9 +5,15 @@ import type { SortBy } from '~/types/sort';
 const route = useRoute();
 const router = useRouter();
 const supabase = useSupabaseClient();
+const user = useSupabaseUser();
+const snackbarState = useSnackbarState();
+const {
+  deckState,
+  deckSize,
+} = useDeckState();
 
 const headers = [
-  { title: '', key: 'actions', nowrap: true, width: 0 },
+  { title: '', key: 'actions', nowrap: true, width: 0, sortable: false },
   { title: 'Title', key: 'title', nowrap: true },
   { title: 'Created By', key: 'created_by', nowrap: true },
   { title: 'Created At', key: 'created_at', nowrap: true },
@@ -64,7 +70,7 @@ watch(routeQuery, (query) => {
   }
 
   return navigateTo(resolvedRoute, {
-    replace: true
+    replace: true,
   });
 });
 
@@ -120,7 +126,8 @@ const getDeckByRouteId = async (decks: Deck[]): Promise<null | Deck> => {
 
 const {
   data,
-  status
+  status,
+  refresh,
 } = useAsyncData('decklists', async () => {
   const {
     decks,
@@ -160,6 +167,55 @@ watchEffect(() => {
 const onClickRow = (event: Event, data: { item: Deck }) => {
   selectedDeck.value = { ...data.item };
 };
+
+const onClickOpenInCards = (deck: Deck) => {
+  if (
+    deckSize.value > 0
+    && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
+  ) {
+    return;
+  }
+
+  deckState.value = { ...deck };
+
+  return navigateTo('/cards');
+};
+
+const onClickOpeningHand = () => {
+  alert('TODO');
+};
+
+const onClickShareLink = async (event: Event) => {
+  try {
+    const target = event.currentTarget as HTMLAnchorElement;
+
+    await navigator.clipboard.writeText(target.href);
+
+    snackbarState.success('Copied to clipboard.');
+  } catch {
+    snackbarState.error('Failed to copy to clipboard.');
+  }
+};
+
+const onClickDelete = async (deck: Deck) => {
+  if (!confirm('Are you sure you want to delete this deck?\nThis action cannot be undone.')) {
+    return;
+  }
+
+  const { error } = await supabase.rpc('delete_deck_by_id', {
+    deck_id: deck.id,
+  });
+
+  if (error) {
+    useDebug(error);
+
+    snackbarState.error('An error occurred deleting the deck.');
+  } else {
+    snackbarState.success('The deck has been deleted.');
+
+    await refresh();
+  }
+};
 </script>
 
 <template>
@@ -175,7 +231,7 @@ const onClickRow = (event: Event, data: { item: Deck }) => {
       :items-length="data.count"
       @click:row="onClickRow"
     >
-      <template #[`item.actions`]>
+      <template #[`item.actions`]="{ item }">
         <v-menu>
           <template #activator="{ props:menuProps }">
             <v-btn
@@ -187,14 +243,28 @@ const onClickRow = (event: Event, data: { item: Deck }) => {
             />
           </template>
           <v-list>
-            <v-list-item title="Open" />
-            <v-list-item title="Opening Hand" />
-            <v-list-item title="Share" />
-            <v-divider />
             <v-list-item
-              title="Delete"
-              base-color="error"
+              title="Open in Cards"
+              @click="onClickOpenInCards(item)"
             />
+            <v-list-item
+              title="Opening Hand"
+              @click="onClickOpeningHand"
+            />
+            <v-list-item
+              :href="`/decklists?id=${item.id}`"
+              target="_blank"
+              title="Share Link"
+              @click.prevent="onClickShareLink"
+            />
+            <template v-if="user?.sub === item.profile_id">
+              <v-divider />
+              <v-list-item
+                title="Delete"
+                base-color="error"
+                @click="onClickDelete(item)"
+              />
+            </template>
           </v-list>
         </v-menu>
       </template>
