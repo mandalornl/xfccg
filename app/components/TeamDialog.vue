@@ -12,12 +12,12 @@ import type {
 import { getIconBySkill } from '~/utils/icon';
 import { getColorBySkillTotal } from '~/utils/color';
 
-const inTeamState = useInTeamState();
 const { xs } = useDisplay();
+const { teamState } = useTeamState();
 
 const dialog = ref<boolean>(false);
 
-const team = computed<Agent[]>(() => Object.values(inTeamState.value).filter((agent) => agent !== null));
+const team = computed<Agent[]>(() => Object.values(teamState.value).filter((agent) => agent !== null));
 
 const stats = computed<AgentStat[]>(() => ([
   ...Object.values(InvestigationSkill),

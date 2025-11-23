@@ -10,7 +10,11 @@ import { InvestigationSkill } from '~/types/skill';
 
 const route = useRoute();
 const router = useRouter();
-const inTeamState = useInTeamState();
+const {
+  teamState,
+  totalCost,
+  clearTeam,
+} = useTeamState();
 const pool = await usePool();
 
 useScrollPosition();
@@ -153,22 +157,12 @@ const cards = computed<Agent[]>(() => (
       }
     }
 
-    if (inTeam.value && !inTeamState.value[card.id]) {
+    if (inTeam.value && !teamState.value[card.id]) {
       return false;
     }
 
     return useHasFilters<Agent>(filters, card);
   })
-));
-
-const totalCost = computed<number>(() => (
-  Object.entries(inTeamState.value).reduce((total, [ , card ]) => {
-    if (!card) {
-      return total;
-    }
-
-    return total + card.costInt;
-  }, 0)
 ));
 
 const remainingCost = computed(() => 20 - totalCost.value);
@@ -195,24 +189,39 @@ watch(remainingCost, (value) => {
         :content="totalCost"
         color="primary"
       >
-        <v-btn
-          v-tooltip:top="inTeam ? 'Hide in team' : 'Show in Team'"
-          :disabled="totalCost === 0"
-          :active="inTeam"
-          :icon="inTeam ? 'mdi-cards' : 'mdi-cards-outline'"
-          rounded
-          active-color="primary"
-          @click="inTeam = !inTeam"
-        />
+        <v-menu>
+          <template #activator="{ props:menuProps }">
+            <v-btn
+              v-tooltip:top="'Actions'"
+              :disabled="totalCost === 0"
+              rounded
+              icon="mdi-dots-vertical"
+              v-bind="menuProps"
+            />
+          </template>
+          <v-list>
+            <v-list-item
+              title="In Team"
+              @click="inTeam = !inTeam"
+            >
+              <template #prepend>
+                <v-switch
+                  :model-value="inTeam"
+                  hide-details
+                  class="mr-2"
+                />
+              </template>
+            </v-list-item>
+            <v-divider />
+            <v-list-item
+              :disabled="totalCost === 0"
+              title="Clear Team"
+              base-color="error"
+              @click="clearTeam"
+            />
+          </v-list>
+        </v-menu>
       </v-badge>
-      <v-btn
-        v-tooltip:top="'Clear Team'"
-        :disabled="totalCost === 0"
-        :icon="totalCost > 0 ? 'mdi-delete' : 'mdi-delete-empty'"
-        rounded
-        variant="text"
-        @click="inTeamState = {}"
-      />
     </card-toolbar>
     <v-data-iterator
       v-model:page="page"
@@ -231,7 +240,7 @@ watch(remainingCost, (value) => {
             lg="2"
           >
             <v-card
-              :disabled="item.raw.costInt > remainingCost && !inTeamState[item.raw.id]"
+              :disabled="item.raw.costInt > remainingCost && !teamState[item.raw.id]"
               variant="flat"
               @click="selectedCard = { ...item.raw }"
             >
@@ -250,10 +259,10 @@ watch(remainingCost, (value) => {
                 <v-spacer />
                 # In team
                 <v-number-input
-                  :model-value="inTeamState[item.raw.id] ? 1 : 0"
+                  :model-value="teamState[item.raw.id] ? 1 : 0"
                   :min="0"
                   :max="1"
-                  :bg-color="inTeamState[item.raw.id] ? 'primary' : undefined"
+                  :bg-color="teamState[item.raw.id] ? 'primary' : undefined"
                   flat
                   hide-details
                   max-width="80"
@@ -261,7 +270,7 @@ watch(remainingCost, (value) => {
                   density="compact"
                   control-variant="stacked"
                   @click.stop
-                  @update:model-value="inTeamState[item.raw.id] = $event > 0 ? item.raw : null"
+                  @update:model-value="teamState[item.raw.id] = $event > 0 ? item.raw : null"
                 />
               </v-card-actions>
             </v-card>
