@@ -18,7 +18,6 @@ export type Database = {
         Row: {
           card_ids: Json
           created_at: string
-          description: string | null
           id: string
           profile_id: string
           public: boolean
@@ -27,7 +26,6 @@ export type Database = {
         Insert: {
           card_ids?: Json
           created_at?: string
-          description?: string | null
           id?: string
           profile_id?: string
           public?: boolean
@@ -36,7 +34,6 @@ export type Database = {
         Update: {
           card_ids?: Json
           created_at?: string
-          description?: string | null
           id?: string
           profile_id?: string
           public?: boolean
@@ -117,7 +114,6 @@ export type Database = {
           card_ids: Json | null
           created_at: string | null
           created_by: string | null
-          description: string | null
           id: string | null
           likes: number | null
           public: boolean | null

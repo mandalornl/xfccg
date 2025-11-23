@@ -3,13 +3,10 @@ import type {
   CardId,
 } from '~/types/card';
 
-export type InDeck = Record<CardId, number>;
-
 export interface Deck {
   id: string;
   title: string;
-  description: string | null;
-  card_ids: InDeck;
+  card_ids: Record<CardId, number>;
   created_at: string;
   created_by: string;
   likes: number;
