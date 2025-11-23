@@ -7,6 +7,18 @@
     "node": "22"
   },
   "packageManager": "pnpm@10.15.1",
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": [
+        "linux",
+        "darwin"
+      ],
+      "cpu": [
+        "x64",
+        "arm64"
+      ]
+    }
+  },
   "devDependencies": {
     "sharp": "~0.34.4",
     "xlsx": "~0.18.5"
