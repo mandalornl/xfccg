@@ -16,7 +16,12 @@ import { FilterOperation } from '~/types/filter';
 
 const route = useRoute();
 const router = useRouter();
-const inDeckState = useInDeckState();
+const user = useSupabaseUser();
+const {
+  deckState,
+  deckSize,
+  clearDeck,
+} = useDeckState();
 const pool = await usePool();
 
 useScrollPosition();
@@ -168,7 +173,7 @@ const cards = computed<Card[]>(() => {
       }
     }
 
-    if (inDeck.value && !inDeckState.value[card.id]) {
+    if (inDeck.value && !deckState.value.card_ids[card.id]) {
       return false;
     }
 
@@ -183,10 +188,6 @@ const cards = computed<Card[]>(() => {
 
   return hits;
 });
-
-const deckSize = computed<number>(() => (
-  Object.values(inDeckState.value).reduce((total, quantity) => total + quantity, 0)
-));
 
 watch(deckSize, (value) => {
   if (value > 0) {
@@ -308,9 +309,9 @@ onUnmounted(() => {
             <v-divider />
             <v-list-item
               :disabled="deckSize === 0"
-              title="Clear"
+              title="Clear Deck"
               base-color="error"
-              @click="inDeckState = {}"
+              @click="clearDeck"
             />
           </v-list>
         </v-menu>

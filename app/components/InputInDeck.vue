@@ -5,7 +5,7 @@ import {
   CardType,
 } from '~/types/card';
 
-const inDeckState = useInDeckState();
+const { deckState } = useDeckState();
 
 const props = defineProps<{
   card: Card,
@@ -25,7 +25,7 @@ const max = computed(() => {
   ) {
     const id = props.card.id.replace(/^XF9\d-(\d{4})v\d$/, '$1');
     const alternateId = props.card.id.endsWith('v1') ? `XF97-${id}v2` : `XF96-${id}v1`;
-    const quantity = inDeckState.value[alternateId] ?? 0;
+    const quantity = deckState.value.card_ids[alternateId] ?? 0;
 
     if (quantity > 0) {
       return Math.max(0 , 2 - quantity);
@@ -39,10 +39,10 @@ const max = computed(() => {
 <template>
   <v-number-input
     :disabled="max === 0"
-    :model-value="inDeckState[card.id] ?? 0"
+    :model-value="deckState.card_ids[card.id] ?? 0"
     :min="0"
     :max="max"
-    :bg-color="inDeckState[card.id] ? 'primary' : undefined"
+    :bg-color="deckState.card_ids[card.id] ? 'primary' : undefined"
     flat
     hide-details
     width="80"
@@ -51,6 +51,6 @@ const max = computed(() => {
     density="compact"
     control-variant="stacked"
     @click.stop
-    @update:model-value="inDeckState[card.id] = $event"
+    @update:model-value="deckState.card_ids[card.id] = $event"
   />
 </template>
