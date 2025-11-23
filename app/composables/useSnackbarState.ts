@@ -4,7 +4,7 @@ import {
 } from '~/types/snackbar';
 
 export const useSnackbarState = () => {
-  const state = useState('snackbar', (): SnackbarState => ({
+  const snackbarState = useState('snackbar', (): SnackbarState => ({
     visible: false,
     text: '',
     color: SnackbarColor.Info,
@@ -12,7 +12,7 @@ export const useSnackbarState = () => {
   }));
 
   const setter = (color: SnackbarColor) => (text: string, timeoutMillis: number = 10000) => {
-    state.value = {
+    snackbarState.value = {
       color,
       text,
       timeout: Math.random() + timeoutMillis,
@@ -21,12 +21,12 @@ export const useSnackbarState = () => {
   };
 
   const reset = () => {
-    state.value.visible = false;
-    state.value.timeout = -1;
+    snackbarState.value.visible = false;
+    snackbarState.value.timeout = -1;
   };
 
   return {
-    state,
+    snackbarState,
     reset,
     success: setter(SnackbarColor.Success),
     info: setter(SnackbarColor.Info),
