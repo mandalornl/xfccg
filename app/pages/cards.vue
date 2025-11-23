@@ -304,8 +304,11 @@ onUnmounted(() => {
               </template>
             </v-list-item>
             <v-divider />
-            <v-list-item title="Save" />
-            <v-list-item title="Statistics" />
+            <v-list-item
+              v-if="user"
+              title="Save Deck"
+            />
+            <v-list-item title="Show Statistics" />
             <v-divider />
             <v-list-item
               :disabled="deckSize === 0"
