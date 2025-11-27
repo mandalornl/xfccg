@@ -203,7 +203,7 @@ const onClickDelete = async (deck: Deck) => {
   }
 
   const { error } = await supabase.rpc('delete_deck_by_id', {
-    deck_id: deck.id,
+    deck_id: deck.id!,
   });
 
   if (error) {

@@ -1,14 +1,14 @@
 import type { Deck } from '~/types/deck';
 
 const defaultValue = (): Deck => ({
-  id: crypto.randomUUID(),
-  title: '__new__',
+  id: null,
+  title: null,
   card_ids: {},
-  created_at: new Date().toUTCString(),
-  created_by: '__anonymous__',
+  created_at: null,
+  created_by: null,
   likes: 0,
   public: false,
-  profile_id: crypto.randomUUID(),
+  profile_id: null,
 });
 
 export const useDeckState = () => {
