@@ -59,6 +59,7 @@ onUnmounted(() => {
       <v-menu v-if="user">
         <template #activator="{ props:menuProps }">
           <v-btn
+            v-tooltip:top="`Greetings! ${user?.user_metadata?.full_name}`"
             variant="text"
             color="primary"
             icon="mdi-alien"
