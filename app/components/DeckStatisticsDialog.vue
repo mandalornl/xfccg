@@ -9,16 +9,23 @@ import { getColorByCost } from '~/utils/color';
 
 const { smAndDown } = useDisplay();
 const pool = await usePool();
-const user = useSupabaseUser();
 
-const deck = defineModel<Deck>();
+const props = withDefaults(defineProps<{
+  deck?: Deck;
+}>(), {
+  deck: undefined,
+});
+
+const dialog = defineModel<boolean>({
+  default: false,
+});
 
 const cards = computed<CardInDeck[]>(() => {
-  if (!deck.value) {
+  if (!props.deck) {
     return [];
   }
 
-  return Object.entries(deck.value.card_ids).map(([
+  return Object.entries(props.deck.card_ids).map(([
     id,
     quantity,
   ]) => {
@@ -38,43 +45,33 @@ const costs = [
   { title: 'Conspiracy', value: 'CP', color: getColorByCost('conspiracy') },
   { title: 'Resource or Conspiracy', value: '*P', color: getColorByCost('star') },
 ];
-
-const onClickEditName = () => {
-  alert('TODO');
-};
 </script>
 
 <template>
   <v-dialog
-    :model-value="!!deck"
+    v-model="dialog"
     :fullscreen="smAndDown"
     scrollable
     width="960"
-    @update:model-value="(value) => !value && (deck = undefined)"
   >
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
           <div class="d-flex align-center">
-            {{ deck?.title }}
-            <v-btn
-              v-if="user?.sub === deck?.profile_id"
-              v-tooltip:top="'Edit name'"
-              variant="text"
-              icon="mdi-pencil"
-              size="small"
-              @click="onClickEditName"
-            />
+            {{ deck?.title || 'Untitled' }}
           </div>
           <v-btn
             v-tooltip:top="'Close'"
             variant="text"
             icon="mdi-close"
             size="small"
-            @click="deck = undefined"
+            @click="dialog = false"
           />
         </v-card-title>
-        <v-card-subtitle class="d-flex align-center justify-space-between">
+        <v-card-subtitle
+          v-if="deck?.created_by"
+          class="d-flex align-center justify-space-between"
+        >
           <span>by <span class="text-primary">{{ deck?.created_by }}</span></span>
           <date-time
             v-if="deck?.created_at"

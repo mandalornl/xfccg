@@ -11,7 +11,7 @@ export interface Deck {
   created_by: null | string;
   likes: number;
   public: boolean;
-  profile_id: null | string;
+  user_id: null | string;
 }
 
 export interface CardInDeck extends Card {

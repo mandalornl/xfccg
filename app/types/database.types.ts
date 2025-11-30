@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "12.2.3 (519615d)"
+    PostgrestVersion: "13.0.5"
   }
   public: {
     Tables: {
@@ -19,32 +19,32 @@ export type Database = {
           card_ids: Json
           created_at: string
           id: string
-          profile_id: string
           public: boolean
           title: string
+          user_id: string
         }
         Insert: {
           card_ids?: Json
           created_at?: string
           id?: string
-          profile_id?: string
           public?: boolean
           title: string
+          user_id?: string
         }
         Update: {
           card_ids?: Json
           created_at?: string
           id?: string
-          profile_id?: string
           public?: boolean
           title?: string
+          user_id?: string
         }
         Relationships: [
           {
-            foreignKeyName: "decks_profile_id_fkey"
-            columns: ["profile_id"]
+            foreignKeyName: "decks_user_id_fkey"
+            columns: ["user_id"]
             isOneToOne: false
-            referencedRelation: "profiles"
+            referencedRelation: "users"
             referencedColumns: ["id"]
           },
         ]
@@ -53,17 +53,20 @@ export type Database = {
         Row: {
           created_at: string
           deck_id: string
-          profile_id: string
+          id: string
+          user_id: string
         }
         Insert: {
           created_at?: string
           deck_id?: string
-          profile_id?: string
+          id?: string
+          user_id?: string
         }
         Update: {
           created_at?: string
           deck_id?: string
-          profile_id?: string
+          id?: string
+          user_id?: string
         }
         Relationships: [
           {
@@ -81,28 +84,28 @@ export type Database = {
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "likes_profile_id_fkey"
-            columns: ["profile_id"]
+            foreignKeyName: "likes_user_id_fkey"
+            columns: ["user_id"]
             isOneToOne: false
-            referencedRelation: "profiles"
+            referencedRelation: "users"
             referencedColumns: ["id"]
           },
         ]
       }
-      profiles: {
+      users: {
         Row: {
           created_at: string
-          full_name: string
+          full_name: string | null
           id: string
         }
         Insert: {
           created_at?: string
-          full_name: string
+          full_name?: string | null
           id?: string
         }
         Update: {
           created_at?: string
-          full_name?: string
+          full_name?: string | null
           id?: string
         }
         Relationships: []
@@ -116,23 +119,32 @@ export type Database = {
           created_by: string | null
           id: string | null
           likes: number | null
-          profile_id: string | null
           public: boolean | null
           title: string | null
+          user_id: string | null
         }
         Relationships: [
           {
-            foreignKeyName: "decks_profile_id_fkey"
-            columns: ["profile_id"]
+            foreignKeyName: "decks_user_id_fkey"
+            columns: ["user_id"]
             isOneToOne: false
-            referencedRelation: "profiles"
+            referencedRelation: "users"
             referencedColumns: ["id"]
           },
         ]
       }
     }
     Functions: {
-      delete_deck_by_id: { Args: { deck_id: string }; Returns: undefined }
+      delete_deck_by_id: { Args: { p_id: string }; Returns: undefined }
+      upsert_deck: {
+        Args: {
+          p_card_ids: Json
+          p_id: string
+          p_public: boolean
+          p_title: string
+        }
+        Returns: string
+      }
     }
     Enums: {
       [_ in never]: never

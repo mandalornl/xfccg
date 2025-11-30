@@ -42,6 +42,7 @@ const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
 const selectedDeck = ref<Deck | undefined>();
+const showSaveDeckDialog = ref<boolean>(false);
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedDeck.value) {
@@ -162,11 +163,23 @@ watchEffect(() => {
   }
 
   selectedDeck.value = { ...data.value.deck };
+
+  showSaveDeckDialog.value = true;
 });
 
 const onClickRow = (event: Event, data: { item: Deck }) => {
   selectedDeck.value = { ...data.item };
+
+  showSaveDeckDialog.value = true;
 };
+
+watch(showSaveDeckDialog, (value) => {
+  if (value) {
+    return;
+  }
+
+  selectedDeck.value = undefined;
+});
 
 const onClickOpenInCards = (deck: Deck) => {
   if (
@@ -203,7 +216,7 @@ const onClickDelete = async (deck: Deck) => {
   }
 
   const { error } = await supabase.rpc('delete_deck_by_id', {
-    deck_id: deck.id!,
+    p_id: deck.id!,
   });
 
   if (error) {
@@ -211,7 +224,7 @@ const onClickDelete = async (deck: Deck) => {
 
     snackbarState.error('An error occurred deleting the deck.');
   } else {
-    snackbarState.success('The deck has been deleted.');
+    snackbarState.success('Your deck has been deleted.');
 
     await refresh();
   }
@@ -252,12 +265,13 @@ const onClickDelete = async (deck: Deck) => {
               @click="onClickOpeningHand"
             />
             <v-list-item
+              :disabled="!item.public"
               :href="`/decklists?id=${item.id}`"
               target="_blank"
               title="Share Link"
               @click.prevent="onClickShareLink"
             />
-            <template v-if="user?.sub === item.profile_id">
+            <template v-if="user?.sub === item.user_id">
               <v-divider />
               <v-list-item
                 title="Delete"
@@ -289,6 +303,9 @@ const onClickDelete = async (deck: Deck) => {
         </v-badge>
       </template>
     </v-data-table-server>
-    <deck-dialog v-model="selectedDeck" />
+    <deck-statistics-dialog
+      v-model="showSaveDeckDialog"
+      :deck="selectedDeck"
+    />
   </layout-content>
 </template>

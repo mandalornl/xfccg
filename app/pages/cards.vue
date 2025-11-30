@@ -107,6 +107,8 @@ const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
 const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
+const showStatisticsDialog = ref<boolean>(false);
+const showSaveDeckDialog = ref<boolean>(false);
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedCard.value) {
@@ -307,8 +309,12 @@ onUnmounted(() => {
             <v-list-item
               v-if="user"
               title="Save Deck"
+              @click="showSaveDeckDialog = true"
             />
-            <v-list-item title="Show Statistics" />
+            <v-list-item
+              title="Show Statistics"
+              @click="showStatisticsDialog = true"
+            />
             <v-divider />
             <v-list-item
               :disabled="deckSize === 0"
@@ -392,5 +398,10 @@ onUnmounted(() => {
       </template>
     </v-data-table>
     <card-dialog v-model="selectedCard" />
+    <deck-statistics-dialog
+      v-model="showStatisticsDialog"
+      :deck="deckState"
+    />
+    <save-deck-dialog v-model="showSaveDeckDialog" />
   </layout-content>
 </template>
