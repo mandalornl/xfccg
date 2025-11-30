@@ -61,22 +61,23 @@ const selectedCard = ref<Card>();
 
 <template>
   <div class="column-2">
-    <div
-      v-for="item of groups"
-      :key="item.title"
-    >
-      <v-table
-        striped="odd"
-        density="compact"
+    <template v-if="groups.length > 0">
+      <div
+        v-for="item of groups"
+        :key="item.title"
       >
-        <thead>
+        <v-table
+          striped="odd"
+          density="compact"
+        >
+          <thead>
           <tr :class="`bg-${item.color}`">
             <th colspan="2">
               {{ item.title }} ({{ item.total }})
             </th>
           </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
           <tr
             v-for="card of item.cards"
             :key="card.id"
@@ -90,9 +91,13 @@ const selectedCard = ref<Card>();
               {{ card.title }}
             </td>
           </tr>
-        </tbody>
-      </v-table>
-    </div>
+          </tbody>
+        </v-table>
+      </div>
+    </template>
+    <template v-else>
+      No cards selected
+    </template>
   </div>
   <card-dialog v-model="selectedCard" />
 </template>

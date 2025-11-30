@@ -53,18 +53,23 @@ const items = computed<{
 
 <template>
   <div class="d-flex align-end ga-2">
-    <v-card
-      v-for="item of items"
-      :key="item.title"
-      v-tooltip:top="`${item.title} (${item.total})`"
-      :color="item.color"
-      :height="item.height"
-      width="12.5%"
-      class="flex-fill"
-    >
-      <v-card-subtitle class="d-flex justify-center">
-        {{ item.total }}
-      </v-card-subtitle>
-    </v-card>
+    <template v-if="items.length > 0">
+      <v-card
+        v-for="item of items"
+        :key="item.title"
+        v-tooltip:top="`${item.title} (${item.total})`"
+        :color="item.color"
+        :height="item.height"
+        width="12.5%"
+        class="flex-fill"
+      >
+        <v-card-subtitle class="d-flex justify-center">
+          {{ item.total }}
+        </v-card-subtitle>
+      </v-card>
+    </template>
+    <template v-else>
+      No cards selected
+    </template>
   </div>
 </template>

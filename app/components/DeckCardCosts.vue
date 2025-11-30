@@ -58,15 +58,22 @@ const total = computed<number>(() => (
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="item of items"
-        :key="item.cost + item.total"
-      >
-        <td class="text-no-wrap">
-          {{ item.cost }}
-        </td>
-        <td class="w-0 text-no-wrap text-right">
-          {{ item.total }}x
+      <template v-if="items.length > 0">
+        <tr
+          v-for="item of items"
+          :key="item.cost + item.total"
+        >
+          <td class="text-no-wrap">
+            {{ item.cost }}
+          </td>
+          <td class="w-0 text-no-wrap text-right">
+            {{ item.total }}x
+          </td>
+        </tr>
+      </template>
+      <tr v-else>
+        <td colspan="2">
+          No cards selected
         </td>
       </tr>
     </tbody>

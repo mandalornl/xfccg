@@ -60,13 +60,20 @@ const color = getColorByType('Site');
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="item of items"
-        :key="item.title"
-      >
-        <td>{{ item.title }}</td>
-        <td class="w-0 text-no-wrap text-right">
-          {{ item.total }}x
+      <template v-if="items.length > 0">
+        <tr
+          v-for="item of items"
+          :key="item.title"
+        >
+          <td>{{ item.title }}</td>
+          <td class="w-0 text-no-wrap text-right">
+            {{ item.total }}x
+          </td>
+        </tr>
+      </template>
+      <tr v-else>
+        <td colspan="2">
+          No cards selected
         </td>
       </tr>
     </tbody>
