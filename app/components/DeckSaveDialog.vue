@@ -16,6 +16,8 @@ const isSubmitting = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
 
 const saveDeck = async (event: SubmitEventPromise) => {
+  snackbarState.reset();
+
   const { valid } = await event;
 
   if (!valid) {
@@ -26,8 +28,8 @@ const saveDeck = async (event: SubmitEventPromise) => {
     data:id,
     error,
   } = await supabase.rpc('upsert_deck', {
-    p_id: user.value?.sub === deckState.value.user_id ? deckState.value.id : null,
-    p_title: deckState.value.title,
+    p_id: (user.value?.sub === deckState.value.user_id ? deckState.value.id : null)!,
+    p_title: deckState.value.title!,
     p_card_ids: deckState.value.card_ids,
     p_public: deckState.value.public,
   });
@@ -35,7 +37,7 @@ const saveDeck = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred saving the deck.');
+    snackbarState.error('An error occurred saving your deck.');
   } else {
     deckState.value.id = id;
 

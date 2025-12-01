@@ -410,6 +410,6 @@ const clearSelection = () => {
       v-model="showStatisticsDialog"
       :deck="deckState"
     />
-    <save-deck-dialog v-model="showSaveDeckDialog" />
+    <deck-save-dialog v-model="showSaveDeckDialog" />
   </layout-content>
 </template>
