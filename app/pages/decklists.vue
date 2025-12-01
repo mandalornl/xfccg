@@ -288,19 +288,8 @@ const onClickDelete = async (deck: Deck) => {
           format="fullDate"
         />
       </template>
-      <template #[`item.likes`]="{ value }">
-        <v-badge
-          :model-value="value > 0"
-          :content="value"
-          inline
-          color="grey-darken-4"
-        >
-          <v-icon
-            :disabled="value === 0"
-            icon="mdi-heart"
-            color="primary"
-          />
-        </v-badge>
+      <template #[`item.likes`]="{ item }">
+        <deck-like-or-unlike :deck="item" />
       </template>
     </v-data-table-server>
     <deck-statistics-dialog

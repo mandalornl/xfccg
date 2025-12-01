@@ -51,21 +51,15 @@ export type Database = {
       }
       likes: {
         Row: {
-          created_at: string
           deck_id: string
-          id: string
           user_id: string
         }
         Insert: {
-          created_at?: string
           deck_id?: string
-          id?: string
           user_id?: string
         }
         Update: {
-          created_at?: string
           deck_id?: string
-          id?: string
           user_id?: string
         }
         Relationships: [
@@ -118,6 +112,7 @@ export type Database = {
           created_at: string | null
           created_by: string | null
           id: string | null
+          liked: boolean | null
           likes: number | null
           public: boolean | null
           title: string | null
@@ -136,6 +131,7 @@ export type Database = {
     }
     Functions: {
       delete_deck_by_id: { Args: { p_id: string }; Returns: undefined }
+      like_or_unlike_deck_by_id: { Args: { p_id: string }; Returns: boolean }
       upsert_deck: {
         Args: {
           p_card_ids: Json
