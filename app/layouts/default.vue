@@ -9,7 +9,7 @@ const goTo = useGoTo();
 const year = computed<number>(() => new Date().getFullYear());
 const showScrollToTop = ref<boolean>(false);
 
-const onClickScrollToTop = async () => {
+const scrollToTop = async () => {
   if (route.hash) {
     await navigateTo({
       ...route,
@@ -108,7 +108,7 @@ onUnmounted(() => {
           color="primary"
           icon="mdi-chevron-up"
           class="mr-4"
-          @click="onClickScrollToTop"
+          @click="scrollToTop"
         />
       </v-fab-transition>
     </v-footer>

@@ -167,7 +167,7 @@ watchEffect(() => {
   showSaveDeckDialog.value = true;
 });
 
-const onClickRow = (event: Event, data: { item: Deck }) => {
+const openDeck = (event: Event, data: { item: Deck }) => {
   selectedDeck.value = { ...data.item };
 
   showSaveDeckDialog.value = true;
@@ -181,7 +181,7 @@ watch(showSaveDeckDialog, (value) => {
   selectedDeck.value = undefined;
 });
 
-const onClickOpenInCards = (deck: Deck) => {
+const openInCards = (deck: Deck) => {
   if (
     deckSize.value > 0
     && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
@@ -194,11 +194,11 @@ const onClickOpenInCards = (deck: Deck) => {
   return navigateTo('/cards');
 };
 
-const onClickOpeningHand = () => {
+const drawOpeningHand = () => {
   alert('TODO');
 };
 
-const onClickShareLink = async (event: Event) => {
+const shareLink = async (event: Event) => {
   try {
     const target = event.currentTarget as HTMLAnchorElement;
 
@@ -210,7 +210,7 @@ const onClickShareLink = async (event: Event) => {
   }
 };
 
-const onClickDelete = async (deck: Deck) => {
+const deleteDeck = async (deck: Deck) => {
   if (!confirm('Are you sure you want to delete this deck?\nThis action cannot be undone.')) {
     return;
   }
@@ -242,7 +242,7 @@ const onClickDelete = async (deck: Deck) => {
       :items="data.decks"
       :items-per-page-options="itemsPerPageOptions"
       :items-length="data.count"
-      @click:row="onClickRow"
+      @click:row="openDeck"
     >
       <template #[`item.actions`]="{ item }">
         <v-menu>
@@ -258,25 +258,25 @@ const onClickDelete = async (deck: Deck) => {
           <v-list>
             <v-list-item
               title="Open in Cards"
-              @click="onClickOpenInCards(item)"
+              @click="openInCards(item)"
             />
             <v-list-item
-              title="Opening Hand"
-              @click="onClickOpeningHand"
+              title="Draw Opening Hand"
+              @click="drawOpeningHand"
             />
             <v-list-item
               :disabled="!item.public"
               :href="`/decklists?id=${item.id}`"
               target="_blank"
               title="Share Link"
-              @click.prevent="onClickShareLink"
+              @click.prevent="shareLink"
             />
             <template v-if="user?.sub === item.user_id">
               <v-divider />
               <v-list-item
                 title="Delete"
                 base-color="error"
-                @click="onClickDelete(item)"
+                @click="deleteDeck(item)"
               />
             </template>
           </v-list>

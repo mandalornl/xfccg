@@ -3,7 +3,7 @@ const props = defineProps<{
   value: string | number,
 }>();
 
-const onClick = () => navigateTo({
+const openLink = () => navigateTo({
   hash: `#${props.value}`,
 }, {
   replace: true,
@@ -13,7 +13,7 @@ const onClick = () => navigateTo({
 <template>
   <a
     :href="`#${value}`"
-    @click.prevent="onClick"
+    @click.prevent="openLink"
   >
     <slot>{{ value }}</slot>
   </a>

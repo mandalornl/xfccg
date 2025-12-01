@@ -199,7 +199,7 @@ watch(deckSize, (value) => {
   inDeck.value = false;
 });
 
-const onClickRow = (event: Event, data: { item: Card }) => {
+const openCard = (event: Event, data: { item: Card }) => {
   selectedCard.value = { ...data.item };
 };
 
@@ -251,6 +251,14 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('keyup', onKeyup);
 });
+
+const clearSelection = () => {
+  if (!confirm('Are you sure you want to clear the selection?\nThis action cannot be undone.')) {
+    return;
+  }
+
+  clearDeck();
+};
 </script>
 
 <template>
@@ -318,9 +326,9 @@ onUnmounted(() => {
             <v-divider />
             <v-list-item
               :disabled="deckSize === 0"
-              title="Clear Deck"
+              title="Clear Selection"
               base-color="error"
-              @click="clearDeck"
+              @click="clearSelection"
             />
           </v-list>
         </v-menu>
@@ -382,7 +390,7 @@ onUnmounted(() => {
       :headers="headers"
       :items="cards"
       :items-per-page-options="itemsPerPageOptions"
-      @click:row="onClickRow"
+      @click:row="openCard"
     >
       <template #[`item.type`]="{ value }">
         <card-type
