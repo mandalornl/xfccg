@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "nuxt prepare",
-    "supabase:types": "npx supabase gen types --lang=typescript --project-id oufzvzizsscwiaasvasm > app/types/database.types.ts"
+    "supabase:types": "npx --yes supabase gen types --lang=typescript --project-id oufzvzizsscwiaasvasm > app/types/database.types.ts"
   },
   "engines": {
     "node": "22"
