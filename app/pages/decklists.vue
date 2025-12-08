@@ -31,7 +31,9 @@ const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
 
 const getSortByValue = (): SortBy<Deck>[] => {
   try {
-    return JSON.parse(getRouteQueryValue('sortBy', '[ { "key": "created_at", "order": "desc" } ]'));
+    const sortBy = getRouteQueryValue('sortBy', '[ { "key": "created_at", "order": "desc" } ]');
+
+    return JSON.parse(sortBy);
   } catch {
     return [];
   }
@@ -242,6 +244,7 @@ const deleteDeck = async (deck: Deck) => {
       :items="data.decks"
       :items-per-page-options="itemsPerPageOptions"
       :items-length="data.count"
+      :row-props="({ item }) => ({ class: item.user_id === user?.sub && !item.public ? 'text-disabled' : undefined })"
       @click:row="openDeck"
     >
       <template #[`item.actions`]="{ item }">
@@ -256,6 +259,10 @@ const deleteDeck = async (deck: Deck) => {
             />
           </template>
           <v-list>
+            <template v-if="user?.sub === item.user_id">
+              <v-list-item title="Rename" />
+              <v-list-item :title="item.public ? 'Unpublish' : 'Publish'" />
+            </template>
             <v-list-item
               title="Open in Cards"
               @click="openInCards(item)"
