@@ -99,7 +99,7 @@ watch(dialog, (value) => {
           <v-btn
             :disabled="isValidForm === false"
             :loading="isSubmitting"
-            variant="flat"
+            variant="text"
             color="primary"
             text="Save"
             type="submit"
