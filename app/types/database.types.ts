@@ -130,8 +130,10 @@ export type Database = {
       }
     }
     Functions: {
-      delete_deck_by_id: { Args: { p_id: string }; Returns: undefined }
-      like_or_unlike_deck_by_id: { Args: { p_id: string }; Returns: boolean }
+      delete_deck: { Args: { p_id: string }; Returns: undefined }
+      rename_deck: { Args: { p_id: string; p_title: string }; Returns: string }
+      toggle_deck_like: { Args: { p_id: string }; Returns: boolean }
+      toggle_deck_public: { Args: { p_id: string }; Returns: boolean }
       upsert_deck: {
         Args: {
           p_card_ids: Json
