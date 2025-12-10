@@ -45,6 +45,7 @@ const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
 const selectedDeck = ref<Deck | undefined>();
 const showDeck = ref<boolean>(false);
+const isLoading = ref<boolean>(false);
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedDeck.value) {
@@ -213,11 +214,15 @@ const shareLink = async (event: Event) => {
 };
 
 const deleteDeck = async (deck: Deck) => {
+  snackbarState.reset();
+
   if (!confirm('Are you sure you want to delete this deck?\nThis action cannot be undone.')) {
     return;
   }
 
-  const { error } = await supabase.rpc('delete_deck_by_id', {
+  isLoading.value = true;
+
+  const { error } = await supabase.rpc('delete_deck', {
     p_id: deck.id!,
   });
 
@@ -230,6 +235,37 @@ const deleteDeck = async (deck: Deck) => {
 
     await refresh();
   }
+
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 200);
+};
+
+const toggleDeckPublic = async (deck: Deck) => {
+  snackbarState.reset();
+
+  isLoading.value = true;
+
+  const {
+    data:newPublic,
+    error,
+  } = await supabase.rpc('toggle_deck_public', {
+    p_id: deck.id!,
+  });
+
+  if (error) {
+    useDebug(error);
+
+    snackbarState.error(`An error occurred ${deck.public ? 'unpublishing' : 'publishing'} the deck.`);
+  } else {
+    snackbarState.success(`Your deck has been ${newPublic ? 'published' : 'unpublished'}.`);
+
+    await refresh();
+  }
+
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 200);
 };
 </script>
 
@@ -239,7 +275,7 @@ const deleteDeck = async (deck: Deck) => {
       v-model:page="page"
       v-model:items-per-page="perPage"
       v-model:sort-by="sortBys"
-      :loading="status === 'pending'"
+      :loading="status === 'pending' || isLoading"
       :headers="headers"
       :items="data.decks"
       :items-per-page-options="itemsPerPageOptions"
@@ -252,6 +288,7 @@ const deleteDeck = async (deck: Deck) => {
           <template #activator="{ props:menuProps }">
             <v-btn
               v-tooltip:top="'Actions'"
+              :disabled="isLoading"
               size="small"
               variant="text"
               icon="mdi-dots-vertical"
@@ -261,7 +298,11 @@ const deleteDeck = async (deck: Deck) => {
           <v-list>
             <template v-if="user?.sub === item.user_id">
               <v-list-item title="Rename" />
-              <v-list-item :title="item.public ? 'Unpublish' : 'Publish'" />
+              <v-list-item
+                :disabled="isLoading"
+                :title="item.public ? 'Unpublish' : 'Publish'"
+                @click="toggleDeckPublic(item)"
+              />
             </template>
             <v-list-item
               title="Open in Cards"
@@ -281,6 +322,7 @@ const deleteDeck = async (deck: Deck) => {
             <template v-if="user?.sub === item.user_id">
               <v-divider />
               <v-list-item
+                :disabled="isLoading"
                 title="Delete"
                 base-color="error"
                 @click="deleteDeck(item)"
