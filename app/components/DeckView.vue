@@ -91,7 +91,7 @@ const costs = [
           text="Team"
           class="my-4"
         />
-        <deck-team-statistics :cards="cards" />
+        <deck-team :cards="cards" />
         <x-divider
           text="Sites"
           class="my-4"

@@ -183,7 +183,7 @@ watch(remainingCost, (value) => {
         v-model="filters"
         :items="cards"
       />
-      <team-statistics-dialog />
+      <team-view />
       <v-badge
         :model-value="totalCost > 0"
         :content="totalCost"
@@ -284,6 +284,6 @@ watch(remainingCost, (value) => {
         />
       </template>
     </v-data-iterator>
-    <card-dialog v-model="selectedCard" />
+    <card-view v-model="selectedCard" />
   </layout-content>
 </template>

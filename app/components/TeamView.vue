@@ -51,7 +51,7 @@ const stats = computed<AgentStat[]>(() => ([
   >
     <template #activator="{ props:dialogProps }">
       <v-btn
-        v-tooltip:top="'Show Statistics'"
+        v-tooltip:top="'View Team'"
         :disabled="team.length === 0"
         rounded
         icon="mdi-chart-line"
@@ -60,7 +60,7 @@ const stats = computed<AgentStat[]>(() => ([
     </template>
     <v-card>
       <v-card-title class="d-flex align-center justify-space-between">
-        Team Statistics
+        Team
         <v-btn
           variant="text"
           icon="mdi-close"

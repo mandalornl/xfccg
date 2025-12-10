@@ -44,7 +44,7 @@ const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
 const selectedDeck = ref<Deck | undefined>();
-const showSaveDeckDialog = ref<boolean>(false);
+const showDeck = ref<boolean>(false);
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedDeck.value) {
@@ -166,16 +166,16 @@ watchEffect(() => {
 
   selectedDeck.value = { ...data.value.deck };
 
-  showSaveDeckDialog.value = true;
+  showDeck.value = true;
 });
 
 const openDeck = (event: Event, data: { item: Deck }) => {
   selectedDeck.value = { ...data.item };
 
-  showSaveDeckDialog.value = true;
+  showDeck.value = true;
 };
 
-watch(showSaveDeckDialog, (value) => {
+watch(showDeck, (value) => {
   if (value) {
     return;
   }
@@ -296,11 +296,11 @@ const deleteDeck = async (deck: Deck) => {
         />
       </template>
       <template #[`item.likes`]="{ item }">
-        <deck-like-or-unlike :deck="item" />
+        <deck-toggle-like :deck="item" />
       </template>
     </v-data-table-server>
-    <deck-statistics-dialog
-      v-model="showSaveDeckDialog"
+    <deck-view
+      v-model="showDeck"
       :deck="selectedDeck"
     />
   </layout-content>

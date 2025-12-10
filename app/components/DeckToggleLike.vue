@@ -26,7 +26,7 @@ const likeOrUnlike = async () => {
   const {
     data:newLiked,
     error,
-  } = await supabase.rpc('like_or_unlike_deck_by_id', {
+  } = await supabase.rpc('toggle_deck_like', {
     p_id: props.deck.id!,
   });
 
