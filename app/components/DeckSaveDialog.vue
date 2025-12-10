@@ -80,8 +80,8 @@ watch(dialog, (value) => {
         <v-card-text class="text-body-1">
           <input-string
             v-model="deckState.title"
-            :rules="[ (v) => !!v || 'Enter a name' ]"
-            label="Name"
+            :rules="[ (v) => !!v || 'Enter a title' ]"
+            label="Title"
           />
           <v-switch
             v-model="deckState.public"
