@@ -12,6 +12,10 @@ const {
   deckSize,
 } = useDeckState();
 
+useHead({
+  title: 'Decklists',
+});
+
 const headers = [
   { title: '', key: 'actions', nowrap: true, width: 0, sortable: false },
   { title: 'Title', key: 'title', nowrap: true },
