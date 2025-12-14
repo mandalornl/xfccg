@@ -5,12 +5,6 @@ const user = useSupabaseUser();
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
-definePageMeta({
-  middleware: [
-    'authenticated',
-  ],
-});
-
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 

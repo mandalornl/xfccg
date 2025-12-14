@@ -4,12 +4,6 @@ import type { SubmitEventPromise } from 'vuetify';
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
-definePageMeta({
-  middleware: [
-    'authenticated',
-  ],
-});
-
 const isValidForm = ref<boolean>(true);
 const isUpdating = ref<boolean>(false);
 const password = ref<string>('');

@@ -2,12 +2,6 @@
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 
-definePageMeta({
-  middleware: [
-    'authenticated',
-  ],
-});
-
 let timeoutId: ReturnType<typeof setTimeout>;
 
 const signOut = async () => {
