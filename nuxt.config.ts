@@ -40,6 +40,7 @@ export default defineNuxtConfig({
         '/my-decks',
         '/logout',
       ],
+      saveRedirectToCookie: true,
     },
   },
   vuetify: {

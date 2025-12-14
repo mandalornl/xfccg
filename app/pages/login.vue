@@ -4,6 +4,7 @@ import type { SubmitEventPromise } from 'vuetify';
 const route = useRoute();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
+const redirectInfo = useSupabaseCookieRedirect();
 const runtimeConfig = useRuntimeConfig();
 const snackbarState = useSnackbarState();
 
@@ -78,7 +79,9 @@ watch(user, (value) => {
     return;
   }
 
-  return navigateTo('/account', {
+  const path = redirectInfo.pluck();
+
+  return navigateTo(path || '/account', {
     replace: true,
   });
 });
