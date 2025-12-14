@@ -21,10 +21,10 @@ const card = defineModel<Card>();
         <v-card-title class="d-flex align-center justify-space-between">
           {{ card?.title }}
           <v-btn
+            v-tooltip:top="'Close'"
             variant="text"
             icon="mdi-close"
             size="small"
-            title="Close"
             @click="card = undefined"
           />
         </v-card-title>

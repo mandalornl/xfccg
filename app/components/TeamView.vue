@@ -62,10 +62,10 @@ const stats = computed<AgentStat[]>(() => ([
       <v-card-title class="d-flex align-center justify-space-between">
         Team
         <v-btn
+          v-tooltip:top="'Close'"
           variant="text"
           icon="mdi-close"
           size="small"
-          title="Close"
           @click="dialog = false"
         />
       </v-card-title>

@@ -76,11 +76,11 @@ const updateUser = async (event: SubmitEventPromise) => {
         <v-card-title class="d-flex align-center justify-space-between">
           Update your Password
           <v-btn
+            v-tooltip:top="'Close'"
             :disabled="isUpdating"
             variant="text"
             size="small"
             icon="mdi-close"
-            title="Close"
             @click="isOpen = false"
           />
         </v-card-title>
@@ -110,7 +110,7 @@ const updateUser = async (event: SubmitEventPromise) => {
           <v-btn
             :disabled="isValidForm === false"
             :loading="isUpdating"
-            variant="text"
+            variant="flat"
             color="primary"
             text="Save"
             type="submit"

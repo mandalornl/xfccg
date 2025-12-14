@@ -83,11 +83,11 @@ onUnmounted(() => {
       </v-menu>
       <v-btn
         v-else
+        v-tooltip:top="'Sign In'"
         :active="false"
         to="/login"
         icon="mdi-login"
         color="primary"
-        title="Sign in"
       />
     </v-app-bar>
     <app-navigation />

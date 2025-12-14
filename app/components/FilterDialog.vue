@@ -54,10 +54,10 @@ const clearFilters = () => {
       <v-card-title class="d-flex align-center justify-space-between">
         Filters
         <v-btn
+          v-tooltip:top="'Close'"
           variant="text"
           icon="mdi-close"
           size="small"
-          title="Close"
           @click="dialog = false"
         />
       </v-card-title>
@@ -86,7 +86,7 @@ const clearFilters = () => {
           @click="clearFilters"
         />
         <v-btn
-          variant="text"
+          variant="flat"
           color="primary"
           text="Close"
           @click="dialog = false"
