@@ -13,6 +13,7 @@ export interface Deck {
   public: boolean;
   user_id: null | string;
   liked: boolean;
+  tags: string[];
 }
 
 export interface CardInDeck extends Card {

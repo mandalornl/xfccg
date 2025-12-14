@@ -19,6 +19,7 @@ useHead({
 const headers = [
   { title: '', key: 'actions', nowrap: true, width: 0, sortable: false },
   { title: 'Title', key: 'title', nowrap: true },
+  { title: 'Tags', key: 'tags', nowrap: true },
   { title: 'Created By', key: 'created_by', nowrap: true },
   { title: 'Created At', key: 'created_at', nowrap: true },
   { title: '', key: 'likes', nowrap: true },
@@ -340,6 +341,9 @@ const toggleDeckPublic = async (deck: Deck) => {
           :date="value"
           format="fullDate"
         />
+      </template>
+      <template #[`item.tags`]="{ value }">
+        <x-tags :items="value" />
       </template>
       <template #[`item.likes`]="{ item }">
         <deck-toggle-like :deck="item" />

@@ -10,6 +10,7 @@ const defaultValue = (): Deck => ({
   created_by: null,
   likes: 0,
   liked: false,
+  tags: [],
 });
 
 export const useDeckState = () => {
