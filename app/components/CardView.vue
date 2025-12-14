@@ -100,13 +100,13 @@ const card = defineModel<Card>();
               v-if="card?.keywords?.length"
               title="Keywords"
             >
-              <card-chips :value="card?.keywords" />
+              <x-tags :items="card?.keywords" />
             </card-item>
             <card-item
               v-if="card?.activators?.length"
               title="Activators"
             >
-              <card-chips :value="card?.activators" />
+              <x-tags :items="card?.activators" />
             </card-item>
             <card-item
               v-if="card?.bio"
@@ -142,7 +142,7 @@ const card = defineModel<Card>();
               v-if="card?.tags?.length"
               title="Tags"
             >
-              <card-chips :value="card?.tags" />
+              <x-tags :items="card?.tags" />
             </card-item>
             <card-item
               v-if="card?.createdBy"
