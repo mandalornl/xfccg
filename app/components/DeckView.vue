@@ -10,22 +10,14 @@ import { getColorByCost } from '~/utils/color';
 const { smAndDown } = useDisplay();
 const pool = await usePool();
 
-const props = withDefaults(defineProps<{
-  deck?: Deck;
-}>(), {
-  deck: undefined,
-});
-
-const dialog = defineModel<boolean>({
-  default: false,
-});
+const deck = defineModel<Deck>();
 
 const cards = computed<CardInDeck[]>(() => {
-  if (!props.deck) {
+  if (!deck.value) {
     return [];
   }
 
-  return Object.entries(props.deck.card_ids).map(([
+  return Object.entries(deck.value.card_ids).map(([
     id,
     quantity,
   ]) => {
@@ -49,23 +41,22 @@ const costs = [
 
 <template>
   <v-dialog
-    v-model="dialog"
+    :model-value="!!deck"
     :fullscreen="smAndDown"
     scrollable
     width="960"
+    @update:model-value="(value) => !value && (deck = undefined)"
   >
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
-          <div class="d-flex align-center">
-            {{ deck?.title || 'Untitled' }}
-          </div>
+          {{ deck?.title }}
           <v-btn
             v-tooltip:top="'Close'"
             variant="text"
             icon="mdi-close"
             size="small"
-            @click="dialog = false"
+            @click="deck = undefined"
           />
         </v-card-title>
         <v-card-subtitle

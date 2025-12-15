@@ -13,6 +13,7 @@ import {
 } from '~/types/card';
 import type { SortBy } from '~/types/sort';
 import { FilterOperation } from '~/types/filter';
+import type { Deck } from '~/types/deck';
 
 const route = useRoute();
 const router = useRouter();
@@ -107,8 +108,7 @@ const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
 const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
-const showDeck = ref<boolean>(false);
-const showSaveDeckDialog = ref<boolean>(false);
+const selectedDeck = ref<Deck>();
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedCard.value) {
@@ -317,11 +317,10 @@ const clearSelection = () => {
             <v-list-item
               v-if="user"
               title="Save Deck"
-              @click="showSaveDeckDialog = true"
             />
             <v-list-item
               title="View Deck"
-              @click="showDeck = true"
+              @click="selectedDeck = { ...deckState }"
             />
             <v-divider />
             <v-list-item
@@ -406,10 +405,6 @@ const clearSelection = () => {
       </template>
     </v-data-table>
     <card-view v-model="selectedCard" />
-    <deck-view
-      v-model="showDeck"
-      :deck="deckState"
-    />
-    <deck-save-dialog v-model="showSaveDeckDialog" />
+    <deck-view v-model="selectedDeck" />
   </layout-content>
 </template>
