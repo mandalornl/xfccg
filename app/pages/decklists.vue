@@ -35,9 +35,9 @@ const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
 
 const getSortByValue = (): SortBy<Deck>[] => {
   try {
-    const sortBy = getRouteQueryValue('sortBy', '[ { "key": "created_at", "order": "desc" } ]');
+    const sortBys = getRouteQueryValue('sortBys', '[ { "key": "created_at", "order": "desc" } ]');
 
-    return JSON.parse(sortBy);
+    return JSON.parse(sortBys);
   } catch {
     return [];
   }
@@ -57,13 +57,11 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
     };
   }
 
-  const sortByValue = JSON.stringify(sortBys.value);
-
   return {
     search: search.value || undefined,
     page: page.value > 1 ? page.value : undefined,
     perPage: perPage.value !== 30 ? perPage.value : undefined,
-    sortBy: sortByValue !== '[]' ? sortByValue : undefined,
+    sortBys: sortBys.value.length > 0 ? JSON.stringify(sortBys.value) : undefined,
   };
 });
 

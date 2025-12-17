@@ -87,7 +87,9 @@ const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
 
 const getSortByValue = (): SortBy<Card>[] => {
   try {
-    return JSON.parse(getRouteQueryValue('sortBy', '[]'));
+    const sortBys = getRouteQueryValue('sortBys', '[]');
+
+    return JSON.parse(sortBys);
   } catch {
     return [];
   }
@@ -110,21 +112,19 @@ const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
 const selectedDeck = ref<Deck>();
 
-const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
+const routeQuery = computed<Record<string, string | number | undefined>>(() => {
   if (selectedCard.value) {
     return {
       id: selectedCard.value.id,
     };
   }
 
-  const sortByValue = JSON.stringify(sortBys.value);
-
   return {
     search: search.value || undefined,
     view: view.value !== 'grid' ? view.value : undefined,
     page: page.value > 1 ? page.value : undefined,
     perPage: perPage.value !== 60 ? perPage.value : undefined,
-    sortBy: sortByValue !== '[]' ? sortByValue : undefined,
+    sortBys: sortBys.value.length > 0 ? JSON.stringify(sortBys.value) : undefined,
     ...Object.fromEntries(
       filters.value.map((filter) => ([
         filter.key,
