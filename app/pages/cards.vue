@@ -17,7 +17,6 @@ import type { Deck } from '~/types/deck';
 
 const route = useRoute();
 const router = useRouter();
-const user = useSupabaseUser();
 const {
   deckState,
   deckSize,
