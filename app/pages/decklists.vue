@@ -147,6 +147,7 @@ const {
     count,
   };
 }, {
+  lazy: true,
   deep: false,
   watch: [
     search,
