@@ -2,6 +2,13 @@
 const search = defineModel<string>('search', {
   default: '',
 });
+
+const clickIcon = (event: Event) => {
+  const target = event.target as HTMLElement;
+  const input = target.closest('.v-input')?.querySelector('input') as HTMLInputElement;
+
+  search.value = input?.value || '';
+};
 </script>
 
 <template>
@@ -45,6 +52,7 @@ const search = defineModel<string>('search', {
               variant="solo-filled"
               type="search"
               @click:clear="search = ''"
+              @click:prepend-inner="clickIcon"
               @focus="$event.target.select()"
               @keydown.exact.enter="search = $event.target.value"
             />
@@ -62,6 +70,7 @@ const search = defineModel<string>('search', {
         type="search"
         class="hidden-xs"
         @click:clear="search = ''"
+        @click:prepend-inner="clickIcon"
         @focus="$event.target.select()"
         @keydown.exact.enter="search = $event.target.value"
       />
