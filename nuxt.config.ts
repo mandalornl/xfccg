@@ -4,7 +4,7 @@ const baseURL = isProduction ? '/xfccg/' : '/';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
-  ssr: false,
+  ssr: true,
   devtools: {
     enabled: !isProduction,
   },
