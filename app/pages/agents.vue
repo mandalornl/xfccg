@@ -181,6 +181,48 @@ const clearSelection = () => {
 
   clearTeam();
 };
+
+const selectedIndex = computed<number>(() => {
+  if (!selectedCard.value) {
+    return -1;
+  }
+
+  return cards.value.findIndex((card) => card.id === selectedCard.value?.id);
+});
+
+watch(selectedIndex, (value) => {
+  if (value === -1) {
+    return;
+  }
+
+  page.value = Math.floor(value / perPage.value) + 1;
+});
+
+const onKeyup = (event: KeyboardEvent) => {
+  if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
+    return;
+  }
+
+  event.preventDefault();
+
+  const delta = event.key === 'ArrowLeft' ? -1 : 1;
+  const index = selectedIndex.value + delta;
+  const card = cards.value[index];
+
+  if (!card) {
+    return;
+  }
+
+  selectedCard.value = { ...card };
+};
+
+onMounted(() => {
+  window.addEventListener('keyup', onKeyup);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keyup', onKeyup);
+});
 </script>
 
 <template>
