@@ -47,31 +47,41 @@ const updateUser = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content title="Account">
+  <layout-content>
     <v-form
       v-model="isValidForm"
       validate-on="lazy"
       @submit.prevent="updateUser"
     >
-      <input-string
-        v-model="name"
-        :rules="[ (v) => !!v || 'Enter your name' ]"
-        label="Name"
-      />
-      <input-email
-        v-model="email"
-        :rules="[ (v) => !!v || 'Enter your email' ]"
-        disabled
-        label="Email"
-      />
-      <v-btn
-        :disabled="isValidForm === false"
-        :loading="isSaving"
+      <v-card
+        title="Account"
         variant="flat"
-        color="primary"
-        text="Save"
-        type="submit"
-      />
+      >
+        <v-card-text class="text-body-1">
+          <input-string
+            v-model="name"
+            :rules="[ (v) => !!v || 'Enter your name' ]"
+            label="Name"
+          />
+          <input-email
+            v-model="email"
+            :rules="[ (v) => !!v || 'Enter your email' ]"
+            disabled
+            label="Email"
+          />
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer />
+          <v-btn
+            :disabled="isValidForm === false"
+            :loading="isSaving"
+            variant="flat"
+            color="primary"
+            text="Save"
+            type="submit"
+          />
+        </v-card-actions>
+      </v-card>
     </v-form>
     <v-divider class="my-6" />
     <change-password-dialog />
