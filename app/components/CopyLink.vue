@@ -2,8 +2,8 @@
 const snackbarState = useSnackbarState();
 
 defineProps<{
-  value: string | number,
-  iconColor?: string,
+  value: string | number;
+  iconColor?: string;
 }>();
 
 const copyToClipboard = async (event: Event) => {
@@ -22,18 +22,16 @@ const copyToClipboard = async (event: Event) => {
 </script>
 
 <template>
-  <div class="d-flex align-center ga-2">
+  <div class="d-flex align-baseline ga-2">
     <slot />
-    <a
+    <v-btn
       v-tooltip:top="'Copy link to clipboard'"
       :href="`#${value}`"
+      variant="text"
+      size="small"
+      color="primary"
+      icon="mdi-content-copy"
       @click.prevent="copyToClipboard"
-    >
-      <v-icon
-        :color="iconColor"
-        icon="mdi-content-copy"
-        size="small"
-      />
-    </a>
+    />
   </div>
 </template>
