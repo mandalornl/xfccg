@@ -77,9 +77,9 @@ const items = [
     },
   },
   {
-    title: 'Downloads',
+    title: 'Archive',
     props: {
-      to: '/downloads',
+      to: '/archive',
       prependIcon: 'mdi-archive',
     },
   },
