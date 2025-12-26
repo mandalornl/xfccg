@@ -74,6 +74,6 @@ const updateUser = async (event: SubmitEventPromise) => {
       />
     </v-form>
     <v-divider class="my-6" />
-    <change-password />
+    <change-password-dialog />
   </layout-content>
 </template>
