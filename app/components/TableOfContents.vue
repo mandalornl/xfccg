@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const router = useRouter();
+
 const pages = [
   {
     label: 'Introduction',
@@ -216,8 +218,27 @@ const pages = [
     ]
   }
 ];
+
+const onIntersect = (isIntersecting: boolean) => {
+  if (!isIntersecting) {
+    return;
+  }
+
+  const resolvedRoute = router.resolve({
+    hash: '',
+  });
+
+  if (resolvedRoute.hash === location.hash) {
+    return;
+  }
+
+  history.replaceState(history.state, '', resolvedRoute.href);
+};
 </script>
 
 <template>
-  <unordered-list :items="pages" />
+  <unordered-list
+    v-intersect.quiet="onIntersect"
+    :items="pages"
+  />
 </template>
