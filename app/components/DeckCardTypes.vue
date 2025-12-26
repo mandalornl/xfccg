@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import type { CardInDeck } from '~/types/deck';
-import { CardType } from '~/types/card';
+import {
+  CardType,
+  type CardInDeck,
+} from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
 const props = withDefaults(defineProps<{

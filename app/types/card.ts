@@ -77,6 +77,10 @@ export interface Card {
   createdBy: string;
 }
 
+export interface CardInDeck extends Card {
+  quantity: number;
+}
+
 export interface CardInCube extends Card {
   uuid: string;
 }

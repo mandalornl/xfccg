@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { CardInDeck } from '~/types/deck';
 import type {
   Card,
   CardType,
+  CardInDeck,
 } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CardInDeck } from '~/types/deck';
+import type { CardInDeck } from '~/types/card';
 import { XFileCharacteristic } from '~/types/x-file';
 
 defineProps<{
