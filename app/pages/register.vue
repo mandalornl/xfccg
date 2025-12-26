@@ -4,6 +4,10 @@ import type { SubmitEventPromise } from 'vuetify';
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
+useHead({
+  title: 'Register',
+});
+
 definePageMeta({
   middleware: [
     'anonymous',

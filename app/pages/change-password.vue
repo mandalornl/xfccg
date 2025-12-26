@@ -4,6 +4,10 @@ import type { SubmitEventPromise } from 'vuetify';
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
+useHead({
+  title: 'Change Password',
+});
+
 const isValidForm = ref<boolean>(true);
 const isUpdating = ref<boolean>(false);
 const password = ref<string>('');
@@ -38,7 +42,7 @@ const updatePassword = async (event: SubmitEventPromise) => {
   setTimeout(() => {
     isUpdating.value = false;
   }, 200);
-}
+};
 </script>
 
 <template>

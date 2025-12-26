@@ -5,6 +5,10 @@ const user = useSupabaseUser();
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
+useHead({
+  title: 'Account',
+});
+
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 

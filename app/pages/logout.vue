@@ -2,6 +2,10 @@
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 
+useHead({
+  title: 'Logout',
+});
+
 let timeoutId: ReturnType<typeof setTimeout>;
 
 const signOut = async () => {

@@ -8,6 +8,16 @@ const redirectInfo = useSupabaseCookieRedirect();
 const runtimeConfig = useRuntimeConfig();
 const snackbarState = useSnackbarState();
 
+useHead({
+  title: 'Login',
+});
+
+definePageMeta({
+  middleware: [
+    'anonymous',
+  ],
+});
+
 const getEmail = () => {
   if (route.query.email) {
     return decodeURIComponent(route.query.email as string);
@@ -21,12 +31,6 @@ const isSigningIn = ref<boolean>(false);
 const isSigningInWithDiscord = ref<boolean>(false);
 const email = ref<string>(getEmail());
 const password = ref<string>(runtimeConfig.public.login.password || '');
-
-definePageMeta({
-  middleware: [
-    'anonymous',
-  ],
-});
 
 const signInWithDiscord = async () => {
   snackbarState.reset();

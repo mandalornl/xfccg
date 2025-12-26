@@ -5,6 +5,10 @@ const supabase = useSupabaseClient();
 const runtimeConfig = useRuntimeConfig();
 const snackbarState = useSnackbarState();
 
+useHead({
+  title: 'Reset your password',
+});
+
 definePageMeta({
   middleware: [
     'anonymous',
