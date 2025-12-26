@@ -34,6 +34,12 @@ export enum CardRarity {
   Community = 'Community',
 }
 
+export enum CardCostPool {
+  Resource = 'RP',
+  Conspiracy = 'CP',
+  Star = '*P',
+}
+
 export enum CardType {
   Adversary = 'Adversary',
   Agent = 'Agent',

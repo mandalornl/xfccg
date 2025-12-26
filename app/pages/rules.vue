@@ -1,52 +1,13 @@
 <script setup lang="ts">
-import { useDisplay } from 'vuetify';
-
 import {
-  type Card,
-  CardSet,
   CardType,
+  CardCostPool,
 } from '~/types/card';
 import { sample } from '~/utils/sample';
 
 useHead({
   title: 'Advanced Rules and Procedures Manual',
 });
-
-const display = useDisplay();
-const pool = await usePool([
-  CardSet.Premiere,
-]);
-
-const drawCardByCostType = (costType: string): Card => (
-  sample<Card>(pool.filter((card) => card.cost?.endsWith(costType)))!
-);
-
-const resourceCard = computed<Card>(() => drawCardByCostType('RP'));
-const conspiracyCard = computed<Card>(() => drawCardByCostType('CP'));
-const starCard = computed<Card>(() => drawCardByCostType('*P'));
-
-const drawCardByType = (cardType: CardType): Card => (
-  sample<Card>(pool.filter((card) => card.type === cardType))!
-);
-
-const adversaryCard = computed<Card>(() => drawCardByType(CardType.Adversary));
-const agentCard = computed<Card>(() => drawCardByType(CardType.Agent));
-const bluffCard = computed<Card>(() => drawCardByType(CardType.Bluff));
-const combatCard = computed<Card>(() => drawCardByType(CardType.Combat));
-const equipmentCard = computed<Card>(() => drawCardByType(CardType.Equipment));
-const eventCard = computed<Card>(() => drawCardByType(CardType.Event));
-const siteCard = computed<Card>(() => drawCardByType(CardType.Site));
-const witnessCard = computed<Card>(() => drawCardByType(CardType.Witness));
-const xFileCard = computed<Card>(() => drawCardByType(CardType.XFile));
-
-const typicalCard = computed<Card>(() => (sample(pool)!));
-
-const findCardById = (id: string): Card => (pool.find((card) => card.id === id)!);
-
-const townsendWICard = computed<Card>(() => findCardById('XF96-0067v1'));
-const glock19Card = computed<Card>(() => findCardById('XF96-0317v1'));
-const scullyCard = computed<Card>(() => findCardById('XF96-0172v1'));
-const shotgunCard = computed<Card>(() => findCardById('XF96-0329v1'));
 
 const players = [
   'Stephen',
@@ -64,20 +25,8 @@ const players = [
   'Alfredo',
 ];
 
-const playerOne = computed<string>(() => sample(players)!);
-const playerTwo = computed<string>(() => (sample(players.filter((name) => name !== playerOne.value))!));
-
-const threeCardWidth = computed<number>(() => {
-  if (display.xs.value) {
-    return 80;
-  }
-
-  if (display.sm.value) {
-    return 192;
-  }
-
-  return 256;
-});
+const playerOne = useState<string>('rules:player1', () => sample(players)!);
+const playerTwo = useState<string>('rules:player2', () => (sample(players.filter((name) => name !== playerOne.value)))!);
 </script>
 
 <template>
@@ -243,20 +192,26 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <p class="d-flex justify-center ga-2">
-          <card-image
-            :card="resourceCard"
-            :max-width="threeCardWidth"
-          />
-          <card-image
-            :card="conspiracyCard"
-            :max-width="threeCardWidth"
-          />
-          <card-image
-            :card="starCard"
-            :max-width="threeCardWidth"
-          />
-        </p>
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-cost :cost="CardCostPool.Resource" />
+          </v-col>
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-cost :cost="CardCostPool.Conspiracy" />
+          </v-col>
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-cost :cost="CardCostPool.Star" />
+          </v-col>
+        </v-row>
         <p>Examples of <icon-resource-pool /> (RP), <icon-conspiracy-pool /> (CP) and <icon-star-pool /> (*P) cost icons as seen on cards.</p>
       </v-alert>
     </rule-page>
@@ -271,11 +226,16 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <card-image
-          :card="agentCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Agent" />
+          </v-col>
+        </v-row>
         An example of an Agent card's RES Number.
       </v-alert>
       <p>Add up all Agent's RES numbers. This is the number of tokens that may be added to the Resource Pool at the beginning of your turn. Agents in the Hospital during the Briefing Phase do not contribute their RES number to create <icon-resource-pool />s. After adding the <icon-resource-pool />s to your pool, you may then purchase cards. Each card costs <b>1</b> <icon-resource-pool />. Purchased cards are always taken from the top of the Bureau Deck. All cards must be purchased at once. A player may not purchase cards and then decide to purchase more after looking at the cards purchased. Regardless of how many cards are bought, no player's hand may exceed seven cards (but can be less) at the end of a turn.</p>
@@ -337,11 +297,16 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <card-image
-          :card="agentCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Agent" />
+          </v-col>
+        </v-row>
         A typical Agent Card
       </v-alert>
     </rule-page>
@@ -366,13 +331,22 @@ const threeCardWidth = computed<number>(() => {
       >
         <v-item-group>
           <v-item v-slot="{ isSelected, toggle }">
-            <div @click="toggle">
-              <card-image
-                :card="equipmentCard"
-                max-width="256"
-                :class="[ 'mx-auto transition-transform', { 'transform--rotate-90': isSelected } ]"
-              />
-            </div>
+            <v-row
+              justify="center"
+              @click="toggle"
+            >
+              <v-col
+                cols="8"
+                sm="5"
+                md="4"
+                lg="3"
+              >
+                <card-sample-type
+                  :type="CardType.Equipment"
+                  :class="[ 'mx-auto transition-transform', { 'transform--rotate-90': isSelected } ]"
+                />
+              </v-col>
+            </v-row>
           </v-item>
         </v-item-group>
         An example of a card's Activators (click to rotate).
@@ -390,13 +364,22 @@ const threeCardWidth = computed<number>(() => {
       >
         <v-item-group>
           <v-item v-slot="{ isSelected, toggle }">
-            <div @click="toggle">
-              <card-image
-                :card="townsendWICard"
-                max-width="256"
-                :class="[ 'mx-auto transition-transform', { 'transform--rotate-90': isSelected } ]"
-              />
-            </div>
+            <v-row
+              justify="center"
+              @click="toggle"
+            >
+              <v-col
+                cols="8"
+                sm="5"
+                md="4"
+                lg="3"
+              >
+                <card-sample-id
+                  id="XF96-0067v1"
+                  :class="[ 'mx-auto transition-transform', { 'transform--rotate-90': isSelected } ]"
+                />
+              </v-col>
+            </v-row>
           </v-item>
         </v-item-group>
         <p class="text-center">
@@ -464,11 +447,16 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <card-image
-          :card="agentCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Agent" />
+          </v-col>
+        </v-row>
         A typical Agent HEALTH Rating.
       </v-alert>
     </rule-page>
@@ -495,20 +483,26 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <div class="d-flex justify-center ga-2">
-          <card-image
-            :card="glock19Card"
-            :max-width="threeCardWidth"
-          />
-          <card-image
-            :card="scullyCard"
-            :max-width="threeCardWidth"
-          />
-          <card-image
-            :card="shotgunCard"
-            :max-width="threeCardWidth"
-          />
-        </div>
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-id id="XF96-0317v1" />
+          </v-col>
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-id id="XF96-0172v1" />
+          </v-col>
+          <v-col
+            cols="8"
+            sm="3"
+          >
+            <card-sample-id id="XF96-0329v1" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="22">
@@ -707,11 +701,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="combatCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Combat" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="36">
@@ -822,7 +821,10 @@ const threeCardWidth = computed<number>(() => {
       <h3 class="text-blue-darken-2">
         Affiliation
       </h3>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Alien"
           subtitle="ALIEN Adversaries may be played on any Site."
@@ -884,7 +886,10 @@ const threeCardWidth = computed<number>(() => {
       <h3 class="text-purple-darken-2">
         Method
       </h3>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item title="Manipulation">
           <template #prepend>
             <v-avatar
@@ -944,7 +949,10 @@ const threeCardWidth = computed<number>(() => {
       <h3 class="text-orangetext-darken-2">
         Motive
       </h3>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item title="Control">
           <template #prepend>
             <v-avatar
@@ -981,7 +989,10 @@ const threeCardWidth = computed<number>(() => {
       </v-list>
     </rule-page>
     <rule-page page="45">
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item title="Security">
           <template #prepend>
             <v-avatar
@@ -1011,7 +1022,10 @@ const threeCardWidth = computed<number>(() => {
       <h3 class="text-light-green-darken-2">
         Result
       </h3>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Abduction"
           subtitle="Place two tokens on your X-File. Discard one token to Abduct one Agent of your choice. The Agent is placed face up ten cards down in the owning player's Bureau Deck. When the last card covering the Agent is drawn, the Agent is immediately moved to the Hospital (undamaged)."
@@ -1135,11 +1149,16 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <card-image
-          :card="typicalCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample />
+          </v-col>
+        </v-row>
         A typical game card
       </v-alert>
     </rule-page>
@@ -1152,11 +1171,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="eventCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Event" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="51">
@@ -1168,11 +1192,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="witnessCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Witness" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="52">
@@ -1184,11 +1213,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="bluffCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Bluff" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="53">
@@ -1200,11 +1234,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="equipmentCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Equipment" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="54">
@@ -1216,11 +1255,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="combatCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Combat" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="55">
@@ -1235,11 +1279,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="adversaryCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Adversary" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="56">
@@ -1255,11 +1304,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="siteCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Site" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="57">
@@ -1276,11 +1330,16 @@ const threeCardWidth = computed<number>(() => {
         variant="tonal"
         color="info"
       >
-        <card-image
-          :card="agentCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.Agent" />
+          </v-col>
+        </v-row>
       </v-alert>
     </rule-page>
     <rule-page page="58">
@@ -1305,11 +1364,16 @@ const threeCardWidth = computed<number>(() => {
         color="info"
         class="text-center"
       >
-        <card-image
-          :card="xFileCard"
-          max-width="256"
-          class="mx-auto"
-        />
+        <v-row justify="center">
+          <v-col
+            cols="8"
+            sm="5"
+            md="4"
+            lg="3"
+          >
+            <card-sample-type :type="CardType.XFile" />
+          </v-col>
+        </v-row>
         A typical X-File card
       </v-alert>
     </rule-page>
@@ -1323,7 +1387,10 @@ const threeCardWidth = computed<number>(() => {
         </h2>
       </copy-link>
       <p>Each X-File has a specific classification</p>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Alien"
           subtitle="The X-File is not of this world."
@@ -1390,7 +1457,10 @@ const threeCardWidth = computed<number>(() => {
           Motives
         </h2>
       </copy-link>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Survival"
           subtitle="The X-File merely wishes to exist. It does what it does not through malice but because it would otherwise cease to exist."
@@ -1457,7 +1527,10 @@ const threeCardWidth = computed<number>(() => {
           Methods
         </h2>
       </copy-link>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Violence"
           subtitle="The most direct method, usually only the most savage X-Files resort to this method as it often results in discovery and elimination."
@@ -1524,7 +1597,10 @@ const threeCardWidth = computed<number>(() => {
           Results
         </h2>
       </copy-link>
-      <v-list class="mb-4">
+      <v-list
+        lines="two"
+        class="mb-4"
+      >
         <v-list-item
           title="Death"
           subtitle="The victim of the X-File's actions is found deceased."
