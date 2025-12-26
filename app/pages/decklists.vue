@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Deck } from '~/types/deck';
-import type { SortBy } from '~/types/sort';
+import type { SortBy } from '~/types/sort-by';
 
 const route = useRoute();
 const router = useRouter();

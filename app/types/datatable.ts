@@ -1,4 +1,4 @@
-import type { SortBy } from '~/types/sort';
+import type { SortBy } from '~/types/sort-by';
 
 export interface DataTable<T> {
   search: string;

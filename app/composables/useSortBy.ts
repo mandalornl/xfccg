@@ -1,6 +1,6 @@
-import type { SortBy } from '~/types/sort';
+import type { SortBy } from '~/types/sort-by';
 
-export function useSort<T>(sortBy: SortBy<T>[]): (a: T, b: T) => number {
+export function useSortBy<T>(sortBy: SortBy<T>[]): (a: T, b: T) => number {
   const collator = new Intl.Collator('en', {
     sensitivity: 'base',
     numeric: true,

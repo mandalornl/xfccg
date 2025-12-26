@@ -34,7 +34,7 @@ const groups = computed<{
 
       return {
         total,
-        cards: cards.sort(useSort([
+        cards: cards.sort(useSortBy([
           {
             key: 'id',
             order: 'asc',
@@ -44,7 +44,7 @@ const groups = computed<{
         color: getColorByType(type),
       };
     })
-    .sort(useSort([
+    .sort(useSortBy([
       {
         key: 'total',
         order: 'desc',

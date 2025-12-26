@@ -35,9 +35,15 @@ const items = computed<{
       title,
       total,
     }))
-    .sort(useSort([
-      { key: 'total', order: 'desc' },
-      { key: 'title', order: 'asc' },
+    .sort(useSortBy([
+      {
+        key: 'total',
+        order: 'desc',
+      },
+      {
+        key: 'title',
+        order: 'asc',
+      },
     ]))
 ));
 

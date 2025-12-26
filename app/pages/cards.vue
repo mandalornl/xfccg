@@ -11,7 +11,7 @@ import {
   CardType as CardTypeEnum,
   CardRarity,
 } from '~/types/card';
-import type { SortBy } from '~/types/sort';
+import type { SortBy } from '~/types/sort-by';
 import { FilterOperation } from '~/types/filter';
 import type { Deck } from '~/types/deck';
 
@@ -181,7 +181,7 @@ const cards = computed<Card[]>(() => {
   });
 
   if (sortBys.value.length > 0) {
-    const compare = useSort<Card>(sortBys.value);
+    const compare = useSortBy<Card>(sortBys.value);
 
     return hits.sort(compare);
   }

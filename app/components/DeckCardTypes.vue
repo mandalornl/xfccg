@@ -37,9 +37,15 @@ const items = computed<{
         color: getColorByType(type),
       };
     })
-    .sort(useSort([
-      { key: 'total', order: 'desc' },
-      { key: 'title', order: 'asc' },
+    .sort(useSortBy([
+      {
+        key: 'total',
+        order: 'desc',
+      },
+      {
+        key: 'title',
+        order: 'asc',
+      },
     ]));
 
   const max = Math.max(...items.map((item) => item.total));
