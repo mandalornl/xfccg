@@ -15,7 +15,7 @@ const filters = defineModel<Filter<T>[]>({
   default: () => ([]),
 });
 
-const dialog = ref<boolean>(false);
+const isOpen = ref<boolean>(false);
 
 const activeFilters = computed<number>(() => filters.value.filter((filter) => filter.value.length > 0).length);
 
@@ -29,7 +29,7 @@ const clearFilters = () => {
 
 <template>
   <v-dialog
-    v-model="dialog"
+    v-model="isOpen"
     :fullscreen="xs"
     scrollable
     width="600"
@@ -58,7 +58,7 @@ const clearFilters = () => {
           variant="text"
           icon="mdi-close"
           size="small"
-          @click="dialog = false"
+          @click="isOpen = false"
         />
       </v-card-title>
       <v-card-text class="text-body-1">
@@ -89,7 +89,7 @@ const clearFilters = () => {
           variant="flat"
           color="primary"
           text="Close"
-          @click="dialog = false"
+          @click="isOpen = false"
         />
       </v-card-actions>
     </v-card>
