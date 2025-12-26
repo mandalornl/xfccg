@@ -196,7 +196,7 @@ watch(deckSize, (value) => {
   inDeck.value = false;
 });
 
-const openCard = (event: Event, data: { item: Card }) => {
+const openCard = (_event: Event, data: { item: Card }) => {
   selectedCard.value = { ...data.item };
 };
 
@@ -218,13 +218,6 @@ watch(selectedIndex, (value) => {
 
 const onKeyup = (event: KeyboardEvent) => {
   if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
-    return;
-  }
-
-  if (
-    selectedIndex.value === -1
-    || selectedIndex.value === cards.value.length - 1
-  ) {
     return;
   }
 
