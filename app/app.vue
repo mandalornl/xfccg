@@ -55,4 +55,10 @@ a {
 
   color: rgb(var(--v-theme-primary));
 }
+
+.position-sticky {
+  top: 64px;
+
+  z-index: 1;
+}
 </style>

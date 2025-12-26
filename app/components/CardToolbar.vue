@@ -15,7 +15,7 @@ const clickIcon = (event: Event) => {
   <v-toolbar
     height="auto"
     color="grey-darken-4"
-    class="rounded-t-lg position-sticky"
+    class="rounded-t position-sticky"
   >
     <div class="pa-3 flex-fill">
       <v-menu
@@ -82,11 +82,3 @@ const clickIcon = (event: Event) => {
     </template>
   </v-toolbar>
 </template>
-
-<style lang="scss" scoped>
-.v-toolbar {
-  top: 64px;
-
-  z-index: 1;
-}
-</style>
