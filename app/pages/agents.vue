@@ -92,6 +92,7 @@ const search = ref<string>(getRouteQueryValue('search'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const inTeam = ref<boolean>(false);
+const viewTeam = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
@@ -181,7 +182,6 @@ watch(remainingCost, (value) => {
         v-model="filters"
         :items="cards"
       />
-      <team-view />
       <v-badge
         :model-value="totalCost > 0"
         :content="totalCost"
@@ -210,6 +210,10 @@ watch(remainingCost, (value) => {
                 />
               </template>
             </v-list-item>
+            <v-list-item
+              title="View Team"
+              @click="viewTeam = true"
+            />
             <v-divider />
             <v-list-item
               :disabled="totalCost === 0"
@@ -283,5 +287,6 @@ watch(remainingCost, (value) => {
       </template>
     </v-data-iterator>
     <card-view v-model="selectedCard" />
+    <team-dialog v-model="viewTeam" />
   </layout-content>
 </template>

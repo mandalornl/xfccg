@@ -15,7 +15,9 @@ import { getColorBySkillTotal } from '~/utils/color';
 const { xs } = useDisplay();
 const { teamState } = useTeamState();
 
-const dialog = ref<boolean>(false);
+const isOpen = defineModel<boolean>({
+  default: false,
+});
 
 const team = computed<Agent[]>(() => Object.values(teamState.value).filter((agent) => agent !== null));
 
@@ -44,20 +46,11 @@ const stats = computed<AgentStat[]>(() => ([
 
 <template>
   <v-dialog
-    v-model="dialog"
+    v-model="isOpen"
     :fullscreen="xs"
     scrollable
     width="500"
   >
-    <template #activator="{ props:dialogProps }">
-      <v-btn
-        v-tooltip:top="'View Team'"
-        :disabled="team.length === 0"
-        rounded
-        icon="mdi-chart-line"
-        v-bind="dialogProps"
-      />
-    </template>
     <v-card>
       <v-card-title class="d-flex align-center justify-space-between">
         Team
@@ -66,7 +59,7 @@ const stats = computed<AgentStat[]>(() => ([
           variant="text"
           icon="mdi-close"
           size="small"
-          @click="dialog = false"
+          @click="isOpen = false"
         />
       </v-card-title>
       <v-card-text class="text-body-1">
@@ -97,7 +90,7 @@ const stats = computed<AgentStat[]>(() => ([
           variant="text"
           color="primary"
           text="Close"
-          @click="dialog = false"
+          @click="isOpen = false"
         />
       </v-card-actions>
     </v-card>
