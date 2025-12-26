@@ -1,5 +1,9 @@
+import { URL } from 'node:url';
+
+const url = new URL(process.env.BASE_URL || 'http://localhost:3000');
+
 const isProduction = process.env.NODE_ENV === 'production';
-const baseURL = isProduction ? '/xfccg/' : '/';
+const baseURL = url.pathname === '/' ? '/' : `${url.pathname}/`;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
