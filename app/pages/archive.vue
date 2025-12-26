@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+
 useHead({
   title: 'Archive',
 });
@@ -7,7 +9,7 @@ const items = [
   {
     title: 'Ancillary Documentation',
     subtitle: 'Stephen David Wark',
-    href: '/files/xfccg-ancillary-documentation.pdf',
+    href: `${runtimeConfig.app.baseURL}files/xfccg-ancillary-documentation.pdf`,
     download: 'The X-Files CCG - Ancillary Documentation.pdf',
     icon: 'mdi-file-pdf-box',
     iconColor: 'light-blue',
@@ -15,7 +17,7 @@ const items = [
   {
     title: 'Rules Assistant',
     subtitle: 'Chris Heard',
-    href: '/files/xfccg-rules-assistant.pdf',
+    href: `${runtimeConfig.app.baseURL}files/xfccg-rules-assistant.pdf`,
     download: 'The X-Files CCG - Rules Assistant.pdf',
     icon: 'mdi-file-pdf-box',
     iconColor: 'light-blue',
@@ -23,7 +25,7 @@ const items = [
   {
     title: 'FCU Cube',
     subtitle: 'Alastair \'TheJauntyGoblin\' Headden',
-    href: '/files/xfccg-fcu-cube.pdf',
+    href: `${runtimeConfig.app.baseURL}files/xfccg-fcu-cube.pdf`,
     icon: 'mdi-file-pdf-box',
     iconColor: 'light-blue',
   },
