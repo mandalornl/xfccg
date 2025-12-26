@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const resource = ref<number>(5);
-const conspiracy = ref<number>(5);
+const resource = useState<number>('resources:resource', () => 5);
+const conspiracy = useState<number>('resources:conspiracy', () => 5);
 const wakeLock = ref<WakeLockSentinel>();
-const dialog = ref<boolean>(false);
+const isFullscreen = ref<boolean>(false);
 
 useHead({
   title: 'Resources',
 });
 
-watch(dialog, async (value) => {
+watch(isFullscreen, async (value) => {
   try {
     if (value) {
       wakeLock.value = await navigator.wakeLock.request('screen');
@@ -36,16 +36,18 @@ const reset = () => {
 </script>
 
 <template>
-  <layout-content>
+  <layout-content size="medium">
     <div class="d-flex justify-end ga-2 mb-3">
       <v-btn
-        text="Fullscreen"
-        variant="flat"
-        @click="dialog = true"
+        v-tooltip:top="'Fullscreen'"
+        variant="text"
+        icon="mdi-fullscreen"
+        @click="isFullscreen = true"
       />
       <v-btn
-        text="Reset"
-        variant="flat"
+        v-tooltip:top="'Reset'"
+        variant="text"
+        icon="mdi-refresh"
         @click="reset"
       />
     </div>
@@ -58,6 +60,7 @@ const reset = () => {
           <resource-counter
             v-model="resource"
             color="blue"
+            class="rounded-s rounded-e-0"
           />
         </v-responsive>
       </v-col>
@@ -69,20 +72,22 @@ const reset = () => {
           <resource-counter
             v-model="conspiracy"
             color="red"
+            class="rounded-e rounded-s-0"
           />
         </v-responsive>
       </v-col>
     </v-row>
     <v-dialog
-      v-model="dialog"
+      v-model="isFullscreen"
       fullscreen
     >
       <v-btn
-        icon="mdi-close"
-        color="black"
+        v-tooltip:top="'Exit Fullscreen'"
         variant="text"
+        icon="mdi-close"
+        color="white"
         class="position-absolute"
-        @click="dialog = false"
+        @click="isFullscreen = false"
       />
       <v-row
         no-gutters
@@ -91,14 +96,14 @@ const reset = () => {
         <v-col>
           <resource-counter
             v-model="resource"
-            rotate
+            fullscreen
             color="blue"
           />
         </v-col>
         <v-col>
           <resource-counter
             v-model="conspiracy"
-            rotate
+            fullscreen
             color="red"
           />
         </v-col>
@@ -109,8 +114,9 @@ const reset = () => {
 
 <style lang="scss" scoped>
 .position-absolute {
-  top: 4px;
-  left: 4px;
+  top: 8px;
+  right: 8px;
+
   z-index: 1;
 }
 </style>
