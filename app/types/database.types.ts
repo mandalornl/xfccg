@@ -20,6 +20,7 @@ export type Database = {
           created_at: string
           id: string
           public: boolean
+          tags: string[]
           title: string
           user_id: string
         }
@@ -28,6 +29,7 @@ export type Database = {
           created_at?: string
           id?: string
           public?: boolean
+          tags?: string[]
           title: string
           user_id?: string
         }
@@ -36,6 +38,7 @@ export type Database = {
           created_at?: string
           id?: string
           public?: boolean
+          tags?: string[]
           title?: string
           user_id?: string
         }
@@ -115,6 +118,7 @@ export type Database = {
           liked: boolean | null
           likes: number | null
           public: boolean | null
+          tags: string[] | null
           title: string | null
           user_id: string | null
         }
@@ -130,8 +134,6 @@ export type Database = {
       }
     }
     Functions: {
-      delete_deck: { Args: { p_id: string }; Returns: undefined }
-      rename_deck: { Args: { p_id: string; p_title: string }; Returns: string }
       toggle_deck_like: { Args: { p_id: string }; Returns: boolean }
       toggle_deck_public: { Args: { p_id: string }; Returns: boolean }
       upsert_deck: {
@@ -139,9 +141,24 @@ export type Database = {
           p_card_ids: Json
           p_id: string
           p_public: boolean
+          p_tags: string[]
           p_title: string
         }
-        Returns: string
+        Returns: {
+          card_ids: Json
+          created_at: string
+          id: string
+          public: boolean
+          tags: string[]
+          title: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "decks"
+          isOneToOne: true
+          isSetofReturn: false
+        }
       }
     }
     Enums: {

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Deck } from '~/types/deck';
+import type { Decklist } from '~/types/deck';
 
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const snackbarState = useSnackbarState();
 
 const props = defineProps<{
-  deck: Deck;
+  deck: Decklist;
 }>();
 
 const isLoading = ref<boolean>(false);
@@ -14,8 +14,8 @@ const liked = ref<boolean>(false);
 const likes = ref<number>(0);
 
 watchEffect(() => {
-  liked.value = props.deck.liked;
-  likes.value = props.deck.likes;
+  liked.value = props.deck.liked ?? false;
+  likes.value = props.deck.likes ?? 0;
 });
 
 const likeOrUnlike = async () => {
@@ -27,7 +27,7 @@ const likeOrUnlike = async () => {
     data:newLiked,
     error,
   } = await supabase.rpc('toggle_deck_like', {
-    p_id: props.deck.id!,
+    p_id: props.deck.id,
   });
 
   if (error) {

@@ -29,6 +29,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  routeRules: {
+    '/my-decks/**': { ssr: false },
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/supabase',
@@ -42,6 +45,7 @@ export default defineNuxtConfig({
         '/account',
         '/change-password',
         '/my-decks',
+        '/my-decks/*',
         '/logout',
       ],
       saveRedirectToCookie: true,

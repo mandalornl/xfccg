@@ -391,6 +391,6 @@ const clearSelection = () => {
       </template>
     </v-data-table>
     <card-dialog v-model="selectedCard" />
-    <deck-view v-model="selectedDeck" />
+    <deck-dialog v-model="selectedDeck" />
   </layout-content>
 </template>

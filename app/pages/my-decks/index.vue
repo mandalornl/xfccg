@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import type { SortBy } from '~/types/sort';
+import type { SortBy } from '~/types/sort-by';
 import type { Deck } from '~/types/deck';
 
 const route = useRoute();
+const router = useRouter();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const {
   deckSize,
-  deckState,
+  setDeck,
 } = useDeckState();
 const snackbarState = useSnackbarState();
 
@@ -17,6 +18,7 @@ useHead({
 
 const headers = [
   { title: '', key: 'actions', nowrap: true, width: 0, sortable: false },
+  { title: '', key: 'public', nowrap: true, width: 0, sortable: false },
   { title: 'Title', key: 'title', nowrap: true },
   { title: 'Tags', key: 'tags', nowrap: true },
   { title: 'Created At', key: 'created_at', nowrap: true },
@@ -44,17 +46,42 @@ const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
 const isLoading = ref<boolean>(false);
 
-const userId = computed<string | undefined>(() => user.value?.sub);
+const routeQuery = computed<Record<string, string | number | undefined>>(() => ({
+  page: page.value > 1 ? page.value : undefined,
+  perPage: perPage.value !== 30 ? perPage.value : undefined,
+  sortBys: sortBys.value.length > 0 ? JSON.stringify(sortBys.value) : undefined,
+}));
+
+watch(routeQuery, (query) => {
+  const resolvedRoute = router.resolve({
+    query,
+  });
+
+  if (resolvedRoute.fullPath === route.fullPath) {
+    return;
+  }
+
+  return navigateTo(resolvedRoute, {
+    replace: true,
+  });
+});
 
 const {
   data,
   status,
   refresh,
 } = useAsyncData('decks', async () => {
+  if (!user.value?.sub) {
+    return {
+      decks: [],
+      count: 0,
+    };
+  }
+
   let query = supabase
     .from('decks')
     .select('*', { count: 'exact' })
-    .eq('user_id', userId.value!)
+    .eq('user_id', user.value.sub)
     .range((page.value - 1) * perPage.value, (page.value * perPage.value) - 1);
 
   for (const sortBy of sortBys.value) {
@@ -99,7 +126,7 @@ const deleteDeck = async (deck: Deck) => {
   const { error } = await supabase
     .from('decks')
     .delete()
-    .eq('id', deck.id!);
+    .eq('id', deck.id);
 
   if (error) {
     useDebug(error);
@@ -125,7 +152,7 @@ const toggleDeckPublic = async (deck: Deck) => {
     data:newPublic,
     error,
   } = await supabase.rpc('toggle_deck_public', {
-    p_id: deck.id!,
+    p_id: deck.id,
   });
 
   if (error) {
@@ -151,9 +178,18 @@ const openInCards = (deck: Deck) => {
     return;
   }
 
-  deckState.value = { ...deck };
+  setDeck(deck);
 
   return navigateTo('/cards');
+};
+
+const editDeck = (_event: Event, data: { item: Deck}) => {
+  return navigateTo({
+    name: 'my-decks-id',
+    params: {
+      id: data.item.id,
+    },
+  });
 };
 </script>
 
@@ -168,6 +204,7 @@ const openInCards = (deck: Deck) => {
       :items="data.decks"
       :items-length="data.count"
       :items-per-page-options="itemsPerPageOptions"
+      @click:row="editDeck"
     >
       <template #[`item.actions`]="{ item }">
         <v-menu>
@@ -182,6 +219,10 @@ const openInCards = (deck: Deck) => {
           </template>
           <v-list>
             <v-list-item
+              :to="{ name: 'my-decks-id', params: { id: item.id } }"
+              title="Edit"
+            />
+            <v-list-item
               :disabled="isLoading"
               :title="item.public ? 'Unpublish' : 'Publish'"
               @click="toggleDeckPublic(item)"
@@ -192,12 +233,20 @@ const openInCards = (deck: Deck) => {
             />
             <v-divider />
             <v-list-item
+              :loading="isLoading"
               base-color="error"
               title="Delete"
               @click="deleteDeck(item)"
             />
           </v-list>
         </v-menu>
+      </template>
+      <template #[`item.public`]="{ value }">
+        <v-icon
+          v-tooltip:top="value ? 'Published' : 'Unpublished'"
+          :color="value ? 'primary': 'disabled'"
+          icon="mdi-web"
+        />
       </template>
       <template #[`item.tags`]="{ value }">
         <x-tags :items="value" />

@@ -1,15 +1,12 @@
 import type { Deck } from '~/types/deck';
 
 const defaultValue = (): Deck => ({
-  id: null,
-  title: null,
+  id: '',
+  title: '',
   card_ids: {},
-  created_at: null,
+  created_at: '',
   public: false,
-  user_id: null,
-  created_by: null,
-  likes: 0,
-  liked: false,
+  user_id: '',
   tags: [],
 });
 
@@ -20,6 +17,18 @@ export const useDeckState = () => {
     Object.values(deckState.value.card_ids).reduce((total, quantity) => total + quantity, 0)
   ));
 
+  const setDeck = (deck: Deck)=> {
+    deckState.value = Object.fromEntries(
+      Object.entries(defaultValue()).map(([
+        key,
+        defaultValue,
+      ]) => ([
+        key,
+        deck?.[key as keyof Deck] ?? defaultValue,
+      ]))
+    ) as unknown as Deck;
+  }
+
   const clearDeck = () => {
     deckState.value = defaultValue();
   };
@@ -27,6 +36,7 @@ export const useDeckState = () => {
   return {
     deckState,
     deckSize,
+    setDeck,
     clearDeck,
   };
 };

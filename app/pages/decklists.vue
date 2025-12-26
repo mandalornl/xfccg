@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import type { Deck } from '~/types/deck';
+import type { Decklist } from '~/types/deck';
 import type { SortBy } from '~/types/sort-by';
 
 const route = useRoute();
 const router = useRouter();
 const supabase = useSupabaseClient();
+const user = useSupabaseUser();
 const snackbarState = useSnackbarState();
 const {
-  deckState,
   deckSize,
+  setDeck,
 } = useDeckState();
 
 useHead({
@@ -33,7 +34,7 @@ const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
   (route.query[key] as string) || defaultValue
 );
 
-const getSortByValue = (): SortBy<Deck>[] => {
+const getSortByValue = (): SortBy<Decklist>[] => {
   try {
     const sortBys = getRouteQueryValue('sortBys', '[ { "key": "created_at", "order": "desc" } ]');
 
@@ -47,8 +48,8 @@ const getSortByValue = (): SortBy<Deck>[] => {
 const search = ref<string>(getRouteQueryValue('search'));
 const page = ref<number>(Number(getRouteQueryValue('page', '1')));
 const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
-const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
-const selectedDeck = ref<Deck | undefined>();
+const sortBys = ref<SortBy<Decklist>[]>(getSortByValue());
+const selectedDeck = ref<Decklist | undefined>();
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedDeck.value) {
@@ -79,7 +80,7 @@ watch(routeQuery, (query) => {
   });
 });
 
-const fetchDecks = async (): Promise<{ decks: Deck[], count: number }> => {
+const fetchDecks = async (): Promise<{ decks: Decklist[], count: number }> => {
   let query = supabase
     .from('decklists')
     .select('*', { count: 'exact' })
@@ -95,7 +96,7 @@ const fetchDecks = async (): Promise<{ decks: Deck[], count: number }> => {
     data:decks,
     count,
   } = await query
-    .overrideTypes<Deck[], { merge: false }>()
+    .overrideTypes<Decklist[], { merge: false }>()
     .throwOnError();
 
   return {
@@ -104,18 +105,18 @@ const fetchDecks = async (): Promise<{ decks: Deck[], count: number }> => {
   };
 };
 
-const fetchDeck = async (id: string): Promise<null | Deck> => {
+const fetchDeck = async (id: string): Promise<null | Decklist> => {
   const { data } = await supabase
     .from('decklists')
     .select()
     .eq('id', id)
     .maybeSingle()
-    .overrideTypes<Deck, { merge: false }>();
+    .overrideTypes<Decklist, { merge: false }>();
 
   return data;
 };
 
-const getDeckByRouteId = async (decks: Deck[]): Promise<null | Deck> => {
+const getDeckByRouteId = async (decks: Decklist[]): Promise<null | Decklist> => {
   if (!route.query.id) {
     return null;
   }
@@ -157,7 +158,7 @@ const {
     deck: null,
     decks: [],
     count: 0,
-  })
+  }),
 });
 
 watchEffect(() => {
@@ -168,11 +169,11 @@ watchEffect(() => {
   selectedDeck.value = { ...data.value.deck };
 });
 
-const openDeck = (event: Event, data: { item: Deck }) => {
+const openDeck = (_event: Event, data: { item: Decklist }) => {
   selectedDeck.value = { ...data.item };
 };
 
-const openInCards = (deck: Deck) => {
+const openInCards = (deck: Decklist) => {
   if (
     deckSize.value > 0
     && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
@@ -180,7 +181,7 @@ const openInCards = (deck: Deck) => {
     return;
   }
 
-  deckState.value = { ...deck };
+  setDeck(deck);
 
   return navigateTo('/cards');
 };
@@ -224,6 +225,15 @@ const shareLink = async (event: Event) => {
           </template>
           <v-list>
             <v-list-item
+              title="View"
+              @click="selectedDeck = { ...item }"
+            />
+            <v-list-item
+              v-if="user?.sub === item.user_id"
+              :to="{ name: 'my-decks-id', params: { id: item.id } }"
+              title="Edit"
+            />
+            <v-list-item
               title="Open in Cards"
               @click="openInCards(item)"
             />
@@ -245,10 +255,15 @@ const shareLink = async (event: Event) => {
       <template #[`item.tags`]="{ value }">
         <x-tags :items="value" />
       </template>
+      <template #[`item.created_by`]="{ value, item }">
+        <span :class="{ 'text-primary': item.user_id === user?.sub }">
+          {{ value }}
+        </span>
+      </template>
       <template #[`item.likes`]="{ item }">
         <deck-toggle-like :deck="item" />
       </template>
     </v-data-table-server>
-    <deck-view v-model="selectedDeck" />
+    <deck-dialog v-model="selectedDeck" />
   </layout-content>
 </template>
