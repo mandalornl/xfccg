@@ -16,6 +16,7 @@ const color = getColorByCost('resource');
     :size="small ? 16 : 20"
     :color="color"
     rounded
+    tag="span"
   >
     <v-icon
       :size="small ? 12 : 16"
