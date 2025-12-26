@@ -1,0 +1,262 @@
+[
+  {
+    "question": "1. Who is manufacturing the game?",
+    "answer": "United States Playing Cards of Cincinnati Ohio, will manufacture and distribute the game worldwide. USPC has been manufacturing playing cards since 1880. Bee, Bicycle and Aviator are all brands of playing cards that USPC manufactures. Based on a March 1996 TRUST Report, USPC is the number one playing card company in the world selling cards in over 70 different countries."
+  },
+  {
+    "question": "2. How many cards are in the set and how will the cards be sold?",
+    "answer": "There are 354 cards in the set including promotional cards. They will be available in 60 card starter decks and 15 card booster packs. The suggested retail price is 9.50 for Starters and 2.99 for Boosters."
+  },
+  {
+    "question": "3. What are the rarities of the cards?",
+    "answer": "There will be common, uncommon, rare and ultra-rare cards in the card set. The rarity breakdown for a 60-card Starter Set are as follows: 25 Common, 12 Uncommon, 3 Rare, and 20 Fixed cards. The rarities for a 15-card Booster Pack are as follows: 9 Common, 4 Uncommon, 2 Rare (Note: in every 1 in 18 Booster, instead of 2 Rares, there will be 1 Rare and 1 Ultra Rare)"
+  },
+  {
+    "question": "4. I heard that you have created promotional cards for this card set. Can you tell me how these cards will (be) distributed?",
+    "answer": "Currently, there are 4 promotional cards that will be distributed mostly through game magazines. These cards, created exclusively for the following parties, will be included in upcoming issues of SCRYE, DUELIST, GAMER, and INQUEST magazines, as well as AMERICAN ENTERTAINMENT, an online game retailer. Additionally, we have created a promotional card that was only available to people who attended this year's GENCON. All of these cards can be used to play the X-FILES CCG and have very powerful game effects. To find out which magazine issues these promotional cards will be inserted in and to see a scanned image of the GENCON 'No One So Paranoid' Promotional card, jump on over to the X-FILES CCG Promotional Card Page."
+  },
+  {
+    "question": "5. What are the rarities of the Fox Mulder and Dana Scully cards?",
+    "answer": "There are both common and ultra-rare versions of the Fox and Dana cards. The common versions will allow you to collect them easily. After all, we figure that a game without Fox and Dana just wouldn't be The X-Files. For the collector, there are ultra-rare versions. This will enhance the collectability of your X-Files cards."
+  },
+  {
+    "question": "6. How can I tell if I have a Common or an Ultra Rare card?",
+    "answer": "Ultra Rare cards can only be found in Booster Packs, and they will have a different image and serial number that sets them apart from their Common or 'Fixed' counterparts."
+  },
+  {
+    "question": "7. Did NXT Games use every X-FILES episode to create this card set?",
+    "answer": "No. We only used the first two X-FILES seasons to create this first card set. An expansion set, due out later this year, will be based on the third season."
+  },
+  {
+    "question": "8. Why has it taken so long for the game to come out?",
+    "answer": "It has been a challenging task to say the least, to coordinate all the design, manufacturing, and proprietary aspects between all the parties involved (FOX, USPC, NXT, NLS) in bringing the game to life. Collectively, we all wanted to make sure that in the end, we had created the best possible game between all of us."
+  },
+  {
+    "question": "9. What are 'fixed' cards?",
+    "answer": "'Fixed' cards are cards that will be available only in Starter Decks. The reason for this is because we wanted the game (to be) able to be played right out of the box, thus all the cards in a given deck are designed to work with each other. There will be 5 different Starter Decks, and you may find a 'fixed' card crossover in 2-3 of the decks, but not in all of them."
+  },
+  {
+    "question": "10. The Adversary card 'Squeeze' has a listed LRC value of N / A. The Adversary card 'Living Machine' has a listed LRC value of zero. Both say that the LRC round of combat is skipped, what is the difference?",
+    "answer": "There is no difference, the 0 is a typo that will be fixed in later editions. Normally there would not be an LRC round in either case. There are combat cards that add a round of LRC combat prior to the normal round of LRC combat. If one of these were used, the Adversaries' LRC value would be 0, and could be modified with other combat cards. If a card which added a round of LRC were played, the Agents would get to use their LRC against the Adversary."
+  },
+  {
+    "question": "11. What does the green X in the left hand corner mean?",
+    "answer": "Answer: The X denotes that this is an advanced game card and is not used in the basic game. If you are playing the basic game, remove all cards with this green X from your Bureau Deck."
+  },
+  {
+    "question": "12. Agent Skinner gives me 3 RP When in the Bureau so it is advantageous to keep him there. Can he also add his Bureaucracy skill to Site skill checks in the Field?",
+    "answer": "No, only the Agents that were sent there in the beginning of the Investigation Phase may add their skills. This also means that Agents who are in the Field, but not sent to a particular Site, cannot add their skills to any skill checks at that Site."
+  },
+  {
+    "question": "13. Why would you ever play a Bluff face up on a Site?",
+    "answer": "When you play a Bluff face down on a Site, the Investigating player now has the option to put-off investigating that Site (the Site remains in the Field with the attached Bluffs). When you play Bluffs face up on a Site, the Investigating Team cannot decide to put-off the investigation (since they have already started it). The downside is that Bluffs played in this way cost more. On(e) other thing that may not be apparent is that Bluffs played face up like this must still be attached to a Site, with all that that entails."
+  },
+  {
+    "question": "14. How big are the print runs?",
+    "answer": "We will be running print runs of 80 million cards per expansion--with no 'Unlimited' runs."
+  },
+  {
+    "question": "15. How does damage work?",
+    "answer": "An Agent cannot be reduced to below 0 Health. If an Agent took 8 damage and only had 5 Health, they would go to the Hospital with 0 Health. Cards that reduce damage would reduce the damage before it was applied (i.e. a Kevlar vest could reduce the 8 points to 5 points, still sending the Agent to the Hospital). A card that Heals damage is used after damage is applied, and that is why it would keep you from going to the Hospital. Note that Agents going to the Hospital cannot contribute their skills to a subsequent skill check, therefore if the healing card requires a skill check to use, the Agent going to the Hospital cannot contribute skills, someone else in the Team will have to do it."
+  },
+  {
+    "question": "16. Who's Mulder can Phoebe Green bring to help her at a location?",
+    "answer": "Phoebe Green can only affect Mulder if he is in one of your own Teams, you cannot steal your opponents' Mulder!"
+  },
+  {
+    "question": "17. Are Agents (that start in the field) played or not? Is 'played' considered to be a card taken from hand or just any card in play?",
+    "answer": "Starting Agents are not 'played'. 'Played' cards come from your hand via the Bureau Deck."
+  },
+  {
+    "question": "18. Are the resource and conspiracy pools cumulative? (do they carry over into next turn)?",
+    "answer": "The RP and CP pools are present and constant for the whole game. Players are never subject to penalty because they have RP/CP left at the end of the turn. In fact, strategy dictates that you save up RP/CP so you can get a certain card (or) card combination."
+  },
+  {
+    "question": "19. If a card says to put it under a card as a reminder, can I put it in the discard pile and use other ways to remind me of the change? For example, training cards are not resources so they are supposed to go to the discard pile but on the card it's said to put it under the agent cards as a reminder.",
+    "answer": "No, the card remains in the field because it has become a 'part' of the Agent."
+  },
+  {
+    "question": "20. Should it have exactly 60 cards or 60 cards is the minimum?",
+    "answer": "60 cards is the minimum, although we wouldn't recommend having 1,000 cards in your deck."
+  },
+  {
+    "question": "21. Where can I get a copy of the card on page 15 of the advanced rule book? (Card name Agent Fox Mulder, picture of Scully.)",
+    "answer": "That's (a) graphic boo-boo that occurred on some of the rule books. You could call it the 'Sex Change' card if you wanted to."
+  },
+  {
+    "question": "22. My wife and I have been having a debate over the interpretation of the Smoke Screen card. Can you have the agents all in the bureau (in the basic game), make the 4+ bureaucracy skill check, then move the agents to the field and designate them to have the modifier of having no gov't adversaries affect the team? Or do you have to have one team in the bureau and one in the field for this card to work?",
+    "answer": "For this card to work, you must have at least one team of Agents in the Bureau, and one team in the Field at the time the card is played. This card is probably most useful if your Agent Team contains Skinner, who has a Bureaucracy skill of 4. In this instance, Skinner could make the skill check alone in the Bureau while the rest of your Agents are a Team in the Field. This card is a little more useful in the Advanced Game, because players are allowed to investigate more than 1 Site in the Investigation Phase."
+  },
+  {
+    "question": "23. Let us say I'm playing a(n) Advanced 2-player game with Torn. It's Tom's Case Assignment Phase, and he plays the 'Broad Street, Philadelphia, PA' site which has the keyword 'Criminal Investigation'. That is the only site he plays so the Bluff Phase begins. I decide to play the Bluff card 'Claude Peterson' under the Broad St. Site. Earlier in the game I had brought into play the Resource Witness 'Dr. Osborne', which allows me to add 1 resource token to my resource pool every time a keyword Government or Medical card is played. My question is: do I add the resource token to my resource pool now or when the Bluff is revealed?",
+    "answer": "You add the resource token when the Bluff is revealed.\n[NOTE: see question 31 from 2021 below for updated answer.]"
+  },
+  {
+    "question": "24. If an agent is abducted and the bureau pile is less than 10 cards, what do you do?",
+    "answer": "First you would set aside the remaining cards in your Bureau Deck, then reshuffle your Discard Pile into a new Bureau Deck--then you set on top of the Bureau Deck the cards which you set aside---and finally, you set your abducted Agent."
+  },
+  {
+    "question": "25. Can I still get Promo cards, and if so where?",
+    "answer": "You can find a list of where to find the promos on our web page: https://www.nxtgames.com. Some of the magazines are kind of dated, but maybe you could contact them and see if they have some back issues in stock--you can find their phone numbers on our page as well. Usually, if a promo card is gone--it's gone. However, don't despair if you can't get a particular card this time around--more promos are on the way!"
+  },
+  {
+    "question": "26. Some of the cards I got are messed up, or have a bad rarity distribution.",
+    "answer": "We had collating problems with some of the cards during the early part of production, so some of the sets floating around out there are less than perfect--we have jumped on this to fix the problem. If you feel that your cards are not up to standards contact uspcgames@aol.com to voice your concern--there is a good chance they'll be able to help you out."
+  },
+  {
+    "question": "27. I sent away for my Alien Technology (#PR96-0003-GAM) a while back and I still haven't gotten it... what's up?",
+    "answer": "That particular card is being distributed solely by American Entertainment--we don't have any ties to them other than they're passing out one of our cards. Here's their e-mail address if you would like to contact them personally: aecustserv@cs.com"
+  },
+  {
+    "question": "28. When a card says to shuffle the Bureau Deck, do (I) shuffle it together with the discard pile or just the cards that are left in the Bureau Deck?",
+    "answer": "Just the cards left in the Bureau Deck."
+  },
+  {
+    "question": "29. When Samuel Hartley (#308) is used to prevent an Agent from being removed from the game, is the Agent fully healed or must the Agent still go to the Hospital and regain Health as usual?",
+    "answer": "The Agent is fully healed, and remains in the current section."
+  },
+  {
+    "question": "30. If Trap (#292) is used to force combat between an Adversary and a single Agent and the Agent ends up going to the Hospital before the Adversary is killed, is the Adversary discarded or does it stay at the site and fight the remaining Agents?",
+    "answer": "The Adversary is discarded."
+  },
+  {
+    "question": "31. Can TRAVEL ARRANGEMENTS (#300) be used to let an Agent investigate more than one site per turn?",
+    "answer": "No, the Agent must move to a different table section."
+  },
+  {
+    "question": "32. On my Deep Throat (#222) UR card it says it can be used to ask one question about the opponents X-File. Afterwards it says discard. Does this mean put (it) in the discard pile or remove it permanently from the game?",
+    "answer": "He gets removed from the game."
+  },
+  {
+    "question": "33. When I am the conspiracy player and it is time to discard for conspiracy points, how many points do you get for cards like 'Relentless Pursuit' (#283) that have an X as the 'casting cost'?",
+    "answer": "Nada...zilch...zero."
+  },
+  {
+    "question": "34. My question is, if you only have one agent investigating a site and you play 'Run for it!' (#34) in response to your opponent playing an adversary card, does the adversary get discarded since there are no active agents in combat? Furthermore, does your agent then get to continue investigating the site?",
+    "answer": "The Adversary gets discarded, and the Agent continues to Investigate the Site (even though he/she is a big sissy for running)."
+  },
+  {
+    "question": "35. If I play The Cigarette Smoking Man Strikes (#230) and change the keyword on an agent to 'event' and then play Alien Experimentation (#290) can l negate the agent to the discard pile?",
+    "answer": "It's a good theory, but no. The reason being that 'The Smoking Man Strikes!' card can only change the keyword of cards that are temporary in the game--Agents are permanent."
+  },
+  {
+    "question": "36. Can players look at each others X-file notebook?",
+    "answer": "Yes--except that it might be bad strategy to do that during multi-player (games) (unless you tackle the other player and look through his notes)."
+  },
+  {
+    "question": "36a. Let's say two people are playing and they've both revealed that their X-file's motive is ideology. The non-active player has an adversary with Result Site as an activator. The active player plays a site but it doesn't have result as a keyword. The non-active player uses his ideology to change one of the keywords on the site to result so he can play his adversary. Can the active player use his ideology to change the keyword back to normal?",
+    "answer": "Sure--both players will 'burn th(r)ough' the added benefit and cancel each other out."
+  },
+  {
+    "question": "37. Mulder (#163/#169) gets two resource points for the buying of cards only. Does he have to use those points that turn?",
+    "answer": "You betcha."
+  },
+  {
+    "question": "38. Core Training (#307) takes an agent out of play for one full turn. Does that Mean like in a two player game, My agent gets Core Training, is out for the 2nd players turn, then comes in my very next turn? or would I have to wait til the turn after?",
+    "answer": "Your Agent misses your next turn, and returns the turn after."
+  },
+  {
+    "question": "39. When the active player plays a site, can someone else play a 'negate keyword' card to cancel that site? This could be important in the basic game, where removing a site from play virtually ends the active player's turn.",
+    "answer": "Yes sir, you can."
+  },
+  {
+    "question": "40. Frohike (#304) states that he negates an event played against a team. In a Game, I tried to use Eve 7 (#231) to shift a bluff, and my opponent countered with Frohike. Is this legal?",
+    "answer": "Yes."
+  },
+  {
+    "question": "41. The Lt. Brian Tillman (#164) agent card has a game effect that reads 'place 1 RP on this card. This RP may be used to pay for any keyword equipment or combat card. If you use this RP, replace it during your briefing phase.' My question is, does this 1 RP (pay) for any equipment or combat card in its entirety, independent of the total cost, or is it just 1 RP towards whatever the card costs to deploy?",
+    "answer": "Yes, the latter--1 RP towards whatever the card costs to deploy."
+  },
+  {
+    "question": "42. Do cards like Dr. Nollette (#210) (Adds 1 RES to pool every time a Keyword SCIENCES and OBSERVATION card is played) stay in play?",
+    "answer": "Yes, because of the Keyword 'Resource'--defined in the rules."
+  },
+  {
+    "question": "43. It was her turn and she played a site card. I played the Holtzman D.S.A. (#97) bluff card. She played the Detective Frank Briggs (#192) card, at which point I commented that I thought she couldn't play that particular card since the Activators for it were 'Active' and 'Criminal Investigation.' Her FIRST Activator was valid (it was her turn), but the second Activator, 'Criminal Investigation,' was not a keyword on any of MY played cards. It was, however, a keyword on HER site card. Question: Was her play of the Det. Frank Briggs card within the rules?",
+    "answer": "Yes, because for Witnesses, they can be on your own card in play--they contribute to a Site skill check."
+  },
+  {
+    "question": "44. In what order are Bluffs resolved, with reference to those cards that are face (up) and face down? This does become a problem in multi-player games.",
+    "answer": "Bluffs are resolved in the order that the player who played them chooses--because it is assumed that this is how he would play in a last played, first resolved scenario. Players need to work this out with each other for the common good of the multiplayer game."
+  },
+  {
+    "question": "45. In multi-player games, why would any player want to investigate more than 1 other player's X-File? This would require more than 1 X-File sheet, and you win the game when you reveal any other opponent's X-File, not every player's.",
+    "answer": "They probably wouldn't, unless the person they first choose to go after has a deck that completely shuts them down."
+  },
+  {
+    "question": "46. Is it possible to play a conspiracy card (specifically something like Unexplainable Time Loss (#257)) before the investigating player draws his free card (technically the first action of the turn)?",
+    "answer": "If playing the Advanced game, yes, but you've got to be quick and do it before the other player draws their card. If playing the Basic game, no."
+  },
+  {
+    "question": "47. On cards like 'EXPERT BRIEFING' (#280) and 'SWAT TRAINING' (#235), when you play it on an agent in the bureau and take them out of play, will they be back on your next turn, or will it be the turn after your next turn?",
+    "answer": "Your turn after next."
+  },
+  {
+    "question": "48. On the card 'Overwhelming Force' (#244) it says you can play three adversaries simultaneously. Does that mean you can just play that card and don't have to pay for them?",
+    "answer": "No, it means you fight 1 combat which all 3 Adversaries attack, instead of 3 separate combat turns."
+  },
+  {
+    "question": "49. On Krycek's (#162/#170) card, it says you may add to the conspiracy pool instead. Does this mean just his RES points or everyone's, and can you add some to the conspiracy pool and some to the resource pool?",
+    "answer": "Yes you can split Krycek's point contribution. In addition, this effect is not passed on to the other members of the team--this effect works only with Krycek."
+  },
+  {
+    "question": "50. Though you may start the game with four agents, can you add more to the bureau deck and can they come into play later on even though you still have four agents in play?",
+    "answer": "Yes, they act like Agents, except they go away at the end of the turn."
+  },
+  {
+    "question": "51. If you have an agent in the hospital and they have healed at least one (they went in w/ max damage), can you use 'Travel Arrangements' (#300) to yank them out of the hospital for a skill check or something. And, since they're out of the hospital and have at least one health, can they stay active in the field or bureau?",
+    "answer": "Nope... if your Agent gets hurt, he/she needs to heal, no matter what."
+  },
+  {
+    "question": "52. The adversary 'Crew Cut Man' (#336) enter(s) in a duel with one of my opponent(s). If he wins and still has lives left, can he enter combat with another agent?",
+    "answer": "No, he's basically designed to take out one agent."
+  },
+  {
+    "question": "53. What are the letters 'hidden' in some (of) the cards stand for?",
+    "answer": "That's a surprise."
+  },
+  {
+    "question": "54. Is there any agent in Boosters or only in Starters?",
+    "answer": "You can find agents in Boosters--however as is known already, there was a glitch in the collating of some of the cards during part of the production phase (see #26 above)"
+  },
+  {
+    "question": "55. Can you play Event cards that DO NOT negate an adversary once an adversary has been played? (eg. I play an adversary and you can't negate it, however, you have a Grid Pattern Search. (#286)) Can you play the Grid Pattern Search (which does not negate the adversary) to get another event to negate the adversary? Can you only play combat cards once combat is started?",
+    "answer": "Once all players involved have mutually agreed that combat has begun, no you cannot. The investigating player should be able to play a card such as Grid Pattern Search, BEFORE the actual combat phase has taken place."
+  },
+  {
+    "question": "56. Can you guess your opponent's X-File at any time? Can you guess it as many times as you wish per turn? (I understand that if you guess wrong, your opponent gets to ask you a question).",
+    "answer": "You can only guess your opponent's X-File ONCE per turn, and only AFTER a site has been guessed successfully."
+  },
+  {
+    "question": "57. The multi site card is played in the field. For example Baltimore, MD (#86) which enables me, as an investigator, to ask one METHOD or RESULT question. I will announce (that) I'm going to ask (a) METHOD question. Is my opponent allowed to play an Adversary with the keyword RESULT to prevent my asking?",
+    "answer": "Yes, your opponent can place down that Adversary, since it matches the Keyword of the card--regardless as to what you announced you were going to investigate."
+  },
+  {
+    "question": "58. The Manitou Stalks His Prey (#352) card states that the damage that the manitou inflict(s) on an agent cannot be healed until a healing card is played on him. But what about agents with healing skill? Can they be used to heal the damage(d) agent (i.e. the damaged agent was sent to the hospital, an agent with healing skill(s) goes to the hospital during the deployment phase to heal the damaged agent)?",
+    "answer": "In this particular instance, you may only use a healing card, or any card that has 'Healing' as a Keyword."
+  },
+  {
+    "question": "59. The game effect on the card 'Overwhelming Force' (#244) reads as follows: You may now play up to three Adversary cards simultaneously. All cards played using this card count as one Adversary card for game purposes (e.g. the 'Overwhelming Force' card and all Adversaries can be negated as one card). The Adversaries all deal damage and take damage separately. Does this mean that the Adversaries' Activators all have to match my opponent's Site keywords or can they all be played off of the O.F. keywords? In other words could I play Result, Motive, and Affiliation Adversaries of one Keyword Result Site?????",
+    "answer": "In order to be able to party together, all the Adversaries need to match the Keyword of the Site."
+  },
+  {
+    "question": "60. Last night my son used Phoebe Green (#168) to pull Mulder out of the hospital for a site check. He said it was legal because her card says 'from any section'. I thought that an agent cannot be pulled out of the hospital until fully healed. Please give a decision on this.",
+    "answer": "Mulder has to be healthy, in order for this effect to work (i.e. he has to be out of the hospital or filling out any kind of Workers' Comp forms)."
+  },
+  {
+    "question": "61. The card 'Relentless Pursuit' (#283) can be played by the active player to prevent the opposing player from drawing cards. Looking at the rules, the opposing player can only draw during the Briefing Phase, but playing event cards is only possible during the Investigation Phase. So what's the use of this card?",
+    "answer": "If an event card does not specify that it can only be played in the investigation phase (i.e. investigation activator) you may play it at any point in the turn."
+  },
+  {
+    "question": "62. Can you use bluff cards to minus ONE agent's skill? For ex., if I played an adversary on Hosteen (#161), but then the opponent played Hide (#10), BUT then could I use a bluff to minus Hosteen's subterfuge to 0, so that Hide would have no effect?",
+    "answer": "Yes, but you have to do it BEFORE combat begins (only combat cards are allowed during combat)."
+  },
+  {
+    "question": "63. You answered me recently that adversaries are played one at a time. Yet on some combat cards, ex,- Watch out (#30), say that 'You now choose which of the Agents or ADVERSARIES under your control take the damage.' If you play only one adversary at a time, then why does this combat card say that you may choose which adversaries take the damage?",
+    "answer": "Some Adversaries create other Adversaries, such as 'Kiss of the Vampire' (#354)--'Overwhelming Force' (#244) is a card that allows you to attack with more than one Adversary on one site---so 'Watch Out' is designed to counter these kinds of circumstances."
+  },
+  {
+    "question": "64. The card 'Krycek, the Double Agent' (#265) states that if you play it on an investigating team containing Alex Krycek (#162/170), Krycek fights against the Agents (something like that...). Who are these agents ? The Agents that belong to the player who played 'Krycek, the Double Agent' or the Agents that are part of the Investigating team that has Krycek ?",
+    "answer": "The latter--Krycek fights his own Agents (or in other words, the Investigative player's Agents). You would treat Krycek as a sort of Adversary, and engage in combat (LRC, and CRC)."
+  }
+]

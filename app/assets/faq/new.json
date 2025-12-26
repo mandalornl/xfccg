@@ -1,0 +1,318 @@
+[
+  {
+    "question": "1. Does the Bluff card have to be face down in order to have 'Langly' (#254) discard it? Explain the card text 'attached to a Site'.",
+    "answer": "No, Langly can be used against a Bluff that is either face up or face down. Bluffs can only be played when a Site is also being played, so 'attached' is just reinforcing that rule. The Activator of 'Site' is missing on premiere printed cards but is found on newer cards. Also, see question #48 below."
+  },
+  {
+    "question": "2. Certain Agents have a Game Effect of a Resource token getting replenished during the Briefing phase. Does this token come from your Resource pool total or is it free? Does this Resource token pay for the whole card or just 1 Resource point toward the total cost of that card?",
+    "answer": "This Resource point is free and does not come from your Resource pool. It pays for just 1 RP towards the card's total cost, see question 41 from 1997 above"
+  },
+  {
+    "question": "3. A site has 2 or more Bluffs face down under it and the first one stops a successful Site investigation; can the other ones also be played?",
+    "answer": "Yes, as long as the owning player can still pay for them and they are actual Keyword Bluff cards"
+  },
+  {
+    "question": "4. Does the 60 card minimum deck include your Agents and X-File in the total (e.g. 4 Agents, 1 X-File, plus 55 or 60 deck cards)?",
+    "answer": "No, the 60 card minimum does not include your starting Agents or X-file card, so you should have 60+ deck cards - see page 5 of the Advanced rulebook"
+  },
+  {
+    "question": "5. Were there no new Adversary, Equipment or Combat cards to be released in the 22364 set? Prototypes show a range of card numbers 520 - 645.",
+    "answer": "?"
+  },
+  {
+    "question": "6. Can 'Teamwork' (#7-SUR) be played when only one Agent is on the team?",
+    "answer": "Yes, however there is no 'I' in 'Teamwork'"
+  },
+  {
+    "question": "7. Since the Game Effect of 'Agent Janus' (#177) states 'In addition', does 'Agent Janus' have to use his Resource token first before he can heal one point of damage on another Agent?",
+    "answer": "Yes"
+  },
+  {
+    "question": "8. Was there going to be a 'field office crime lab' as listed on some Equipment cards from the premier set?",
+    "answer": "?"
+  },
+  {
+    "question": "9. Can you take a guess at your opponent's X-File if you received a 'no' answer to the Characteristic question on the Site? The Rule Book makes it seem like you can.",
+    "answer": "Yes, but if you are wrong your opponent gets a free penalty question"
+  },
+  {
+    "question": "10. Since 'Ceremony' (#456) is played in the field, can the damaged Agent still contribute skills since he/she is still in the field?",
+    "answer": "No, the Agent can not contribute to any skill checks until he/she is fully healed, similar to as if they were in the hospital"
+  },
+  {
+    "question": "11. Which team does 'Assassinated' (#373) give 'a permanent skill increase of +1' since it is a Conspiracy card? Is this an alternate function of the card instead of playing it on a Witness?",
+    "answer": "The Conspiracy player can choose to not negate a Witness and place this card beneath his/her own Agent (though not currently investigating), however a Witness must currently be in play"
+  },
+  {
+    "question": "12. Five cards give Training to an Agent in the Bureau. Does the increased ability stay in effect for only the next turn, once only when needed, or like a resource the ability stays?",
+    "answer": "The new ability stays like a resource"
+  },
+  {
+    "question": "13. 'Evidence Overlooked' (#246) is a Resource card and it states 'to the site skill check'. Can this be interpreted as 'to a site skill check' and use at a later time?",
+    "answer": "No, this is to be played on the current site"
+  },
+  {
+    "question": "14. Are Adversaries still affected by Long Range Combat if they have 'N/A' for their LRC?",
+    "answer": "It depends on the game text on the Adversary card if the LRC round is skipped or not. If the LRC round is not skipped, then the Adversary has zero for LRC and will be injured by the Agents LRC. Combat of '0' does not always equal 'N/A'. Also, see question 10 from 1997 above"
+  },
+  {
+    "question": "15. Can an Agent choose to go to the Hospital during a Site investigation if he/she gets injured during Combat at that site (not enough to be automatically sent there) or does he/she need to wait for the Deployment phase?",
+    "answer": "If an Agent is not fully damaged sending him/her to the Hospital, then the Agent will have to wait until the Deployment phase to go voluntarily"
+  },
+  {
+    "question": "16. Does 'Cellular Phone' (#326) allow a damaged Agent in the Hospital contribute skills to a skill check?",
+    "answer": "No, Agents in the Hospital may not contribute their skills to any skill checks, see Advanced and Basic rulebooks page 20. Cell phones being turned off in a hospital used to be a common courtesy"
+  },
+  {
+    "question": "17. Can 'Travel Arrangements' (#300) move a damaged Agent from the Hospital to the field to contribute skills or must he/she reach their Health level high enough to leave the Hospital?",
+    "answer": "The Agent must be well enough to leave the Hospital first, see Advanced and Basic rulebooks page 20"
+  },
+  {
+    "question": "18. Must you be the Active player in order to use the Game Effects of your Agents (an Agent card does not have any Activators)? Must your Agents be in the field or have full health in order to use their Game Effects?",
+    "answer": "??? You must be the Active player in order to use the Game Effects of your starting Agents. The Agent can be in any section of the game in order to use his/her Game Effect. THIS MAY NOT BE CORRECT AS AGENT PATTERSON'S GAME EFFECT IS PLAYED AS A CONSPIRACY CARD"
+  },
+  {
+    "question": "19. If you use the Game Effect of 'Albert Hosteen' (#161) and the opponent has two of the targeted card in their deck, does the effect hold true for only the first time either one is played?",
+    "answer": "Yes, just the first time either one of them is played"
+  },
+  {
+    "question": "20. One of the USPC marketing employees mentioned a Japanese promo card - any details on that?",
+    "answer": "?"
+  },
+  {
+    "question": "21. Can 'Unexplainable Time Loss' (#257) be negated? If the team does not make the skill check, does the player's turn end immediately even if they have sites unresolved, therefore they can not play cards like 'No One So Paranoid' (#4-GCon) or 'Frohike' (#304) either?",
+    "answer": "Even though 'immediately' is such a strong word, 'Unexplainable Time Loss' can be countered - a Skill Check Subroutine is initiated. If it is not countered, any Sites played without Bluffs underneath are discarded. Also see question 46 from 1997 above"
+  },
+  {
+    "question": "22. When could an Active player use the card 'Mrs. Mulder' (#382)? Since the card has two seperate Activators (Alien Investigation and Behavioral), there are no sites that have both of those as Keywords.",
+    "answer": "This card should have had a '/' instead of a ',' between those 2 Activator words - meaning it is either Alien Investigation or Behavioral, but not both. Usually the comma does mean that all of the Activator words need to be in effect. Cards with Activators of 'Active, Conspiracy' are also an example of when a slash should have been used instead of a comma"
+  },
+  {
+    "question": "23. When using 'Hack Into Government Files' (#278), the selected card must only come from your Bureau deck or discard pile, correct? No where else?",
+    "answer": "The selected card may come from your Bureau deck or Discard pile, but it may NOT be a card already removed from the game or NOT a card from outside of your 60+ starting deck"
+  },
+  {
+    "question": "24. What happens to Equipment when an Agent is forced to go to the Hospital from damage? What ways can an Agent lose equipment?",
+    "answer": "The Equipment goes with the Agent. There are counter cards such as Events & Adversaries that can remove Equipment cards, specifically written in the card text. Discarding Equipment when an Agent is forced into the Hospital was an early unofficial gameplay, it is not part of the official rules"
+  },
+  {
+    "question": "25. On page 29 of the Advanced Rule Book, it states in the Note that 'two of the same card can't be used for the same Skill Check Subroutine'. Does that also mean two of the same Event card or two of the same Equipment card can not be used, even if those cards are attached to two separate Agents?",
+    "answer": "Correct, only one of each card can be played. Two different Agents can have the same Equipment card but if both are on the same team, only one of those Equipments can be used on the same Skill Check. However, in a Combat situation, the Agents may carry & use the same Equipment card, as long as each Agent is only utilizing one Equipment card to support his/her Combat skills"
+  },
+  {
+    "question": "26. After using 'Surfing the Net' (#240), even though this is an Active card, can the player use the facedown card during the Conspiracy Phase, since Event and Resource are the only Keywords added?",
+    "answer": "Correct, you have to be the Active player to 'steal' the card but can play it when appropriate: either Active or Conspiracy"
+  },
+  {
+    "question": "27. On the text of 'Mostow's Sketches' (#455), 'his opponent's Investigation Phase' makes it seem like the chosen attacking Agent may be an Agent owned by the Conspiracy player. Who is the owner of the attacking Agent?",
+    "answer": "With the lack of Killer being a keyword on this card and the words 'his opponent's Investigation Phase' point to the attacking Agent being one of the Conspiracy player's own Agents. This is the only card that has the activators 'Conspiracy, Field' and it only has a cost of 4 - if this card was intended to be played using only the Active player's Agents, it would be too powerful, giving the Conspiracy player a guarantee of sending an Agent to the Hospital or an Agent out of the game or both, for only 4 Conspiracy"
+  },
+  {
+    "question": "28. Is 'Poltergeist Attack' (#353) attackable? Or must you use some special card that will alow you to attack it? Can Combat cards like 'First Aid' (#2) be played on it?",
+    "answer": "There may be some cards that can help you attack it. Combat cards can still be played, but as long as they are allowable"
+  },
+  {
+    "question": "29. When a Healing card is needed to be played to negate an effect by another card [e.g. 'Infected that you Might Believe' (#2-BBB)], must you still follow all of the Healing card's requirements/play text? For example, can 'First Aid' (#2) be used though it is a Combat card? Or 'Medical Treatment' (#228) as the card text specifies it is to be played 'on an Agent in the Hospital'?",
+    "answer": "There are 5 Conspiracy cards that a Healing card is needed to remove an effect. These Conspiracy cards can initially be negated by the typical 'negate' cards, but once attached, they are not as easily removed. All appropriate Activator words must be in effect to benefit from the Healing card. So 'Medical Treatment' would need the infected Agent to get to the Hospital first; a card like 'First Aid' would need the infected Agent to be in a Combat situation first. Agent Janus (#177) can remove the Conspiracy card as he is a card with a 'heal' game effect. 'Medi-Kit' (#315) can be used by another Agent to help the infected Agent or obtained by the infected Agent in the Bureau; 'Hospital Crash Cart' (#325) can be used if the infected Agent gets to the Hospital; 'Ceremony' (#456) & 'Dried Frog' (#430) can help infected Believer Agents. The infected Agent can not use the Healing phase by itself to counter the Conspiracy card. There are 8 Resource cards with Healing as a Keyword. If none of these strategies work for you, try keyword changes or a combination of cards. Also see question 58 from 1997 above"
+  },
+  {
+    "question": "30. Does the 'Women's Health Clinic' Site (#380) have a typo in the Keywords? The question is MOTIVE but the Keyword RESULT is listed.",
+    "answer": "The Keyword should probably be MOTIVE but since it is not, follow the correct protocol with the Keyword RESULT"
+  },
+  {
+    "question": "31. The premiere Witness cards that allow you to gain Resource points when certain Keyword cards are played, do they only gain Resource when you are the Active player since only Active is listed in the Activators, not Conspiracy?",
+    "answer": "Correct, the cards are Active only, so you do not build Resource points when you are the Conspiracy player. However, when you are the Active player, you do build RP when your opponent plays the specific keyword cards against you as well as the cards you play with that keyword. I believe the answer for question 23 from 1997 above is incorrect"
+  },
+  {
+    "question": "32. 'Unexplainable Time Loss' (#257), if 'the current player's turn ends immediately', does the Conspiracy player also have to end his/her turn and miss any of the remaining phases such as debriefing?",
+    "answer": "Yes, the turn is completely over, no Debriefing at all. Also see question 21 above"
+  },
+  {
+    "question": "33. When can Adversaries 'John Mostow' (#387) and 'Puppet' (#389) ever be free & have the Activator requirements ignored if no cards have 'Insanity' as a Keyword?",
+    "answer": "Sounds like you need to find a way of having Insanity as a Keyword .."
+  },
+  {
+    "question": "34. Question #61 from 1997, is the answer based on Advanced Rules? The question may have been about Basic Rules.",
+    "answer": "The answer to that question is for the Advanced rules. For Basic rules, Activators are used in the Requisition and Investigation phases only, see Basic rulebook page 18, and can only be played during other phases if the card text states so. Also for Basic rules, 'Relentless Pursuit' (#283) can not be played since an 'X' is in the top left corner anyway"
+  },
+  {
+    "question": "35. Using 'The Manitou Stalks His Prey' (#352), an Agent is wounded by the Manitou and moved to the hospital. This Agent doesn't heal in the Hospital in the very next turn until you play a healing card?",
+    "answer": "Correct, the card text states you must play a Healing card to even start healing, ouch!"
+  },
+  {
+    "question": "36a. Can the card 'Hack Into Government Files' (#278) be used to pull a card from your discard pile? The card says the card you pull cannot exceed the 2 cards per deck but if it comes from your discard pile it wouldn't exceed 2 per deck correct?",
+    "answer": "Yes it can pull from your discard pile; also see question 23 above. You should never have more than 2 of the same card in your starting deck - that note is an extra reminder"
+  },
+  {
+    "question": "36b. Also what happens if you run out of cards in your bureau deck? Do you reshuffle your discard pile or is it game over and you lose?",
+    "answer": "Reshuffle your discard pile"
+  },
+  {
+    "question": "37. Question #55 from 1997 and the Advanced rulebook page 31 make it seem like there is no limit to the amount of cards played by the Active player to try to negate an Adversary, is that correct? Combat starts once the Adversary can not be negated, right?",
+    "answer": "Non-Combat cards can be played after the Adversary is played and before the Combat rounds start, giving the Active player a chance to negate it. Once Combat begins, only Combat cards can be played until the Combat ends"
+  },
+  {
+    "question": "38. The Equipment card 'Ambulance' (#425) says, 'Discard the card to add +3 to medical skill'. Does this mean if my Agent doesn't have medical skill, they gain medical skill at 3 or does it mean I can only play the equipment card on someone with Medical skill in the first place?",
+    "answer": "The Agent who has Ambulance attached will gain +3 to that Agent's Medical skill, regardless if he/she has any. So Scully (#172/173) has Medical of 4 but when this Equipment of hers is discarded, she now has 7. If Krycek (#162/170) discards this Equipment attached to him, he now has Medical of 3 since beforehand his Medical was 0"
+  },
+  {
+    "question": "39a. Can I have two copies of 'Kevin Morris, a.k.a. The Conduit' (#194) in play? And he counts for cards with the Keyword that would play my opponent and for my own cards?",
+    "answer": "??? If this Witness is played during a Skill Check, then, only one copy can be in play, see the Advanced rulebook page 51 or the Note on page 29. On building RP from this card, see question 31 above. HOWEVER, THE RULEBOOK ONLY STATES DURING A SKILL CHECK, NOT OTHER SITUATIONS"
+  },
+  {
+    "question": "39b. Can I have (from each card) only one copy in play or can I have two (of) Laptop Computer (#311) in play on different Agents?",
+    "answer": "See question 25 above"
+  },
+  {
+    "question": "40a. If I play a second training card on an agent, what happens with the first one? Is it discarded or it stays in play?",
+    "answer": "You can play more than one training card on the same agent, but not in the same turn. Each training card stays with the agent"
+  },
+  {
+    "question": "40b. Can I play the same agent in different turns? I play Danny Pendrell (#397) in my first turn. In a later turn I draw a second copy of it. Can I play it again?",
+    "answer": "You can play Danny Pendrell only if you don't have him in your team already. You can play 1 Danny Pendrell card per turn. See Advanced rulebook page 15"
+  },
+  {
+    "question": "40c. Does the Bluff 'Pete Calcagni' (#96) force my opponent to discard a witness resource from hand or from in play?",
+    "answer": "The card text does not state 'from his hand' so it would be be a card that is in play"
+  },
+  {
+    "question": "41. The rules state that all activators must be met to play a card. This makes cards like Mrs. Mulder (#382) near impossible to play, or Blue Plate Special (#9-GMR) completely impossible to play. So do they just look pretty in my binder or do they need an errata of some sort? 101361 puts a '/' instead of a ',' in for cards like this.",
+    "answer": "The Activators are to be 'Alien Investigation' or 'Behavioral' on Mrs. Mulder, just like Mulligan (#5-INQ) should be 'Active' or 'Conspiracy'. I think 'Hell Money' proves it was realized a little too late that Activators as 'Active/Conspiracy' are not interpreted the same as 'Active, Conspiracy'. See question 22 above"
+  },
+  {
+    "question": "42a. Where are the Agent at the beginning of the game? I can't find something about that in the rules. I think they start the game in the bureau.",
+    "answer": "The Agents start in the Bureau - Basic rulebook page 12 and Advanced rulebook page 6"
+  },
+  {
+    "question": "42b. I hope I can use the 'Cellular Phone' (#326) more the once per turn?",
+    "answer": "The answer is not easy. Advanced rulebook: page 21 'an Agent may only use one piece of Equipment to modify a single Skill Check' and page 29 'two of the same card can't be used for the same Skill Check Subroutine'. The word 'single' causes some confusion - as long as the team only uses one Equipment (which is Cellular Phone in your case), it can be used in more than one skill check. The card itself states 'add his skills to a skill check' and that also can make a player question if 'a' only means 'one'"
+  },
+  {
+    "question": "42c. For example: Scully and Mulder call Skinner for a Road Trip. After thay arrive Los Angles, they called him again for more Evidence Collections.",
+    "answer": "Cellular Phone can still be used, since the skill checks are different. Skinner being kept in the Bureau is a decent strategy"
+  },
+  {
+    "question": "43a. In the Debriefing Phase of my opponent, do I have to discard to seven even if I have Improved Channels (#263) in play?",
+    "answer": "Yes. 'Improved Channels' only allows you to have 10 when it is your Active Debriefing Phase, as the card has an Activator of Active. Normally, your hand size must be seven cards or less in the Debriefing Phase, whether you are the Active or Conspiracy player, see Advanced rulebook page 38"
+  },
+  {
+    "question": "43b. Do I have to discard only in my debriefing phase or in every debriefing phase?",
+    "answer": "During the Debriefing phase regardless of who's turn it is, you will have to discard if you have more than 7 cards in your hand. Unless you have 'Improved Channels' in play, then you will have to discard if you have more than 10 cards in your hand when you are the Active player"
+  },
+  {
+    "question": "44. Can 2 of the same events be in play at the same time? Like Rejuvenating Caves (#289)?",
+    "answer": "Yes, both can be played at the same time, except if they are part of a skill check subroutine (page 29 Note in Advanced rulebook) then only one"
+  },
+  {
+    "question": "45. Can you have Agents in your starting Bureau deck in the Basic version of the game?",
+    "answer": "No, only in the Advanced version"
+  },
+  {
+    "question": "46. So I play a bluff on my opponent's site. He can't go to it. When it's my turn...can't he play Eve 7 (#231), and move the bluff I played to one of my own sites and play it?",
+    "answer": "Yes but he will have to pay for it. He is going to use your Bluff against you're Dastardly!"
+  },
+  {
+    "question": "47. Agent Jerry Lamana's (#182) Game Effect allows you to steal a card which can be used during the current Site investigation. 'You must still pay for the card.' Does this mean you have to pay for the card even if you do not play it? Can the stolen card be a Conspiracy card?",
+    "answer": "The 'must still pay' sentence probably should have been attached to the previous sentence 'may use it immediately'; nonetheless, if you steal it, you pay for it. The Active player will not have access to the Conspiracy pool, so a Conspiracy card can not be stolen"
+  },
+  {
+    "question": "48. When can I play a Bluff?",
+    "answer": "For Advanced rules, Bluffs can be played faceup in the case assignment & investigation phases. Also, they can be played facedown if placed under a Site during the case assignment phase but not resolved & paid for until the investigation phase (Advanced rulebook pages 9, 25, 29 & 52). I think the lack of phases listed in paragraph #2 on page 25 and the wording on page 52 are going to continue to make players question this. Page 52 mentions only playing bluffs during the investigation phase in the Basic game. Then mentions only one addition to the advanced rules, placing bluffs beneath sites during the case assignment phase, leaving the player to wonder if playing them faceup during this phase is allowed or not. Activators of 'Site' are missing on premiere Bluff cards but are on the newer released Bluffs"
+  },
+  {
+    "question": "49a. Two agents are in the hospital, one of them has a Medi-Kit (#315). Can I use a Medi-Kit card in the hospital to heal 1 additional wound from the agent?",
+    "answer": "No, the Medi-Kit card text specifies that the agent would need to use his/her Medical skill in order to use the card - the rulebooks address that agents may not contribute their skills in the hospital, doctors do not want anyone interfering with their work. Also, see questions 16 & 24 above"
+  },
+  {
+    "question": "49b. Dried Frog (#430). Does it add to permanent HEALTH of agent's? For example, an agent with permanent (printed on card) has 3 health. When I add Dried Frog, now it has 4, so during each healing phase can I remove 2 damage points instead of 1?",
+    "answer": "The Dried Frog does add 1 to the permanent health of the owning agent. If this increases the agent's health from 3 to 4, the agent benefits and will now heal 2 during the healing phase"
+  },
+  {
+    "question": "50. Activator question about 'Simon Gates aka Ferreau' (#391). It just has Agent, so I can play him against any team with an agent in, right?",
+    "answer": "It also has Believer as an Activator. If the team has at least one believer agent, then the adversary can attack the team"
+  },
+  {
+    "question": "51. Several cards have a game effect sentence starting with 'In addition,' - please explain when & how this is handled in gameplay?",
+    "answer": "The sentences before the words 'in addition' must happen first. And only then can the 'in addition' sentence be initiated. A good example is 'Message from the Stars' (#247); you must negate an Alien Adversary first before you can try the next sentence. Also see question #7 above"
+  },
+  {
+    "question": "52a. Does Skinner's Wedding Ring (#458) bypass the timing restrictions on Skinner Chooses a Side (#243)? Do I still need to know the Affiliation of my opponent's X-File and have Skinner in the bureau, or does the Ring allow the card to come directly into play bypassing those play restrictions?",
+    "answer": "You can use 'Skinner's Wedding Ring' to find & play 'Skinner Chooses a Side' for free; as long as you meet the requirements on the pulled card (i.e. the first sentence), Skinner will become a bigger asset. 'Skinner's Wedding Ring' does not let you bypass those requirements"
+  },
+  {
+    "question": "52b. Any ideas for 'keyword active' cards to play Skinner's Wedding Ring (#458) with?",
+    "answer": "The 'keyword active' thing is surely a mistake. Skinner's Wedding Ring & Flesh Sculpting (#411) are the only cards that have 'active' anywhere on a card besides in the Activators. These two cards will be played as if the card text 'Keyword ACTIVE' was replaced with 'Activator ACTIVE'. This does go against the typical keyword play, however, this was an unfortunate mistake"
+  },
+  {
+    "question": "53. What is the best way to shuffle your cards for randomness?",
+    "answer": "Using the common riffle method, 7 times should get your cards well spaced apart"
+  },
+  {
+    "question": "54. What are the differences between the Basic rules and the Advanced rules?",
+    "answer": "There are many differences, but the main ones for the basic game are:\n(a) it was meant to be played starter deck versus starter deck,\n(b) any 4 starting agents and no agents in the bureau deck (the Basic rulebook on page 13 shows an example of a team of Agents that their total cost is higher than the 20 point limit as in the Advanced rulebook),\n(c) cards are not paid for, ignoring card cost and no resource/conspiracy pools are used,\n(d) certain card types can only be played during certain phases,\n(e) combat & health values are ignored,\n(f) adversary & agent game effects are ignored,\n(g) only one site per turn with only 3 cards (by each player) to be played during a skill check subroutine,\n(h) both players draw back to 10 in the briefing phase"
+  },
+  {
+    "question": "55. Once Oubliette (#417) is played, whose Debriefing Phase is it when a token is removed?",
+    "answer": "Since every player gets to participate in the Debriefing Phase, a token will be removed every turn by the owner of the Oubliette card"
+  },
+  {
+    "question": "56. If I get to choose the team, what's to stop me from playing 'Unexplainable Time Loss' (#257) on an agent in the hospital? Then the opponent can't do anything about it still and it is still a huge negative play experience.",
+    "answer": "The rulebooks (Advanced and Basic rulebooks page 20) are specific that Agents in the Hospital can not contribute to any skill checks, plus Agents in the hospital are not considered to be part of a team"
+  },
+  {
+    "question": "57. Other than Frohike (#304), what other cards can be used to negate your opponent's Event cards?",
+    "answer": "No One So Paranoid (#4-GCon) is specific on negating an event. Also, you can get crafty by using a combination of cards, like changing keywords. Tong Lottery Jar (#461), The Erlenmeyer Flask (#264), Skinner Chooses a Side (#243), Spying Mission (#266), and others can work but these may be limited"
+  },
+  {
+    "question": "58. My opponent plays Government Mindwipe Serum (#299). I have Max Fenig (#204) and Blackmail (#276) both in my hand. Do I have to discard both of them, or just one?",
+    "answer": "Both"
+  },
+  {
+    "question": "59. Does Detective Miles (#115) require you to pay two total conspiracy points or one to activate its effect?",
+    "answer": "1 CP to play the card (0 CP if under a Site), and another 1 CP to move the opponent's RP per the game text"
+  },
+  {
+    "question": "60a. 'But cost wise you pay 1CP to attach the bluff to the site per bluff cost rules '... I've also seen people in playthroughs pay 1 CP to play a bluff under a site BUT that's not what the rules say. The (advanced) rulebook says 'Bluff cards played beneath a site may be purchased for 1 CP less than the bluff cards stated cost. The cost is paid when the site investigation is attempted.' This means (to me) that there is no cost when placing a bluff it is only paid if the site the bluff is attached to is attempted and then at printed cost -1 CP. (Full price is paid if bluffs are played as normal conspiracy cards).",
+    "answer": "You are right; if the Bluff is played directly then you pay full Conspiracy cost, under the Site it is one less than the Conspiracy cost. Bluffs are not paid for until they are revealed, so it costs nothing to put cards under a Site. However, if a Site is not investigated because the Bluffs are 'scary', the Site stays in the Field with any attached Bluffs"
+  },
+  {
+    "question": "60b. So I guess the question I have is 'when is the site discarded? Agent's choice?'",
+    "answer": "Per the rulebook, the player who own's the Site chooses when to investigate it - uninvestigated Sites without Bluffs will be discarded. If I get scared and see a bunch of Bluffs, I might hold off on investigating Sites until later - there is a strategy to that: wait until the opponent is out of CP, I gain a card to negate a Bluff, I want my opponent to not get that card back, ... oops, I've said too much"
+  },
+  {
+    "question": "61. How do I know which Agent is targeted by an Adversary?",
+    "answer": "The Adversary player chooses and announces which Agent to target"
+  },
+  {
+    "question": "62. If I decide to not investigate a Site that has a Bluff under it, will the Bluff owner be able to add more Bluffs to it during my next Case Assignment phase?",
+    "answer": "Yes"
+  },
+  {
+    "question": "63. What happens to cards played against & attached to the stolen Agent once Application for FBI Resources Approved (#279) is played? Can the stolen Agent come from any area of the game?",
+    "answer": "Any 'baggage' cards go with him/her when they return to their rightful owner. It may be counter productive for someone to play a devistating Conspiracy card on their own Agent, however that may be an issue to be dealt with, especially if it prevents a Site from being successful. As listed on the card, too much damage then the Agent returns to its owner's Hospital. The stolen Agent can come from any section, except if he/she already had substantial injuries in the Hospital"
+  },
+  {
+    "question": "64. Can you really have as many Samantha Mulders (#203) as you want?",
+    "answer": "Contrary to my initial belief, you are limited to only having 2 of any card in your deck per the rulebook. However, if you plan on 'stealing' your opponent's Samanthas, then you could have more than 2 in play at the same time"
+  },
+  {
+    "question": "65. Can you explain how the card Men in Black (#459) works? Do the Bluffs get played during the Case Assignment Phase or the Investigation Phase?",
+    "answer": "Men in Black (MIB) allows you to pay 2 less for Bluffs similar to how you would pay 1 less for Bluffs when facedown. Any Bluffs placed under MIB stay facedown. During the Case Assignment Phase is when Bluffs under MIB can be moved under Sites. Only during the Investigation Phase are the Bluffs revealed then paid for. The Bluffs will still follow the rules on pages 24 & 25"
+  },
+  {
+    "question": "66. Foo Fighter (#444) is a resource that stays in play and during the briefing phase of the active player you may take a second conspiracy discard. When they say take a first conspiracy discard you discard resources and then buy cards. In Foo Fighter, you get a second discard after your first. My question is do you get to sell and buy again or just sell a second time? Page 18 says clearly 'purchasing cards is done after (R) cards have been sold.' This statement clearly suggests you buy cards after discarding. And Foo Fighter adds a second discard after the first.",
+    "answer": "Foo Fighter mentions discard but not drawing more cards, so you would get to sell twice but only buy once. The book even mentions to look at page 12, which breaks down the conspiracy pool process into 2 separate actions: discarding for points and buying cards with points"
+  },
+  {
+    "question": "67. How do you interpret the card Unexplainable Time Loss (#257)? When I can play it (really AT ANY TIME), only on 1 team or all Agents in the field?",
+    "answer": "Unexplainable Time Loss states an 'opponent team'. So chose that word 'team' wisely to be effective. If an agent(s) is in the bureau, that is a 'team'. All the agents in the field together (before or after sites are played) is a 'team'. Agents at multiple sites are seperated 'teams', so it should be played on just one investigation 'team'. It can not be played on agents in the hospital, as agents can not contribute to skill checks while there, healthy or not. When you play it is up to you - beginning of the round, before Sites played, after Sites investigated, ... just leave those healing Agents alone"
+  },
+  {
+    "question": "68. Could you help explain what happens in this scenario with combat: the adversaries played are Terri Roberts (#392) and Margi Kleinjan (#388)?",
+    "answer": "So when it comes to the girl duo, you have to choose which one to play first and follow that activator. Then the second girl can tag along ignoring her specific activator. Then it is a full on brawl. If it is NOT an occult investigation site, each girl is 4 4 4 - so together they do 8 LRC, 8 CRC. If it is occ. inv., they are each 6 6 6, LOL! - then together they do 12 LRC, 12 CRC"
+  },
+  {
+    "question": "69. The card The Stupendous Yappi (#507) states 'If the revealed card has the Keyword Conspiracy' in the text. Which cards could that be?",
+    "answer": "This was an obvious mistake - there are no cards with Conspiracy as a Keyword. It should have been the word 'Activator' instead of 'Keyword'"
+  }
+]
