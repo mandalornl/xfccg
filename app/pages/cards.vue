@@ -25,8 +25,6 @@ const {
 } = useDeckState();
 const pool = await usePool();
 
-useScrollPosition();
-
 useHead({
   title: 'Cards',
 });

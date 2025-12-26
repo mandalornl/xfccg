@@ -17,8 +17,6 @@ const {
 } = useTeamState();
 const pool = await usePool();
 
-useScrollPosition();
-
 useHead({
   title: 'Agents',
 });
