@@ -147,7 +147,7 @@ const {
     count,
   };
 }, {
-  lazy: true,
+  server: false,
   deep: false,
   watch: [
     search,
@@ -206,7 +206,7 @@ const shareLink = async (event: Event) => {
       v-model:page="page"
       v-model:items-per-page="perPage"
       v-model:sort-by="sortBys"
-      :loading="status === 'pending'"
+      :loading="status !== 'success'"
       :headers="headers"
       :items="data.decks"
       :items-length="data.count"
