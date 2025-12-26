@@ -76,3 +76,7 @@ export interface Card {
   tags: string[];
   createdBy: string;
 }
+
+export interface CardInCube extends Card {
+  uuid: string;
+}

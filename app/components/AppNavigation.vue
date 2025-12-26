@@ -56,9 +56,9 @@ const items = [
     },
   },
   {
-    title: 'Cube',
+    title: 'FCU Cube',
     props: {
-      to: '/cube',
+      to: '/fcu-cube',
       prependIcon: 'mdi-cube-outline',
     },
   },
