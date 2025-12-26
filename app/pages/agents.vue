@@ -173,6 +173,14 @@ watch(remainingCost, (value) => {
 
   inTeam.value = false;
 });
+
+const clearSelection = () => {
+  if (!confirm('Are you sure you want to clear the selection?\nThis action cannot be undone.')) {
+    return;
+  }
+
+  clearTeam();
+};
 </script>
 
 <template>
@@ -217,9 +225,9 @@ watch(remainingCost, (value) => {
             <v-divider />
             <v-list-item
               :disabled="totalCost === 0"
-              title="Clear Team"
+              title="Clear Selection"
               base-color="error"
-              @click="clearTeam"
+              @click="clearSelection"
             />
           </v-list>
         </v-menu>
