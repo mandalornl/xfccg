@@ -19,7 +19,7 @@ const checklist = computed<Card[][]>(() => (
   xFiles.map((ids) => ids.map((id) => pool.find((card) => card.id === id)!))
 ));
 
-const identifiedCards = ref<string[]>([]);
+const identifiedCards = useState<string[]>('checklist:identifiedCards', () => ([]));
 
 const totalUnidentified = computed<number>(() => (
   checklist.value.reduce((total, cards) => (
@@ -53,7 +53,7 @@ const toggleCards = (characteristic: string) => {
   }
 };
 
-const history = ref<string[][]>([]);
+const history = useState<string[][]>('checklist:history', () => ([]));
 const undoing = ref<boolean>(false);
 
 watch(identifiedCards, (newValue, oldValue) => {
@@ -95,20 +95,25 @@ const reset = () => {
     fluid
     size="large"
   >
-    <div class="d-flex justify-end ga-2 mb-3">
-      <v-btn
-        :disabled="history.length === 0"
-        text="Undo"
-        variant="flat"
-        @click="undo"
-      />
-      <v-btn
-        :disabled="history.length === 0"
-        text="Reset"
-        variant="flat"
-        @click="reset"
-      />
-    </div>
+    <v-toolbar
+      color="grey-darken-4"
+      class="rounded-t position-sticky"
+    >
+      <template #append>
+        <v-btn
+          v-tooltip:top="'Undo'"
+          :disabled="history.length === 0"
+          icon="mdi-undo"
+          @click="undo"
+        />
+        <v-btn
+          v-tooltip:top="'Reset'"
+          :disabled="history.length === 0"
+          icon="mdi-refresh"
+          @click="reset"
+        />
+      </template>
+    </v-toolbar>
     <v-table>
       <template
         v-for="(cards, checklistIndex) of checklist"
@@ -159,7 +164,7 @@ const reset = () => {
                 @change="toggleCards(characteristic)"
               >
                 <template #label>
-                  <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : undefined">
+                  <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
                     {{ characteristic }}
                   </span>
                 </template>
