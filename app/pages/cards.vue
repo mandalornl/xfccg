@@ -305,10 +305,6 @@ const clearSelection = () => {
             </v-list-item>
             <v-divider />
             <v-list-item
-              v-if="user"
-              title="Save Deck"
-            />
-            <v-list-item
               title="View Deck"
               @click="selectedDeck = { ...deckState }"
             />
