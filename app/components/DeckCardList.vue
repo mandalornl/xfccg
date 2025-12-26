@@ -99,7 +99,7 @@ const selectedCard = ref<Card>();
       No cards selected
     </template>
   </div>
-  <card-view v-model="selectedCard" />
+  <card-dialog v-model="selectedCard" />
 </template>
 
 <style lang="scss" scoped>

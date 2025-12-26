@@ -19,7 +19,9 @@ const card = defineModel<Card>();
     <v-card>
       <v-card-item>
         <v-card-title class="d-flex align-center justify-space-between">
-          {{ card?.title }}
+          <div class="text-truncate">
+            {{ card?.title }}
+          </div>
           <v-btn
             v-tooltip:top="'Close'"
             variant="text"

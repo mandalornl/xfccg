@@ -336,7 +336,7 @@ onUnmounted(() => {
         />
       </template>
     </v-data-iterator>
-    <card-view v-model="selectedCard" />
+    <card-dialog v-model="selectedCard" />
     <team-dialog v-model="viewTeam" />
   </layout-content>
 </template>
