@@ -11,7 +11,11 @@ useHead({
   title: 'FAQ',
 });
 
-const search = ref<string>(route.query.search as string || '');
+const search = ref<string>('');
+
+onMounted(() => {
+  search.value = route.query.search as string || '';
+});
 
 watch(search, (value) => {
   const resolvedRoute = router.resolve({
