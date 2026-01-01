@@ -32,6 +32,8 @@ const updateUser = async (event: SubmitEventPromise) => {
     },
   });
 
+  await supabase.auth.refreshSession();
+
   if (error) {
     useDebug(error);
 
