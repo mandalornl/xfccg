@@ -158,7 +158,7 @@ const drawCards = () => {
             class="bg-grey-darken-4"
           >
             <template #default="{ items }">
-              <v-row>
+              <v-row no-gutters>
                 <v-col
                   v-for="item of items"
                   :key="item.raw.uuid"
