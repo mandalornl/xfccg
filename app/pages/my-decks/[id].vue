@@ -31,9 +31,9 @@ const defaultItem = (): Deck => ({
 
 const deck = ref<Deck>(defaultItem());
 const isValidForm = ref<boolean>(true);
-const isSaving = ref(false);
-const isCloning = ref(false);
-const isDeleting = ref(false);
+const isSaving = ref<boolean>(false);
+const isCloning = ref<boolean>(false);
+const isDeleting = ref<boolean>(false);
 const title = ref<string>('');
 
 const tags: string[] = Object.values(InvestigationSkill);
