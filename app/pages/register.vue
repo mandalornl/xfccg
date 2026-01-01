@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { SubmitEventPromise } from 'vuetify';
 
+const runtimeConfig = useRuntimeConfig();
 const supabase = useSupabaseClient();
 const snackbarState = useSnackbarState();
 
@@ -35,6 +36,7 @@ const register = async (event: SubmitEventPromise) => {
     email: email.value,
     password: password.value,
     options: {
+      emailRedirectTo: `${runtimeConfig.public.baseUrl}/confirm`,
       data: {
         full_name: name.value,
       },
