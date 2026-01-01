@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@nuxtjs/supabase': patches/@nuxtjs__supabase.patch

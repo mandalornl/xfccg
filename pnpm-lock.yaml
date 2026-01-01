@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@nuxtjs/supabase':
+    hash: 80fbc0a605602ef3290910cfb510c158ae8a3ec849e6997ebfecc3e10c8cfeb9
+    path: patches/@nuxtjs__supabase.patch
+
 importers:
 
   .:
@@ -16,7 +21,7 @@ importers:
         version: 1.12.1(@typescript-eslint/utils@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(eslint@9.39.2(jiti@2.6.1))(magicast@0.5.1)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
       '@nuxtjs/supabase':
         specifier: ~2.0.3
-        version: 2.0.3
+        version: 2.0.3(patch_hash=80fbc0a605602ef3290910cfb510c158ae8a3ec849e6997ebfecc3e10c8cfeb9)
       eslint:
         specifier: ~9.39.2
         version: 9.39.2(jiti@2.6.1)
@@ -5576,7 +5581,7 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@nuxtjs/supabase@2.0.3':
+  '@nuxtjs/supabase@2.0.3(patch_hash=80fbc0a605602ef3290910cfb510c158ae8a3ec849e6997ebfecc3e10c8cfeb9)':
     dependencies:
       '@supabase/ssr': 0.8.0(@supabase/supabase-js@2.89.0)
       '@supabase/supabase-js': 2.89.0
