@@ -100,23 +100,14 @@ const getSelectedCard = (): Card | undefined => {
   return pool.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>('');
-const view = ref<string>('grid');
-const page = ref<number>(1);
-const perPage = ref<number>(60);
-const sortBys = ref<SortBy<Card>[]>([]);
+const search = ref<string>(getRouteQueryValue('search'));
+const view = ref<string>(getRouteQueryValue('view', 'grid'));
+const page = ref<number>(Number(getRouteQueryValue('page', '1')));
+const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
+const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
-const selectedCard = ref<Card>();
+const selectedCard = ref<Card | undefined>(getSelectedCard());
 const selectedDeck = ref<Deck>();
-
-onMounted(() => {
-  search.value = getRouteQueryValue('search');
-  view.value = getRouteQueryValue('view', 'grid');
-  page.value = Number(getRouteQueryValue('page', '1'));
-  perPage.value = Number(getRouteQueryValue('perPage', '60'));
-  sortBys.value = getSortByValue();
-  selectedCard.value = getSelectedCard();
-});
 
 const routeQuery = computed<Record<string, string | number | undefined>>(() => {
   if (selectedCard.value) {

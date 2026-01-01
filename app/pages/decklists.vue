@@ -45,18 +45,11 @@ const getSortByValue = (): SortBy<Decklist>[] => {
 };
 
 // TODO: Implement search or just remove it?
-const search = ref<string>('');
-const page = ref<number>(1);
-const perPage = ref<number>(30);
-const sortBys = ref<SortBy<Decklist>[]>([]);
-const selectedDeck = ref<Decklist | undefined>();
-
-onMounted(() => {
-  search.value = getRouteQueryValue('search');
-  page.value = Number(getRouteQueryValue('page', '1'));
-  perPage.value = Number(getRouteQueryValue('perPage', '30'));
-  sortBys.value = getSortByValue();
-});
+const search = ref<string>(getRouteQueryValue('search'));
+const page = ref<number>(Number(getRouteQueryValue('page', '1')));
+const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
+const sortBys = ref<SortBy<Decklist>[]>(getSortByValue());
+const selectedDeck = ref<Decklist>();
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedDeck.value) {
@@ -154,7 +147,6 @@ const {
     count,
   };
 }, {
-  server: false,
   deep: false,
   watch: [
     search,
@@ -213,7 +205,7 @@ const shareLink = async (event: Event) => {
       v-model:page="page"
       v-model:items-per-page="perPage"
       v-model:sort-by="sortBys"
-      :loading="status !== 'success'"
+      :loading="status === 'pending'"
       :headers="headers"
       :items="data.decks"
       :items-length="data.count"

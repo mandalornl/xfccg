@@ -88,19 +88,12 @@ const getSelectedCard = (): Card | undefined => {
   return agents.value.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>('');
-const page = ref<number>(1);
-const perPage = ref<number>(30);
+const search = ref<string>(getRouteQueryValue('search'));
+const page = ref<number>(Number(getRouteQueryValue('page', '1')));
+const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
 const inTeam = ref<boolean>(false);
 const viewTeam = ref<boolean>(false);
-const selectedCard = ref<Card>();
-
-onMounted(() => {
-  search.value = getRouteQueryValue('search');
-  page.value = Number(getRouteQueryValue('page', '1'));
-  perPage.value = Number(getRouteQueryValue('perPage', '30'));
-  selectedCard.value = getSelectedCard();
-});
+const selectedCard = ref<Card | undefined>(getSelectedCard());
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {
   if (selectedCard.value) {
