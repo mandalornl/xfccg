@@ -200,7 +200,7 @@ const shareLink = async (event: Event) => {
 </script>
 
 <template>
-  <layout-content>
+  <layout-content title="Decklists">
     <v-data-table-server
       v-model:page="page"
       v-model:items-per-page="perPage"

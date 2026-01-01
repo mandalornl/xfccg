@@ -96,6 +96,7 @@ const reset = () => {
     size="large"
   >
     <v-toolbar
+      title="Checklist"
       color="grey-darken-4"
       class="rounded-t position-sticky"
     >

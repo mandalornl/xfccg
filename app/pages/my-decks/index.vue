@@ -194,7 +194,7 @@ const editDeck = (_event: Event, data: { item: Deck}) => {
 </script>
 
 <template>
-  <layout-content>
+  <layout-content title="My Decks">
     <v-data-table-server
       v-model:page="page"
       v-model:items-per-page="perPage"
