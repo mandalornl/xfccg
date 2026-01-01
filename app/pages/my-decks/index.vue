@@ -258,5 +258,8 @@ const editDeck = (_event: Event, data: { item: Deck}) => {
         />
       </template>
     </v-data-table-server>
+    <div class="mt-4">
+      <import-deck-dialog />
+    </div>
   </layout-content>
 </template>
