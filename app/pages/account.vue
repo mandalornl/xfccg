@@ -54,7 +54,7 @@ const updateUser = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content>
+  <layout-content size="medium">
     <v-form
       v-model="isValidForm"
       validate-on="lazy"
