@@ -38,7 +38,9 @@ const register = async (event: SubmitEventPromise) => {
     options: {
       emailRedirectTo: `${runtimeConfig.public.baseUrl}/confirm`,
       data: {
-        full_name: name.value,
+        app: {
+          full_name: name.value,
+        },
       },
     },
   });

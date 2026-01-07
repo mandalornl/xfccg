@@ -33,6 +33,12 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', scroll);
 });
+
+const fullName = computed<string>(() => (
+  user.value?.user_metadata?.app?.full_name
+  ?? user.value?.user_metadata?.custom_claims?.global_name
+  ?? user.value?.user_metadata?.full_name
+));
 </script>
 
 <template>
@@ -59,7 +65,7 @@ onUnmounted(() => {
       <v-menu v-if="user">
         <template #activator="{ props:menuProps }">
           <v-btn
-            v-tooltip:top="`Greetings! ${user?.user_metadata?.full_name}`"
+            v-tooltip:top="`Greetings! ${fullName}`"
             variant="text"
             color="primary"
             icon="mdi-alien"

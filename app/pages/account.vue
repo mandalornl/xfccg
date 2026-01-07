@@ -12,8 +12,11 @@ useHead({
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 
-const name = ref<string>(user.value?.user_metadata?.full_name);
-const email = ref<string>(user.value?.email || '');
+const fullName = ref<string>(
+  user.value?.user_metadata?.app?.full_name
+  ?? user.value?.user_metadata?.custom_claims?.global_name
+  ?? user.value?.user_metadata?.full_name
+);
 
 const updateUser = async (event: SubmitEventPromise) => {
   snackbarState.reset();
@@ -28,7 +31,9 @@ const updateUser = async (event: SubmitEventPromise) => {
 
   const { error } = await supabase.auth.updateUser({
     data: {
-      full_name: name.value,
+      app: {
+        full_name: fullName.value,
+      },
     },
   });
 
@@ -61,7 +66,7 @@ const updateUser = async (event: SubmitEventPromise) => {
       >
         <v-card-text class="text-body-1">
           <input-string
-            v-model="name"
+            v-model="fullName"
             :rules="[ (v) => !!v || 'Enter your name' ]"
             label="Name"
           />
