@@ -71,7 +71,8 @@ const updateUser = async (event: SubmitEventPromise) => {
             label="Name"
           />
           <input-email
-            v-model="email"
+            v-if="user?.app_metadata?.provider === 'email'"
+            :model-value="user?.email"
             :rules="[ (v) => !!v || 'Enter your email' ]"
             disabled
             label="Email"
