@@ -91,7 +91,5 @@ const updateUser = async (event: SubmitEventPromise) => {
         </v-card-actions>
       </v-card>
     </v-form>
-    <v-divider class="my-6" />
-    <change-password-dialog />
   </layout-content>
 </template>
