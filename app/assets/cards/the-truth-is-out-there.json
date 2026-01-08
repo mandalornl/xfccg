@@ -4586,7 +4586,7 @@
     "activators": [
       "Conspiracy"
     ],
-    "gameEffect": "Play on any Team containing Agent Fox Mulder and/or Agent Dana Scully. Mulder must immediately be moved to the Bureau. Scully must immediately be moved to the Hospital (undamaged). Neither my contribute their skills to skill checks this turn.",
+    "gameEffect": "Play on any Team containing Agent Fox Mulder and/or Agent Dana Scully. Mulder must immediately be moved to the Bureau. Scully must immediately be moved to the Hospital (undamaged). Neither may contribute their skills to skill checks this turn.",
     "tags": [
       "Basic"
     ],
