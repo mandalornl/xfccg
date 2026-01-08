@@ -50,7 +50,7 @@ const register = async (event: SubmitEventPromise) => {
 
     snackbarState.error('An error occurred during registration.');
   } else {
-    snackbarState.success('Your account has been created.');
+    snackbarState.success('A confirmation email has been sent. Your account will be created once you confirm it.');
 
     await navigateTo({
       name: 'login',
