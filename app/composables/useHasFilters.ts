@@ -3,7 +3,7 @@ import type { Ref } from 'vue';
 import {
   type Filter,
   type FilterableValue,
-  FilterOperation
+  FilterOperation,
 } from '~/types/filter';
 import { isObject } from '~/utils/object';
 
@@ -24,13 +24,17 @@ export function useHasFilters<T>(filters: Ref<Filter<T>[]>, item: T): boolean {
     }
 
     if (Array.isArray(itemValue)) {
-      if (filter.operation === FilterOperation.Or) {
-        return filter.value.some((value) => itemValue.includes(value));
+      if (filter.operation === FilterOperation.And) {
+        return filter.value.every((value) => itemValue.includes(value));
       }
 
-      return filter.value.every((value) => itemValue.includes(value));
+      return filter.value.some((value) => itemValue.includes(value));
     }
 
-    return filter.value.includes(itemValue);
+    if (filter.operation === FilterOperation.And) {
+      return filter.value.every((value) => value == itemValue);
+    }
+
+    return filter.value.some((value) => value === itemValue);
   })
 }

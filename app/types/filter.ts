@@ -3,23 +3,22 @@ export enum FilterOperation {
   Or = 'or',
 }
 
-export interface Filter<T> {
+interface FilterBase<T> {
   key: keyof T;
   title: string;
-  value: string[];
   items: string[];
+}
+
+export interface Filter<T> extends FilterBase<T> {
+  value: string[];
   operation: FilterOperation;
+  multiple: boolean;
 }
 
-export interface FilterConfig {
-  title: string,
-  items: string[],
-  value?: string[],
-  operation?: FilterOperation,
+export interface FilterSetup<T> extends FilterBase<T> {
+  value?: string[];
+  operation?: FilterOperation;
+  multiple?: boolean;
 }
-
-export type FilterSetup<T> = {
-  [K in keyof T]?: FilterConfig
-};
 
 export type FilterableValue = string | string[] | Record<string, unknown>;

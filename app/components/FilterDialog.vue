@@ -22,7 +22,7 @@ const activeFilters = computed<number>(() => filters.value.filter((filter) => fi
 const clearFilters = () => {
   for (const filter of filters.value) {
     filter.value = [];
-    filter.operation = FilterOperationEnum.And;
+    filter.operation = FilterOperationEnum.Or;
   }
 };
 </script>
@@ -70,10 +70,12 @@ const clearFilters = () => {
             <filter-value
               v-model="filter.value"
               :filter="filter"
-              :items="items"
             />
           </v-col>
-          <v-col cols="auto">
+          <v-col
+            v-if="filter.multiple"
+            cols="auto"
+          >
             <filter-operation v-model="filter.operation" />
           </v-col>
         </v-row>

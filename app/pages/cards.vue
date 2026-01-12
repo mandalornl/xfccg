@@ -5,11 +5,13 @@ import costs from '~/assets/filters/costs.json';
 import episodes from '~/assets/filters/episodes.json';
 import tags from '~/assets/filters/tags.json';
 
+import { useLocale } from 'vuetify/framework';
+
 import {
   type Card,
+  CardRarity,
   CardSet,
   CardType as CardTypeEnum,
-  CardRarity,
 } from '~/types/card';
 import type { SortBy } from '~/types/sort-by';
 import { FilterOperation } from '~/types/filter';
@@ -17,6 +19,7 @@ import type { Deck } from '~/types/deck';
 
 const route = useRoute();
 const router = useRouter();
+const { t } = useLocale();
 const {
   deckState,
   deckSize,
@@ -28,40 +31,51 @@ useHead({
   title: 'Cards',
 });
 
-const filters = useFilters<Card>({
-  set: {
+const filters = useFilters<Card>([
+  {
+    key: 'set',
     title: 'Set',
     items: Object.values(CardSet),
   },
-  type: {
+  {
+    key: 'type',
     title: 'Type',
     items: Object.values(CardTypeEnum),
   },
-  keywords: {
+  {
+    key: 'keywords',
     title: 'Keywords',
     items: keywords,
+    multiple: true,
   },
-  activators: {
+  {
+    key: 'activators',
     title: 'Activators',
     items: activators,
+    multiple: true,
   },
-  rarity: {
+  {
+    key: 'rarity',
     title: 'Rarity',
     items: Object.values(CardRarity),
   },
-  cost: {
+  {
+    key: 'cost',
     title: 'Cost',
     items: costs,
   },
-  episode: {
-    title: 'Episodes',
+  {
+    key: 'episode',
+    title: 'Episode',
     items: episodes,
   },
-  tags: {
+  {
+    key: 'tags',
     title: 'Tags',
     items: tags,
+    multiple: true,
   },
-});
+]);
 
 const headers = [
   { title: '#', key: 'id', nowrap: true },
@@ -359,6 +373,11 @@ const clearSelection = () => {
             </v-card>
           </v-col>
         </v-row>
+      </template>
+      <template #no-data>
+        <div class="pa-4">
+          {{ t('$vuetify.noDataText') }}
+        </div>
       </template>
       <template #footer="footerProps">
         <v-data-table-footer

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useLocale } from 'vuetify/framework';
+
 import {
   type Card,
   CardSet,
@@ -10,6 +12,7 @@ import { InvestigationSkill } from '~/types/skill';
 
 const route = useRoute();
 const router = useRouter();
+const { t } = useLocale();
 const {
   teamState,
   totalCost,
@@ -21,23 +24,28 @@ useHead({
   title: 'Agents',
 });
 
-const filters = useFilters<Agent>({
-  skills: {
+const filters = useFilters<Agent>([
+  {
+    key: 'skills',
     title: 'Skills',
     items: Object.values(InvestigationSkill),
+    multiple: true,
   },
-  cost: {
+  {
+    key: 'cost',
     title: 'Cost',
     items: Array.from({ length: 7 }, (value, key) => `${key + 1} RP`),
   },
-  set: {
+  {
+    key: 'set',
     title: 'Set',
     items: Object.values(CardSet).filter((value) => (
       value !== CardSet.TheTruthIsOutThere
       && value !== CardSet.GenCon
     )),
   },
-  keywords: {
+  {
+    key: 'keywords',
     title: 'Keywords',
     items: [
       'Agent',
@@ -51,8 +59,9 @@ const filters = useFilters<Agent>({
       'Neutral',
       'Skeptic',
     ],
+    multiple: true,
   },
-});
+]);
 
 const itemsPerPageOptions = [
   { value: 30, title: '30' },
@@ -328,6 +337,11 @@ onUnmounted(() => {
             </v-card>
           </v-col>
         </v-row>
+      </template>
+      <template #no-data>
+        <div class="pa-4">
+          {{ t('$vuetify.noDataText') }}
+        </div>
       </template>
       <template #footer="footerProps">
         <v-data-table-footer

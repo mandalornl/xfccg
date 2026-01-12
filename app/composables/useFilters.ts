@@ -1,11 +1,10 @@
 import {
   type Filter,
-  type FilterSetup,
-  type FilterConfig,
   FilterOperation,
+  type FilterSetup,
 } from '~/types/filter';
 
-export function useFilters<T>(setup: FilterSetup<T>) {
+export function useFilters<T>(setup: FilterSetup<T>[]) {
   const route = useRoute();
 
   const getRouteQueryValue = (key: string): string => route.query[key] as string || '';
@@ -28,25 +27,18 @@ export function useFilters<T>(setup: FilterSetup<T>) {
     const value = getRouteQueryValue(key);
 
     if (!value) {
-      return defaultOperation ?? FilterOperation.And;
+      return defaultOperation ?? FilterOperation.Or;
     }
 
     return value.includes(',') ? FilterOperation.Or : FilterOperation.And;
   };
 
-  return ref<Filter<T>[]>(
-    Object.entries(setup).map(([
-      key,
-      value,
-    ]) => {
-      const config = value as FilterConfig;
+  const filters = setup.map((config) => ({
+    ...config,
+    value: getValue(config.key as string, config.value),
+    operation: getOperation(config.key as string, config.operation),
+    multiple: config.multiple ?? false,
+  }));
 
-      return {
-        ...config,
-        key: key as keyof T,
-        value: getValue(key, config.value),
-        operation: getOperation(key, config.operation),
-      };
-    })
-  );
+  return ref<Filter<T>[]>(filters);
 }
