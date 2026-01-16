@@ -92,13 +92,9 @@ const itemsPerPageOptions = [
   { value: 240, title: '240' },
 ];
 
-const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
-  (route.query[key] as string) || defaultValue
-);
-
 const getSortByValue = (): SortBy<Card>[] => {
   try {
-    const sortBys = getRouteQueryValue('sortBys', '[]');
+    const sortBys = route.query.sortBys as string || '[]';
 
     return JSON.parse(sortBys);
   } catch {
@@ -114,10 +110,10 @@ const getSelectedCard = (): Card | undefined => {
   return pool.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>(getRouteQueryValue('search'));
-const view = ref<string>(getRouteQueryValue('view', 'grid'));
-const page = ref<number>(Number(getRouteQueryValue('page', '1')));
-const perPage = ref<number>(Number(getRouteQueryValue('perPage', '60')));
+const search = ref<string>(route.query.search as string || '');
+const view = ref<string>(route.query.view as string || 'grid');
+const page = ref<number>(Number(route.query.page as string || 1));
+const perPage = ref<number>(Number(route.query.perPage as string || 60));
 const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
@@ -130,20 +126,24 @@ const routeQuery = computed<Record<string, string | number | undefined>>(() => {
     };
   }
 
+  const selectedFilters = JSON.stringify(
+    Object.fromEntries(
+      filters.value
+        .filter((filter) => filter.value.length > 0)
+        .map((filter) => ([
+          filter.key,
+          filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
+        ]))
+    )
+  );
+
   return {
     search: search.value || undefined,
     view: view.value !== 'grid' ? view.value : undefined,
     page: page.value > 1 ? page.value : undefined,
     perPage: perPage.value !== 60 ? perPage.value : undefined,
     sortBys: sortBys.value.length > 0 ? JSON.stringify(sortBys.value) : undefined,
-    ...Object.fromEntries(
-      filters.value.map((filter) => ([
-        filter.key,
-        filter.value.length > 0
-          ? filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
-          : undefined,
-      ]))
-    ),
+    filters: selectedFilters !== '{}' ? selectedFilters : undefined,
   };
 });
 
