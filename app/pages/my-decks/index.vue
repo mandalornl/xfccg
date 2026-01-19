@@ -183,14 +183,14 @@ const openInCards = (deck: Deck) => {
   return navigateTo('/cards');
 };
 
-const editDeck = (_event: Event, data: { item: Deck}) => {
-  return navigateTo({
+const editDeck = (_event: Event, data: { item: Deck }) => (
+  navigateTo({
     name: 'my-decks-id',
     params: {
       id: data.item.id,
     },
-  });
-};
+  })
+);
 </script>
 
 <template>
