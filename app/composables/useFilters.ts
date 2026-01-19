@@ -7,10 +7,18 @@ import {
 export function useFilters<T>(setup: FilterSetup<T>[]) {
   const route = useRoute();
 
-  const getRouteQueryValue = (key: string): string => route.query[key] as string || '';
+  const getRouteQueryFilters = (): Record<string, string> => {
+    try {
+      return JSON.parse(route.query.filters as string || '{}');
+    } catch {
+      return {};
+    }
+  };
+
+  const queryFilters = getRouteQueryFilters();
 
   const getValue = (key: string, defaultValue?: string[]): string[] => {
-    const value = getRouteQueryValue(key);
+    const value = queryFilters[key] || '';
 
     if (!value) {
       return defaultValue ?? [];
@@ -24,7 +32,7 @@ export function useFilters<T>(setup: FilterSetup<T>[]) {
   };
 
   const getOperation = (key: string, defaultOperation?: FilterOperation): FilterOperation => {
-    const value = getRouteQueryValue(key);
+    const value = queryFilters[key] || '';
 
     if (!value) {
       return defaultOperation ?? FilterOperation.Or;

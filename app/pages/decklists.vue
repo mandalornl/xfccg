@@ -30,25 +30,26 @@ const itemsPerPageOptions = [
   { value: 60, title: '60' },
 ];
 
-const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
-  (route.query[key] as string) || defaultValue
-);
-
-const getSortByValue = (): SortBy<Decklist>[] => {
+const getSortByValue = (defaultValue: SortBy<Decklist>[] = []): SortBy<Decklist>[] => {
   try {
-    const sortBys = getRouteQueryValue('sortBys', '[ { "key": "created_at", "order": "desc" } ]');
+    const value = route.query.sortBys as string || '[]';
+    const sortBys = JSON.parse(value);
 
-    return JSON.parse(sortBys);
+    if (sortBys.length > 0) {
+      return sortBys;
+    }
+
+    return defaultValue;
   } catch {
-    return [];
+    return defaultValue;
   }
 };
 
 // TODO: Implement search or just remove it?
-const search = ref<string>(getRouteQueryValue('search'));
-const page = ref<number>(Number(getRouteQueryValue('page', '1')));
-const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
-const sortBys = ref<SortBy<Decklist>[]>(getSortByValue());
+const search = ref<string>(route.query.search as string || '');
+const page = ref<number>(Number(route.query.page as string || 1));
+const perPage = ref<number>(Number(route.query.perPage as string || 30));
+const sortBys = ref<SortBy<Decklist>[]>(getSortByValue([ { key: 'created_at', order: 'desc' } ]));
 const selectedDeck = ref<Decklist>();
 
 const routeQuery = computed<Record<string, string | number | null | undefined>>(() => {

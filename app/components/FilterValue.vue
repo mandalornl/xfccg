@@ -23,6 +23,7 @@ const model = defineModel<string[]>({
     hide-selected
     hide-details
     variant="outlined"
+    autocomplete="off"
     placeholder="Type to search"
   />
 </template>

@@ -85,10 +85,6 @@ const agents = computed<Agent[]>(() => (
     }))
 ));
 
-const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
-  (route.query[key] as string) || defaultValue
-);
-
 const getSelectedCard = (): Card | undefined => {
   if (!route.query.id) {
     return undefined;
@@ -97,9 +93,9 @@ const getSelectedCard = (): Card | undefined => {
   return agents.value.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>(getRouteQueryValue('search'));
-const page = ref<number>(Number(getRouteQueryValue('page', '1')));
-const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
+const search = ref<string>(route.query.search as string || '');
+const page = ref<number>(Number(route.query.page as string || 1));
+const perPage = ref<number>(Number(route.query.perPage as string || 30));
 const inTeam = ref<boolean>(false);
 const viewTeam = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
@@ -111,18 +107,22 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
     };
   }
 
+  const selectedFilters = JSON.stringify(
+    Object.fromEntries(
+      filters.value
+        .filter((filter) => filter.value.length > 0)
+        .map((filter) => ([
+          filter.key,
+          filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
+        ]))
+    )
+  );
+
   return {
     search: search.value || undefined,
     page: page.value > 1 ? page.value : undefined,
     perPage: perPage.value !== 30 ? perPage.value : undefined,
-    ...Object.fromEntries(
-      filters.value.map((filter) => ([
-        filter.key,
-        filter.value.length > 0
-          ? filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
-          : undefined,
-      ]))
-    ),
+    filters: selectedFilters !== '{}' ? selectedFilters : undefined,
   };
 });
 
