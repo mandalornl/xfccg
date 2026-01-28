@@ -295,7 +295,7 @@ onUnmounted(() => {
           <v-col
             v-for="item of items"
             :key="item.raw.id"
-            cols="12"
+            cols="6"
             sm="4"
             md="3"
             lg="2"

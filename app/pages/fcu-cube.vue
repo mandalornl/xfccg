@@ -162,7 +162,7 @@ const drawCards = () => {
                 <v-col
                   v-for="item of items"
                   :key="item.raw.uuid"
-                  cols="12"
+                  cols="6"
                   sm="4"
                   md="3"
                   lg="2"
