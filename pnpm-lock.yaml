@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@nuxtjs/supabase':
-    hash: 80fbc0a605602ef3290910cfb510c158ae8a3ec849e6997ebfecc3e10c8cfeb9
-    path: patches/@nuxtjs__supabase.patch
-
 importers:
 
   .:
