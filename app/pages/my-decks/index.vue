@@ -29,20 +29,30 @@ const itemsPerPageOptions = [
   { value: 60, title: '60' },
 ];
 
-const getRouteQueryValue = (key: string, defaultValue: string = ''): string => (
-  (route.query[key] as string) || defaultValue
-);
-
 const getSortByValue = (): SortBy<Deck>[] => {
+  const defaultValue:SortBy<Deck>[] = [
+    {
+      key: 'created_at',
+      order: 'desc',
+    },
+  ];
+
   try {
-    return JSON.parse(getRouteQueryValue('sortBy', '[ { "key": "created_at", "order": "desc" } ]'));
+    const json = route.query.sortBys as string || '[]';
+    const sortBys = JSON.parse(json);
+
+    if (sortBys.length > 0) {
+      return sortBys;
+    }
+
+    return defaultValue;
   } catch {
-    return [];
+    return defaultValue;
   }
 };
 
-const page = ref<number>(Number(getRouteQueryValue('page', '1')));
-const perPage = ref<number>(Number(getRouteQueryValue('perPage', '30')));
+const page = ref<number>(Number(route.query.page as string || 1));
+const perPage = ref<number>(Number(route.query.perPage as string || 30));
 const sortBys = ref<SortBy<Deck>[]>(getSortByValue());
 const isLoading = ref<boolean>(false);
 
