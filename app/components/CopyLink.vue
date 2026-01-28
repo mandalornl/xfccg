@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const snackbarState = useSnackbarState();
 
-defineProps<{
-  value: string | number;
+const props = defineProps<{
+  hash?: string | number;
+  href?: string;
   iconColor?: string;
 }>();
 
@@ -19,6 +20,14 @@ const copyToClipboard = async (event: Event) => {
     snackbarState.error('Failed to copy to clipboard.');
   }
 };
+
+const url = computed<string>(() => {
+  if (props.hash) {
+    return `#${props.hash}`;
+  }
+
+  return props.href || '/';
+});
 </script>
 
 <template>
@@ -26,7 +35,8 @@ const copyToClipboard = async (event: Event) => {
     <slot />
     <v-btn
       v-tooltip:top="'Copy link to clipboard'"
-      :href="`#${value}`"
+      :href="url"
+      target="_blank"
       variant="text"
       size="small"
       color="primary"

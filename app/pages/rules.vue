@@ -36,7 +36,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <table-of-contents class="mb-4" />
     </section>
     <rule-page page="4">
-      <copy-link value="4">
+      <copy-link hash="4">
         <h2>The X-Files<sup>TM</sup> Collectible Card Game</h2>
       </copy-link>
       <p>Welcome to <b>The X-Files Collectible Card Game</b> Advanced Game. The Advanced Game incorporates many of the nuances of <b>The X-Files</b> television series and is designed for the more serious gamer and <b>The X-Files</b> fan.</p>
@@ -44,7 +44,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>In the Advanced Game, you will construct your deck of cards for game play. This gives each player greater control over the outcome of the game than in the Basic Game, where players use Starter Decks.The Advanced Game will allow each player to cater their Agents and cards to the Skills and strategy desired. It will be up to you to help Mulder and Scully solve their current X-File.</p>
     </rule-page>
     <rule-page page="5">
-      <copy-link value="5">
+      <copy-link hash="5">
         <h2>Advanced Game Set-up</h2>
       </copy-link>
       <p>The <b>Advanced Game</b> is designed for two or more players. The game is won by the first player who identifies one opponent's X-File. Game set-up for Advanced Game is similar to that of the Basic Game.</p>
@@ -54,7 +54,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>As in the Basic Game, select an X-File card.Place your X-File face down in a prominent place, as you may need to refer to it when your opponent asks questions.</p>
     </rule-page>
     <rule-page page="6">
-      <copy-link value="6">
+      <copy-link hash="6">
         <h3>Advanced Game Set-up continued…</h3>
       </copy-link>
       <p>In the Advanced Game, you may choose any number of Agents you like for your initial <b>Team</b>, provided there are no duplicates and the sum of all Agents' Costs does not exceed 20.The Agent's Cost is a rating relative to each Agent's game value and appears in the lower right corner of the Agent card. Your Team should be a minimum of three Agents, but can be more. Each player is allowed to have the same Agent.</p>
@@ -74,7 +74,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </ol>
     </rule-page>
     <rule-page page="7">
-      <copy-link value="7">
+      <copy-link hash="7">
         <h2>Advanced Game Table Diagram</h2>
       </copy-link>
       <v-alert
@@ -91,7 +91,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="8">
-      <copy-link value="8">
+      <copy-link hash="8">
         <h2>The X-Files Advanced Game Turn Sequence</h2>
       </copy-link>
       <p>The player whose turn it is will be referred to as the <b>Investigating (Active) Player</b>. Other players are referred to as the <b>Directed Player</b> (if they have a <b>Site</b> directed at them by the Investigating Player), or <b>Non-active Player</b> (everyone else in a multi-player game).</p>
@@ -156,7 +156,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </ol>
     </rule-page>
     <rule-page page="10">
-      <copy-link value="10">
+      <copy-link hash="10">
         <h2>Pools</h2>
       </copy-link>
       <p>In the Advanced Game, cards must be paid for in order to use their effects. This is done through the use of two pools: the <b>Resource Pool (RP)</b> and <b>Conspiracy Pool (CP)</b>. Each player will have one Conspiracy Pool and one Resource Pool.</p>
@@ -216,7 +216,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="11">
-      <copy-link value="11">
+      <copy-link hash="11">
         <h2>Resource Pool</h2>
       </copy-link>
       <p>Your <b>Resource Pool</b> represents the resource the Bureau has at its disposal. Resource Points are used to pay for the cards that assist your Agents. These cards have an <icon-resource-pool /> or <icon-star-pool /> under their Cost.</p>
@@ -242,7 +242,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>To keep the Resource Pool and Conspiracy Pool separate, we suggest putting the Resource Pool in the Bureau and the Conspiracy Pool by your X-File card.</p>
     </rule-page>
     <rule-page page="12">
-      <copy-link value="12">
+      <copy-link hash="12">
         <h2>Conspiracy Pool</h2>
       </copy-link>
       <p>Each player's X-File also has a pool used to purchase cards played. This is called the <b>Conspiracy Pool</b>. Your Conspiracy Pool represents the resources your X-File has at its disposal. Conspiracy Points are used to pay for cards used by the X-File to oppose investigations. These cards have a <icon-conspiracy-pool /> or <icon-star-pool /> under their cost.</p>
@@ -261,7 +261,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="13">
-      <copy-link value="13">
+      <copy-link hash="13">
         <h3>Turn Example: Game Setup</h3>
       </copy-link>
       <v-alert
@@ -274,7 +274,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="14">
-      <copy-link value="14">
+      <copy-link hash="14">
         <h2>Playing Cards</h2>
       </copy-link>
       <p>The system by which cards are played in the Advanced Game is different from the Basic Game. Each card now has a "<b>Cost</b>" associated with playing it. You must pay the Cost to use the card's effect. Other than Cost, there is no limit to the number of cards you may play. If at any time a player plays a card and then determines they can't afford it, the card is placed on the owning player's Discard Pile. When any contradiction arises between card effects and rules, the card effect supersedes the rules.</p>
@@ -286,7 +286,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>In addition, all cards contain <b>Keywords</b> and <b>Activators</b>. These often serve as codes indicating when cards may be played. See the <b>Keywords</b> section on page <hash-link value="17" /> and the <b>Activators</b> section on page <hash-link value="16" /> for further information.</p>
     </rule-page>
     <rule-page page="15">
-      <copy-link value="15">
+      <copy-link hash="15">
         <h2>Agent Cards</h2>
       </copy-link>
       <p>Agent cards contain a <b>Game Effect</b> in the center of the card. This is a special effect related to the Agent's significance in <b>The X-Files</b> television series. Each of the Agents you selected to begin play may use their Game Effect.</p>
@@ -311,7 +311,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="16">
-      <copy-link value="16">
+      <copy-link hash="16">
         <h2>Activators</h2>
       </copy-link>
       <p>Activators appear in gold in the lower left corner on a particular card. Simply stated, an Activator tells you when you may play a particular card. Activators can be grouped into three main categories:</p>
@@ -353,7 +353,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="17">
-      <copy-link value="17">
+      <copy-link hash="17">
         <h2>Keywords</h2>
       </copy-link>
       <p><b>Keywords</b> appear in red in the lower left corner on a particular card. The Keyword tells you what a card is.</p>
@@ -394,7 +394,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     <rule-page page="18">
       <h3>Detailed Advanced Game Phase Descriptions</h3>
       <copy-link
-        value="18"
+        hash="18"
         color="red"
       >
         <h2 class="text-red">
@@ -407,7 +407,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>Each opponent of the Investigating Player may purchase cards from the top of the Bureau Deck at the cost of <b>1</b> <icon-conspiracy-pool /> each. Purchasing cards is done after <icon-resource-pool /> cards have been sold. Each player must announce how many cards they are purchasing and do so at one time. They may not purchase some and choose to purchase more later. See the <b>Conspiracy Pool</b> section on page <hash-link value="12" />.</p>
     </rule-page>
     <rule-page page="19">
-      <copy-link value="19">
+      <copy-link hash="19">
         <h3>Turn Example: Briefing Phase</h3>
       </copy-link>
       <v-alert
@@ -421,7 +421,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     <rule-page page="20">
       <h3>Detailed Advanced Game Phase Descriptions continued…</h3>
       <copy-link
-        value="20"
+        hash="20"
         color="red"
       >
         <h2 class="text-red">
@@ -462,7 +462,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="21">
       <copy-link
-        value="21"
+        hash="21"
         color="red"
       >
         <h2 class="text-red">
@@ -506,7 +506,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="22">
-      <copy-link value="22">
+      <copy-link hash="22">
         <h3>Turn Example: Healing and Requisition Phases</h3>
       </copy-link>
       <v-alert
@@ -521,7 +521,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="23">
       <copy-link
-        value="23"
+        hash="23"
         color="red"
       >
         <h2 class="text-red">
@@ -536,7 +536,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     <rule-page page="24">
       <h3>Advanced Game Phase Descriptions continued…</h3>
       <copy-link
-        value="24"
+        hash="24"
         color="red"
       >
         <h2 class="text-red">
@@ -550,7 +550,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>If you have two identical Sites in your hand, you may not use them both in the same turn.</p>
     </rule-page>
     <rule-page page="25">
-      <copy-link value="25">
+      <copy-link hash="25">
         <h2>The Bluff</h2>
       </copy-link>
       <p>Bluff cards contain the Keyword "<b>Bluff</b>" and typically hinder an investigation. Cards with the Keyword "BLUFF" may be played in two ways.</p>
@@ -563,7 +563,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>If the Site is not investigated this turn, the Site will remain in play with the Bluff underneath it until an investigation is attempted or the game ends. An Agent Team that investigates a Site with Bluffs beneath it "activates" these Bluffs. They are referred to as the <b>Activating Team</b>.</p>
     </rule-page>
     <rule-page page="26">
-      <copy-link value="26">
+      <copy-link hash="26">
         <h3>Turn Example: Deployment and Case Assignment Phases</h3>
       </copy-link>
       <v-alert
@@ -576,7 +576,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="27">
       <copy-link
-        value="27"
+        hash="27"
         color="red"
       >
         <h2 class="text-red">
@@ -597,7 +597,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       />
     </rule-page>
     <rule-page page="28">
-      <copy-link value="28">
+      <copy-link hash="28">
         <h2>Advanced Phase Descriptions continued…</h2>
       </copy-link>
       <p>
@@ -634,7 +634,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       />
     </rule-page>
     <rule-page page="30">
-      <copy-link value="30">
+      <copy-link hash="30">
         <h3>Turn Example: Investigation Phase</h3>
       </copy-link>
       <v-alert
@@ -647,14 +647,14 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="31">
-      <copy-link value="31">
+      <copy-link hash="31">
         <h2>Combat</h2>
       </copy-link>
       <p>When you encounter an Adversary which is not negated, Combat will follow. Unless an opponent plays a card which specifically allows him to do so, only one Adversary may be encountered at a time. Therefore, if opponents want to play more than one Adversary, each is resolved during a separate Combat.</p>
       <p>Combat typically occurs in two rounds. The first round is <b>Long Range Combat (LRC)</b> and the second is <b>Close Range Combat (CRC)</b>. Only one round of Long Range Combat occurs. After Long Range Combat, Close Range Combat rounds are repeated until the Adversary is killed or all Agents are sent to the Hospital. All damage inflicted during each round occurs simultaneously. Thus, it is possible for an Agent or Adversary to be removed by Combat and still inflict damage for that round.</p>
     </rule-page>
     <rule-page page="32">
-      <copy-link value="32">
+      <copy-link hash="32">
         <h2>Long Range Combat</h2>
       </copy-link>
       <p>Combat typically starts with <b>Long Range Combat (LRC)</b>. Some Adversaries will attack by surprise or other special method involving the skipping of Long Range Combat, but this wil be stated on the specific card.</p>
@@ -664,7 +664,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>If the Adversary has been killed or if all Agents have been sent to the Hospital, Combat ends. If not, Combat continues with <b>Close Range Combat</b> rounds.</p>
     </rule-page>
     <rule-page page="33">
-      <copy-link value="33">
+      <copy-link hash="33">
         <h2>Close Range Combat</h2>
       </copy-link>
       <p><b>Close Range Combat (CRC)</b> follows the Long Range Combat round. Close Range Combat skill is listed on Adversary and Agent cards. Again, both players may use Combat cards. See the Combat Card section on page <hash-link value="35" /> of these rules. A Skill Check Subroutine again must be initiated to determine damage done by both the Adversary and the Agents. See the Skill Check Subroutine section on page <hash-link value="28" /> of these rules. Add on the effects of any Combat cards. Also, add the modifiers of any Equipment which adds to Close Range Combat. Apply the results in the same manner as Long Range Combat.</p>
@@ -678,7 +678,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       />
     </rule-page>
     <rule-page page="34">
-      <copy-link value="34">
+      <copy-link hash="34">
         <h2>Tracking Damage</h2>
       </copy-link>
       <p>In order to keep track of damage, you will need some sort of token. This may be as simple as pennies added for each damage point received or removed for each point healed.</p>
@@ -687,7 +687,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>Another effective method is the use of tokens, for example, pennies. Place a penny on the Agent's card for each point of damage they have received. These pennies are similarly removed as an Agent heals in the Hospital. Experiment and use whichever method you find most convenient.</p>
     </rule-page>
     <rule-page page="35">
-      <copy-link value="35">
+      <copy-link hash="35">
         <h2>Combat Cards</h2>
       </copy-link>
       <p>Combat cards may be paid for and played during both the Long Range Combat and Close Range Combat rounds and typically enhance or reduce the damage done. Some Combat Cards will have a <icon-star-pool /> next to the cost number instead of a <icon-resource-pool /> or <icon-conspiracy-pool />. This denotes that either the Conspiracy or Active Player may use these cards. The card must be paid for by whomever uses it (Active Player or Conspiracy).</p>
@@ -714,7 +714,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="36">
-      <copy-link value="36">
+      <copy-link hash="36">
         <h3>Turn Example: Combat</h3>
       </copy-link>
       <v-alert
@@ -728,7 +728,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="37">
       <copy-link
-        value="37"
+        hash="37"
         color="red"
       >
         <h2 class="text-red">
@@ -742,7 +742,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="38">
       <copy-link
-        value="38"
+        hash="38"
         color="red"
       >
         <h2 class="text-red">
@@ -753,7 +753,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>After the Debriefing Phase, the turn is completed. The next player to the left now begins their turn and turn and the turn sequence is repeated.</p>
     </rule-page>
     <rule-page page="39">
-      <copy-link value="39">
+      <copy-link hash="39">
         <h3>Turn Example: Investigation Phase Conclusion and Debriefing Phase</h3>
       </copy-link>
       <v-alert
@@ -765,7 +765,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="40">
-      <copy-link value="40">
+      <copy-link hash="40">
         <h2>Multi-Player Changes</h2>
       </copy-link>
       <p>In an Advanced Game, there are a few subtle changes that take place when multiple players are involved. This section will address these changes.</p>
@@ -794,7 +794,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="42">
       <copy-link
-        value="42"
+        hash="42"
         color="red"
       >
         <h2 class="text-red">
@@ -813,7 +813,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p>If you play an X-Files Advanced Game using Killer cards, another way to win the game is added. You can now win the game by permanently removing all opposing Agents from game play. This is still a rare occurrence while using these cards.</p>
     </rule-page>
     <rule-page page="43">
-      <copy-link value="43">
+      <copy-link hash="43">
         <h2>X-File Powers</h2>
       </copy-link>
       <p>The X-File Powers were designed to add flavor and strategy in selecting an X-File. They are optional. Both players must agree in order to use the X-File Powers in Advanced Game play.</p>
@@ -1084,7 +1084,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-list>
     </rule-page>
     <rule-page page="46">
-      <copy-link value="46">
+      <copy-link hash="46">
         <h2>Deck Construction</h2>
       </copy-link>
       <p>This following is a brief section on deck construction to help get you started with building your Bureau Deck. Remember, you may not use more than two of any particular card.</p>
@@ -1126,7 +1126,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-table>
     </rule-page>
     <rule-page page="48">
-      <copy-link value="48">
+      <copy-link hash="48">
         <h2>The Nine Different Suits</h2>
       </copy-link>
       <p>The X-Files cards are divided into nine basic suits based on how the card is used in the game. Before going further, it is important to note that many cards will appear to "break" rules defined in the Basic or Advanced Game. When any contradiction arises between card effects and rules, the card effect supersedes the rules. Most of the information contained on a card is common to all cards.</p>
@@ -1163,7 +1163,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="50">
-      <copy-link value="50">
+      <copy-link hash="50">
         <h2>Event Cards</h2>
       </copy-link>
       <p>Some Event cards hinder your opponent's Agents in the pursuit of the truth: your X-File's identity. Others help your Agents complete their mission. These cards contain only the common information listed on page <hash-link value="48" />.</p>
@@ -1184,7 +1184,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="51">
-      <copy-link value="51">
+      <copy-link hash="51">
         <h2>Witness Cards</h2>
       </copy-link>
       <p>Witness cards help Agents investigate Sites and usually modify Skill Checks. Witness cards are said to be unique. This means that only one of each specific card may be applied in a single Skill Check. These cards contain only the common information listed on page <hash-link value="48" />.</p>
@@ -1205,7 +1205,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="52">
-      <copy-link value="52">
+      <copy-link hash="52">
         <h2>Bluff Cards</h2>
       </copy-link>
       <p>Bluff cards help deter your opponents from successful Site investigation, usually by subtracting from Skill Checks. In the Basic Game, they are played during the Investigation Phase. Additionally, in the Advanced Game, they may be placed beneath the Site during the Case Assignment Phase. These cards contain only the common information listed on page <hash-link value="48" />.</p>
@@ -1226,7 +1226,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="53">
-      <copy-link value="53">
+      <copy-link hash="53">
         <h2>Equipment Cards</h2>
       </copy-link>
       <p>Equipment cards help Agents by permanently modifying a Skill as long as the Equipment is possessed. These cards contain only the common information listed on page <hash-link value="48" />.</p>
@@ -1247,7 +1247,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="54">
-      <copy-link value="54">
+      <copy-link hash="54">
         <h2>Combat Cards</h2>
       </copy-link>
       <p>Combat cards modify the results of Combat in the Advanced Game only. These cards are removed for the Basic Game. These cards contain only the common information listed on page <hash-link value="48" />.</p>
@@ -1268,7 +1268,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="55">
-      <copy-link value="55">
+      <copy-link hash="55">
         <h2>Adversary Cards</h2>
       </copy-link>
       <p>Adversary cards hinder opposing Agents by engaging them in Combat. Each card will note when it may be played. These cards contain the common information listed on page <hash-link value="48" /> and the following additional information.</p>
@@ -1292,7 +1292,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="56">
-      <copy-link value="56">
+      <copy-link hash="56">
         <h2>Site Cards</h2>
       </copy-link>
       <p>Site Cards form the basis of your investigation. Note that some Site cards have two questions and Skills that you may choose between while others have only one. These cards contain the common information listed on page <hash-link value="48" /> and the following additional information.</p>
@@ -1317,7 +1317,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="57">
-      <copy-link value="57">
+      <copy-link hash="57">
         <h2>Agent Cards</h2>
       </copy-link>
       <p>Agents are the nemesis of the X-File. While X-Files attempt to maintain their secrecy, the Agents are trying to identify them. These cards contain the common information listed on page <hash-link value="48" />, with the exception that Agent cards do not have Activators. Agent cards also contain the following additional information.</p>
@@ -1343,7 +1343,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-alert>
     </rule-page>
     <rule-page page="58">
-      <copy-link value="58">
+      <copy-link hash="58">
         <h2>X-File Cards</h2>
       </copy-link>
       <p>The X-File card represents the power behind each conspiracy. It is up to your Team of investigators to determine who or what the X-File is during the course of the game. An X-File card contains unique information from the other suits which is highlighted on the next few pages.</p>
@@ -1379,7 +1379,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="60">
       <copy-link
-        value="60"
+        hash="60"
         color="blue-darken-2"
       >
         <h2 class="text-blue-darken-2">
@@ -1450,7 +1450,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="61">
       <copy-link
-        value="61"
+        hash="61"
         color="orange-darken-2"
       >
         <h2 class="text-orange-darken-2">
@@ -1520,7 +1520,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="62">
       <copy-link
-        value="62"
+        hash="62"
         color="purple-darken-2"
       >
         <h2 class="text-purple-darken-2">
@@ -1590,7 +1590,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="63">
       <copy-link
-        value="63"
+        hash="63"
         color="light-green-darken-2"
       >
         <h2 class="text-light-green-darken-2">
@@ -1659,7 +1659,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       </v-list>
     </rule-page>
     <rule-page page="64">
-      <copy-link value="64">
+      <copy-link hash="64">
         <h2>Glossary</h2>
       </copy-link>
       <p><b>Activator</b>: Signifies when a particular card may be played. In general, there are three different categories of Activators in the game: Active, Conspiracy, all others.</p>
@@ -1675,7 +1675,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
       <p><b>Skills</b>: Unique abilities that a particular Agent possesses, which aid him/her in various situations throughout the game.</p>
     </rule-page>
     <rule-page page="65">
-      <copy-link value="65">
+      <copy-link hash="65">
         <h2>Glossary: Skills</h2>
       </copy-link>
       <p><b>Alien Investigation</b>: The pursuit of evidence that points to the existence of extra-terrestrial life.</p>
@@ -1976,7 +1976,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
     </rule-page>
     <rule-page page="68">
       <copy-link
-        value="68"
+        hash="68"
         color="red"
       >
         <h2 class="text-red">

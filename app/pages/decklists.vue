@@ -239,6 +239,7 @@ const shareLink = async (event: Event) => {
               @click="openInCards(item)"
             />
             <v-list-item
+              v-tooltip:top="'Copy link to clipboard'"
               :href="`/decklists?id=${item.id}`"
               target="_blank"
               title="Share Link"

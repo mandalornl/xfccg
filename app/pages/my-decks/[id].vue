@@ -34,7 +34,7 @@ const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 const isCloning = ref<boolean>(false);
 const isDeleting = ref<boolean>(false);
-const title = ref<string>('');
+const shareable = ref<boolean>(false);
 
 const tags: string[] = Object.values(InvestigationSkill);
 
@@ -77,7 +77,7 @@ watchEffect(() => {
   }
 
   deck.value = { ...data.value.deck };
-  title.value = data.value.deck?.title;
+  shareable.value = !!data.value.deck?.public;
 });
 
 const saveDeck = async (event: SubmitEventPromise) => {
@@ -105,6 +105,8 @@ const saveDeck = async (event: SubmitEventPromise) => {
 
     snackbarState.error('An error occurred saving your deck.');
   } else {
+    shareable.value = deck.value.public;
+
     snackbarState.success('Your deck has been saved.');
   }
 
@@ -219,10 +221,18 @@ const deleteDeck = async () => {
                 size="small"
                 icon="mdi-chevron-left"
               />
-              {{ title || 'Untitled' }}
+              {{ data.deck?.title || 'Untitled' }}
             </v-card-title>
             <v-card-subtitle>
-              {{ deck.id }}
+              <copy-link
+                v-if="shareable"
+                :href="`/decklists?id=${deck.id}`"
+              >
+                {{ deck.id }}
+              </copy-link>
+              <template v-else>
+                {{ deck.id }}
+              </template>
             </v-card-subtitle>
           </v-card-item>
           <v-card-text class="text-body-1">
