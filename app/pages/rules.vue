@@ -2005,7 +2005,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
             </li>
             <li>
               <hash-link value="18">
-                Opponents Sell Cards for <icon-conspiracy-pool /> (CPs)
+                Opponents Sell Cards for <icon-conspiracy-pool />s (CPs)
               </hash-link>
             </li>
             <li>
