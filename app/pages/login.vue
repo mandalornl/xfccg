@@ -6,7 +6,7 @@ const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const redirectInfo = useSupabaseCookieRedirect();
 const runtimeConfig = useRuntimeConfig();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'Login',
@@ -33,7 +33,7 @@ const email = ref<string>(getEmail());
 const password = ref<string>(runtimeConfig.public.login.password || '');
 
 const signInWithDiscord = async () => {
-  snackbarState.reset();
+  snackbar.reset();
 
   isSigningInWithDiscord.value = true;
 
@@ -47,7 +47,7 @@ const signInWithDiscord = async () => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred signing in with Discord.');
+    snackbar.error('An error occurred signing in with Discord.');
   }
 
   setTimeout(() => {
@@ -70,7 +70,7 @@ const signIn = async (event: SubmitEventPromise) => {
   });
 
   if (error) {
-    snackbarState.error('An error occurred signing in.');
+    snackbar.error('An error occurred signing in.');
   }
 
   setTimeout(() => {

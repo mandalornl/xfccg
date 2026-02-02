@@ -3,7 +3,7 @@ import type { Decklist } from '~/types/deck';
 
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 const props = defineProps<{
   deck: Decklist;
@@ -19,7 +19,7 @@ watchEffect(() => {
 });
 
 const likeOrUnlike = async () => {
-  snackbarState.reset();
+  snackbar.reset();
 
   isLoading.value = true;
 
@@ -33,7 +33,7 @@ const likeOrUnlike = async () => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error(`An error occurred ${liked.value ? 'unliking' : 'liking'} this deck.`);
+    snackbar.error(`An error occurred ${liked.value ? 'unliking' : 'liking'} this deck.`);
   } else {
     liked.value = newLiked;
     likes.value += newLiked ? 1 : -1;

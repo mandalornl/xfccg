@@ -6,11 +6,8 @@ const route = useRoute();
 const router = useRouter();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
-const {
-  deckSize,
-  setDeck,
-} = useDeckState();
-const snackbarState = useSnackbarState();
+const deckbuilder = useDeckbuilder();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'My Decks',
@@ -125,7 +122,7 @@ const {
 });
 
 const deleteDeck = async (deck: Deck) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   if (!confirm('Are you sure you want to delete this deck?\nThis action cannot be undone.')) {
     return;
@@ -141,9 +138,9 @@ const deleteDeck = async (deck: Deck) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred deleting the deck.');
+    snackbar.error('An error occurred deleting the deck.');
   } else {
-    snackbarState.success('Your deck has been deleted.');
+    snackbar.success('Your deck has been deleted.');
 
     await refresh();
   }
@@ -154,7 +151,7 @@ const deleteDeck = async (deck: Deck) => {
 };
 
 const toggleDeckPublic = async (deck: Deck) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   isLoading.value = true;
 
@@ -168,9 +165,9 @@ const toggleDeckPublic = async (deck: Deck) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error(`An error occurred ${deck.public ? 'unpublishing' : 'publishing'} the deck.`);
+    snackbar.error(`An error occurred ${deck.public ? 'unpublishing' : 'publishing'} the deck.`);
   } else {
-    snackbarState.success(`Your deck has been ${newPublic ? 'published' : 'unpublished'}.`);
+    snackbar.success(`Your deck has been ${newPublic ? 'published' : 'unpublished'}.`);
 
     await refresh();
   }
@@ -182,13 +179,13 @@ const toggleDeckPublic = async (deck: Deck) => {
 
 const openInCards = (deck: Deck) => {
   if (
-    deckSize.value > 0
+    deckbuilder.size.value > 0
     && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
   ) {
     return;
   }
 
-  setDeck(deck);
+  deckbuilder.update(deck);
 
   return navigateTo('/cards');
 };

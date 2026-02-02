@@ -1,11 +1,11 @@
 export default defineNuxtPlugin(() => {
-  const { deckSize } = useDeckState();
+  const deckbuilder = useDeckbuilder();
 
   const onBeforeUnload = (event: Event) => {
     event.preventDefault();
   };
 
-  watch(deckSize, (value) => {
+  watch(deckbuilder.size, (value) => {
     if (value) {
       window.addEventListener('beforeunload', onBeforeUnload);
     } else {

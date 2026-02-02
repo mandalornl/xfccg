@@ -7,12 +7,8 @@ import type { Deck } from '~/types/deck';
 
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
-const {
-  deckState,
-  setDeck,
-  clearDeck,
-} = useDeckState();
-const snackbarState = useSnackbarState();
+const deckbuilder = useDeckbuilder();
+const snackbar = useSnackbar();
 
 const isOpen = defineModel<boolean>({
   default: false,
@@ -21,12 +17,12 @@ const isOpen = defineModel<boolean>({
 const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
-const deck = ref<Deck>({ ...deckState.value });
+const deck = ref<Deck>(deckbuilder.clone());
 
 const tags: string[] = Object.values(InvestigationSkill);
 
 const saveDeck = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -50,12 +46,12 @@ const saveDeck = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred saving your deck.');
+    snackbar.error('An error occurred saving your deck.');
   } else {
-    snackbarState.success('Your deck has been saved.');
+    snackbar.success('Your deck has been saved.');
 
     if (data.id !== deck.value.id) {
-      clearDeck();
+      deckbuilder.clear();
 
       return navigateTo({
         name: 'my-decks-id',
@@ -67,7 +63,7 @@ const saveDeck = async (event: SubmitEventPromise) => {
       });
     }
 
-    setDeck(data as Deck);
+    deckbuilder.update(data as Deck);
 
     isOpen.value = false;
   }
@@ -82,12 +78,12 @@ watch(isOpen, (value) => {
     return;
   }
 
-  deck.value = { ...deckState.value };
+  deck.value = deckbuilder.clone();
 
   formRef.value?.resetValidation();
 });
 
-watch(deckState, (value) => {
+watch(deckbuilder.state, (value) => {
   deck.value = { ...value };
 });
 </script>

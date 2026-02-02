@@ -5,7 +5,7 @@ import type { VForm } from 'vuetify/components';
 import { readFileAsText } from '~/utils/file';
 
 const supabase = useSupabaseClient();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 const isOpen = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
@@ -24,7 +24,7 @@ watch(isOpen, (value) => {
 });
 
 const importDeck = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -51,9 +51,9 @@ const importDeck = async (event: SubmitEventPromise) => {
       .single();
 
     if (error) {
-      snackbarState.error('An error occurred importing the deck.');
+      snackbar.error('An error occurred importing the deck.');
     } else {
-      snackbarState.success('Your deck has been imported.');
+      snackbar.success('Your deck has been imported.');
 
       await navigateTo({
         name: 'my-decks-id',
@@ -65,7 +65,7 @@ const importDeck = async (event: SubmitEventPromise) => {
   } catch (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred importing the deck.');
+    snackbar.error('An error occurred importing the deck.');
   }
 
   setTimeout(() => {

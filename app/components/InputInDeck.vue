@@ -5,7 +5,7 @@ import {
   CardType,
 } from '~/types/card';
 
-const { deckState } = useDeckState();
+const deckbuilder = useDeckbuilder();
 
 const props = defineProps<{
   card: Card,
@@ -39,10 +39,10 @@ const max = computed(() => {
 <template>
   <v-number-input
     :disabled="max === 0"
-    :model-value="deckState.card_ids[card.id] ?? 0"
+    :model-value="deckbuilder.getQuantity(card.id)"
     :min="0"
     :max="max"
-    :bg-color="deckState.card_ids[card.id] ? 'primary' : undefined"
+    :bg-color="deckbuilder.hasQuantity(card.id) ? 'primary' : undefined"
     flat
     hide-details
     width="80"
@@ -51,6 +51,6 @@ const max = computed(() => {
     density="compact"
     control-variant="stacked"
     @click.stop
-    @update:model-value="deckState.card_ids[card.id] = $event"
+    @update:model-value="deckbuilder.setQuantity(card.id, $event)"
   />
 </template>

@@ -2,7 +2,7 @@
 import type { SubmitEventPromise } from 'vuetify';
 
 const supabase = useSupabaseClient();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'Change Password',
@@ -13,7 +13,7 @@ const isUpdating = ref<boolean>(false);
 const password = ref<string>('');
 
 const updatePassword = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -30,9 +30,9 @@ const updatePassword = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred updating password.');
+    snackbar.error('An error occurred updating password.');
   } else {
-    snackbarState.success('Your password has been updated.');
+    snackbar.success('Your password has been updated.');
 
     await navigateTo('/account', {
       replace: true,

@@ -3,7 +3,7 @@ import type { SubmitEventPromise } from 'vuetify';
 
 const supabase = useSupabaseClient();
 const runtimeConfig = useRuntimeConfig();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'Reset your password',
@@ -20,7 +20,7 @@ const isSending = ref<boolean>(false);
 const email = ref<string>('');
 
 const resetPasswordForEmail = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -37,9 +37,9 @@ const resetPasswordForEmail = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred sending the email to reset your password.');
+    snackbar.error('An error occurred sending the email to reset your password.');
   } else {
-    snackbarState.success('The email to reset your password has been sent.');
+    snackbar.success('The email to reset your password has been sent.');
 
     await navigateTo('/', {
       replace: true,

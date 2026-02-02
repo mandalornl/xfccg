@@ -2,15 +2,15 @@
 import { useDisplay } from 'vuetify';
 
 const { xs } = useDisplay();
-const { snackbarState } = useSnackbarState();
+const { state } = useSnackbar();
 </script>
 
 <template>
   <v-snackbar
-    v-model="snackbarState.visible"
-    :text="snackbarState.text"
-    :color="snackbarState.color"
-    :timeout="snackbarState.timeout"
+    v-model="state.visible"
+    :text="state.text"
+    :color="state.color"
+    :timeout="state.timeout"
     :multi-line="xs"
     :location="xs ? 'bottom center' : 'top center'"
     content-class="text-pre-line"
@@ -20,7 +20,7 @@ const { snackbarState } = useSnackbarState();
         variant="text"
         icon="mdi-close"
         size="small"
-        @click="snackbarState.visible = false"
+        @click="state.visible = false"
       />
     </template>
   </v-snackbar>

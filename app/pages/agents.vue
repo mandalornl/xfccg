@@ -13,11 +13,7 @@ import { InvestigationSkill } from '~/types/skill';
 const route = useRoute();
 const router = useRouter();
 const { t } = useLocale();
-const {
-  teamState,
-  totalCost,
-  clearTeam,
-} = useTeamState();
+const teambuilder = useTeambuilder();
 const pool = await usePool();
 
 useHead({
@@ -165,7 +161,7 @@ const cards = computed<Agent[]>(() => (
       }
     }
 
-    if (inTeam.value && !teamState.value[card.id]) {
+    if (inTeam.value && !teambuilder.hasAgent(card)) {
       return false;
     }
 
@@ -173,7 +169,7 @@ const cards = computed<Agent[]>(() => (
   })
 ));
 
-const remainingCost = computed(() => 20 - totalCost.value);
+const remainingCost = computed(() => 20 - teambuilder.cost.value);
 
 watch(remainingCost, (value) => {
   if (value < 20) {
@@ -188,7 +184,7 @@ const clearSelection = () => {
     return;
   }
 
-  clearTeam();
+  teambuilder.clear();
 };
 
 const selectedIndex = computed<number>(() => {
@@ -242,15 +238,15 @@ onUnmounted(() => {
         :items="cards"
       />
       <v-badge
-        :model-value="totalCost > 0"
-        :content="totalCost"
+        :model-value="teambuilder.cost.value > 0"
+        :content="teambuilder.cost.value"
         color="primary"
       >
         <v-menu>
           <template #activator="{ props:menuProps }">
             <v-btn
               v-tooltip:top="'Actions'"
-              :disabled="totalCost === 0"
+              :disabled="teambuilder.cost.value === 0"
               rounded
               icon="mdi-dots-vertical"
               v-bind="menuProps"
@@ -275,7 +271,7 @@ onUnmounted(() => {
             />
             <v-divider />
             <v-list-item
-              :disabled="totalCost === 0"
+              :disabled="teambuilder.cost.value === 0"
               title="Clear Selection"
               base-color="error"
               @click="clearSelection"
@@ -301,7 +297,7 @@ onUnmounted(() => {
             lg="2"
           >
             <v-card
-              :disabled="item.raw.costInt > remainingCost && !teamState[item.raw.id]"
+              :disabled="item.raw.costInt > remainingCost && !teambuilder.hasAgent(item.raw)"
               variant="flat"
               @click="selectedCard = { ...item.raw }"
             >
@@ -320,10 +316,10 @@ onUnmounted(() => {
                 <v-spacer />
                 # In team
                 <v-number-input
-                  :model-value="teamState[item.raw.id] ? 1 : 0"
+                  :model-value="teambuilder.hasAgent(item.raw) ? 1 : 0"
                   :min="0"
                   :max="1"
-                  :bg-color="teamState[item.raw.id] ? 'primary' : undefined"
+                  :bg-color="teambuilder.hasAgent(item.raw) ? 'primary' : undefined"
                   flat
                   hide-details
                   max-width="80"
@@ -331,7 +327,7 @@ onUnmounted(() => {
                   density="compact"
                   control-variant="stacked"
                   @click.stop
-                  @update:model-value="teamState[item.raw.id] = $event > 0 ? item.raw : null"
+                  @update:model-value="$event > 0 ? teambuilder.setAgent(item.raw) : teambuilder.removeAgent(item.raw)"
                 />
               </v-card-actions>
             </v-card>

@@ -3,7 +3,7 @@ import type { SubmitEventPromise } from 'vuetify';
 
 const user = useSupabaseUser();
 const supabase = useSupabaseClient();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'Account',
@@ -19,7 +19,7 @@ const fullName = ref<string>(
 );
 
 const updateUser = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -42,9 +42,9 @@ const updateUser = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred saving your account.');
+    snackbar.error('An error occurred saving your account.');
   } else {
-    snackbarState.success('Your account has been saved.');
+    snackbar.success('Your account has been saved.');
   }
 
   setTimeout(() => {

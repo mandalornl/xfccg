@@ -13,13 +13,13 @@ import { getIconBySkill } from '~/utils/icon';
 import { getColorBySkillTotal } from '~/utils/color';
 
 const { xs } = useDisplay();
-const { teamState } = useTeamState();
+const teambuilder = useTeambuilder();
 
 const isOpen = defineModel<boolean>({
   default: false,
 });
 
-const team = computed<Agent[]>(() => Object.values(teamState.value).filter((agent) => agent !== null));
+const team = computed<Agent[]>(() => Object.values(teambuilder.clone()).filter((agent) => agent !== null));
 
 const stats = computed<AgentStat[]>(() => ([
   ...Object.values(InvestigationSkill),

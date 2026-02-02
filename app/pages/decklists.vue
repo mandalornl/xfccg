@@ -6,11 +6,8 @@ const route = useRoute();
 const router = useRouter();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
-const snackbarState = useSnackbarState();
-const {
-  deckSize,
-  setDeck,
-} = useDeckState();
+const snackbar = useSnackbar();
+const deckbuilder = useDeckbuilder();
 
 useHead({
   title: 'Decklists',
@@ -176,13 +173,13 @@ const openDeck = (_event: Event, data: { item: Decklist }) => {
 
 const openInCards = (deck: Decklist) => {
   if (
-    deckSize.value > 0
+    deckbuilder.size.value > 0
     && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
   ) {
     return;
   }
 
-  setDeck(deck);
+  deckbuilder.update(deck);
 
   return navigateTo('/cards');
 };
@@ -193,9 +190,9 @@ const shareLink = async (event: Event) => {
 
     await navigator.clipboard.writeText(target.href);
 
-    snackbarState.success('Copied to clipboard.');
+    snackbar.success('Copied to clipboard.');
   } catch {
-    snackbarState.error('Failed to copy to clipboard.');
+    snackbar.error('Failed to copy to clipboard.');
   }
 };
 </script>

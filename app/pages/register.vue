@@ -3,7 +3,7 @@ import type { SubmitEventPromise } from 'vuetify';
 
 const runtimeConfig = useRuntimeConfig();
 const supabase = useSupabaseClient();
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 useHead({
   title: 'Register',
@@ -22,7 +22,7 @@ const email = ref<string>('');
 const password = ref<string>('');
 
 const register = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -48,9 +48,9 @@ const register = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred during registration.');
+    snackbar.error('An error occurred during registration.');
   } else {
-    snackbarState.success('A confirmation email has been sent. Your account will be activated once you confirm it.');
+    snackbar.success('A confirmation email has been sent. Your account will be activated once you confirm it.');
 
     await navigateTo({
       name: 'login',

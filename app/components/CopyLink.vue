@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const snackbarState = useSnackbarState();
+const snackbar = useSnackbar();
 
 const props = defineProps<{
   hash?: string | number;
@@ -8,16 +8,16 @@ const props = defineProps<{
 }>();
 
 const copyToClipboard = async (event: Event) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   try {
     const target = event.currentTarget as HTMLAnchorElement;
 
     await navigator.clipboard.writeText(target.href);
 
-    snackbarState.success('Copied to clipboard.');
+    snackbar.success('Copied to clipboard.');
   } catch {
-    snackbarState.error('Failed to copy to clipboard.');
+    snackbar.error('Failed to copy to clipboard.');
   }
 };
 

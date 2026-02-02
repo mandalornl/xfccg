@@ -8,11 +8,8 @@ import { InvestigationSkill } from '~/types/skill';
 const route = useRoute();
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
-const snackbarState = useSnackbarState();
-const {
-  deckSize,
-  setDeck,
-} = useDeckState();
+const snackbar = useSnackbar();
+const deckbuilder = useDeckbuilder();
 const { xs } = useDisplay();
 
 useHead({
@@ -81,7 +78,7 @@ watchEffect(() => {
 });
 
 const saveDeck = async (event: SubmitEventPromise) => {
-  snackbarState.reset();
+  snackbar.reset();
 
   const { valid } = await event;
 
@@ -103,11 +100,11 @@ const saveDeck = async (event: SubmitEventPromise) => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred saving your deck.');
+    snackbar.error('An error occurred saving your deck.');
   } else {
     shareable.value = deck.value.public;
 
-    snackbarState.success('Your deck has been saved.');
+    snackbar.success('Your deck has been saved.');
   }
 
   setTimeout(() => {
@@ -117,19 +114,19 @@ const saveDeck = async (event: SubmitEventPromise) => {
 
 const openInCards = () => {
   if (
-    deckSize.value > 0
+    deckbuilder.size.value > 0
     && !confirm('It looks like you\'re already working on another deck. Do you want to continue and open this one?\nAny unsaved changes will be lost.')
   ) {
     return;
   }
 
-  setDeck(deck.value);
+  deckbuilder.update(deck.value);
 
   return navigateTo('/cards');
 };
 
 const cloneDeck = async () => {
-  snackbarState.reset();
+  snackbar.reset();
 
   isCloning.value = true;
 
@@ -149,9 +146,9 @@ const cloneDeck = async () => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred cloning your deck.');
+    snackbar.error('An error occurred cloning your deck.');
   } else {
-    snackbarState.success('Your deck has been cloned.');
+    snackbar.success('Your deck has been cloned.');
 
     await navigateTo({
       name: 'my-decks-id',
@@ -167,7 +164,7 @@ const cloneDeck = async () => {
 };
 
 const deleteDeck = async () => {
-  snackbarState.reset();
+  snackbar.reset();
 
   if (!confirm('Are you sure you want to delete this deck?\nThis action cannot be undone.')) {
     return;
@@ -183,9 +180,9 @@ const deleteDeck = async () => {
   if (error) {
     useDebug(error);
 
-    snackbarState.error('An error occurred deleting your deck.');
+    snackbar.error('An error occurred deleting your deck.');
   } else {
-    snackbarState.success('Your deck has been deleted.');
+    snackbar.success('Your deck has been deleted.');
 
     await navigateTo('/my-decks', {
       replace: true,

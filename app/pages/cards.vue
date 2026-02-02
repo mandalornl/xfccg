@@ -20,11 +20,7 @@ import type { Deck } from '~/types/deck';
 const route = useRoute();
 const router = useRouter();
 const { t } = useLocale();
-const {
-  deckState,
-  deckSize,
-  clearDeck,
-} = useDeckState();
+const deckbuilder = useDeckbuilder();
 const pool = await usePool();
 
 useHead({
@@ -186,7 +182,7 @@ const cards = computed<Card[]>(() => {
       }
     }
 
-    if (inDeck.value && !deckState.value.card_ids[card.id]) {
+    if (inDeck.value && !deckbuilder.hasQuantity(card.id)) {
       return false;
     }
 
@@ -202,7 +198,7 @@ const cards = computed<Card[]>(() => {
   return hits;
 });
 
-watch(deckSize, (value) => {
+watch(deckbuilder.size, (value) => {
   if (value > 0) {
     return;
   }
@@ -261,7 +257,7 @@ const clearSelection = () => {
     return;
   }
 
-  clearDeck();
+  deckbuilder.clear();
 };
 </script>
 
@@ -290,15 +286,15 @@ const clearSelection = () => {
         :items="cards"
       />
       <v-badge
-        :model-value="deckSize > 0"
-        :content="deckSize"
+        :model-value="deckbuilder.size.value > 0"
+        :content="deckbuilder.size.value"
         color="primary"
       >
         <v-menu>
           <template #activator="{ props:menuProps }">
             <v-btn
               v-tooltip:top="'Actions'"
-              :disabled="deckSize === 0"
+              :disabled="deckbuilder.size.value === 0"
               rounded
               icon="mdi-dots-vertical"
               v-bind="menuProps"
@@ -320,11 +316,11 @@ const clearSelection = () => {
             <v-divider />
             <v-list-item
               title="View Deck"
-              @click="selectedDeck = { ...deckState }"
+              @click="selectedDeck = deckbuilder.clone()"
             />
             <v-divider />
             <v-list-item
-              :disabled="deckSize === 0"
+              :disabled="deckbuilder.size.value === 0"
               title="Clear Selection"
               base-color="error"
               @click="clearSelection"
