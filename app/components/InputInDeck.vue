@@ -12,10 +12,7 @@ const props = defineProps<{
 }>();
 
 const max = computed(() => {
-  if (
-    props.card.id === 'XF97-0437x1'
-    || props.card.type === CardType.Agent
-  ) {
+  if (props.card.id === 'XF97-0437x1') {
     return 1;
   }
 
@@ -25,11 +22,19 @@ const max = computed(() => {
   ) {
     const id = props.card.id.replace(/^XF9\d-(\d{4})v\d$/, '$1');
     const alternateId = props.card.id.endsWith('v1') ? `XF97-${id}v2` : `XF96-${id}v1`;
-    const quantity = deckState.value.card_ids[alternateId] ?? 0;
+    const quantity = deckbuilder.getQuantity(alternateId);
 
     if (quantity > 0) {
+      if (props.card.type === CardType.Agent) {
+        return 0;
+      }
+
       return Math.max(0 , 2 - quantity);
     }
+  }
+
+  if (props.card.type === CardType.Agent) {
+    return 1;
   }
 
   return 2;
