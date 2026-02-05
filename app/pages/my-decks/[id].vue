@@ -19,6 +19,7 @@ useHead({
 const defaultItem = (): Deck => ({
   id: '',
   title: '',
+  description: '',
   card_ids: {},
   public: false,
   created_at: '',
@@ -92,6 +93,7 @@ const saveDeck = async (event: SubmitEventPromise) => {
     .from('decks')
     .update({
       title: deck.value.title,
+      description: deck.value.description,
       tags: deck.value.tags,
       public: deck.value.public,
     })
@@ -237,6 +239,14 @@ const deleteDeck = async () => {
               v-model="deck.title"
               :rules="[ (v) => !!v || 'Enter a title' ]"
               label="Title"
+            />
+            <v-textarea
+              v-model.trim="deck.description"
+              no-resize
+              auto-grow
+              label="Description"
+              counter="600"
+              maxlength="600"
             />
             <v-select
               v-model="deck.tags"

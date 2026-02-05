@@ -18,28 +18,31 @@ export type Database = {
         Row: {
           card_ids: Json
           created_at: string
+          description: string | null
           id: string
           public: boolean
           tags: string[]
-          title: string
+          title: string | null
           user_id: string
         }
         Insert: {
           card_ids?: Json
           created_at?: string
+          description?: string | null
           id?: string
           public?: boolean
           tags?: string[]
-          title: string
+          title?: string | null
           user_id?: string
         }
         Update: {
           card_ids?: Json
           created_at?: string
+          description?: string | null
           id?: string
           public?: boolean
           tags?: string[]
-          title?: string
+          title?: string | null
           user_id?: string
         }
         Relationships: [
@@ -114,6 +117,7 @@ export type Database = {
           card_ids: Json | null
           created_at: string | null
           created_by: string | null
+          description: string | null
           id: string | null
           liked: boolean | null
           likes: number | null
@@ -139,6 +143,7 @@ export type Database = {
       upsert_deck: {
         Args: {
           p_card_ids: Json
+          p_description: string
           p_id: string
           p_public: boolean
           p_tags: string[]
@@ -147,10 +152,11 @@ export type Database = {
         Returns: {
           card_ids: Json
           created_at: string
+          description: string | null
           id: string
           public: boolean
           tags: string[]
-          title: string
+          title: string | null
           user_id: string
         }
         SetofOptions: {

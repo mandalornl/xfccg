@@ -38,6 +38,7 @@ const saveDeck = async (event: SubmitEventPromise) => {
   } = await supabase.rpc('upsert_deck', {
     p_id: user.value?.sub === deck.value.user_id ? deck.value.id : '',
     p_title: deck.value.title,
+    p_description: deck.value.description,
     p_card_ids: deck.value.card_ids,
     p_tags: deck.value.tags,
     p_public: deck.value.public,
@@ -91,7 +92,7 @@ watch(deckbuilder.state, (value) => {
   <v-dialog
     v-model="isOpen"
     persistent
-    width="500"
+    width="600"
   >
     <v-form
       ref="form"
@@ -123,6 +124,14 @@ watch(deckbuilder.state, (value) => {
             v-model="deck.title"
             :rules="[ (v) => !!v || 'Enter the title' ]"
             label="Title"
+          />
+          <v-textarea
+            v-model.trim="deck.description"
+            no-resize
+            auto-grow
+            label="Description"
+            counter="600"
+            maxlength="600"
           />
           <v-select
             v-model="deck.tags"

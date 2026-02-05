@@ -5,6 +5,7 @@ export const useDeckbuilder = () => {
   const defaultValue = (): Deck => ({
     id: '',
     title: '',
+    description: '',
     card_ids: {},
     created_at: '',
     public: false,

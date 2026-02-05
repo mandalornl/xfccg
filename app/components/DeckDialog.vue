@@ -46,6 +46,11 @@ const openSaveDeck = ref<boolean>(false);
         </v-card-subtitle>
       </v-card-item>
       <v-card-text class="text-body-1">
+        <p
+          v-if="deck?.description"
+          class="text-pre-wrap"
+          v-text="deck?.description"
+        />
         <deck-view
           v-if="deck?.card_ids"
           :card-ids="deck?.card_ids"

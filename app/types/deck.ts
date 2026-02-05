@@ -3,6 +3,7 @@ import type { CardId } from '~/types/card';
 export interface Deck {
   id: string;
   title: string;
+  description: string;
   card_ids: Record<CardId, number>;
   public: boolean;
   created_at: string;
