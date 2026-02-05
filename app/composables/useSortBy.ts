@@ -6,7 +6,7 @@ export function useSortBy<T>(sortBy: SortBy<T>[]): (a: T, b: T) => number {
     numeric: true,
   });
 
-  return (a: T, b: T) => {
+  return (a: T, b: T): number => {
     for (const {
       key,
       order,
