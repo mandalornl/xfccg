@@ -4,7 +4,7 @@ import {
 } from '~/types/snackbar';
 
 export const useSnackbar = () => {
-  const state = useState('snackbar', (): SnackbarState => ({
+  const state = useState<SnackbarState>('snackbar', () => ({
     visible: false,
     text: '',
     color: SnackbarColor.Info,
