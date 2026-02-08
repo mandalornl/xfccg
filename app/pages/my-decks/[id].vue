@@ -237,13 +237,11 @@ const deleteDeck = async () => {
               :rules="[ (v) => !!v || 'Enter a title' ]"
               label="Title"
             />
-            <v-textarea
-              v-model.trim="deck.description"
-              no-resize
+            <input-markdown
+              v-model="deck.description"
               auto-grow
-              label="Description"
               counter="600"
-              maxlength="600"
+              label="Description"
             />
             <deck-tags v-model="deck.tags" />
             <v-switch
