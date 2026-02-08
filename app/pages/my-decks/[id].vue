@@ -3,7 +3,6 @@ import type { SubmitEventPromise } from 'vuetify';
 import { useDisplay } from 'vuetify';
 
 import type { Deck } from '~/types/deck';
-import { InvestigationSkill } from '~/types/skill';
 
 const route = useRoute();
 const supabase = useSupabaseClient();
@@ -33,8 +32,6 @@ const isSaving = ref<boolean>(false);
 const isCloning = ref<boolean>(false);
 const isDeleting = ref<boolean>(false);
 const shareable = ref<boolean>(false);
-
-const tags: string[] = Object.values(InvestigationSkill);
 
 const {
   data,
@@ -248,15 +245,7 @@ const deleteDeck = async () => {
               counter="600"
               maxlength="600"
             />
-            <v-select
-              v-model="deck.tags"
-              :items="tags"
-              multiple
-              chips
-              closable-chips
-              clearable
-              label="Tags"
-            />
+            <deck-tags v-model="deck.tags" />
             <v-switch
               v-model="deck.public"
               hide-details

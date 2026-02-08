@@ -2,7 +2,6 @@
 import type { VForm } from 'vuetify/components';
 import type { SubmitEventPromise } from 'vuetify/framework';
 
-import { InvestigationSkill } from '~/types/skill';
 import type { Deck } from '~/types/deck';
 
 const supabase = useSupabaseClient();
@@ -18,8 +17,6 @@ const isValidForm = ref<boolean>(true);
 const isSaving = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
 const deck = ref<Deck>(deckbuilder.clone());
-
-const tags: string[] = Object.values(InvestigationSkill);
 
 const saveDeck = async (event: SubmitEventPromise) => {
   snackbar.reset();
@@ -133,14 +130,7 @@ watch(deckbuilder.state, (value) => {
             counter="600"
             maxlength="600"
           />
-          <v-select
-            v-model="deck.tags"
-            :items="tags"
-            multiple
-            chips
-            closable-chips
-            label="Tags"
-          />
+          <deck-tags v-model="deck.tags" />
           <v-switch
             v-model="deck.public"
             hide-details
