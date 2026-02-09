@@ -218,29 +218,6 @@ const editLink = async (event: SubmitEventPromise) => {
             vertical
             class="mx-2"
           />
-          <v-btn-group
-            variant="text"
-            density="comfortable"
-          >
-            <v-btn
-              v-tooltip:top="'Undo'"
-              :disabled="!editor?.can?.()?.undo()"
-              :active="!!editor?.isActive('undo')"
-              icon="mdi-undo"
-              @click="editor?.chain().focus().undo().run()"
-            />
-            <v-btn
-              v-tooltip:top="'Redo'"
-              :disabled="!editor?.can?.()?.redo()"
-              :active="!!editor?.isActive('redo')"
-              icon="mdi-redo"
-              @click="editor?.chain().focus().redo().run()"
-            />
-          </v-btn-group>
-          <v-divider
-            vertical
-            class="mx-2"
-          />
           <v-dialog
             v-model="dialog"
             persist
@@ -305,6 +282,29 @@ const editLink = async (event: SubmitEventPromise) => {
               </v-card>
             </v-form>
           </v-dialog>
+          <v-divider
+            vertical
+            class="mx-2"
+          />
+          <v-btn-group
+            variant="text"
+            density="comfortable"
+          >
+            <v-btn
+              v-tooltip:top="'Undo'"
+              :disabled="!editor?.can?.()?.undo()"
+              :active="!!editor?.isActive('undo')"
+              icon="mdi-undo"
+              @click="editor?.chain().focus().undo().run()"
+            />
+            <v-btn
+              v-tooltip:top="'Redo'"
+              :disabled="!editor?.can?.()?.redo()"
+              :active="!!editor?.isActive('redo')"
+              icon="mdi-redo"
+              @click="editor?.chain().focus().redo().run()"
+            />
+          </v-btn-group>
         </v-toolbar>
         <v-field
           :id="id.value"
