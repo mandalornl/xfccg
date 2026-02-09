@@ -237,7 +237,7 @@ const shareLink = async (event: Event) => {
             />
             <v-list-item
               v-tooltip:top="'Copy link to clipboard'"
-              :href="`/decklists?id=${item.id}`"
+              :to="{ name: 'decklists', query: { id: item.id } }"
               target="_blank"
               title="Share Link"
               @click.prevent="shareLink"

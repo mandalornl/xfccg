@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import type {
+  RouteLocationAsPathGeneric,
+  RouteLocationAsRelativeGeneric,
+} from 'vue-router';
+
 const snackbar = useSnackbar();
 
 const props = defineProps<{
   hash?: string | number;
   href?: string;
+  to?: RouteLocationAsPathGeneric | RouteLocationAsRelativeGeneric;
   iconColor?: string;
 }>();
 
@@ -21,12 +27,12 @@ const copyToClipboard = async (event: Event) => {
   }
 };
 
-const url = computed<string>(() => {
+const url = computed<string | undefined>(() => {
   if (props.hash) {
     return `#${props.hash}`;
   }
 
-  return props.href || '/';
+  return props.href || undefined;
 });
 </script>
 
@@ -36,6 +42,7 @@ const url = computed<string>(() => {
     <v-btn
       v-tooltip:top="'Copy link to clipboard'"
       :href="url"
+      :to="to"
       target="_blank"
       variant="text"
       size="small"

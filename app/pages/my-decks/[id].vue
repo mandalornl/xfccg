@@ -222,7 +222,7 @@ const deleteDeck = async () => {
             <v-card-subtitle>
               <copy-link
                 v-if="shareable"
-                :href="`/decklists?id=${deck.id}`"
+                :to="{ name: 'decklists', query: { id: deck.id } }"
               >
                 {{ deck.id }}
               </copy-link>
