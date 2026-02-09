@@ -14,6 +14,7 @@ const tags = [
   'Evidence Collection',
   'Evolutionary',
   'Government',
+  'Healing',
   'Medical',
   'Move',
   'Neutral',
