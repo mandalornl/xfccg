@@ -40,7 +40,11 @@ export const useDeckbuilder = () => {
   });
 
   const setQuantity = (id: CardId, quantity: number) => {
-    state.value.card_ids[id] = quantity;
+    if (quantity === 0) {
+      delete state.value.card_ids?.[id];
+    } else {
+      state.value.card_ids[id] = quantity;
+    }
   };
 
   const getQuantity = (id: CardId): number => (
