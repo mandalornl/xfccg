@@ -682,7 +682,7 @@
     "cost": "1 CP",
     "keywords": [
       "Bluff",
-      "Observation"
+      "Bureaucracy"
     ],
     "activators": [
       "Conspiracy",
@@ -874,7 +874,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Play to change the Site Prerequisite to from MEDICAL to SCIENCES.",
+    "gameEffect": "Play to change the Site Prerequisite from MEDICAL to SCIENCES.",
     "dialogue": "\"Greetings from planet Earth.\" -  Mulder",
     "tags": [
       "Basic"
@@ -921,7 +921,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Play to change the Site Prerequisite to SCIENCES 3+.",
+    "gameEffect": "Play to change a Site Prerequisite to SCIENCES 3+.",
     "dialogue": "Sheriff Teller: \"My name's Teller. I'm with Johnston County Sheriff's Department. Just got word there's an FBI investigation.\"\nScully: \"Yes. I'm Agent Scully.\"\nSheriff Teller: \"I know who you are. I just wondered what the hell you're doing here.\"",
     "tags": [
       "Basic"
