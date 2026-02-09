@@ -47,10 +47,7 @@ const openSaveDeck = ref<boolean>(false);
       </v-card-item>
       <v-card-text class="text-body-1">
         <x-markdown :text="deck?.description" />
-        <deck-view
-          v-if="deck?.card_ids"
-          :card-ids="deck?.card_ids"
-        />
+        <deck-view :card-ids="deck?.card_ids" />
       </v-card-text>
       <v-card-actions v-if="user && route.name === 'cards'">
         <v-btn

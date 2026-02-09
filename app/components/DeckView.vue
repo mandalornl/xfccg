@@ -5,26 +5,26 @@ import type {
 } from '~/types/card';
 import { getColorByCost } from '~/utils/color';
 
-const props = defineProps<{
-  cardIds: Record<CardId, number>;
-}>();
+const props = withDefaults(defineProps<{
+  cardIds?: Record<CardId, number>;
+}>(), {
+  cardIds: () => ({}),
+});
 
 const pool = await usePool();
 
 const cards = computed<CardInDeck[]>(() => (
-  Object.entries(props.cardIds)
-    .filter(([ , quantity ]) => quantity > 0)
-    .map(([
-      id,
-      quantity,
-    ]) => {
-      const card = pool.find((card) => card.id === id)!;
+  Object.entries(props.cardIds).map(([
+    id,
+    quantity,
+  ]) => {
+    const card = pool.find((card) => card.id === id)!;
 
-      return {
-        ...card,
-        quantity,
-      };
-    })
+    return {
+      ...card,
+      quantity,
+    };
+  })
 ));
 
 const total = computed<number>(() => cards.value.reduce((total, card) => total + card.quantity, 0));
