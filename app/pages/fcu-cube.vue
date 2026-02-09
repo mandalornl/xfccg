@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import cards from '~/assets/fcu-cube/cards.json';
 import {
-  type CardInCube,
+  type Card,
   CardSet,
   CardType,
 } from '~/types/card';
@@ -16,7 +16,7 @@ useHead({
   title: 'FCU Cube',
 });
 
-const cube: CardInCube[] = Object.values(cards).flatMap((ids) => (
+const cube: Card[] = Object.values(cards).flatMap((ids) => (
   Object.entries(ids).flatMap(([
     id,
     length,
@@ -32,9 +32,9 @@ const cube: CardInCube[] = Object.values(cards).flatMap((ids) => (
 
 const activeTab = ref<number>(0);
 const isLoading = ref<boolean>(false);
-const selectedCard = ref<CardInCube>();
+const selectedCard = ref<Card>();
 
-const players = ref<[ CardInCube[], CardInCube[] ]>([ [], [] ]);
+const players = ref<[ Card[], Card[] ]>([ [], [] ]);
 
 const hasDrawnCards = computed<boolean>(() => {
   const [
@@ -45,7 +45,7 @@ const hasDrawnCards = computed<boolean>(() => {
   return playerOneCards.length > 0 && playerTwoCards.length > 0;
 });
 
-const sortBy = useSortBy<CardInCube>([
+const sortBy = useSortBy<Card>([
   {
     key: 'type',
     order: 'asc',
@@ -56,8 +56,8 @@ const sortBy = useSortBy<CardInCube>([
   },
 ]);
 
-const getCards = (types: CardType[], size: number): [ CardInCube[], CardInCube[] ] => {
-  const cards = shuffle<CardInCube[]>(cube.filter((card) => types.includes(card.type)));
+const getCards = (types: CardType[], size: number): [ Card[], Card[] ] => {
+  const cards = shuffle<Card[]>(cube.filter((card) => types.includes(card.type)));
 
   return [
     cards

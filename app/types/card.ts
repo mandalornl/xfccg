@@ -75,12 +75,9 @@ export interface Card {
   foundIn?: string;
   tags: string[];
   createdBy: string;
+  uuid?: string;
 }
 
 export interface CardInDeck extends Card {
   quantity: number;
-}
-
-export interface CardInCube extends Card {
-  uuid: string;
 }
