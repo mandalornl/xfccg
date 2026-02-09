@@ -19,7 +19,7 @@ const isOpen = defineModel<boolean>({
   default: false,
 });
 
-const team = computed<Agent[]>(() => Object.values(teambuilder.clone()).filter((agent) => agent !== null));
+const team = computed<Agent[]>(() => Object.values(teambuilder.clone()));
 
 const stats = computed<AgentStat[]>(() => ([
   ...Object.values(InvestigationSkill),

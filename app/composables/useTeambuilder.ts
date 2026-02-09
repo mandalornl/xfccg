@@ -31,10 +31,10 @@ export const useTeambuilder = () => {
     state.value[id] ?? null
   );
 
-  const hasAgent = (agent: Agent): boolean => getAgent(agent.id) !== null;
+  const hasAgent = (id: CardId): boolean => getAgent(id) !== null;
 
-  const removeAgent = (agent: Agent) => {
-    state.value[agent.id] = null;
+  const removeAgent = (id: CardId) => {
+    delete state.value?.[id];
   };
 
   return {

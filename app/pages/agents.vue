@@ -161,7 +161,7 @@ const cards = computed<Agent[]>(() => (
       }
     }
 
-    if (inTeam.value && !teambuilder.hasAgent(card)) {
+    if (inTeam.value && !teambuilder.hasAgent(card.id)) {
       return false;
     }
 
@@ -297,7 +297,7 @@ onUnmounted(() => {
             lg="2"
           >
             <v-card
-              :disabled="item.raw.costInt > remainingCost && !teambuilder.hasAgent(item.raw)"
+              :disabled="item.raw.costInt > remainingCost && !teambuilder.hasAgent(item.raw.id)"
               variant="flat"
               @click="selectedCard = { ...item.raw }"
             >
@@ -316,10 +316,10 @@ onUnmounted(() => {
                 <v-spacer />
                 # In team
                 <v-number-input
-                  :model-value="teambuilder.hasAgent(item.raw) ? 1 : 0"
+                  :model-value="teambuilder.hasAgent(item.raw.id) ? 1 : 0"
                   :min="0"
                   :max="1"
-                  :bg-color="teambuilder.hasAgent(item.raw) ? 'primary' : undefined"
+                  :bg-color="teambuilder.hasAgent(item.raw.id) ? 'primary' : undefined"
                   flat
                   hide-details
                   max-width="80"
@@ -327,7 +327,7 @@ onUnmounted(() => {
                   density="compact"
                   control-variant="stacked"
                   @click.stop
-                  @update:model-value="$event > 0 ? teambuilder.setAgent(item.raw) : teambuilder.removeAgent(item.raw)"
+                  @update:model-value="$event > 0 ? teambuilder.setAgent(item.raw) : teambuilder.removeAgent(item.raw.id)"
                 />
               </v-card-actions>
             </v-card>
