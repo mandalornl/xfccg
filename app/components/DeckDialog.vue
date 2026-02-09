@@ -55,6 +55,7 @@ const openSaveDeck = ref<boolean>(false);
           text="Cancel"
           @click="deck = undefined"
         />
+        <opening-hand-dialog :card-ids="deck?.card_ids" />
         <v-btn
           variant="flat"
           color="primary"
