@@ -33,6 +33,7 @@ const tags = [
   <v-select
     v-model="model"
     :items="tags"
+    :rules="[ (v) => v.length <= 3 || 'Select up to 3 tags' ]"
     multiple
     chips
     closable-chips
