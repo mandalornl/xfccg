@@ -240,7 +240,7 @@ const deleteDeck = async () => {
             <input-markdown
               v-model="deck.description"
               auto-grow
-              counter="600"
+              counter="1000"
               label="Description"
             />
             <deck-tags v-model="deck.tags" />
