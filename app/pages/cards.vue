@@ -313,6 +313,7 @@ const clearSelection = () => {
             lg="2"
           >
             <v-card
+              tile
               variant="flat"
               @click="selectedCard = { ...item.raw }"
             >

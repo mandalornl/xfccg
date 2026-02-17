@@ -68,6 +68,7 @@ const items = computed<{
         v-tooltip:top="`${item.title} (${item.total})`"
         :color="item.color"
         :height="item.height"
+        variant="flat"
         width="12.5%"
         class="flex-fill"
       >
