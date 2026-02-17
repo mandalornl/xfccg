@@ -13,8 +13,7 @@ import {
   CardSet,
   CardType as CardTypeEnum,
 } from '~/types/card';
-import type { SortBy } from '~/types/sort-by';
-import { FilterOperation } from '~/types/filter';
+import type { DataTableFilter } from '~/types/datatable';
 import type { Deck } from '~/types/deck';
 
 const route = useRoute();
@@ -27,7 +26,7 @@ useHead({
   title: 'Cards',
 });
 
-const filters = useFilters<Card>([
+const filters: DataTableFilter<Card>[] = [
   {
     key: 'set',
     title: 'Set',
@@ -71,7 +70,17 @@ const filters = useFilters<Card>([
     items: tags,
     multiple: true,
   },
-]);
+];
+
+const {
+  dataTable,
+  searchPredicate,
+  filtersPredicate,
+  getRouteQuery,
+} = useDataTable<Card>('cards', {
+  filters,
+  perPage: 60,
+});
 
 const headers = [
   { title: '#', key: 'id', nowrap: true },
@@ -88,16 +97,6 @@ const itemsPerPageOptions = [
   { value: 240, title: '240' },
 ];
 
-const getSortByValue = (): SortBy<Card>[] => {
-  try {
-    const sortBys = route.query.sortBys as string || '[]';
-
-    return JSON.parse(sortBys);
-  } catch {
-    return [];
-  }
-};
-
 const getSelectedCard = (): Card | undefined => {
   if (!route.query.id) {
     return undefined;
@@ -106,11 +105,6 @@ const getSelectedCard = (): Card | undefined => {
   return pool.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>(route.query.search as string || '');
-const view = ref<string>(route.query.view as string || 'grid');
-const page = ref<number>(Number(route.query.page as string || 1));
-const perPage = ref<number>(Number(route.query.perPage as string || 60));
-const sortBys = ref<SortBy<Card>[]>(getSortByValue());
 const inDeck = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
 const selectedDeck = ref<Deck>();
@@ -122,25 +116,7 @@ const routeQuery = computed<Record<string, string | number | undefined>>(() => {
     };
   }
 
-  const selectedFilters = JSON.stringify(
-    Object.fromEntries(
-      filters.value
-        .filter((filter) => filter.value.length > 0)
-        .map((filter) => ([
-          filter.key,
-          filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
-        ]))
-    )
-  );
-
-  return {
-    search: search.value || undefined,
-    view: view.value !== 'grid' ? view.value : undefined,
-    page: page.value > 1 ? page.value : undefined,
-    perPage: perPage.value !== 60 ? perPage.value : undefined,
-    sortBys: sortBys.value.length > 0 ? JSON.stringify(sortBys.value) : undefined,
-    filters: selectedFilters !== '{}' ? selectedFilters : undefined,
-  };
+  return getRouteQuery();
 });
 
 watch(routeQuery, (query) => {
@@ -155,42 +131,31 @@ watch(routeQuery, (query) => {
   return navigateTo(resolvedRoute, {
     replace: true,
   });
-});
-
-watch([
-  search,
-  filters,
-], () => {
-  page.value = 1;
 }, {
-  deep: true,
+  immediate: true,
 });
 
 const cards = computed<Card[]>(() => {
   const hits = pool.filter((card) => {
-    if (search.value) {
-      const hit = [
-        card.id,
-        card.title,
-        card.gameEffect,
-      ]
-        .filter(Boolean)
-        .some((value) => value?.toLowerCase().includes(search.value.toLowerCase()));
+    const hit = searchPredicate(card, [
+      'id',
+      'title',
+      'gameEffect',
+    ]);
 
-      if (!hit) {
-        return false;
-      }
+    if (!hit) {
+      return false;
     }
 
     if (inDeck.value && !deckbuilder.hasQuantity(card.id)) {
       return false;
     }
 
-    return useHasFilters<Card>(filters, card);
+    return filtersPredicate(card);
   });
 
-  if (sortBys.value.length > 0) {
-    const compare = useSortBy<Card>(sortBys.value);
+  if (dataTable.value.sortBys.length > 0) {
+    const compare = useSortBy<Card>(dataTable.value.sortBys);
 
     return hits.sort(compare);
   }
@@ -223,7 +188,7 @@ watch(selectedIndex, (value) => {
     return;
   }
 
-  page.value = Math.floor(value / perPage.value) + 1;
+  dataTable.value.page = Math.floor(value / dataTable.value.perPage) + 1;
 });
 
 const onKeyup = (event: KeyboardEvent) => {
@@ -263,9 +228,9 @@ const clearSelection = () => {
 
 <template>
   <layout-content fluid>
-    <card-toolbar v-model:search="search">
+    <card-toolbar v-model:search="dataTable.search">
       <v-btn-toggle
-        v-model="view"
+        v-model="dataTable.view"
         mandatory
         variant="text"
         color="primary"
@@ -282,7 +247,8 @@ const clearSelection = () => {
         />
       </v-btn-toggle>
       <filter-dialog
-        v-model="filters"
+        v-model="dataTable.filters"
+        :filters="filters"
         :items="cards"
       />
       <v-badge
@@ -330,9 +296,9 @@ const clearSelection = () => {
       </v-badge>
     </card-toolbar>
     <v-data-iterator
-      v-if="view === 'grid'"
-      v-model:page="page"
-      v-model:items-per-page="perPage"
+      v-if="dataTable.view === 'grid'"
+      v-model:page="dataTable.page"
+      v-model:items-per-page="dataTable.perPage"
       :items="cards"
       class="bg-grey-darken-4"
     >
@@ -384,9 +350,9 @@ const clearSelection = () => {
     </v-data-iterator>
     <v-data-table
       v-else
-      v-model:page="page"
-      v-model:items-per-page="perPage"
-      v-model:sort-by="sortBys"
+      v-model:page="dataTable.page"
+      v-model:items-per-page="dataTable.perPage"
+      v-model:sort-by="dataTable.sortBys"
       :headers="headers"
       :items="cards"
       :items-per-page-options="itemsPerPageOptions"

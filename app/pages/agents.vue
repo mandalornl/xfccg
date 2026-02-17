@@ -7,7 +7,7 @@ import {
   CardType,
 } from '~/types/card';
 import type { Agent } from '~/types/agent';
-import { FilterOperation } from '~/types/filter';
+import type { DataTableFilter } from '~/types/datatable';
 import { InvestigationSkill } from '~/types/skill';
 
 const route = useRoute();
@@ -20,7 +20,7 @@ useHead({
   title: 'Agents',
 });
 
-const filters = useFilters<Agent>([
+const filters: DataTableFilter<Agent>[] = [
   {
     key: 'skills',
     title: 'Skills',
@@ -30,7 +30,7 @@ const filters = useFilters<Agent>([
   {
     key: 'cost',
     title: 'Cost',
-    items: Array.from({ length: 7 }, (value, key) => `${key + 1} RP`),
+    items: Array.from({ length: 7 }, (_value, key) => `${key + 1} RP`),
   },
   {
     key: 'set',
@@ -57,7 +57,17 @@ const filters = useFilters<Agent>([
     ],
     multiple: true,
   },
-]);
+];
+
+const {
+  dataTable,
+  searchPredicate,
+  filtersPredicate,
+  getRouteQuery,
+} = useDataTable<Agent>('agents', {
+  filters,
+  perPage: 30,
+});
 
 const itemsPerPageOptions = [
   { value: 30, title: '30' },
@@ -89,9 +99,6 @@ const getSelectedCard = (): Card | undefined => {
   return agents.value.find((card) => card.id === route.query.id);
 };
 
-const search = ref<string>(route.query.search as string || '');
-const page = ref<number>(Number(route.query.page as string || 1));
-const perPage = ref<number>(Number(route.query.perPage as string || 30));
 const inTeam = ref<boolean>(false);
 const viewTeam = ref<boolean>(false);
 const selectedCard = ref<Card | undefined>(getSelectedCard());
@@ -103,23 +110,7 @@ const routeQuery = computed<Record<string, string | number | null | undefined>>(
     };
   }
 
-  const selectedFilters = JSON.stringify(
-    Object.fromEntries(
-      filters.value
-        .filter((filter) => filter.value.length > 0)
-        .map((filter) => ([
-          filter.key,
-          filter.value.join(filter.operation === FilterOperation.And ? '+' : ',')
-        ]))
-    )
-  );
-
-  return {
-    search: search.value || undefined,
-    page: page.value > 1 ? page.value : undefined,
-    perPage: perPage.value !== 30 ? perPage.value : undefined,
-    filters: selectedFilters !== '{}' ? selectedFilters : undefined,
-  };
+  return getRouteQuery();
 });
 
 watch(routeQuery, (query) => {
@@ -134,38 +125,27 @@ watch(routeQuery, (query) => {
   return navigateTo(resolvedRoute, {
     replace: true
   });
-});
-
-watch([
-  search,
-  filters,
-], () => {
-  page.value = 1;
 }, {
-  deep: true,
+  immediate: true,
 });
 
 const cards = computed<Agent[]>(() => (
   agents.value.filter((card) => {
-    if (search.value) {
-      const hit = [
-        card.id,
-        card.title,
-        card.gameEffect,
-      ]
-        .filter(Boolean)
-        .some((value) => value?.toLowerCase().includes(search.value.toLowerCase()));
+    const hit = searchPredicate(card, [
+      'id',
+      'title',
+      'gameEffect',
+    ]);
 
-      if (!hit) {
-        return false;
-      }
+    if (!hit) {
+      return false;
     }
 
     if (inTeam.value && !teambuilder.hasAgent(card.id)) {
       return false;
     }
 
-    return useHasFilters<Agent>(filters, card);
+    return filtersPredicate(card);
   })
 ));
 
@@ -200,7 +180,7 @@ watch(selectedIndex, (value) => {
     return;
   }
 
-  page.value = Math.floor(value / perPage.value) + 1;
+  dataTable.value.page = Math.floor(value / dataTable.value.perPage) + 1;
 });
 
 const onKeyup = (event: KeyboardEvent) => {
@@ -232,9 +212,10 @@ onUnmounted(() => {
 
 <template>
   <layout-content fluid>
-    <card-toolbar v-model:search="search">
+    <card-toolbar v-model:search="dataTable.search">
       <filter-dialog
-        v-model="filters"
+        v-model="dataTable.filters"
+        :filters="filters"
         :items="cards"
       />
       <v-badge
@@ -281,8 +262,8 @@ onUnmounted(() => {
       </v-badge>
     </card-toolbar>
     <v-data-iterator
-      v-model:page="page"
-      v-model:items-per-page="perPage"
+      v-model:page="dataTable.page"
+      v-model:items-per-page="dataTable.perPage"
       :items="cards"
       class="bg-grey-darken-4"
     >
