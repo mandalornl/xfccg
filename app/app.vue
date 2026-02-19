@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useTheme } from 'vuetify';
+
 const route = useRoute();
+const theme = useTheme();
 
 useHead({
   titleTemplate: (title) => {
@@ -7,6 +10,20 @@ useHead({
 
     return title ? `${title} | ${siteName}` : siteName;
   }
+});
+
+watch(theme.name, (value) => {
+  localStorage.setItem('xfccg-theme', value);
+});
+
+onBeforeMount(() => {
+  const storedTheme = localStorage.getItem('xfccg-theme');
+
+  if (!storedTheme) {
+    return;
+  }
+
+  theme.change(storedTheme);
 });
 
 onMounted(() => {

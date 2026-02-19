@@ -44,22 +44,14 @@ const fullName = computed<string>(() => (
 <template>
   <v-app>
     <admiral-snackbar />
-    <v-app-bar flat>
+    <v-app-bar>
       <v-app-bar-nav-icon
         class="hidden-sm-and-up"
         @click="appNavigationState = !appNavigationState"
       />
       <v-toolbar-title class="d-flex">
-        <nuxt-link
-          to="/"
-          class="d-block text-decoration-none"
-        >
-          <v-img
-            src="/logo.svg"
-            alt="The X-Files CCG"
-            width="200"
-            height="40"
-          />
+        <nuxt-link to="/">
+          <x-logo width="200" />
         </nuxt-link>
       </v-toolbar-title>
       <v-menu v-if="user">
@@ -120,3 +112,13 @@ const fullName = computed<string>(() => (
     </v-footer>
   </v-app>
 </template>
+
+<style lang="scss" scoped>
+:deep(.v-theme--light) svg path + path {
+  fill: black;
+}
+
+:deep(.v-theme--dark) svg path + path {
+  fill: white;
+}
+</style>

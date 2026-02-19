@@ -65,7 +65,7 @@ const {
 watchEffect(() => {
   if (!data.value.deck) {
     throw createError({
-      statusCode: 404,
+      status: 404,
       message: 'Deck not found',
       fatal: true,
     });

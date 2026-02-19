@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { useDisplay } from 'vuetify';
+import {
+  useDisplay,
+  useTheme,
+} from 'vuetify';
 
 const { smAndUp } = useDisplay();
+const theme = useTheme();
 const appNavigationState = useAppNavigationState();
 
 watch(smAndUp, (value) => {
@@ -98,5 +102,17 @@ const items = [
       nav
       color="primary"
     />
+    <template #append>
+      <v-list
+        nav
+        color="primary"
+      >
+        <v-list-item
+          :title="theme.name.value === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'"
+          :prepend-icon="theme.name.value === 'light' ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent'"
+          @click="theme.toggle()"
+        />
+      </v-list>
+    </template>
   </v-navigation-drawer>
 </template>

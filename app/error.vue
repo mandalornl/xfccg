@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 
 const message = computed(() => {
-  switch (props.error?.statusCode) {
+  switch (props.error?.status) {
     case 400: return 'Bad Request';
     case 401: return 'Unauthorized';
     case 403: return 'Forbidden';
@@ -38,9 +38,8 @@ const handleError = () => clearError({
       <v-col>
         <v-empty-state :headline="message">
           <template #media>
-            <v-img
-              src="/logo.svg"
-              alt="The X-Files CCG"
+            <x-logo
+              height="96"
               class="mb-6"
             />
           </template>

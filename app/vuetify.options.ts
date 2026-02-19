@@ -1,15 +1,21 @@
 import { defineVuetifyConfiguration } from 'vuetify-nuxt-module/custom-configuration';
 import colors from 'vuetify/util/colors';
 
+const discord = '#5865F2';
+
 export default defineVuetifyConfiguration({
   theme: {
-    defaultTheme: 'xfccg',
+    defaultTheme: 'dark',
     themes: {
-      xfccg: {
-        dark: true,
+      dark: {
         colors: {
+          discord,
           primary: colors.lightGreen.accent3,
-          discord: '#5865F2',
+        },
+      },
+      light: {
+        colors: {
+          discord,
         },
       },
     },

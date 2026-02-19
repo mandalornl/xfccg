@@ -29,11 +29,11 @@ const totalUnidentified = computed<number>(() => (
 
 const textColor = computed<string | undefined>(() => {
   if (totalUnidentified.value <= 5) {
-    return 'text-green-accent-2';
+    return 'text-green';
   } else if (totalUnidentified.value <= 10) {
-    return 'text-orange-accent-2';
+    return 'text-orange';
   } else if (totalUnidentified.value <= 15) {
-    return 'text-red-accent-2';
+    return 'text-red';
   } else {
     return undefined;
   }
