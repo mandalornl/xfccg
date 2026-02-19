@@ -12,31 +12,25 @@ const clickIcon = (event: Event) => {
 </script>
 
 <template>
-  <v-toolbar
-    height="auto"
-    color="grey-darken-4"
-    class="rounded-t position-sticky"
-  >
-    <div class="pa-3 flex-fill">
-      <div class="d-flex flex-column flex-sm-row justify-sm-space-between">
-        <v-text-field
-          :model-value="search"
-          flat
-          clearable
-          hide-details
-          placeholder="Search"
-          prepend-inner-icon="mdi-magnify"
-          variant="solo-filled"
-          type="search"
-          @click:clear="search = ''"
-          @click:prepend-inner="clickIcon"
-          @focus="$event.target.select()"
-          @keydown.exact.enter="search = $event.target.value"
-        />
-        <div class="d-flex align-center mt-2 mt-sm-0 ml-sm-4 ga-2 pr-2">
-          <slot />
-        </div>
+  <v-sheet class="position-sticky pa-3">
+    <div class="d-flex flex-column flex-sm-row flex-fill ga-2">
+      <v-text-field
+        :model-value="search"
+        flat
+        clearable
+        hide-details
+        placeholder="Search"
+        prepend-inner-icon="mdi-magnify"
+        variant="solo-filled"
+        type="search"
+        @click:clear="search = ''"
+        @click:prepend-inner="clickIcon"
+        @focus="$event.target.select()"
+        @keydown.exact.enter="search = $event.target.value"
+      />
+      <div class="d-flex align-center ga-2 pr-2">
+        <slot />
       </div>
     </div>
-  </v-toolbar>
+  </v-sheet>
 </template>

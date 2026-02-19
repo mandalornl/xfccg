@@ -155,7 +155,6 @@ const drawCards = () => {
           <v-data-iterator
             :items="playerCards"
             items-per-page="-1"
-            class="bg-grey-darken-4"
           >
             <template #default="{ items }">
               <v-row no-gutters>
@@ -168,6 +167,7 @@ const drawCards = () => {
                   lg="2"
                 >
                   <v-card
+                    tile
                     variant="flat"
                     @click="selectedCard = { ...item.raw }"
                   >

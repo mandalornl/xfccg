@@ -93,29 +93,30 @@ const reset = () => {
 <template>
   <layout-content
     fluid
+    title="Checklist"
     size="large"
   >
-    <v-toolbar
-      title="Checklist"
-      color="grey-darken-4"
-      class="rounded-t position-sticky"
-    >
-      <template #append>
-        <v-btn
-          v-tooltip:top="'Undo'"
-          :disabled="history.length === 0"
-          icon="mdi-undo"
-          @click="undo"
-        />
-        <v-btn
-          v-tooltip:top="'Reset'"
-          :disabled="history.length === 0"
-          icon="mdi-refresh"
-          @click="reset"
-        />
-      </template>
-    </v-toolbar>
     <v-table>
+      <template #top>
+        <v-sheet class="d-flex justify-end ga-2 position-sticky pa-2">
+          <v-btn
+            v-tooltip:top="'Undo'"
+            :disabled="history.length === 0"
+            rounded
+            variant="text"
+            icon="mdi-undo"
+            @click="undo"
+          />
+          <v-btn
+            v-tooltip:top="'Reset'"
+            :disabled="history.length === 0"
+            rounded
+            variant="text"
+            icon="mdi-refresh"
+            @click="reset"
+          />
+        </v-sheet>
+      </template>
       <template
         v-for="(cards, checklistIndex) of checklist"
         :key="checklistIndex"

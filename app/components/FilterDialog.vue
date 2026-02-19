@@ -51,6 +51,7 @@ const clearFilters = () => {
           v-tooltip:top="'Filters'"
           :active="activeFilters > 0"
           rounded
+          variant="text"
           active-color="primary"
           icon="mdi-filter-variant"
           v-bind="dialogProps"

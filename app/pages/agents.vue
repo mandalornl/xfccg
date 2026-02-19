@@ -229,6 +229,7 @@ onUnmounted(() => {
               v-tooltip:top="'Actions'"
               :disabled="teambuilder.cost.value === 0"
               rounded
+              variant="text"
               icon="mdi-dots-vertical"
               v-bind="menuProps"
             />
@@ -265,7 +266,6 @@ onUnmounted(() => {
       v-model:page="dataTable.page"
       v-model:items-per-page="dataTable.perPage"
       :items="cards"
-      class="bg-grey-darken-4"
     >
       <template #default="{ items }">
         <v-row no-gutters>
@@ -322,10 +322,12 @@ onUnmounted(() => {
         </div>
       </template>
       <template #footer="footerProps">
-        <v-data-table-footer
-          v-bind="footerProps"
-          :items-per-page-options="itemsPerPageOptions"
-        />
+        <v-sheet>
+          <v-data-table-footer
+            v-bind="footerProps"
+            :items-per-page-options="itemsPerPageOptions"
+          />
+        </v-sheet>
       </template>
     </v-data-iterator>
     <card-dialog v-model="selectedCard" />
