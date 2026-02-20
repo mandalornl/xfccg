@@ -13,7 +13,10 @@ import {
   CardSet,
   CardType as CardTypeEnum,
 } from '~/types/card';
-import type { DataTableFilter } from '~/types/datatable';
+import {
+  type DataTableFilter,
+  DataTableView,
+} from '~/types/datatable';
 import type { Deck } from '~/types/deck';
 
 const route = useRoute();
@@ -296,8 +299,31 @@ const clearSelection = () => {
         </v-menu>
       </v-badge>
     </card-toolbar>
+    <v-data-table
+      v-if="dataTable.view === DataTableView.List"
+      v-model:page="dataTable.page"
+      v-model:items-per-page="dataTable.perPage"
+      v-model:sort-by="dataTable.sortBys"
+      :headers="headers"
+      :items="cards"
+      :items-per-page-options="itemsPerPageOptions"
+      @click:row="openCard"
+    >
+      <template #[`item.type`]="{ value }">
+        <card-type
+          v-if="value"
+          :text="value"
+        />
+      </template>
+      <template #[`item.inDeck`]="{ item }">
+        <input-in-deck
+          v-if="item.type !== CardTypeEnum.Credits"
+          :card="item"
+        />
+      </template>
+    </v-data-table>
     <v-data-iterator
-      v-if="dataTable.view === 'grid'"
+      v-else
       v-model:page="dataTable.page"
       v-model:items-per-page="dataTable.perPage"
       :items="cards"
@@ -351,29 +377,6 @@ const clearSelection = () => {
         </v-sheet>
       </template>
     </v-data-iterator>
-    <v-data-table
-      v-else
-      v-model:page="dataTable.page"
-      v-model:items-per-page="dataTable.perPage"
-      v-model:sort-by="dataTable.sortBys"
-      :headers="headers"
-      :items="cards"
-      :items-per-page-options="itemsPerPageOptions"
-      @click:row="openCard"
-    >
-      <template #[`item.type`]="{ value }">
-        <card-type
-          v-if="value"
-          :text="value"
-        />
-      </template>
-      <template #[`item.inDeck`]="{ item }">
-        <input-in-deck
-          v-if="item.type !== CardTypeEnum.Credits"
-          :card="item"
-        />
-      </template>
-    </v-data-table>
     <card-dialog v-model="selectedCard" />
     <deck-dialog v-model="selectedDeck" />
   </layout-content>
