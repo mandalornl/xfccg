@@ -92,10 +92,7 @@ const fullName = computed<string>(() => (
     <v-main style="--v-layout-top: 64px">
       <slot />
     </v-main>
-    <v-footer
-      app
-      style="z-index: 1004"
-    >
+    <v-footer app>
       &copy; {{ year }}
       <v-fab-transition>
         <v-fab
