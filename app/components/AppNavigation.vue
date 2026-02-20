@@ -42,14 +42,14 @@ const items = [
     title: 'Decklists',
     props: {
       to: '/decklists',
-      prependIcon: 'mdi-text-box-multiple',
+      prependIcon: 'mdi-dna',
     },
   },
   {
     title: 'Checklist',
     props: {
       to: '/checklist',
-      prependIcon: 'mdi-format-list-checks',
+      prependIcon: 'mdi-file-cabinet',
     },
   },
   {
@@ -88,6 +88,8 @@ const items = [
     },
   },
 ];
+
+const isLight = computed<boolean>(() => theme.name.value === 'light');
 </script>
 
 <template>
@@ -108,10 +110,16 @@ const items = [
         color="primary"
       >
         <v-list-item
-          :title="theme.name.value === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'"
-          :prepend-icon="theme.name.value === 'light' ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent'"
+          :title="isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'"
           @click="theme.toggle()"
-        />
+        >
+          <template #prepend>
+            <v-icon
+              :color="isLight ? 'orange-accent-3' : undefined"
+              :icon="isLight ? 'mdi-white-balance-sunny' : 'mdi-power-sleep'"
+            />
+          </template>
+        </v-list-item>
       </v-list>
     </template>
   </v-navigation-drawer>
