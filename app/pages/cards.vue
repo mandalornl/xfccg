@@ -86,7 +86,7 @@ const {
 });
 
 const headers = [
-  { title: '#', key: 'id', nowrap: true },
+  { title: 'ID', key: 'id', nowrap: true },
   { title: 'Title', key: 'title', nowrap: true },
   { title: 'Set', key: 'set', nowrap: true },
   { title: 'Type', key: 'type', nowrap: true },
@@ -253,6 +253,10 @@ const clearSelection = () => {
         v-model="dataTable.filters"
         :filters="filters"
         :items="cards"
+      />
+      <sort-menu
+        v-model="dataTable.sortBys"
+        :items="headers"
       />
       <v-badge
         :model-value="deckbuilder.size.value > 0"

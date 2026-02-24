@@ -48,7 +48,7 @@ const clearFilters = () => {
         color="primary"
       >
         <v-btn
-          v-tooltip:top="'Filters'"
+          v-tooltip:top="'Filter'"
           :active="activeFilters > 0"
           rounded
           variant="text"
