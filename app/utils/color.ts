@@ -2,7 +2,7 @@ import { CardType } from '~/types/card';
 
 export const getColorByType = (value: CardType | string): string | undefined => ({
   [CardType.Adversary]: 'green-darken-2',
-  [CardType.Agent]: 'white',
+  [CardType.Agent]: 'grey-lighten-5',
   [CardType.Bluff]: 'grey-darken-1',
   [CardType.Combat]: 'red-darken-4',
   [CardType.Equipment]: 'light-blue-darken-2',
