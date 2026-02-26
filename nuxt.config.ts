@@ -1,4 +1,6 @@
 import { URL } from 'node:url';
+import { readdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
 
 const url = new URL(process.env.BASE_URL || 'http://localhost:3000');
 
@@ -52,6 +54,19 @@ export default defineNuxtConfig({
     },
   },
   vuetify: {
-    vuetifyOptions: './app/vuetify.options.ts'
-  }
+    vuetifyOptions: './app/vuetify.options.ts',
+  },
+  hooks: {
+    async 'prerender:routes'({ routes }) {
+      const dirname = resolve('./app/assets/cards');
+      const files = await readdir(dirname);
+
+      for (const filename of files) {
+        routes.add(`/api/cards/${filename}`);
+      }
+
+      routes.add('/api/cards/sets.json');
+      routes.add('/api/cards/types.json');
+    },
+  },
 });
