@@ -12,9 +12,9 @@
     "supabase:types": "npx --yes supabase gen types --lang=typescript --project-id oufzvzizsscwiaasvasm > app/types/database.types.ts"
   },
   "engines": {
-    "node": "22"
+    "node": "24"
   },
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.30.3",
   "devDependencies": {
     "@mdi/font": "~7.4.47",
     "@nuxt/eslint": "~1.15.1",

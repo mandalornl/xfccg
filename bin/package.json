@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {},
   "engines": {
-    "node": "22"
+    "node": "24"
   },
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.30.3",
   "pnpm": {
     "supportedArchitectures": {
       "os": [
