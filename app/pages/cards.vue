@@ -86,7 +86,7 @@ const {
 });
 
 const headers = [
-  { title: 'ID', key: 'id', nowrap: true },
+  { title: 'BFN', key: 'id', nowrap: true },
   { title: 'Title', key: 'title', nowrap: true },
   { title: 'Set', key: 'set', nowrap: true },
   { title: 'Type', key: 'type', nowrap: true },
