@@ -83,7 +83,7 @@ const playerTwo = useState<string>('rules:player2', () => (sample(players.filter
         class="text-center"
       >
         <v-img
-          src="/advanced-game-table-diagram.jpg"
+          src="/images/advanced-game-table-diagram.jpg"
           alt="Advanced Game Table Diagram"
           width="256"
           class="mx-auto"

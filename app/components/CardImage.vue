@@ -16,7 +16,7 @@ const src = computed(() => {
     return undefined;
   }
 
-  const root = `${runtimeConfig.app.baseURL}cards`;
+  const root = `${runtimeConfig.app.baseURL}images/cards`;
 
   if (
     props.card.set === CardSet.Classified
@@ -37,7 +37,7 @@ const src = computed(() => {
     :alt="card?.title"
     :aspect-ratio="5/7"
     :max-width="maxWidth"
-    lazy-src="/cards/back.jpg"
+    lazy-src="/images/cards/back.jpg"
   />
 </template>
 
