@@ -27,7 +27,8 @@
     "gameEffect": "The Dark Angel can play all combat cards for one [CP] less.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0002-INQ",
@@ -51,7 +52,8 @@
     "tags": [
       "Basic",
       "Negate"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0003-GAM",
@@ -76,7 +78,8 @@
     "tags": [
       "Basic",
       "Negate"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0004-GCON",
@@ -96,7 +99,8 @@
     "gameEffect": "Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0005-GMR",
@@ -122,7 +126,8 @@
     "tags": [
       "Basic",
       "Negate"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0006-DUE",
@@ -152,7 +157,8 @@
     "tags": [
       "Basic",
       "Search"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR96-0007-SUR",
@@ -173,7 +179,8 @@
     "tags": [
       "Advanced",
       "Resource"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0001-BBB",
@@ -196,7 +203,8 @@
     "tags": [
       "Basic",
       "Voyager Promotions"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0002-BBB",
@@ -220,7 +228,8 @@
     "tags": [
       "Basic",
       "Voyager Promotions"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0003-BBB",
@@ -245,7 +254,8 @@
       "Basic",
       "Move",
       "Voyager Promotions"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0004-BOX",
@@ -267,7 +277,8 @@
       "Basic",
       "Prevent",
       "Voyager Promotions"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0005-INQ",
@@ -288,7 +299,8 @@
     "gameEffect": "Discard your entire hand and draw seven cards from the top of your Bureau Deck.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0006-SC1",
@@ -308,7 +320,8 @@
     "gameEffect": "Apply a +1 modifier to any skill check.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0006-SC2",
@@ -328,7 +341,8 @@
     "gameEffect": "Apply a -1 modifier to any skill check.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0006-SC3",
@@ -348,7 +362,8 @@
     "gameEffect": "Apply a +2 modifier to any one opponent skill check.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0006-SC4",
@@ -368,7 +383,8 @@
     "gameEffect": "Apply a -2 modifier to any one opponent skill check",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0006-SC5",
@@ -389,7 +405,8 @@
     "gameEffect": "Apply a +3 or -3 (your choice) modifier to any skill check.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0007-BOX",
@@ -411,7 +428,8 @@
       "Basic",
       "Search",
       "Voyager Promotions"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0009-GMR",
@@ -432,7 +450,8 @@
     "gameEffect": "Play this card and flip over the next card on your Bureau Deck. If that card is playable this turn you may do so for zero [RP] or [CP]. If you do not play it this turn, move the card to your discard pile.",
     "tags": [
       "Advanced"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0010-FRN",
@@ -455,7 +474,8 @@
     "tags": [
       "Basic",
       "Search"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0011-DEU",
@@ -477,7 +497,8 @@
     "tags": [
       "Advanced",
       "Search"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0012-COM",
@@ -499,7 +520,8 @@
     "gameEffect": "Draw 2 cards from the top of your Bureau deck and add them to your hand.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   },
   {
     "id": "PR97-0999-DNY",
@@ -519,6 +541,7 @@
     "gameEffect": "Play this card immediately after your opponent asks you a question. You may respond with this phrase: \"I can neither confirm nor deny that assumption.\" After playing this card remove it from the game.",
     "tags": [
       "Basic"
-    ]
+    ],
+    "createdBy": "NXT Games, USPCC"
   }
 ]
