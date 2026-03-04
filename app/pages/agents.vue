@@ -281,6 +281,7 @@ onUnmounted(() => {
               :disabled="item.raw.costInt > remainingCost && !teambuilder.hasAgent(item.raw.id)"
               tile
               variant="flat"
+              height="100%"
               @click="selectedCard = { ...item.raw }"
             >
               <v-card-item>

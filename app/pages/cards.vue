@@ -345,6 +345,7 @@ const clearSelection = () => {
             <v-card
               tile
               variant="flat"
+              height="100%"
               @click="selectedCard = { ...item.raw }"
             >
               <v-card-item>
