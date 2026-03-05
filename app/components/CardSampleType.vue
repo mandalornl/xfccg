@@ -10,9 +10,7 @@ const props = defineProps<{
   type: CardType;
 }>();
 
-const pool = await usePool([
-  CardSet.Premiere,
-]);
+const pool = await usePool(CardSet.Premiere);
 
 const card = useState<Card>(`card-sample:type:${props.type}`, () => sample(pool.filter((card) => card.type === props.type))!);
 </script>

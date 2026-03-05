@@ -5,9 +5,7 @@ import {
 } from '~/types/card';
 import { sample } from '~/utils/sample';
 
-const pool = await usePool([
-  CardSet.Premiere,
-]);
+const pool = await usePool(CardSet.Premiere);
 
 const card = useState<Card>('card-sample', () => sample(pool)!);
 </script>

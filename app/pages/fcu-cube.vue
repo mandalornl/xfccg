@@ -7,10 +7,10 @@ import {
 } from '~/types/card';
 import { shuffle } from '~/utils/shuffle';
 
-const pool = await usePool([
+const pool = await usePool(
   CardSet.Premiere,
   CardSet.BirthdayMulder,
-]);
+);
 
 useHead({
   title: 'FCU Cube',
