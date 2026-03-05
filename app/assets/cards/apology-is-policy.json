@@ -1,0 +1,886 @@
+[
+  {
+    "id": "XF26-0001xC1",
+    "title": "Mummified Alien Corpse",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "The Blessing Way",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Security",
+      "Method": "Threats",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "\"I, too, had found a body at the quarry in a hole, half - buried under rocks. But the buzzards, who will eat anything, would not touch it.\" - Albert Hosteen",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0002xC1",
+    "title": "Cosmic Alignment",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Syzygy",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Control",
+      "Method": "Possession",
+      "Result": "Insanity"
+    },
+    "dialogue": "Zirinka: \"Well, we're heading into a rare planetary alignment, where Mercury, Mars, and Uranus are extreme influences.\"\nMulder: \"On what?\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0003xC1",
+    "title": "Oil-Based Alien",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Apocrypha",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Survival",
+      "Method": "Possession",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "\"For the first time, we saw the enemy that was killing us. That thing was causing the slow, painful deaths.\" - Sick Crewman",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0004xC1",
+    "title": "Lord Kinbote",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Jose Chung's From Outer Space",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Ideology",
+      "Method": "Violence",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"Be thou not afraid! No harm will come unto thee.\" - Lord Kinbote",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0005xC1",
+    "title": "Jeremiah Smith, Alien Clone",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Talitha Cumi",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Security",
+      "Method": "Subterfuge",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "Jeremiah Smith: \"I no longer believe in the greater purpose.\"\nCigarette - Smoking Man: \"Then your fate is just.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0006xC1",
+    "title": "Agrarian Drones (Preadolescent Alien/Human Workforce)",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Herrenvolk",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Control",
+      "Method": "Subterfuge",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "Mulder: \"Who takes care of them?\"\nJeremiah Smith: \"They take care of themselves. Parenting is unnecessary. A needless division of energy.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0007xC1",
+    "title": "Fortean Encounter",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "El Mundo Gira",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Survival",
+      "Method": "Manipulation",
+      "Result": "Death"
+    },
+    "dialogue": "\"They came from the sky, more Chupacabras. I slammed the door and prayed that they would not come to kill me, too.\" - Flakita",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0008xC1",
+    "title": "Alien Reconnaissance",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Tempus Fugit",
+    "characteristics": {
+      "Affiliation": "Alien",
+      "Motive": "Knowledge",
+      "Method": "Manipulation",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"He found Sharon Graffia wandering in a daze at the crash site the night we left, after seeing lights over the area.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0009xC1",
+    "title": "Unit 731",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Nisei",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Security",
+      "Method": "Subterfuge",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"Four of the doctors you see in this photo were on that videotape I showed you, performing that autopsy.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0010xC1",
+    "title": "Secret Government Railroad",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "731",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Control",
+      "Method": "Manipulation",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "\"Our government is operating a secret railroad. They put something on that train in West Virginia, something living.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0011xC1",
+    "title": "The Syndicate",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Apocrypha",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Security",
+      "Method": "Threats",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "\"You may all be wondering why I've called you here on such short notice. We've received disturbing reports from our intelligence sources.\" - First Elder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0012xC1",
+    "title": "Subliminal Killers",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Wetwired",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Ideology",
+      "Method": "Possession",
+      "Result": "Insanity"
+    },
+    "dialogue": "\"Studies into subliminal influence have shown a correlation between heightened suggestibility and the manipulation of this response.\" - Byers",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0013xC1",
+    "title": "The Kennedy Assassination",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Musings of a Cigarette-Smoking Man",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Ideology",
+      "Method": "Violence",
+      "Result": "Death"
+    },
+    "dialogue": "\"It appears something has happened on the motorcade route. Does anyone know what has happened?\" - Unnamed Man",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0014xC1",
+    "title": "Gulag Vaccination Experiments",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Tunguska",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Knowledge",
+      "Method": "Violence",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"You have been exposed to the Black Cancer. The cancer that lives in the rock.\" - Russian Prisoner",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0015xC1",
+    "title": "Bonita Charne-Sayre, Virologist",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Terma",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Knowledge",
+      "Method": "Subterfuge",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "\"She's a well - known physician and a virologist who's looked in on presidents. She's also an authority on variola viruses.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0016xC1",
+    "title": "Dr. Kevin Scanlon",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Memento Mori",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Control",
+      "Method": "Threats",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "Mulder: \"Did Byers tell you about Dr. Scanlon? He may very well have killed those women.\"\nScully: \"That will have to be proven, if we find him.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0017xC1",
+    "title": "Government-Engineered Honeybees (Smallpox Eradication Program)",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Zero Sum",
+    "characteristics": {
+      "Affiliation": "Government",
+      "Motive": "Knowledge",
+      "Method": "Manipulation",
+      "Result": "Death"
+    },
+    "dialogue": "Skinner: \"What are they?\"\nMulder: \"Bee stingers and venom sacs recovered subcutaneously from the victim's face, arm and neck.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0018xC1",
+    "title": "Darin Peter Oswald, The Lightning Boy",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "D.P.O.",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Control",
+      "Method": "Threats",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "Scully: \"You're saying he's some kind of lightning rod?\"\nMulder: \"No, I'm saying that he is lightning.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0019xC1",
+    "title": "Virgil Incanto, Mutated Vampire",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "2Shy",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Survival",
+      "Method": "Manipulation",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"What possible motivation could the killer have for removing his victim's fatty tissue?\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0020xC1",
+    "title": "Pvt. Leonard Trimble, Astral Projectionist",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "The Walk",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Ideology",
+      "Method": "Threats",
+      "Result": "Death"
+    },
+    "dialogue": "\"What you're saying is this man, Rappo, is leaving his body and floating around town killing people?\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0021xC1",
+    "title": "Empathic Transferrence",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Oubliette",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Knowledge",
+      "Method": "Possession",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "\"I don't know how to explain it, but I think that Wade's abduction of Amy triggered some kind of physical response in Lucy.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0022xC1",
+    "title": "Robert Patrick Modell, a.k.a. Pusher",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Pusher",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Security",
+      "Method": "Manipulation",
+      "Result": "Death"
+    },
+    "dialogue": "Mulder: \"I'm going to kill you, Modell.\"\nPusher: \"Yeah, pull the trigger, you get another crack at me.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0023xC1",
+    "title": "The Teliko",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Teliko",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Survival",
+      "Method": "Violence",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "\"It was said they rested by day in close, dark places, deep inside tree hollows and in holes beneath the ground too small even for a child to hide himself.\" - Minister Diabria",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0024xC1",
+    "title": "Albert Tanner, a.k.a. Leonard Betts",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Leonard Betts",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Survival",
+      "Method": "Subterfuge",
+      "Result": "Death"
+    },
+    "dialogue": "\"I think that what we're standing witness to here goes way beyond the regeneration of a thumb or a limb or even a new head.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0025xC1",
+    "title": "Eddie Van Blundht, Shapeshifter",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Small Potatoes",
+    "characteristics": {
+      "Affiliation": "Evolutionary",
+      "Motive": "Survival",
+      "Method": "Subterfuge",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "Scully: \"But what are you saying, that that Van Blundht is an alien?\"\nMulder: \"Not unless they have trailer parks in space. No, this is something different.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0026xC1",
+    "title": "The Bellhop Killer, a.k.a. Puppet",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Clyde Bruckman's Final Repose",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Knowledge",
+      "Method": "Violence",
+      "Result": "Death"
+    },
+    "dialogue": "Clyde Bruckman: \"Was that not enough of a tip?\"\nPuppet: \"They brought you right to me, right to where I work.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0027xC1",
+    "title": "The Peacocks, Incestuous Family Clan",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Home",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Ideology",
+      "Method": "Violence",
+      "Result": "Death"
+    },
+    "dialogue": "\"Let them know, this is our home and this is the way it's going to stay.\" - Mrs. Peacock",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0028xC1",
+    "title": "Gerry Thomas Schnauz, Thoughtograph Killer",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Unruhe",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Security",
+      "Method": "Manipulation",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"You look...troubled.\" - Gerry Schnauz",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0029xC1",
+    "title": "John Lee Roche, The Mad Hatter",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Paper Hearts",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Ideology",
+      "Method": "Subterfuge",
+      "Result": "Abduction"
+    },
+    "dialogue": "\"It was a difficult case, he was extremely hard to catch. By 1990, ten victims had been found scattered across the eastern seaboard.\" - Mulder on apprehending Roche",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0030xC1",
+    "title": "Betty, The Talking Tattoo",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Never Again",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Control",
+      "Method": "Threats",
+      "Result": "Insanity"
+    },
+    "dialogue": "\"From now on, I'm your right - hand gal. You and me. As long as I'm with you, no one will ever hurt you. Never again.\" - Betty's voice",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0031xC1",
+    "title": "Sgt. Nathaniel Teager, Avenging P.O.W.",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Unrequited",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Ideology",
+      "Method": "Subterfuge",
+      "Result": "Manipulation of Evidence"
+    },
+    "dialogue": "\"Whatever you do to me won't change his mind, General. He's sending a message and making damn sure everyone hears it loud and clear.\" - Denny Markham",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0032xC1",
+    "title": "Futuristic Freezing Compound",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Synchrony",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Security",
+      "Method": "Threats",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "\"Traces of the compound were detected in a man who was found dead last night, frozen solid.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0033xC1",
+    "title": "Dr. Charles Goldstein",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Demons",
+    "characteristics": {
+      "Affiliation": "Primordial",
+      "Motive": "Knowledge",
+      "Method": "Manipulation",
+      "Result": "Insanity"
+    },
+    "dialogue": "Mulder: \"You put a hole in my head.\"\nDr. Goldstein: \"A slight electrical stimulation.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0034xC1",
+    "title": "Gargoyle Spirit",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Grotesque",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Control",
+      "Method": "Possession",
+      "Result": "Insanity"
+    },
+    "dialogue": "\"Is this evil something born in each of us? Crouching in the shadow of every human soul waiting to emerge? Is this the monster called madness?\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0035xC1",
+    "title": "Jaguar Spirit",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Teso Dos Bichos",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Security",
+      "Method": "Violence",
+      "Result": "Abduction"
+    },
+    "dialogue": "Scully: \"What are we talking here, Mulder, a possessed rat? The return of Ben?\"\nMulder: \"No, I think those rats were killed trying to escape from something.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0036xC1",
+    "title": "Tong Organ Lottery",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Hell Money",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Control",
+      "Method": "Threats",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "Scully: \"Your father had an HLA but he also had his kidneys measured, his liver.\"\nMulder: \"They're playing some kind of game.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0037xC1",
+    "title": "The Night Hag",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Avatar",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Knowledge",
+      "Method": "Possession",
+      "Result": "Insanity"
+    },
+    "dialogue": "\"According to Skinner's psychiatrist, he's been experiencing a recurring dream in which he's confronted by an old woman. She speaks to him but he doesn't understand the words.\" - Scully",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0038xC1",
+    "title": "Melissa Riedal-Ephesian, Cultist",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "The Field Where I Died",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Control",
+      "Method": "Manipulation",
+      "Result": "Death"
+    },
+    "dialogue": "\"Twenty - sixth of November. 1863. I was here. As were you. This is the field where I watched you die.\" - Melissa to Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0039xC1",
+    "title": "Dr. Jack Franklin, Occult Practitioner",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Sanguinarium",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Ideology",
+      "Method": "Possession",
+      "Result": "Physiological Imbalance"
+    },
+    "dialogue": "Scully: \"This kind of transformation is medically impossible.\"\nMulder: \"It's not medicine, Scully. It's blood sacrifice.\"",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0040xC1",
+    "title": "Isaac Luria, The Golem",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Kaddish",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Survival",
+      "Method": "Violence",
+      "Result": "Death"
+    },
+    "dialogue": "\"I don't think it was hate that created this, Scully. I think it was love.\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "XF26-0041xC1",
+    "title": "Harbingers of Death",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "X-File",
+    "episode": "Elegy",
+    "characteristics": {
+      "Affiliation": "Occult",
+      "Motive": "Knowledge",
+      "Method": "Possession",
+      "Result": "Death"
+    },
+    "dialogue": "\"What is a death omen if not a vision of our own mortality? And who among us would most likely be able to see the dead?\" - Mulder",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "PR26-0015-SKI",
+    "title": "Assistant Director Walter Skinner",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "Agent",
+    "episode": "Tunguska",
+    "cost": "6 RP",
+    "skills": {
+      "Bureaucracy": 4,
+      "Criminal Investigation": 3,
+      "Evidence Collection": 2,
+      "Subterfuge": 3,
+      "Long Range Combat": 2,
+      "Close Range Combat": 3,
+      "Health": 5,
+      "Resources": 1
+    },
+    "gameEffect": "Treat Assistant Director Skinner as a RES 3 if he is in the Bureau Section of the table.",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Neutral",
+      "Skeptic"
+    ],
+    "bio": "While supervising the X - Files unit, Assistant Director Walter Skinner has demonstrated unwavering loyalty to Agents Mulder and Scully. Upon learning that Scully has contracted cancer, Skinner submits to the Cigarette - Smoking Man's bidding in exchange for a cure (\"Zero Sum\").",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "PR26-0016-KRY",
+    "title": "Agent Alex Krycek",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "Agent",
+    "episode": "Tunguska",
+    "cost": "6 RP",
+    "skills": {
+      "Alien Investigation": 3,
+      "Criminal Investigation": 2,
+      "Evidence Collection": 2,
+      "Sciences": 1,
+      "Subterfuge": 4,
+      "Long Range Combat": 4,
+      "Close Range Combat": 2,
+      "Health": 5,
+      "Resources": 2
+    },
+    "gameEffect": "Agent Krycek allows you to choose to add to the Conspiracy Pool instead of the Resource Pool during the Briefing Phase.",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Believer"
+    ],
+    "bio": "As a rogue operative with shifting allegiances, Alex Krycek was recruited by an extremist militia operating out of New York. Upon his arrest Krycek convinced Mulder to enlist him in a dangerous investigation in the former Soviet Union (\"Tunguska\"). After double - crossing Mulder to align himself with Russian conspirators, Krycek would undergo forced amputation of his left arm by anti - Gulag rebels (\"Terma\").",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "PR26-0017-BLE",
+    "title": "Section Chief Scott Blevins",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "Agent",
+    "episode": "Gethsemane",
+    "cost": "4 RP",
+    "skills": {
+      "Alien Investigation": 1,
+      "Bureaucracy": 3,
+      "Criminal Investigation": 1,
+      "Evidence Collection": 1,
+      "Subterfuge": 1,
+      "Long Range Combat": 1,
+      "Close Range Combat": 1,
+      "Health": 3,
+      "Resources": 1
+    },
+    "gameEffect": "Treat Section Chief Blevins as a RES 2 if he is in the Bureau Section. If he is in the Bureau Section, he may contribute to the Conspiracy Pool instead of the Resources Pool during the Briefing Phase.",
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law",
+      "Neutral",
+      "Believer"
+    ],
+    "bio": "Previously the supervisor of the X - Files unit, Section Chief Scott Blevins later led a joint FBI committee to investigation the legitimacy of Agent Mulder's work and his apparent suicide. Blevins questioned Agent Scully as she appeared to detail the deception to which she believed Mulder had succumbed.",
+    "tags": [
+      "Basic"
+    ],
+    "createdBy": "Stephen Arvidson"
+  },
+  {
+    "id": "PR26-0018-CRE",
+    "title": "82517 - Apology is Policy",
+    "set": "Apology is Policy",
+    "rarity": "Preservation Society",
+    "type": "Credits",
+    "createdBy": "Stephen Arvidson"
+  }
+]

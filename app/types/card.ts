@@ -14,6 +14,7 @@ export enum CardSet {
   GenCon = 'Gen Con',
   BelieveTheLie = 'Believe the Lie',
   ResistOrServe = 'Resist or Serve',
+  ApologyIsPolicy = 'Apology is Policy',
   FightTheFuture = 'Fight the Future',
   HereThereBeMonsters = 'Here There Be Monsters',
   IWantToBelieve = 'I Want to Believe',
