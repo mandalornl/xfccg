@@ -13,6 +13,7 @@ const pool = await Promise.all([
   '22364',
   'believe-the-lie',
   'resist-or-serve',
+  'apology-is-policy',
   'promo',
   'gen-con',
   'fight-the-future',
