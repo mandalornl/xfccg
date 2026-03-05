@@ -4,9 +4,8 @@
     "title": "The Dark Angel",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye #17",
-    "episode": "Die Hand Die Verletzt",
     "type": "Adversary",
+    "episode": "Die Hand Die Verletzt",
     "cost": "10 CP",
     "skills": {
       "Long Range Combat": 5,
@@ -25,6 +24,7 @@
       "Affiliation Site"
     ],
     "gameEffect": "The Dark Angel can play all combat cards for one [CP] less.",
+    "dialogue": "\"I feel a Dark Angel is amongst us. It wants a sacrifice.\" - Deborah Brown",
     "tags": [
       "Basic"
     ],
@@ -35,9 +35,8 @@
     "title": "Fighter Interceptor",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "InQuest #19",
-    "episode": "E.B.E.",
     "type": "Event",
+    "episode": "E.B.E.",
     "cost": "4 RP",
     "keywords": [
       "Event",
@@ -49,6 +48,7 @@
       "Adversary"
     ],
     "gameEffect": "Negates an Alien Adversary.",
+    "dialogue": "Iraqi Air Command: \"You're under attack!\"\nIraqi Pilot: \"I'm locked in. It's a hit! I got him!\"",
     "tags": [
       "Basic",
       "Negate"
@@ -60,9 +60,8 @@
     "title": "Alien Technology",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "American Entertainment",
-    "episode": "The Erlenmeyer Flask",
     "type": "Event",
+    "episode": "The Erlenmeyer Flask",
     "cost": "2 RP",
     "keywords": [
       "Event",
@@ -75,6 +74,7 @@
       "Site"
     ],
     "gameEffect": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION or BUREAUCRACY skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one ALIEN or GOVERNMENT Adversary.",
+    "dialogue": "\"There were tanks here, and five bodies suspended in solution. There were computers monitoring them. They were alive Scully, underwater!\" - Mulder",
     "tags": [
       "Basic",
       "Negate"
@@ -86,9 +86,8 @@
     "title": "No One So Paranoid",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Given away at GenCon '96",
-    "episode": "E.B.E.",
     "type": "Event",
+    "episode": "E.B.E.",
     "cost": "5 RP",
     "keywords": [
       "Event"
@@ -97,6 +96,7 @@
       "Active"
     ],
     "gameEffect": "Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site.",
+    "dialogue": "Byers: \"Hey, Mulder, listen to this: Vladimir Zhirenovsky, leader of the Russian Social Democrats, he's being put into power by the heinous and evil force of the twentieth century.\"\nMulder: \"Barney?\"\nByers: \"The C.I.A.\"",
     "tags": [
       "Basic"
     ],
@@ -107,9 +107,8 @@
     "title": "Chester Bonaparte, The Spirit Guide",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Gamer Winter '97",
-    "episode": "Fresh Bones",
     "type": "Event",
+    "episode": "Fresh Bones",
     "cost": "5 RP",
     "keywords": [
       "Event",
@@ -123,6 +122,7 @@
       "Occult Adversary"
     ],
     "gameEffect": "Negate one OCCULT Adversary. In addition, if the Team makes an OCCULT INVESTIGATION skill check of 6+, they may ask either one METHOD question or one RESULT question.",
+    "dialogue": "\"Poor Kid... he died six weeks ago in that riot.\" - Private McAlpin",
     "tags": [
       "Basic",
       "Negate"
@@ -134,15 +134,9 @@
     "title": "Agent Henderson",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Duelist #14",
-    "episode": "Young At Heart",
     "type": "Agent",
+    "episode": "Young At Heart",
     "cost": "3 RP",
-    "keywords": [
-      "Agent",
-      "FBI",
-      "Law"
-    ],
     "skills": {
       "Criminal Investigation": 1,
       "Evidence Collection": 3,
@@ -153,7 +147,13 @@
       "Health": 3,
       "Resources": 1
     },
+    "keywords": [
+      "Agent",
+      "FBI",
+      "Law"
+    ],
     "gameEffect": "Place a token on this card. Discard a token and look through your Bureau deck to draw any Site that asks a MOTIVE question. Add it to your hand, reshuffle your Bureau deck.",
+    "bio": "Agent Henderson works in the FBI crime lab and specializes in handwriting analysis. She helped prove the person who was committing a string of murders in Washington, D.C. was none other than John Barnett.",
     "tags": [
       "Basic",
       "Search"
@@ -165,9 +165,8 @@
     "title": "Teamwork",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Online Survey and boxes of 101361",
-    "episode": "E.B.E.",
     "type": "Event",
+    "episode": "E.B.E.",
     "cost": "0 RP",
     "keywords": [
       "Event"
@@ -176,6 +175,7 @@
       "Active"
     ],
     "gameEffect": "Play this card on any Team consisting of no more than two Agents during the Investigation Phase when they are sent to investigate a Site. You may add a number of tokens to the [RP] pool equal to the Agents' total RES value.",
+    "dialogue": "\"I may not have the X - Files, Scully, but I have my work. I still have you, and I still have myself.\" - Mulder",
     "tags": [
       "Advanced",
       "Resource"
@@ -187,9 +187,8 @@
     "title": "Believe The Lie",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Voyager Promotions",
-    "episode": "Gethsemane",
     "type": "Event",
+    "episode": "Gethsemane",
     "cost": "12 CP",
     "keywords": [
       "Event",
@@ -200,6 +199,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Exchange your X-File with ALIEN Affiliation with any X-File with GOVERNMENT Affiliation.",
+    "dialogue": "FBI Investigator: \"Agent Scully, I presume you have a basis for this break from Agent Mulder.\"\nScully: \"Yes sir. Recent events have shed new light on the factual and physical evidence that would serve to prove the existence of extraterrestrial life, which is the foundation of Agent Mulder's consuming devotion to his work.\"",
     "tags": [
       "Basic",
       "Voyager Promotions"
@@ -211,9 +211,8 @@
     "title": "Infected That You Might Believe",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Voyager Promotions",
-    "episode": "Gethsemane",
     "type": "Event",
+    "episode": "Gethsemane",
     "cost": "6 CP",
     "keywords": [
       "Event",
@@ -225,6 +224,7 @@
       "Site"
     ],
     "gameEffect": "Play this card and place it beneath one Agent to lower all of that Agent's skill levels by 1. This cannot result in a skill being negative or permanent Health being less than 1. When played on Agent Dana Scully, the conspiracy player may choose to force Scully to spend every other turn in the Hospital (if this option is chosen, Scully's skills are not reduced). This choice must be made when the card is played and cannot be changed later. Healing cards will negate this card.",
+    "dialogue": "Mulder: \"You're so willing to believe him. What did he say to you?\"\nScully: \"He said that the men behind this hoax and these lies gave me the disease. To make you believe.\"",
     "tags": [
       "Basic",
       "Voyager Promotions"
@@ -236,9 +236,8 @@
     "title": "A Final Choice",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Voyager Promotions",
-    "episode": "Gethsemane",
     "type": "Bluff",
+    "episode": "Gethsemane",
     "cost": "9 CP",
     "keywords": [
       "Bluff",
@@ -250,6 +249,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to immediately move one opposing Agent to the Hospital. Place this card beneath the Agent and place five tokens on the Agent (seven tokens if played on Agent Mulder). Remove a token during the Agent's Healing Phase. When all tokens have been removed, discard this card. The Agent may leave the Hospital when all tokens have been removed.",
+    "dialogue": "\"This morning... I received a call from the police, asking me to come to Agent Mulder's apartment. The detective asked me... he needed me to identify a body. Agent Mulder died late last night. Of an apparent self - inflicted gunshot to the head.\" - Scully",
     "tags": [
       "Basic",
       "Move",
@@ -262,9 +262,8 @@
     "title": "Good Fortune",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Voyager Promotions",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Event",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "2 RP",
     "keywords": [
       "Event"
@@ -273,6 +272,7 @@
       "Active"
     ],
     "gameEffect": "Once this card is played, only the Investigating player may play Events while investigating this Site, except for Events which would negate this card. Discard this card when the Site is discarded.",
+    "dialogue": "Clyde Bruckman: \"Holly will not only re - emerge, but also regroup with The Crickets, and they will headline at next year's Lollapala... Lollapallazoola... What the hell is Lollapalazo?\"\nClerk: \"Who's Buddy Holly?\"\nBruckman: \"Just give me my Lotto ticket. And a pint of malt scotch whiskey, And a Choc - o-saurus.\"",
     "tags": [
       "Basic",
       "Prevent",
@@ -285,9 +285,8 @@
     "title": "Mulligan",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "InQuest #25",
-    "episode": "Pusher",
     "type": "Event",
+    "episode": "Pusher",
     "cost": "3 *P",
     "keywords": [
       "Event"
@@ -297,6 +296,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Discard your entire hand and draw seven cards from the top of your Bureau Deck.",
+    "dialogue": "All right. I'm using this new non - sanctioned ball. It's got a core of damn uranium or something, I don't know what. It gets up there like Sputnik... About damn time... Konnichiwa, gentlemen. I was never here.\" - Pusher",
     "tags": [
       "Basic"
     ],
@@ -307,9 +307,8 @@
     "title": "Smoke & Mirrors",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye 4/2",
-    "episode": "Humbug",
     "type": "Event",
+    "episode": "Humbug",
     "cost": "3 RP",
     "keywords": [
       "Event"
@@ -318,6 +317,7 @@
       "Active"
     ],
     "gameEffect": "Apply a +1 modifier to any skill check.",
+    "dialogue": "\"Now, you're sure it was the twin you saw running around here? I mean, maybe it was the 'Fee - jee' Mermaid, and he's jumped into the river, and swum his way back to Fiji...\" - Sheriff",
     "tags": [
       "Basic"
     ],
@@ -328,9 +328,8 @@
     "title": "Smoke & Mirrors",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye 4/2",
-    "episode": "Humbug",
     "type": "Event",
+    "episode": "Humbug",
     "cost": "3 CP",
     "keywords": [
       "Event"
@@ -339,6 +338,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Apply a -1 modifier to any skill check.",
+    "dialogue": "\"Now, you're sure it was the twin you saw running around here? I mean, maybe it was the 'Fee - jee' Mermaid, and he's jumped into the river, and swum his way back to Fiji...\" - Sheriff",
     "tags": [
       "Basic"
     ],
@@ -349,9 +349,8 @@
     "title": "Smoke & Mirrors",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye 4/2",
-    "episode": "Humbug",
     "type": "Event",
+    "episode": "Humbug",
     "cost": "4 RP",
     "keywords": [
       "Event"
@@ -360,6 +359,7 @@
       "Active"
     ],
     "gameEffect": "Apply a +2 modifier to any one opponent skill check.",
+    "dialogue": "\"Now, you're sure it was the twin you saw running around here? I mean, maybe it was the 'Fee - jee' Mermaid, and he's jumped into the river, and swum his way back to Fiji...\" - Sheriff",
     "tags": [
       "Basic"
     ],
@@ -370,9 +370,8 @@
     "title": "Smoke & Mirrors",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye 4/2",
-    "episode": "Humbug",
     "type": "Event",
+    "episode": "Humbug",
     "cost": "4 CP",
     "keywords": [
       "Event"
@@ -381,6 +380,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Apply a -2 modifier to any one opponent skill check",
+    "dialogue": "\"Now, you're sure it was the twin you saw running around here? I mean, maybe it was the 'Fee - jee' Mermaid, and he's jumped into the river, and swum his way back to Fiji...\" - Sheriff",
     "tags": [
       "Basic"
     ],
@@ -391,9 +391,8 @@
     "title": "Smoke & Mirrors",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Scrye 4/2",
-    "episode": "Humbug",
     "type": "Event",
+    "episode": "Humbug",
     "cost": "5 *P",
     "keywords": [
       "Event"
@@ -403,6 +402,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Apply a +3 or -3 (your choice) modifier to any skill check.",
+    "dialogue": "\"Now, you're sure it was the twin you saw running around here? I mean, maybe it was the 'Fee - jee' Mermaid, and he's jumped into the river, and swum his way back to Fiji...\" - Sheriff",
     "tags": [
       "Basic"
     ],
@@ -413,9 +413,8 @@
     "title": "Call On Us More Often",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Voyager Promotions",
-    "episode": "Apocrypha",
     "type": "Event",
+    "episode": "Apocrypha",
     "cost": "2 RP",
     "keywords": [
       "Event"
@@ -424,6 +423,7 @@
       "Active"
     ],
     "gameEffect": "Play this card to search through your Bureau Deck and add one of the following cards to your hand: No One So Paranoid, The Lone Gunmen, Langly, Frohike, or Byers. If you play the chosen card immediately, you may do so for half Cost (round up).",
+    "dialogue": "Byers: \"You ought to call upon our services more often.\"\nLangly: \"We show a talent for these G - man activities.\"\nMulder: \"You mean if I'd like someone whacked on the knee.\"\nFrohike: \"Only if you want the job done right.\"",
     "tags": [
       "Basic",
       "Search",
@@ -436,9 +436,8 @@
     "title": "Blue Plate Special",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Gamer Spring '97, Collect May '97",
-    "episode": "Piper Maru",
     "type": "Event",
+    "episode": "Piper Maru",
     "cost": "0 *P",
     "keywords": [
       "Event"
@@ -448,6 +447,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Play this card and flip over the next card on your Bureau Deck. If that card is playable this turn you may do so for zero [RP] or [CP]. If you do not play it this turn, move the card to your discard pile.",
+    "dialogue": "Skinner: \"How's the Blue Plate?\"\nWaitress: \"Looks good.\"\nSkinner: \"Medium - rare. Thanks.\"",
     "tags": [
       "Advanced"
     ],
@@ -458,9 +458,8 @@
     "title": "Je Vois Quelque Chose La Au-Dessous",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "France and some issues of Scrye 4.3",
-    "episode": "Piper Maru",
     "type": "Event",
+    "episode": "Piper Maru",
     "cost": "2 *P",
     "keywords": [
       "Event",
@@ -471,6 +470,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Recherchez dans votre paquet de cartes FBI et choisissez une carte ALIEN Mot-clé ou ALIEN INVESTIGATION. Montrez cette carte à votre adversaire, ajoutez-la à votre jeu et mélangez le paquet de cartes FBI.\n\nEnglish Translation: Search your Bureau deck and choose one keyword ALIEN or ALIEN INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau deck.",
+    "dialogue": "Premier Ingénieur: \"Deux cents soixante dix mètres.\"\nGauthier: \"Je dois être proche du fond.\"\nSecond Ingénieur: \"Nous relevons de fortes radiations. Trés fortes, Gauthier.\"\nGauthier: \"Il se peut que cette chose soit juste au - dessous de moi.\" TRANSLATION:\nFirst Engineer: \"Two hundred and seventy metres.\"\nGauthier: \"I should be close to the bottom.\"\nSecond Engineer: \"We're picking up some radiation. A strong reading, Gauthier.\"\nGauthier: \"Maybe this thing's right down below me.\"",
     "tags": [
       "Basic",
       "Search"
@@ -482,9 +482,8 @@
     "title": "Die Hand Die Verletzt",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Germany and some issues of Scrye 4.3",
-    "episode": "Die Hand Die Verletzt",
     "type": "Event",
+    "episode": "Die Hand Die Verletzt",
     "cost": "7 CP",
     "keywords": [
       "Event",
@@ -494,6 +493,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Spielen Sie diese Karte zum Durchsuchen Ihres Büro Stapels. Dann wählen Sie einen OCCULT Gegner, mit dem Sie automatisch den AgentenTeam zur Ortserkundung angehören. Der OCCULT Gegner kann anstatt der 0 [CP] gespielt werden, unter Mißachtung der Aktivierungs-Anforderungen.\n\nEnglish Translation: You may search your Bureau deck and take any Occult Creature and you may play it on the agents team making the skill check. You may play it at any site. (Meaning you can play an Adversary with Activator Affiliation on a Motive, Method, or Result site as well.) This costs 0 [CP].",
+    "dialogue": "Brown: \"Sein ist die Hand die verletzt!\"\nParent - Teacher Committee: \"Sein ist die Hand die verletzt!\"\nBrown: \"Sein ist der Ort genannt Hölle.\"\nParent - Teacher Committee: \"Sein ist der Ort genannt Hölle.\" TRANSLATION:\nBrown: \"His is the hand that wounds!\"\nParent - Teacher Committee: \"His is the hand that wounds!\"\nBrown: \"His is the place called hell.\"\nParent - Teacher Committee: \"His is the place called hell.\"",
     "tags": [
       "Advanced",
       "Search"
@@ -505,9 +505,8 @@
     "title": "Not On The Menu",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "Combo #30",
-    "episode": "Piper Maru",
     "type": "Event",
+    "episode": "Piper Maru",
     "cost": "2 *P",
     "keywords": [
       "Event",
@@ -518,6 +517,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Draw 2 cards from the top of your Bureau deck and add them to your hand.",
+    "dialogue": "Grey - Haired Man: \"Anything good here? Anything not on the menu?\"\nSkinner: \"You'll have to ask the waitress. You gentlemen have a problem?\"\nGrey - Haired Man: \"When something's not on the menu, Mr. Skinner, there's usually a reason, wouldn't you say?\"",
     "tags": [
       "Basic"
     ],
@@ -528,9 +528,8 @@
     "title": "Deny Everything",
     "set": "Promo",
     "rarity": "Promo",
-    "foundIn": "1:65 copies of InQuest #25",
-    "episode": "Anasazi",
     "type": "Event",
+    "episode": "Anasazi",
     "cost": "8 CP",
     "keywords": [
       "Event"
@@ -539,6 +538,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Play this card immediately after your opponent asks you a question. You may respond with this phrase: \"I can neither confirm nor deny that assumption.\" After playing this card remove it from the game.",
+    "dialogue": "\"You're your own man Bill. You always have been. But I strongly encourage you in that event to deny everything.\" - The Cigarette - Smoking Man",
     "tags": [
       "Basic"
     ],

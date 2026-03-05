@@ -4,8 +4,8 @@
     "title": "2Shy",
     "set": "101361",
     "rarity": "Common",
-    "episode": "2Shy",
     "type": "Adversary",
+    "episode": "2Shy",
     "cost": "4 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -22,6 +22,7 @@
       "Computer"
     ],
     "gameEffect": "This card may be played in its normal way or on any Team that includes at least one female Agent, ignoring Activator requirements.",
+    "dialogue": "\"My weakness was no greater than theirs. I gave them what they wanted. They gave me what I\nneeded.\" - Virgil Incanto",
     "tags": [
       "Basic"
     ],
@@ -32,8 +33,8 @@
     "title": "Darin Peter Oswald",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "D.P.O.",
     "type": "Adversary",
+    "episode": "D.P.O.",
     "cost": "8 CP",
     "skills": {
       "Long Range Combat": 8,
@@ -50,6 +51,7 @@
       "Sciences"
     ],
     "gameEffect": "All Agents in a Team attacked by this Adversary must discard all attached Keyword ELECTRICAL Equipment immediately. The LONG RANGE COMBAT attack of this Adversary may be split between two opponents.",
+    "dialogue": "\"Okay, I'm listening. I'm ready for you, so come on down. Let's go, man! I'm waiting! Come on! Talk to me!\" - Darin Peter Oswald",
     "tags": [
       "Basic",
       "Split Damage"
@@ -61,8 +63,8 @@
     "title": "John Mostow",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Grotesque",
     "type": "Adversary",
+    "episode": "Grotesque",
     "cost": "4 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -81,6 +83,7 @@
       "Site"
     ],
     "gameEffect": "This Card is free if played on a Keyword INSANITY card and Activator requirements are ignored.",
+    "dialogue": "\"It killed again? Yesterday? It's found somebody. Somebody new. Just like it found me.\" - John Mostow",
     "tags": [
       "Basic"
     ],
@@ -91,8 +94,8 @@
     "title": "Margi Kleinjan",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Syzygy",
     "type": "Adversary",
+    "episode": "Syzygy",
     "cost": "3 CP",
     "skills": {
       "Long Range Combat": 2,
@@ -110,6 +113,7 @@
       "Site"
     ],
     "gameEffect": "This card may be played on a Site at which the \"Terri Roberts\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
+    "dialogue": "\"...she's evil. She tricked Boom into going up on that cliff and then she pushed him...and she\nlaughed about it.\" - Margi Kleinjan on Terri Roberts",
     "tags": [
       "Basic"
     ],
@@ -120,8 +124,8 @@
     "title": "Puppet",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Adversary",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "5 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -139,6 +143,7 @@
       "Site"
     ],
     "gameEffect": "Puppet may wait until his opponents declare they have played all of the COMBAT cards that they intend to, then Puppet may play COMBAT cards. No other COMBAT cards may be played after Puppet's. This card is free and Activator requirements are ignored if it is played on a Keyword INSANITY card.",
+    "dialogue": "\"Hey, that's not the way it's supposed to happen!\" - Puppet",
     "tags": [
       "Basic"
     ],
@@ -149,8 +154,8 @@
     "title": "Red-Haired Man",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "731",
     "type": "Adversary",
+    "episode": "731",
     "cost": "6 CP",
     "skills": {
       "Long Range Combat": 3,
@@ -169,6 +174,7 @@
       "Site"
     ],
     "gameEffect": "This Adversary is able to use SUBTERFUGE and MARTIAL ARTS cads. If you opponent has correctly guessed two of your X-File's characteristics, the cost to play this card is 3 [CP].",
+    "dialogue": "Red Haired Man: \"This car is wired to an explosive device. It armed automatically when I entered the car.\"\nMulder: \"Why?\"\nRed Haired Man: \"Because of what's in that room. Because if the man responsible for it couldn't get it out of the country, he would rather kill it than let it live.\"",
     "tags": [
       "Basic"
     ],
@@ -179,8 +185,8 @@
     "title": "Simon Gates A.K.A. Ferreau",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Revelations",
     "type": "Adversary",
+    "episode": "Revelations",
     "cost": "6 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -197,6 +203,7 @@
       "Agent",
       "Believer"
     ],
+    "dialogue": "\"You have to die, Kevin...for everyone. For the New Age to come. You understand that, don't you?\" - Simon Gates",
     "tags": [
       "Basic"
     ],
@@ -207,8 +214,8 @@
     "title": "Terri Roberts",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Syzygy",
     "type": "Adversary",
+    "episode": "Syzygy",
     "cost": "3 CP",
     "skills": {
       "Long Range Combat": 2,
@@ -226,6 +233,7 @@
       "Site"
     ],
     "gameEffect": "This card may be played on a Site at which the \"Margi Kleinjan\" Adversary card has been played, ignoring Activator requirements. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill.",
+    "dialogue": "\"...I think she's been possessed by the devil. She... she killed Scott Simmons tonight with a garage door spring. I don't know how she does it.\" - Terri Roberts on Margi Kleinjan",
     "tags": [
       "Basic"
     ],
@@ -236,8 +244,8 @@
     "title": "The List",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "The List",
     "type": "Adversary",
+    "episode": "The List",
     "cost": "4 CP",
     "skills": {
       "Long Range Combat": "N/A",
@@ -255,6 +263,7 @@
       "Site"
     ],
     "gameEffect": "List one Agent from the Investigating Team on a piece of paper. Place this card in your opponent's Field with the paper underneath. If the Agent listed Investigates a different Site before this card is negated, reveal the paper with the listed Agent. The Agent must go to the Hospital with zero HEALTH and may not contribute to skill checks this turn. Discard this card.",
+    "dialogue": "\"I shall return to avenge the petty tyranny and the cruelty I've suffered. I shall be recast, reincarnated, the reunion of spirit and flesh - five men will die.\" - Napoleon \"Neech\" Manley",
     "tags": [
       "Basic",
       "Non-combative"
@@ -266,8 +275,8 @@
     "title": "The Walk",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Walk",
     "type": "Adversary",
+    "episode": "The Walk",
     "cost": "5 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -285,6 +294,7 @@
       "Site"
     ],
     "gameEffect": "Subtract one from all damage sources applied to this Adversary.",
+    "dialogue": "\"I know a lot of crips have the same dream. The Walk. In my dream, I rise, out of my chair. I can\nstand. I look down the hall, only I'm not on the ward, I'm at home and there's my baby girl..\" - Amputee",
     "tags": [
       "Basic",
       "Reduce Damage"
@@ -296,8 +306,8 @@
     "title": "Joseph Patnik",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Wetwired",
     "type": "Adversary",
+    "episode": "Wetwired",
     "cost": "4 CP",
     "skills": {
       "Long Range Combat": 0,
@@ -315,6 +325,7 @@
       "Site"
     ],
     "gameEffect": "Subtract one from all damage sources applied to this Adversary. The Long Range Combat Round is skipped.",
+    "dialogue": "\"I did some checking. Joseph Patnik thought he was killing a Bosnian war criminal - a man the media touted as a modern day Hitler. It turns out Patnik's parents were both Holocaust survivors.\" - Mulder",
     "tags": [
       "Basic",
       "Reduce Damage",
@@ -327,8 +338,8 @@
     "title": "Agent Bill Patterson",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Grotesque",
     "type": "Agent",
+    "episode": "Grotesque",
     "cost": "6 RP",
     "skills": {
       "Behavioral": 3,
@@ -350,6 +361,7 @@
       "Believer"
     ],
     "gameEffect": "Once per game, Agent Patterson may attack any Team investigating a Site as if he were an Adversary with the appropriate Activators. If a card is played that Negates him he is placed back into his controller's Field. If he is reduced to zero HEALTH, he is removed from the game.",
+    "bio": "Agent Patterson is in charge of the Investigative Support Unit out of Quantico. Even though Patterson and Mulder clashed while Mulder was his student in Behavioral Studies, Patterson believes Mulder to be the best behavioral profiler in the Bureau.",
     "tags": [
       "Advanced"
     ],
@@ -360,8 +372,8 @@
     "title": "Agent Danny Pendrell",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "731",
     "type": "Agent",
+    "episode": "731",
     "cost": "6 RP",
     "skills": {
       "Computer": 3,
@@ -382,6 +394,7 @@
       "Believer"
     ],
     "gameEffect": "Place three tokens on Agent Pendrell. During a skill check, discard one token to add 1 to Agent Pendrell's COMPUTER, SCIENCES, or MEDICAL skill.",
+    "bio": "Assigned to the FBI crime labs in Washington, D.C., Agent Pendrell gathered scientific data for Agents Mulder and Scully on numerous occasions. One notable contribution was Pendrell's identification of Scully's implant as a subcutaneous neural network.",
     "tags": [
       "Advanced"
     ],
@@ -392,8 +405,8 @@
     "title": "Agent Fred Nemhauser",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Grotesque",
     "type": "Agent",
+    "episode": "Grotesque",
     "cost": "2 RP",
     "skills": {
       "Behavioral": 1,
@@ -410,6 +423,7 @@
       "Law"
     ],
     "gameEffect": "Agent Nemhauser's BEHAVIORAL and CRIMINAL INVESTIGATION skills are increased by one if he and Agent Patterson are on the same Team.",
+    "bio": "Agent Nemhauser worked with Agent Patterson for three years investigating the Mostow murders. Nemhauser and Patterson were successful in apprehending Mostow. Afterwards, Nemhauser was helpful in aiding Mulder in investigating a Mostow copy - cat killer.",
     "tags": [
       "Advanced"
     ],
@@ -420,8 +434,8 @@
     "title": "Agent Kreski",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Oubliette",
     "type": "Agent",
+    "episode": "Oubliette",
     "cost": "1 RP",
     "skills": {
       "Criminal Investigation": 1,
@@ -436,6 +450,7 @@
       "Law"
     ],
     "gameEffect": "Place one token on this card. Remove one token to negate a Keyword HEALING card played by your opponent.",
+    "bio": "Agent Kreski assisted Agents Mulder and Scully in the apprehension of the kidnapper Carl Wade.",
     "tags": [
       "Advanced",
       "Negate"
@@ -447,8 +462,8 @@
     "title": "Clyde Bruckman",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Agent",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "5 RP",
     "skills": {
       "Criminal Investigation": 2,
@@ -466,6 +481,7 @@
       "Believer"
     ],
     "gameEffect": "Place one token on this card. Remove one token to examine an opponent's hand and remove one of the cards in his hand from the game.",
+    "bio": "Clyde Bruckman is a reluctant psychic who was asked by Mulder to aid in determining the identity of a serial killer who preys on fortune tellers.",
     "tags": [
       "Advanced",
       "Examine Hand"
@@ -477,8 +493,8 @@
     "title": "Detective Angela White",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Syzygy",
     "type": "Agent",
+    "episode": "Syzygy",
     "cost": "3 RP",
     "skills": {
       "Behavioral": 1,
@@ -498,6 +514,7 @@
       "Believer"
     ],
     "gameEffect": "If Detective White is in the same Team as Agent Mulder, they both gain a +1 to their cumulative OCCULT INVESTIGATION and CRIMINAL INVESTIGATION skills, and a -1 to their OBSERVATION and BEHAVIORAL skills.",
+    "bio": "Detective White called for Mulder and Scully's help after the deaths of three high school boys in three months. She believed a satanic cult was responsible, an idea widely supported by the townspeople.",
     "tags": [
       "Advanced"
     ],
@@ -508,8 +525,8 @@
     "title": "Detective Manners",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Jose Chung's \"From Outer Space\"",
     "type": "Agent",
+    "episode": "Jose Chung's \"From Outer Space\"",
     "cost": "2 RP",
     "skills": {
       "Criminal Investigation": 1,
@@ -526,6 +543,7 @@
       "Independent"
     ],
     "gameEffect": "Place two tokens on Detective Manners. Discard one token to search through your Bureau deck and add a Witness card to your hand. Show the Witness to your opponent and shuffle the deck.",
+    "bio": "Detective Manners assisted Agents Mulder and Scully in investigating the abduction of Harold Lamb and Chrissy Giorgio as documented in the novel entitled \"From Outer Space.\"",
     "tags": [
       "Advanced",
       "Search"
@@ -537,8 +555,8 @@
     "title": "Angry Townspeople",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Syzygy",
     "type": "Bluff",
+    "episode": "Syzygy",
     "cost": "2 CP",
     "keywords": [
       "Bluff"
@@ -548,6 +566,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to increase the cost of all [RP] cards played at this Site by 1.",
+    "dialogue": "\"We're not standing around here anymore waiting for answers. We're taking this situation into our own hands.\" - Bob Spitz",
     "tags": [
       "Advanced",
       "Increase Cost"
@@ -559,8 +578,8 @@
     "title": "Big Blue",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Quagmire",
     "type": "Bluff",
+    "episode": "Quagmire",
     "cost": "3 CP",
     "keywords": [
       "Bluff"
@@ -570,6 +589,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to add X [CP] to your [CP] pool. X = the number of [RP] spent at this Site by the Investigating Player.",
+    "dialogue": "\"Lake creatures have been reported for centuries, in dozens of countries. From the monsters in Loch Ness and Shiel, to the Ogopogo in Lake Okanagan.\" - Mulder",
     "tags": [
       "Advanced",
       "Resource"
@@ -581,8 +601,8 @@
     "title": "Philosophical Question",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Quagmire",
     "type": "Bluff",
+    "episode": "Quagmire",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -592,6 +612,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to increase the Cost of all [RP] cards played at this Site by 2.",
+    "dialogue": "Mulder: \"Do you think you could ever cannibalize someone? I mean, if you had to?\"\nScully: \"Well, as much as the very idea is abhorrent to me, under certain conditions a living entity is practically conditioned to perform whatever extreme measures are necessary to insure its survival. I suppose I'm no different.\"",
     "tags": [
       "Advanced",
       "Increase Cost"
@@ -603,8 +624,8 @@
     "title": "Cerulean Blue",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Pusher",
     "type": "Bluff",
+    "episode": "Pusher",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -614,6 +635,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to force your opponent to discard four cards from the top of his Bureau Deck.",
+    "dialogue": "\"Cerulean makes me think of a breeze. A gentle breeze....\" - Pusher",
     "tags": [
       "Basic",
       "Discard"
@@ -625,8 +647,8 @@
     "title": "Darkened Forest",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Quagmire",
     "type": "Bluff",
+    "episode": "Quagmire",
     "cost": "X CP",
     "keywords": [
       "Bluff"
@@ -636,6 +658,7 @@
       "Site"
     ],
     "gameEffect": "Pay the listed [CP] cost where X = the number of [CP] paid to gain the desired modifier to one of the following skills: CLOSE RANGE COMBAT, LONG RANGE COMBAT. (1) = -1, (3) = -2, (5) = -3, (9) = -4.",
+    "dialogue": "\"Maybe Big Blue has some kind of inland habitat. In the rocks or in this dense forest.\" - Mulder",
     "tags": [
       "Advanced",
       "Decrease Skill"
@@ -647,8 +670,8 @@
     "title": "Dissolving Evidence",
     "set": "101361",
     "rarity": "Common",
-    "episode": "2Shy",
     "type": "Bluff",
+    "episode": "2Shy",
     "cost": "1 CP",
     "keywords": [
       "Bluff"
@@ -658,6 +681,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to force your opponent to discard the top card of his Bureau Deck.",
+    "dialogue": "Scully: \"Any indications what the cause of death was?\"\nDetective Cross: \"We were lucky to get her into the bag without falling apart.\"",
     "tags": [
       "Basic",
       "Discard"
@@ -669,8 +693,8 @@
     "title": "Deceiving The Flock",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Revelations",
     "type": "Bluff",
+    "episode": "Revelations",
     "cost": "1 CP",
     "keywords": [
       "Bluff"
@@ -680,6 +704,7 @@
       "Site"
     ],
     "gameEffect": "Force an opponent to discard one card from their hand at random.",
+    "dialogue": "\"My blood flows as a test of your faith. Accept what you see before you. Open your hearts and souls to the divine possibilities. It is only then you will truly understand the powers of the Lord.\" - Reverend Finley",
     "tags": [
       "Basic",
       "Discard"
@@ -691,8 +716,8 @@
     "title": "Festival Of The Hungry Ghosts",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Hell Money",
     "type": "Bluff",
+    "episode": "Hell Money",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -702,6 +727,7 @@
       "Site"
     ],
     "gameEffect": "Once this card is played, the Investigating Player may not play any Events while investigating this Site except for Events which would specifically negate this card.",
+    "dialogue": "\"On the fifteenth of the seventh moon, they believe the gates of hell open and the ghosts of miserable and abandoned souls are free to roam the earth...\" - Detective Chao",
     "tags": [
       "Basic",
       "Prevent"
@@ -713,8 +739,8 @@
     "title": "Flesh Sculpting",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Grotesque",
     "type": "Bluff",
+    "episode": "Grotesque",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -724,6 +750,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to double the [RP] cost of any Keyword ACTIVE card played at this Site.",
+    "dialogue": "Mulder: \"More Gargoyles.\"\nScully: \"Sculpted in clay. Why keep them in a secret room?\"\nMulder: \"I think I just found out.\"",
     "tags": [
       "Advanced",
       "Increase Cost"
@@ -735,8 +762,8 @@
     "title": "Veracity In Question",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Talitha Cumi",
     "type": "Bluff",
+    "episode": "Talitha Cumi",
     "cost": "2 CP",
     "keywords": [
       "Bluff"
@@ -746,6 +773,7 @@
       "Site"
     ],
     "gameEffect": "Once this card is played, the investigating player may not play any COMBAT cards while investigating this Site, except for COMBAT cards which would specifically negate this card.",
+    "dialogue": "The Cigarette - Smoking Man: \"I wasn't looking for anything. It's what she was looking for. She contacted me actually.\"\nMulder: \"You're Lying.\"",
     "tags": [
       "Advanced",
       "Prevent"
@@ -757,8 +785,8 @@
     "title": "Heads Up",
     "set": "101361",
     "rarity": "Common",
-    "episode": "The List",
     "type": "Bluff",
+    "episode": "The List",
     "cost": "2 CP",
     "keywords": [
       "Bluff"
@@ -768,6 +796,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to force your opponent to discard two cards from the top of his Bureau Deck.",
+    "dialogue": "Scully: \"What did your preliminary exam turn up?\"\nDr. Ullrich: \"It looks like the head was severed just below the jawline with repeated stabbing blows from a putty knife. There were no other indications of trauma to the head.\"",
     "tags": [
       "Basic",
       "Discard"
@@ -779,8 +808,8 @@
     "title": "Mass Grave",
     "set": "101361",
     "rarity": "Common",
-    "episode": "731",
     "type": "Bluff",
+    "episode": "731",
     "cost": "1 CP",
     "keywords": [
       "Bluff"
@@ -790,6 +819,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to immediately add one [CP] to your pool for every two [RP] the Investigating Team uses at this Site.",
+    "dialogue": "\"There are more of these pits. They just dumped the bodies on top of each other, like they were garbage.\" - Escalante",
     "tags": [
       "Advanced",
       "Resource"
@@ -801,8 +831,8 @@
     "title": "Final Repose",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Bluff",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "2 CP",
     "keywords": [
       "Bluff"
@@ -812,6 +842,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to choose any three cards from you opponents' discard pile and place them in any order on top of his Bureau Deck.",
+    "dialogue": "\"It is about that time that my body begins to swell and turn a greenish white, with spots of purple. Next, the insects arrive. The inevitable follows: putridity and liquescence. Before I know it, I'm nothing but bones.\" - Clyde Bruckman",
     "tags": [
       "Basic"
     ],
@@ -822,8 +853,8 @@
     "title": "No One Believes You",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Oubliette",
     "type": "Bluff",
+    "episode": "Oubliette",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -833,6 +864,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to add one to the Site Prerequisite number for each Agent beyond one in the investigating Team.",
+    "dialogue": "Mulder: \"Scully, what the hell's happening?\"\nScully: \"The blood on Lucy's uniform. It was an exact DNA match. Lucy was covered in Amy Jacobs' blood.\"\nMulder: \"She didn't do it, Scully.\"",
     "tags": [
       "Basic"
     ],
@@ -843,8 +875,8 @@
     "title": "Oubliette",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Oubliette",
     "type": "Bluff",
+    "episode": "Oubliette",
     "cost": "8 CP",
     "keywords": [
       "Bluff",
@@ -855,6 +887,7 @@
       "Site"
     ],
     "gameEffect": "Play this card on one Agent in the Investigating Team. Remove the Agent from play and place this card on top of the Agent with four tokens. Remove one token during each of the controlling player's Debriefing Phases. When all tokens are removed, place this card on the owning player's Discard pile and move the Agent to the Bureau immediately.",
+    "dialogue": "\"Her abductor kept her locked in the basement the entire time. They never caught him.\" - Mulder",
     "tags": [
       "Basic"
     ],
@@ -865,8 +898,8 @@
     "title": "Stoner, Chick, and Dude",
     "set": "101361",
     "rarity": "Common",
-    "episode": "War of the Coprophages",
     "type": "Bluff",
+    "episode": "War of the Coprophages",
     "cost": "1 CP",
     "keywords": [
       "Bluff"
@@ -876,6 +909,7 @@
       "Site"
     ],
     "gameEffect": "Move up to two Bluffs to a different Site in play. Play this card before any other Bluffs are revealed.",
+    "dialogue": "\"It, like, swings the doors of perception so wide open, you see a whole nother world out there. But it's still like, this world, you know? It tweaks your mind and does the whole altered states thing to it, and suddenly you see reality as it, you know, really exists.\" - Dude",
     "tags": [
       "Advanced",
       "Move"
@@ -887,8 +921,8 @@
     "title": "The Mailman",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "The Walk",
     "type": "Bluff",
+    "episode": "The Walk",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -898,6 +932,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to allow you to move one game effect token from any one card to another immediately. This may not take a card above the normal number of tokens allowed.",
+    "dialogue": "Mulder: \"How did he get past the guard? How did he kill him? Trevor was eight years old...\"\nRoach: \"I don't know, I didn't kill anybody, I'm just the Mailman!\"",
     "tags": [
       "Advanced"
     ],
@@ -908,8 +943,8 @@
     "title": "This Is Not Happening",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Jose Chung's \"From Outer Space\"",
     "type": "Bluff",
+    "episode": "Jose Chung's \"From Outer Space\"",
     "cost": "4 CP",
     "keywords": [
       "Bluff"
@@ -919,6 +954,7 @@
       "Site"
     ],
     "gameEffect": "Force an opponent to discard three cards from his hand at random.",
+    "dialogue": "\"This is not happening. This is not happening. This is not happening. This is not happening.\" - Gray Alien #2",
     "tags": [
       "Basic",
       "Discard"
@@ -930,8 +966,8 @@
     "title": "Visions Of A Madman",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Bluff",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "3 CP",
     "keywords": [
       "Bluff"
@@ -941,6 +977,7 @@
       "Site"
     ],
     "gameEffect": "Play this card to allow you to look at your opponent's Hand.",
+    "dialogue": "Bruckman: \"You do the things you do because you're a homicidal maniac.\"\nPuppet: \"That does explain a lot, doesn't it? It's all starting to make sense now.\"",
     "tags": [
       "Basic",
       "Examine Hand"
@@ -952,8 +989,8 @@
     "title": "You're A Dead Man",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Jose Chung's \"From Outer Space\"",
     "type": "Bluff",
+    "episode": "Jose Chung's \"From Outer Space\"",
     "cost": "3 CP",
     "keywords": [
       "Bluff"
@@ -963,6 +1000,7 @@
       "Site"
     ],
     "gameEffect": "Once this card is played, the investigating player may not play any Witnesses while investigating this Site, except for Witnesses which would specifically negate this card.",
+    "dialogue": "\"You never saw this. This didn't happen. You tell anyone - you're a dead man.\" - Scully",
     "tags": [
       "Basic",
       "Prevent"
@@ -974,8 +1012,8 @@
     "title": "Two Lux Video Camera",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Pusher",
     "type": "Equipment",
+    "episode": "Pusher",
     "cost": "5 RP",
     "keywords": [
       "Equipment",
@@ -985,6 +1023,7 @@
       "Bureau"
     ],
     "gameEffect": "Adds two to the Team's SUBTERFUGE skill. This modifier applies even if the Agent to whom this equipment is attached is sent to the Hospital.",
+    "dialogue": "Lieutenant: \"I've got just what you need. Two LUX video camera... it'll practically see in the dark. It's designed for bomb disposal, to keep only one officer at risk.\nMulder: \"Yeah, but do I get the Discovery Channel?\"",
     "tags": [
       "Basic"
     ],
@@ -995,8 +1034,8 @@
     "title": "Alien Autopsy Video",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Nisei",
     "type": "Equipment",
+    "episode": "Nisei",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1007,6 +1046,7 @@
       "Field"
     ],
     "gameEffect": "Discard this card to add three to the Agent's ALIEN INVESTIGATION skill.",
+    "dialogue": "Mulder: \"According to the magazine ad I answered it's an alien autopsy, guaranteed authentic.\"\nScully: \"You spent money on this?\"\nMulder: \"$29.95, plus shipping.\"\nScully: \"Mulder... this is even hokier than the one they ran on the Fox network.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1019,8 +1059,8 @@
     "title": "Ambulance",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Apocrypha",
     "type": "Equipment",
+    "episode": "Apocrypha",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1031,6 +1071,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's MEDICAL skill.",
+    "dialogue": "Scully: \"I'm with the FBI, are you transporting a Walter Skinner?\"\nDriver: \"Yeah, is something wrong?\"\nScully: \"Everything's fine. I'm just going to ride with you the rest of the way.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1043,8 +1084,8 @@
     "title": "M.R.I.",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Pusher",
     "type": "Equipment",
+    "episode": "Pusher",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1054,6 +1095,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's BEHAVIORAL skill.",
+    "dialogue": "Scully: \"Mulder... take a closer look at the computer screen.\"\nMulder: \"Over here?\"\nScully: \"There... the light mass in the temporal lobe. You were right.\"\nMulder: \"This... the tumor.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1066,8 +1108,8 @@
     "title": "Classified Photos",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Paper Clip",
     "type": "Equipment",
+    "episode": "Paper Clip",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1078,6 +1120,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's CRIMINAL INVESTIGATION skill.",
+    "dialogue": "Byers: \"This was taken when?\"\nMulder: \"Roughly 1973.\"\nByers: \"Amazing. Langly, take a look. Are you familiar with a post World War II project known as Operation Paper Clip?\"\nMulder: \"Our deal with the devil. The U.S. government provided safe haven for Nazi war criminals in exchange for their scientific knowledge.\"\nByers: \"The man standing next to your father is one of those criminals...\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1090,8 +1133,8 @@
     "title": "Dental X-Ray Plate",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Walk",
     "type": "Equipment",
+    "episode": "The Walk",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1101,6 +1144,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's OCCULT INVESTIGATION skill.",
+    "dialogue": "Mulder: \"See this, Scully? It's a dental X - ray plate.\"\nScully: \"You've been carrying it since we got here.\"\nMulder: \"Actually, no. The ones you've seen me carrying I had developed at the hospital. The one I carried in the room with Stan's in the rehab room at the pool, the General's office, his house... all exposed to some kind of radiation.\"\nScully: \"From what?\"\nMulder: \"From Stan's phantom soldier.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1113,8 +1157,8 @@
     "title": "Desktop Computer",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "War of the Coprophages",
     "type": "Equipment",
+    "episode": "War of the Coprophages",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1124,6 +1168,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's COMPUTER skill.",
+    "dialogue": "\"Maybe we have gone as far as we can go, and the next advance will be made by beings we create ourselves using our own technology. Life - forms we can design and program not to be ultimately governed and constricted by the rules of survival. Or perhaps that step forward has already been achieved on another planet, by organisms that had a billion years head start on us.\" - Mulder (typing in computer)",
     "tags": [
       "Basic",
       "Discard",
@@ -1136,8 +1181,8 @@
     "title": "Dried Frog",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Hell Money",
     "type": "Equipment",
+    "episode": "Hell Money",
     "cost": "2 RP",
     "keywords": [
       "Equipment",
@@ -1149,6 +1194,7 @@
       "Believer"
     ],
     "gameEffect": "Adds one to the Agent's HEALTH.",
+    "dialogue": "Scully: \"What's this?\"\nDetective Chao: \"It's a dried frog. I think it's sometimes used as a charm. For wealth and protection.\"",
     "tags": [
       "Advanced"
     ],
@@ -1159,8 +1205,8 @@
     "title": "Decomposing Victim",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Quagmire",
     "type": "Equipment",
+    "episode": "Quagmire",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1170,6 +1216,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's SCIENCES skill.",
+    "dialogue": "Scully: \"Most drowning victims are found with high alcohol levels in their blood... and their flies unzipped. While urinating over the sides of boats, docks, whatever, they lose their balance, fall in, and drown.\"\nMulder: \"How do you explain the fact that half of him is still missing?\"\nScully: \"Fish eat decomposing matter. We eat them, they eat us.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1182,8 +1229,8 @@
     "title": "Garrote",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "731",
     "type": "Equipment",
+    "episode": "731",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1193,6 +1240,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's CLOSE RANGE COMBAT skill.",
+    "dialogue": "Mulder: \"The NSA? Since when did they start issuing you guys wire instead of guns?\"\nRed - Haired Man: \"Since we learned there was a bomb on the train.\"",
     "tags": [
       "Advanced",
       "Discard",
@@ -1205,8 +1253,8 @@
     "title": "Helicopter Spotter",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Blessing Way",
     "type": "Equipment",
+    "episode": "The Blessing Way",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1217,6 +1265,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's OBSERVATION skill.",
+    "dialogue": "Camouflage Man: \"Where are the files?\"\nScully: \"In the trunk. Where's Agent Mulder?\"\nCamouflage Man: Turn and face away. We need the DAT copy.\"\nScully: \"I don't have it.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1229,8 +1278,8 @@
     "title": "Laser Targeter",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "731",
     "type": "Equipment",
+    "episode": "731",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1241,6 +1290,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's LONG RANGE COMBAT skill.",
+    "dialogue": "Soldier: \"Move and you're dead.\"",
     "tags": [
       "Advanced",
       "Discard",
@@ -1253,8 +1303,8 @@
     "title": "Murder Weapon",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Grotesque",
     "type": "Equipment",
+    "episode": "Grotesque",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1264,6 +1314,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's EVIDENCE COLLECTION skill.",
+    "dialogue": "Sheherlis: \"The placement of the prints is what struck me.\"\nScully: \"They're oriented where someone would have gripped the knife.\"\nSheherlis: \"Which is why I thought I had your guy. Except... I wasn't as lucky as I thought when I ran the prints against the NCIC database.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1276,8 +1327,8 @@
     "title": "Stationery",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Piper Maru",
     "type": "Equipment",
+    "episode": "Piper Maru",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1287,6 +1338,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's CRIMINAL INVESTIGATION skill.",
+    "dialogue": "Mulder: \"I'm looking for Mr. Kallenchuk.\"\nSecretary: \"Mr. Kallenchuk's out of town. Is there something I can help you with?\"\nMulder: \"Could you tell me where I might be able to find him?\"\nSecretary: \"The Far East.\"\nMulder: \"I have a letter here written on his stationery. Maybe you typed it for him.\"\nSecretary: \"Sorry, I don't type.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1299,8 +1351,8 @@
     "title": "Queequeg",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Quagmire",
     "type": "Equipment",
+    "episode": "Quagmire",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1310,6 +1362,7 @@
       "Field"
     ],
     "gameEffect": "Discard Queequeg to negate any one PRIMORDIAL or EVOLUTIONARY Adversary. Each player may only have one of this card in their decks.",
+    "dialogue": "Mulder: \"Did you really have to bring him?\"\nScully: \"You wake me up on a Saturday morning, and tell me to be ready in five minutes. My mother is out of town, all the dogsitters are booked - and you know how I feel about kennels. So unless you want to lose your security deposit on the car, I suggest you pull over.\"",
     "tags": [
       "Basic",
       "Negate"
@@ -1321,8 +1374,8 @@
     "title": "Satellite Photos",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Nisei",
     "type": "Equipment",
+    "episode": "Nisei",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1332,6 +1385,7 @@
       "Bureau"
     ],
     "gameEffect": "Adds two to the Agent's ALIEN INVESTIGATION skill.",
+    "dialogue": "Mulder: \"You're saying that's from a German satellite?\"\nByers: \"No, the optics are German. The technology is probably ours, but the satellite is most likely Japanese.\"\nLangly: \"Where'd you get this, Mulder?\"\nMulder: \"From a Japanese diplomat.\"",
     "tags": [
       "Basic"
     ],
@@ -1342,8 +1396,8 @@
     "title": "Secret Government Files",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Quagmire",
     "type": "Equipment",
+    "episode": "Quagmire",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1354,6 +1408,7 @@
       "Bureau"
     ],
     "gameEffect": "Discard this card to add three to the Agent's BUREAUCRACY skill.",
+    "dialogue": "Scully: \"Mulder, look at this. It looks like they're storing records.\"\nMulder: \"Of what?\"\nScully: \"Medical files, by the look of it. Names alphabetized.\"\nMulder: \"Lots of files.\"\nScully: \"Lots and lots of files.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1366,8 +1421,8 @@
     "title": "Secret Passage",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Teso dos Bichos",
     "type": "Equipment",
+    "episode": "Teso dos Bichos",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1377,6 +1432,7 @@
       "Field"
     ],
     "gameEffect": "Discard this card to add three to the Agent's SUBTERFUGE skill.",
+    "dialogue": "Mulder: \"Scully... look at this.\"\nScully: \"Where does it lead?\"\nMr. Decker: \"The old steam tunnels.\"\nMulder: \"How do we get down there?\"\nMr. Decker: \"They're pretty much sealed up. Haven't been used in fifty years.\"",
     "tags": [
       "Basic",
       "Discard",
@@ -1389,8 +1445,8 @@
     "title": "Alien Stiletto",
     "set": "101361",
     "rarity": "Ultra-Rare",
-    "episode": "Talitha Cumi",
     "type": "Equipment",
+    "episode": "Talitha Cumi",
     "cost": "5 RP",
     "keywords": [
       "Alien",
@@ -1401,6 +1457,7 @@
       "Field"
     ],
     "gameEffect": "Attach this Equipment to any Agent in the Field. Any ALIEN Adversary damaged by this weapon in CLOSE RANGE COMBAT is discarded prior to dealing damage in the Combat Round. The Alien Stiletto may be voluntarily discarded in the controlling player's Briefing Phase. Add 10 to your [RP] Pool and remove the Alien Stiletto from the game.",
+    "dialogue": "Mulder: \"It's a weapon. Used to pierce the back of the neck. It's the only way to kill them, isn't it?\"\nX: \"A simple gunshot won't do.\"",
     "tags": [
       "Advanced"
     ],
@@ -1411,8 +1468,8 @@
     "title": "Tape Recorder",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Walk",
     "type": "Equipment",
+    "episode": "The Walk",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1422,6 +1479,7 @@
       "Bureau"
     ],
     "gameEffect": "Adds two to the Agent's OCCULT INVESTIGATION skill.",
+    "dialogue": "Mulder: \"You've heard of backwards masking?\"\nScully: \"You mean messages recorded backwards in songs?\"\nMulder: \"Or the general's answering machine.\"\nTaped Voice: \"Your time has come, Killer. Your time has come...\"",
     "tags": [
       "Basic"
     ],
@@ -1432,8 +1490,8 @@
     "title": "Classified Ad",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Pusher",
     "type": "Equipment",
+    "episode": "Pusher",
     "cost": "4 RP",
     "keywords": [
       "Equipment",
@@ -1443,6 +1501,7 @@
       "Bureau"
     ],
     "gameEffect": "Adds two to the Agent's BEHAVIORAL skill.",
+    "dialogue": "\"O - S-U - osu - The Japanese verb 'to push'.\" - Mulder",
     "tags": [
       "Basic"
     ],
@@ -1453,8 +1512,8 @@
     "title": "Foo Fighter",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Apocrypha",
     "type": "Event",
+    "episode": "Apocrypha",
     "cost": "6 CP",
     "keywords": [
       "Artifact",
@@ -1465,6 +1524,7 @@
       "Conspiracy"
     ],
     "gameEffect": "While in play, you may take a second Conspiracy discard after your first (in the Briefing Phase). Discard when an opponent successfully investigates a site (directed at you) using ALIEN INVESTIGATION Skill.",
+    "dialogue": "Mulder: \"You answer some quetions for me first. Like what exactly was pulled from the bottom of the Pacific Ocean?\"\nWell - Manicured Man: \"It was a UFO. A so - called 'Foo Fighter,' downed by American fighter pilots during the second world war.\"",
     "tags": [
       "Advanced"
     ],
@@ -1475,8 +1535,8 @@
     "title": "Amaru Urn",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Teso dos Bichos",
     "type": "Event",
+    "episode": "Teso dos Bichos",
     "cost": "3 CP",
     "keywords": [
       "Occult",
@@ -1487,6 +1547,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place in an opponent's Field. An OCCULT Adversary may now be played as a Bluff (it is treated as a Bluff for all purposes). When revealed the Adversary may ignore Site Activator restrictions. Discard when a Keyword OCCULT INVESTIGATION Site is directed at you and investigated successfully.",
+    "dialogue": "\"To the museum, the urn was an artifact. An icon of a dying culture, one of many in its collection. We often choose to ignore, or simply do not comprehend the power and meaning of these artifacts for cultures other than our own.\" - Mulder",
     "tags": [
       "Advanced"
     ],
@@ -1497,8 +1558,8 @@
     "title": "Avatar",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Avatar",
     "type": "Event",
+    "episode": "Avatar",
     "cost": "3 RP",
     "keywords": [
       "Event",
@@ -1508,6 +1569,7 @@
       "Active"
     ],
     "gameEffect": "Play this card when Assistant Director Skinner would be forced to go to the Hospital. Skinner may stay where he is with full HEALTH. Any unwanted game effect tokens are removed.",
+    "dialogue": "\"She was there with me. Watching me... as I was watching myself dying. My blood spilling from a hundred places. Until she lifted me up and carried me back.... away from the light.\" - Skinner",
     "tags": [
       "Affect Agent",
       "Basic"
@@ -1519,8 +1581,8 @@
     "title": "Captive Hybrid",
     "set": "101361",
     "rarity": "Common",
-    "episode": "731",
     "type": "Event",
+    "episode": "731",
     "cost": "6 CP",
     "keywords": [
       "Government",
@@ -1532,6 +1594,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place this card in one of your opponents Fields. Your opponent must subtract 2 from the [RP] he generates each turn while this card is in his Field. Your opponent may pay 7 [RP] to force you to discard this card.",
+    "dialogue": "Mulder: \"It's a human - alien hybrid, isn't it?\"\nRed - Haired Man: \"Then again, if that were true, you'd have expected someone would have been here by now to save it, wouldn't you?\"",
     "tags": [
       "Advanced"
     ],
@@ -1542,8 +1605,8 @@
     "title": "Circuit Board Implant",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Nisei",
     "type": "Event",
+    "episode": "Nisei",
     "cost": "6 CP",
     "keywords": [
       "Government",
@@ -1554,6 +1617,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Attach this card to any Agent. As long as this card is in play, the controller of the attached Agent must play will all of the [RP] cost cards in his hand face up on the table. Place four counters on this card when it comes into play. Remove one counter each of the attached Agents' Briefing Phases. When the last counter is removed, discard this card.",
+    "dialogue": "Diane: \"You do have the mark don't you?\"\nScully: \"What mark?\"\nDiane: \"Here, on the back of your neck.\"\nLottie: \"We all have them. That's where they put the implants.\"",
     "tags": [
       "Advanced"
     ],
@@ -1564,8 +1628,8 @@
     "title": "Disbelief",
     "set": "101361",
     "rarity": "Common",
-    "episode": "War of the Coprophages",
     "type": "Event",
+    "episode": "War of the Coprophages",
     "cost": "1 CP",
     "keywords": [
       "Event"
@@ -1576,6 +1640,7 @@
       "Skeptic"
     ],
     "gameEffect": "Play this card on any Agent with the keyword SKEPTIC to prevent that Agent from contributing their skills at any keyword OCCULT INVESTIGATION or ALIEN INVESTIGATION Site.",
+    "dialogue": "Mulder: \"How do you explain the roaches?\"\nScully: \"Did you catch any?\"\nMulder: \"No.\"\nScully: \"Well, I don't know what to tell you then. I just hope you are not implying you've come across an infestation of killer cockroaches.\"",
     "tags": [
       "Basic"
     ],
@@ -1586,8 +1651,8 @@
     "title": "Eliminating The Source",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Wetwired",
     "type": "Event",
+    "episode": "Wetwired",
     "cost": "4 CP",
     "keywords": [
       "Event",
@@ -1597,6 +1662,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place in an Opponent's Field with two tokens on the card. Remove a token in this opponent's Debriefing Phase. While in play, opponent may only investigate Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION Sites. Discard this card when the last token is removed.",
+    "dialogue": "The Cigarette - Smoking Man: \"What about Mulder's source?\"\nX: \"He's been eliminated.\"\nThe Cigarette - Smoking Man: \"And his source? Who was he working with?\"\nX: \"That person remains unknown.\"",
     "tags": [
       "Basic"
     ],
@@ -1607,8 +1673,8 @@
     "title": "A Near Death Experience",
     "set": "101361",
     "rarity": "Ultra-Rare",
-    "episode": "The Blessing Way",
     "type": "Event",
+    "episode": "The Blessing Way",
     "cost": "4 RP",
     "keywords": [
       "Event",
@@ -1619,6 +1685,7 @@
       "Active"
     ],
     "gameEffect": "Play when Agent Fox Mulder is in combat. Assign all damage to Mulder first. After the combat, move Mulder to the Hospital with HEALTH zero. When Mulder leaves that Hospital, permanently add the following: +1 OCCULT INVESTIGATION, +1 ALIEN INVESTIGATION, +1 SCIENCES, +1 LONG RANGE COMBAT. Once per game you may ask an X-Files' identity without incurring a penalty question. Only one of this card may be in play.",
+    "dialogue": "\"Go back. Do not look into the abyss or let it look into you. Awaken the sleep of reason and fight the monsters without and within. You have but precious time.\" - Deep Throat",
     "tags": [
       "Advanced",
       "Affect Agent"
@@ -1630,8 +1697,8 @@
     "title": "Hell Money",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Hell Money",
     "type": "Event",
+    "episode": "Hell Money",
     "cost": "4 *P",
     "keywords": [
       "Event",
@@ -1642,6 +1709,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Negate any Keyword PHENOMENA card.",
+    "dialogue": "Mulder: \"It looks like money. Some kind of foreign currency. Do either of you recognize this?\"\nChao: \"It's called 'Hell Money'.\"\nMulder: \"Hell Money?\"\nChao: \"It's used as an offering to the spirits during the Chinese Festival of the Hungry Ghosts.\"",
     "tags": [
       "Basic",
       "Negate"
@@ -1653,8 +1721,8 @@
     "title": "Jose Chung's \"From Outer Space\"",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Jose Chung's \"From Outer Space\"",
     "type": "Event",
+    "episode": "Jose Chung's \"From Outer Space\"",
     "cost": "4 CP",
     "keywords": [
       "Government",
@@ -1667,6 +1735,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place in an Opponent's Field. Every turn, name one X-File Characteristic (AFFILIATION, METHOD, MOTIVE, or RESULT) during this opponent's Briefing Phase. This Opponent may not ask you this Characteristic question this turn. You may not choose the same characteristic in two consecutive turns. Cards that cause bluffs to be discarded affect this card.",
+    "dialogue": "\"Seeking the truth about aliens means a perfunctory, nine - to - five job to some, for although Agent Dana Lesky is noble of spirit, and pure of heart, she remains, nevertheless, a Federal employee.\" - Jose Chung",
     "tags": [
       "Basic"
     ],
@@ -1677,8 +1746,8 @@
     "title": "Krycek Possessed",
     "set": "101361",
     "rarity": "Ultra-Rare",
-    "episode": "Piper Maru",
     "type": "Event",
+    "episode": "Piper Maru",
     "cost": "4 RP",
     "keywords": [
       "Event",
@@ -1690,6 +1759,7 @@
       "Site"
     ],
     "gameEffect": "Play on Agent Krycek when his team fails to successfully investigate a Keyword ALIEN INVESTIGATION Site (discard the Site). Place two tokens on this card. Remove a token to emit a blast of energy that causes 6 points of damage to all opponents during the Long Range Combat Round. Apply the following permanent modifiers: +1 ALIEN INVESTIGATION, +2 SUBTERFUGE, and +1 HEALTH.",
+    "dialogue": "Mulder: \"Refreshed?\"\nKrycek: \"I'm a new man.\"",
     "tags": [
       "Advanced",
       "Affect Agent"
@@ -1701,8 +1771,8 @@
     "title": "Mostow's Sketches",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Grotesque",
     "type": "Event",
+    "episode": "Grotesque",
     "cost": "4 CP",
     "keywords": [
       "Occult",
@@ -1714,6 +1784,7 @@
       "Field"
     ],
     "gameEffect": "Attach this card to an Agent in the Field. The Agent may attack any Team investigating a Site during his opponent's Investigation Phase. If the Agent is Negated, discard this card. If the Agent is reduced to zero HEALTH, remove the Agent from the game.",
+    "dialogue": "\"Yet sometimes the weight of this burden causes us to bend and falter, allowing evil to breach the fragile fortress of our mind. Allowing the monsters without to turn within. And we are left alone staring into the abyss; into the laughing face of madness.\" - Mulder",
     "tags": [
       "Advanced"
     ],
@@ -1724,8 +1795,8 @@
     "title": "Ceremony",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "The Blessing Way",
     "type": "Event",
+    "episode": "The Blessing Way",
     "cost": "5 RP",
     "keywords": [
       "Occult",
@@ -1741,6 +1812,7 @@
       "Agent"
     ],
     "gameEffect": "Play this card in the Field and place 2 tokens on it. Any BELIEVER Agent forced to go to the Hospital may be placed under this card instead. During the Healing phase, the owning player may remove a token to heal all damage done to the Agent.",
+    "dialogue": "\"In accordance with our ancient traditions, we put four oak twigs on the beams of the hogan to summon the holy people and tell them that a ceremony will be held.\" - Albert Hosteen",
     "tags": [
       "Basic"
     ],
@@ -1751,8 +1823,8 @@
     "title": "Skinner Intervenes",
     "set": "101361",
     "rarity": "Common",
-    "episode": "The Blessing Way",
     "type": "Event",
+    "episode": "The Blessing Way",
     "cost": "3 RP",
     "keywords": [
       "Event",
@@ -1762,6 +1834,7 @@
       "Active"
     ],
     "gameEffect": "Play this card when an opponent has played an Adversary card. Immediately move all Agents in that team to your Bureau section and your opponent must discard the Adversary card.",
+    "dialogue": "Skinner: \"Scully, get in the car. I need to talk to you, it's very important.\"\nScully: \"Where are we going?\"\nSkinner: \"To a place where we can talk in private.\"",
     "tags": [
       "Basic"
     ],
@@ -1772,8 +1845,8 @@
     "title": "Skinner's Wedding Ring",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Avatar",
     "type": "Event",
+    "episode": "Avatar",
     "cost": "4 RP",
     "keywords": [
       "Event",
@@ -1783,6 +1856,7 @@
       "Active"
     ],
     "gameEffect": "Play this card to search through your Bureau Deck and put into play any Keyword ACTIVE card that specifically effects Skinner at zero Cost.",
+    "dialogue": "\"My love forever, Sharon.\" - Engraved on Ring",
     "tags": [
       "Advanced",
       "Affect Agent",
@@ -1795,8 +1869,8 @@
     "title": "Men In Black",
     "set": "101361",
     "rarity": "Ultra-Rare",
-    "episode": "Jose Chung's \"From Outer Space\"",
     "type": "Event",
+    "episode": "Jose Chung's \"From Outer Space\"",
     "cost": "6 CP",
     "keywords": [
       "Event",
@@ -1806,6 +1880,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Play this card in the Field during your opponents' Case Assignment Phase. You may place Bluff cards under this card face down at any time. No more than three cards may be under this card at any one time. During his Case Assignment Phase you may play cards stored under this card on any Site in the Field for 2 [CP] less.",
+    "dialogue": "\"Some alien encounters are hoaxes, perpetrated by your government to manipulate the public. Some of these hoaxes are intentionally revealed to manipulate truthseekers, who become discredited if they disclose the deliberately absurd deception.\" - Man In Black",
     "tags": [
       "Advanced"
     ],
@@ -1816,8 +1891,8 @@
     "title": "The Video Trap",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Wetwired",
     "type": "Event",
+    "episode": "Wetwired",
     "cost": "4 CP",
     "keywords": [
       "Government",
@@ -1829,6 +1904,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place this card next to your X-File. You may draw one card for free in each of your opponents' Briefing Phases.",
+    "dialogue": "Byers: \"There's something non - standard here in the vertical blanking interval, information that's being added into the spaces between the still pictures.\"\nMulder: \"What information?\"\nByers: \"We don't know.\"",
     "tags": [
       "Advanced"
     ],
@@ -1839,8 +1915,8 @@
     "title": "Tong Lottery Jar",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Hell Money",
     "type": "Event",
+    "episode": "Hell Money",
     "cost": "6 CP",
     "keywords": [
       "Artifact",
@@ -1851,6 +1927,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Place this card next to your X-File. Place up to three cards with a set CP cost from your hand under this card. These three cards can be used to negate any [RP] card with identical cost except Agents and Sites. This function requires zero [CP] cost. Discard both the played card and the card used to negate it. Discard this card when all cards underneath have been played.",
+    "dialogue": "\"In my belief, death is not to be feared, it's merely a transition. But life without hope, that is living death. Hope was my gift to these men.\" - The Hard - Faced Man",
     "tags": [
       "Advanced",
       "Negate"
@@ -1862,8 +1939,8 @@
     "title": "Visit From The First Elder",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "731",
     "type": "Event",
+    "episode": "731",
     "cost": "4 CP",
     "keywords": [
       "Event"
@@ -1872,6 +1949,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Show your opponent this card to retrieve all Conspiracy cards from your Discard Pile and shuffle them back into your Bureau Deck. Discard this card.",
+    "dialogue": "\"Science will save humanity or destroy it, Ms. Scully. The ruler of the world is no longer the country with the bravest soldiers but the greatest scientists. Ishimaru... Zama... was one of those men.\" - First Elder",
     "tags": [
       "Basic"
     ],
@@ -1882,8 +1960,8 @@
     "title": "War of the Coprophages",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "War of the Coprophages",
     "type": "Event",
+    "episode": "War of the Coprophages",
     "cost": "3 CP",
     "keywords": [
       "Event",
@@ -1893,6 +1971,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Play this card to cause your opponent to discard all Witness cards in his hand.",
+    "dialogue": "\"Haven't you heard about the roaches? They're devouring people whole! Everybody's gettin' the hell out of here!\" - Mini - Mart Customer",
     "tags": [
       "Basic",
       "Discard"
@@ -1904,8 +1983,8 @@
     "title": "White Buffalo",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Paper Clip",
     "type": "Event",
+    "episode": "Paper Clip",
     "cost": "4 RP",
     "keywords": [
       "Event",
@@ -1916,6 +1995,7 @@
       "Active"
     ],
     "gameEffect": "You may remove one game effect token or wound token from any cards under your control.",
+    "dialogue": "\"But on this day, when the Holy People had given the FBI Man a miracle, a white buffalo was born and every Native American knew, whether he believed the story or not, that this was a powerful omen, and that great changes were coming.\" - Albert Hosteen",
     "tags": [
       "Basic"
     ],
@@ -1926,8 +2006,8 @@
     "title": "Unexpected Call",
     "set": "101361",
     "rarity": "Ultra-Rare",
-    "episode": "Apocrypha",
     "type": "Event",
+    "episode": "Apocrypha",
     "cost": "0 RP",
     "keywords": [
       "Event"
@@ -1936,6 +2016,7 @@
       "Active"
     ],
     "gameEffect": "Play this card to allow you to exchange [RP] Pools with your opponent.",
+    "dialogue": "The Well - Manicured Man: \"Who gave you this number?\"\nMulder: \"You probably know him. A man named Krycek.\"\nThe Well - Manicured Man: \"Alex Krycek?\"\nMulder: \"Yeah. Nice guy. Killed my father. You wouldn't happen to know where he is, would you?\"",
     "tags": [
       "Advanced"
     ],
@@ -1946,8 +2027,8 @@
     "title": "Work A Deal",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Paper Clip",
     "type": "Event",
+    "episode": "Paper Clip",
     "cost": "3 RP",
     "keywords": [
       "Event",
@@ -1957,6 +2038,7 @@
       "Active"
     ],
     "gameEffect": "Played by itself, this card will negate one GOVERNMENT Adversary, discard both. If played on an Agent with the \"Taped Intelligence\" Equipment card attached, remove the \"Taped Intelligence\" card from the game and place this card in your Bureau section. As long as this card is in play, no GOVERNMENT Adversaries may be played on your Agents.",
+    "dialogue": "The Cigarette - Smoking Man: \"Listen you...\"\nSkinner: \"No, you listen. This man's name is Albert Hosteen. You should remember that, because if Agents Mulder or Scully come down with so much as a case of the flu, Albert is prepared to recite chapter and verse, file for file, everything that is on your precious tape.\"",
     "tags": [
       "Basic",
       "Negate"
@@ -1968,8 +2050,8 @@
     "title": "Mostow's Studio, Washington, D.C.",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Grotesque",
     "type": "Site",
+    "episode": "Grotesque",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -1979,6 +2061,7 @@
     ],
     "prerequisite": "BEHAVIORAL 4+",
     "question": "You may ask one METHOD question.",
+    "dialogue": "Scully: \"We've turned Mostow's studio upside down. There don't appear to be any more bodies.\"\nNemhauser: \"How many were recovered?\"\nScully: \"Five. They'd all been dismembered. All young men whose faces were mutilated... just like the latest victim, I hear.\"",
     "tags": [
       "Basic"
     ],
@@ -1989,8 +2072,8 @@
     "title": "Braddock Heights, Maryland",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Wetwired",
     "type": "Site",
+    "episode": "Wetwired",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2000,6 +2083,7 @@
     ],
     "prerequisite": "BUREAUCRACY 4+",
     "question": "You may ask one MOTIVE question.",
+    "dialogue": "Mulder: \"Apparently, he was just taking a nap with his dog. Mrs. Riddock swears she saw her husband and a blond woman in the hammock.\"\nScully: \"So she shot her husband because she thought he was cheating on her?\"\nMulder: \"No. This isn't even her husband. Her husband's a long haul trucker. He's been out of town for ten days. This is John Gillnitz - her next door neighbor. She didn't even have the right backyard.\"",
     "tags": [
       "Basic"
     ],
@@ -2010,8 +2094,8 @@
     "title": "Chinatown, San Francisco, CA",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Hell Money",
     "type": "Site",
+    "episode": "Hell Money",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2021,6 +2105,7 @@
     ],
     "prerequisite": "MEDICAL 4+",
     "question": "You may ask one RESULT question.",
+    "dialogue": "Scully: \"He came here six months ago from Canton, still in the INS application process. He worked as a dishwasher in Chinatown.\"\nMulder: \"Not much to explain how or why he ended up in a crematory oven.\"",
     "tags": [
       "Basic"
     ],
@@ -2031,8 +2116,8 @@
     "title": "Jerusalem, Ohio",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Revelations",
     "type": "Site",
+    "episode": "Revelations",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2042,6 +2127,7 @@
     ],
     "prerequisite": "OCCULT INVESTIGATION 4+",
     "question": "You may ask one METHOD question.",
+    "dialogue": "\"Arrows that form a circle.. full circle to find the truth. Gates' company owns a recycling plant near here. That's where he's taken Kevin.\" - Scully",
     "tags": [
       "Basic"
     ],
@@ -2052,8 +2138,8 @@
     "title": "Miller's Grove, Massachusetts",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "War of the Coprophages",
     "type": "Site",
+    "episode": "War of the Coprophages",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2063,6 +2149,7 @@
     ],
     "prerequisite": "ALIEN INVESTIGATION 4+",
     "question": "You may ask one RESULT question.",
+    "dialogue": "Mulder: \"I'm in a house, it's apparently empty. Except for the camera on the ceiling.\"\nScully: \"What's the place look like?\"\nMulder: \"It's just a normal, suburban two - story house. A large living room, nice carpeting, sparsely furnished, fireplace. A kitchen, wallpapered.\"\nScully: \"It sounds like you're describing my dream house.\"\nMulder: \"Except for the moving walls.\"\nScully: \"The walls are moving?\"\nMulder: \"They're rippling. Cockroaches - .\"",
     "tags": [
       "Basic"
     ],
@@ -2073,8 +2160,8 @@
     "title": "Positron Emission Tomography Lab, Allentown, Pennsylvania",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Nisei",
     "type": "Site",
+    "episode": "Nisei",
     "cost": "1 RP",
     "keywords": [
       "Site",
@@ -2086,6 +2173,7 @@
     ],
     "prerequisite": "COMPUTER 5+ or MEDICAL 5+",
     "question": "You may ask one AFFILIATION question or one RESULT question.",
+    "dialogue": "Scully: \"What's wrong with her?\"\nLottie: \"Betsy's in the advanced stages of an undiagnosed cancer ailment. Her body is full of tumors that won't respond to any kind of treatment.",
     "tags": [
       "Basic"
     ],
@@ -2096,8 +2184,8 @@
     "title": "Strikers Cove, Heuvalman's Lake, Blue Ridge Mountains, Georgia",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Quagmire",
     "type": "Site",
+    "episode": "Quagmire",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2107,6 +2195,7 @@
     ],
     "prerequisite": "EVIDENCE COLLECTION 4+",
     "question": "You may ask one AFFILIATION question.",
+    "dialogue": "\"This creature lives here. In Striker's Cove. It explains the vanishing frogs, for which no one has an explanation, as well as these sudden human attacks.\" - Mulder",
     "tags": [
       "Basic"
     ],
@@ -2117,8 +2206,8 @@
     "title": "Strughold Mining Company, Rural West Virginia",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Paper Clip",
     "type": "Site",
+    "episode": "Paper Clip",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2128,6 +2217,7 @@
     ],
     "prerequisite": "Sciences 4+",
     "question": "You may ask one RESULT question.",
+    "dialogue": "Klemper: \"Do you know the formula for Napier's Constant?\"\nScully: \"Yes. Why?\"\nKlemper: \"The photo was taken at the Strughold Mining Company in West Virginia. That is all I will tell you. You must find the rest yourself.\"",
     "tags": [
       "Basic"
     ],
@@ -2138,8 +2228,8 @@
     "title": "Teso dos Bichos Excavation, Ecquadorian Highlands, South America",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "Teso dos Bichos",
     "type": "Site",
+    "episode": "Teso dos Bichos",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2149,6 +2239,7 @@
     ],
     "prerequisite": "OBSERVATION 4+",
     "question": "You may ask one METHOD question.",
+    "dialogue": "Dr. Bilac: \"They're saying the body of a female shaman is sacred to the tribe. They won't allow us to disturb her.\"\nDr. Roosevelt: \"We're not disturbing her, we're saving her. You know the situation here. I thought you could handle these people.\"",
     "tags": [
       "Basic"
     ],
@@ -2159,8 +2250,8 @@
     "title": "Virgil Incanto's Apartment, Cleveland, Ohio",
     "set": "101361",
     "rarity": "Common",
-    "episode": "2Shy",
     "type": "Site",
+    "episode": "2Shy",
     "cost": "2 RP",
     "keywords": [
       "Site",
@@ -2170,6 +2261,7 @@
     ],
     "prerequisite": "COMPUTER 4+",
     "question": "You may ask one AFFILIATION question.",
+    "dialogue": "\"His name is Virgil Incanto. At least that's what it says on his rental agreement. But other than that, there's no record that the man even exists. No DMV or birth certification, no social security number... not even a bank account.\" - Mulder",
     "tags": [
       "Basic"
     ],
@@ -2180,8 +2272,8 @@
     "title": "Agent Dan Kazanjian",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "2Shy",
     "type": "Witness",
+    "episode": "2Shy",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2192,6 +2284,7 @@
       "Computer"
     ],
     "gameEffect": "Adds 3 to one Team's COMPUTER skill check.",
+    "dialogue": "Agent Dan Kazanjian: \"Hmm, good news is, I can restore the erased files.\"\nScully: \"And the bad news?\"\nKazanjian: \"These files are all password protected and encrypted. It could take some time.\"",
     "tags": [
       "Basic"
     ],
@@ -2202,8 +2295,8 @@
     "title": "Carina Maywald",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Revelations",
     "type": "Witness",
+    "episode": "Revelations",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2214,6 +2307,7 @@
       "Behavioral"
     ],
     "gameEffect": "Adds 3 to one Team's BEHAVIORAL skill check.",
+    "dialogue": "Carina Maywald: \"When I read the FBI's alert, I thought immediately of Kevin.\"\nScully: \"You said on the phone that there had been a previous incident.\"\nMaywald: \"Last year, Kevin arrived at school with bleeding wounds on his hands and feet. Our first concern is always an abusive parent.\"",
     "tags": [
       "Basic"
     ],
@@ -2224,8 +2318,8 @@
     "title": "Coast Guard Lieutenant",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Nisei",
     "type": "Witness",
+    "episode": "Nisei",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2236,6 +2330,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's ALIEN INVESTIGATION or CRIMINAL INVESTIGATION skill check.",
+    "dialogue": "Coast Guard Lieutenant: \"The Talapus... yeah, that's the boat I was thinking of. She came in the fourteenth, laid offshore.\"\nMulder: \"They didn't come into port?\"\nLieutenant: \"Customs wouldn't let them for some reason. They had the Coast Guard out there, too. I never got a clear story what the problem was.\"",
     "tags": [
       "Basic"
     ],
@@ -2246,8 +2341,8 @@
     "title": "Detective Alan Cross",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "2Shy",
     "type": "Witness",
+    "episode": "2Shy",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2258,6 +2353,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's EVIDENCE COLLECTION or adds 1 to one Team's SUBTERFUGE skill check.",
+    "dialogue": "Detective Cross: \"We combed through every faculty list and academic journal in Cleveland... and came up with thirty eight names. I figured we'd divvy up the list, get the captain to put a few more people on.\"\nScully: \"I'd like to brief them. If that's okay with you.\"\nCross: \"Sure.\"",
     "tags": [
       "Basic"
     ],
@@ -2268,8 +2364,8 @@
     "title": "Detective Cline",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Witness",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2280,6 +2376,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's EVIDENCE COLLECTION or OBSERVATION skill check. While this card is in play, the Witness card \"The Stupendous Yappi\" may be played for free.",
+    "dialogue": "\"Look, all I know is that so far, Yappi has provided more solid, concrete leads on this case than you have.\" - Detective Cline",
     "tags": [
       "Advanced"
     ],
@@ -2290,8 +2387,8 @@
     "title": "Detective Havez",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Witness",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2302,6 +2399,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's BUREAUCRACY or EVIDENCE COLLECTION skill check. May be played for Cost minus 1 RP if Witness \"Detective Cline\" is in play.",
+    "dialogue": "Havez: \"So this guy's hacking up people in order to see his future.\"\nScully: \"There's a possible connection with all his victims being 'professional prognosticators'.\"\nCline: \"Until this one. She was a professional doll collector.\"",
     "tags": [
       "Basic"
     ],
@@ -2312,8 +2410,8 @@
     "title": "Detective Walter Eubanks",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Oubliette",
     "type": "Witness",
+    "episode": "Oubliette",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2324,6 +2422,7 @@
       "Observation"
     ],
     "gameEffect": "Adds 3 to one Team's OBSERVATION skill check.",
+    "dialogue": "Mulder: \"Any leads on the suspect?\"\nDetective Eubanks: \"A vague description from the sister. Hair and fiber pulled some promising bits, but he didn't leave any prints. Here or in the flower bed out front.\"\nMulder: \"How about the neighbors?\"\nEubanks: \"Nobody saw anything. Not a car, nothing. It's someone who knew her, that much we can figure.\"",
     "tags": [
       "Basic"
     ],
@@ -2334,8 +2433,8 @@
     "title": "Dr. Alexander Ivanov",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "War of the Coprophages",
     "type": "Witness",
+    "episode": "War of the Coprophages",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2346,6 +2445,7 @@
       "Sciences"
     ],
     "gameEffect": "Adds 3 to one Team's SCIENCES skill check.",
+    "dialogue": "\"Anyone who thinks alien visitation will come not in the form of robots but of living beings with big eyes and gray skin has been brainwashed by too much science fiction.\" - Dr. Alexander Ivanov",
     "tags": [
       "Basic"
     ],
@@ -2356,8 +2456,8 @@
     "title": "Dr. Bambi Berenbaum",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "War of the Coprophages",
     "type": "Witness",
+    "episode": "War of the Coprophages",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2368,6 +2468,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's SCIENCES or add 1 to one Team's BEHAVIORAL skill check.",
+    "dialogue": "\"By studying how the insects respond to changes in light, air currents, food availability, we can determine the best ways to eradicate them.\" - Dr. Berenbaum",
     "tags": [
       "Basic"
     ],
@@ -2378,8 +2479,8 @@
     "title": "Dr. Bugger",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "War of the Coprophages",
     "type": "Witness",
+    "episode": "War of the Coprophages",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2390,6 +2491,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's SCIENCES or adds 1 to one Team's MEDICAL skill check.",
+    "dialogue": "\"Behold, the mighty cockroach. Believed to have originated in the Silurian period over 350 million years ago, they can be found in every part of the world. Radiation doesn't kill them. By evolutionary standards they are nearly flawless creatures. Possessing only a simple nervous system, their behavior is dictated solely by responses to environmental stimuli. Unlike us, they are incapable of thought. Thus, compared to the roach, we are gods and must therefore act accordingly.\" - Dr. Bugger",
     "tags": [
       "Basic"
     ],
@@ -2400,8 +2502,8 @@
     "title": "Dr. Jeff Eckerle",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "War of the Coprophages",
     "type": "Witness",
+    "episode": "War of the Coprophages",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2412,6 +2514,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's COMPUTER or 1 to one Team's SCIENCES skill check.",
+    "dialogue": "Dr. Eckerle: \"Is it true if you decapitate them, they continue to live, eventually dying of starvation?\"\nDr. Bugger: \"Look, buddy... I just kill 'em.\"\nEckerle: \"Well, that's why I called you.\"",
     "tags": [
       "Basic"
     ],
@@ -2422,8 +2525,8 @@
     "title": "Dr. Rick Newton",
     "set": "101361",
     "rarity": "Common",
-    "episode": "War of the Coprophages",
     "type": "Witness",
+    "episode": "War of the Coprophages",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2434,6 +2537,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's MEDICAL or EVIDENCE COLLECTION skill check.",
+    "dialogue": "Dr. Rick Newton: \"Why don't we wait until the analysis of the 'compound' is finished before jumping to any conclusions. Agent Mulder, as a doctor I always find it best to be open and honest with my patients... no matter how unpleasant the information. Communication... it's such a vital human trait.\"\nMulder: \"What do you need to tell me?\"\nNewton: \"I need you to tell me something. What the hell is going on here?\"",
     "tags": [
       "Basic"
     ],
@@ -2444,8 +2548,8 @@
     "title": "Ellen Kaminski",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "2Shy",
     "type": "Witness",
+    "episode": "2Shy",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2456,6 +2560,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's COMPUTER or adds 1 to one Team's SUBTERFUGE skill check.",
+    "dialogue": "Ellen Kaminski: \"Do you think this is easy for me? I finally connect with someone I like who seems to like me. And I'm scared enough to meet him for the first time without you telling me he's Charles Manson.\"\nJoanne: \"I didn't say that.\"\nEllen: \"Besides... it's not like he's some stranger. I've been chatting with him every day for over a month.\"",
     "tags": [
       "Basic"
     ],
@@ -2466,8 +2571,8 @@
     "title": "Eric Hosteen",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Blessing Way",
     "type": "Witness",
+    "episode": "The Blessing Way",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2478,6 +2583,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's OBSERVATION or adds 1 to one Team's ALIEN INVESTIGATION skill check.",
+    "dialogue": "\"The men who had come and threatened us did not return to our house again... but the following day some of the boys from the reservation came to tell us they had seen buzzards flying out near the quarry where Eric had first encountered the men...\" - Albert Hosteen's Voice",
     "tags": [
       "Advanced"
     ],
@@ -2488,8 +2594,8 @@
     "title": "Escalante",
     "set": "101361",
     "rarity": "Common",
-    "episode": "731",
     "type": "Witness",
+    "episode": "731",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2500,6 +2606,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's ALIEN INVESTIGATION or MEDICAL skill check.",
+    "dialogue": "\"They had the Hansom's deformities, but Dr. Zama kept them apart from us. He would round them up in groups for treatment. The ones who returned always came back worse... with terrible burns over their bodies.\" - Escalante",
     "tags": [
       "Basic"
     ],
@@ -2510,8 +2617,8 @@
     "title": "General Thomas Callahan",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "The Walk",
     "type": "Witness",
+    "episode": "The Walk",
     "cost": "4 RP",
     "keywords": [
       "Witness",
@@ -2522,6 +2629,7 @@
       "Active"
     ],
     "gameEffect": "Adds 3 to one Team's BUREAUCRACY or adds 2 to one Team's BEHAVIORAL skill check.",
+    "dialogue": "General Callahan: \"Last night... I saw someone in my office, he said my name. But when I turned around he was gone. Then my phone machine went all snakey again.\"\nMulder: \"It's happened before?\"\nCallahan: \"No... not what I saw. But the phone calls, yes, twice before. At my home.\"",
     "tags": [
       "Basic"
     ],
@@ -2532,8 +2640,8 @@
     "title": "Jim Ullrich",
     "set": "101361",
     "rarity": "Common",
-    "episode": "The List",
     "type": "Witness",
+    "episode": "The List",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2544,6 +2652,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's BEHAVIORAL or MEDICAL skill check.",
+    "dialogue": "\"Lucilia cuprina... better known as the green bottle fly. They can lay their eggs within a minute after death occurs. And they breed more rapidly in a hot, humid environment.\" - Ullrich",
     "tags": [
       "Basic"
     ],
@@ -2554,8 +2663,8 @@
     "title": "Lottie Holoway",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Nisei",
     "type": "Witness",
+    "episode": "Nisei",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2566,6 +2675,7 @@
       "Alien Investigation"
     ],
     "gameEffect": "Adds 3 to one Team's ALIEN INVESTIGATION skill check.",
+    "dialogue": "Lottie Holoway: \"They don't reveal themselves. They take our memories away, but somehow they start to seep back.\"\nPenny Northern: \"Some may have come back to you but they didn't make sense.\"\nHoloway: \"Do you know about regression hypnosis?\"",
     "tags": [
       "Basic"
     ],
@@ -2576,8 +2686,8 @@
     "title": "Lt. Colonel Victor Stans",
     "set": "101361",
     "rarity": "Common",
-    "episode": "The Walk",
     "type": "Witness",
+    "episode": "The Walk",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2588,6 +2698,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's EVIDENCE COLLECTION or SUBTERFUGE skill check, or play this card to negate the Adversary \"The Walk.\"",
+    "dialogue": "Mulder: \"It said in your report that you claim someone else was in the room during the time of the accident.\"\nStans: \"It wasn't an accident, don't you understand!?\"\nMulder: \"But this person saved your life, is that correct?\nStans: \"Look at me. Look. I have no life. He took it all away.\"",
     "tags": [
       "Basic",
       "Negate"
@@ -2599,8 +2710,8 @@
     "title": "Lucy Householder",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Oubliette",
     "type": "Witness",
+    "episode": "Oubliette",
     "cost": "4 RP",
     "keywords": [
       "Witness",
@@ -2611,6 +2722,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's OBSERVATION or adds 1 to one Team's EVIDENCE COLLECTION skill check, or play this card when your opponent is about to remove one of your cards from the game. Remove this card instead.",
+    "dialogue": "Lucy Householder: \"He hasn't touched her. Not yet. He wants to, but he can't. That's why he takes the pictures.\"\nMulder: \"What else? Tell me what else.\"\nLucy: \"If he can't have her to himself... that's when he's dangerous. That's when he'll start hurting her.\"",
     "tags": [
       "Basic"
     ],
@@ -2621,8 +2733,8 @@
     "title": "Michael Kryder",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Revelations",
     "type": "Witness",
+    "episode": "Revelations",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2633,6 +2745,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's OCCULT INVESTIGATION or OBSERVATION skill check, or you may play this card to look at all Adversaries in opponent's hand.",
+    "dialogue": "Michael Kryder: \"The child was in danger long before I made the claims. Since the day he was born, they've been watching him... waiting...\"\nMulder: \"They?\"\nKryder: \"The forces of darkness.\"",
     "tags": [
       "Basic",
       "Examine Hand"
@@ -2644,8 +2757,8 @@
     "title": "Navajo Elder",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The Blessing Way",
     "type": "Witness",
+    "episode": "The Blessing Way",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2656,6 +2769,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's MEDICAL or adds 1 to one Team's OBSERVATION skill check.",
+    "dialogue": "\"This healing ritual called The Blessing Way has been passed down by our ancient Navajo ancestors. It's songs and prayers must be followed just as they have been for centuries or the holy people will not be summoned.\" - Albert Hosteen",
     "tags": [
       "Advanced"
     ],
@@ -2666,8 +2780,8 @@
     "title": "Owen Jarvis",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Revelations",
     "type": "Witness",
+    "episode": "Revelations",
     "cost": "4 RP",
     "keywords": [
       "Witness",
@@ -2678,6 +2792,7 @@
       "Occult Investigation"
     ],
     "gameEffect": "Adds 3 to one Team's OCCULT INVESTIGATION skill check, or return one OCCULT Adversary that is played on your team to the bottom of the owning player's Bureau Deck.",
+    "dialogue": "\"Just because you don't understand sacrifice, because you're unwilling, don't think for a moment that you set the rules for me. I don't question His Word - whatever He asks of me, I'll do.\" - Owen Jarvis",
     "tags": [
       "Basic"
     ],
@@ -2688,8 +2803,8 @@
     "title": "Parmelly",
     "set": "101361",
     "rarity": "Common",
-    "episode": "The List",
     "type": "Witness",
+    "episode": "The List",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2700,6 +2815,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's BUREAUCRACY or SUBTERFUGE skill check.",
+    "dialogue": "\"I'm not going to hurt you. I only want to tell you something. Okay? I know who he's gonna kill. There's a list. One of the cons has it. A man named Roque.\" - Parmelly",
     "tags": [
       "Basic"
     ],
@@ -2710,8 +2826,8 @@
     "title": "Penny Northern",
     "set": "101361",
     "rarity": "Common",
-    "episode": "Nisei",
     "type": "Witness",
+    "episode": "Nisei",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2722,6 +2838,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's ALIEN INVESTIGATION or SCIENCES skill check.",
+    "dialogue": "Penny Northern: \"All you remember in the beginning is the light, or sometimes the faces of the men who perform the tests.\"\nScully: \"How do you know you're not mistaking me for someone else?\"\nDiane: \"You have the mark, don't you?\"",
     "tags": [
       "Basic"
     ],
@@ -2732,8 +2849,8 @@
     "title": "Sammon Roque",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The List",
     "type": "Witness",
+    "episode": "The List",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2744,6 +2861,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's BUREAUCRACY or adds 1 to one Team's OBSERVATION skill check.",
+    "dialogue": "Mulder: \"So you knew the two guards who were murdered were going to die?\"\nRoque: \"I knew they were on the list.\"\nMulder: \"And you want to make a deal.\"\nRoque: \"That's right. I want a transfer out of this hole.\"",
     "tags": [
       "Basic"
     ],
@@ -2754,8 +2872,8 @@
     "title": "Sharon Kiveat",
     "set": "101361",
     "rarity": "Common",
-    "episode": "D.P.O.",
     "type": "Witness",
+    "episode": "D.P.O.",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2766,6 +2884,7 @@
       "Active"
     ],
     "gameEffect": "Adds 1 to one Team's BEHAVIORAL or OCCULT INVESTIGATION skill check, or return one EVOLUTIONARY Adversary that is played on your team to the bottom of the owning player's Bureau Deck.",
+    "dialogue": "\"I'll go with you, okay? If that's what you want...I'll go. Just stop it.\" - Sharon Kiveat",
     "tags": [
       "Advanced"
     ],
@@ -2776,8 +2895,8 @@
     "title": "Sharon Skinner",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Avatar",
     "type": "Witness",
+    "episode": "Avatar",
     "cost": "2 RP",
     "keywords": [
       "Witness",
@@ -2787,6 +2906,7 @@
       "Active"
     ],
     "gameEffect": "As long as this card is in play, Skinner cannot be affected by any CONSPIRACY card that would specifically affect him.",
+    "dialogue": "Sharon Skinner: \"I don't want you to say anything. I just want you to let me in... just this one time.\"\nWalter Skinner: \"Why?\"\nSharon Skinner: \"Because I know you, Walter. I know that you're scared, and that you could use some comfort.\"",
     "tags": [
       "Affect Agent",
       "Basic"
@@ -2798,8 +2918,8 @@
     "title": "Sheriff John Teller",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "D.P.O.",
     "type": "Witness",
+    "episode": "D.P.O.",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2810,6 +2930,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's CRIMINAL INVESTIGATION or adds 1 to one Team's SCIENCES skill check.",
+    "dialogue": "Sheriff Teller: \"Did you know lightning kills several people a year at home in their showers or talking on the phone? That people have seen it dancing on the ground in balls? But that scientists will tell you, push come to shove, they don't really know how lightning works at all.\"\nScully: \"No, I didn't know that.\"\nTeller: \"Because you didn't do your homework, did you?\"",
     "tags": [
       "Advanced"
     ],
@@ -2820,8 +2941,8 @@
     "title": "Stan Buxton",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "D.P.O.",
     "type": "Witness",
+    "episode": "D.P.O.",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2832,6 +2953,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's MEDICAL or adds 1 to one Team's SCIENCES skill check.",
+    "dialogue": "Stan Buxton: \"Best I can figure is the lightning struck the car, killed the kid on contact.\"\nScully: \"Did you find contact wounds on any of the other five victims.\"\nBuxton: \"I'd have to look back at my notes. I mean, it's pretty clear to me what killed these kids.\"",
     "tags": [
       "Advanced"
     ],
@@ -2842,8 +2964,8 @@
     "title": "The Stupendous Yappi",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Clyde Bruckman's Final Repose",
     "type": "Witness",
+    "episode": "Clyde Bruckman's Final Repose",
     "cost": "1 RP",
     "keywords": [
       "Witness",
@@ -2854,6 +2976,7 @@
       "Active"
     ],
     "gameEffect": "Flip the top card of your Bureau Deck. Discard the revealed card. If the revealed card has the Keyword CONSPIRACY, subtract 1 from the skill check. If not, add 3 to one CRIMINAL INVESTIGATION or OCCULT INVESTIGATION skill check.",
+    "dialogue": "\"Quiet! Yes... I am seeing it all. I am seeing... visions. Visions of the killer. He... does not feel like he is in control of his own life. Very important. That is why he kills. Yes.\" - Yappi",
     "tags": [
       "Basic"
     ],
@@ -2864,8 +2987,8 @@
     "title": "Victor Klemper",
     "set": "101361",
     "rarity": "Rare",
-    "episode": "Paper Clip",
     "type": "Witness",
+    "episode": "Paper Clip",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2876,6 +2999,7 @@
       "Active"
     ],
     "gameEffect": "Adds 3 to one Team's MEDICAL or adds 2 to one Team's SCIENCES skill check. If your opponent plays a GOVERNMENT Adversary while this card is in play, the Victor Klemper card is negated and removed from the game.",
+    "dialogue": "Klemper: \"History is a finger - painting by the scribes of inconsequence. Do you know my work? Do you know what we accomplished?\"\nScully: \"As a Nazi? Or for the blood money we paid you?\"\nKlemper: \"We were young men caught in a fervor. But our experiments changed the world.\"",
     "tags": [
       "Advanced"
     ],
@@ -2886,8 +3010,8 @@
     "title": "Warden Leo Brodeur",
     "set": "101361",
     "rarity": "Uncommon",
-    "episode": "The List",
     "type": "Witness",
+    "episode": "The List",
     "cost": "3 RP",
     "keywords": [
       "Witness",
@@ -2898,6 +3022,7 @@
       "Active"
     ],
     "gameEffect": "Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's CRIMINAL INVESTIGATION skill check. Promo Cards",
+    "dialogue": "Warden Brodeur: \"I can't do it. I can't make that deal.\"\nMulder: \"You don't have the authority?\"\nBrodeur: \"It isn't a matter of authority. I make that deal and I might as well go into the deal making business. Every con with half a brain's gonna come up with some scheme like this.\"",
     "tags": [
       "Basic"
     ],
