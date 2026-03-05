@@ -1,19 +1,21 @@
 #!/usr/bin/env node
 
-import { writeFile } from 'fs/promises';
 import {
-  URL,
-  fileURLToPath,
-} from 'url';
+  writeFile,
+  readFile,
+} from 'fs/promises';
+import { URL } from 'url';
 import XLSX, { utils } from 'xlsx';
 
 // TODO: Change values before running!
 const sheetName = '';
 const set = '';
-const rarity = '';
+const rarity = 'Preservation Society';
 const createdBy = '';
+const isChecklist = false;
 
-const workbook = await XLSX.readFile(fileURLToPath(new URL('X-Files CCG.xlsx', import.meta.url)));
+const file = await readFile(new URL('X-Files CCG.xlsx', import.meta.url));
+const workbook = await XLSX.read(file);
 const sheetIndex = workbook.SheetNames.indexOf(sheetName);
 const sheet = workbook.Sheets[workbook.SheetNames[sheetIndex]];
 
@@ -35,12 +37,29 @@ const abbreviations = {
   RES: 'Resources',
 };
 
-const data = utils.sheet_to_json(sheet, {
-  header: [
+const getHeaders = () => {
+  if (isChecklist) {
+    return [
+      'title',
+      'type',
+      'id',
+      'quantity',
+      ...isChecklist ? [ '_blank_' ] : [],
+      'episode',
+      'affiliation',
+      'motive',
+      'method',
+      'result',
+      'dialogue',
+    ];
+  }
+
+  return [
     'title',
     'type',
     'id',
     'quantity',
+    ...isChecklist ? [ '_blank_' ] : [],
     'episode',
     'cost',
     'keywords',
@@ -48,8 +67,12 @@ const data = utils.sheet_to_json(sheet, {
     'advanced',
     'gameEffect',
     'skills',
-    'bioOrDialog',
-  ],
+    'bioOrDialogue',
+  ];
+}
+
+const data = utils.sheet_to_json(sheet, {
+  header: getHeaders(),
   range: 2,
   blankrows: false,
   defval: null,
@@ -191,12 +214,12 @@ const getActivators = (value, type) => {
   };
 };
 
-const getBioOrDialogue = (value, type) => {
-  if (!value || type === 'Credits') {
-    return {};
+const normalizeBioOrDialogue = (value) => {
+  if (!value) {
+    return null;
   }
 
-  const text = value
+  return value
     .replace(/\r\n|\r|\n/g, '\n')
     .replace(/(\s+|\n)?--/, ' - ')
     .replaceAll('—', '-')
@@ -204,6 +227,14 @@ const getBioOrDialogue = (value, type) => {
     .replace(/\s{2,}/g, ' ')
     .replaceAll('’', '\'')
     .replaceAll('?\'', '?');
+};
+
+const getBioOrDialogue = (value, type) => {
+  const text = normalizeBioOrDialogue(value);
+
+  if (!text || type === 'Credits') {
+    return {};
+  }
 
   if (text.includes('" - ') || text.includes(': "')) {
     return {
@@ -228,31 +259,57 @@ const getTags = (advanced, type) => {
   };
 };
 
-const cards = data
-  .filter((card) => !!card.id)
-  .map((card) => {
-    const type = card.type?.trim?.();
+const getCard = (card) => {
+  const id = card.id?.trim?.();
+  const title = card.title
+    .replaceAll('**', '')
+    .trim();
+  const type = card.type?.trim?.();
 
+  if (isChecklist) {
     return {
-      id: card.id?.trim?.(),
-      title: card.title
-        .replaceAll('**', '')
-        .trim(),
+      id,
+      title,
       set,
       rarity,
       type,
       ...getEpisode(card.episode, type),
-      ...getCost(card.cost, type),
-      ...getSkills(card.skills, type),
-      ...getKeywords(card.keywords, type),
-      ...getPrerequisiteAndQuestion(card.gameEffect, type),
-      ...getActivators(card.activators, type),
-      ...getGameEffect(card.gameEffect, type),
-      ...getBioOrDialogue(card.bioOrDialog, type),
-      ...getTags(card.advanced, type),
+      characteristics: {
+        Affiliation: card.affiliation,
+        Motive: card.motive,
+        Method: card.method,
+        Result: card.result,
+      },
+      dialogue: normalizeBioOrDialogue(card.dialogue),
+      tags: [
+        'Basic',
+      ],
       createdBy,
     };
-  });
+  }
+
+  return {
+    id,
+    title,
+    set,
+    rarity,
+    type,
+    ...getEpisode(card.episode, type),
+    ...getCost(card.cost, type),
+    ...getSkills(card.skills, type),
+    ...getKeywords(card.keywords, type),
+    ...getPrerequisiteAndQuestion(card.gameEffect, type),
+    ...getActivators(card.activators, type),
+    ...getGameEffect(card.gameEffect, type),
+    ...getBioOrDialogue(card.bioOrDialogue, type),
+    ...getTags(card.advanced, type),
+    createdBy,
+  };
+};
+
+const cards = data
+  .filter((card) => !!card.id)
+  .map(getCard);
 
 const filename = new URL('cards.json', import.meta.url);
 
