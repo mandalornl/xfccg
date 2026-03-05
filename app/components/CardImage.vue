@@ -3,6 +3,7 @@ import {
   type Card,
   CardSet,
 } from '~/types/card';
+import { slugify } from '~/utils/slugify';
 
 const runtimeConfig = useRuntimeConfig();
 
@@ -25,9 +26,7 @@ const src = computed(() => {
     return `${root}/back.jpg`;
   }
 
-  return `${root}/${props.card?.set}/${props.card?.id}.jpg`
-    .replaceAll(' ', '-')
-    .toLowerCase();
+  return `${root}/${slugify(props.card?.set)}/${slugify(props.card?.id)}.jpg`;
 });
 </script>
 
