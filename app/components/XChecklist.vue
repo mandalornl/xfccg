@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import type { CardSet } from '~/types/card';
 import { XFileCharacteristic } from '~/types/x-file';
+import type { CardSet } from '~/types/card';
 
 const props = defineProps<{
-  item: {
-    text: CardSet;
-    value: string;
-  };
+  set: CardSet;
 }>();
 
-const checklist = await useChecklist(props.item.text);
+const checklist = await useChecklist(props.set);
 
-const identifiedCards = useState<string[]>(`checklist:identifiedCards:${props.item.value}`, () => ([]));
+const identifiedCards = useState<string[]>(`checklist:identifiedCards:${props.set}`, () => ([]));
 
 const totalUnidentified = computed<number>(() => (
   checklist.reduce((total, cards) => (
@@ -45,7 +42,7 @@ const toggleCards = (characteristic: string) => {
   }
 };
 
-const history = useState<string[][]>(`checklist:history:${props.item.value}`, () => ([]));
+const history = useState<string[][]>(`checklist:history:${props.set}`, () => ([]));
 const undoing = ref<boolean>(false);
 
 watch(identifiedCards, (newValue, oldValue) => {

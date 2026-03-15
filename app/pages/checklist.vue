@@ -1,40 +1,36 @@
 <script setup lang="ts">
 import { CardSet } from '~/types/card';
-import { slugify } from '~/utils/slugify';
 
 useHead({
   title: 'Checklist',
 });
 
 const tabs = [
-  {
-    text: CardSet.Premiere,
-    value: slugify(CardSet.Premiere),
+  CardSet.Premiere,
+  CardSet.ApologyIsPolicy,
+].map((set) => ({
+  set,
+  route: {
+    name: 'checklist',
+    query: {
+      set,
+    },
   },
-  {
-    text: CardSet.ApologyIsPolicy,
-    value: slugify(CardSet.ApologyIsPolicy),
-  },
-];
+}));
 
 definePageMeta({
   middleware: (to) => {
-    if (to.name !== 'checklist') {
+    if (to.query.set) {
       return;
     }
 
-    return navigateTo({
-      name: 'checklist-set',
-      params: {
-        set: tabs[0]?.value,
-      },
-    }, {
+    return navigateTo(tabs[0]?.route, {
       replace: true,
     });
   },
 });
 
-const activeTab = ref<string>(tabs[0]?.value || '');
+const activeTab = ref<CardSet>();
 </script>
 
 <template>
@@ -49,19 +45,21 @@ const activeTab = ref<string>(tabs[0]?.value || '');
     >
       <v-tab
         v-for="tab of tabs"
-        :key="`tab-${tab.value}`"
-        :to="{ name: 'checklist-set', params: { set: tab.value } }"
-        :value="tab.value"
-        :text="tab.text"
+        :key="`tab-${tab.set}`"
+        :to="tab.route"
+        :text="tab.set"
+        :value="tab.set"
+        replace
+        exact
       />
     </v-tabs>
     <v-tabs-window v-model="activeTab">
       <v-tabs-window-item
         v-for="tab of tabs"
-        :key="`item-${tab.value}`"
-        :value="tab.value"
+        :key="`item-${tab.set}`"
+        :value="tab.set"
       >
-        <nuxt-page :item="tab" />
+        <x-checklist :set="tab.set" />
       </v-tabs-window-item>
     </v-tabs-window>
   </layout-content>
