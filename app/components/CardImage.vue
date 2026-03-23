@@ -22,6 +22,7 @@ const src = computed(() => {
   if (
     props.card.set === CardSet.Classified
     || props.card.set === CardSet.FightTheFuture
+    || props.card.set === CardSet.BirthdayScully
   ) {
     return `${root}/back.jpg`;
   }
