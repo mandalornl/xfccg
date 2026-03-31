@@ -114,8 +114,4 @@ const fullName = computed<string>(() => (
 :deep(.v-theme--light) svg path + path {
   fill: black;
 }
-
-:deep(.v-theme--dark) svg path + path {
-  fill: white;
-}
 </style>
