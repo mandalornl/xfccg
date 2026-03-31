@@ -44,9 +44,7 @@ onMounted(() => {
 
 <template>
   <nuxt-layout>
-    <v-app>
-      <nuxt-page />
-    </v-app>
+    <nuxt-page />
   </nuxt-layout>
 </template>
 
