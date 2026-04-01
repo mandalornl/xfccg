@@ -116,7 +116,7 @@ const isLight = computed<boolean>(() => theme.name.value === 'light');
           <template #prepend>
             <v-icon
               :color="isLight ? 'orange-accent-3' : undefined"
-              :icon="isLight ? 'mdi-white-balance-sunny' : 'mdi-power-sleep'"
+              :icon="isLight ? 'mdi-white-balance-sunny' : 'mdi-weather-night'"
             />
           </template>
         </v-list-item>
