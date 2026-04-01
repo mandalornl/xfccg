@@ -106,57 +106,57 @@ const reset = () => {
       :key="checklistIndex"
     >
       <tbody>
-      <tr class="text-h6">
-        <th>X-File ({{ totalUnidentified }} unidentified)</th>
-        <th>{{ XFileCharacteristic.Affiliation }}</th>
-        <th>{{ XFileCharacteristic.Motive }}</th>
-        <th>{{ XFileCharacteristic.Method }}</th>
-        <th>{{ XFileCharacteristic.Result }}</th>
-      </tr>
+        <tr class="text-h6">
+          <th>X-File ({{ totalUnidentified }} unidentified)</th>
+          <th>{{ XFileCharacteristic.Affiliation }}</th>
+          <th>{{ XFileCharacteristic.Motive }}</th>
+          <th>{{ XFileCharacteristic.Method }}</th>
+          <th>{{ XFileCharacteristic.Result }}</th>
+        </tr>
       </tbody>
       <tbody>
-      <tr
-        v-for="card of cards"
-        :key="card.id"
-      >
-        <td class="px-2">
-          <v-checkbox
-            v-model="identifiedCards"
-            :disabled="identifiedCards.includes(card.id)"
-            :value="card.id"
-            hide-details
-            multiple
-            width="max-content"
-          >
-            <template #label>
-                  <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
-                    {{ card.title }}
-                  </span>
-            </template>
-          </v-checkbox>
-        </td>
-        <td
-          v-for="characteristic of card.characteristics"
-          :key="card.id + characteristic"
-          class="px-2"
+        <tr
+          v-for="card of cards"
+          :key="card.id"
         >
-          <v-checkbox
-            v-model="identifiedCards"
-            :disabled="identifiedCards.includes(card.id)"
-            :value="characteristic"
-            hide-details
-            multiple
-            width="max-content"
-            @change="toggleCards(characteristic)"
+          <td class="px-2">
+            <v-checkbox
+              v-model="identifiedCards"
+              :disabled="identifiedCards.includes(card.id)"
+              :value="card.id"
+              hide-details
+              multiple
+              width="max-content"
+            >
+              <template #label>
+                <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
+                  {{ card.title }}
+                </span>
+              </template>
+            </v-checkbox>
+          </td>
+          <td
+            v-for="characteristic of card.characteristics"
+            :key="card.id + characteristic"
+            class="px-2"
           >
-            <template #label>
-                  <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
-                    {{ characteristic }}
-                  </span>
-            </template>
-          </v-checkbox>
-        </td>
-      </tr>
+            <v-checkbox
+              v-model="identifiedCards"
+              :disabled="identifiedCards.includes(card.id)"
+              :value="characteristic"
+              hide-details
+              multiple
+              width="max-content"
+              @change="toggleCards(characteristic)"
+            >
+              <template #label>
+                <span :class="identifiedCards.includes(card.id) ? 'text-decoration-line-through' : textColor">
+                  {{ characteristic }}
+                </span>
+              </template>
+            </v-checkbox>
+          </td>
+        </tr>
       </tbody>
     </template>
   </v-table>
