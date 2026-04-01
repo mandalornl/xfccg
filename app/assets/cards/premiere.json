@@ -2507,7 +2507,7 @@
       "Conspiracy"
     ],
     "gameEffect": "Play to negate one Keyword CRIMINAL INVESTIGATION card.",
-    "dialogue": "Mulder: \"You can have it all. My badge. The X - Files. Tell me where he is.\"\nSkinner: \"And then what?! 'He sleeps with the fishes? We're not the Mafia, Agent Mulder. It's easy to forget, but we work for the Department of Justice.\"",
+    "dialogue": "Mulder: \"You can have it all. My badge. The X-Files. Tell me where he is.\"\nSkinner: \"And then what?! 'He sleeps with the fishes? We're not the Mafia, Agent Mulder. It's easy to forget, but we work for the Department of Justice.\"",
     "tags": [
       "Basic",
       "Negate"
@@ -3481,7 +3481,7 @@
       "Believer"
     ],
     "gameEffect": "Treat Section Chief Blevins as a RES 2 if he is in the Bureau Section. If he is in the Bureau Section, he may contribute to the Conspiracy Pool instead of the Resources Pool during the Briefing Phase.",
-    "bio": "Originally in charge of the X - Files, Section Chief Scott Blevins was directed to assign Agent Dana Scully to work with Agent Fox Mulder in order to debunk his theories. Blevins was replaced by Assistant Director Walter Skinner.",
+    "bio": "Originally in charge of the X-Files, Section Chief Scott Blevins was directed to assign Agent Dana Scully to work with Agent Fox Mulder in order to debunk his theories. Blevins was replaced by Assistant Director Walter Skinner.",
     "tags": [
       "Basic"
     ],
@@ -3546,7 +3546,7 @@
       "Believer"
     ],
     "gameEffect": "Agent Krycek allows you to choose to add to the Conspiracy Pool instead of the Resource Pool during the Briefing Phase.",
-    "bio": "Alex Krycek is a clean - cut Agent who professes an admiration for Agent Fox Mulder and his work on the X - Files. Krycek worked with Mulder in apprehending Augustus Cole (\"Sleepless\") and in searching for Agent Dana Scully after her abduction (\"Ascension\"). What no one else knows is that he is actually a double agent working for The Cigarette - Smoking Man.",
+    "bio": "Alex Krycek is a clean - cut Agent who professes an admiration for Agent Fox Mulder and his work on the X-Files. Krycek worked with Mulder in apprehending Augustus Cole (\"Sleepless\") and in searching for Agent Dana Scully after her abduction (\"Ascension\"). What no one else knows is that he is actually a double agent working for The Cigarette - Smoking Man.",
     "tags": [
       "Basic",
       "Unique"
@@ -3809,7 +3809,7 @@
       "Believer"
     ],
     "gameEffect": "Agent Krycek allows you to choose to add to the Conspiracy Pool instead of the Resource Pool during the Briefing Phase.",
-    "bio": "Alex Krycek is a clean - cut Agent who professes an admiration for Agent Fox Mulder and his work on the X - Files. Krycek worked with Mulder in apprehending Augustus Cole (\"Sleepless\") and in searching for Agent Dana Scully after her abduction (\"Ascension\"). What no one else knows is that he is actually a double agent working for The Cigarette - Smoking Man.",
+    "bio": "Alex Krycek is a clean - cut Agent who professes an admiration for Agent Fox Mulder and his work on the X-Files. Krycek worked with Mulder in apprehending Augustus Cole (\"Sleepless\") and in searching for Agent Dana Scully after her abduction (\"Ascension\"). What no one else knows is that he is actually a double agent working for The Cigarette - Smoking Man.",
     "tags": [
       "Basic"
     ],
@@ -6872,7 +6872,7 @@
       "Agent"
     ],
     "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: ALIEN INVESTIGATION, OCCULT INVESTIGATION, or SCIENCES. This card may not be played on Agents Mulder or Scully. Place this card below the Agent to remind you of the increased skill.",
-    "dialogue": "\"The reason you are here, Agent Scully, is we want you to assist Mulder on these X - Files.\" - Section Chief Scott Blevins",
+    "dialogue": "\"The reason you are here, Agent Scully, is we want you to assist Mulder on these X-Files.\" - Section Chief Scott Blevins",
     "tags": [
       "Basic"
     ],
