@@ -109,9 +109,3 @@ const fullName = computed<string>(() => (
     </v-footer>
   </v-app>
 </template>
-
-<style lang="scss" scoped>
-:deep(.v-theme--light) svg path + path {
-  fill: black;
-}
-</style>
