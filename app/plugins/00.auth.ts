@@ -1,22 +1,8 @@
 export default defineNuxtPlugin(async () => {
   const supabase = useSupabaseClient();
+  const currentUser = useSupabaseUser();
 
-  const initSession = async () => {
-    const currentSession = useSupabaseSession();
+  const { data } = await supabase.auth.getClaims();
 
-    const { data } = await supabase.auth.getSession();
-
-    currentSession.value = data?.session ?? null;
-  };
-
-  const initUser = async () => {
-    const currentUser = useSupabaseUser();
-
-    const { data } = await supabase.auth.getClaims();
-
-    currentUser.value = data?.claims ?? null;
-  };
-
-  await initSession();
-  await initUser();
+  currentUser.value = data?.claims ?? null;
 });
