@@ -46,9 +46,10 @@
     "keywords": [
       "Agent",
       "Independent",
-      "Believer"
+      "Believer",
+      "Setup"
     ],
-    "gameEffect": "Agent Berns may start the game with the \"Uniden Bearcat UBC-125XLT\" Equipment card attached at 0 cost.",
+    "gameEffect": "Setup: Search your Bureau Deck for the \"Uniden Bearcat UBC-125XLT\" Equipment card and add it to your hand. Shuffle your deck.",
     "bio": "Works at a small software company and is an avid military aircraft enthusiast in his spare time. Joost encountered Agents Mulder and Scully once while investigating an UFO sighting above a military air base of the RNLAF. He likes to think they are out there…somewhere.",
     "createdBy": "Joost Berns"
   },
