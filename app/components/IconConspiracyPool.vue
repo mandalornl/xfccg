@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { getColorByCost } from '~/utils/color';
 
-withDefaults(defineProps<{
+defineProps<{
   small?: boolean,
-}>(), {
-  small: false,
-});
+}>();
 
 const color = getColorByCost('conspiracy');
 </script>

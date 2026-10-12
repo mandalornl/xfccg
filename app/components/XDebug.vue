@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const props = defineProps<{
+const { value } = defineProps<{
   value: unknown,
 }>();
 
 const getCircularReplacer = () => {
   const seen = new WeakSet();
 
-  return (key: string, value: unknown) => {
+  return (_key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return;
@@ -21,7 +21,7 @@ const getCircularReplacer = () => {
 
 const debug = computed(() => {
   try {
-    return JSON.parse(JSON.stringify(toValue(props.value), getCircularReplacer()));
+    return JSON.parse(JSON.stringify(toValue(value), getCircularReplacer()));
   } catch (error: unknown) {
     if (error instanceof Error) {
       return error.message;

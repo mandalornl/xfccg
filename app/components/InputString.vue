@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import type { ValidationRule } from 'vuetify/framework';
 
-withDefaults(defineProps<{
+const {
+  label = undefined,
+  rules = [],
+} = defineProps<{
   label?: string,
   disabled?: boolean,
   rules?: ValidationRule[],
-}>(), {
-  label: undefined,
-  disabled: false,
-  rules: () => ([]),
-});
+}>();
 
 const model = defineModel<string | null>({
   set: (value: string | null): string | null => value || null

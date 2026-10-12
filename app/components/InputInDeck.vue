@@ -7,25 +7,25 @@ import {
 
 const deckbuilder = useDeckbuilder();
 
-const props = defineProps<{
+const { card } = defineProps<{
   card: Card,
 }>();
 
 const max = computed(() => {
-  if (props.card.id === 'XF97-0437x1') {
+  if (card.id === 'XF97-0437x1') {
     return 1;
   }
 
   if (
-    props.card.set === CardSet.Premiere
-    || props.card.set === CardSet.TheTruthIsOutThere
+    card.set === CardSet.Premiere
+    || card.set === CardSet.TheTruthIsOutThere
   ) {
-    const id = props.card.id.replace(/^XF9\d-(\d{4})v\d$/, '$1');
-    const alternateId = props.card.id.endsWith('v1') ? `XF97-${id}v2` : `XF96-${id}v1`;
+    const id = card.id.replace(/^XF9\d-(\d{4})v\d$/, '$1');
+    const alternateId = card.id.endsWith('v1') ? `XF97-${id}v2` : `XF96-${id}v1`;
     const quantity = deckbuilder.getQuantity(alternateId);
 
     if (quantity > 0) {
-      if (props.card.type === CardType.Agent) {
+      if (card.type === CardType.Agent) {
         return 0;
       }
 
@@ -33,7 +33,7 @@ const max = computed(() => {
     }
   }
 
-  if (props.card.type === CardType.Agent) {
+  if (card.type === CardType.Agent) {
     return 1;
   }
 

@@ -9,7 +9,7 @@ const snackbar = useSnackbar();
 
 const isOpen = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isImporting = ref<boolean>(false);
 const file = ref<File>();
 
@@ -95,17 +95,19 @@ const importDeck = async (event: SubmitEventPromise) => {
       @submit.prevent="importDeck"
     >
       <v-card>
-        <v-card-title class="d-flex align-center justify-space-between">
-          Import Deck
-          <v-btn
-            v-tooltip:top="'Close'"
-            :disabled="isImporting"
-            variant="text"
-            size="small"
-            icon="mdi-close"
-          />
-        </v-card-title>
-        <v-card-text class="text-body-1">
+        <v-card-item title="Import Deck">
+          <template #append>
+            <v-btn
+              v-tooltip:top="'Close'"
+              :disabled="isImporting"
+              variant="text"
+              icon="mdi-close"
+              density="comfortable"
+              @click="isOpen = false"
+            />
+          </template>
+        </v-card-item>
+        <v-card-text class="text-body-large">
           <v-file-input
             v-model="file"
             :rules="[

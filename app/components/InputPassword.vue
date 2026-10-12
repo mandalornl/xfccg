@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import type { ValidationRule } from 'vuetify/framework';
 
-const props = withDefaults(defineProps<{
+const {
+  label = undefined,
+  disabled = false,
+  rules = [],
+  strictRules = false,
+  autocomplete = 'off',
+} = defineProps<{
   label?: string,
   disabled?: boolean,
   rules?: ValidationRule[],
   strictRules?: boolean,
   autocomplete?: string,
-}>(), {
-  label: undefined,
-  disabled: false,
-  rules: () => ([]),
-  autocomplete: 'off',
-});
+}>();
 
 const model = defineModel<string | null>({
   set: (value: string | null): string | null => value || null
@@ -27,8 +28,8 @@ const minimalRules: ValidationRule[] = [
 ];
 
 const allRules = computed<ValidationRule[]>(() => ([
-  ...props.rules,
-  ...(props.strictRules ? minimalRules : []),
+  ...rules,
+  ...(strictRules ? minimalRules : []),
 ]));
 </script>
 

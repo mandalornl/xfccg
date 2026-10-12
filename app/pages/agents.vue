@@ -211,7 +211,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <layout-content fluid>
+  <x-container fluid>
     <card-toolbar v-model:search="dataTable.search">
       <filter-dialog
         v-model="dataTable.filters"
@@ -224,14 +224,14 @@ onUnmounted(() => {
         color="primary"
       >
         <v-menu>
-          <template #activator="{ props:menuProps }">
+          <template #activator="{ props }">
             <v-btn
               v-tooltip:top="'Actions'"
               :disabled="teambuilder.cost.value === 0"
               rounded
               variant="text"
               icon="mdi-dots-vertical"
-              v-bind="menuProps"
+              v-bind="props"
             />
           </template>
           <v-list>
@@ -333,5 +333,5 @@ onUnmounted(() => {
     </v-data-iterator>
     <card-dialog v-model="selectedCard" />
     <team-dialog v-model="viewTeam" />
-  </layout-content>
+  </x-container>
 </template>

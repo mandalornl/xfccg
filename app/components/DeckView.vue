@@ -5,16 +5,14 @@ import type {
 } from '~/types/card';
 import { getColorByCost } from '~/utils/color';
 
-const props = withDefaults(defineProps<{
+const { cardIds = {} } = defineProps<{
   cardIds?: Record<CardId, number>;
-}>(), {
-  cardIds: () => ({}),
-});
+}>();
 
 const pool = await usePool();
 
 const cards = computed<CardInDeck[]>(() => (
-  Object.entries(props.cardIds).map(([
+  Object.entries(cardIds).map(([
     id,
     quantity,
   ]) => {

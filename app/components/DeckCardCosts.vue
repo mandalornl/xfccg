@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import type { CardInDeck } from '~/types/card';
 
-const props = defineProps<{
+const {
+  cards,
+  value,
+  color = undefined,
+} = defineProps<{
   cards: CardInDeck[];
   title: string;
   value: string;
@@ -13,10 +17,10 @@ const items = computed<{
   total: number,
 }[]>(() => (
   Object.entries(
-    props.cards
-      .filter((card) => card.cost?.endsWith(props.value))
+    cards
+      .filter((card) => card.cost?.endsWith(value))
       .reduce<Record<string, number>>((result, card) => {
-        const key = card.cost?.replace(` ${props.value}`, '') ?? 0;
+        const key = card.cost?.replace(` ${value}`, '') ?? 0;
 
         return {
           ...result,

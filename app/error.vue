@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app';
 
-const props = defineProps<{
+const { error } = defineProps<{
   error?: NuxtError,
 }>();
 
 const message = computed(() => {
-  switch (props.error?.status) {
+  switch (error?.status) {
     case 400: return 'Bad Request';
     case 401: return 'Unauthorized';
     case 403: return 'Forbidden';
@@ -16,11 +16,11 @@ const message = computed(() => {
 });
 
 watchEffect(() => {
-  if (!props.error) {
+  if (!error) {
     return;
   }
 
-  useDebug(props.error);
+  useDebug(error);
 });
 
 const handleError = () => clearError({
@@ -30,11 +30,7 @@ const handleError = () => clearError({
 
 <template>
   <v-container height="100vh">
-    <v-row
-      align="center"
-      justify="center"
-      class="fill-height"
-    >
+    <v-row class="align-center justify-center fill-height">
       <v-col>
         <v-empty-state :headline="message">
           <template #media>

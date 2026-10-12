@@ -6,7 +6,7 @@ import {
 } from '@tiptap/markdown';
 import { generateHTML } from '@tiptap/html';
 
-const props = defineProps<{
+const { text = undefined } = defineProps<{
   text?: string;
 }>();
 
@@ -18,7 +18,7 @@ const markdownManager = new MarkdownManager({
 });
 
 const innerHTML = computed<string>(() => {
-  const json = markdownManager.parse(props.text || '');
+  const json = markdownManager.parse(text || '');
 
   return generateHTML(json, [
     StarterKit,

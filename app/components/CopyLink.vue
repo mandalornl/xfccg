@@ -6,11 +6,14 @@ import type {
 
 const snackbar = useSnackbar();
 
-const props = defineProps<{
+const {
+  hash = undefined,
+  href = undefined,
+  to = undefined,
+} = defineProps<{
   hash?: string | number;
   href?: string;
   to?: RouteLocationAsPathGeneric | RouteLocationAsRelativeGeneric;
-  iconColor?: string;
 }>();
 
 const copyToClipboard = async (event: Event) => {
@@ -28,11 +31,11 @@ const copyToClipboard = async (event: Event) => {
 };
 
 const url = computed<string | undefined>(() => {
-  if (props.hash) {
-    return `#${props.hash}`;
+  if (hash) {
+    return `#${hash}`;
   }
 
-  return props.href || undefined;
+  return href || undefined;
 });
 </script>
 

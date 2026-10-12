@@ -34,11 +34,10 @@ const activeTab = ref<CardSet>();
 </script>
 
 <template>
-  <layout-content
-    fluid
-    title="Checklist"
-    size="large"
-  >
+  <x-container fluid>
+    <h1 class="text-headline-large">
+      Checklist
+    </h1>
     <v-tabs
       v-model="activeTab"
       color="primary"
@@ -62,5 +61,5 @@ const activeTab = ref<CardSet>();
         <x-checklist :set="tab.set" />
       </v-tabs-window-item>
     </v-tabs-window>
-  </layout-content>
+  </x-container>
 </template>

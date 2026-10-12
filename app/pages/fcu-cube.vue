@@ -110,31 +110,43 @@ const drawCards = () => {
 </script>
 
 <template>
-  <layout-content title="FCU Cube">
-    <h2>Introduction</h2>
-    <p>The X-Files CCG 'FCU' (Fixed, Common & Uncommon) Cube is a card set designed to replicate the feeling of deck construction by booster pack or sealed deck opening without the need for such products.</p>
-    <p>The card list for this cube includes only common, uncommon and fixed cards from the Premiere/The Truth is Out There and 101361 editions, with the aim that this will make creating the card pool it uses possible for the widest number of collectors, without compromising on interesting gameplay.</p>
-    <h2>Sealed Play</h2>
-    <p>If you plan to use this cube for games by webcam then Sealed Play is the instruction set that you will use. Sealed instructions are also the ones to use if you're playing 2-player in- person.</p>
-    <p>For sealed play, first shuffle all the agents from the card list together. Deal 8 to each player present. These are the agents you will pick from to create your team.</p>
-    <p>After agents have been dealt, shuffle all non-agent cards together, then deal 120 cards to each player present. The cards you are dealt will be used to construct your bureau deck.</p>
-    <p>Deck construction and gameplay then proceeds as described in the official rules.</p>
-    <p data-v-485b0d60="" class="text-right text-caption">
-      Special thanks to Alastair 'TheJauntyGoblin' Headden
-      <v-icon
-        icon="mdi-cube-outline"
+  <div>
+    <x-container size="medium">
+      <h1 class="text-headline-large">
+        FCU Cube
+      </h1>
+      <h2 class="text-headline-medium">
+        Introduction
+      </h2>
+      <p>The X-Files CCG 'FCU' (Fixed, Common & Uncommon) Cube is a card set designed to replicate the feeling of deck construction by booster pack or sealed deck opening without the need for such products.</p>
+      <p>The card list for this cube includes only common, uncommon and fixed cards from the Premiere/The Truth is Out There and 101361 editions, with the aim that this will make creating the card pool it uses possible for the widest number of collectors, without compromising on interesting gameplay.</p>
+      <h2 class="text-headline-medium">
+        Sealed Play
+      </h2>
+      <p>If you plan to use this cube for games by webcam then Sealed Play is the instruction set that you will use. Sealed instructions are also the ones to use if you're playing 2-player in- person.</p>
+      <p>For sealed play, first shuffle all the agents from the card list together. Deal 8 to each player present. These are the agents you will pick from to create your team.</p>
+      <p>After agents have been dealt, shuffle all non-agent cards together, then deal 120 cards to each player present. The cards you are dealt will be used to construct your bureau deck.</p>
+      <p>Deck construction and gameplay then proceeds as described in the official rules.</p>
+      <p data-v-485b0d60="" class="text-right text-body-small">
+        Special thanks to Alastair 'TheJauntyGoblin' Headden
+        <v-icon
+          icon="mdi-cube-outline"
+          color="primary"
+        />
+      </p>
+      <v-btn
+        :loading="isLoading"
+        variant="flat"
         color="primary"
+        text="Draw Cards"
+        class="mb-4"
+        @click="drawCards"
       />
-    </p>
-    <v-btn
-      :loading="isLoading"
-      variant="flat"
-      color="primary"
-      text="Draw Cards"
-      class="mb-4"
-      @click="drawCards"
-    />
-    <template v-if="hasDrawnCards">
+    </x-container>
+    <x-container
+      v-if="hasDrawnCards"
+      fluid
+    >
       <v-tabs
         v-model="activeTab"
         color="primary"
@@ -171,14 +183,10 @@ const drawCards = () => {
                     variant="flat"
                     @click="selectedCard = { ...item.raw }"
                   >
-                    <v-card-item>
-                      <v-card-title>
-                        {{ item.raw.title }}
-                      </v-card-title>
-                      <v-card-subtitle>
-                        {{ item.raw.id }}
-                      </v-card-subtitle>
-                    </v-card-item>
+                    <v-card-item
+                      :title="item.raw.title"
+                      :subtitle="item.raw.id"
+                    />
                     <v-card-text>
                       <card-image :card="item.raw" />
                     </v-card-text>
@@ -190,6 +198,6 @@ const drawCards = () => {
         </v-tabs-window-item>
       </v-tabs-window>
       <card-dialog v-model="selectedCard" />
-    </template>
-  </layout-content>
+    </x-container>
+  </div>
 </template>

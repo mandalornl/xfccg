@@ -52,7 +52,7 @@ const clickIcon = (event: Event) => {
 </script>
 
 <template>
-  <layout-content size="medium">
+  <x-container size="medium">
     <v-text-field
       :model-value="search"
       clearable
@@ -65,7 +65,9 @@ const clickIcon = (event: Event) => {
       @keyup.exact.enter="search = $event.target.value"
     />
     <template v-if="oldItems.length > 0">
-      <h2>1997 FREQUENTLY ASKED QUESTIONS</h2>
+      <h2 class="text-headline-medium">
+        1997 FREQUENTLY ASKED QUESTIONS
+      </h2>
       <p><small>(recreated from the original 1997 USPC website FAQ's)</small></p>
       <v-expansion-panels
         variant="accordion"
@@ -91,7 +93,9 @@ const clickIcon = (event: Event) => {
       </v-expansion-panels>
     </template>
     <template v-if="newItems.length > 0">
-      <h2>2021 FREQUENTLY ASKED QUESTIONS</h2>
+      <h2 class="text-headline-medium">
+        2021 FREQUENTLY ASKED QUESTIONS
+      </h2>
       <p><small>(created to support the first XFCCG virtual tournament)</small></p>
       <v-expansion-panels variant="accordion">
         <v-expansion-panel
@@ -116,5 +120,5 @@ const clickIcon = (event: Event) => {
     <template v-if="oldItems.length === 0 && newItems.length === 0">
       No results found.
     </template>
-  </layout-content>
+  </x-container>
 </template>

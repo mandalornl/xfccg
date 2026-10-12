@@ -17,24 +17,21 @@ const card = defineModel<Card>();
     @update:model-value="(value) => !value && (card = undefined)"
   >
     <v-card>
-      <v-card-item>
-        <v-card-title class="d-flex align-center justify-space-between">
-          <div class="text-truncate">
-            {{ card?.title }}
-          </div>
+      <v-card-item
+        :title="card?.title"
+        :subtitle="card?.id"
+      >
+        <template #append>
           <v-btn
             v-tooltip:top="'Close'"
             variant="text"
             icon="mdi-close"
-            size="small"
+            density="comfortable"
             @click="card = undefined"
           />
-        </v-card-title>
-        <v-card-subtitle>
-          {{ card?.id }}
-        </v-card-subtitle>
+        </template>
       </v-card-item>
-      <v-card-text class="text-body-1">
+      <v-card-text class="text-body-large">
         <v-row>
           <v-col
             cols="12"
@@ -102,13 +99,19 @@ const card = defineModel<Card>();
               v-if="card?.keywords?.length"
               title="Keywords"
             >
-              <x-tags :items="card?.keywords" />
+              <x-tags
+                :items="card?.keywords"
+                class="flex-wrap"
+              />
             </card-item>
             <card-item
               v-if="card?.activators?.length"
               title="Activators"
             >
-              <x-tags :items="card?.activators" />
+              <x-tags
+                :items="card?.activators"
+                class="flex-wrap"
+              />
             </card-item>
             <card-item
               v-if="card?.bio"
@@ -144,7 +147,10 @@ const card = defineModel<Card>();
               v-if="card?.tags?.length"
               title="Tags"
             >
-              <x-tags :items="card?.tags" />
+              <x-tags
+                :items="card?.tags"
+                class="flex-wrap"
+              />
             </card-item>
             <card-item
               v-if="card?.createdBy"

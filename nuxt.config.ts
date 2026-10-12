@@ -36,9 +36,15 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/eslint',
+    '@nuxt/fonts',
     '@nuxtjs/supabase',
     'vuetify-nuxt-module',
   ],
+  fonts: {
+    defaults: {
+      weights: [ 100, 300, 400, 500, 700, 900 ],
+    },
+  },
   supabase: {
     redirectOptions: {
       login: '/login',
@@ -54,6 +60,9 @@ export default defineNuxtConfig({
     },
   },
   vuetify: {
+    moduleOptions: {
+      prefixComposables: [ 'useLayout' ],
+    },
     vuetifyOptions: './app/vuetify.options.ts',
   },
   hooks: {
@@ -67,6 +76,27 @@ export default defineNuxtConfig({
 
       routes.add('/api/cards/sets.json');
       routes.add('/api/cards/types.json');
+    },
+  },
+  sourcemap: {
+    client: 'hidden',
+  },
+  experimental: {
+    payloadExtraction: true,
+  },
+  vite: {
+    build: {
+      cssMinify: 'lightningcss',
+    },
+    optimizeDeps: {
+      include: [
+        '@tiptap/html',
+        '@tiptap/markdown',
+        '@tiptap/starter-kit',
+        '@tiptap/extension-character-count',
+        '@tiptap/extension-link',
+        '@tiptap/vue-3',
+      ],
     },
   },
 });

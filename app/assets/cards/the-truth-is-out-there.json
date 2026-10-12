@@ -912,7 +912,10 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "\"The town was founded back in the twenties, when some of Barnum & Bailey's troupes started coming down here during the winter off - season.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -959,7 +962,10 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "Scully: \"How can an esophagus be crushed without the neck ever being touched?\"\nMulder: \"Psychokinetic manipulation.\"\nScully: \"Psychokinetic manipulation? You mean how Carrie got even at the prom?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -981,7 +987,9 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "\"You want to see something weird, Mulder? Ellens Air Base isn't even on my U.S.G.S. Quadra map.\" - Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1003,7 +1011,10 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "\"See you tomorrow morning, Scully, bright and early. We leave for the very plausible state of Oregon at 8:00 A.M.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1025,7 +1036,9 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"I get the impression that we've walked into a war that's already been started.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1047,7 +1060,10 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "\"I'm amazed she hasn't broken down completely. She's trying to get some sleep in the waiting room.\" - Mulder, referring to Mrs. Holvey",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1069,7 +1085,10 @@
     "question": "You may ask one MOTIVE question.",
     "dialogue": "\"You don't believe in U.F.O.s; guess you haven't been out to Lake Okobogee.\" - Bartender at the Pennsylvania Pub",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1091,7 +1110,12 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "\"There's no telling what's been breeding down there in the last hundred years.\" - Newark County Sewage Processing Plant Foreman",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #4",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1138,7 +1162,10 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "\"Sally Kendrick was using the clinic to carry on the Litchfield experiment. She was cloning herself.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1160,7 +1187,10 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "Mulder: \"I thought this was about escaped prisoners.\"\nScully: \"It is.\"\nMulder: \"Then who are the men in the funny suits?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1182,7 +1212,9 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "\"We're talking about revisiting the very origin of the earth - peering into the fire where it all began - a human endeavor even more important than man's exploration of space.\" - Dr. Daniel Trepkos",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1275,7 +1307,10 @@
     "question": "You may ask one MOTIVE question.",
     "dialogue": "Mulder: \"I'm in the town of Fairfield, what do you know about it?\"\nByers: \"They got a little zoo there, lots of strange lore. Animals escaping, disappearing without a trace.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1322,7 +1357,9 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"Mr. Mulder, don't give up on this one. Trust me, you've never been closer.\" - Deep Throat",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1344,7 +1381,12 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"What do you know about near - death experiences, Scully?\" - Dr. Raymond Varnes",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1391,7 +1433,10 @@
     "question": "You may ask one MOTIVE question.",
     "dialogue": "Scully: \"Detective Morrow, exactly how did you discover the remains?\"\nMorrow: \"I witnessed a dog digging in the ground. I proceeded to investigate and found the gravesite.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1413,7 +1458,9 @@
     "question": "You may ask one AFFILIATION question.",
     "dialogue": "Scully: \"So she shows up knowing the power she has over you, and then she makes you walk through fire. Is that it?\"\nMulder: \"Phoebe is fire.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1435,7 +1482,10 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"We leave for Nome today. We'll meet up with three scientists familiar with the Ice Core Project.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1506,7 +1556,9 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "Mulder: \"Seven sightings in Mattawa, Washington. That's a hundred miles away.\"\nScully: \"Aliens?\"\nMulder: \"Looks like they want their colleague back.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1528,7 +1580,9 @@
     "question": "You may ask one MOTIVE question.",
     "dialogue": "\"I believe in psychic connections and evidence suggests that it's stronger between family members.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1574,7 +1628,9 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "X: \"Where is he being held?\"\nMulder: \"At the Yaloff Psychiatric Hospital, but not for long.\"\nX: \"I'm afraid I can't help you.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1620,7 +1676,10 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"His name is Duane Barry. He's armed with a 9mm Smith & Wesson handgun. One nine - round magazine. It is our belief that he's prepared to use the gun, and not afraid to die.\" - Lucy Kazdin's hostage briefing",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1666,7 +1725,9 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "\"The Navy Destroyer Escort U.S.S. Ardent has been missing in the North Atlantic for the past forty - two hours.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1760,7 +1821,12 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "Mulder: \"I think this area is being subjected to a controlled experiment.\"\nScully: \"Controlled by who? By the government? By a corporation? By Reticulans?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #4",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1855,7 +1921,10 @@
     "question": "You may ask one MOTIVE question.",
     "dialogue": "\"I could have swore I saw red eyes and fangs.\" - Mr. Parker",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1877,7 +1946,9 @@
     "question": "You may ask one RESULT question.",
     "dialogue": "Mulder: \"Home to a sect of religious isolationists called the Kindred.\"\nScully: \"Right. They live up there without electricity, phones, any modern amenities... a lot like the Amish.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1899,7 +1970,8 @@
     "question": "You may ask one METHOD question.",
     "dialogue": "\"A mountain that went up, up... ascending to the stars.\" - Duane Barry",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1947,7 +2019,8 @@
     "dialogue": "Mulder: \"Who's your contact?\"\nScully: \"Her name is Kelly Ryan. She was one of my students when I was teaching at the academy. She's just been bumped up to detective and she's a little bit nervous about her supervisor finding out the FBI are involved.\"",
     "tags": [
       "Basic",
-      "Change Keyword"
+      "Change Keyword",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -1994,7 +2067,9 @@
     "dialogue": "\"It appears as if one of the spores grew inside of Tanaka until it reached reproductive maturity. The spore might explain Trepkos's dementia. Fungi often contain alkaloids that can affect the nervous system.\" - Scully, on Tanaka's death",
     "tags": [
       "Basic",
-      "Change Prerequisite"
+      "Change Prerequisite",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2019,7 +2094,9 @@
     "dialogue": "\"Kill Mulder and you risk turning one man's religion into a crusade.\" - The Cigarette - Smoking Man",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #1",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2043,7 +2120,9 @@
     "dialogue": "\"Ninety - nine percent of the people in this world are fools, and the rest are in great danger of contagion.\" - Sheriff Daniels",
     "tags": [
       "Basic",
-      "Change Prerequisite"
+      "Change Prerequisite",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2066,7 +2145,9 @@
     "dialogue": "Dr. Berube: \"Am I under some kind of suspicion?\"\nMulder: \"No.\"\nDr. Berube: \"Then I think I've answered all of your questions. Now if you'll excuse me, I have work to do.\"",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2089,7 +2170,9 @@
     "dialogue": "Mulder: \"There was a man, he took Scully's blood!\"\nX: \"This high - capacity compact Sig Saver .40 caliber weapon is pointed at your head to stress my insistence that your search for the person who put your partner on that respirator desist immediately!\"",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #2",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2158,7 +2241,9 @@
     "dialogue": "\"That's it, Mulder. You just bought yourself a one - way ticket back to Washington.\" - Holtzman",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2181,7 +2266,9 @@
     "dialogue": "\"The technology in this machine is of enormous scientific interest. Make no mistake, you will be held accountable.\" - Claude Peterson",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2206,7 +2293,9 @@
     "dialogue": "Dr. Blockhead: \"In the classical sense, the Conundrum is a geek.\"\nMulder: \"He eats live animals.\"\nDr. Blockhead: \"He eats anything: live animals, dead animals, rocks, light bulbs, cork screws, battery cables, cranberries...\"",
     "tags": [
       "Basic",
-      "Negate"
+      "Negate",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2229,7 +2318,9 @@
     "dialogue": "\"Everything you've seen here is equal to the protection we give it. It's you who've acted inappropriately.\" - Paul Mossinger",
     "tags": [
       "Basic",
-      "Decrease Skill"
+      "Decrease Skill",
+      "Starter Deck #1",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2275,7 +2366,8 @@
     "dialogue": "\"It is my opinion that Mr. Tooms has had a very excellent response to the months of treatment and therapy, and I would see no reason why he would be considered of any danger to himself or society.\" - Dr. Aaron Monte",
     "tags": [
       "Basic",
-      "Change Keyword"
+      "Change Keyword",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2390,7 +2482,10 @@
     "dialogue": "\"DISTRICT OF COLUMBIA PHONE SEARCH SCULLY, DANA 202 - 555 - 6431\" - Screen printout",
     "tags": [
       "Basic",
-      "Change Keyword"
+      "Change Keyword",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2437,7 +2532,9 @@
     "gameEffect": "Play on a Team of three or more Agents moving to the same Site. The Team may only send two Agents to that Site (owning player's choice). Any extra Agents remain in the Team but may not contribute their skills to any checks this turn. In addition, playing this card will prevent the use of the \"Evasive Maneuver\" card by this Team this turn.",
     "dialogue": "Mulder: \"What if it's possible somehow to raise the body's electrostatic charge to levels we've been seeing and to use that energy to affect objects?\"\nScully: \"Are you saying Lauren Kyte crashed our car?\"\nMulder: \"Either that, or a poltergeist.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2460,7 +2557,9 @@
     "dialogue": "Mulder: \"You can have it all. My badge. The X-Files. Tell me where he is.\"\nSkinner: \"And then what?! 'He sleeps with the fishes? We're not the Mafia, Agent Mulder. It's easy to forget, but we work for the Department of Justice.\"",
     "tags": [
       "Basic",
-      "Negate"
+      "Negate",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2508,7 +2607,9 @@
     "dialogue": "\"I found a high ratio of Ammonia to water in the ice core. The Earth's atmosphere could never have produced those levels of Ammonia, even a quarter of a million years ago.\" - Murphy",
     "tags": [
       "Basic",
-      "Discard"
+      "Discard",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2530,7 +2631,9 @@
     "dialogue": "\"My name is Trondheim, Henry Trondheim. The ship you want is the Za'Ahr, it's a fifty ton trawler with a double hull. It's my ship.\" - Henry Trondheim",
     "tags": [
       "Basic",
-      "Discard"
+      "Discard",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2576,7 +2679,9 @@
     "dialogue": "\"I don't work for you, sir, and unless you hear differently from the Attorney General, this case is a local matter.\" - Detective Thompson",
     "tags": [
       "Basic",
-      "Change Prerequisite"
+      "Change Prerequisite",
+      "Starter Deck #1",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2599,7 +2704,8 @@
     "dialogue": "Cokely: \"Now, are you finished with me, little sister?\"\nScully: \"For now.\"",
     "tags": [
       "Basic",
-      "Change Keyword"
+      "Change Keyword",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2622,7 +2728,9 @@
     "dialogue": "\"That matter is still under investigation and so I can't comment about it.\" - Detective Fiore, upon being questioned about the death of Charlie Morris",
     "tags": [
       "Basic",
-      "Discard"
+      "Discard",
+      "Starter Deck #1",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2641,7 +2749,8 @@
     },
     "dialogue": "\"Somebody's got to take the blame, sister!\" - B.J. Morrow",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2660,7 +2769,8 @@
     },
     "dialogue": "\"Good night.\" - Last words of Augustus Cole after having been awake for twenty - four years",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2678,7 +2788,9 @@
     },
     "dialogue": "\"You can kill me now, but you'll never know the truth. And that's why I'll win.\" - The Cigarette - Smoking Man",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2697,7 +2809,8 @@
     },
     "dialogue": "\"They're coming again. I can feel it. They're coming to take Duane Barry to the place.\" - Duane Barry",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2716,7 +2829,8 @@
     },
     "dialogue": "Mulder: \"You should have seen her. She was beautiful.\"\nScully: \"Yeah, well, she just about ripped your lungs out.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2735,7 +2849,8 @@
     },
     "dialogue": "\"It looks like I'm going to have to tell Skinner that the suspect is a giant bloodsucking worm after all.\" - Mulder discussing his suspect profile",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2754,7 +2869,8 @@
     },
     "dialogue": "\"His personal history includes being witness to an auto accident in which his high school sweetheart was killed and his mother was decapitated.\" - FBI Agent",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2773,7 +2889,8 @@
     },
     "dialogue": "\"Arthur Grable is not dead. He's in a state of consciousness that no human has ever returned from.\" - Mulder describing Arthur Grable's head in its cryogenically preserved state",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2792,7 +2909,8 @@
     },
     "dialogue": "\"You killed me and let me die.\" - Dupré accusing Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2811,7 +2929,8 @@
     },
     "dialogue": "\"To the spirit of the moon.\" - Colonel Wharton performing a Voodoo ritual (translated from French)",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2830,7 +2949,8 @@
     },
     "dialogue": "Scully: \"But those hormones have been proven safe. They've been cleared by the FDA.\"\nOld Farmer: \"Says who? The government?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2868,7 +2988,8 @@
     },
     "dialogue": "\"Many religions believe that the reward for eating human flesh is eternal life.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2887,7 +3008,8 @@
     },
     "dialogue": "\"I will live forever.\" - Vampire (Translated from Transylvanian)",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2906,7 +3028,8 @@
     },
     "dialogue": "\"File Deleted.\" - Central Operating System",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2925,7 +3048,9 @@
     },
     "dialogue": "\"A silicon - based life form in a deep biosphere has been one of the holy grails of modern science.\" - Mulder describing the volcanic spores",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2944,7 +3069,8 @@
     },
     "dialogue": "\"You must be careful. It knows you.\" - Elder Calusari warning Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2963,7 +3089,8 @@
     },
     "dialogue": "\"I contend that, perhaps through a genetic mutation, Eugene Tooms is capable of contorting and elongating his body in order to gain access to his victims.\" - Mulder, at Tooms' psychiatric review",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -2982,7 +3109,8 @@
     },
     "dialogue": "\"Howard showed me how Dorland had him killed.\" - Lauren Kyte",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3001,7 +3129,8 @@
     },
     "dialogue": "\"My shadow isn't mine; it's like a black hole. It splits molecules into component atoms.\" - Dr. Banton",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3020,7 +3149,8 @@
     },
     "dialogue": "\"We wanted to believe, we wanted to call out.\" - Mulder describing the Voyager mission",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3039,7 +3169,8 @@
     },
     "dialogue": "\"Code indigo - delta - echo - niner, I have a confirmed fallen angel in sector eighty - seven. Mobilize Operation Falcon immediately.\" - Alert notice from Commander Henderson",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3058,7 +3189,8 @@
     },
     "dialogue": "\"Maybe the worm feeds on the acetylcholine which floods our capacity to control violent behavior.\" - Dr. Hodge",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3077,7 +3209,8 @@
     },
     "dialogue": "\"The Manitou is an evil spirit capable of changing a man into a beast.\" - Tribal Elder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3096,7 +3229,8 @@
     },
     "dialogue": "\"You call this life?\" - Leonard Vance referring to his severely burned condition",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3115,7 +3249,8 @@
     },
     "dialogue": "\"The spirits in this place are very angry, and the souls that died here continue to suffer; and now they have been awakened.\" - Gung Bituen",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3134,7 +3269,8 @@
     },
     "dialogue": "Mulder: \"Put it down!\"\nFunsch: \"I can't. They won't let me.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3153,7 +3289,8 @@
     },
     "dialogue": "\"Goodbye, it's been nice working with you.\" - Last message from Mrs. Paddock, written on a chalkboard",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3172,7 +3309,8 @@
     },
     "dialogue": "\"A huge stone came out of the sky and crashed into the pack ice.\" - Captain Trondheim",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3191,7 +3329,8 @@
     },
     "dialogue": "\"I'll get you.\" - John Barnett, to Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3210,7 +3349,8 @@
     },
     "dialogue": "\"Man save man.\" - Signed to Mulder by Sophie, the Gorilla",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3229,7 +3369,8 @@
     },
     "dialogue": "\"No one will corroborate your story. Just be glad things are under control.\" - Unknown Doctor, Pinck Pharmaceuticals",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3248,7 +3389,8 @@
     },
     "dialogue": "\"There's no way out, girly girl.\" - Donnie Pfaster",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3267,7 +3409,8 @@
     },
     "dialogue": "\"Touching a human man, or a woman, is as powerful for me as it was for you.\" - Brother Martin",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3286,7 +3429,8 @@
     },
     "dialogue": "\"You don't seem to understand, Scully. Max doesn't believe he was abducted by aliens...I believe he was.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3305,7 +3449,8 @@
     },
     "dialogue": "\"Psychotic behavior didn't develop in the Adams and Eves until age sixteen; homicidal behavior at twenty. Imagine my disappointment when I learned of your accelerated development.\" - Eve 7",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3324,7 +3469,8 @@
     },
     "dialogue": "\"They would tell me to gather the others, so that they could do tests.\" - Billy Miles",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3343,7 +3489,8 @@
     },
     "dialogue": "Scully: \"Are you suggesting that the military is flying U.F.O.s?\"\nMulder: \"No, planes built using U.F.O. technology.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3362,7 +3509,8 @@
     },
     "dialogue": "\"Maybe they woke up hungry.\" - Doug Spinney, shortly before his disappearance",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3381,7 +3529,8 @@
     },
     "dialogue": "\"He's merely seeking another brother.\" - Lanny explaining his brother Leonard's behavior",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3400,7 +3549,8 @@
     },
     "dialogue": "\"You can't fight fire with fire.\" - Cecil L'ively",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3433,7 +3583,8 @@
     "gameEffect": "Treat Section Chief Blevins as a RES 2 if he is in the Bureau Section. If he is in the Bureau Section, he may contribute to the Conspiracy Pool instead of the Resources Pool during the Briefing Phase.",
     "bio": "Originally in charge of the X-Files, Section Chief Scott Blevins was directed to assign Agent Dana Scully to work with Agent Fox Mulder in order to debunk his theories. Blevins was replaced by Assistant Director Walter Skinner.",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3465,7 +3616,8 @@
     "bio": "Albert Hosteen is a Navajo Tribal Elder. He met and assisted Agent Fox Mulder during the events depicted in \"Anasazi.\" He performed a ritual that helped Mulder survive injuries inflicted on him by The Cigarette - Smoking Man.",
     "tags": [
       "Basic",
-      "Examine Hand"
+      "Examine Hand",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3497,7 +3649,8 @@
     "bio": "Agent Brian Tillman was actively working on a series of murders in Aubrey, Missouri, only to find out that the woman he was having an affair with (B.J. Morrow) was the killer. Agents Fox Mulder and Dana Scully discovered the existence of a previously unknown \"killer\" gene.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3530,7 +3683,8 @@
     "bio": "Agent Rich assisted Agent Lucy Kazdin in containing and successfully ending the Duane Barry hostage situation. He specializes in crisis intervention, and briefed Agent Fox Mulder in proper negotiating techniques.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3562,7 +3716,8 @@
     "gameEffect": "If one of your Agents is Abducted, you may immediately draw two cards.",
     "bio": "Agent Lucy Kazdin headed the team of agents that was responsible for ending the Duane Barry hostage situation. She gained respect for Agent Fox Mulder after he risked his life to free the hostages.",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3594,7 +3749,8 @@
     "bio": "Agent Jack Willis was an instructor at Quantico, and had a romantic relationship with Agent Dana Scully while she was a student there. They worked together on a stakeout in order to apprehend Warren Dupré.",
     "tags": [
       "Basic",
-      "Search"
+      "Search",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3625,7 +3781,8 @@
     "bio": "Agent Fox Mulder's love interest while he studied at Oxford, Phoebe Green went on to become an inspector for Scotland Yard. Their paths crossed again when they joined forces to apprehend the I.R.A. terrorist Cecil L'ively.",
     "tags": [
       "Basic",
-      "Move"
+      "Move",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3659,7 +3816,10 @@
     "gameEffect": "[RP]s generated by Agent Mulder must be used to purchase cards. Place three tokens on this card. Discard a token to play a Site for zero [RP] cost.",
     "bio": "One of the FBI's most accomplished detectives, Agent Fox Mulder uses his background in psychology to track down and profile a variety of serial killers. His real interest is paranormal phenomena, an obsession that earned him the nickname \"Spooky.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3692,7 +3852,8 @@
     "gameEffect": "Agent Krycek allows you to choose to add to the Conspiracy Pool instead of the Resource Pool during the Briefing Phase.",
     "bio": "Alex Krycek is a clean - cut Agent who professes an admiration for Agent Fox Mulder and his work on the X-Files. Krycek worked with Mulder in apprehending Augustus Cole (\"Sleepless\") and in searching for Agent Dana Scully after her abduction (\"Ascension\"). What no one else knows is that he is actually a double agent working for The Cigarette - Smoking Man.",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3726,7 +3887,8 @@
     "bio": "Agent Nancy Spiller, also known as the \"Iron Maiden,\" taught Agent Dana Scully forensics at the FBI Academy. She chaired a disciplinary board convened to review Agent Fox Mulder's actions involving the termination of Eurisko Corp.'s Central Operating System.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3760,7 +3922,10 @@
     "bio": "Agent Dana Scully is a well - respected agent who, at one time, taught at Quantico. She is trained in forensics and pathology, and is highly skeptical of paranormal activity. Teamed with Agent Fox Mulder, she balances his theories with scientific reason.",
     "tags": [
       "Basic",
-      "Examine Hand"
+      "Examine Hand",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3792,7 +3957,8 @@
     "bio": "Dr. Charles Burk assisted Agent Fox Mulder with his knowledge of digital enhancement and eastern mysticism in the case of the Calusari.",
     "tags": [
       "Basic",
-      "Negate"
+      "Negate",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3824,7 +3990,8 @@
     "bio": "Agent Tom Colton is a friend of Agent Dana Scully's from her days at the FBI Academy at Quantico. He asked for her help in solving a bizarre series of murders in the Baltimore area. He has an open disdain for Agent Fox Mulder.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #1"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3854,7 +4021,8 @@
     "bio": "Agent Janus assisted Agent Fox Mulder in freeing the hostages in the Duane Barry incident and provided medical treatment for a critically wounded hostage.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3888,7 +4056,8 @@
     "bio": "Unlike most FBI Agents, Agent Moe Bocks believes in the possibility of paranormal activity, and has no problem applying paranormal theories to earthly events. The one case he called Agents Fox Mulder and Dana Scully in on did not involve the paranormal.",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3922,7 +4091,8 @@
     "bio": "One of Agent Fox Mulder's former partners, Agent Reggie Purdue worked with Mulder to apprehend the infamous bank robber, John Barnett. They teamed up again to catch Barnett after he had apparently escaped prison.",
     "tags": [
       "Basic",
-      "Search"
+      "Search",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3953,7 +4123,8 @@
     "gameEffect": "Treat Assistant Director Skinner as a RES 3 if he is in the Bureau Section of the table.",
     "bio": "Assistant Director Walter Skinner, at times at odds with Agents Fox Mulder and Dana Scully, still respects their investigative abilities.",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -3985,7 +4156,8 @@
     "bio": "Agent Weiss was contacted by Agent Fox Mulder and asked to provide protection for one of the \"Gregor\" clones. He was the first FBI agent to encounter the Alien Bounty Hunter.",
     "tags": [
       "Basic",
-      "Search"
+      "Search",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4016,7 +4188,8 @@
     "bio": "Agent Fox Mulder's first partner, Agent Jerry Lamana chose to pursue a separate path after it became clear to him that Mulder was not interested in personal career advancement. They worked together on the case involving the Eurisko Corp.'s Central Operating System.",
     "tags": [
       "Basic",
-      "Examine Hand"
+      "Examine Hand",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4048,7 +4221,8 @@
     "bio": "Agent Karen Kosseff is an FBI crisis counselor who has assisted Agents Fox Mulder and Dana Scully on several cases, most notably counseling Scully in \"Irresistible,\" and doing family intervention in \"The Calusari\" and \"Born Again.\"",
     "tags": [
       "Basic",
-      "Replenish Token"
+      "Replenish Token",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4071,7 +4245,10 @@
     "gameEffect": "Adds 1 to one Team's CRIMINAL INVESTIGATION skill check.",
     "dialogue": "\"Since colonial times, there's only been three murders in this area. In the last six months, seven people have killed twenty - two.\" - Sheriff Spencer describing Franklin, PA.",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4141,7 +4318,9 @@
     "gameEffect": "Adds 1 to one Team's COMPUTER skill check.",
     "dialogue": "\"That's why we like you, Mulder. Your ideas are weirder than ours.\" - Byers",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4210,7 +4389,10 @@
     "gameEffect": "Adds 1 to one Team's ALIEN INVESTIGATION skill check.",
     "dialogue": "\"And the light came, it took me away, to the testing place.\" - Billy Miles",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4374,7 +4556,9 @@
     "gameEffect": "Adds 1 to one Team's BUREAUCRACY skill check.",
     "dialogue": "\"He seems like a rather nice fellow, don't you think?\" - Sir Marsden, on Cecil L'ively",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4443,7 +4627,10 @@
     "gameEffect": "Adds 1 to one Team's MEDICAL skill check.",
     "dialogue": "\"The hypothalamus releases acetylcholine, which is what produces violent, aggressive behavior, so that might be a connection.\" - Dr. Hodge describes the relationship between the Arctic Worms and their victims",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4466,7 +4653,9 @@
     "gameEffect": "Adds 1 to one Team's SCIENCES skill check.",
     "dialogue": "\"I'd start thinking about how to get that generator started. Darkness is our enemy.\" - Doug Spinney",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4512,7 +4701,10 @@
     "gameEffect": "Adds 1 to one Team's EVIDENCE COLLECTION skill check.",
     "dialogue": "Tapia: \"Either of you two ever run an escaped convict operation?\"\nMulder: \"No.\"\nTapia: \"Well then, you'd be a real big help if you just tried to stay out of the way.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4654,7 +4846,10 @@
     "gameEffect": "Adds 1 to one Team's OBSERVATION skill check.",
     "dialogue": "\"Dr. Larsen was using those kids as guinea pigs, and he was using us, too.\" - Gerd Thomas",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4702,7 +4897,10 @@
     "gameEffect": "Adds 1 to one Team's OCCULT INVESTIGATION skill check.",
     "dialogue": "\"I was raised to believe, as she did, in spirits, the unseen world.\" - Maggie Holvey",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4839,7 +5037,10 @@
     "gameEffect": "Play on one Agent to allow that Agent to use their EVIDENCE COLLECTION skill number for any one ALIEN INVESTIGATION or OCCULT INVESTIGATION skill check.",
     "dialogue": "Mulder: \"The voice is telling me that one day she'll return.\"\nTherapist: \"Do you believe the voice?\"\nMulder: \"I want to believe.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -4910,7 +5111,9 @@
     "gameEffect": "Play on an Agent in the Hospital. The Agent heals one token of damage immediately.",
     "dialogue": "\"If you keep him in there, you're going to kill him. The cold is the only thing keeping him alive.\" - Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5002,7 +5205,10 @@
     "gameEffect": "Negate one Witness that modifies ALIEN INVESTIGATION or BUREAUCRACY skill.",
     "dialogue": "\"This has been a terrible mistake, and I assure you that the Government will pay for all repairs and damages.\" - Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5094,7 +5300,10 @@
     "dialogue": "\"Volume Protected, Enter Password.\" - Prompt on Mulder's computer",
     "tags": [
       "Basic",
-      "Negate"
+      "Negate",
+      "Starter Deck #3",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5118,7 +5327,10 @@
     "gameEffect": "Negate one Keyword EVIDENCE COLLECTION card.",
     "dialogue": "Scully: \"There goes my computer.\"\nMulder: \"Yeah. The X - rays. My Polaroids. Somebody around here doesn't like us, Scully.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5210,7 +5422,9 @@
     "gameEffect": "If the Team makes an OBSERVATION 4+ skill check, they gain a +1 to the Site skill check. Discard this card after you've used the modifier.",
     "dialogue": "\"Mulder here found a print on the T.V., a partial oblique, and it's not the victim's.\" - Unknown Detective to Agent Willis",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5304,7 +5518,10 @@
     "gameEffect": "Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION skill as a prerequisite. Place this card in your Bureau. Discard this card to add 1 to an ALIEN INVESTIGATION skill check.",
     "dialogue": "Scully: \"I don't understand. How can they just disappear? They have no means of transportation.\"\nMulder: \"No earthly means of transportation.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5373,7 +5590,10 @@
     "dialogue": "Chief Blevins: \"Agent Mulder's latest 302... requesting assignment, and travel expenses for the both of you.\"\nScully (reading): \"'Sioux City, Iowa.' This is the first I've heard of it.\"",
     "tags": [
       "Basic",
-      "Force Skill Check"
+      "Force Skill Check",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5419,7 +5639,11 @@
     "gameEffect": "Play this card on any Witness that has just been played. The owning player must shuffle the Witness back into their Bureau deck immediately and does not benefit from the Witness.",
     "dialogue": "\"The rest of us are dispensable. She was the first, the one from which we all came from. The one you must save.\" - Samantha Mulder's clone",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5627,7 +5851,8 @@
     "dialogue": "\"I started these watches at the same time.\" - Mulder, referring to the time loss experienced at a U.F.O. site",
     "tags": [
       "Basic",
-      "Discard"
+      "Discard",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5651,7 +5876,9 @@
     "gameEffect": "Negate one Keyword CRIMINAL INVESTIGATION card.",
     "dialogue": "Detective Thompson: \"I'll go right to the D.A.'s office if I have to. Obstructing an investigation, misconduct...\"\nMulder: \"That's good. Let's go see her together and, while we're at it, why don't we add withholding evidence to the list?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5698,7 +5925,10 @@
     "gameEffect": "If the Team makes an EVIDENCE COLLECTION 4+ skill check, they gain a +1 to a Site skill check. Discard this card after you've used the modifier.",
     "dialogue": "Let's have this analyzed by the Bureau's lab.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -5856,7 +6086,9 @@
     "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn the Agent may be deployed as normal and in addition has a +1 in one of the following skills: OBSERVATION, BEHAVIORAL or SUBTERFUGE. Place this card below the Agent to remind you of the increased skill.",
     "dialogue": "Josephine Doane: \"There are words I recognize but you'll need an actual Code Talker to make any sense of this. I know a man who might help. I could have him contact you.\"\nScully: \"Thank you. Can I ask which words you recognize?\"\nDoane: \"This word, it means goods. Merchandise. And this one, it means vaccination. They are both modern words, which is why they stand out.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6017,7 +6249,9 @@
     "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: COMPUTER, MEDICAL, or SCIENCES. Place this card below the Agent to remind you of the increased skill.",
     "dialogue": "\"It is advantageous to begin an autopsy with removal of the cranium. Observations crucial to the examiner's sense of smell will not be interfered with by internal odors...\" - Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6154,7 +6388,9 @@
     "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: ALIEN INVESTIGATION, OCCULT INVESTIGATION, or SCIENCES. This card may not be played on Agents Mulder or Scully. Place this card below the Agent to remind you of the increased skill.",
     "dialogue": "\"The reason you are here, Agent Scully, is we want you to assist Mulder on these X-Files.\" - Section Chief Scott Blevins",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6200,7 +6436,8 @@
     "gameEffect": "Play when an Agent is forced to return to the Bureau. Prior to moving, the Team may make a CRIMINAL INVESTIGATION 5+ skill check. If successful, the Agent does not have to return to the Bureau.",
     "dialogue": "Scully: \"Those were the most paranoid people I have ever met. I don't see how you can believe anything they say.\"\nMulder: \"Even that you're hot?\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6223,7 +6460,9 @@
     "dialogue": "\"I think they wired the man's brain...some kind of selective memory drain.\" - Mulder, on Colonel Budahas' loss of memory",
     "tags": [
       "Basic",
-      "Discard"
+      "Discard",
+      "Starter Deck #2",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6246,7 +6485,9 @@
     "gameEffect": "You may move one of your Agents to any Section immediately. This card may not be played once an Adversary has forced combat until after the combat is resolved. The Agent may join any Team that occupies the new Section.",
     "dialogue": "Scully: \"So?\"\nMulder: \"So you and I are going to the spud state to investigate a little kidnapping.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6363,7 +6604,10 @@
     "gameEffect": "Negate one card with the Keyword MOVE.",
     "dialogue": "\"And the U.S. Department of Transportation estimates over 190,000 fatal car crashes each year are caused by sleepiness.\" - Krycek",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6385,7 +6629,9 @@
     "gameEffect": "Play on an Agent in the Bureau. The Agent is taken out of play for one full turn. At the start of the Briefing Phase of the second turn, the Agent may be deployed as normal, and in addition has a +1 in one of the following skills: CRIMINAL INVESTIGATION or EVIDENCE COLLECTION. Place this card below the Agent to remind you of the increased skill.",
     "dialogue": "\"Right here, at the corner of Old Forge Road and Madison. And I'm betting Scully is somewhere within this five - mile area.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6477,7 +6723,8 @@
     "gameEffect": "Adds 2 to the Agent's COMPUTER skill.",
     "dialogue": "\"...X - ray analysis confirms homologous but possibly mutated mammalian physiology... however, does not account for small, unidentified object found in subject's nasal cavity... a gray metallic implant, four millimeters in length...\" - Scully's recorded voice",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6500,7 +6747,8 @@
     "gameEffect": "Agents equipped with a Gas Chromatograph have access to the field office crime lab. Adds 1 to the Agent's SCIENCES skill.",
     "dialogue": "Mulder: \"Whatever I'm smelling, is it toxic?\"\nJason Ludwig: \"Between the heat and the sulfur it can get pretty nasty in here. But it won't hurt you.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6523,7 +6771,10 @@
     "gameEffect": "Adds 1 to the Agent's SUBTERFUGE skill.",
     "dialogue": "\"I had enough on that surveillance to arrest those suspects after three days, I could have nailed them on forty counts of bank fraud. But you left me there. I'm surprised you even noticed I was gone.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6545,7 +6796,10 @@
     "gameEffect": "Adds 1 to the Agent's OBSERVATION skill.",
     "dialogue": "Scully: \"You know, Mulder, from back there you look like him.\"\nMulder: \"Him?\"\nScully: \"Deep Throat.\"\nMulder: \"He's dead, Scully. I attended his funeral at Arlington through eight - power binoculars from a thousand yards away.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6637,7 +6891,9 @@
     "gameEffect": "Adds 1 to the Agent's OCCULT INVESTIGATION skill.",
     "dialogue": "\"So you're saying a ghost killed Teddy Holvey. Has anyone checked the camera that took this photo? The lens and the pressure plate?\" - Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6683,7 +6939,10 @@
     "gameEffect": "Adds 1 to the Agent's CRIMINAL INVESTIGATION skill.",
     "dialogue": "\"Requisition for a car, please. Thank you.\" - Mulder",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6866,7 +7125,9 @@
     "gameEffect": "Agents equipped with an Electron Emission Microscope have access to the field office crime lab. Adds 1 to the Agent's MEDICAL skill.",
     "dialogue": "Henderson: \"Okay, first impressions: The ink is fresh. The note was written in the last forty - eight hours. Ball - point, but you knew that. A right - hander. Let's see... written by someone sitting down. But now I'm just showing off.\"\nMulder: \"Does it match Barnett?\"\nHenderson: \"I'd say it's him.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6960,7 +7221,10 @@
     "gameEffect": "Adds 1 to the Agent's BEHAVIORAL skill.",
     "dialogue": "Examiner: \"Are you over one hundred years old?\"\nAgent Colton: \"That must be a control question.\"\nMulder: \"I had her ask it.\"\nTooms: (pause) \"No.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -6989,7 +7253,10 @@
     ],
     "dialogue": "Mulder: \"Scully... snake skin!\"\nScully: \"There's a python in Paddock's room!\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7019,7 +7286,10 @@
     "dialogue": "\"What if, by some fluke of nature, a human was born who reverted to its most animal instincts... a kind of carnivorous Neanderthal? Wouldn't he occupy a space above us on the food chain?\" - Mulder",
     "tags": [
       "Basic",
-      "Skip Long Range"
+      "Skip Long Range",
+      "Starter Deck #2",
+      "Starter Deck #3",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7049,7 +7319,9 @@
     "gameEffect": "The chosen Agent is the only one who may participate in the Combat. The Crew-Cut Man may use MARTIAL ARTS and SUBTERFUGE cards.",
     "dialogue": "\"Your work here is done.\" - Crew - Cut Man",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7140,7 +7412,10 @@
     "dialogue": "Scully: \"He's non - verbal; non - responsive to voice, touch or pain. The neurologist suspects he's suffered a severe concussion in the crash, resulting in amnesia.\"\nMulder: \"That's a plausible diagnosis, only I'm more interested in how he came back to life.\"",
     "tags": [
       "Basic",
-      "Reduce Damage"
+      "Reduce Damage",
+      "Starter Deck #2",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7170,7 +7445,9 @@
     "dialogue": "\"Scully, I think that the good people of Dudley have been eating more than just chicken.\" - Mulder",
     "tags": [
       "Basic",
-      "Split Damage"
+      "Split Damage",
+      "Starter Deck #3",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7199,7 +7476,9 @@
     "gameEffect": "The Creature has LONG RANGE COMBAT and CLOSE RANGE COMBAT equal to the highest Combat rating on the opposing team (including modifiers) +1. The Sandman may use SUBTERFUGE Combat cards.",
     "dialogue": "\"The truth is what you did to us, what you made us do!\" - Augustus Cole",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #3"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7259,7 +7538,9 @@
     "dialogue": "\"The preliminary medical exam revealed quite abnormal development in the muscular and skeletal systems.\" - Scully reviews Tooms' abnormal physiology.",
     "tags": [
       "Basic",
-      "Skip Long Range"
+      "Skip Long Range",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7289,7 +7570,10 @@
     "dialogue": "\"Time to call '911'.\" - Cecil L'ively",
     "tags": [
       "Basic",
-      "Split Damage"
+      "Split Damage",
+      "Starter Deck #1",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7319,7 +7603,9 @@
     "gameEffect": "The Mechanic may use MARTIAL ARTS and SUBTERFUGE Combat cards.",
     "dialogue": "Mulder: \"There were three men last night. I was chased!\"\nDeep Throat: \"If you were chased you would have been killed. Those men are trained for that sort of business, and they are trained very well.\"",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #2",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7349,7 +7635,9 @@
     "dialogue": "Scully: \"Mulder, get them off me!\"\nMulder: \"They're not just on you, they're everywhere.\"",
     "tags": [
       "Basic",
-      "Non-combative"
+      "Non-combative",
+      "Starter Deck #4",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7378,7 +7666,10 @@
     "gameEffect": "Regardless of how much damage is done to this creature in the LONG RANGE COMBAT round, it will attack in the CLOSE RANGE COMBAT round. If its HEALTH has been exceeded, it is removed at the end of the CRC round.",
     "dialogue": "\"His father used to beat him with coat hangers.\" - Agent Thomas",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #5",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7408,7 +7699,9 @@
     "dialogue": "\"The machine's a monster, Scully - it's already killed two people.\" - Mulder",
     "tags": [
       "Basic",
-      "Skip Long Range"
+      "Skip Long Range",
+      "Starter Deck #3",
+      "Starter Deck #6"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7468,7 +7761,9 @@
     "gameEffect": "Play this card on a Team in the Field that plays a Witness. The Witness card is discarded and the Team is attacked! The Creature's LONG RANGE COMBAT and CLOSE RANGE COMBAT are equal to the Witness's modifier. If the Witness has no modifier, treat the Witness as a +3.",
     "dialogue": "\"There is no way to know who will be a killer or who will be killed.\" - Mulder, in a letter to Scully",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #4",
+      "Starter Deck #5"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7498,7 +7793,9 @@
     "dialogue": "Mulder: \"No human pilot walked away from the wreckage I saw.\"\nScully: \"Well, maybe he ejected.\"",
     "tags": [
       "Basic",
-      "Reduce Damage"
+      "Reduce Damage",
+      "Starter Deck #1",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },
@@ -7557,7 +7854,10 @@
     "gameEffect": "The Poltergeist is unaffected by Combat attacks. It will attack for only one LONG RANGE COMBAT and one CLOSE RANGE COMBAT round and then is discarded.",
     "dialogue": "\"Lauren, how will you be able to rest if he never can?\" - Scully questioning Lauren Kyte concerning the poltergeist Howard Graves",
     "tags": [
-      "Basic"
+      "Basic",
+      "Starter Deck #1",
+      "Starter Deck #2",
+      "Starter Deck #4"
     ],
     "createdBy": "NXT Games, USPCC"
   },

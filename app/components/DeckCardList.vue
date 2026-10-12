@@ -6,7 +6,7 @@ import type {
 } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
-const props = defineProps<{
+const { cards } = defineProps<{
   cards: CardInDeck[];
 }>();
 
@@ -17,7 +17,7 @@ const groups = computed<{
   color: string | undefined,
 }[]>(() => (
   Object.entries(
-    props.cards.reduce((result, card) => {
+    cards.reduce((result, card) => {
       result[card.type] = [
         ...result[card.type] ?? [],
         card,

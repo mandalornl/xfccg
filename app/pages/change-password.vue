@@ -8,7 +8,7 @@ useHead({
   title: 'Change Password',
 });
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isUpdating = ref<boolean>(false);
 const password = ref<string>('');
 
@@ -46,10 +46,10 @@ const updatePassword = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content
-    title="Change password"
-    size="small"
-  >
+  <x-container size="small">
+    <h1 class="text-headline-large">
+      Change password
+    </h1>
     <v-form
       v-model="isValidForm"
       validate-on="lazy"
@@ -73,5 +73,5 @@ const updatePassword = async (event: SubmitEventPromise) => {
         type="submit"
       />
     </v-form>
-  </layout-content>
+  </x-container>
 </template>

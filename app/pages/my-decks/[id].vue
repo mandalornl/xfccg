@@ -27,7 +27,7 @@ const defaultItem = (): Deck => ({
 });
 
 const deck = ref<Deck>(defaultItem());
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isSaving = ref<boolean>(false);
 const isCloning = ref<boolean>(false);
 const isDeleting = ref<boolean>(false);
@@ -195,105 +195,107 @@ const deleteDeck = async () => {
 </script>
 
 <template>
-  <layout-content size="medium">
-    <v-skeleton-loader
-      :loading="status === 'pending'"
-      type="article,actions"
-    >
-      <v-form
-        v-if="status !== 'pending'"
-        v-model="isValidForm"
-        validate-on="lazy"
-        class="mb-8"
-        @submit.prevent="saveDeck"
+  <section>
+    <x-container size="medium">
+      <v-skeleton-loader
+        :loading="status === 'pending'"
+        type="article,actions"
       >
-        <v-card variant="flat">
-          <v-card-item>
-            <v-card-title>
-              <v-btn
-                v-tooltip:top="'Back'"
-                to="/my-decks"
-                variant="text"
-                size="small"
-                icon="mdi-chevron-left"
+        <v-form
+          v-if="status !== 'pending'"
+          v-model="isValidForm"
+          validate-on="lazy"
+          class="mb-8"
+          @submit.prevent="saveDeck"
+        >
+          <v-card variant="flat">
+            <v-card-item>
+              <v-card-title>
+                <v-btn
+                  v-tooltip:top="'Back'"
+                  to="/my-decks"
+                  variant="text"
+                  size="small"
+                  icon="mdi-chevron-left"
+                />
+                {{ data.deck?.title || 'Untitled' }}
+              </v-card-title>
+              <v-card-subtitle>
+                <copy-link
+                  v-if="shareable"
+                  :to="{ name: 'decklists', query: { id: deck.id } }"
+                >
+                  {{ deck.id }}
+                </copy-link>
+                <template v-else>
+                  {{ deck.id }}
+                </template>
+              </v-card-subtitle>
+            </v-card-item>
+            <v-card-text class="text-body-large">
+              <input-string
+                v-model="deck.title"
+                :rules="[ (v) => !!v || 'Enter a title' ]"
+                label="Title"
               />
-              {{ data.deck?.title || 'Untitled' }}
-            </v-card-title>
-            <v-card-subtitle>
-              <copy-link
-                v-if="shareable"
-                :to="{ name: 'decklists', query: { id: deck.id } }"
-              >
-                {{ deck.id }}
-              </copy-link>
-              <template v-else>
-                {{ deck.id }}
-              </template>
-            </v-card-subtitle>
-          </v-card-item>
-          <v-card-text class="text-body-1">
-            <input-string
-              v-model="deck.title"
-              :rules="[ (v) => !!v || 'Enter a title' ]"
-              label="Title"
-            />
-            <input-markdown
-              v-model="deck.description"
-              auto-grow
-              counter="1000"
-              label="Description"
-            />
-            <deck-tags v-model="deck.tags" />
-            <v-switch
-              v-model="deck.public"
-              hide-details
-              label="Public"
-            />
+              <input-markdown
+                v-model="deck.description"
+                auto-grow
+                counter="1000"
+                label="Description"
+              />
+              <deck-tags v-model="deck.tags" />
+              <v-switch
+                v-model="deck.public"
+                hide-details
+                label="Public"
+              />
+            </v-card-text>
+            <v-card-actions class="flex-column flex-sm-row">
+              <v-spacer />
+              <v-btn
+                :disabled="isSaving || isCloning"
+                :loading="isDeleting"
+                :block="xs"
+                variant="flat"
+                color="red"
+                text="Delete"
+                @click="deleteDeck"
+              />
+              <v-btn
+                :disabled="isSaving || isDeleting"
+                :loading="isCloning"
+                :block="xs"
+                variant="flat"
+                color="amber"
+                text="Clone"
+                @click="cloneDeck"
+              />
+              <v-btn
+                :block="xs"
+                variant="flat"
+                color="light-blue"
+                text="Open in Cards"
+                @click="openInCards"
+              />
+              <v-btn
+                :disabled="isValidForm === false || isCloning || isDeleting"
+                :loading="isSaving"
+                :block="xs"
+                variant="flat"
+                color="primary"
+                text="Save"
+                type="submit"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-form>
+        <v-card variant="flat">
+          <v-card-text class="text-body-large">
+            <deck-view :card-ids="deck.card_ids" />
           </v-card-text>
-          <v-card-actions class="flex-column flex-sm-row">
-            <v-spacer />
-            <v-btn
-              :disabled="isSaving || isCloning"
-              :loading="isDeleting"
-              :block="xs"
-              variant="flat"
-              color="red"
-              text="Delete"
-              @click="deleteDeck"
-            />
-            <v-btn
-              :disabled="isSaving || isDeleting"
-              :loading="isCloning"
-              :block="xs"
-              variant="flat"
-              color="amber"
-              text="Clone"
-              @click="cloneDeck"
-            />
-            <v-btn
-              :block="xs"
-              variant="flat"
-              color="light-blue"
-              text="Open in Cards"
-              @click="openInCards"
-            />
-            <v-btn
-              :disabled="isValidForm === false || isCloning || isDeleting"
-              :loading="isSaving"
-              :block="xs"
-              variant="flat"
-              color="primary"
-              text="Save"
-              type="submit"
-            />
-          </v-card-actions>
         </v-card>
-      </v-form>
-      <v-card variant="flat">
-        <v-card-text class="text-body-1">
-          <deck-view :card-ids="deck.card_ids" />
-        </v-card-text>
-      </v-card>
-    </v-skeleton-loader>
-  </layout-content>
+      </v-skeleton-loader>
+    </x-container>
+  </section>
 </template>

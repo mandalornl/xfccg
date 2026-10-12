@@ -2,13 +2,13 @@
 import { XFileCharacteristic } from '~/types/x-file';
 import type { CardSet } from '~/types/card';
 
-const props = defineProps<{
+const { set } = defineProps<{
   set: CardSet;
 }>();
 
-const checklist = await useChecklist(props.set);
+const checklist = await useChecklist(set);
 
-const identifiedCards = useState<string[]>(`checklist:identifiedCards:${props.set}`, () => ([]));
+const identifiedCards = useState<string[]>(`checklist:identifiedCards:${set}`, () => ([]));
 
 const totalUnidentified = computed<number>(() => (
   checklist.reduce((total, cards) => (
@@ -42,7 +42,7 @@ const toggleCards = (characteristic: string) => {
   }
 };
 
-const history = useState<string[][]>(`checklist:history:${props.set}`, () => ([]));
+const history = useState<string[][]>(`checklist:history:${set}`, () => ([]));
 const undoing = ref<boolean>(false);
 
 watch(identifiedCards, (newValue, oldValue) => {
@@ -106,7 +106,7 @@ const reset = () => {
       :key="checklistIndex"
     >
       <tbody>
-        <tr class="text-h6">
+        <tr class="text-title-medium">
           <th>X-File ({{ totalUnidentified }} unidentified)</th>
           <th>{{ XFileCharacteristic.Affiliation }}</th>
           <th>{{ XFileCharacteristic.Motive }}</th>

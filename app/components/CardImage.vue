@@ -7,26 +7,29 @@ import { slugify } from '~/utils/slugify';
 
 const runtimeConfig = useRuntimeConfig();
 
-const props = defineProps<{
+const {
+  card = undefined,
+  maxWidth = undefined,
+} = defineProps<{
   card?: Card,
   maxWidth?: number | string,
 }>();
 
 const src = computed(() => {
-  if (!props.card) {
+  if (!card) {
     return undefined;
   }
 
   const root = `${runtimeConfig.app.baseURL}images/cards`;
 
   if (
-    props.card.set === CardSet.Classified
-    || props.card.set === CardSet.BirthdayScully
+    card.set === CardSet.Classified
+    || card.set === CardSet.BirthdayScully
   ) {
     return `${root}/back.jpg`;
   }
 
-  return `${root}/${slugify(props.card?.set)}/${slugify(props.card?.id)}.jpg`;
+  return `${root}/${slugify(card.set)}/${slugify(card.id)}.jpg`;
 });
 </script>
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const props = defineProps<{
+const { value } = defineProps<{
   value: string | number,
 }>();
 
 const openLink = () => navigateTo({
-  hash: `#${props.value}`,
+  hash: `#${value}`,
 }, {
   replace: true,
 });

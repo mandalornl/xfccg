@@ -34,14 +34,14 @@ watch(user, async (value) => {
 </script>
 
 <template>
-  <layout-content
-    title="Logging out..."
-    size="small"
-  >
+  <x-container size="small">
+    <h1 class="text-headline-large">
+      Logging out...
+    </h1>
     <a
       href="#"
       @click.prevent="signOut"
       v-text="'Click here'"
     /> if nothing has happened after 5 seconds.
-  </layout-content>
+  </x-container>
 </template>

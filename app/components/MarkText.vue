@@ -1,23 +1,26 @@
 <script setup lang="ts">
 import { escapeRegex } from '~/utils/regex';
 
-const props = defineProps<{
-  highlight: string;
+const {
+  text,
+  highlight,
+} = defineProps<{
   text: string;
+  highlight: string;
 }>();
 
 const highlightedText = computed<string>(() => {
-  if (!props.text) {
+  if (!text) {
     return '';
   }
 
-  if (!props.highlight) {
-    return props.text;
+  if (!highlight) {
+    return text;
   }
 
-  const regX = new RegExp(`(${escapeRegex(props.highlight)})`, 'gi');
+  const regX = new RegExp(`(${escapeRegex(highlight)})`, 'gi');
 
-  return props.text.replace(regX, '<mark>$1</mark>');
+  return text.replace(regX, '<mark>$1</mark>');
 });
 
 const render = () => (

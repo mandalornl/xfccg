@@ -55,13 +55,13 @@ const fullName = computed<string>(() => (
         </nuxt-link>
       </v-toolbar-title>
       <v-menu v-if="user">
-        <template #activator="{ props:menuProps }">
+        <template #activator="{ props }">
           <v-btn
             v-tooltip:top="`Greetings! ${fullName}`"
             variant="text"
             color="primary"
             icon="mdi-alien"
-            v-bind="menuProps"
+            v-bind="props"
           />
         </template>
         <v-list>

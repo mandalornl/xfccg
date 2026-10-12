@@ -36,7 +36,7 @@ const reset = () => {
 </script>
 
 <template>
-  <layout-content size="medium">
+  <x-container size="medium">
     <div class="d-flex justify-end ga-2 mb-3">
       <v-btn
         v-tooltip:top="'Fullscreen'"
@@ -109,7 +109,7 @@ const reset = () => {
         </v-col>
       </v-row>
     </v-dialog>
-  </layout-content>
+  </x-container>
 </template>
 
 <style lang="scss" scoped>

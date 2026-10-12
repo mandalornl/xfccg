@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const router = useRouter();
 
-const props = defineProps<{
+const { page } = defineProps<{
   page: string;
 }>();
 
@@ -11,7 +11,7 @@ const onIntersect = (isIntersecting: boolean) => {
   }
 
   const resolvedRoute = router.resolve({
-    hash: `#${props.page}`,
+    hash: `#${page}`,
   });
 
   if (resolvedRoute.hash === location.hash) {

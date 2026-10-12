@@ -21,17 +21,8 @@ const openSaveDeck = ref<boolean>(false);
   >
     <v-card>
       <v-card-item>
-        <v-card-title class="d-flex align-center justify-space-between">
-          <div class="text-truncate">
-            {{ deck?.title || 'Untitled' }}
-          </div>
-          <v-btn
-            v-tooltip:top="'Close'"
-            variant="text"
-            icon="mdi-close"
-            size="small"
-            @click="deck = undefined"
-          />
+        <v-card-title>
+          {{ deck?.title || 'Untitled' }}
         </v-card-title>
         <v-card-subtitle
           v-if="deck?.created_by"
@@ -44,8 +35,17 @@ const openSaveDeck = ref<boolean>(false);
             format="fullDate"
           />
         </v-card-subtitle>
+        <template #append>
+          <v-btn
+            v-tooltip:top="'Close'"
+            variant="text"
+            icon="mdi-close"
+            density="comfortable"
+            @click="deck = undefined"
+          />
+        </template>
       </v-card-item>
-      <v-card-text class="text-body-1">
+      <v-card-text class="text-body-large">
         <x-markdown :text="deck?.description" />
         <deck-view :card-ids="deck?.card_ids" />
       </v-card-text>

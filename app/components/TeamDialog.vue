@@ -52,17 +52,18 @@ const stats = computed<AgentStat[]>(() => ([
     width="500"
   >
     <v-card>
-      <v-card-title class="d-flex align-center justify-space-between">
-        Team
-        <v-btn
-          v-tooltip:top="'Close'"
-          variant="text"
-          icon="mdi-close"
-          size="small"
-          @click="isOpen = false"
-        />
-      </v-card-title>
-      <v-card-text class="text-body-1">
+      <v-card-item title="Team">
+        <template #append>
+          <v-btn
+            v-tooltip:top="'Close'"
+            variant="text"
+            icon="mdi-close"
+            density="comfortable"
+            @click="isOpen = false"
+          />
+        </template>
+      </v-card-item>
+      <v-card-text class="text-body-large">
         <v-table
           hover
           density="compact"

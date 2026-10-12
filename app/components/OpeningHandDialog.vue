@@ -8,18 +8,16 @@ import { shuffle } from '~/utils/shuffle';
 
 const pool = await usePool();
 
-const props = withDefaults(defineProps<{
+const { cardIds = {} } = defineProps<{
   cardIds?: Record<CardId, number>;
-}>(), {
-  cardIds: () => ({}),
-});
+}>();
 
 const isOpen = ref<boolean>(false);
 const openingHand = ref<Card[]>([]);
 const drawForTurn = ref<boolean>(false);
 
 const cards = computed<Card[]>(() => (
-  Object.entries(props.cardIds)
+  Object.entries(cardIds)
     .flatMap(([
       id,
       length,
@@ -54,26 +52,27 @@ watch(isOpen, (value) => {
     scrollable
     width="768"
   >
-    <template #activator="{ props:dialogProps }">
+    <template #activator="{ props }">
       <v-btn
         :disabled="cards.length === 0"
         variant="tonal"
         text="Opening Hand"
-        v-bind="dialogProps"
+        v-bind="props"
       />
     </template>
     <v-card>
-      <v-card-title class="d-flex align-center justify-space-between">
-        Opening Hand
-        <v-btn
-          v-tooltip:top="'Close'"
-          variant="text"
-          icon="mdi-close"
-          size="small"
-          @click="isOpen = false"
-        />
-      </v-card-title>
-      <v-card-text class="text-body-1">
+      <v-card-item title="Opening Hand">
+        <template #append>
+          <v-btn
+            v-tooltip:top="'Close'"
+            variant="text"
+            icon="mdi-close"
+            density="comfortable"
+            @click="isOpen = false"
+          />
+        </template>
+      </v-card-item>
+      <v-card-text class="text-body-large">
         <v-row>
           <v-col
             v-for="(card, index) of openingHand"

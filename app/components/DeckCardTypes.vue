@@ -5,12 +5,13 @@ import {
 } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
-const props = withDefaults(defineProps<{
+const {
+  cards,
+  height = 200,
+} = defineProps<{
   cards: CardInDeck[];
   height?: number;
-}>(), {
-  height: 200,
-});
+}>();
 
 const items = computed<{
   total: number,
@@ -29,7 +30,7 @@ const items = computed<{
     CardType.Witness,
   ]
     .map((type) => {
-      const total = props.cards
+      const total = cards
         .filter((card) => card.type === type)
         .reduce((total, card) => total + card.quantity, 0);
 
@@ -54,7 +55,7 @@ const items = computed<{
 
   return items.map((item) => ({
     ...item,
-    height: props.height * item.total / max,
+    height: height * item.total / max,
   }));
 });
 </script>

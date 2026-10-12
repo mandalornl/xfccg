@@ -97,17 +97,17 @@ const items = [
 </script>
 
 <template>
-  <layout-content
-    title="Archive"
-    size="medium"
-  >
+  <x-container size="medium">
+    <h1 class="text-headline-large">
+      Archive
+    </h1>
     <v-list lines="two">
       <v-list-item
         v-for="item of items"
         :key="item.title"
         :title="item.title"
         :subtitle="item.subtitle"
-        :lines="item.lines"
+        :lines="item.lines as 'three'"
         :href="item.href"
         :download="item.download"
         target="_blank"
@@ -120,5 +120,5 @@ const items = [
         </template>
       </v-list-item>
     </v-list>
-  </layout-content>
+  </x-container>
 </template>

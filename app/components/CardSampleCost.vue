@@ -6,13 +6,13 @@ import {
 } from '~/types/card';
 import { sample } from '~/utils/sample';
 
-const props = defineProps<{
+const { cost } = defineProps<{
   cost: CardCostPool;
 }>();
 
 const pool = await usePool(CardSet.Premiere);
 
-const card = useState<Card>(`card-sample:cost:${props.cost}`, () => sample(pool.filter((card) => card.cost?.endsWith(props.cost)))!);
+const card = useState<Card>(`card-sample:cost:${cost}`, () => sample(pool.filter((card) => card.cost?.endsWith(cost)))!);
 </script>
 
 <template>

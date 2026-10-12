@@ -5,7 +5,7 @@ import {
 } from '~/types/datatable';
 
 export function useDataTableState<T>(key: string): Ref<DataTable<T>> {
-  return useState(`datatable:${key}`, () => ({
+  return useState<DataTable<T>>(`datatable:${key}`, () => ({
     setup: false,
     search: '',
     view: DataTableView.Grid,

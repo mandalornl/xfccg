@@ -198,7 +198,10 @@ const shareLink = async (event: Event) => {
 </script>
 
 <template>
-  <layout-content title="Decklists">
+  <x-container>
+    <h1 class="text-headline-large">
+      Decklists
+    </h1>
     <v-data-table-server
       v-model:page="page"
       v-model:items-per-page="perPage"
@@ -212,13 +215,13 @@ const shareLink = async (event: Event) => {
     >
       <template #[`item.actions`]="{ item }">
         <v-menu>
-          <template #activator="{ props:menuProps }">
+          <template #activator="{ props }">
             <v-btn
               v-tooltip:top="'Actions'"
               size="small"
               variant="text"
               icon="mdi-dots-vertical"
-              v-bind="menuProps"
+              v-bind="props"
             />
           </template>
           <v-list>
@@ -252,7 +255,10 @@ const shareLink = async (event: Event) => {
         />
       </template>
       <template #[`item.tags`]="{ value }">
-        <x-tags :items="value" />
+        <x-tags
+          :items="value"
+          class="flex-nowrap"
+        />
       </template>
       <template #[`item.created_by`]="{ value, item }">
         <span :class="{ 'text-primary': item.user_id === user?.sub }">
@@ -264,5 +270,5 @@ const shareLink = async (event: Event) => {
       </template>
     </v-data-table-server>
     <deck-dialog v-model="selectedDeck" />
-  </layout-content>
+  </x-container>
 </template>

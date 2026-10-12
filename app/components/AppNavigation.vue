@@ -9,11 +9,7 @@ const theme = useTheme();
 const appNavigationState = useAppNavigationState();
 
 watch(smAndUp, (value) => {
-  if (!value) {
-    return;
-  }
-
-  appNavigationState.value = false;
+  appNavigationState.value = value;
 });
 
 const items = [
@@ -94,10 +90,11 @@ const isLight = computed<boolean>(() => theme.name.value === 'light');
 
 <template>
   <v-navigation-drawer
-    v-model="appNavigationState"
+    :model-value="appNavigationState || smAndUp"
     :permanent="smAndUp"
     :rail="smAndUp"
     :expand-on-hover="smAndUp"
+    @update:model-value="appNavigationState = $event"
   >
     <v-list
       :items="items"

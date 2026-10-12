@@ -15,7 +15,7 @@ definePageMeta({
   ],
 });
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isSending = ref<boolean>(false);
 const email = ref<string>('');
 
@@ -53,10 +53,10 @@ const resetPasswordForEmail = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content
-    title="Reset your password"
-    size="small"
-  >
+  <x-container size="small">
+    <h1 class="text-headline-large">
+      Reset your password
+    </h1>
     <p>Type in your email and we'll send you a link to reset your password.</p>
     <v-form
       v-model="isValidForm"
@@ -79,5 +79,5 @@ const resetPasswordForEmail = async (event: SubmitEventPromise) => {
         type="submit"
       />
     </v-form>
-  </layout-content>
+  </x-container>
 </template>

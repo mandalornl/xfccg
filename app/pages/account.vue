@@ -9,7 +9,7 @@ useHead({
   title: 'Account',
 });
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isSaving = ref<boolean>(false);
 
 const fullName = ref<string>(
@@ -54,7 +54,7 @@ const updateUser = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content size="medium">
+  <x-container size="small">
     <v-form
       v-model="isValidForm"
       validate-on="lazy"
@@ -64,7 +64,7 @@ const updateUser = async (event: SubmitEventPromise) => {
         title="Account"
         variant="flat"
       >
-        <v-card-text class="text-body-1">
+        <v-card-text class="text-body-large">
           <input-string
             v-model="fullName"
             :rules="[ (v) => !!v || 'Enter your name' ]"
@@ -91,5 +91,5 @@ const updateUser = async (event: SubmitEventPromise) => {
         </v-card-actions>
       </v-card>
     </v-form>
-  </layout-content>
+  </x-container>
 </template>

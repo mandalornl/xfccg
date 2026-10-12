@@ -11,12 +11,12 @@ import type { AgentStat } from '~/types/agent';
 import { getIconBySkill } from '~/utils/icon';
 import { getColorBySkillTotal } from '~/utils/color';
 
-const props = defineProps<{
+const { cards } = defineProps<{
   cards: CardInDeck[];
 }>();
 
 const stats = computed<AgentStat[]>(() => {
-  const team = props.cards.filter((card) => card.type === CardType.Agent);
+  const team = cards.filter((card) => card.type === CardType.Agent);
 
   return [
     ...Object.values(InvestigationSkill),

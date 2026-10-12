@@ -24,7 +24,7 @@ const counter = defineModel<number>({
         color="white"
         @click="counter -= 1"
       />
-      <div class="mx-4 text-h1 text-white font-weight-bold">
+      <div class="mx-4 text-display-large text-white font-weight-bold">
         {{ counter }}
       </div>
       <v-btn

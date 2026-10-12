@@ -26,7 +26,7 @@ const getEmail = () => {
   return runtimeConfig.public.login.email || '';
 };
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isSigningIn = ref<boolean>(false);
 const isSigningInWithDiscord = ref<boolean>(false);
 const email = ref<string>(getEmail());
@@ -92,10 +92,10 @@ watch(user, (value) => {
 </script>
 
 <template>
-  <layout-content
-    title="Welcome back"
-    size="small"
-  >
+  <x-container size="small">
+    <h1 class="text-headline-large">
+      Welcome back
+    </h1>
     <p>Sign in to your account.</p>
     <v-btn
       block
@@ -156,5 +156,5 @@ watch(user, (value) => {
         </nuxt-link>
       </p>
     </v-form>
-  </layout-content>
+  </x-container>
 </template>

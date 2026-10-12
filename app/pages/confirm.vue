@@ -13,7 +13,7 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <layout-content size="small">
+  <x-container size="small">
     <p>Waiting for login...</p>
-  </layout-content>
+  </x-container>
 </template>

@@ -15,7 +15,7 @@ definePageMeta({
   ],
 });
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isRegistering = ref<boolean>(false);
 const name = ref<string>('');
 const email = ref<string>('');
@@ -67,10 +67,10 @@ const register = async (event: SubmitEventPromise) => {
 </script>
 
 <template>
-  <layout-content
-    title="Get started"
-    size="small"
-  >
+  <x-container size="small">
+    <h1 class="text-headline-large">
+      Get started
+    </h1>
     <p>Create a new account.</p>
     <v-form
       v-model="isValidForm"
@@ -105,5 +105,5 @@ const register = async (event: SubmitEventPromise) => {
         type="submit"
       />
     </v-form>
-  </layout-content>
+  </x-container>
 </template>

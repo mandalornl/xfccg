@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T">
 import type { SortBy } from '~/types/sort-by';
 
-const props = defineProps<{
+const { items } = defineProps<{
   items: {
     title: string;
     key: string;
@@ -17,7 +17,7 @@ const sortableItems = computed<{
   title: string;
   value: string;
 }[]>(() => (
-  props.items
+  items
     .filter((item) => item.sortable === undefined || item.sortable)
     .flatMap(({
       title,

@@ -5,7 +5,7 @@ const route = useRoute();
 const theme = useTheme();
 
 useHead({
-  titleTemplate: (title) => {
+  titleTemplate: (title?: string) => {
     const siteName = 'The X-Files CCG';
 
     return title ? `${title} | ${siteName}` : siteName;
@@ -49,26 +49,34 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-p {
-  margin-bottom: 1rem;
+html {
+  font-family: Roboto, sans-serif;
 }
 
-ul, ol {
-  &:not(.v-pagination__list) {
-    padding-left: 1.5rem;
+@layer vuetify-core.reset {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 8px;
+  }
 
-    margin-bottom: 1rem;
+  p {
+    margin: 0 0 16px;
   }
 
   ul, ol {
-    margin-bottom: 0 !important;
+    margin: 0 0 16px;
+
+    padding-left: 24px;
+
+    ul, ol {
+      margin-bottom: 0;
+    }
   }
-}
 
-a {
-  transition: color .2s ease-out;
+  a {
+    transition: color .2s ease-out;
 
-  color: rgb(var(--v-theme-primary));
+    color: rgb(var(--v-theme-primary));
+  }
 }
 
 .position-sticky {

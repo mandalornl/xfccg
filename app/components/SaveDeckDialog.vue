@@ -13,7 +13,7 @@ const isOpen = defineModel<boolean>({
   default: false,
 });
 
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const isSaving = ref<boolean>(false);
 const formRef = useTemplateRef<VForm>('form');
 const deck = ref<Deck>(deckbuilder.clone());
@@ -98,25 +98,24 @@ watch(deckbuilder.state, (value) => {
       @submit.prevent="saveDeck"
     >
       <v-card>
-        <v-card-item>
-          <v-card-title class="d-flex align-center justify-space-between">
-            Save Deck
-            <v-btn
-              v-tooltip:top="'Close'"
-              :disabled="isSaving"
-              variant="text"
-              size="small"
-              icon="mdi-close"
-              @click="isOpen = false"
-            />
-          </v-card-title>
+        <v-card-item title="Save Deck">
           <v-card-subtitle v-if="user?.sub === deck.user_id">
             <nuxt-link :to="{ name: 'my-decks-id', params: { id: deck.id } }">
               {{ deck.id }}
             </nuxt-link>
           </v-card-subtitle>
+          <template #append>
+            <v-btn
+              v-tooltip:top="'Close'"
+              :disabled="isSaving"
+              variant="text"
+              icon="mdi-close"
+              density="comfortable"
+              @click="isOpen = false"
+            />
+          </template>
         </v-card-item>
-        <v-card-text class="text-body-1">
+        <v-card-text class="text-body-large">
           <input-string
             v-model="deck.title"
             :rules="[ (v) => !!v || 'Enter the title' ]"

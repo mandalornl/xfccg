@@ -9,23 +9,23 @@ import type { Entries } from '~/types/object';
 
 const { xs } = useDisplay();
 
-const props = defineProps<{
+const { filters } = defineProps<{
   filters: DataTableFilter<T>[],
   items: T[],
 }>();
 
 const model = defineModel<DataTableFilters<T>>({
-  default: () => ({}),
+  required: true,
 });
 
 const isOpen = ref<boolean>(false);
 
 const activeFilters = computed<number>(() => (
-  (Object.entries(model.value) as Entries<DataTableFilters<T>>).filter(([ , filter ]) => filter.value.length > 0).length
+  (Object.entries(model.value ?? {}) as Entries<DataTableFilters<T>>).filter(([ , filter ]) => filter.value.length > 0).length
 ));
 
 const clearFilters = () => {
-  for (const filter of props.filters) {
+  for (const filter of filters) {
     model.value[filter.key] = {
       value: [],
       operation: DataTableFilterOperation.Or,
@@ -41,7 +41,7 @@ const clearFilters = () => {
     scrollable
     width="600"
   >
-    <template #activator="{ props:dialogProps }">
+    <template #activator="{ props }">
       <v-badge
         :model-value="activeFilters > 0"
         :content="activeFilters"
@@ -54,22 +54,23 @@ const clearFilters = () => {
           variant="text"
           active-color="primary"
           icon="mdi-filter-variant"
-          v-bind="dialogProps"
+          v-bind="props"
         />
       </v-badge>
     </template>
     <v-card>
-      <v-card-title class="d-flex align-center justify-space-between">
-        Filters
-        <v-btn
-          v-tooltip:top="'Close'"
-          variant="text"
-          icon="mdi-close"
-          size="small"
-          @click="isOpen = false"
-        />
-      </v-card-title>
-      <v-card-text class="text-body-1">
+      <v-card-item title="Filteren">
+        <template #append>
+          <v-btn
+            v-tooltip:top="'Close'"
+            variant="text"
+            icon="mdi-close"
+            density="comfortable"
+            @click="isOpen = false"
+          />
+        </template>
+      </v-card-item>
+      <v-card-text class="text-body-large">
         <v-row
           v-for="filter of filters"
           :key="filter.key"

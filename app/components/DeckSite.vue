@@ -5,7 +5,10 @@ import {
 } from '~/types/card';
 import { getColorByType } from '~/utils/color';
 
-const props = defineProps<{
+const {
+  cards,
+  keywords,
+} = defineProps<{
   cards: CardInDeck[];
   title: string;
   keywords: string[];
@@ -16,10 +19,10 @@ const items = computed<{
   total: number,
 }[]>(() => (
   Object.entries(
-    props.cards
+    cards
       .filter((card) => card.type === CardType.Site)
       .reduce<Record<string, number>>((result, card) => {
-        for (const keyword of props.keywords) {
+        for (const keyword of keywords) {
           if (!card.keywords?.includes(keyword)) {
             continue;
           }

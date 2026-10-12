@@ -230,25 +230,17 @@ const clearSelection = () => {
 </script>
 
 <template>
-  <layout-content fluid>
+  <x-container fluid>
     <card-toolbar v-model:search="dataTable.search">
-      <v-btn-toggle
+      <v-btn
         v-model="dataTable.view"
-        mandatory
+        v-tooltip:top="dataTable.view === DataTableView.Grid ? 'List View' : 'Grid View'"
+        :icon="dataTable.view === DataTableView.Grid ? 'mdi-view-list' : 'mdi-view-grid'"
+        rounded
         variant="text"
         color="primary"
-      >
-        <v-btn
-          v-tooltip:top="'Grid View'"
-          value="grid"
-          icon="mdi-view-grid"
-        />
-        <v-btn
-          v-tooltip:top="'List View'"
-          value="list"
-          icon="mdi-view-list"
-        />
-      </v-btn-toggle>
+        @click="dataTable.view = dataTable.view === DataTableView.Grid ? DataTableView.List : DataTableView.Grid"
+      />
       <filter-dialog
         v-model="dataTable.filters"
         :filters="filters"
@@ -264,14 +256,14 @@ const clearSelection = () => {
         color="primary"
       >
         <v-menu>
-          <template #activator="{ props:menuProps }">
+          <template #activator="{ props }">
             <v-btn
               v-tooltip:top="'Actions'"
               :disabled="deckbuilder.size.value === 0"
               rounded
               variant="text"
               icon="mdi-dots-vertical"
-              v-bind="menuProps"
+              v-bind="props"
             />
           </template>
           <v-list>
@@ -384,5 +376,5 @@ const clearSelection = () => {
     </v-data-iterator>
     <card-dialog v-model="selectedCard" />
     <deck-dialog v-model="selectedDeck" />
-  </layout-content>
+  </x-container>
 </template>

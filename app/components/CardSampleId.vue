@@ -4,13 +4,13 @@ import {
   CardSet,
 } from '~/types/card';
 
-const props = defineProps<{
+const { id } = defineProps<{
   id: string;
 }>();
 
 const pool = await usePool(CardSet.Premiere);
 
-const card = useState<Card>(`card-sample:id:${props.id}`, () => pool.find((card) => card.id === props.id)!);
+const card = useState<Card>(`card-sample:id:${id}`, () => pool.find((card) => card.id === id)!);
 </script>
 
 <template>

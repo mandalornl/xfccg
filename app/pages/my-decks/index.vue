@@ -201,72 +201,80 @@ const editDeck = (_event: Event, data: { item: Deck }) => (
 </script>
 
 <template>
-  <layout-content title="My Decks">
-    <v-data-table-server
-      v-model:page="page"
-      v-model:items-per-page="perPage"
-      v-model:sort-by="sortBys"
-      :loading="status === 'pending' || isLoading"
-      :headers="headers"
-      :items="data.decks"
-      :items-length="data.count"
-      :items-per-page-options="itemsPerPageOptions"
-      @click:row="editDeck"
-    >
-      <template #[`item.actions`]="{ item }">
-        <v-menu>
-          <template #activator="{ props:menuProps }">
-            <v-btn
-              v-tooltip:top="'Actions'"
-              size="small"
-              variant="text"
-              icon="mdi-dots-vertical"
-              v-bind="menuProps"
-            />
-          </template>
-          <v-list>
-            <v-list-item
-              :to="{ name: 'my-decks-id', params: { id: item.id } }"
-              title="Edit"
-            />
-            <v-list-item
-              :disabled="isLoading"
-              :title="item.public ? 'Unpublish' : 'Publish'"
-              @click="toggleDeckPublic(item)"
-            />
-            <v-list-item
-              title="Open in Cards"
-              @click="openInCards(item)"
-            />
-            <v-divider />
-            <v-list-item
-              :loading="isLoading"
-              base-color="error"
-              title="Delete"
-              @click="deleteDeck(item)"
-            />
-          </v-list>
-        </v-menu>
-      </template>
-      <template #[`item.public`]="{ value }">
-        <v-icon
-          v-tooltip:top="value ? 'Published' : 'Unpublished'"
-          :color="value ? 'primary': 'disabled'"
-          icon="mdi-web"
-        />
-      </template>
-      <template #[`item.tags`]="{ value }">
-        <x-tags :items="value" />
-      </template>
-      <template #[`item.created_at`]="{ value }">
-        <date-time
-          :date="value"
-          format="fullDate"
-        />
-      </template>
-    </v-data-table-server>
-    <div class="mt-4">
-      <import-deck-dialog />
-    </div>
-  </layout-content>
+  <section>
+    <x-container>
+      <h1 class="text-headline-large">
+        My Decks
+      </h1>
+      <v-data-table-server
+        v-model:page="page"
+        v-model:items-per-page="perPage"
+        v-model:sort-by="sortBys"
+        :loading="status === 'pending' || isLoading"
+        :headers="headers"
+        :items="data.decks"
+        :items-length="data.count"
+        :items-per-page-options="itemsPerPageOptions"
+        @click:row="editDeck"
+      >
+        <template #[`item.actions`]="{ item }">
+          <v-menu>
+            <template #activator="{ props }">
+              <v-btn
+                v-tooltip:top="'Actions'"
+                size="small"
+                variant="text"
+                icon="mdi-dots-vertical"
+                v-bind="props"
+              />
+            </template>
+            <v-list>
+              <v-list-item
+                :to="{ name: 'my-decks-id', params: { id: item.id } }"
+                title="Edit"
+              />
+              <v-list-item
+                :disabled="isLoading"
+                :title="item.public ? 'Unpublish' : 'Publish'"
+                @click="toggleDeckPublic(item)"
+              />
+              <v-list-item
+                title="Open in Cards"
+                @click="openInCards(item)"
+              />
+              <v-divider />
+              <v-list-item
+                :loading="isLoading"
+                base-color="error"
+                title="Delete"
+                @click="deleteDeck(item)"
+              />
+            </v-list>
+          </v-menu>
+        </template>
+        <template #[`item.public`]="{ value }">
+          <v-icon
+            v-tooltip:top="value ? 'Published' : 'Unpublished'"
+            :color="value ? 'primary': 'disabled'"
+            icon="mdi-web"
+          />
+        </template>
+        <template #[`item.tags`]="{ value }">
+          <x-tags
+            :items="value"
+            class="flex-nowrap"
+          />
+        </template>
+        <template #[`item.created_at`]="{ value }">
+          <date-time
+            :date="value"
+            format="fullDate"
+          />
+        </template>
+      </v-data-table-server>
+      <div class="mt-4">
+        <import-deck-dialog />
+      </div>
+    </x-container>
+  </section>
 </template>

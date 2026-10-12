@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import type { CardType } from '~/types/card';
 
-const props = defineProps<{
+const { text } = defineProps<{
   text: CardType,
 }>();
 
-const color = computed(() => getColorByType(props.text));
+const color = computed(() => getColorByType(text));
 </script>
 
 <template>

@@ -13,7 +13,15 @@ import type {
   SubmitEventPromise,
 } from 'vuetify/framework';
 
-const props = withDefaults(defineProps<{
+const {
+  label = undefined,
+  disabled = false,
+  rules = [],
+  autoGrow = false,
+  rows = 5,
+  maxRows = undefined,
+  counter = undefined,
+} = defineProps<{
   label?: string;
   disabled?: boolean;
   rules?: ValidationRule[];
@@ -21,19 +29,13 @@ const props = withDefaults(defineProps<{
   rows?: number | string;
   maxRows?: number | string;
   counter?: number | string;
-}>(), {
-  label: undefined,
-  rules: () => ([]),
-  rows: 5,
-  maxRows: undefined,
-  counter: undefined,
-});
+}>();
 
 const model = defineModel<string | null>({
   default: null,
 });
 
-const limit = computed<number>(() => Number(props.counter || Infinity));
+const limit = computed<number>(() => Number(counter || Infinity));
 
 const editor = useEditor({
   extensions: [
@@ -50,7 +52,7 @@ const editor = useEditor({
       linkOnPaste: false
     }),
   ],
-  editable: !props.disabled,
+  editable: !disabled,
   content: model.value,
   contentType: 'markdown',
   onUpdate: (event: EditorEvents['update']) => {
@@ -74,7 +76,7 @@ watch(model, (value) => {
   });
 });
 
-watch(() => props.disabled, (value) => {
+watch(() => disabled, (value) => {
   editor.value?.setEditable(value);
 });
 
@@ -96,17 +98,17 @@ const calculateHeight = () => {
   div.style.height = '0';
   div.innerHTML = '<p style="margin: 0 !important">&nbsp;</p>';
 
-  const minHeight = div.scrollHeight * Number(props.rows);
+  const minHeight = div.scrollHeight * Number(rows);
 
-  if (props.autoGrow && props.maxRows) {
-    const maxHeight = div.scrollHeight * Number(props.maxRows);
+  if (autoGrow && maxRows) {
+    const maxHeight = div.scrollHeight * Number(maxRows);
 
     div.style.maxHeight = `${maxHeight}px`;
   }
 
   div.innerHTML = content;
 
-  if (props.autoGrow) {
+  if (autoGrow) {
     div.style.minHeight = `${minHeight}px`;
     div.style.removeProperty('height');
   } else {
@@ -114,9 +116,9 @@ const calculateHeight = () => {
   }
 };
 
-watch(() => props.autoGrow, () => nextTick(calculateHeight));
-watch(() => props.rows, () => nextTick(calculateHeight));
-watch(() => props.maxRows, () => nextTick(calculateHeight));
+watch(() => autoGrow, () => nextTick(calculateHeight));
+watch(() => rows, () => nextTick(calculateHeight));
+watch(() => maxRows, () => nextTick(calculateHeight));
 
 const onIntersect = (isIntersecting: boolean) => {
   if (!isIntersecting) {
@@ -131,7 +133,7 @@ onBeforeUnmount(() => {
 });
 
 const dialog = ref<boolean>(false);
-const isValidForm = ref<boolean>(true);
+const isValidForm = ref<boolean | null>(true);
 const link = ref<{
   href: string;
   target: '_blank' | '_self';
@@ -223,7 +225,7 @@ const editLink = async (event: SubmitEventPromise) => {
             persist
             width="500"
           >
-            <template #activator="{ props:dialogProps }">
+            <template #activator="{ props }">
               <v-btn
                 v-tooltip:top="'Link'"
                 :disabled="!!editor?.state?.selection?.empty"
@@ -232,7 +234,7 @@ const editLink = async (event: SubmitEventPromise) => {
                 variant="text"
                 density="comfortable"
                 icon="mdi-link-variant"
-                v-bind="dialogProps"
+                v-bind="props"
               />
             </template>
             <v-form
@@ -241,17 +243,18 @@ const editLink = async (event: SubmitEventPromise) => {
               @submit.prevent="editLink"
             >
               <v-card>
-                <v-card-title class="d-flex align-center justify-space-between">
-                  Link
-                  <v-btn
-                    v-tooltip:top="'Close'"
-                    variant="text"
-                    size="small"
-                    icon="mdi-close"
-                    @click="dialog = false"
-                  />
-                </v-card-title>
-                <v-card-text class="text-body-1">
+                <v-card-item title="Link">
+                  <template #append>
+                    <v-btn
+                      v-tooltip:top="'Close'"
+                      variant="text"
+                      icon="mdi-close"
+                      density="comfortable"
+                      @click="dialog = false"
+                    />
+                  </template>
+                </v-card-item>
+                <v-card-text class="text-body-large">
                   <v-text-field
                     v-model.trim="link.href"
                     :rules="[ (v) => !v || v.includes('://') || 'Enter a valid url' ]"
