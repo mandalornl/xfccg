@@ -6,21 +6,9 @@
   "engines": {
     "node": "24"
   },
-  "packageManager": "pnpm@10.30.3",
-  "pnpm": {
-    "supportedArchitectures": {
-      "os": [
-        "linux",
-        "darwin"
-      ],
-      "cpu": [
-        "x64",
-        "arm64"
-      ]
-    }
-  },
+  "packageManager": "pnpm@12.15.0",
   "devDependencies": {
-    "sharp": "~0.34.5",
+    "sharp": "~0.35.5",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
 }

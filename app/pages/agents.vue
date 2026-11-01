@@ -297,7 +297,7 @@ onUnmounted(() => {
               </v-card-text>
               <v-card-actions>
                 <v-spacer />
-                # In team
+                In team
                 <v-number-input
                   :model-value="teambuilder.hasAgent(item.raw.id) ? 1 : 0"
                   :min="0"

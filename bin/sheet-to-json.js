@@ -186,11 +186,13 @@ const getPrerequisiteAndQuestion = (value, type) => {
   const [
     prerequisite,
     question,
-  ] = value.split('\r\n');
+    bonusEffect,
+  ] = value.split(/\r\n|\r|\n/);
 
   return {
     prerequisite: prerequisite.replace('PREREQUISITE: ', ''),
     question: question.replace('QUESTION: ', ''),
+    ...bonusEffect ? { bonusEffect: bonusEffect.replace('BONUS EFFECT: ', '') } : {},
   };
 };
 

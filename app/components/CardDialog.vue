@@ -78,6 +78,12 @@ const card = defineModel<Card>();
               <card-text :text="card?.question" />
             </card-item>
             <card-item
+              v-if="card?.bonusEffect"
+              title="Bonus Effect"
+            >
+              <card-text :text="card?.bonusEffect" />
+            </card-item>
+            <card-item
               v-if="card?.gameEffect"
               title="Game Effect"
             >

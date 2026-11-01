@@ -17,6 +17,20 @@ const files = await readdir(dir, {
   withFileTypes: true,
 });
 
+const getBasename = (name) => {
+  if (/^xf\d{2}-\d{4}x\d.jpg$/.test(name)) {
+    return name;
+  }
+
+  const match = name.match(/\d{4}/);
+
+  if (!match) {
+    return name.toLowerCase();
+  }
+
+  return `xf26-${match[0]}x5.jpg`;
+};
+
 for (const dirent of files) {
   if (!dirent.isFile() || dirent.name === '.DS_Store') {
     continue;
@@ -45,7 +59,8 @@ for (const dirent of files) {
     })
     .toBuffer();
 
-  const newFilename = filename.toLowerCase();
+  const basename = getBasename(dirent.name);
+  const newFilename = `${dir}/${basename}`;
 
   if (filename !== newFilename) {
     await rm(filename);

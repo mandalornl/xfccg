@@ -1,0 +1,11 @@
+minimumReleaseAge: 1440
+
+allowBuilds:
+
+supportedArchitectures:
+  os:
+    - "linux"
+    - "darwin"
+  cpu:
+    - "x64"
+    - "arm64"

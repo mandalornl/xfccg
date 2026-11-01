@@ -15,6 +15,7 @@ export enum CardSet {
   BelieveTheLie = 'Believe the Lie',
   ResistOrServe = 'Resist or Serve',
   ApologyIsPolicy = 'Apology is Policy',
+  TheEndAndTheBeginning = 'The End and the Beginning',
   FightTheFuture = 'Fight the Future',
   HereThereBeMonsters = 'Here There Be Monsters',
   IWantToBelieve = 'I Want to Believe',
@@ -66,6 +67,7 @@ export interface Card {
   cost?: string;
   prerequisite?: string;
   question?: string;
+  bonusEffect?: string;
   keywords?: string[];
   skills?: Record<BasicSkill | InvestigationSkill, SkillValue>;
   characteristics?: Record<XFileCharacteristic, string>;

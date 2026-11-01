@@ -91,7 +91,7 @@ const headers = [
   { title: 'Set', key: 'set', nowrap: true },
   { title: 'Type', key: 'type', nowrap: true },
   { title: 'Rarity', key: 'rarity', nowrap: true },
-  { title: '# In deck', key: 'inDeck', nowrap: true, sortable: false },
+  { title: 'In deck', key: 'inDeck', nowrap: true, sortable: false },
 ];
 
 const itemsPerPageOptions = [
@@ -353,7 +353,7 @@ const clearSelection = () => {
               </v-card-text>
               <v-card-actions v-if="item.raw.type !== CardTypeEnum.Credits">
                 <v-spacer />
-                # In deck
+                In deck
                 <input-in-deck :card="item.raw" />
               </v-card-actions>
             </v-card>

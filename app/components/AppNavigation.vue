@@ -107,13 +107,13 @@ const isLight = computed<boolean>(() => theme.name.value === 'light');
         color="primary"
       >
         <v-list-item
-          :title="isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'"
+          :title="isLight ? 'Dark Mode' : 'Light Mode'"
           @click="theme.toggle()"
         >
           <template #prepend>
             <v-icon
-              :color="isLight ? 'orange-accent-3' : undefined"
-              :icon="isLight ? 'mdi-white-balance-sunny' : 'mdi-weather-night'"
+              :color="!isLight ? 'orange-accent-3' : undefined"
+              :icon="!isLight ? 'mdi-white-balance-sunny' : 'mdi-weather-night'"
             />
           </template>
         </v-list-item>
