@@ -81,6 +81,9 @@
       "Domicile",
       "Resource"
     ],
+    "activators": [
+      "Active"
+    ],
     "gameEffect": "Play this card in your Bureau. During your Briefing Phase, you may place Agent Mulder under this card. Mulder is taken out of play for the rest of the turn.At the start of your next Briefing Phase, return Mulder to the Bureau and choose one of the following effects: increase any one of Mulder's skills by one for the remainder of the turn, or use one of his game effect tokens to pay for any one [RP] card this turn. The effects of this card may not be negated.",
     "dialogue": "\"Got to have someplace to lounge around and read the Sunday New York Times.\" - Morris Fletcher (as Mulder)",
     "tags": [
@@ -429,7 +432,7 @@
       "Conspiracy",
       "Site"
     ],
-    "gameEffect": "Unless this Adversary is negated immediately, force the Team to make an ALIEN INVESTIGATION 5+ skill check. If the Team fails, attach this card to an Agent. The Agent's HEALTH is reduced by 1 each time they contribute to a skill check. When the Agent's HEALTH is reduced to zero, remove the Agent from the game and place this card next to your X-File. The Newboard Alien may then attack any one Team at a Site for zero cost. The LRC round is skipped.",
+    "gameEffect": "Unless this Adversary is negated immediately, force the Team to make an ALIEN INVESTIGATION 5+ skill check. If the Team fails, attach this card to an Agent. The Agent's HEALTH is reduced by 1 each time they contribute to a skill check. When the Agent's HEALTH is reduced to zero, remove the Agent from the game and place this card next to your X-File. The Newborn Alien may then attack any one Team at a Site for zero cost. The LRC round is skipped.",
     "dialogue": "\"The virus producing an extraterrestrial biological entity that ripped away his chest as it birthed itself right here.\" - Mulder",
     "tags": [
       "Basic"
@@ -1330,7 +1333,7 @@
     ],
     "prerequisite": "BUREAUCRACY 4+",
     "question": "You may ask one METHOD question.",
-    "bonusEffect": "If the skill check prerequisite is 5+, you may search your Bureau Deck and add \"Police Escort\" to your hand. Shuffle your deck.",
+    "bonusEffect": "If the skill check prerequisite is 5+, you may search your Bureau Deck and add \"Temporal Distortion\" to your hand. Shuffle your deck.",
     "dialogue": "\"We got the trace back on the call we received this morning. It came from a has station payphone off of Highway 375 three miles east of Groom Lake.\" - Scully",
     "tags": [
       "Advanced"
@@ -1352,9 +1355,9 @@
       "Subterfuge",
       "Bonus"
     ],
-    "prerequisite": "BUREAUCRACY 4+",
+    "prerequisite": "SUBTERFUGE 4+",
     "question": "You may ask one RESULT question.",
-    "bonusEffect": "If the skill check prerequisite is 5+, you may search your Bureau Deck and add \"Police Escort\" to your hand. Shuffle your deck.",
+    "bonusEffect": "If the skill check prerequisite is 5+, you may search your Bureau Deck and add \"Fletcher's ID\" to your hand. Shuffle your deck.",
     "dialogue": "Mulder (as Fletcher): \"You're right. We should get out of the house. Go someplace with a lot of people.\"\nJoanne Fletcher: \"Someplace with a lot of people? In Rachel, Nevada?\"\nMulder (as Fletcher): \"What do you say?\"",
     "tags": [
       "Advanced"
@@ -2935,7 +2938,7 @@
       "Active",
       "Witness"
     ],
-    "gameEffect": "Play this card on a Witness attached to an Agent. If the Witness is discarded or removed from the game at any time, discard this card and add X tokens to your [RP] Pool. X = the cost of the Witness.",
+    "gameEffect": "Play this card on a Witness attached to an Agent. If the Witness is discarded or removed from the game at any time, immediately discard this card and add X tokens to your [RP] Pool. X = the cost of the Witness.",
     "dialogue": "\"She seems to have made a connection to you.\" - Scully, about Karin Berquist",
     "tags": [
       "Advanced"
@@ -3398,8 +3401,7 @@
       "Bluff",
       "Occult",
       "Behavioral",
-      "Occult",
-      "Investigation"
+      "Occult Investigation"
     ],
     "activators": [
       "Conspiracy",
@@ -3950,7 +3952,7 @@
     "activators": [
       "Field"
     ],
-    "gameEffect": "Attach this card to an Agent with an OCCULT INVESTIGATION skill of 2+. Discard this card to return one OCCULT card played by your opponent to the bottom of their Bureau Deck..",
+    "gameEffect": "Attach this card to an Agent with an OCCULT INVESTIGATION skill of 2+. Discard this card to return one OCCULT card played by your opponent to the bottom of their Bureau Deck.",
     "dialogue": "\"I was young young and beautiful once, just like your partner. Whoo! Look at us. Maurice was so handsome. He didn't have a gut.\" - Lyda",
     "tags": [
       "Basic"
@@ -3997,7 +3999,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameEffect": "Attach this card to an Agent with a BUREAUCRACY skill of 1+. Discard this card to return one GOVERNMENT card played by your opponent to the bottom of their Bureau Deck..",
+    "gameEffect": "Attach this card to an Agent with a BUREAUCRACY skill of 1+. Discard this card to return one GOVERNMENT card played by your opponent to the bottom of their Bureau Deck.",
     "dialogue": "Mulder: \"That's C.G.B. Spender and my father.\"\nScully: \"It was taken in 1973. I traced the connection to something they worked on together for twenty - five years at the State Department. A highly classified project.\"",
     "tags": [
       "Basic"
@@ -4021,7 +4023,7 @@
     "activators": [
       "Field"
     ],
-    "gameEffect": "Attach this card to an Agent with an ALIEN INVESTIGATION skill of 2+. Discard this card to return one ALIEN card played by your opponent to the bottom of their Bureau Deck..",
+    "gameEffect": "Attach this card to an Agent with an ALIEN INVESTIGATION skill of 2+. Discard this card to return one ALIEN card played by your opponent to the bottom of their Bureau Deck.",
     "dialogue": "\"You see, the alien fetus would give us the alien genome...the DNA with which we could make a human hybrid. A new race, Agent Mulder.\" - The Cigarette - Smoking Man",
     "tags": [
       "Basic"
@@ -4067,7 +4069,7 @@
     "activators": [
       "Bureau"
     ],
-    "gameEffect": "Attach this card to an Agent with a CRIMINAL INVESTIGATION skill of 2+. Discard this card to return one EVOLUTIONARY card played by your opponent to the bottom of their Bureau Deck..",
+    "gameEffect": "Attach this card to an Agent with a CRIMINAL INVESTIGATION skill of 1+. Discard this card to return one EVOLUTIONARY card played by your opponent to the bottom of their Bureau Deck.",
     "dialogue": "\"6:01 PM. February 24. Agents Scully and Mulder in the former head of David and Nancy Kline who disappeared without a trace last July. The Klines were the third such couple to disappear since this neighborhood was built in 1991.\" - Scully",
     "tags": [
       "Basic"
@@ -4113,7 +4115,7 @@
     "activators": [
       "Field"
     ],
-    "gameEffect": "Attach this card to an Agent with a BEHAVIORAL skill of 2+. Discard this card to return one PRIMORDIAL card played by your opponent to the bottom of their Bureau Deck..",
+    "gameEffect": "Attach this card to an Agent with a BEHAVIORAL skill of 2+. Discard this card to return one PRIMORDIAL card played by your opponent to the bottom of their Bureau Deck.",
     "dialogue": "\"It's called a 'milagro'. That's the Spanish word for 'miracle'. It's worn as a lucky charm.\" - Scully",
     "tags": [
       "Basic"
